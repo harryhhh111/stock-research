@@ -1,0 +1,9 @@
+id,cik,concept,label,value,numeric_value,unit,period_end,fiscal_period,fiscal_year,period_start,period_type
+45348079,1513845,us-gaap:NetCashProvidedByUsedInInvestingActivities,Net Cash Provided by (Used in) Investing Activities,-4229300000.0,-4229300000,USD,2025-12-31,FY,2025,2025-01-01,duration
+45348078,1513845,us-gaap:NetCashProvidedByUsedInInvestingActivities,Net Cash Provided by (Used in) Investing Activities,311600000.0,311600000,USD,2024-12-31,FY,2024,2024-01-01,duration
+45348075,1513845,us-gaap:NetCashProvidedByUsedInInvestingActivities,Net Cash Provided by (Used in) Investing Activities,-106943000000.0,-106943000000,RUB,2023-12-31,FY,2023,2023-01-01,duration
+45348076,1513845,us-gaap:NetCashProvidedByUsedInInvestingActivities,Net Cash Provided by (Used in) Investing Activities,-1192400000.0,-1192400000,USD,2023-12-31,FY,2023,2023-01-01,duration
+45348077,1513845,us-gaap:NetCashProvidedByUsedInInvestingActivities,Net Cash Provided by (Used in) Investing Activities,-1212100000.0,-1212100000,USD,2023-12-31,FY,2024,2023-01-01,duration
+45348072,1513845,us-gaap:NetCashProvidedByUsedInInvestingActivities,Net Cash Provided by (Used in) Investing Activities,-22738000000.0,-22738000000,RUB,2022-12-31,FY,2022,2022-01-01,duration
+45348073,1513845,us-gaap:NetCashProvidedByUsedInInvestingActivities,Net Cash Provided by (Used in) Investing Activities,-323300000.0,-323300000,USD,2022-12-31,FY,2022,2022-01-01,duration
+45348074,1513845,us-gaap:NetCashProvidedByUsedInInvestingActivities,Net Cash Provided by (Used in) Investing Activities,-403100000.0,-403100000,USD,2022-12-31,FY,2024,2022-01-01,duration

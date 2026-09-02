@@ -1,0 +1,356 @@
+# Coding Agent 推理电力需求模型（统一版）
+
+**整理/合并日期**：2026-09-02 | **数据截止**：2026-08-31
+**本文档地位**：coding 推理需求的**唯一口径文档**。合并自原《coding 需求模型》（基础物理模型，v1/v2）与《coding 需求推演 2026-2029》（三档分层推演，v3），全部数字统一为 v3 口径。
+**版本沿革**：v1 单档、只算 output token（0.5M/人/天）→ v2 引入 50M 总 token + output-equivalent（oe）→ **v3 三档分层 + 锚点经外部收入/流量口径校准（0.30 GW）**。演进史与一次自我纠错见附录 B。
+**配套文档**：《推理负载时段与全球分布调研.md》（峰谷系数 1.3–1.8 的依据）、《数据中心供给端 GW 预测.md》（供给侧对照）
+**复算脚本**：`coding 需求推演 2026-2029.py`（无外部依赖，直接运行重现第 4 节全部数字）
+**信息标注**：【一手】官方/论文；【二手】媒体转述；【假设】本文建模假设；【自算】本文复算
+
+---
+
+## TL;DR
+
+以**外部校准后的 2026 锚点 = 0.30 GW 平均功率**（重度 250 万 / 中度 1,200 万 / 轻度 1.3 亿 DAU 分层）推演三年：
+
+| 情景 | 2027 平均 | 2028 平均 | **2029 平均 / 装机** |
+|---|---|---|---|
+| 保守 | 0.43 GW | 0.54 GW | **0.63 GW / 0.8–1.1 GW** |
+| **基准** | **0.49 GW** | **0.90 GW** | **1.46 GW / 1.9–2.6 GW** |
+| 激进 | 0.69 GW | 1.69 GW | **3.15 GW / 4.1–5.7 GW** |
+
+三个结论：
+
+1. **基准情景下 2029 年 coding 推理需 ~1.5 GW 平均、1.9–2.6 GW 装机**——相当于 2–3 个 1 GW 级 AI campus，约占 Goldman 2029 全球 AI 功率预测的 6.7%。
+2. **重度层（用户数占比 ~2%）贡献 2029 年需求的 72%**；轻度层即使涨到 4 亿 DAU 也只占 11%。跟踪这个市场只需盯住重度层的 DAU × Token/User。
+3. **Rubin 代际效率跃升真实但有限**：同交互速度独立复算 ~2.5×/代（NVIDIA 宣称的 30× 是 GB300 无法服务的对比点口径，不采信），三年效率 ~3.25×，只能对冲需求增长（~21×）的一小部分。
+
+---
+
+## 0. 用户分层与人数总表（讲这份模型只用这一页）
+
+**一句话定义：我们按"每天用 coding agent 烧多少 token"把全球用户分成三档，各档人数和强度如下。**
+
+| | **重度** | **中度** | **轻度** |
+|---|---|---|---|
+| **行为画像** | 多 agent 并行、长任务（Claude Code / Codex 深度用户） | 每天用 agent 辅助，单 agent、任务较短 | autocomplete / 问答为主，偶尔 agent |
+| **每天总 token** | 50M | 5M | 0.5M |
+| **折合 oe-token/天**¹ | **4.8M** | **0.48M** | **0.048M** |
+| **2026 年人数（DAU）** | **250 万** | **1,200 万** | **1.3 亿** |
+| 人数依据 | Claude Code ~100 万 DAU【二手】+ Copilot agent / Cursor / Codex / 中国厂商 / 企业 API 的顶部用户【假设】 | 每天用 AI 辅助的开发者中未重度化的部分（Stack Overflow 2025：51% 职业开发者每天用 AI 工具）【一手】 | 开发者池 ~10M 日活等价 + 泛 chatbot coding 用户 ~50–100M【推导见附录 A】 |
+| **2029 年人数（基准）** | **800 万** | **4,000 万** | **4.3 亿** |
+| 2029 保守 / 激进 | 630 万 / 1,250 万 | 2,400 万 / 6,000 万 | 2.6 亿 / 8.7 亿 |
+| **2026 需求占比** | 50% | 24% | 26% |
+| **2029 需求占比（基准）** | **72%** | 17% | 11% |
+
+¹ oe = output-equivalent，把 cached/fresh/output 按计算成本权重（0.02/0.2/1.0）折成同一单位，推导见第 1 节。
+
+**给人讲的三个要点：**
+
+1. **人数金字塔：250 万 / 1,200 万 / 1.3 亿**（2026），到 2029 基准变成 800 万 / 4,000 万 / 4.3 亿；
+2. **强度差 100 倍**：一个重度用户一天的 token = 100 个轻度用户。所以金字塔倒过来才是需求结构——2% 的人烧掉 72% 的电；
+3. **总人数有外部校验**：三档合计 2026 年 ~1.45 亿 DAU，与 GitHub 1.8 亿开发者 + 泛 ChatGPT 用户的总量自洽；且总 token 消耗折算成功率（0.30 GW）落在厂商收入反推（0.11–0.55 GW）和 API 流量口径（0.18–0.59 GW）的交集内（第 6 节）。
+
+---
+
+## 1. 单个用户一天吃多少 token（oe 口径的推导）
+
+### 现实锚点
+
+- Anthropic：Claude Code 用户平均每周使用约 **20 小时**；企业部署中每个活跃开发者平均 API 等价成本约 **$13/天**，90% 用户低于 $30/天。([Anthropic](https://www.anthropic.com/research/claude-code-expertise "citation"))【一手】
+- OpenAI 内部工程部门：使用 Codex 后，2025-11 → 2026-06 output token 中位数增长 **27 倍**；Codex 已占其企业客户 Codex+ChatGPT output tokens 的 **64%**。([OpenAI](https://openai.com/index/how-agents-are-transforming-work/ "citation"))【一手】
+- NVIDIA AgentX 用真实 Claude Code 会话回放做 benchmark：主 agent 上下文从 ~60K 涨到接近 400K，引用 OpenRouter 数据称单次 agentic request 的 token 消耗约是普通 chat 的 **15 倍**。([NVIDIA 开发者](https://developer.nvidia.com/blog/nvidia-vera-rubin-and-blackwell-set-a-new-standard-for-agentic-ai-performance-per-watt/ "citation"))【一手，厂商自测】
+
+### 关键区分：总 token ≠ output token
+
+一个重度用户一天 **50M 总 token** 里，绝大部分是反复携带的上下文。coding agent 的调用模式是"前 100K context + 新东西"逐轮累积，同一份 context 反复出现在账单里。所以拆成：
+
+| Token 类型 | 基准构成 | 50M 重度用户每天 | Sonnet 5 价格 | 成本权重 |
+|---|---:|---:|---:|---:|
+| Cached input | 80% | 40M | $0.2/M | **0.02** |
+| Fresh input | 15% | 7.5M | $2/M | **0.20** |
+| Output / reasoning | 5% | 2.5M | $10/M | **1.00** |
+
+([Claude Platform 定价](https://platform.claude.com/docs/en/about-claude/pricing "citation"))【一手】
+
+用价格做计算成本的近似权重，把三种 token 折成同一单位 **output-equivalent（oe）**：
+
+$$
+oe = 总token \times (0.8\times0.02 + 0.15\times0.20 + 0.05\times1.0) = 总token \times 0.096
+$$
+
+→ 三档每人每天 oe：**重度 4.8M / 中度 0.48M / 轻度 0.048M**。**档间强度差 10 倍、100 倍，这是全模型最重要的一行。**
+
+> 注意：价格权重是估算 GPU capacity 的近似口径，不等同于物理 FLOPs 比例，但远好于把 50M 全当 output（v1 的错误，见附录 B）。
+
+###  token 构成的敏感性（重度档）
+
+| 情景 | Cached | Fresh | Output | oe/人/天 | 1,000 万重度 DAU 对应 |
+|---|---:|---:|---:|---:|---:|
+| Cache 极高 | 90% | 7% | 3% | 3.1M | ~0.38 GW 平均 |
+| **基准** | **80%** | **15%** | **5%** | **4.8M** | **~0.60 GW 平均** |
+| 重 reasoning | 70% | 20% | 10% | 7.7M | ~0.95 GW 平均 |
+
+---
+
+## 2. 硬件侧：一个 GB300 NVL72 能服务多少用户
+
+**吞吐**：NVIDIA agentic inference 数据 GB300 ≈ **6,000 output tokens/s/GPU**；1 个 NVL72 = 72 GPU → 理论 **432,000 tokens/s/rack**。NVIDIA 另一口径 ~2.8M tokens/s/MW，数量级一致。([NVIDIA 开发者](https://developer.nvidia.com/deep-learning-performance-training-inference/ai-inference "citation"))【一手，厂商自测】
+
+**综合效率折扣【假设】**：现实里有长 context、prefill、模型切换、调度损失、batch 不满、KV cache、负载波动、冗余——取 **benchmark 的 35%**：
+
+$$
+432K \times 35\% = 151K\ oe/s/rack \;\Rightarrow\; 151K \times 86400 \approx 13.1B\ oe/天/rack
+$$
+
+**功耗**：GB300 NVL72 设计功率 ~**135 kW IT**（([NVIDIA Docs](https://docs.nvidia.com/enterprise-reference-architectures/nvl72-ai-factory/latest/components.html "citation"))【一手】）；PUE = **1.20** → 单柜对电网 **162 kW**。
+
+**汇合**：1M 用户 × 1M oe/天 = 1T oe/天 ÷ 13.1B oe/天/rack ≈ 76 racks × 162 kW ≈ **12.4 MW**：
+
+> **100 万日活用户 × 每人每天 100 万 oe-token ≈ 12.4 MW（平均功率，含 PUE）**
+
+---
+
+## 3. 核心公式与双口径
+
+### 平均功率（能源口径）
+
+$$
+\boxed{P_{avg}(GW) = \frac{DAU(百万) \times oe(百万/人/天)}{80 \times 机队效率}}
+$$
+
+- 分母 80 的由来：第 2 节锚点 1M×1M oe → 12.4 MW ≈ 1/80 GW，GB300 机队效率记为 1.0。
+- 校验：10M 重度 × 4.8M oe ÷ 80 = **0.60 GW** ✓（与第 1 节敏感性表一致）。
+
+### 装机功率（容量口径）
+
+12.4 MW 的推导隐含负载 24 小时均匀分布。实测（Azure 生产 trace、GitHub Copilot 一周实测）显示 coding 负载白天峰是夜间的 4–5 倍；按时区聚合后 **~63% 的日需求集中在美国白天 12 小时窗口**，全球峰均值比 ≈ 1.57：
+
+$$
+\boxed{P_{装机}(GW) = P_{avg} \times 1.3\text{～}1.8 \quad (中枢 1.5)}
+$$
+
+- **能源口径**（年耗电量 TWh、PPA 采购量）：用 $P_{avg}$。
+- **容量口径**（要建多少 GW、多少机柜、并网申请多大）：用 $P_{装机}$；机柜/GPU 数量按峰值 provisioning 也要乘同样系数。
+- 系数区间依据：时区摊平后 1.57；多租户设施级聚合可摊到 ~1.19；Batch API 五折与夜间定时 agent 继续削峰；反向风险是日峰值 ±35% 波动、区域性部署享受不到全球摊平。详见《推理负载时段与全球分布调研》。
+
+---
+
+## 4. 三年推演：2026–2029【自算】
+
+### 4.1 2026 锚点（v3 关键校准）
+
+三档 DAU 起点【假设】，总量受外部口径约束（对账见第 6 节）：
+
+| 档位 | 2026 DAU | oe 贡献 |
+|---|---|---|
+| 重度 | **2.5M** | 2.5×4.8 = 12T oe/天 |
+| 中度 | **12M** | 12×0.48 = 5.8T oe/天 |
+| 轻度 | **130M** | 130×0.048 = 6.2T oe/天 |
+| **合计** | **144.5M** | **24T oe/天 → 0.30 GW**，落在收入反推（0.11–0.55 GW）与流量口径（0.18–0.59 GW）交集内 ✓ |
+
+### 4.2 DAU 路径（百万）
+
+| 档位 | 情景 | 2026 | 2027 | 2028 | 2029 | 3 年倍数 |
+|---|---|---|---|---|---|---|
+| 重度 | 保守/基准/激进 | 2.5 | 3.7/4.0/5.0 | 5.0/6.0/8.75 | 6.3/8.0/12.5 | 2.5×/3.2×/5× |
+| 中度 | 保守/基准/激进 | 12 | 16/18/22 | 20/28/40 | 24/40/60 | 2×/3.3×/5× |
+| 轻度 | 保守/基准/激进 | 130 | 175/189/228 | 208/293/475 | 260/433/865 | 2×/3.3×/6.7× |
+
+锚点：GitHub 开发者年增 23%（+36M/年）、印度 2030 年预计 57.5M 开发者（Octoverse 2025）【一手】；ChatGPT 2026 年 2 月 9 亿 WAU（Reuters/OpenAI）【一手】。重度激进 5× 依据：Claude Code WAU 2026 年前 5 个月翻倍以上、企业订阅翻两番【二手】。
+
+### 4.3 oe-token/人/天 路径（百万）
+
+| 档位 | 情景 | 2026 | 2027 | 2028 | 2029 | 年化 |
+|---|---|---|---|---|---|---|
+| 重度 | 保守/基准/激进 | 4.8 | 7/9.6/14 | 10/19/34 | 13/34/68 | 1.4×/2×/2.4× |
+| 中度 | 保守/基准/激进 | 0.48 | 0.60/0.72/0.86 | 0.72/1.08/1.55 | 0.86/1.62/2.8 | 1.2×/1.5×/1.8× |
+| 轻度 | 保守/基准/激进 | 0.048 | .055/.060/.067 | .062/.075/.096 | .070/.096/.134 | ~1.15×/1.26×/1.4× |
+
+锚点：OpenAI 内部 Codex output token 中位数 7 个月 27×（2025-11→2026-06）【一手】；基准 2×/年为观测值大幅衰减后水平；agent 化从重度层向下扩散，越轻的档增速越低。
+
+**为什么 Token/User 比用户增长更重要**：OpenAI 的 27× 说明故事不是"5,000 万程序员买 Copilot"，而是"一个人从让 AI 写 5 分钟代码，变成让 3–5 个 agent 并行工作几小时"——人数增长 2 倍的同时 Token/User 可以增长 10 倍。单开发者 50M/天也可能不是终局：一人管理多 agent（写 feature / 跑测试 / refactor / review），背后机器执行 5 agents × 8h = 40 agent-hours，甚至夜间继续跑，单开发者 token/day 走向 100M–200M+。
+
+### 4.4 效率项：GB300 → Rubin → Rubin Ultra
+
+NVIDIA AgentX（真实 Claude Code 会话回放，2026-08-24）宣称 Vera Rubin NVL72 吞吐/MW 最高 30× GB300【一手，厂商自测】；但 SemiAnalysis/InferenceX 独立复算显示该数字出现在 GB300 已无法服务的交互点上，**在 coding 实际区间（100–150 tok/s/user）Rubin ≈ GB300 的 ~2×，200 tok/s 处 ~4×**，TCO 口径 1.5–3×。([InferenceX](https://inferencex.semianalysis.com/blog/vera-rubin-nvl72-vs-gb200-nvl72-inference "citation"), [NVIDIA 开发者博客](https://developer.nvidia.com/blog/nvidia-vera-rubin-and-blackwell-set-a-new-standard-for-agentic-ai-performance-per-watt/ "citation"))【二手/一手】
+
+机柜功耗：GB300 NVL72 ~135 kW；Vera Rubin NVL144 ~190–230 kW（2026 H2 放量）；Rubin Ultra NVL576 ~600 kW（H2 2027）。([Moduledge](https://moduledge.com/blog/nvidia-vera-rubin "citation"), [DCD](https://www.datacenterdynamics.com/en/news/nvidias-rubin-ultra-nvl576-rack-expected-to-be-600kw-coming-second-half-of-2027/ "citation"))【二手/一手转述】
+
+机队效率路径【假设】（Rubin = 2.5×/MW、Ultra ≈ 4×/MW，按占比加权）：
+
+| 情景 | 2027 | 2028 | 2029 | 说明 |
+|---|---|---|---|---|
+| 保守 | 1.3 | 1.8 | 2.4 | 爬坡慢/Kyber 延期 |
+| 基准 | 1.6 | 2.3 | 3.25 | 2029 = 10% GB300 + 30% Rubin + 60% Ultra |
+| 激进 | 1.9 | 3.0 | 4.5 | 爬坡快 + 软件红利 |
+
+### 4.5 演算示例（2029 基准）
+
+- 重度：8M × 34M ÷ (80 × 3.25) = **1.05 GW**
+- 中度：40M × 1.62M ÷ (80 × 3.25) = **0.25 GW**
+- 轻度：433M × 0.096M ÷ (80 × 3.25) = **0.16 GW**
+- 合计平均 = **1.46 GW**；装机 = ×1.3~1.8 = **1.9–2.6 GW**
+
+### 4.6 分档结果（平均功率，GW）
+
+**保守**
+
+| 年份 | 重度 | 中度 | 轻度 | 合计 | 装机口径 |
+|---|---|---|---|---|---|
+| 2026 | 0.150 | 0.072 | 0.078 | 0.30 | 0.39–0.54 |
+| 2027 | 0.249 | 0.092 | 0.093 | 0.43 | 0.56–0.78 |
+| 2028 | 0.347 | 0.100 | 0.090 | 0.54 | 0.70–0.97 |
+| 2029 | 0.427 | 0.107 | 0.095 | **0.63** | **0.82–1.13** |
+
+**基准**
+
+| 年份 | 重度 | 中度 | 轻度 | 合计 | 装机口径 |
+|---|---|---|---|---|---|
+| 2026 | 0.150 | 0.072 | 0.078 | 0.30 | 0.39–0.54 |
+| 2027 | 0.300 | 0.101 | 0.089 | 0.49 | 0.64–0.88 |
+| 2028 | 0.620 | 0.164 | 0.119 | 0.90 | 1.17–1.63 |
+| 2029 | 1.046 | 0.249 | 0.160 | **1.46** | **1.89–2.62** |
+
+**激进**
+
+| 年份 | 重度 | 中度 | 轻度 | 合计 | 装机口径 |
+|---|---|---|---|---|---|
+| 2026 | 0.150 | 0.072 | 0.078 | 0.30 | 0.39–0.54 |
+| 2027 | 0.461 | 0.124 | 0.101 | 0.69 | 0.89–1.23 |
+| 2028 | 1.240 | 0.258 | 0.190 | 1.69 | 2.19–3.04 |
+| 2029 | 2.361 | 0.467 | 0.322 | **3.15** | **4.09–5.67** |
+
+### 4.7 物理含义与结构占比
+
+- 2029 基准 1.46 GW 平均 / 1.9–2.6 GW 装机（中枢 ~2.2 GW）≈ 全 Rubin NVL144 代 **~9,100 机柜**，或全 Rubin Ultra **~3,000 机柜** ≈ **2–3 个 1 GW 级 AI campus**。
+- 反向标尺：一个 1 GW 级 AI campus 全跑 GB300 做 coding 推理，在基准强度下约服务 1.6 亿日活当量；若人人重度（4.8M oe/天），**约 1,000 万重度 DAU 就能吃掉 1 GW 平均功率**。
+
+| 年份 | 重度 | 中度 | 轻度 |
+|---|---|---|---|
+| 2026 | 50% | 24% | 26% |
+| 2029 | **72%** | 17% | 11% |
+
+重度层用户占比从 ~1.7% 升至 ~2%，需求占比从 50% 升至 72%。**最难估的轻度层最不影响结论，稳健性成立。**
+
+---
+
+## 5. 与第三方总盘子对照【自算】
+
+| 来源 | 2029 全球 AI 功率 | coding（本模型基准 1.46 GW）占比 |
+|---|---|---|
+| Goldman Sachs | 21.7 GW | **6.7%** |
+| McKinsey | 57.2 GW | 2.5% |
+
+coding 作为企业侧第一大 AI 负载（Menlo：Anthropic 占企业 coding 市场 54%；Claude Code 为史上最快达到 $2.5B 的产品），占全球 AI 功率 3–7% 是合理区间。([Goldman Sachs](https://www.goldmansachs.com/insights/articles/ai-to-drive-165-increase-in-data-center-power-demand-by-2030 "citation"), [McKinsey](https://www.mckinsey.com/featured-insights/charts/data-center-demands "citation"))【一手】
+
+供给侧对照：2026–2029 全球数据中心新增管线约 50–90 GW，coding 装机需求只是其中个位数百分比——供需主导变量是训练+全部推理，coding 是增长快但绝对值小的曲线。详见《数据中心供给端 GW 预测》。
+
+---
+
+## 6. 外部口径对账（2026 锚点 = 0.30 GW 的依据）⚠️ 含一次自我纠错
+
+### 路径 A：厂商收入反推（全口径）
+
+- Anthropic 总 run rate：2025 年底 $9B → 2026 年 4 月 $30B → 5 月 $47B。([VentureBeat](https://venturebeat.com/technology/anthropic-says-it-hit-a-30-billion-revenue-run-rate-after-crazy-80x-growth "citation"))【二手转述公司披露】
+- Anthropic 的 coding 收入 ≠ 只有 Claude Code（$2.5B run rate，2026-02）。其 1P API 流量高度集中在 coding/automation（Economic Index：API top-10 任务占 33% 且持续集中化）【一手】。按 coding 占其总收入 50–70% 估：Anthropic coding ≈ **$15–21B/yr**。
+- 加 OpenAI coding（Codex 占其企业 output token 64%【一手】，估 $5–8B）、GitHub Copilot / Cursor / Google / 中国厂商（$5–10B）→ **全球 coding 推理收入口径 ≈ $25–40B/yr**。
+- 折 token：list 价格 $10/M oe，但订阅稀释、小模型、中国低价 → 实现价格 $2–10/M oe → **0.11–0.55 GW 平均**。
+
+> ⚠️ **自我纠错**：v3 初版对账时曾把 Claude Code 订阅收入当作 Anthropic 全部 coding 业务，得出"30–50 MW、v2 锚点高估 20 倍"的结论，**该结论错误**（漏掉 API coding 收入，低估约一个数量级）。正确对账是 v2 锚点（0.87 GW）偏高约 **3 倍**，v3 按 0.30 GW 重校准。
+
+### 路径 B：公开 token 流量
+
+- OpenRouter 2026 年中 25T/周 ≈ 3.6T/天（全部用途，但只是全球 API 的一小块）。([a16z](https://a16z.com/state-of-ai/ "citation"))【一手】
+- OpenAI API 2025 年 10 月已 8.6T/天【一手】；Google 2025 年中披露其产品月处理 480T token（≈16T/天，含消费端）；推算全球 2026 年中 API 总量 ~100–200T/天，coding 占 25–40% → oe ×0.096 → **0.18–0.59 GW**。
+
+### 对账表
+
+| 口径 | 2026 coding 平均功率 |
+|---|---|
+| 路径 A（收入反推，全口径） | 0.11–0.55 GW |
+| 路径 B（token 流量） | 0.18–0.59 GW |
+| **v3 采用锚点（交集中枢）** | **0.30 GW（0.15–0.45 半区间）** |
+| v2 锚点（已弃用） | 0.87 GW（偏高 ~3×） |
+
+**模型纪律（已生效）：自底向上模型的锚点必须先过收入/流量两条外部校验再外推；每条外部口径必须完整覆盖收入结构，不能只取最易得的单一产品线。**
+
+---
+
+## 7. 解读、敏感项与局限
+
+1. **跟踪指标：重度层 DAU × Token/User。** 中度层是修正项（17–24%），轻度层可当噪音（≤26% 且递减）。
+2. **档间迁移**（中度→重度升级流）是三档固定画像写法的保守方向。
+3. **效率上行风险在模型侧**：更小前沿模型、KV cache 复用、speculative decoding 未计入机队效率。
+4. **需求上行风险是 agent 自主时长**（夜间无人值守），同时摊平峰谷、降低装机系数。
+5. **锚点不确定性仍是最大项**：外部两路径各自有 ±2–3× 不确定度，交集 0.15–0.45 GW。建议每季度用最新 run rate 和 OpenRouter 流量复核一次锚点。
+
+局限：
+
+- 三档 2026 DAU 是【假设】，总量被外部口径约束在交集内，但档间分配（尤其轻度 130M）数据基础薄弱；好在轻度层对结论影响小。
+- 重度档 50M 总 token/天是顶部画像（$48/天 list，高于 Anthropic 披露的 90% 分位 $30/天），档内分布右偏，头部更集中。
+- "重度 DAU × Token/User"存在耦合（用户池扩大稀释平均强度），激进情景可能系统性偏高。
+- 未计入非 coding agent 负载，这只是 coding 一条需求曲线。
+
+---
+
+## 附录 A：三档人数是怎么估出来的（2026 锚点）
+
+### A.1 先说清楚口径：模型要的是"典型工作日日活"
+
+电力需求是每天的 token 流量，所以三档人数都是**日活当量**（daily-active equivalent）：每天真实产生负载的用户 + 低频用户折算（周活 ×0.3、月活 ×0.1）。**不是**累计用户、注册用户、WAU 或 MAU。"会用 AI 写代码的人"全球确实有 3–5 亿（见 A.3），但他们大多数不是每天产生负载。
+
+### A.2 开发者池：多口径基数 × AI 使用频率
+
+全球开发者基数（各口径）【一手/二手】：
+
+| 来源 | 口径 | 人数 |
+|---|---|---|
+| JetBrains 2025 | 职业开发者 | ~20.8M |
+| Evans Data 2025 | 职业开发者 | 28.7–35.6M |
+| SlashData Q3 2025 | 每月至少写一次代码（含爱好者/学生） | **47.2–48.4M** |
+| GitHub Octoverse 2025 | 账户（含大量非活跃） | 180M+ |
+
+([JetBrains](https://www.jetbrains.com/lp/devecosystem-data-playground/ "citation"), [SlashData](https://www.slashdata.co/research/developer-population "citation"), [GitHub Blog](https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/ "citation"))
+
+AI 使用频率（Stack Overflow 2025 开发者调查，n≈33.7k）【一手】：([SO Survey](https://survey.stackoverflow.co/2025/ "citation"))
+
+- **47.1% 每天用** AI 工具、17.7% 每周、13.7% 每月/偶尔（职业开发者"每天"为 51%）
+
+开发者池日活当量 = 47M × (47.1% + 17.7%×0.3 + 13.7%×0.1) ≈ 47M × 53.9% ≈ **25M**
+
+其中重度（2.5M）+ 中度（12M）= 14.5M → **开发者池内的轻度 ≈ 10M 日活当量**。
+
+### A.3 非开发者池：泛 chatbot 用户里的 coding 行为
+
+- ChatGPT：9 亿 WAU（2026-02）；**编程消息仅占 4.2%**（OpenAI/NBER WP34255，150 万条消息样本）【一手】。([NBER](https://www.nber.org/system/files/working_papers/w34255/w34255.pdf "citation")) 按编程消息集中在 ~10–15% 用户估，日活中涉及 coding 的 ≈ **20–30M**。
+- GitHub Copilot：总用户 ~20M（2025-07），付费 4.7M（2026-01）→ 免费层 ~15M，多为轻度【一手转述】。([uvik 汇编](https://uvik.net/blog/ai-coding-assistant-statistics/ "citation"))
+- Google Gemini：月处理 1.3 quadrillion tokens（2025-10，含全产品线）；Doubao/DeepSeek/Qwen 等中国 chatbot 数亿 WAU，coding 占比低但基数大 → 合计贡献 **30–70M** 轻度日活当量【假设】。([Grizzle](https://grizzle.com/ai-compute-is-ramping-but-is-demand-there-to-meet-it/ "citation"))
+
+**轻度合计 ≈ 10M（开发者）+ 50–100M（泛用户）= 60–130M，模型取上沿 130M。**
+
+若改用"每周至少一次"口径：ChatGPT 9 亿 WAU × 20–30% 偶尔 coding + 47M 开发者 × 78.5%（日+周+月）≈ **2–3 亿周活**——这就是"远远不止 1.3 亿"的直觉来源，但它不是电力模型需要的日活口径。
+
+### A.4 为什么这个误差没关系：包络约束的是乘积，不是人数
+
+2026 锚点（0.30 GW）来自收入/流量外部口径，约束的是 **DAU × 人均 token 的乘积**。轻度层贡献固定为 ~6.2T oe/天：
+
+- 130M × 0.048M = 6.2T ✓（当前写法）
+- 若你认为轻度有 500M 日活，则人均强度必须降到 0.012M oe/天，**电力需求一模一样**
+- 若轻度人数翻倍且强度不降，轻度贡献占比从 26% → ~41%，总需求 0.30 → 0.38 GW，**仍在外部包络（0.11–0.6 GW）之内**
+
+所以轻度人数是三档里最不敏感的参数：被挑战时的标准回答是——**"人数口径可以争，但 token 总量被厂商收入和 API 流量锁死了；这档位怎么拆，结论变动不超过 ±10%。"**
+
+---
+
+## 附录 B：模型演进史（为什么旧文档里数字不一样）
+
+| 版本 | 用户口径 | 强度口径 | 关键数字 | 问题 |
+|---|---|---|---|---|
+| **v1** | 单档 | 0.5M **output** token/人/天 | 1 亿用户基准 = 620 MW | 只算 output，漏掉 cached/fresh input 的计算负担，低估 ~10× |
+| **v2** | 单档重度 | 50M 总 token → **4.8M oe**/人/天 | 1,000 万重度 = 0.60 GW | 只建重度一档；锚点未外部校准，推算 2026 = 0.87 GW，偏高 ~3× |
+| **v3（现行）** | 三档分层 | 4.8M / 0.48M / 0.048M oe | 2026 锚点 0.30 GW，2029 基准 1.46 GW 平均 / 1.9–2.6 GW 装机 | 锚点过了收入+流量双外部校验 |
+
+v1 的直觉锚点仍有效：Anthropic 的 $13/active-day 对应 0.5M **output** + 约 10M 总 token，恰好在 v3 中度档（5M 总 token）与重度档（50M）之间——v1 的"基准用户"约等于 v3 的中度偏上画像。
+
+补充背景锚点（2026-07-29 Microsoft FY26 Q4 财报）：GitHub Copilot 累计 5,000 万用户、GitHub 2.25 亿用户、约 1/3 的 PR 已涉及 agent。([Microsoft](https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4 "citation"))【一手】——这是"累计用户"口径，模型需要的是日活当量，换算示例：50M × 40% 工作日日活 × 50% 进入 agent workflow ≈ 10M 全量基准 agent 用户，仅 Copilot 一家；加上 Claude Code / Codex / Cursor / 企业 API 才是完整盘子。

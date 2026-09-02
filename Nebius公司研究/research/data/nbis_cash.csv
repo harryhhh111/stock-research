@@ -1,0 +1,4 @@
+concept_queried,id,cik,concept,label,value,numeric_value,unit,period_end,fiscal_period,fiscal_year,period_type
+us-gaap:CashAndCashEquivalentsAtCarryingValue,45333285,1513845,us-gaap:CashAndCashEquivalentsAtCarryingValue,"Cash and Cash Equivalents, at Carrying Value",3678100000.0,3678100000,USD,2025-12-31,FY,2025,instant
+us-gaap:CashAndCashEquivalentsAtCarryingValue,45333283,1513845,us-gaap:CashAndCashEquivalentsAtCarryingValue,"Cash and Cash Equivalents, at Carrying Value",2449600000.0,2449600000,USD,2024-12-31,FY,2024,instant
+us-gaap:CashAndCashEquivalentsAtCarryingValue,45333284,1513845,us-gaap:CashAndCashEquivalentsAtCarryingValue,"Cash and Cash Equivalents, at Carrying Value",2434700000.0,2434700000,USD,2024-12-31,FY,2025,instant

@@ -1,0 +1,22 @@
+# macOS Finder metadata
+.DS_Store
+
+# Python runtime caches and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Local virtual environments and notebook checkpoints
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Editor swap and backup files
+*.swp
+*.swo
+*~
+
+# This is an independently versioned reference repository.
+# Keep it available in the workspace, but do not stage it as a nested Git repo.
+参考库/vibe-investing/

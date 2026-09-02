@@ -1,0 +1,9 @@
+id,cik,concept,label,value,numeric_value,unit,period_end,fiscal_period,fiscal_year,period_start,period_type
+45348043,1513845,us-gaap:NetCashProvidedByUsedInFinancingActivities,Net Cash Provided by (Used in) Financing Activities,5125500000.0,5125500000,USD,2025-12-31,FY,2025,2025-01-01,duration
+45348042,1513845,us-gaap:NetCashProvidedByUsedInFinancingActivities,Net Cash Provided by (Used in) Financing Activities,825500000.0,825500000,USD,2024-12-31,FY,2024,2024-01-01,duration
+45348039,1513845,us-gaap:NetCashProvidedByUsedInFinancingActivities,Net Cash Provided by (Used in) Financing Activities,41843000000.0,41843000000,RUB,2023-12-31,FY,2023,2023-01-01,duration
+45348040,1513845,us-gaap:NetCashProvidedByUsedInFinancingActivities,Net Cash Provided by (Used in) Financing Activities,466600000.0,466600000,USD,2023-12-31,FY,2023,2023-01-01,duration
+45348041,1513845,us-gaap:NetCashProvidedByUsedInFinancingActivities,Net Cash Provided by (Used in) Financing Activities,375600000.0,375600000,USD,2023-12-31,FY,2024,2023-01-01,duration
+45348036,1513845,us-gaap:NetCashProvidedByUsedInFinancingActivities,Net Cash Provided by (Used in) Financing Activities,-5519000000.0,-5519000000,RUB,2022-12-31,FY,2022,2022-01-01,duration
+45348037,1513845,us-gaap:NetCashProvidedByUsedInFinancingActivities,Net Cash Provided by (Used in) Financing Activities,-78400000.0,-78400000,USD,2022-12-31,FY,2022,2022-01-01,duration
+45348038,1513845,us-gaap:NetCashProvidedByUsedInFinancingActivities,Net Cash Provided by (Used in) Financing Activities,-100300000.0,-100300000,USD,2022-12-31,FY,2024,2022-01-01,duration
