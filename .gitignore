@@ -20,3 +20,34 @@ venv/
 # This is an independently versioned reference repository.
 # Keep it available in the workspace, but do not stage it as a nested Git repo.
 参考库/vibe-investing/
+
+# Local credentials and runtime databases (keep shareable example configs).
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.log
+*.sqlite
+*.sqlite3
+*.db
+
+# Bulk market data: preserve locally; version scripts, run manifests and results.
+# Do not ignore all factcheck/data, CSV, JSON, PDF or image files.
+/数字资产/factcheck/data/raw/
+/数字资产/factcheck/data/normalized/
+/HYPE/factcheck/data/*-5m-raw/
+/HYPE/factcheck/data/*-5m.json
+/HYPE/factcheck/data/pair-funding-raw/
+
+# Large source snapshots require a separate archive for exact reproduction.
+/HYPE/factcheck/data/2026-09-30-blockworks-fees-daily.json
+/HYPE/factcheck/data/2026-09-30-blockworks-buybacks-daily.json
+
+# Large derived curves can be regenerated; retain compact results and ledgers.
+/HYPE/factcheck/*-pair净值曲线.json
+
+# Stray bulk downloads at the workspace root.
+/HYPEUSDT-aggTrades-*.csv
+/HYPEUSDT-aggTrades-*.zip
