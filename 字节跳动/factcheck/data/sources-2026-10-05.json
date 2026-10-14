@@ -1,0 +1,299 @@
+[
+  {
+    "id": "S01",
+    "date": "2024-04-10",
+    "title": "Reuters转述Bloomberg：2023 EBITDA",
+    "url": "https://www.investing.com/news/stock-market-news/bytedance-fullyear-profit-jumps-60-bloomberg-news-says-3372507",
+    "category": "媒体二手转述",
+    "access_and_limits": "可访问转载；无财报，EBITDA非净利",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S02",
+    "date": "2025-05（FY2024投资者材料）",
+    "title": "软银SVF投资者材料，第10页",
+    "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/presentations/2024/investor-svf_q4fy2024_01_en.pdf",
+    "category": "投资人引用媒体值，二手转述",
+    "access_and_limits": "直接读PDF文字；33B利润和收入序列来自媒体，脚注明确未独立验证",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S03",
+    "date": "2024-03-15",
+    "title": "Reuters转述FT：2023营收及美国收入",
+    "url": "https://finance.yahoo.com/news/tiktoks-us-revenue-hits-16-121707245.html",
+    "category": "媒体二手转述",
+    "access_and_limits": "搜索可见报道；FT完整报表不可得，不以美国收入外推2026",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S04",
+    "date": "2025-04-11",
+    "title": "Bloomberg：2024增长及海外收入",
+    "url": "https://news.bloomberglaw.com/mergers-and-acquisitions/tiktok-drives-bytedances-29-growth-while-china-business-slows?context=search&index=8",
+    "category": "媒体引述匿名人士",
+    "access_and_limits": "可访问正文摘要；金额非审计，不依赖低字数付费墙副本",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S05",
+    "date": "2025-08-27",
+    "title": "Reuters：员工回购、2025季度收入",
+    "url": "https://www.investing.com/news/stock-market-news/exclusivetiktok-owner-bytedance-sets-valuation-at-over-330-billion-as-revenue-grows-sources-say-4212987",
+    "category": "媒体引述",
+    "access_and_limits": "可读Reuters署名转载；美元43/48 billion，换为430/480亿美元",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S06",
+    "date": "2026-02-25",
+    "title": "Reuters：General Atlantic拟售股",
+    "url": "https://www.investing.com/news/stock-market-news/exclusivebytedance-valued-at-550-billion-in-proposed-share-sale-by-general-atlantic-sources-say-4523409",
+    "category": "媒体引述",
+    "access_and_limits": "拟议交易，未获得成交协议；另提2025-11的480B交易和HSG续存基金350–370B口径",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S07",
+    "date": "2026-09-15（转载URL标09-16）",
+    "title": "IT之家转述The Information：2026H1财务",
+    "url": "https://finance.sina.com.cn/tech/digi/2026-09-16/doc-inirxhzw3686156.shtml",
+    "category": "二手转述",
+    "access_and_limits": "可读转载；原报道有付费限制，财务用于条件复算，非审计",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S08",
+    "date": "2026-09-16",
+    "title": "Mint/WSJ：收入利润、RSU赋值和私人交易",
+    "url": "https://www.livemint.com/global/tiktok-parent-s-revenue-grows-as-ai-spending-pressures-profits-11789549975990.html",
+    "category": "媒体引述/WSJ转载",
+    "access_and_limits": "可读正文；并称The Information已先报道，不能算完全独立财报核验",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S09",
+    "date": "2026-01-23",
+    "title": "TikTok：美国JV正式公告",
+    "url": "https://newsroom.tiktok.com/announcement-from-the-new-tiktok-usds-joint-venture-llc?lang=en",
+    "category": "当事人官方披露",
+    "access_and_limits": "直接读职责、股东和商业活动边界；缺经济协议和报表",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S10",
+    "date": "2026-04-20",
+    "title": "21经济网：净利争议及李亮回应",
+    "url": "https://www.21jingji.com/article/20260420/herald/1df296c04c9080e5c080a7fbb83fd815.html",
+    "category": "媒体引述；当事人回应经媒体转述",
+    "access_and_limits": "直接读正文；分部数字缺原始来源，不采作模型事实",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S11",
+    "date": "2026-01-15",
+    "title": "新华网：抖音产业带/货架报告",
+    "url": "https://www2.xinhuanet.com/tech/20260115/4edff26a18614c088844c150025f8c89/c.html",
+    "category": "当事人报告经媒体转述",
+    "access_and_limits": "货架同比窗口为2024-08至2025-08，非全年全平台",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S12",
+    "date": "2026-02-25",
+    "title": "雷峰网：抖音生服支付GMV",
+    "url": "https://m.leiphone.com/category/industrynews/5NY6WC0MpiEJCovz.html",
+    "category": "媒体引述匿名人士及平台数据",
+    "access_and_limits": "可读正文；支付/核销分开，粗略核销比例非审计",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S13",
+    "date": "2024年发言（网页日期未稳定展示）",
+    "title": "飞书CEO发言：ARR历史与目标",
+    "url": "https://www.feishu.cn/content/wechat_post_28",
+    "category": "当事人披露/指引",
+    "access_and_limits": "2022/2023 ARR历史，2024为预计；访问2026-10-05",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S14",
+    "date": "2026-07-16",
+    "title": "《财经》：飞书2025营收",
+    "url": "https://finance.sina.com.cn/wm/2026-07-16/doc-inihyiyh4496289.shtml",
+    "category": "媒体报道转载",
+    "access_and_limits": "可读正文；30亿元收入与ARR不同，不复算>60%增长",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S15",
+    "date": "2025-06-13",
+    "title": "TikTok：Shop美国销售增长",
+    "url": "https://newsroom.tiktok.com/tiktok-shop-is-where-shoppers-come-to-discover?lang=en",
+    "category": "当事人披露",
+    "access_and_limits": "截至当时当年同比120%，非全年/收入",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S16",
+    "date": "2025-12-03",
+    "title": "TikTok：黑五网一Shop销售",
+    "url": "https://newsroom.tiktok.com/tiktok-shop-had-our-biggest-bfcm-weekend-ever?lang=en",
+    "category": "当事人披露",
+    "access_and_limits": "四天购物期销售超500 million美元，非年度营收",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S17",
+    "date": "2026年半年报，数据2026-06",
+    "title": "QuestMobile：AI应用半年报",
+    "url": "https://www.questmobile.com.cn/research/report/2076954943839809537/",
+    "category": "市场机构测量值",
+    "access_and_limits": "直接读活跃用户；非公司付费收入。测量者自述归当事人方法，非媒体值",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S18",
+    "date": "2026-09-04",
+    "title": "Reuters：296亿美元贷款",
+    "url": "https://www.investing.com/news/stock-market-news/bytedance-secures-296-billion-loan-in-ai-push-sources-say-4889439",
+    "category": "媒体引述",
+    "access_and_limits": "额度/期限/无抵押及海外容量承购；未取得提款和合同",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S19",
+    "date": "2026-09-14",
+    "title": "Bloomberg签约报道，The Standard转载",
+    "url": "https://www.thestandard.com.hk/finance/article/342697/ByteDance-signs-US296-billion-loan-with-over-20-banks-including-ICBC-and-HSBC",
+    "category": "媒体二手转述",
+    "access_and_limits": "可读正文；28银行、签约，不能当已全额提款",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S20",
+    "date": "2026-04-02披露，指标截至2026-03",
+    "title": "界面新闻：谭待披露Token用量",
+    "url": "https://www.jiemian.com/article/14203212.html",
+    "category": "当事人发言经媒体转述",
+    "access_and_limits": "120万亿日均，不限可变现外部账单；官网大会页搜索摘要也出现该数，正文未稳定提取，采用媒体正文",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S21",
+    "date": "2026-05-27",
+    "title": "Bloomberg授权转载：最高700亿美元capex讨论",
+    "url": "https://money.udn.com/money/story/5603/9529352",
+    "category": "媒体引述匿名人士",
+    "access_and_limits": "可读短文；初步可调整；2025约500亿美元profit口径未知",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S22",
+    "date": "访问2026-10-05",
+    "title": "字节法律实体结构",
+    "url": "https://www.bytedance.com/en/corporate-structure",
+    "category": "当事人官方披露",
+    "access_and_limits": "可读实体及contractual arrangements，非财务合并范围审计",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S23",
+    "date": "2026-09-15，数据至2026-08",
+    "title": "国家统计局：零售与网上消费",
+    "url": "https://www.stats.gov.cn/sj/zxfbhjd/202609/t20260915_1965311.html",
+    "category": "统计发布机构当事人数据",
+    "access_and_limits": "直接读数与统计范围修订；新旧网上零售总量不可比",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S24",
+    "date": "2026-04-17发布，数据2025-12",
+    "title": "CNNIC：2026网络视听报告",
+    "url": "https://www3.cnnic.cn/n4/2026/0417/c326-11590.html",
+    "category": "统计研究机构披露",
+    "access_and_limits": "官方搜索可读摘要，打开失败；近10.99亿/超97%亦见上市公司引用，未逐页取得原报告",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S25",
+    "date": "2026-03-25，2025全年",
+    "title": "快手官方全年业绩",
+    "url": "https://ir.kuaishou.com/zh-hans/news-releases/news-release-details/kuaishoukejifabu2025niandisijidujiquanniancaiwuyeji",
+    "category": "当事人财报公告",
+    "access_and_limits": "直接读GMV、收入、DAU和可灵收入及指标定义",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S26",
+    "date": "2025-09-05",
+    "title": "TikTok欧洲32国月活接收者",
+    "url": "https://newsroom.tiktok.com/tiktok-community-in-europe-tops-200-million?lang=en-150",
+    "category": "当事人披露",
+    "access_and_limits": "32国MAR，非全球去重MAU",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S27",
+    "date": "2025-12-22",
+    "title": "Reuters转述FT：2026初步AI预算",
+    "url": "https://finance.yahoo.com/news/bytedance-plans-spend-23-billion-013340287.html",
+    "category": "媒体二手转述",
+    "access_and_limits": "Reuters称不能立即独立验证，1600亿元为计划",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S28",
+    "date": "2026-05-09",
+    "title": "SCMP：AI预算上调超过2000亿元",
+    "url": "https://www.scmp.com/tech/article/3352906/bytedance-raises-2026-capex-least-25-amid-ai-boom-rising-memory-costs-sources-say?pgtype=live",
+    "category": "媒体引述匿名人士",
+    "access_and_limits": "已读可访问段落/搜索，非实际支出",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S29",
+    "date": "2025-03-04",
+    "title": "Reuters：员工189.90美元回购",
+    "url": "https://www.investing.com/news/stock-market-news/exclusivetiktok-parent-bytedance-valuation-rises-in-latest-share-buyback-sources-say-3907335",
+    "category": "媒体引述",
+    "access_and_limits": "可访问转载，约315B隐含估值",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S30",
+    "date": "2025-05-02；诉讼目录访问2026-10-05",
+    "title": "DPC处罚决定与判决目录",
+    "url": "https://www.dataprotection.ie/en/news-media/latest-news/irish-data-protection-commission-fines-tiktok-eu530-million-and-orders-corrective-measures-following",
+    "category": "监管当事人披露",
+    "access_and_limits": "530 million欧元决定；诉讼见补充链接，未核验终局/支付",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S31",
+    "date": "访问2026-10-05",
+    "title": "字节官网董事名册",
+    "url": "https://www.bytedance.com/?lang=en",
+    "category": "当事人披露",
+    "access_and_limits": "搜索直接展示名册，不代表完整控制/投票权",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S32",
+    "date": "通知2026-01-22",
+    "title": "美国Shop买方条款主体转让通知",
+    "url": "https://seller-us.tiktok.com/university/essay?knowledge_id=4859543562716983",
+    "category": "当事人条款",
+    "access_and_limits": "官方搜索可读主体转让；不是完整商业分配合同",
+    "accessed_at": "2026-10-05"
+  },
+  {
+    "id": "S33",
+    "date": "2026-02-06",
+    "title": "欧委会：TikTok设计DSA初步认定",
+    "url": "https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktoks-addictive-design-breach-digital-services-act",
+    "category": "监管当事人披露",
+    "access_and_limits": "官方搜索正文可见，直接打开429；强调初步，未核验其后终局",
+    "accessed_at": "2026-10-05"
+  }
+]

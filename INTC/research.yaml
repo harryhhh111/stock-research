@@ -1,0 +1,36 @@
+# 入口建立日期：2026-10-14；市场字段更新：2026-10-15；不表示正文数据已更新或完成事实核验。
+schema_version: 2
+entity_id: company:intel
+kind: company
+name: Intel
+aliases:
+- INTC
+securities:
+- market: US
+  mic: XNAS
+  symbol: INTC
+primary_document: INTC.md
+documents:
+- path: 业务与竞争.md
+  role: supplement
+- path: 财务与资本结构.md
+  role: supplement
+- path: 美国政府支持.md
+  role: supplement
+- path: TSMC(台积电).md
+  role: supplement
+related_entities: []
+sections:
+  thesis:
+    path: INTC.md
+    heading_path:
+    - 英特尔（INTC）研究笔记
+    - 7. 我的看法
+  open_questions:
+    path: INTC.md
+    heading_path:
+    - 英特尔（INTC）研究笔记
+    - 9. 后续研究方向
+  metrics: null
+  risks: null
+  research_metadata: null

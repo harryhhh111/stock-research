@@ -1,0 +1,44 @@
+[
+  {
+    "id": "q2_2026_10q",
+    "url": "https://investors.corescientific.com/sec-filings/all-sec-filings/content/0001839341-26-000014/core-20260630.htm",
+    "retrieved": "2026-09-21",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)>",
+    "fallback": "web tool examined original disclosure"
+  },
+  {
+    "id": "q2_2026_deck",
+    "url": "https://www.sec.gov/Archives/edgar/data/1839341/000183934126000012/q2fy26earningsdeck728am.htm",
+    "retrieved": "2026-09-21",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)>",
+    "fallback": "web tool examined original disclosure"
+  },
+  {
+    "id": "power_20260910",
+    "url": "https://investors.corescientific.com/sec-filings/all-sec-filings/content/0001839341-26-000023/core-20260910.htm",
+    "retrieved": "2026-09-21",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)>",
+    "fallback": "web tool examined original disclosure"
+  },
+  {
+    "id": "credit_20260827",
+    "url": "https://investors.corescientific.com/news-events/press-releases/detail/143/core-scientific-secures-600-million-of-senior-secured-credit-facilities",
+    "retrieved": "2026-09-21",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)>",
+    "fallback": "web tool examined original disclosure"
+  },
+  {
+    "id": "polaris_20260814",
+    "url": "https://investors.corescientific.com/news-events/press-releases/detail/142/core-scientific-completes-acquisition-of-polaris-ds-advancing-planned-muskogee-expansion-to-1-5-gw-of-gross-power",
+    "retrieved": "2026-09-21",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)>",
+    "fallback": "web tool examined original disclosure"
+  },
+  {
+    "id": "quote_20260918",
+    "url": "https://finance.yahoo.co.jp/quote/CORZ/history",
+    "retrieved": "2026-09-21",
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1007)>",
+    "fallback": "web tool examined original disclosure"
+  }
+]

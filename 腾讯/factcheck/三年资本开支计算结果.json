@@ -1,0 +1,20 @@
+[
+  {
+    "year": 2023,
+    "capex_yoy_pct": 32.63572776729211,
+    "capex_revenue_pct": 3.923220281930659,
+    "capital_commitments": 17609
+  },
+  {
+    "year": 2024,
+    "capex_yoy_pct": 221.26564265684513,
+    "capex_revenue_pct": 11.625776023578698,
+    "capital_commitments": 14705
+  },
+  {
+    "year": 2025,
+    "capex_yoy_pct": 3.1761334028139743,
+    "capex_revenue_pct": 10.534927091674803,
+    "capital_commitments": 20755
+  }
+]

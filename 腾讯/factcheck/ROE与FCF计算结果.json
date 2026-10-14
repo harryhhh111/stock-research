@@ -1,0 +1,25 @@
+{
+  "2023": {
+    "average_parent_equity_million": 764991.0,
+    "roe_pct": 15.061092221999997,
+    "adjusted_roe_reference_pct": 20.6130529640218
+  },
+  "2024": {
+    "average_parent_equity_million": 891069.5,
+    "roe_pct": 21.779782609549535,
+    "adjusted_roe_reference_pct": 24.992775535466087
+  },
+  "2025": {
+    "average_parent_equity_million": 1063850.0,
+    "roe_pct": 21.134746439817643,
+    "adjusted_roe_reference_pct": 24.40438031677398
+  },
+  "fcf": {
+    "market_cap_rmb_million": 3289574.75,
+    "ttm_rmb_million": 135400.0,
+    "ttm_yield_pct": 4.1160335389855485,
+    "ttm_ex_q2_prepaid_rmb_million": 186800.0,
+    "ttm_ex_q2_prepaid_yield_pct": 5.678545532367064,
+    "fy2025_at_current_cap_yield_pct": 5.550869455086862
+  }
+}

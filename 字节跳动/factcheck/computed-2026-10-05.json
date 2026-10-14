@@ -1,0 +1,231 @@
+{
+  "revenue_growth_pct": {
+    "2023": 41.176470588235304,
+    "2024": 29.166666666666675,
+    "2025": 29.032258064516125
+  },
+  "revenue_cagr_2022_2025_pct": 33.00573168564952,
+  "reported_margin_pct": {
+    "2024": 21.29032258064516,
+    "2025": 21.0,
+    "2026h1": 16.666666666666664
+  },
+  "profit_growth_2025_pct": 27.27272727272727,
+  "overseas_2024_share_pct": 25.161290322580644,
+  "domestic_2024_residual": 1160.0,
+  "overseas_2025_conditional_share_pct": 29.25,
+  "buyback_price_change_pct": 5.534491837809363,
+  "valuation_numeric_change_pct": 66.66666666666667,
+  "capex_threshold_change_pct": 25.0,
+  "capex_upper_conditional_growth_pct": 179.99999999999997,
+  "disputed_ecommerce_revenue": 4100.46,
+  "disputed_revenue_gmv_ratio_pct": 10.25115,
+  "conditional_h1_endpoints_open_upper_bound": [
+    {
+      "assumed_decline_ratio": 0,
+      "previous_revenue": 923.0769230769231,
+      "previous_profit": 200.0,
+      "previous_margin_pct": 21.666666666666668,
+      "margin_compression_pp": 5.0000000000000036
+    },
+    {
+      "assumed_decline_ratio": 0.1,
+      "previous_revenue": 923.0769230769231,
+      "previous_profit": 222.22222222222223,
+      "previous_margin_pct": 24.074074074074076,
+      "margin_compression_pp": 7.407407407407412
+    }
+  ],
+  "valuation_profit_sensitivity": [
+    {
+      "equity_value": 3300,
+      "profit": 200,
+      "ratio": 16.5
+    },
+    {
+      "equity_value": 3300,
+      "profit": 300,
+      "ratio": 11.0
+    },
+    {
+      "equity_value": 3300,
+      "profit": 420,
+      "ratio": 7.857142857142857
+    },
+    {
+      "equity_value": 3300,
+      "profit": 500,
+      "ratio": 6.6
+    },
+    {
+      "equity_value": 4800,
+      "profit": 200,
+      "ratio": 24.0
+    },
+    {
+      "equity_value": 4800,
+      "profit": 300,
+      "ratio": 16.0
+    },
+    {
+      "equity_value": 4800,
+      "profit": 420,
+      "ratio": 11.428571428571429
+    },
+    {
+      "equity_value": 4800,
+      "profit": 500,
+      "ratio": 9.6
+    },
+    {
+      "equity_value": 5500,
+      "profit": 200,
+      "ratio": 27.5
+    },
+    {
+      "equity_value": 5500,
+      "profit": 300,
+      "ratio": 18.333333333333332
+    },
+    {
+      "equity_value": 5500,
+      "profit": 420,
+      "ratio": 13.095238095238095
+    },
+    {
+      "equity_value": 5500,
+      "profit": 500,
+      "ratio": 11.0
+    },
+    {
+      "equity_value": 6300,
+      "profit": 200,
+      "ratio": 31.5
+    },
+    {
+      "equity_value": 6300,
+      "profit": 300,
+      "ratio": 21.0
+    },
+    {
+      "equity_value": 6300,
+      "profit": 420,
+      "ratio": 15.0
+    },
+    {
+      "equity_value": 6300,
+      "profit": 500,
+      "ratio": 12.6
+    }
+  ],
+  "required_cash": [
+    {
+      "equity_value": 5500,
+      "yield": 0.04,
+      "cash": 220.0
+    },
+    {
+      "equity_value": 5500,
+      "yield": 0.05,
+      "cash": 275.0
+    },
+    {
+      "equity_value": 5500,
+      "yield": 0.06,
+      "cash": 330.0
+    },
+    {
+      "equity_value": 6300,
+      "yield": 0.04,
+      "cash": 252.0
+    },
+    {
+      "equity_value": 6300,
+      "yield": 0.05,
+      "cash": 315.0
+    },
+    {
+      "equity_value": 6300,
+      "yield": 0.06,
+      "cash": 378.0
+    }
+  ],
+  "cash_conversion_sensitivity": [
+    {
+      "assumed_conversion": 0.5,
+      "cash": 210.0,
+      "cash_yield_pct_at_5500": 3.8181818181818183
+    },
+    {
+      "assumed_conversion": 0.75,
+      "cash": 315.0,
+      "cash_yield_pct_at_5500": 5.7272727272727275
+    },
+    {
+      "assumed_conversion": 1.0,
+      "cash": 420.0,
+      "cash_yield_pct_at_5500": 7.636363636363637
+    }
+  ],
+  "loan_interest_sensitivity": [
+    {
+      "assumed_rate": 0.04,
+      "annual_interest_if_fully_drawn": 11.84
+    },
+    {
+      "assumed_rate": 0.05,
+      "annual_interest_if_fully_drawn": 14.8
+    },
+    {
+      "assumed_rate": 0.06,
+      "annual_interest_if_fully_drawn": 17.759999999999998
+    }
+  ],
+  "cash_balance_after_selected_uses_not_standard_fcf": [
+    {
+      "assumed_cfo": 600,
+      "assumed_capex": 300,
+      "balance": 200
+    },
+    {
+      "assumed_cfo": 600,
+      "assumed_capex": 500,
+      "balance": 0
+    },
+    {
+      "assumed_cfo": 600,
+      "assumed_capex": 700,
+      "balance": -200
+    },
+    {
+      "assumed_cfo": 800,
+      "assumed_capex": 300,
+      "balance": 400
+    },
+    {
+      "assumed_cfo": 800,
+      "assumed_capex": 500,
+      "balance": 200
+    },
+    {
+      "assumed_cfo": 800,
+      "assumed_capex": 700,
+      "balance": 0
+    },
+    {
+      "assumed_cfo": 1000,
+      "assumed_capex": 300,
+      "balance": 600
+    },
+    {
+      "assumed_cfo": 1000,
+      "assumed_capex": 500,
+      "balance": 400
+    },
+    {
+      "assumed_cfo": 1000,
+      "assumed_capex": 700,
+      "balance": 200
+    }
+  ]
+}

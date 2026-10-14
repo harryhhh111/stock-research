@@ -1,0 +1,22 @@
+# 研究入口试点工具
+
+建立日期：2026-10-14。当前仅用于本地工作树入口校验与章节提取，不是 stock_data 已接入或正式提交版本读取器。
+
+依赖 Python 3.10+、requirements.txt 中的 PyYAML。建议在仓库外虚拟环境安装依赖；当前试点环境位于 `/tmp/stock-research-entry-validation`，临时目录清理后需重新建立。
+
+从仓库根目录运行（将 python 替换为已安装依赖的解释器）：
+
+```sh
+python -m pip install -r 研究流程/入口工具/requirements.txt
+python 研究流程/入口工具/validate.py
+python 研究流程/入口工具/validate.py --limit 300
+python -m unittest discover -s 研究流程/入口工具 -v
+```
+
+脚本从自身位置推导仓库位置，也可通过 --root 指定测试仓库。正常退出码为 0，入口结构错误为 1。JSON 输出包含证券索引、各主体、完整章节、缺失/歧义/截断状态和错误清单；没有映射的章节不会由系统生成。数据截止日仍保留在原文中，未实现结构化日期解析与过时判断。
+
+发现入口时跳过参考库和常见缓存目录。当前实现支持 ATX 标题（# 形式）及 fenced code 排除；不支持 Setext 标题和 HTML 标题，遇到这些文档应先明确扩展解析规则。版本 2 要求 market/mic/symbol，按规范的初始 US/HK/CN 与 MIC 允许组合校验；该映射不代替官方 MIC 名录及证券上市有效性核对。版本 1 仅在 MIC 已知时过渡读取，并输出 inferred-from-mic 标记和迁移警告，不默认 US。lookup_market 可按市场和代码筛选，多个候选返回 ambiguous，指定 MIC 后精确筛选。主题关联可由 related_entities 反向查询，当前没有 HTTP 服务、关注池写入或自动修改正文功能。
+
+错误列表非空时，不应发布该结果为正式全库索引；结构化日期、Git commit 读取、发布阻断与读取端集成留待后续对接实现。
+
+2026-10-15：四个试点入口已迁移到版本 2；证券唯一索引仍使用 MIC:代码，市场字段随证券输出。10 项自动测试通过。

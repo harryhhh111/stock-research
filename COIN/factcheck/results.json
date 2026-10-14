@@ -1,0 +1,49 @@
+{
+  "status": "✅ 收入组成与股数变动核对通过",
+  "ttm_million_usd": {
+    "revenue": 6282.871999999999,
+    "net_income": -987.7660000000001,
+    "ebitda": 1877.6149999999998,
+    "cfo": 1713.665,
+    "sbc": 938.9470000000001
+  },
+  "market_cap_proxy_million_usd": 49377.35258,
+  "net_cash_proxy_million_usd": 2130.6380000000004,
+  "ev_proxy_million_usd": 47246.71458,
+  "ps": 7.859041626186242,
+  "ev_adjusted_ebitda": 25.163153564495385,
+  "cfo_yield": 0.034705485621643266,
+  "cfo_minus_sbc_proxy_yield": 0.015689743567049698,
+  "h1_revenue_yoy": -0.254410940610839,
+  "q2_revenue_mix": {
+    "consumer": 0.37020067733929585,
+    "institution": 0.0820224774356839,
+    "other_transaction": 0.03886094873400499,
+    "stablecoin": 0.23945140762646017,
+    "staking": 0.06830930735008213,
+    "interest_finance": 0.054200257690554955,
+    "other_services": 0.0930505512807483,
+    "other_corporate": 0.053904372543169723
+  },
+  "h1_share_change": -0.015136128078376387,
+  "valuation_scenarios": [
+    {
+      "assumed_normal_net_income_million": 1000,
+      "assumed_pe": 20,
+      "value_million": 20000,
+      "price_proxy": 75.82018484961067
+    },
+    {
+      "assumed_normal_net_income_million": 2000,
+      "assumed_pe": 25,
+      "value_million": 50000,
+      "price_proxy": 189.55046212402667
+    },
+    {
+      "assumed_normal_net_income_million": 3000,
+      "assumed_pe": 30,
+      "value_million": 90000,
+      "price_proxy": 341.190831823248
+    }
+  ]
+}

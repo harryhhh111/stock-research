@@ -1,0 +1,98 @@
+{
+  "2023": {
+    "gross_profit": {
+      "profit_rmb_100million": 2931.09,
+      "yoy_pct": 22.77022442260812,
+      "margin_pct": 48.128371222383684,
+      "status": "✅ 属实（据年报复算）"
+    },
+    "op_ifrs": {
+      "profit_rmb_100million": 1600.74,
+      "yoy_pct": 44.435922654226864,
+      "margin_pct": 26.2840816728652,
+      "status": "✅ 属实（据年报复算）"
+    },
+    "op_nonifrs": {
+      "profit_rmb_100million": 1918.86,
+      "yoy_pct": 33.99579617745439,
+      "margin_pct": 31.50759833501638,
+      "status": "✅ 属实（据年报复算）"
+    },
+    "net_ifrs": {
+      "profit_rmb_100million": 1152.16,
+      "yoy_pct": -38.79400562039491,
+      "margin_pct": 18.91841744456212,
+      "status": "✅ 属实（据年报复算）"
+    },
+    "net_nonifrs": {
+      "profit_rmb_100million": 1576.88,
+      "yoy_pct": 36.35050886734861,
+      "margin_pct": 25.892301503247044,
+      "status": "✅ 属实（据年报复算）"
+    }
+  },
+  "2024": {
+    "gross_profit": {
+      "profit_rmb_100million": 3492.46,
+      "yoy_pct": 19.152260763060845,
+      "margin_pct": 52.89546343317829,
+      "status": "✅ 属实（据年报复算）"
+    },
+    "op_ifrs": {
+      "profit_rmb_100million": 2080.99,
+      "yoy_pct": 30.00174919099916,
+      "margin_pct": 31.5178786442249,
+      "status": "✅ 属实（据年报复算）"
+    },
+    "op_nonifrs": {
+      "profit_rmb_100million": 2378.11,
+      "yoy_pct": 23.933481337877694,
+      "margin_pct": 36.0179445276612,
+      "status": "✅ 属实（据年报复算）"
+    },
+    "net_ifrs": {
+      "profit_rmb_100million": 1940.73,
+      "yoy_pct": 68.44275100680461,
+      "margin_pct": 29.393554328087397,
+      "status": "✅ 属实（据年报复算）"
+    },
+    "net_nonifrs": {
+      "profit_rmb_100million": 2227.03,
+      "yoy_pct": 41.230150677286794,
+      "margin_pct": 33.72974462974266,
+      "status": "✅ 属实（据年报复算）"
+    }
+  },
+  "2025": {
+    "gross_profit": {
+      "profit_rmb_100million": 4225.93,
+      "yoy_pct": 21.001529008206244,
+      "margin_pct": 56.21336958574875,
+      "status": "✅ 属实（据年报复算）"
+    },
+    "op_ifrs": {
+      "profit_rmb_100million": 2415.62,
+      "yoy_pct": 16.080327151980555,
+      "margin_pct": 32.13260509254209,
+      "status": "✅ 属实（据年报复算）"
+    },
+    "op_nonifrs": {
+      "profit_rmb_100million": 2806.56,
+      "yoy_pct": 18.01640798785591,
+      "margin_pct": 37.332893480152066,
+      "status": "✅ 属实（据年报复算）"
+    },
+    "net_ifrs": {
+      "profit_rmb_100million": 2248.42,
+      "yoy_pct": 15.854343468694765,
+      "margin_pct": 29.908508764695398,
+      "status": "✅ 属实（据年报复算）"
+    },
+    "net_nonifrs": {
+      "profit_rmb_100million": 2596.26,
+      "yoy_pct": 16.579480294383096,
+      "margin_pct": 34.53548045535446,
+      "status": "✅ 属实（据年报复算）"
+    }
+  }
+}

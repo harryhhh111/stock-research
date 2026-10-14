@@ -1,0 +1,42 @@
+{
+  "start_utc": "2025-10-03T18:15:00+00:00",
+  "end_exclusive_utc": "2026-10-03T18:15:00+00:00",
+  "interval": "5m",
+  "source": "binance-perp",
+  "assets": [
+    {
+      "token": "HYPE",
+      "path": "data/normalized/binance-perp/5m/HYPE/1759515300000-1791051300000.json",
+      "sha256": "aaa113f6b2f4f9f17c95b60760e7a56f0250f7b46e85559da1508dbe17ff041e",
+      "count": 105120,
+      "raw_pages": 106,
+      "overlap_count": 26499,
+      "overlap_ohlcv_trades_match": true,
+      "missing_count": 0,
+      "duplicate_count": 0,
+      "invalid_count": 0,
+      "first_open_utc": "2025-10-03T18:15:00+00:00",
+      "last_open_utc": "2026-10-03T18:10:00+00:00",
+      "first_open_price": 50.006,
+      "last_close_price": 89.271
+    },
+    {
+      "token": "BTC",
+      "path": "data/normalized/binance-perp/5m/BTC/1759515300000-1791051300000.json",
+      "sha256": "2b942ca87b17f3d6218a20d416e666638c955014d3df17eb6842828794002802",
+      "count": 105120,
+      "raw_pages": 106,
+      "overlap_count": 26499,
+      "overlap_ohlcv_trades_match": true,
+      "missing_count": 0,
+      "duplicate_count": 0,
+      "invalid_count": 0,
+      "first_open_utc": "2025-10-03T18:15:00+00:00",
+      "last_open_utc": "2026-10-03T18:10:00+00:00",
+      "first_open_price": 121994.0,
+      "last_close_price": 84947.1
+    }
+  ],
+  "both_tokens_exactly_aligned": true,
+  "status": "✅ 年度连续性、原始文件哈希、双币时间对齐及旧快照重叠一致性通过"
+}

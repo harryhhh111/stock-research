@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-09",
+  "window": "2025-10-04~2026-10-04 北京",
+  "fee_side": 0.0005,
+  "beta": 1.2205205284905054,
+  "n_events": 389,
+  "standing": {
+    "price_gross_pct": 94.19730123094196,
+    "funding_contrib_pct": -2.4139470000000003,
+    "after_funding_pct": 91.78335423094195,
+    "rebalance_cost_pct": 0.9532985678669597,
+    "rebalance_cost_note": "taker 5bp/边，按日回1:1名义",
+    "net_total_pct": 90.83005566307499,
+    "daily": {
+      "label": "after_funding_daily",
+      "total_pct": 91.78335423094195,
+      "ann_pct": 91.78335423094195,
+      "max_dd_pct": -60.93751948923377,
+      "sharpe_daily": 1.2811379362111153,
+      "up_day_share": 0.5192307692307693,
+      "worst_day_pct": -9.707135927497115,
+      "best_day_pct": 16.54148824651424
+    },
+    "net_daily": {
+      "label": "net_daily",
+      "total_pct": 90.83005566307499,
+      "ann_pct": 90.83005566307499,
+      "max_dd_pct": -60.93751948923377,
+      "sharpe_daily": 1.2811379362111155,
+      "up_day_share": 0.5192307692307693,
+      "worst_day_pct": -9.707135927497115,
+      "best_day_pct": 16.54148824651424
+    },
+    "minute_max_dd_pct": -69.55121679052493,
+    "month_ends_pct": [
+      -9.8,
+      -14.8,
+      -41.4,
+      -15.0,
+      11.7,
+      24.0,
+      21.3,
+      79.5,
+      96.1,
+      69.3,
+      91.9,
+      91.6
+    ],
+    "beta": 1.2205205284905054
+  },
+  "event_driven": {
+    "rt_0.1pct": {
+      "net_total_pct": 84.69564848255196,
+      "ann_pct": 84.69564848255196,
+      "per_event_mean_pct": 0.2177266027829099,
+      "per_event_median_pct": -0.10784199464300076,
+      "win_rate": 0.4781491002570694,
+      "n_events": 389,
+      "exposure_frac": 0.1776255707762557,
+      "daily": {
+        "label": "rt_0.1pct",
+        "total_pct": 84.69564848255202,
+        "ann_pct": 84.69564848255202,
+        "max_dd_pct": -50.67599537623649,
+        "sharpe_daily": 1.4620368442372702,
+        "up_day_share": 0.28846153846153844,
+        "worst_day_pct": -11.169053154583619,
+        "best_day_pct": 21.678909782647228
+      }
+    },
+    "rt_0.2pct": {
+      "net_total_pct": 45.79564848255197,
+      "ann_pct": 45.79564848255197,
+      "per_event_mean_pct": 0.11772660278290994,
+      "per_event_median_pct": -0.20784199464300074,
+      "win_rate": 0.4704370179948586,
+      "n_events": 389,
+      "exposure_frac": 0.1776255707762557,
+      "daily": {
+        "label": "rt_0.2pct",
+        "total_pct": 45.79564848255196,
+        "ann_pct": 45.79564848255196,
+        "max_dd_pct": -66.07599537623653,
+        "sharpe_daily": 0.7969100377897599,
+        "up_day_share": 0.27197802197802196,
+        "worst_day_pct": -11.669053154583619,
+        "best_day_pct": 21.078909782647226
+      }
+    },
+    "rt_0.3pct": {
+      "net_total_pct": 6.895648482551975,
+      "ann_pct": 6.895648482551975,
+      "per_event_mean_pct": 0.01772660278290996,
+      "per_event_median_pct": -0.30784199464300077,
+      "win_rate": 0.4524421593830334,
+      "n_events": 389,
+      "exposure_frac": 0.1776255707762557,
+      "daily": {
+        "label": "rt_0.3pct",
+        "total_pct": 6.895648482551979,
+        "ann_pct": 6.895648482551979,
+        "max_dd_pct": -81.94868899066125,
+        "sharpe_daily": 0.12063547137960602,
+        "up_day_share": 0.25824175824175827,
+        "worst_day_pct": -12.16905315458362,
+        "best_day_pct": 20.478909782647225
+      }
+    }
+  },
+  "convention": "每腿单位名义线性累计（非复利）；A含资金费与再平衡成本，B含窗口资金费与往返成本"
+}

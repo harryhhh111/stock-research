@@ -1,0 +1,387 @@
+对，你这个问题问到点子上了。**视频生成不是“没法和 coding/agent 比”，恰恰相反：按单个用户、单次任务看，视频生成往往比 coding 重得多。**
+
+真正的问题是：
+
+> **单次任务有多耗算力 ≠ 整个行业最终消耗多少算力。**
+
+决定总算力需求的是：
+
+$$
+\boxed{
+用户数\times使用频率\times单次计算量
+}
+$$
+
+而 coding/agent 现在最大的优势，是前两个变量非常夸张。
+
+---
+
+## 先看视频生成到底有多贵
+
+Google 当前 Veo 3.1 API 定价非常直观：
+
+* 720p/1080p Standard：**$0.40 / 视频秒**
+* 4K：**$0.60 / 视频秒**
+* Fast 1080p：$0.12 / 秒
+
+所以生成一段 10 秒 1080p Veo 3.1 Standard：
+
+$$
+10\times0.4=\boxed{\$4}
+$$
+
+100 个 10 秒片段：
+
+$$
+100\times\$4=\boxed{\$400}
+$$
+
+一天如果真有一个专业视频创作者疯狂生成 100 个候选镜头，**这个人的 AI 消耗完全可以吊打普通 Claude Code 用户。** ([Google AI for Developers][1])
+
+而且这个高价格不是凭空来的。
+
+现在主流高质量视频模型本质上需要处理：
+
+> 空间 × 时间 × 多轮生成步骤。
+
+NVIDIA 对视频 DiT 的研究明确指出，视频扩散模型一次生成需要执行**几十轮迭代步骤**，而 classifier-free guidance 甚至可能进一步把计算量翻倍。([NVIDIA][2])
+
+所以：
+
+**视频确实是算力怪兽。**
+
+---
+
+# 但问题来了：一个人一天需要生成多少视频？
+
+这就是 coding 开始反超的地方。
+
+一个普通程序员工作的时候：
+
+> 8 小时都可能和代码有关。
+
+而 Claude Code 用户现在平均已经：
+
+> **每周使用约 20 小时。** ([Anthropic][3])
+
+更极端的是 OpenAI 自己的 Codex 用户。
+
+到了 2026 年 6 月，OpenAI 内部最重度的 1% DAU：
+
+> **一天可以产生超过 60 小时的 Codex agent turns。**
+
+为什么超过 24 小时？
+
+因为同时跑很多 agent。([OpenAI][4])
+
+这就是 coding 非常恐怖的一点：
+
+### 人一天只有 24 小时。
+
+但：
+
+### Agent 一天可以干 60、100、200 个 agent-hour。
+
+而视频生成目前大部分还是：
+
+> 人想要一个视频 → 点生成 → 看结果 → 不满意 → 再生成。
+
+人的注意力仍然是瓶颈。
+
+Coding agent 已经开始脱离这个限制。
+
+---
+
+# 用一个极端简单的例子就明白了
+
+假设有两个人：
+
+### A：重度 AI 视频创作者
+
+每天生成：
+
+**50 个 × 10 秒 Veo 视频**
+
+那么他的生成量：
+
+$$
+500\ 视频秒/day
+$$
+
+按 Veo 3.1 Standard API 价格：
+
+$$
+500\times\$0.4
+=
+\boxed{\$200/day}
+$$
+
+这是非常重的 AI 用户了。
+
+---
+
+### B：重度 Agent 程序员
+
+按照你刚才给我们的假设：
+
+**50M tokens/day**
+
+甚至未来一个人同时管理：
+
+* 5 个 coding agents
+* 每个运行几个小时
+* 写代码
+* 测试
+* debug
+* code review
+* 查资料
+
+他的使用完全可以：
+
+$$
+50M\rightarrow100M\rightarrow200M\ token/day
+$$
+
+而且最可怕的是：
+
+**他不需要一直盯着这些 agent。**
+
+---
+
+# 所以视频和 coding 的区别其实是这个
+
+|            | 视频生成     | Coding Agent |
+| ---------- | -------- | ------------ |
+| 单次计算量      | **极高**   | 中高           |
+| 单用户每次成本    | **很高**   | 相对低          |
+| 使用频率       | 中低       | **极高**       |
+| 每天持续使用     | 通常分钟级    | **小时级**      |
+| 能否多任务并行    | 可以，但需求有限 | **天然适合**     |
+| 人离开以后继续工作  | 有限       | **非常适合**     |
+| ROI        | 内容价值     | **直接替代昂贵人工** |
+| 潜在用户       | 内容创作者    | **所有知识工作者**  |
+| Agent 自我循环 | 弱        | **极强**       |
+
+所以目前：
+
+> **Video = 每一枪炮弹特别贵。**
+
+而：
+
+> **Agent = 机关枪一直打，而且以后可以同时架几十挺。**
+
+这才是核心区别。
+
+---
+
+# 还有一个更深层的问题：经济价值
+
+这是我认为 **coding 目前比视频更可怕** 的真正原因。
+
+假设一个美国程序员一年总雇佣成本：
+
+$$
+\$150K\sim\$250K
+$$
+
+一天人工成本轻松：
+
+$$
+\$600\sim\$1000+
+$$
+
+如果公司发现：
+
+> 花 $100/day 的 AI compute
+> 能让这个程序员多产出 $500/day 的工作
+
+那公司非常愿意付。
+
+甚至：
+
+> $200/day
+> $500/day
+
+都可能愿意。
+
+因为它替代的是**昂贵的人类劳动**。
+
+---
+
+视频就稍微不同。
+
+假设你只是：
+
+> 给 Instagram 做一个短视频。
+
+原本可能只值：
+
+**$20、$50、$100。**
+
+那么你不可能为了生成它烧：
+
+**$500 AI compute。**
+
+所以视频的计算需求受到一个很强的约束：
+
+$$
+\boxed{生成内容的经济价值}
+$$
+
+而 coding agent 的产出是：
+
+> 软件、产品、自动化、数据分析、研究、运营……
+
+它对应的是**白领工资池**。
+
+这个市场太大了。
+
+---
+
+# 不过，这并不意味着视频永远比不过 Agent
+
+这里我要特别纠正一个容易形成的误解。
+
+**如果 AI 视频从“创作工具”变成“内容本身”，情况会完全不同。**
+
+今天我们想的是：
+
+> 100 万创作者用 AI 做视频。
+
+这个市场算力可能确实比 coding 小。
+
+但未来如果变成：
+
+> 10 亿人每天观看 AI 实时生成的视频。
+
+那就是另一回事了。
+
+比如未来 TikTok 不是从数据库里推荐现有视频，而是：
+
+> **针对你本人现场生成视频。**
+
+假设：
+
+10 亿用户
+× 每天看 30 分钟
+× AI 实时生成
+
+那就是：
+
+$$
+1B\times1800s
+=
+1.8\times10^{12}
+$$
+
+**每天 1.8 万亿秒 AI 视频。**
+
+这会是一个荒谬巨大的计算市场。
+
+甚至可能远远超过 coding。
+
+---
+
+# 游戏更加恐怖
+
+再进一步：
+
+**实时生成的游戏世界 / world model。**
+
+这时候 AI 不再只是生成：
+
+> 10 秒 MP4。
+
+而是：
+
+$$
+30\sim60 FPS
+$$
+
+持续几个小时生成：
+
+* 世界
+* NPC
+* 物理
+* 对话
+* 图像
+* 声音
+
+这实际上可能成为比 coding agent 更恐怖的 inference workload。
+
+所以我会把 AI inference 长期需求分成这么几级：
+
+### 第一波
+
+**Chat**
+
+人问一句，AI答一句。
+
+↓ 算力需求有限。
+
+### 第二波
+
+**Coding / Agent**
+
+AI自己连续工作几个小时。
+
+↓
+
+**现在正在爆发。**
+
+### 第三波
+
+**AI Video / AI Content**
+
+AI不是辅助人生产内容，而是**直接生成每个人消费的内容**。
+
+↓
+
+潜在规模可能比 coding 大。
+
+### 第四波
+
+**实时 World Model / Robotics**
+
+AI持续感知、推理、生成环境。
+
+↓
+
+这可能才是真正最终的超级算力需求。
+
+---
+
+## 所以现在回到我们研究数据中心的问题
+
+我现在不会说：
+
+> “视频生成比 coding 不重要。”
+
+更准确的说法应该是：
+
+> **视频生成的 Compute / Request 极高；Coding Agent 的 Requests/User 和 Agent-hours/User 极高。**
+
+所以 **2026 年这个阶段**，coding/agent 更容易形成稳定的、巨大的持续 inference workload。
+
+但视频最大的可选性在于：
+
+$$
+\boxed{
+AI生成视频是否从“生产工具”
+\rightarrow
+“消费内容本身”
+}
+$$
+
+一旦跨过去，**视频很可能成为几大 AI inference 需求之一，甚至比 coding 更大。**
+
+而且我们其实可以和刚才算 coding 一样，下一步直接算：
+
+**如果全球每天生成 10 亿 / 100 亿 / 1000 亿“视频秒”，分别需要多少 GW。**
+
+这个数字会非常有意思，因为 Veo 已经给了我们非常好用的 **$/video-second** 现实锚点，我们可以反推视频生成到底可能吃掉多少个 GW。
+
+[1]: https://ai.google.dev/gemini-api/docs/pricing?authuser=3&utm_source=chatgpt.com "Gemini Developer API pricing  |  Gemini API  |  Google AI for Developers"
+[2]: https://research.nvidia.com/index.php/publication/2026-07_galaxydit-efficient-video-generation-guidance-alignment-and-adaptive-proxy?utm_source=chatgpt.com "GalaxyDiT: Efficient Video Generation with Guidance Alignment and Adaptive Proxy in Diffusion Transformers | Research"
+[3]: https://www.anthropic.com/research/claude-code-expertise?utm_source=chatgpt.com "How Claude Code is used in practice \ Anthropic"
+[4]: https://openai.com/index/how-agents-are-transforming-work/?utm_source=chatgpt.com "How agents are transforming work | OpenAI"

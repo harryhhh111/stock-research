@@ -1,0 +1,19 @@
+{
+  "as_of": "2026-09-17 proposed offering; not final pricing",
+  "shares_date": "2026-07-31",
+  "class_a": 458871690,
+  "class_b": 92664912,
+  "atm_shares": 35000000,
+  "reference_price": 83.35,
+  "debt_b": 35.6,
+  "base_convert_b": 3.0,
+  "option_b": 0.5,
+  "coupon_low": 0.02375,
+  "coupon_high": 0.02875,
+  "sources": {
+    "shares": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+    "atm": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv-20260917.htm",
+    "terms_and_debt": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000429/crwv2026convertpresentat.htm",
+    "price_2026_09_16_close_media": "https://www.marketscreener.com/news/coreweave-moves-to-raise-billions-via-convertible-debt-share-offerings-ce785bd3dd8ffe2d"
+  }
+}

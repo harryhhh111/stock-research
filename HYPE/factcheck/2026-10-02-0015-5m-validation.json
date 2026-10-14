@@ -1,0 +1,441 @@
+{
+  "downloaded_at_utc": "2026-10-01T16:17:33.473532+00:00",
+  "start": "2026-07-02T00:00:00+08:00",
+  "end_exclusive": "2026-10-02T00:15:00+08:00",
+  "assets": [
+    {
+      "symbol": "HYPEUSDT",
+      "count": 26499,
+      "expected_count": 26499,
+      "missing_count": 0,
+      "missing_open_times_ms": [],
+      "invalid_count": 0,
+      "first_open_utc": "2026-07-01T16:00:00+00:00",
+      "last_open_utc": "2026-10-01T16:10:00+00:00",
+      "first_open_price": 64.612,
+      "last_close_price": 87.641,
+      "period_return": 0.3564198600879096,
+      "high": 98.057,
+      "low": 51.107,
+      "output": "data/2026-10-02-0015-HYPEUSDT-5m.json",
+      "raw_sources": [
+        {
+          "file": "data/2026-10-02-0015-5m-raw/HYPEUSDT/1782921600000.json",
+          "params": {
+            "symbol": "HYPEUSDT",
+            "interval": "5m",
+            "startTime": 1782921600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "50c5017eba8cc4174ea7de80c467f0b5aa2657074a8a6cdd95457f5fba56b551"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/HYPEUSDT/1783371600000.json",
+          "params": {
+            "symbol": "HYPEUSDT",
+            "interval": "5m",
+            "startTime": 1783371600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "ded3c83742bb86850fb0882b5201c38df2ccefc2c5a3979b014d09bb38394119"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/HYPEUSDT/1783821600000.json",
+          "params": {
+            "symbol": "HYPEUSDT",
+            "interval": "5m",
+            "startTime": 1783821600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "4eef0fd4161a1549e6f94ff79acb641214487ef05e7e8f71b2188a81c376333b"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/HYPEUSDT/1784271600000.json",
+          "params": {
+            "symbol": "HYPEUSDT",
+            "interval": "5m",
+            "startTime": 1784271600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "f21d5b94acd74111d3c9cb16c043b9e513f7fccdcc29abbfe85917362aa26345"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/HYPEUSDT/1784721600000.json",
+          "params": {
+            "symbol": "HYPEUSDT",
+            "interval": "5m",
+            "startTime": 1784721600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "be572efacae34f1351aa753dd8e5f10f286d2182119d18a34fd37af3dd61aaf0"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/HYPEUSDT/1785171600000.json",
+          "params": {
+            "symbol": "HYPEUSDT",
+            "interval": "5m",
+            "startTime": 1785171600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "269de0b36af5c458b4566357810dc1f5969d226d688fc1fdacda764149715af1"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/HYPEUSDT/1785621600000.json",
+          "params": {
+            "symbol": "HYPEUSDT",
+            "interval": "5m",
+            "startTime": 1785621600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "dd40fc02d7f07f5063ebcd87d7feb8f098a7ceabac866d2028e4a2f090518ea2"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/HYPEUSDT/1786071600000.json",
+          "params": {
+            "symbol": "HYPEUSDT",
+            "interval": "5m",
+            "startTime": 1786071600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "62f88f6a490bad29a886cbf2642cb8482f45b74f7a5c9000b85c34f7dd874278"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/HYPEUSDT/1786521600000.json",
+          "params": {
+            "symbol": "HYPEUSDT",
+            "interval": "5m",
+            "startTime": 1786521600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "a8e7214a9aebbd6f5025c22fb8274478a7d49a9ad4ef6ac241223f2c22d1f07d"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/HYPEUSDT/1786971600000.json",
+          "params": {
+            "symbol": "HYPEUSDT",
+            "interval": "5m",
+            "startTime": 1786971600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "f960f34ffc3e1b1ada73625b8e1d668c4984c43bf197b572a3b8ac386adc4848"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/HYPEUSDT/1787421600000.json",
+          "params": {
+            "symbol": "HYPEUSDT",
+            "interval": "5m",
+            "startTime": 1787421600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "d284fced46cafd07fb8b29da4f3ee987b42f25d997be441886f84dff7d469d2b"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/HYPEUSDT/1787871600000.json",
+          "params": {
+            "symbol": "HYPEUSDT",
+            "interval": "5m",
+            "startTime": 1787871600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "8e59637c8d2e9e7bb4cd5287808ad42fd4457efd3281b796970539f32be0929e"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/HYPEUSDT/1788321600000.json",
+          "params": {
+            "symbol": "HYPEUSDT",
+            "interval": "5m",
+            "startTime": 1788321600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "06aebdc8122a3a200d4ef52b4deef792835294f1a94037484233d47091295593"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/HYPEUSDT/1788771600000.json",
+          "params": {
+            "symbol": "HYPEUSDT",
+            "interval": "5m",
+            "startTime": 1788771600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "7bc0e424846edfdf7d9fdcc0aafb6776aca4d6c0da9b076e65547702d25bbf87"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/HYPEUSDT/1789221600000.json",
+          "params": {
+            "symbol": "HYPEUSDT",
+            "interval": "5m",
+            "startTime": 1789221600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "2fe1497e90895e8b6ff192143d9220f3946e9b4c23d37f7a269c9ea216402545"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/HYPEUSDT/1789671600000.json",
+          "params": {
+            "symbol": "HYPEUSDT",
+            "interval": "5m",
+            "startTime": 1789671600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "a7c455e741c0071c7b77e782d9a00730c53b395b83b410b5e26fc0b669d8e644"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/HYPEUSDT/1790121600000.json",
+          "params": {
+            "symbol": "HYPEUSDT",
+            "interval": "5m",
+            "startTime": 1790121600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "329e6b4fd2e41fe74b333a3f6ad828bad3943654e09aff243b839f417fb895d7"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/HYPEUSDT/1790571600000.json",
+          "params": {
+            "symbol": "HYPEUSDT",
+            "interval": "5m",
+            "startTime": 1790571600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "7e71f9fc629f74aa07643eeccd41027b9fb4852094668201967e3ad6daf9bae4"
+        }
+      ],
+      "status": "✅ 完整连续、无重复，OHLC边界通过"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "count": 26499,
+      "expected_count": 26499,
+      "missing_count": 0,
+      "missing_open_times_ms": [],
+      "invalid_count": 0,
+      "first_open_utc": "2026-07-01T16:00:00+00:00",
+      "last_open_utc": "2026-10-01T16:10:00+00:00",
+      "first_open_price": 60118.6,
+      "last_close_price": 84277.9,
+      "period_return": 0.4018606554377513,
+      "high": 87385.1,
+      "low": 59555.0,
+      "output": "data/2026-10-02-0015-BTCUSDT-5m.json",
+      "raw_sources": [
+        {
+          "file": "data/2026-10-02-0015-5m-raw/BTCUSDT/1782921600000.json",
+          "params": {
+            "symbol": "BTCUSDT",
+            "interval": "5m",
+            "startTime": 1782921600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "a40e9ab488a3472ecd2521baa3b70e72a4190c0d25c6b4c9931a153cf216fd51"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/BTCUSDT/1783371600000.json",
+          "params": {
+            "symbol": "BTCUSDT",
+            "interval": "5m",
+            "startTime": 1783371600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "8a86c5363d0316069cd3779e5b8736211f97cce61559be72919cd8508658460f"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/BTCUSDT/1783821600000.json",
+          "params": {
+            "symbol": "BTCUSDT",
+            "interval": "5m",
+            "startTime": 1783821600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "1fb72a034288d20e82f73371b5455908bfe2885b2e4444091e899fd4819d29bd"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/BTCUSDT/1784271600000.json",
+          "params": {
+            "symbol": "BTCUSDT",
+            "interval": "5m",
+            "startTime": 1784271600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "40ad361dcbf8e065c015f704697d6a67d461ab98b554e5866e51b29a47472ef9"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/BTCUSDT/1784721600000.json",
+          "params": {
+            "symbol": "BTCUSDT",
+            "interval": "5m",
+            "startTime": 1784721600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "5f5be6af0dac74d37a53f61f742f3ccd491699577e3e0b240806b83c18a1963d"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/BTCUSDT/1785171600000.json",
+          "params": {
+            "symbol": "BTCUSDT",
+            "interval": "5m",
+            "startTime": 1785171600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "0398871e8c1b5927a5e86508d525d05832140d3d95ab59f0304af22f61bc3f55"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/BTCUSDT/1785621600000.json",
+          "params": {
+            "symbol": "BTCUSDT",
+            "interval": "5m",
+            "startTime": 1785621600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "32b4f06f103873a50e69bb701c442a179e285509991997bccad69204a0b8e351"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/BTCUSDT/1786071600000.json",
+          "params": {
+            "symbol": "BTCUSDT",
+            "interval": "5m",
+            "startTime": 1786071600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "306ca373f4694f0d900869e39a77c9dd48de98b4df8ff991e77bda1fa789a7d3"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/BTCUSDT/1786521600000.json",
+          "params": {
+            "symbol": "BTCUSDT",
+            "interval": "5m",
+            "startTime": 1786521600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "05c3cceaa7f336c769ee6de128f6f6f352145fc801f3fad5bf6e73cb28d58956"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/BTCUSDT/1786971600000.json",
+          "params": {
+            "symbol": "BTCUSDT",
+            "interval": "5m",
+            "startTime": 1786971600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "d5f593fd6908c0905e8de3f4bb79cd9aa5903d88bef4d813579d20a678d10a32"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/BTCUSDT/1787421600000.json",
+          "params": {
+            "symbol": "BTCUSDT",
+            "interval": "5m",
+            "startTime": 1787421600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "24213f73029509c0f0c08379aa2317336ba30adb9d4ce0f1932c062f8fbb0d52"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/BTCUSDT/1787871600000.json",
+          "params": {
+            "symbol": "BTCUSDT",
+            "interval": "5m",
+            "startTime": 1787871600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "57406cb43f6d74791cf74b084d07dbdfc249b7c16f586be00fdf484cad41ffc9"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/BTCUSDT/1788321600000.json",
+          "params": {
+            "symbol": "BTCUSDT",
+            "interval": "5m",
+            "startTime": 1788321600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "3c529657a78ba7e2015fd932611ff4bb11b8257f26fa3cd772d5ac13e539c4c5"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/BTCUSDT/1788771600000.json",
+          "params": {
+            "symbol": "BTCUSDT",
+            "interval": "5m",
+            "startTime": 1788771600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "7a1454ab106353415c3cdbabab4bd5d5dbd0071efea192c8ed4a6d7470a6dff2"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/BTCUSDT/1789221600000.json",
+          "params": {
+            "symbol": "BTCUSDT",
+            "interval": "5m",
+            "startTime": 1789221600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "64a7e817c13e625c1437488eb9963b9807097874482ee36aacec5f62ee3da0df"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/BTCUSDT/1789671600000.json",
+          "params": {
+            "symbol": "BTCUSDT",
+            "interval": "5m",
+            "startTime": 1789671600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "e47d5f657854e38a8595fb316631c672c785ca8e1f86b1faffcb31bb636edae0"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/BTCUSDT/1790121600000.json",
+          "params": {
+            "symbol": "BTCUSDT",
+            "interval": "5m",
+            "startTime": 1790121600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "6e9185d1dfe31b58ac9a3fdf43be52e6413d9918099919c0aed69d19326714c2"
+        },
+        {
+          "file": "data/2026-10-02-0015-5m-raw/BTCUSDT/1790571600000.json",
+          "params": {
+            "symbol": "BTCUSDT",
+            "interval": "5m",
+            "startTime": 1790571600000,
+            "endTime": 1790871299999,
+            "limit": 1500
+          },
+          "sha256": "87a64943c87b75ae01b1c6f742298dbe0a6452b0881dfc6b66b2f0c53396eb90"
+        }
+      ],
+      "status": "✅ 完整连续、无重复，OHLC边界通过"
+    }
+  ]
+}

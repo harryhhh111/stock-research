@@ -1,0 +1,39 @@
+# 入口建立日期：2026-10-14；市场字段更新：2026-10-15；不表示正文数据已更新或完成事实核验。
+schema_version: 2
+entity_id: company:oracle
+kind: company
+name: Oracle
+aliases:
+- ORCL
+securities:
+- market: US
+  mic: XNYS
+  symbol: ORCL
+primary_document: ORCL.md
+documents:
+- path: 股价复盘-2024-2026.md
+  role: review
+- path: 电力供应链跟踪表.md
+  role: supplement
+related_entities:
+- entity_id: topic:nand
+  relation: related
+sections:
+  thesis:
+    path: ORCL.md
+    heading_path:
+    - Oracle（ORCL）研究笔记
+    - 10. 我的看法
+  open_questions:
+    path: ORCL.md
+    heading_path:
+    - Oracle（ORCL）研究笔记
+    - 12. 后续研究方向
+  metrics: null
+  risks:
+    path: ORCL.md
+    heading_path:
+    - Oracle（ORCL）研究笔记
+    - 4. 盈利与负债
+    - 4.3 为什么评级只有 Baa2/BBB（离垃圾级两档）
+  research_metadata: null

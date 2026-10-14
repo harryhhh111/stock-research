@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-05",
+  "units": "USD_100m unless ratios",
+  "note": "Self-selected scenarios, not company guidance or forecasts",
+  "equity_values": [
+    3300,
+    4800,
+    5500,
+    6300
+  ],
+  "annual_profit_scenarios": [
+    200,
+    300,
+    420,
+    500
+  ],
+  "required_cash_yields": [
+    0.04,
+    0.05,
+    0.06
+  ],
+  "cash_conversion": [
+    0.5,
+    0.75,
+    1.0
+  ],
+  "fully_drawn_loan_costs": [
+    0.04,
+    0.05,
+    0.06
+  ],
+  "h1_profit_decline_bounds": [
+    0,
+    0.1
+  ],
+  "cfo_scenarios": [
+    600,
+    800,
+    1000
+  ],
+  "capex_scenarios": [
+    300,
+    500,
+    700
+  ],
+  "lease_principal_not_in_capex": 50,
+  "buyback": 50
+}

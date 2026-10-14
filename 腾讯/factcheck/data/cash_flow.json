@@ -1,0 +1,61 @@
+{
+  "unit": "RMB million",
+  "date": "2026-10-08",
+  "sources": [
+    "2024-annual-report-mirror.pdf cash flow",
+    "2025-annual-report-mirror.pdf cash flow",
+    "2026-interim-report.pdf cash flow",
+    "capital_allocation.csv FCF;2023 company call rounded secondary transcript",
+    "2025H1 FCF=Q1 47100+Q2 43000 company results"
+  ],
+  "rows": [
+    {
+      "period": "2023",
+      "revenue": 609015,
+      "ocf": 221962,
+      "icf": -125161,
+      "fin": -82573,
+      "fcf": 167000,
+      "prior_ocf": null,
+      "prior_fcf": null,
+      "cash": 172320,
+      "netcash": null
+    },
+    {
+      "period": "2024",
+      "revenue": 660257,
+      "ocf": 258521,
+      "icf": -122187,
+      "fin": -176494,
+      "fcf": 155300,
+      "prior_ocf": 221962,
+      "prior_fcf": 167000,
+      "cash": 132519,
+      "netcash": 76798
+    },
+    {
+      "period": "2025",
+      "revenue": 751766,
+      "ocf": 303052,
+      "icf": -205732,
+      "fin": -87155,
+      "fcf": 182600,
+      "prior_ocf": 258521,
+      "prior_fcf": 155300,
+      "cash": 141041,
+      "netcash": 107145
+    },
+    {
+      "period": "2026H1",
+      "revenue": 401243,
+      "ocf": 154061,
+      "icf": -74724,
+      "fin": -9469,
+      "fcf": 42900,
+      "prior_ocf": 151265,
+      "prior_fcf": 90100,
+      "cash": 206930,
+      "netcash": 58191
+    }
+  ]
+}

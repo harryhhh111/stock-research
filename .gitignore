@@ -48,6 +48,3 @@ venv/
 # Large derived curves can be regenerated; retain compact results and ledgers.
 /HYPE/factcheck/*-pair净值曲线.json
 
-# Stray bulk downloads at the workspace root.
-/HYPEUSDT-aggTrades-*.csv
-/HYPEUSDT-aggTrades-*.zip

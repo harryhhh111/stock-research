@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-10",
+  "mm_total": 0.015,
+  "curve_worst_pct": -60.69099981809758,
+  "curve_end_pct": 90.78335613352813,
+  "L_star": 1.570080549616138,
+  "rows": [
+    {
+      "leverage_per_leg": 0.3,
+      "end_eq": 1.2723500684005844,
+      "end_return_pct": 27.23500684005844,
+      "max_dd_pct": -20.91816069925794,
+      "min_eq_pct": -18.207299945429266,
+      "liquidation": false
+    },
+    {
+      "leverage_per_leg": 0.5,
+      "end_eq": 1.4539167806676407,
+      "end_return_pct": 45.39167806676407,
+      "max_dd_pct": -34.863601165429905,
+      "min_eq_pct": -30.34549990904879,
+      "liquidation": false
+    },
+    {
+      "leverage_per_leg": 0.7,
+      "end_eq": 1.6354834929346969,
+      "end_return_pct": 63.548349293469684,
+      "max_dd_pct": -48.80904163160184,
+      "min_eq_pct": -42.4836998726683,
+      "liquidation": false
+    },
+    {
+      "leverage_per_leg": 1.0,
+      "end_eq": 1.9078335613352815,
+      "end_return_pct": 90.78335613352814,
+      "max_dd_pct": -69.72720233085978,
+      "min_eq_pct": -60.69099981809758,
+      "liquidation": false
+    },
+    {
+      "leverage_per_leg": 1.2,
+      "end_eq": 2.0894002736023376,
+      "end_return_pct": 108.94002736023376,
+      "max_dd_pct": -83.67264279703173,
+      "min_eq_pct": -72.8291997817171,
+      "liquidation": false
+    },
+    {
+      "leverage_per_leg": 1.4,
+      "end_eq": 2.2709669858693937,
+      "end_return_pct": 127.09669858693937,
+      "max_dd_pct": -97.61808326320369,
+      "min_eq_pct": -84.9673997453366,
+      "liquidation": false
+    },
+    {
+      "leverage_per_leg": 2.0,
+      "end_eq": 2.815667122670563,
+      "end_return_pct": 181.5667122670563,
+      "max_dd_pct": -139.45440466171956,
+      "min_eq_pct": -121.38199963619516,
+      "liquidation": true
+    }
+  ]
+}

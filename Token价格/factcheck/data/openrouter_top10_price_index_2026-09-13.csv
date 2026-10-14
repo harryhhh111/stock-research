@@ -1,0 +1,11 @@
+rank,ranked_model_permaslug,history_model_id,model_name,token_volume_30d_t,first_price_date,last_price_date,first_input_usd_per_m,first_output_usd_per_m,last_input_usd_per_m,last_output_usd_per_m,input_change_pct,output_change_pct,index_eligible,notes
+1,openai/gpt-5.6-luna-20260709,openai/gpt-5.6-luna,GPT-5.6 Luna,45.1,2026-07-10,2026-09-13,1,6,0.2,1.2,-80,-80,yes,Top-10 usage rank from OpenRouter data via Tokenmaxxing; history is model-level advertised price.
+2,deepseek/deepseek-v4-flash-20260731,deepseek/deepseek-v4-flash-0731,DeepSeek V4 Flash 0731,50.7,2026-07-31,2026-09-13,0.14,0.28,0.04,0.08,-71.428571,-71.428571,yes,Fourteen price points in 44 days; routing and provider changes can affect this advertised price.
+3,z-ai/glm-5.3-flash-20260826,z-ai/glm-5.3-flash,GLM 5.3 Flash,30.4,2026-08-27,2026-09-13,0.075,0.25,0.075,0.25,0,0,yes,Short history with intraday temporary doubling and reversion.
+4,tencent/hy4-preview-20260827,tencent/hy4-preview,HY4 Preview,34.6,2026-08-28,2026-09-13,0.834,2.501,0.834,2.501,0,0,yes,Only one observed price point.
+5,deepseek/deepseek-v4.1-flash-20260910,deepseek/deepseek-v4.1-flash,DeepSeek V4.1 Flash,4.9,2026-09-10,2026-09-13,0.15,0.6,0.15,0.6,0,0,yes,Only three days of history; temporary intraday doubling reverted.
+6,xiaomi/mimo-v2.5-20260422,xiaomi/mimo-v2.5,MiMo V2.5,30.2,2026-04-23,2026-09-13,0.4,2,0.14,0.28,-65,-86,yes,Current price effective from 2026-07-15.
+7,deepseek/deepseek-v4-flash-20260423,deepseek/deepseek-v4-flash,DeepSeek V4 Flash 0423,21.5,2026-04-24,2026-09-13,0.14,0.28,0.04816,0.09632,-65.6,-65.6,yes,Many price changes; model-level advertised price is not a provider-locked price.
+8,nvidia/nemotron-3-ultra-550b-a55b-20260604:free,nvidia/nemotron-3-ultra-550b-a55b:free,Nemotron 3 Ultra 550B A55B free,18.3,2026-06-05,2026-09-13,0,0,0,0,,,no,Free price means percent change is undefined and this row is excluded from percentage index denominator.
+9,tencent/hy3-20260706,tencent/hy3,HY3,24.8,2026-07-07,2026-09-13,0.14,0.58,0.132,0.528,-5.714286,-8.965517,yes,The first day contained multiple observed prices; uses first observed point and last available point.
+10,z-ai/glm-5.3-20260816,z-ai/glm-5.3,GLM 5.3,7.4,2026-08-19,2026-09-13,1.4,4.4,1.092,3.432,-22,-22,yes,Two observed price points.

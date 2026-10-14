@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-08",
+  "pair": "long HYPE / short BTC",
+  "standing": {
+    "total_pct": 94.19730123094197,
+    "up_contrib_pct": 2997.334248263999,
+    "down_contrib_pct": -2917.552771367849,
+    "flat_contrib_pct": 14.415824334791594,
+    "n_bars": 525599,
+    "n_up": 257881,
+    "n_down": 256460,
+    "n_flat": 11258,
+    "pnl_up_bar_mean_pct": 0.011622935572081694,
+    "pnl_down_bar_mean_pct": -0.011376248816064295,
+    "btc_up_move_total_pct": 10498.225455435273,
+    "btc_down_move_total_pct": -10534.457388499024,
+    "event_split": {
+      "up_event": {
+        "n": 2062,
+        "ratio": 1.1633191082725625,
+        "pair_contrib_pct": 122.08966472968005,
+        "btc_move_sum_pct": 747.5528492717774
+      },
+      "down_event": {
+        "n": 2001,
+        "ratio": 1.0752940971820264,
+        "pair_contrib_pct": -52.84580514967989,
+        "btc_move_sum_pct": -701.8585404101866
+      },
+      "nonevent_up_ratio": 1.294876538231511,
+      "nonevent_down_ratio": 1.2913478939268412,
+      "nonevent_net_pct": 10.53761731615026,
+      "event_net_pct": 69.24385958000016
+    }
+  },
+  "event_driven": {
+    "events": 389,
+    "hold_h": 4,
+    "beta": 1.2205205284905054,
+    "by_horizon": {
+      "3": {
+        "equal_mean": 0.0008997932876683902,
+        "equal_median": 0.0006906236065262752,
+        "equal_win": 0.5526992287917738,
+        "beta_mean": 0.0008655528746621346,
+        "beta_median": 0.00030601989355819384,
+        "beta_win": 0.5244215938303342
+      },
+      "12": {
+        "equal_mean": 0.0022931263185192695,
+        "equal_median": 0.00039651491627486213,
+        "equal_win": 0.519280205655527,
+        "beta_mean": 0.0023577149947190115,
+        "beta_median": 0.0005993399592537801,
+        "beta_win": 0.532133676092545
+      },
+      "48": {
+        "equal_mean": 0.003135683773228087,
+        "equal_median": 0.0005317458080254965,
+        "equal_win": 0.5115681233933161,
+        "beta_mean": 0.0031942932732428233,
+        "beta_median": -0.00012869994643118247,
+        "beta_win": 0.4961439588688946
+      }
+    },
+    "equal": {
+      "estimate": [
+        0.003135683773228087
+      ],
+      "ci95_lo": [
+        0.0006476191331895692
+      ],
+      "ci95_hi": [
+        0.005694305167370878
+      ]
+    },
+    "equal_median": 0.0005317458080254965,
+    "equal_win": 0.5115681233933161,
+    "beta_hedged": {
+      "estimate": [
+        0.0031942932732428233
+      ],
+      "ci95_lo": [
+        0.0006906601571228554
+      ],
+      "ci95_hi": [
+        0.005736121602961022
+      ]
+    },
+    "beta_hedged_median": -0.00012869994643118247,
+    "beta_hedged_win": 0.4961439588688946,
+    "cost_scenarios": {
+      "rt_0.1pct": {
+        "equal_net_per_event_pct": 0.21356837732280867,
+        "beta_hedged_net_per_event_pct": 0.21942932732428233,
+        "naive_annual_net_pct": 85.35800832914583
+      },
+      "rt_0.2pct": {
+        "equal_net_per_event_pct": 0.11356837732280868,
+        "beta_hedged_net_per_event_pct": 0.11942932732428233,
+        "naive_annual_net_pct": 46.45800832914582
+      },
+      "rt_0.3pct": {
+        "equal_net_per_event_pct": 0.013568377322808675,
+        "beta_hedged_net_per_event_pct": 0.019429327324282323,
+        "naive_annual_net_pct": 7.5580083291458235
+      }
+    }
+  }
+}

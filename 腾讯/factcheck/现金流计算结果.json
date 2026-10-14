@@ -1,0 +1,34 @@
+[
+  {
+    "period": "2023",
+    "ocf_margin": 36.446064546850245,
+    "fcf_margin": 27.42132788190767,
+    "cash_change_before_fx": 14228,
+    "ocf_yoy": null,
+    "fcf_yoy": null
+  },
+  {
+    "period": "2024",
+    "ocf_margin": 39.15460192016139,
+    "fcf_margin": 23.52114403936649,
+    "cash_change_before_fx": -40160,
+    "ocf_yoy": 16.470837350537472,
+    "fcf_yoy": -7.005988023952092
+  },
+  {
+    "period": "2025",
+    "ocf_margin": 40.312011982451985,
+    "fcf_margin": 24.289473054115245,
+    "cash_change_before_fx": 10165,
+    "ocf_yoy": 17.225293109650664,
+    "fcf_yoy": 17.57887958789439
+  },
+  {
+    "period": "2026H1",
+    "ocf_margin": 38.39593463312755,
+    "fcf_margin": 10.691775308229676,
+    "cash_change_before_fx": 69868,
+    "ocf_yoy": 1.8484117277625334,
+    "fcf_yoy": -52.38623751387348
+  }
+]

@@ -2,7 +2,7 @@
 
 > 整理/核对日期：2026-08-22（精简重写）；2026-08-25 补 GPU→机柜换算（§1、§9、§10）。
 > 用途：把"新增 1GW IT"映射为可复用的物理 BOM 基准，供产业链收入池测算（HBM/SSD/网络/供电/液冷）调用。
-> 下游：`存储与NAND/NAND需求测算.md`、`行业背景/机柜对比.md`。待办：在此 V1.0 上补**美元价值量**（GPU/HBM/光互连/UPS/液冷各值多少钱 → 映射到 NVIDIA/Micron/SK hynix/Vertiv/Schneider/Eaton/GE Vernova 收入）。
+> 下游：`存储与NAND/NAND需求测算.md`、`../NVDA/机柜与架构/平台与机柜对比.md`。待办：在此 V1.0 上补**美元价值量**（GPU/HBM/光互连/UPS/液冷各值多少钱 → 映射到 NVIDIA/Micron/SK hynix/Vertiv/Schneider/Eaton/GE Vernova 收入）。
 
 **一句话结论**：GB300 时代 1GW ≈ 46 万 GPU ≈ **6,400 个 NVL72 计算柜（含 Support 柜共 ~1.28 万物理机柜）** + 132.5PB HBM + ~2EB 本地 SSD + ~1.6GVA UPS + 0.78GW 液冷；Rubin 完整 Factory 同样 1GW 只剩 ~23 万 GPU ≈ **3,200 计算柜 + ~800 存储柜**，HBM bit 减半但代际升级，配套系统（网络/存储/CMX）占 IT 功率从 ~9% 升至 ~27%。
 

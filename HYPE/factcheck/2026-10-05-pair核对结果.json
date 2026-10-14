@@ -1,0 +1,79 @@
+[
+  {
+    "name": "gated_0bps",
+    "trades": 4,
+    "recomputed_totals": {
+      "price_pnl": 2939.486344422932,
+      "funding_pnl": -1.935959130065758,
+      "cost": 0.0,
+      "net_pnl": 2937.550385292866
+    },
+    "status": "✅ 逐笔现金损益、资金费时点、成本、名义金额及信号延迟核对通过"
+  },
+  {
+    "name": "gated_6bps",
+    "trades": 4,
+    "recomputed_totals": {
+      "price_pnl": 2932.338336434486,
+      "funding_pnl": -1.9752366737147342,
+      "cost": 489.0645753997364,
+      "net_pnl": 2441.2985243610347
+    },
+    "status": "✅ 逐笔现金损益、资金费时点、成本、名义金额及信号延迟核对通过"
+  },
+  {
+    "name": "gated_12bps",
+    "trades": 4,
+    "recomputed_totals": {
+      "price_pnl": 2925.2002332882266,
+      "funding_pnl": -2.0144635683628174,
+      "cost": 976.342862372758,
+      "net_pnl": 1946.842907347106
+    },
+    "status": "✅ 逐笔现金损益、资金费时点、成本、名义金额及信号延迟核对通过"
+  },
+  {
+    "name": "ungated_0bps",
+    "trades": 25,
+    "recomputed_totals": {
+      "price_pnl": -15162.691409806761,
+      "funding_pnl": -254.74347260506528,
+      "cost": 0.0,
+      "net_pnl": -15417.43488241182
+    },
+    "status": "✅ 逐笔现金损益、资金费时点、成本、名义金额及信号延迟核对通过"
+  },
+  {
+    "name": "ungated_6bps",
+    "trades": 25,
+    "recomputed_totals": {
+      "price_pnl": -14989.129768422457,
+      "funding_pnl": -251.4227689634704,
+      "cost": 2705.079221527084,
+      "net_pnl": -17945.63175891301
+    },
+    "status": "✅ 逐笔现金损益、资金费时点、成本、名义金额及信号延迟核对通过"
+  },
+  {
+    "name": "ungated_12bps",
+    "trades": 25,
+    "recomputed_totals": {
+      "price_pnl": -14817.645547900363,
+      "funding_pnl": -248.1571984979022,
+      "cost": 5335.39645372193,
+      "net_pnl": -20401.19920012019
+    },
+    "status": "✅ 逐笔现金损益、资金费时点、成本、名义金额及信号延迟核对通过"
+  },
+  {
+    "name": "gated_return_beta_6bps",
+    "trades": 4,
+    "recomputed_totals": {
+      "price_pnl": 1931.6767654733399,
+      "funding_pnl": 9.696023913836061,
+      "cost": 483.4524329451135,
+      "net_pnl": 1457.9203564420627
+    },
+    "status": "✅ 逐笔现金损益、资金费时点、成本、名义金额及信号延迟核对通过"
+  }
+]

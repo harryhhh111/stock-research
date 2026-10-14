@@ -1,0 +1,40 @@
+# 入口建立日期：2026-10-14；市场字段更新：2026-10-15；不表示正文数据已更新或完成事实核验。
+schema_version: 2
+entity_id: company:nebius
+kind: company
+name: Nebius Group
+aliases:
+- NBIS
+securities:
+- market: US
+  mic: XNAS
+  symbol: NBIS
+primary_document: Nebius深度研究报告.md
+documents:
+- path: 数据中心与电力.md
+  role: supplement
+- path: 参考文献.md
+  role: source
+related_entities:
+- entity_id: topic:nand
+  relation: related
+sections:
+  thesis:
+    path: Nebius深度研究报告.md
+    heading_path:
+    - Executive Summary
+    - 核心结论
+  open_questions: null
+  metrics:
+    path: Nebius深度研究报告.md
+    heading_path:
+    - Executive Summary
+    - 12. 核心矛盾、风险全景与监测框架
+    - 12.3 监测框架
+  risks:
+    path: Nebius深度研究报告.md
+    heading_path:
+    - Executive Summary
+    - 12. 核心矛盾、风险全景与监测框架
+    - 12.2 风险矩阵
+  research_metadata: null

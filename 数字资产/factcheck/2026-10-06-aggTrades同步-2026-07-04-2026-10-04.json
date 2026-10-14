@@ -1,0 +1,33 @@
+{
+  "created_at_utc": "2026-10-06T04:23:10.371442+00:00",
+  "source": "https://data.binance.vision/data/futures/um/daily/aggTrades",
+  "interval": "aggTrades（日归档）",
+  "start_utc": "2026-07-04",
+  "end_exclusive_utc": "2026-10-04",
+  "assets": [
+    {
+      "token": "BTC",
+      "n_records": 104181226,
+      "first_ms": 1783123200664,
+      "last_ms": 1791071999884,
+      "days": 92,
+      "missing_dates": [],
+      "volume_mismatch_dates": [],
+      "npz": "data/normalized/binance-perp/aggtrades/BTC/2026-07-04-2026-10-04.npz",
+      "status": "✅ 完整",
+      "accepted": true
+    },
+    {
+      "token": "HYPE",
+      "n_records": 49010223,
+      "first_ms": 1783123200018,
+      "last_ms": 1791071999198,
+      "days": 92,
+      "missing_dates": [],
+      "volume_mismatch_dates": [],
+      "npz": "data/normalized/binance-perp/aggtrades/HYPE/2026-07-04-2026-10-04.npz",
+      "status": "✅ 完整",
+      "accepted": true
+    }
+  ]
+}

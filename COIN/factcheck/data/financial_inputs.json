@@ -1,0 +1,16 @@
+{
+  "description": "人工转录的官方报表数据，非原始下载响应；金额百万美元，股数百万股。年度为旧分类，2025H1与2026H1为Q2 2026重列口径。",
+  "sources": {
+    "annual": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000015/coin-20251231.htm",
+    "interim": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000088/coin-20260630.htm",
+    "quote": "web finance COIN，2026-10-01 15:03:37 UTC，盘中187.19美元"
+  },
+  "annual_2025": {"revenue":7181.325,"net_income":1260.327,"ebitda":2808.488,"cfo":2426.383,"sbc":839.440},
+  "h1_2025": {"revenue":3531.503,"net_income":1494.508,"ebitda":1441.933,"cfo":1092.772,"sbc":386.889},
+  "h1_2026": {"revenue":2633.050,"net_income":-753.585,"ebitda":511.060,"cfo":380.054,"sbc":486.396},
+  "q2_2026": {"consumer":451.670,"institution":100.073,"other_transaction":47.413,"stablecoin":292.147,"staking":83.342,"interest_finance":66.128,"other_services":113.528,"other_corporate":65.767,"revenue":1220.068},
+  "balance": {"cash":8614.065,"long_debt":5944.232,"short_borrow":539.195,"equity":13079.665},
+  "shares_2025": {"start":253.640,"acquisition":11.639,"awards":7.088,"repurchase":3.039,"withheld":1.492,"end":267.836},
+  "shares_h1_2026": {"start":267.836,"acquisition":0.173,"awards":4.040,"repurchase":7.092,"withheld":1.175,"end":263.782},
+  "price":187.19
+}

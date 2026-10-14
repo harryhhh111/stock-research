@@ -1,0 +1,20 @@
+metric,value,unit,period,source
+parent_equity_2022,721391,RMB_million,2022-12-31,2025-annual-report-mirror.pdf p3
+parent_equity_2023,808591,RMB_million,2023-12-31,2025-annual-report-mirror.pdf p3
+parent_equity_2024,973548,RMB_million,2024-12-31,2025-annual-report-mirror.pdf p3
+parent_equity_2025,1154152,RMB_million,2025-12-31,2025-annual-report-mirror.pdf p3
+parent_profit_2023,115216,RMB_million,2023,2025-annual-report-mirror.pdf p3
+parent_profit_2024,194073,RMB_million,2024,2025-annual-report-mirror.pdf p3
+parent_profit_2025,224842,RMB_million,2025,2025-annual-report-mirror.pdf p3
+adjusted_profit_2023,157688,RMB_million,2023,2025-annual-report-mirror.pdf p3
+adjusted_profit_2024,222703,RMB_million,2024,2025-annual-report-mirror.pdf p3
+adjusted_profit_2025,259626,RMB_million,2025,2025-annual-report-mirror.pdf p3
+fcf_fy2025,182600,RMB_million,2025,2025-AI-presentation-mirror.pdf p29 rounded
+fcf_q1_2025,47100,RMB_million,2025Q1,https://static.www.tencent.com/uploads/2025/05/16/2af4e73edd208df236dadd8b9df89fc4.pdf
+fcf_q2_2025,43000,RMB_million,2025Q2,2026Q2-AI-presentation-mirror.pdf p26 rounded
+fcf_q1_2026,56700,RMB_million,2026Q1,2026Q2-AI-presentation-mirror.pdf p26 rounded
+fcf_q2_2026,-13800,RMB_million,2026Q2,2026Q2-AI-presentation-mirror.pdf p26 rounded
+fcf_q2_ex_prepaid,37600,RMB_million,2026Q2,2026-interim-report.txt company rounded
+market_cap_hkd,3850000,HKD_million,2026-10-06,https://stockanalysis.com/quote/hkg/0700/statistics/ rounded 3.85T
+hkd_cny,0.854435,CNY_per_HKD,2026-10-06,https://www.ofx.com/en-gb/forex-news/historical-exchange-rates/hkd/cny/
+price_hkd,428.2,HKD,2026-10-06,https://stockanalysis.com/quote/hkg/0700/history/

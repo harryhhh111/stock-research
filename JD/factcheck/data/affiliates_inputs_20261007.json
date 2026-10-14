@@ -1,0 +1,32 @@
+{
+  "retrieved": "2026-10-07",
+  "unit": "RMB billion",
+  "classification": "媒体对招股书的二手转述；未取得可逐页读取的2026申请版本原件",
+  "source": "https://news.dayoo.com/finance/202601/28/171077_54921858.htm",
+  "published": "2026-01-28",
+  "JD_Property": {
+    "2023FY": {
+      "revenue": 2.868,
+      "net_profit": -1.829,
+      "adjusted_profit": 0.261,
+      "related_revenue_share": 0.423
+    },
+    "2024FY": {
+      "revenue": 3.417,
+      "net_profit": -1.2,
+      "adjusted_profit": 0.53,
+      "related_revenue_share": 0.406
+    },
+    "2025_9M": {
+      "revenue": 3.002,
+      "net_profit": -0.159,
+      "adjusted_profit": 0.823,
+      "related_revenue_share": 0.334
+    },
+    "AUM_20250930": 121.5,
+    "area_million_sqm": 27.1
+  },
+  "official_filing_index": "https://www1.hkexnews.hk/ncms/json/eds/app_2026_sehk_e.json",
+  "application_first_posting": "2026-01-26",
+  "applicant_id": 108138
+}

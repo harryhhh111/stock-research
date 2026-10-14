@@ -1,0 +1,48 @@
+{
+  "sources": {
+    "2023_release": "https://www.prnewswire.com/apac/news-releases/tencent-announces-2023-annual-and-fourth-quarter-results-302094552.html",
+    "annual_2024": "2024-annual-report-mirror.pdf",
+    "annual_2025": "2025-annual-report-mirror.pdf",
+    "retrieved": "2026-10-08",
+    "unit": "RMB million",
+    "classification": "company disclosed"
+  },
+  "rows": [
+    {
+      "year": 2023,
+      "revenue": 609015,
+      "capex": 23893,
+      "prior_capex": 18014,
+      "ppe_cash": 21008,
+      "intangible_cash": 26042,
+      "land_cash": 357,
+      "buildings_commitment": 4480,
+      "investee_commitment": 9685,
+      "other_assets_commitment": 3444
+    },
+    {
+      "year": 2024,
+      "revenue": 660257,
+      "capex": 76760,
+      "prior_capex": 23893,
+      "ppe_cash": 62927,
+      "intangible_cash": 26394,
+      "land_cash": 6727,
+      "buildings_commitment": 2937,
+      "investee_commitment": 9298,
+      "other_assets_commitment": 2470
+    },
+    {
+      "year": 2025,
+      "revenue": 751766,
+      "capex": 79198,
+      "prior_capex": 76760,
+      "ppe_cash": 87482,
+      "intangible_cash": 25399,
+      "land_cash": -6,
+      "buildings_commitment": 5237,
+      "investee_commitment": 12164,
+      "other_assets_commitment": 3354
+    }
+  ]
+}

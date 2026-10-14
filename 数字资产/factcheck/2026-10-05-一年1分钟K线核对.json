@@ -1,0 +1,36 @@
+{
+  "start_utc": "2025-10-03T18:15:00+00:00",
+  "end_exclusive_utc": "2026-10-03T18:15:00+00:00",
+  "interval": "1m",
+  "source": "binance-perp",
+  "assets": [
+    {
+      "token": "HYPE",
+      "path": "data/normalized/binance-perp/1m/HYPE/1759515300000-1791051300000.json",
+      "sha256": "efe095026fa1d68023d30043d2b2899923a21e3144ae27cc3954fa42c5e339f9",
+      "count": 525600,
+      "raw_pages": 526,
+      "five_mismatch_ohlc": 0,
+      "five_max_rel_dev": {
+        "volume": 3.972542351382823e-16,
+        "quote_volume": 4.1660855026878724e-16
+      },
+      "five_ref_sha256": "aaa113f6b2f4f9f17c95b60760e7a56f0250f7b46e85559da1508dbe17ff041e",
+      "five_cointegrity": "✅ 1分钟完整、与5分钟年度快照逐根一致"
+    },
+    {
+      "token": "BTC",
+      "path": "data/normalized/binance-perp/1m/BTC/1759515300000-1791051300000.json",
+      "sha256": "549bec56cad0d6dcb091b51c7198684c0457ec52564c0adc4167923475dadd9a",
+      "count": 525600,
+      "raw_pages": 526,
+      "five_mismatch_ohlc": 0,
+      "five_max_rel_dev": {
+        "volume": 3.9755507744519797e-16,
+        "quote_volume": 4.013045368163442e-16
+      },
+      "five_ref_sha256": "2b942ca87b17f3d6218a20d416e666638c955014d3df17eb6842828794002802",
+      "five_cointegrity": "✅ 1分钟完整、与5分钟年度快照逐根一致"
+    }
+  ]
+}

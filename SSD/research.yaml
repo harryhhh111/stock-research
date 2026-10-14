@@ -1,0 +1,35 @@
+# 入口建立日期：2026-10-14；市场字段更新：2026-10-15；不表示正文数据已更新或完成事实核验。
+schema_version: 2
+entity_id: topic:nand
+kind: topic
+name: NAND / eSSD
+aliases:
+- NAND
+- eSSD
+securities: []
+primary_document: NAND季度追踪.md
+documents:
+- path: NAND需求测算.md
+  role: supplement
+- path: SSD与CMX需求模型.md
+  role: supplement
+related_entities: []
+sections:
+  thesis:
+    path: NAND季度追踪.md
+    heading_path:
+    - NAND / eSSD 季度追踪表
+    - 四、2026 Q2 回填（2026-08-21 完成，数据为自然季 4–6 月）
+    - 四方对账结论（首次）
+  open_questions:
+    path: NAND季度追踪.md
+    heading_path:
+    - NAND / eSSD 季度追踪表
+    - 五、下一季待填（2026 Q3 财报季，约 2026-10 起）
+  metrics:
+    path: NAND季度追踪.md
+    heading_path:
+    - NAND / eSSD 季度追踪表
+    - 六、特别跟踪项
+  risks: null
+  research_metadata: null

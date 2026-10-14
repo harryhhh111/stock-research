@@ -1,0 +1,29 @@
+{
+  "created_at_utc": "2026-10-01T16:28:47.930882+00:00",
+  "source": "binance-perp",
+  "interval": "5m",
+  "start_utc": "2026-10-01T16:00:00+00:00",
+  "end_exclusive_utc": "2026-10-01T16:15:00+00:00",
+  "assets": [
+    {
+      "token": "ETH",
+      "source": "binance-perp",
+      "output": "data/normalized/binance-perp/5m/ETH/1790870400000-1790871300000.json",
+      "count": 3,
+      "expected_count": 3,
+      "missing_count": 0,
+      "missing_open_times_ms": [],
+      "duplicate_count": 0,
+      "invalid_count": 0,
+      "invalid_open_times_ms": [],
+      "complete": true,
+      "first_open_utc": "2026-10-01T16:00:00+00:00",
+      "last_open_utc": "2026-10-01T16:10:00+00:00",
+      "first_open_price": 2681.18,
+      "last_close_price": 2685.29,
+      "period_return": 0.0015329071528207283,
+      "status": "✅ 完整",
+      "accepted": true
+    }
+  ]
+}

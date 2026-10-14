@@ -1,0 +1,37 @@
+{
+  "unit": "RMB million",
+  "columns": [
+    "revenue",
+    "cost_of_revenue",
+    "operating_profit",
+    "consolidated_net_profit",
+    "attributable_net_profit"
+  ],
+  "rows": {
+    "2023": [
+      1084662,
+      924958,
+      26025,
+      23257,
+      24167
+    ],
+    "2024": [
+      1158819,
+      974951,
+      38736,
+      44660,
+      41359
+    ],
+    "2025": [
+      1309085,
+      1099057,
+      2774,
+      23142,
+      19631
+    ]
+  },
+  "source": "2025 Form 20-F, consolidated results of operations, p139",
+  "source_date": "2026-04-16",
+  "checked": "2026-10-07",
+  "url": "https://ir.jd.com/system/files-encrypted/nasdaq_kms/assets/2026/04/17/11-33-24/Form%2020-F%20for%20JD%20filed%2004162026.pdf"
+}

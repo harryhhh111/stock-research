@@ -1,3 +1,5 @@
+# TSMC（台积电）：Intel Foundry 的核心对标
+
 可以。TSMC（台积电，NYSE: **TSM** / 台湾 2330）这家公司值得从“商业模式 → 护城河 → AI 带来的增长 → 资本开支 → 估值”这个顺序看，因为它和我们前面看的软件公司很不一样：**它的护城河极强，但同时是一个极度资本密集型的制造业。**
 
 ### 先把 TSMC 是做什么的讲清楚
@@ -264,3 +266,11 @@ TSMC 正大量向美国、日本等地扩产。
 
 [1]: https://investor.tsmc.com/chinese/encrypt/files/encrypt_file/reports/2026-07/547d1696765e05ce3adb81c108ce1c8c1682b80c/TSMC%202Q26%20Transcript.pdf "Q2 2026 Taiwan Semiconductor Manufacturing Co Ltd Earnings Call (Chinese, English) on July 16, 2026 / 6:00AM"
 [2]: https://pr.tsmc.com/english/news/3329?utm_source=chatgpt.com "TSMC July 2026 Revenue Report"
+
+## 术语速查
+
+- **PDK（Process Design Kit）**：代工厂提供给芯片设计客户的一套制程设计规则、模型与验证资料。
+- **IP（Intellectual Property）**：可复用的芯片功能模块，例如接口、存储控制器或处理器核心。
+- **Design flow**：从电路设计、验证到交付制造的标准化流程。
+- **Packaging**：封装，即把制造完成的裸芯片与基板、散热和互连组合为可使用的芯片产品。
+- **Manufacturing characteristics**：制造特性，通常包括制程节点、良率、性能、功耗、密度与产能等指标。

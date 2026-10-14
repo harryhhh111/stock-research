@@ -1,0 +1,109 @@
+key,value,unit,period,source,source_date,information_type
+q2_revenue,204785,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+q2_2025_revenue,184504,RMB_million,2025Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+q2_vas,98414,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+q2_marketing,43565,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+q2_fintech,60286,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+q2_other,2520,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+q2_gross_profit,118433,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+q2_capex,52784,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+q2_2025_capex,19107,RMB_million,2025Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+h1_capex,84720,RMB_million,2026H1 or comparative,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_2025_capex,46583,RMB_million,2026H1 or comparative,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+fy2025_capex,79198,RMB_million,2025FY,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+q2_ocf,52700,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+q2_capex_paid,59300,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+q2_content_paid,5000,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+q2_lease_paid,2200,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+q2_fcf,-13800,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+q2_fcf_ex_prepaid,37600,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+q2_op_ex_ai,86100,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+q2_op_adjusted,75600,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+fy2025_eps_ifrs,24.153,RMB_per_share,2025FY,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+fy2025_eps_adjusted,27.877,RMB_per_share,2025FY,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+h1_2025_eps_ifrs,11.126,RMB_per_share,2026H1 or comparative,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_2025_eps_adjusted,13.377,RMB_per_share,2026H1 or comparative,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_eps_ifrs,12.417,RMB_per_share,2026H1 or comparative,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_eps_adjusted,14.799,RMB_per_share,2026H1 or comparative,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+rmb_counter_price,359.6,RMB_per_share,2026-10-02,https://www.investing.com/equities/tencent-holdings-hk-historical-data?cid=1203671,2026-10-02,market_data_vendor
+hkd_price,421.2,HKD_per_share,2026-10-02,https://stockanalysis.com/quote/hkg/0700/history/,2026-10-02,market_data_vendor
+hkd_dividend,5.3,HKD_per_share,2025FY paid 2026H1,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+borrowings_current,86292,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+borrowings_noncurrent,212650,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+notes_noncurrent,154021,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+yearend_net_cash,107145,RMB_million,2025-12-31,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+q2_net_cash,58191,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf,2026-08-12,company_disclosed
+h1_revenue,401243,RMB_million,2026H1 or comparative,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_2025_revenue,364526,RMB_million,2026H1 or comparative,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+capital_commitments,92729,RMB_million,2026H1 or comparative,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+yearend_capital_commitments,20755,RMB_million,2026H1 or comparative,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+other_commitments,280147,RMB_million,2026H1 or comparative,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+yearend_other_commitments,55190,RMB_million,2026H1 or comparative,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+related_party_revenue,28781,RMB_million,2026H1 or comparative,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+june_shares,9092234841,shares,2026-06-30,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+fy2025_revenue,751766,RMB_million,2025FY,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+fy2025_vas,369281,RMB_million,2025FY,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+fy2025_marketing,144973,RMB_million,2025FY,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+fy2025_fintech,229435,RMB_million,2025FY,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+fy2025_other,8077,RMB_million,2025FY,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+fy2024_revenue,660257,RMB_million,2024FY,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+fy2024_vas,319168,RMB_million,2024FY,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+fy2024_marketing,121374,RMB_million,2024FY,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+fy2024_fintech,211956,RMB_million,2024FY,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+fy2024_other,7759,RMB_million,2024FY,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+h1_vas,194524,RMB_million,2026H1,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_marketing,81736,RMB_million,2026H1,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_fintech,120171,RMB_million,2026H1,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_other,4812,RMB_million,2026H1,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_games,130115,RMB_million,2026H1,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_social,64409,RMB_million,2026H1,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_2025_vas,183501,RMB_million,2025H1,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_2025_marketing,67615,RMB_million,2025H1,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_2025_fintech,110443,RMB_million,2025H1,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_2025_other,2967,RMB_million,2025H1,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_2025_games,118654,RMB_million,2025H1,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_2025_social,64847,RMB_million,2025H1,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+q2_2025_vas,91368,RMB_million,2025Q2,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+q2_2025_marketing,35762,RMB_million,2025Q2,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+q2_2025_fintech,55536,RMB_million,2025Q2,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+q2_2025_other,1838,RMB_million,2025Q2,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+q2_2025_games,59153,RMB_million,2025Q2,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+q2_2025_social,32215,RMB_million,2025Q2,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+q2_games,65951,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+q2_social,32463,RMB_million,2026Q2,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+fy2022_revenue,554552,RMB_million,2022FY,https://www.prnewswire.com/apac/news-releases/tencent-announces-2023-annual-and-fourth-quarter-results-302094552.html,2024-03-20,company_disclosed
+fy2022_vas,287565,RMB_million,2022FY,https://www.prnewswire.com/apac/news-releases/tencent-announces-2023-annual-and-fourth-quarter-results-302094552.html,2024-03-20,company_disclosed
+fy2022_marketing,82729,RMB_million,2022FY,https://www.prnewswire.com/apac/news-releases/tencent-announces-2023-annual-and-fourth-quarter-results-302094552.html,2024-03-20,company_disclosed
+fy2022_fintech,177064,RMB_million,2022FY,https://www.prnewswire.com/apac/news-releases/tencent-announces-2023-annual-and-fourth-quarter-results-302094552.html,2024-03-20,company_disclosed
+fy2022_other,7194,RMB_million,2022FY,https://www.prnewswire.com/apac/news-releases/tencent-announces-2023-annual-and-fourth-quarter-results-302094552.html,2024-03-20,company_disclosed
+fy2023_revenue,609015,RMB_million,2023FY,https://www.prnewswire.com/apac/news-releases/tencent-announces-2023-annual-and-fourth-quarter-results-302094552.html,2024-03-20,company_disclosed
+fy2023_vas,298375,RMB_million,2023FY,https://www.prnewswire.com/apac/news-releases/tencent-announces-2023-annual-and-fourth-quarter-results-302094552.html,2024-03-20,company_disclosed
+fy2023_marketing,101482,RMB_million,2023FY,https://www.prnewswire.com/apac/news-releases/tencent-announces-2023-annual-and-fourth-quarter-results-302094552.html,2024-03-20,company_disclosed
+fy2023_fintech,203763,RMB_million,2023FY,https://www.prnewswire.com/apac/news-releases/tencent-announces-2023-annual-and-fourth-quarter-results-302094552.html,2024-03-20,company_disclosed
+fy2023_other,5395,RMB_million,2023FY,https://www.prnewswire.com/apac/news-releases/tencent-announces-2023-annual-and-fourth-quarter-results-302094552.html,2024-03-20,company_disclosed
+fy2024_gross_profit,349246,RMB_million,fy2024,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+fy2024_op_ifrs,208099,RMB_million,fy2024,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+fy2024_op_nonifrs,237811,RMB_million,fy2024,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+fy2024_net_ifrs,194073,RMB_million,fy2024,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+fy2024_net_nonifrs,222703,RMB_million,fy2024,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+fy2025_gross_profit,422593,RMB_million,fy2025,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+fy2025_op_ifrs,241562,RMB_million,fy2025,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+fy2025_op_nonifrs,280656,RMB_million,fy2025,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+fy2025_net_ifrs,224842,RMB_million,fy2025,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+fy2025_net_nonifrs,259626,RMB_million,fy2025,https://en.prnasia.com/releases/apac/tencent-announces-2025-annual-and-fourth-quarter-results-525781.shtml,2026-03-18,company_disclosed
+h1_2025_gross_profit,205506,RMB_million,h1_2025,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_2025_op_ifrs,117670,RMB_million,h1_2025,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_2025_op_nonifrs,138568,RMB_million,h1_2025,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_2025_net_ifrs,103449,RMB_million,h1_2025,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_2025_net_nonifrs,124381,RMB_million,h1_2025,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_gross_profit,229698,RMB_million,h1,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_op_ifrs,134651,RMB_million,h1,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_op_nonifrs,151263,RMB_million,h1,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_net_ifrs,114115,RMB_million,h1,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+h1_net_nonifrs,136320,RMB_million,h1,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+q2_op_ifrs,67276,RMB_million,q2,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+q2_op_nonifrs,75636,RMB_million,q2,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+q2_net_ifrs,56022,RMB_million,q2,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+q2_net_nonifrs,68415,RMB_million,q2,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+q2_assets,2159394,RMB_million,q2,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed
+q2_liabilities,936881,RMB_million,q2,https://www.tencent.com/wp-content/uploads/2026/08/E700_IR.pdf,2026-08-12,company_disclosed

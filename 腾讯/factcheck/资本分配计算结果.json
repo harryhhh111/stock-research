@@ -1,0 +1,45 @@
+{
+  "2023": {
+    "cash_return_rmb_million": 64750.0,
+    "return_to_fcf_pct": 38.772455089820355,
+    "cash_dividend_to_profit_pct": 18.211880294403553,
+    "remaining_fcf_rmb_million": 102250.0,
+    "net_share_reduction_pct": 0.8987355000522501,
+    "incentive_offset_pct": 39.00709219858156,
+    "average_buyback_hkd": 322.36842105263156
+  },
+  "2024": {
+    "cash_return_rmb_million": 131190.0,
+    "return_to_fcf_pct": 84.47520927237605,
+    "cash_dividend_to_profit_pct": 14.870177716632401,
+    "remaining_fcf_rmb_million": 24110.0,
+    "net_share_reduction_pct": 2.7206580196140417,
+    "incentive_offset_pct": 18.354430379746837,
+    "average_buyback_hkd": 364.5376474628017
+  },
+  "2025": {
+    "cash_return_rmb_million": 110847.0,
+    "return_to_fcf_pct": 60.704819277108435,
+    "cash_dividend_to_profit_pct": 16.693945081434965,
+    "remaining_fcf_rmb_million": 71753.0,
+    "net_share_reduction_pct": 1.1382113821138184,
+    "incentive_offset_pct": 33.12101910828025,
+    "average_buyback_hkd": 521.5123859191656
+  },
+  "2026H1": {
+    "cash_return_rmb_million": 63852.0,
+    "return_to_fcf_pct": 148.83916083916085,
+    "cash_dividend_to_profit_pct": 36.450072295491395,
+    "remaining_fcf_rmb_million": -20952.0,
+    "net_share_reduction_pct": 0.30702229638652767,
+    "incentive_offset_pct": 44.454380086925305,
+    "average_buyback_hkd": 487.8659887979677
+  },
+  "h1_2026_ex_q2_compute_prepaid_return_to_fcf_pct": 67.71155885471897,
+  "current_dividend_yield_pct": 1.237739374124241,
+  "dividend_growth_pct": {
+    "2023": 41.66666666666667,
+    "2024": 32.35294117647059,
+    "2025": 17.777777777777782
+  }
+}

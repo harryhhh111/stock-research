@@ -1,0 +1,11 @@
+{
+  "as_of": "2026-09-21",
+  "note": "人工摘录的原始披露值，非接口原始响应；美元均为百万，股数均为百万。来源 URL 见 ../../来源.md。保留本快照，后续另存新日期。",
+  "q2": {"source": "Q", "revenue": 164.201, "colo": 136.669, "mining": 21.535, "hosted_mining": 5.997, "colo_cost": 56.686, "mining_cost": 33.700, "hosted_cost": 3.771, "lease_fixed": 98.812, "lease_variable": 37.857, "operating_loss": -78.468, "net_loss": -1155.310, "warrant_change": 1045.515, "adj_ebitda": 41.103},
+  "h1": {"source": "Q", "revenue": 279.445, "colo": 214.208, "mining": 51.640, "hosted_mining": 13.597, "ocf": 230.949, "ppe_cash": 954.244, "land_cash": 232.500, "btc_sale_cash": 208.249},
+  "balance": {"source": "Q", "cash": 1769.735, "restricted_cash": 781.656, "debt_face": 4385, "senior_debt": 3300, "convert_2029": 460, "convert_2031": 625, "senior_coupon": 0.0775, "convert_coupon": 0.03},
+  "coreweave": {"source": "D", "it_mw": 590, "gross_mw": 800, "annual_revenue": 850, "margin_low": 0.80, "margin_high": 0.85, "billing_2025": 120, "billing_q1": 225, "billing_q2": 395, "billing_july": 437},
+  "amd": {"source": "Q,D", "direct_it": 377, "neocloud_it": 152, "tcv_floor": 14000, "years": 15, "reserved_it": 1925, "vested_warrants": 6.5, "max_warrants": 30, "warrant_strike": 23.47},
+  "valuation": {"source": "Y,Q,D", "price_date": "2026-09-18", "price": 17.99, "share_date": "2026-07-23", "basic_shares": 321.340441, "company_pro_forma_shares": 508},
+  "polaris": {"source": "P", "cash_price": 444, "gross_mw": 440}
+}

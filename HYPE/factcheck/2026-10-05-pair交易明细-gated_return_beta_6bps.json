@@ -1,0 +1,138 @@
+[
+  {
+    "fold": 41,
+    "entry_bj": "2026-09-18T07:05:00+08:00",
+    "entry_ms": 1789686300000,
+    "signal_ms": 1789686000000,
+    "train_end_bj": "2026-09-16T03:00:00+08:00",
+    "entry_prices": [
+      76429.6,
+      84.416
+    ],
+    "qty": [
+      0.7013888223934744,
+      -549.5774836523373
+    ],
+    "direction": "short HYPE / long BTC",
+    "beta": 1.155491423736743,
+    "signal_price_beta": 1.8500701862621343,
+    "sizing_mode": "return_beta",
+    "entry_z": 2.15493679729687,
+    "entry_gross_notional": 100000.0,
+    "price_pnl": -1768.3374613111723,
+    "funding_pnl": 1.983905360544577,
+    "cost": 124.9911646041863,
+    "exit_bj": "2026-09-21T07:05:00+08:00",
+    "exit_ms": 1789945500000,
+    "exit_prices": [
+      81099.1,
+      93.593
+    ],
+    "reason": "72h_timeout",
+    "exit_z": 2.0035754113498343,
+    "holding_hours": 72.0,
+    "net_pnl": -1891.3447205548139
+  },
+  {
+    "fold": 42,
+    "entry_bj": "2026-09-29T21:05:00+08:00",
+    "entry_ms": 1790687100000,
+    "signal_ms": 1790686800000,
+    "train_end_bj": "2026-09-23T03:00:00+08:00",
+    "entry_prices": [
+      84257.5,
+      88.037
+    ],
+    "qty": [
+      -0.6118384741281906,
+      528.830776214426
+    ],
+    "direction": "long HYPE / short BTC",
+    "beta": 1.107295144753681,
+    "signal_price_beta": 1.9130444345881423,
+    "sizing_mode": "return_beta",
+    "entry_z": -2.1606034593251784,
+    "entry_gross_notional": 98108.65527944543,
+    "price_pnl": -330.55252073898413,
+    "funding_pnl": 1.0277238913953424,
+    "cost": 117.06693521485887,
+    "exit_bj": "2026-09-30T03:05:00+08:00",
+    "exit_ms": 1790708700000,
+    "exit_prices": [
+      83624.0,
+      86.679
+    ],
+    "reason": "fold_end",
+    "exit_z": -2.23125698239001,
+    "holding_hours": 6.0,
+    "net_pnl": -446.59173206244765
+  },
+  {
+    "fold": 43,
+    "entry_bj": "2026-09-30T04:05:00+08:00",
+    "entry_ms": 1790712300000,
+    "signal_ms": 1790712000000,
+    "train_end_bj": "2026-09-30T03:00:00+08:00",
+    "entry_prices": [
+      83499.0,
+      84.97
+    ],
+    "qty": [
+      -0.6205536620178017,
+      539.5604721967584
+    ],
+    "direction": "long HYPE / short BTC",
+    "beta": 1.1301988806041132,
+    "signal_price_beta": 1.8706168689980696,
+    "sizing_mode": "return_beta",
+    "entry_z": -2.4100022673766226,
+    "entry_gross_notional": 97662.06354738298,
+    "price_pnl": 3447.305300570569,
+    "funding_pnl": 13.611227903426256,
+    "cost": 119.40523926941529,
+    "exit_bj": "2026-10-01T07:05:00+08:00",
+    "exit_ms": 1790809500000,
+    "exit_prices": [
+      83690.2,
+      91.579
+    ],
+    "reason": "mean_revert",
+    "exit_z": -0.3991250270161802,
+    "holding_hours": 27.0,
+    "net_pnl": 3341.5112892045804
+  },
+  {
+    "fold": 43,
+    "entry_bj": "2026-10-02T01:05:00+08:00",
+    "entry_ms": 1790874300000,
+    "signal_ms": 1790874000000,
+    "train_end_bj": "2026-09-30T03:00:00+08:00",
+    "entry_prices": [
+      84396.4,
+      87.446
+    ],
+    "qty": [
+      -0.6349617203672279,
+      542.2213880541917
+    ],
+    "direction": "long HYPE / short BTC",
+    "beta": 1.1301988806041132,
+    "signal_price_beta": 1.8706168689980696,
+    "sizing_mode": "return_beta",
+    "entry_z": -2.175394859099357,
+    "entry_gross_notional": 101003.57483658755,
+    "price_pnl": 583.2614469529253,
+    "funding_pnl": -6.926833241530127,
+    "cost": 121.98909385665311,
+    "exit_bj": "2026-10-04T02:05:00+08:00",
+    "exit_ms": 1791050700000,
+    "exit_prices": [
+      84967.1,
+      89.19
+    ],
+    "reason": "fold_end",
+    "exit_z": -1.9630791180498226,
+    "holding_hours": 49.0,
+    "net_pnl": 454.34551985474207
+  }
+]

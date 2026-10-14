@@ -1,0 +1,43 @@
+{
+  "query": {
+    "symbol": "HYPEUSDT",
+    "startTime": 1782255600000,
+    "endTime": 1782291600000,
+    "limit": 1000
+  },
+  "returned_funding_times_bj": [
+    "2026-06-24T08:00:00.005000+08:00",
+    "2026-06-24T16:00:00.005000+08:00"
+  ],
+  "note": "原接口再请求仍未返回中间12点事件；不推断缺记录还是历史安排；全部回测在该段无持仓，资金费PnL不受影响。",
+  "checks": [
+    {
+      "ledger": "2026-10-05-pair交易明细-gated_6bps.json",
+      "position_during_gap": false
+    },
+    {
+      "ledger": "2026-10-05-pair交易明细-gated_return_beta_6bps.json",
+      "position_during_gap": false
+    },
+    {
+      "ledger": "2026-10-05-pair交易明细-ungated_6bps.json",
+      "position_during_gap": false
+    },
+    {
+      "ledger": "2026-10-05-pair交易明细-gated_12bps.json",
+      "position_during_gap": false
+    },
+    {
+      "ledger": "2026-10-05-pair交易明细-gated_0bps.json",
+      "position_during_gap": false
+    },
+    {
+      "ledger": "2026-10-05-pair交易明细-ungated_12bps.json",
+      "position_during_gap": false
+    },
+    {
+      "ledger": "2026-10-05-pair交易明细-ungated_0bps.json",
+      "position_during_gap": false
+    }
+  ]
+}

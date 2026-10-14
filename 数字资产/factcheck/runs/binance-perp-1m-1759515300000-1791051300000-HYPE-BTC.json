@@ -1,0 +1,49 @@
+{
+  "created_at_utc": "2026-10-04T18:57:00.054138+00:00",
+  "source": "binance-perp",
+  "interval": "1m",
+  "start_utc": "2025-10-03T18:15:00+00:00",
+  "end_exclusive_utc": "2026-10-03T18:15:00+00:00",
+  "assets": [
+    {
+      "token": "HYPE",
+      "source": "binance-perp",
+      "output": "data/normalized/binance-perp/1m/HYPE/1759515300000-1791051300000.json",
+      "count": 525600,
+      "expected_count": 525600,
+      "missing_count": 0,
+      "missing_open_times_ms": [],
+      "duplicate_count": 0,
+      "invalid_count": 0,
+      "invalid_open_times_ms": [],
+      "complete": true,
+      "first_open_utc": "2025-10-03T18:15:00+00:00",
+      "last_open_utc": "2026-10-03T18:14:00+00:00",
+      "first_open_price": 50.006,
+      "last_close_price": 89.271,
+      "period_return": 0.7852057753069632,
+      "status": "✅ 完整",
+      "accepted": true
+    },
+    {
+      "token": "BTC",
+      "source": "binance-perp",
+      "output": "data/normalized/binance-perp/1m/BTC/1759515300000-1791051300000.json",
+      "count": 525600,
+      "expected_count": 525600,
+      "missing_count": 0,
+      "missing_open_times_ms": [],
+      "duplicate_count": 0,
+      "invalid_count": 0,
+      "invalid_open_times_ms": [],
+      "complete": true,
+      "first_open_utc": "2025-10-03T18:15:00+00:00",
+      "last_open_utc": "2026-10-03T18:14:00+00:00",
+      "first_open_price": 121994.0,
+      "last_close_price": 84947.1,
+      "period_return": -0.3036780497401511,
+      "status": "✅ 完整",
+      "accepted": true
+    }
+  ]
+}

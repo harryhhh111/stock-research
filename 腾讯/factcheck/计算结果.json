@@ -1,0 +1,542 @@
+{
+  "q2_vas_share_pct": {
+    "value": 48.0572,
+    "formula": "q2_vas/q2_revenue*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_marketing_share_pct": {
+    "value": 21.2735,
+    "formula": "q2_marketing/q2_revenue*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_fintech_share_pct": {
+    "value": 29.4387,
+    "formula": "q2_fintech/q2_revenue*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_other_share_pct": {
+    "value": 1.2306,
+    "formula": "q2_other/q2_revenue*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_revenue_growth_pct": {
+    "value": 10.9922,
+    "formula": "(q2_revenue/q2_2025_revenue-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_gross_margin_pct": {
+    "value": 57.8328,
+    "formula": "q2_gross_profit/q2_revenue*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_capex_ratio_pct": {
+    "value": 25.7753,
+    "formula": "q2_capex/q2_revenue*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_capex_growth_pct": {
+    "value": 176.2548,
+    "formula": "(q2_capex/q2_2025_capex-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_capex_growth_pct": {
+    "value": 81.8689,
+    "formula": "(h1_capex/h1_2025_capex-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_fcf_rounded": {
+    "value": -13800.0,
+    "formula": "q2_ocf-q2_capex_paid-q2_content_paid-q2_lease_paid; input rounded",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_compute_prepaid_inferred": {
+    "value": 51400.0,
+    "formula": "q2_fcf_ex_prepaid-q2_fcf; inferred from rounded figures",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_new_ai_operating_drag": {
+    "value": 10500.0,
+    "formula": "q2_op_ex_ai-q2_op_adjusted; rounded, not total AI spend",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_capex_vs_fy2025_pct": {
+    "value": 106.9724,
+    "formula": "h1_capex/fy2025_capex*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "ttm_diluted_eps_ifrs_approx": {
+    "value": 25.444,
+    "formula": "fy2025_eps_ifrs-h1_2025_eps_ifrs+h1_eps_ifrs; period share counts vary",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "rmb_counter_pe_ifrs_approx": {
+    "value": 14.133,
+    "formula": "rmb_counter_price/ttm_diluted_eps_ifrs_approx",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "ttm_diluted_eps_adjusted_approx": {
+    "value": 29.299,
+    "formula": "fy2025_eps_adjusted-h1_2025_eps_adjusted+h1_eps_adjusted; period share counts vary",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "rmb_counter_pe_adjusted_approx": {
+    "value": 12.2735,
+    "formula": "rmb_counter_price/ttm_diluted_eps_adjusted_approx",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "hkd_dividend_yield_pct": {
+    "value": 1.2583,
+    "formula": "hkd_dividend/hkd_price*100; historical paid dividend",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "interest_bearing_debt": {
+    "value": 452963.0,
+    "formula": "borrowings_current+borrowings_noncurrent+notes_noncurrent; excludes leases",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "net_cash_decline_from_yearend": {
+    "value": 48954.0,
+    "formula": "yearend_net_cash-q2_net_cash",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_revenue_growth_pct": {
+    "value": 10.0725,
+    "formula": "(h1_revenue/h1_2025_revenue-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "capital_commitment_multiple": {
+    "value": 4.4678,
+    "formula": "capital_commitments/yearend_capital_commitments",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "other_commitment_multiple": {
+    "value": 5.076,
+    "formula": "other_commitments/yearend_other_commitments",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "related_party_revenue_share_pct": {
+    "value": 7.173,
+    "formula": "related_party_revenue/h1_revenue*100; not single-customer concentration",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "indicative_rmb_equity_value": {
+    "value": 3269567.6488,
+    "formula": "rmb_counter_price*june_shares/1e6; June shares, October price, indicative only",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2023_revenue_yoy_pct": {
+    "value": 9.8211,
+    "formula": "(fy2023_revenue/fy2022_revenue-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2023_vas_yoy_pct": {
+    "value": 3.7592,
+    "formula": "(fy2023_vas/fy2022_vas-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2023_vas_growth_contribution_pct": {
+    "value": 19.8483,
+    "formula": "(fy2023_vas-fy2022_vas)/(fy2023_revenue-fy2022_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2023_marketing_yoy_pct": {
+    "value": 22.668,
+    "formula": "(fy2023_marketing/fy2022_marketing-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2023_marketing_growth_contribution_pct": {
+    "value": 34.4326,
+    "formula": "(fy2023_marketing-fy2022_marketing)/(fy2023_revenue-fy2022_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2023_fintech_yoy_pct": {
+    "value": 15.0787,
+    "formula": "(fy2023_fintech/fy2022_fintech-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2023_fintech_growth_contribution_pct": {
+    "value": 49.0223,
+    "formula": "(fy2023_fintech-fy2022_fintech)/(fy2023_revenue-fy2022_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2023_other_yoy_pct": {
+    "value": -25.007,
+    "formula": "(fy2023_other/fy2022_other-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2023_other_growth_contribution_pct": {
+    "value": -3.3032,
+    "formula": "(fy2023_other-fy2022_other)/(fy2023_revenue-fy2022_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2024_revenue_yoy_pct": {
+    "value": 8.4139,
+    "formula": "(fy2024_revenue/fy2023_revenue-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2024_vas_yoy_pct": {
+    "value": 6.9687,
+    "formula": "(fy2024_vas/fy2023_vas-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2024_vas_growth_contribution_pct": {
+    "value": 40.578,
+    "formula": "(fy2024_vas-fy2023_vas)/(fy2024_revenue-fy2023_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2024_marketing_yoy_pct": {
+    "value": 19.6015,
+    "formula": "(fy2024_marketing/fy2023_marketing-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2024_marketing_growth_contribution_pct": {
+    "value": 38.8197,
+    "formula": "(fy2024_marketing-fy2023_marketing)/(fy2024_revenue-fy2023_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2024_fintech_yoy_pct": {
+    "value": 4.0208,
+    "formula": "(fy2024_fintech/fy2023_fintech-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2024_fintech_growth_contribution_pct": {
+    "value": 15.9888,
+    "formula": "(fy2024_fintech-fy2023_fintech)/(fy2024_revenue-fy2023_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2024_other_yoy_pct": {
+    "value": 43.8184,
+    "formula": "(fy2024_other/fy2023_other-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2024_other_growth_contribution_pct": {
+    "value": 4.6134,
+    "formula": "(fy2024_other-fy2023_other)/(fy2024_revenue-fy2023_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2025_revenue_yoy_pct": {
+    "value": 13.8596,
+    "formula": "(fy2025_revenue/fy2024_revenue-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2025_vas_yoy_pct": {
+    "value": 15.7011,
+    "formula": "(fy2025_vas/fy2024_vas-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2025_vas_growth_contribution_pct": {
+    "value": 54.7629,
+    "formula": "(fy2025_vas-fy2024_vas)/(fy2025_revenue-fy2024_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2025_marketing_yoy_pct": {
+    "value": 19.4432,
+    "formula": "(fy2025_marketing/fy2024_marketing-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2025_marketing_growth_contribution_pct": {
+    "value": 25.7887,
+    "formula": "(fy2025_marketing-fy2024_marketing)/(fy2025_revenue-fy2024_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2025_fintech_yoy_pct": {
+    "value": 8.2465,
+    "formula": "(fy2025_fintech/fy2024_fintech-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2025_fintech_growth_contribution_pct": {
+    "value": 19.1009,
+    "formula": "(fy2025_fintech-fy2024_fintech)/(fy2025_revenue-fy2024_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2025_other_yoy_pct": {
+    "value": 4.0985,
+    "formula": "(fy2025_other/fy2024_other-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2025_other_growth_contribution_pct": {
+    "value": 0.3475,
+    "formula": "(fy2025_other-fy2024_other)/(fy2025_revenue-fy2024_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_revenue_yoy_pct": {
+    "value": 10.0725,
+    "formula": "(h1_revenue/h1_2025_revenue-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_vas_yoy_pct": {
+    "value": 6.0071,
+    "formula": "(h1_vas/h1_2025_vas-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_vas_growth_contribution_pct": {
+    "value": 30.0215,
+    "formula": "(h1_vas-h1_2025_vas)/(h1_revenue-h1_2025_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_marketing_yoy_pct": {
+    "value": 20.8844,
+    "formula": "(h1_marketing/h1_2025_marketing-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_marketing_growth_contribution_pct": {
+    "value": 38.459,
+    "formula": "(h1_marketing-h1_2025_marketing)/(h1_revenue-h1_2025_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_fintech_yoy_pct": {
+    "value": 8.8082,
+    "formula": "(h1_fintech/h1_2025_fintech-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_fintech_growth_contribution_pct": {
+    "value": 26.4945,
+    "formula": "(h1_fintech-h1_2025_fintech)/(h1_revenue-h1_2025_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_other_yoy_pct": {
+    "value": 62.184,
+    "formula": "(h1_other/h1_2025_other-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_other_growth_contribution_pct": {
+    "value": 5.0249,
+    "formula": "(h1_other-h1_2025_other)/(h1_revenue-h1_2025_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_games_yoy_pct": {
+    "value": 9.6592,
+    "formula": "(h1_games/h1_2025_games-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_games_growth_contribution_pct": {
+    "value": 31.2144,
+    "formula": "(h1_games-h1_2025_games)/(h1_revenue-h1_2025_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_social_yoy_pct": {
+    "value": -0.6754,
+    "formula": "(h1_social/h1_2025_social-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_social_growth_contribution_pct": {
+    "value": -1.1929,
+    "formula": "(h1_social-h1_2025_social)/(h1_revenue-h1_2025_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_revenue_yoy_pct": {
+    "value": 10.9922,
+    "formula": "(q2_revenue/q2_2025_revenue-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_vas_yoy_pct": {
+    "value": 7.7117,
+    "formula": "(q2_vas/q2_2025_vas-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_vas_growth_contribution_pct": {
+    "value": 34.7419,
+    "formula": "(q2_vas-q2_2025_vas)/(q2_revenue-q2_2025_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_marketing_yoy_pct": {
+    "value": 21.8192,
+    "formula": "(q2_marketing/q2_2025_marketing-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_marketing_growth_contribution_pct": {
+    "value": 38.4744,
+    "formula": "(q2_marketing-q2_2025_marketing)/(q2_revenue-q2_2025_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_fintech_yoy_pct": {
+    "value": 8.553,
+    "formula": "(q2_fintech/q2_2025_fintech-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_fintech_growth_contribution_pct": {
+    "value": 23.4209,
+    "formula": "(q2_fintech-q2_2025_fintech)/(q2_revenue-q2_2025_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_other_yoy_pct": {
+    "value": 37.1055,
+    "formula": "(q2_other/q2_2025_other-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_other_growth_contribution_pct": {
+    "value": 3.3628,
+    "formula": "(q2_other-q2_2025_other)/(q2_revenue-q2_2025_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_games_yoy_pct": {
+    "value": 11.4922,
+    "formula": "(q2_games/q2_2025_games-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_games_growth_contribution_pct": {
+    "value": 33.5191,
+    "formula": "(q2_games-q2_2025_games)/(q2_revenue-q2_2025_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_social_yoy_pct": {
+    "value": 0.7698,
+    "formula": "(q2_social/q2_2025_social-1)*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_social_growth_contribution_pct": {
+    "value": 1.2228,
+    "formula": "(q2_social-q2_2025_social)/(q2_revenue-q2_2025_revenue)*100; games and social are VAS subsets",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2024_gross_profit_margin_pct": {
+    "value": 52.8955,
+    "formula": "fy2024_gross_profit/fy2024_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2024_op_ifrs_margin_pct": {
+    "value": 31.5179,
+    "formula": "fy2024_op_ifrs/fy2024_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2024_op_nonifrs_margin_pct": {
+    "value": 36.0179,
+    "formula": "fy2024_op_nonifrs/fy2024_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2024_net_ifrs_margin_pct": {
+    "value": 29.3936,
+    "formula": "fy2024_net_ifrs/fy2024_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2024_net_nonifrs_margin_pct": {
+    "value": 33.7297,
+    "formula": "fy2024_net_nonifrs/fy2024_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2025_gross_profit_margin_pct": {
+    "value": 56.2134,
+    "formula": "fy2025_gross_profit/fy2025_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2025_op_ifrs_margin_pct": {
+    "value": 32.1326,
+    "formula": "fy2025_op_ifrs/fy2025_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2025_op_nonifrs_margin_pct": {
+    "value": 37.3329,
+    "formula": "fy2025_op_nonifrs/fy2025_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2025_net_ifrs_margin_pct": {
+    "value": 29.9085,
+    "formula": "fy2025_net_ifrs/fy2025_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "fy2025_net_nonifrs_margin_pct": {
+    "value": 34.5355,
+    "formula": "fy2025_net_nonifrs/fy2025_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_2025_gross_profit_margin_pct": {
+    "value": 56.3762,
+    "formula": "h1_2025_gross_profit/h1_2025_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_2025_op_ifrs_margin_pct": {
+    "value": 32.2803,
+    "formula": "h1_2025_op_ifrs/h1_2025_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_2025_op_nonifrs_margin_pct": {
+    "value": 38.0132,
+    "formula": "h1_2025_op_nonifrs/h1_2025_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_2025_net_ifrs_margin_pct": {
+    "value": 28.379,
+    "formula": "h1_2025_net_ifrs/h1_2025_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_2025_net_nonifrs_margin_pct": {
+    "value": 34.1213,
+    "formula": "h1_2025_net_nonifrs/h1_2025_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_gross_profit_margin_pct": {
+    "value": 57.2466,
+    "formula": "h1_gross_profit/h1_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_op_ifrs_margin_pct": {
+    "value": 33.5585,
+    "formula": "h1_op_ifrs/h1_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_op_nonifrs_margin_pct": {
+    "value": 37.6986,
+    "formula": "h1_op_nonifrs/h1_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_net_ifrs_margin_pct": {
+    "value": 28.4404,
+    "formula": "h1_net_ifrs/h1_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "h1_net_nonifrs_margin_pct": {
+    "value": 33.9744,
+    "formula": "h1_net_nonifrs/h1_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_gross_profit_margin_pct": {
+    "value": 57.8328,
+    "formula": "q2_gross_profit/q2_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_op_ifrs_margin_pct": {
+    "value": 32.852,
+    "formula": "q2_op_ifrs/q2_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_op_nonifrs_margin_pct": {
+    "value": 36.9343,
+    "formula": "q2_op_nonifrs/q2_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_net_ifrs_margin_pct": {
+    "value": 27.3565,
+    "formula": "q2_net_ifrs/q2_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_net_nonifrs_margin_pct": {
+    "value": 33.4082,
+    "formula": "q2_net_nonifrs/q2_revenue*100; net uses attributable profit",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_liabilities_assets_pct": {
+    "value": 43.3863,
+    "formula": "q2_liabilities/q2_assets*100",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_interest_bearing_debt_assets_pct": {
+    "value": 20.9764,
+    "formula": "(borrowings_current+borrowings_noncurrent+notes_noncurrent)/q2_assets*100; excludes leases",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_ocf_margin_pct": {
+    "value": 25.7343,
+    "formula": "q2_ocf/q2_revenue*100; rounded cash inputs",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_fcf_margin_pct": {
+    "value": -6.7388,
+    "formula": "q2_fcf/q2_revenue*100; rounded cash inputs",
+    "status": "✅ 属实（据所列输入复算）"
+  },
+  "q2_fcf_ex_prepaid_margin_pct": {
+    "value": 18.3607,
+    "formula": "q2_fcf_ex_prepaid/q2_revenue*100; rounded cash inputs",
+    "status": "✅ 属实（据所列输入复算）"
+  }
+}
