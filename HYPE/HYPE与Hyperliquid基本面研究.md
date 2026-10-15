@@ -5,6 +5,8 @@
 1. 2026-09-30-Hyperliquid研究报告.md
 2. 2026-09-30-HYPE代币研究.md
 
+本轮更新：2026-10-15｜补充 AF 链上执行、系统地址、销毁口径、金额对账与监听要点；未配置自动监听。旧行情及财务快照仍保留各自截止日。
+
 ## Hyperliquid 研究报告：链上交易所、生态扩张与 HYPE 价值捕获（原整理日期：2026-09-30）
 
 整理与核对日期：2026-09-30（北京时间）。除特别注明，价格、流通量和近 30 日财务数据截至 2026-09-29 查询快照；数据平台可能追溯修订。本报告研究**协议及生态**，不是 Hyperliquid Labs 的公司财报。HYPE 的供应、回购、解锁和持仓（见本文第二部分：HYPE 代币研究）。
@@ -134,7 +136,7 @@ HYPE 的主要用途：验证者质押与委托、HyperEVM gas、交易费质押
 
 ### 3. 回购和“销毁”：两种不同动作
 
-官方费率文档：交易费按产品和参与者分配，部分流向 HLP、部署方、做市返佣和 Assistance Fund；基金地址 `0xfefefefefefefefefefefefefefefefefefe` 在 L1 执行过程中自动将其收到的交易费换成 HYPE。官方表述为基金里的 HYPE 被销毁、从流通和总量中移除。[费率与基金规则](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees)
+官方费率文档：交易费按产品和参与者分配，部分流向 HLP、部署方、做市返佣和 Assistance Fund；基金地址 `0xfefefefefefefefefefefefefefefefefefefefe` 在 L1 执行过程中自动将其收到的交易费换成 HYPE。官方表述为基金里的 HYPE 被销毁、从流通和总量中移除。[费率与基金规则](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees)
 
 **实务上要分清：**
 
@@ -145,6 +147,42 @@ HYPE 的主要用途：验证者质押与委托、HyperEVM gas、交易费质押
 “99% 收入回购”是容易误读的简称。DeFiLlama 对部分**符合规则的费用**使用 99% 流入基金的统计假设，但 HIP-3 部署方、builder fee、HLP、做市返佣等另行分配；不能说全部毛手续费的 99%、全部协议收入的 99% 或 Labs 利润的 99% 用于回购。[官方费用分配](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees)、[DeFiLlama 方法及损益](https://investors.defillama.com/protocol/hyperliquid?events=false&fees=true&tvl=false)
 
 2026-09-29 DeFiLlama 近 12 月约 **9.11 亿美元费用**、**6.88 亿美元协议收入**，二者不可混称为回购额。稳定币 AQAv2 的约 90% **经成本调整后储备收益**分成预期进入基金，但截至核对时首笔款项尚未到帐，不能提前计入历史回购。[AQAv2 规则](https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/aligned-quote-assets)、[首笔时间披露](https://blockworks.com/token-transparency/filing/hyperliquid)
+
+#### 链上执行、地址与单笔金额（2026-10-15 补充）
+
+【项目方披露】AF 自动把交易费转为 HYPE，是 **HyperCore / L1 内置执行机制**，不是需在 HyperEVM 上调用的普通 EVM 回购合约。官方系统地址为 `0xfefefefefefefefefefefefefefefefefefefefe`，可在 [HypurrScan](https://hypurrscan.io/address/0xfefefefefefefefefefefefefefefefefefefefe) 查看。[官方手续费文档](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees)（2026-10-15 查阅）。本文不把这个系统账户当作已公开 Solidity 源码的合约。
+
+**销毁不必表现为再转给 `0xdead`。** 官方将 AF 地址中的 HYPE 认定为永久移出供应；2025 年末治理提案明确描述对不可提取余额的销毁认定，而非必须另发一次销毁交易。因此，地址保有余额与经济口径销毁并不矛盾；仍须与原始 API 的总量定义分别核对，避免把 AF 余额和包含 AF 的销毁汇总重复相加。【媒体转述】[The Block 的治理提案报道](https://www.theblock.co/news/defi/2025-12-17-hyper-foundation-proposes-removing-1-billion-hype-tokens-from-circulating-supply-by-zeroing-out-hyperliquids-assistance-fund-383091)（2025-12-17）；当前状态以官方费率文档为准。
+
+**频率：持续自动执行，日/月是统计窗口，不是固定日/月预算。** 官方未在已查费率文档中承诺固定秒数或分钟数的下单周期。【社区观察】[hl.eco AF 页面](https://hl.eco/assistance-fund)描述分钟级回购；这不能当作协议保证。储备收益入账周期、订单提交时间和实际成交时间是三件事。未完成逐笔历史采集前，不宣称已经独立验证当前分钟频率。
+
+**资金分配规则不等于单笔订单算法。** 已查官方说明没有完整披露单笔触发门槛、订单大小、价格偏移和拆单公式；不将“99%”解读为每笔手续费到账立即以其99%提交市价单。买盘能力来自实际进入 AF 的费用、其他收益及可用余额，实际支出以成交为准。
+
+核验公式（方法定义，尚非执行结果）：
+
+- 期间买入名义金额 = Σ（每笔 HYPE 买入数量 × 该笔实际成交价）；按报价币记录，再按明确汇率换算美元。执行费用如有另列。
+- 回购买入均价 = 同一窗口买入名义金额 / 买入数量。
+- 按每种资金资产分别对账：期初可用余额 + 期间流入 − 买入结算支出 − 执行费用 ± 其他净变动 = 期末可用余额；未成交订单占用与余额口径须一致。
+- AF 的 HYPE 余额增量须剔除非买入转入及其他调整，才可与成交数量对比；初始分配不算市场回购。
+
+**AQAv2 的历史窗口与后续披露分开。** 上文“首笔尚未核实到账”对应2026-09-29快照，不是截至本次更新仍未到账。【第三方披露】[Blockworks token transparency filing](https://blockworks.com/token-transparency/filing/hyperliquid)称截至2026-10-06已记录首笔约1,458万USDC于10月4日UTC进入AF；本轮未独立重建该流水，不回填为9月已完成回购，也不将该入账额直接当作当日成交支出。
+
+#### 情报监听要点（研究建议，尚未配置）
+
+目标是识别回购买盘、资金来源及供给压力的变化，不对每次正常买入发通知。
+
+| 对象 | 保存内容 | 研究用途 |
+| --- | --- | --- |
+| AF 实际买入 | 成交标识、时间、币对、方向、价格、数量、名义金额、执行费用、来源与采集时间 | 汇总实际金额/枚数/均价；成交去重，避免把挂单当成交 |
+| AF 资金和余额 | 资金流水标识、来源地址、资产、金额、时间、余额及占用口径 | 分开手续费、储备收益、其他转入与未花资金 |
+| 费用及分成 | 原生永续、HIP-3、现货等费用、部署方/前端分成和数据商定义 | 分析收入可持续性；来源未核实则保留未知，不强行分摊 |
+| 供给和治理 | 实际解锁/分配、奖励、AF视同销毁、直接销毁及规则公告 | 同窗比较供给与买盘；不把解锁自动当实际卖出 |
+
+【我的推演】初始可考虑分钟级采集成交及资金、每日UTC汇总、每周比较7/30日趋势；采集频率不代表协议下单频率。先补最近90天并核验来源覆盖、分页限制、去重和对账，再依据历史分布设报警阈值；目前未承诺该90天可完整追回。
+
+值得提示的变化：大额非手续费入账；回购显著偏离历史水平；有可用资金却持续未成交；费用来源结构变化；官方更改费用分配或权限。阈值和通知渠道尚未设定。**抓取失败、记录缺口与真实回购中断必须分别标记。** 单笔资金来源无法追溯时不能把所有买入都归因为某一收入。
+
+日表至少包括：日期、实际买入金额/枚数/均价、费用及储备收益等已识别流入、未知流入、期末资金、实际新增流通及数据完整性。重点比较持续/一次性收入、7/30日买入趋势，以及同窗移除数量相对新增流通数量；零分母或流通定义不一致时不输出比例。
 
 #### 最近一个月实际回购量级（2026-09-29 快照）
 
