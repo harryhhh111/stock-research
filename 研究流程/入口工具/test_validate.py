@@ -76,7 +76,8 @@ class EntryTests(unittest.TestCase):
         for security in ({'mic':'XNYS','symbol':'ORCL'},
                          {'market':'XX','mic':'XNYS','symbol':'ORCL'},
                          {'market':'HK','mic':'XNYS','symbol':'ORCL'},
-                         {'market':'US','mic':'XXXX','symbol':'ORCL'}):
+                         {'market':'US','mic':'XXXX','symbol':'ORCL'},
+                         {'market':'CN','mic':'XBSE','symbol':'920001'}):
             with self.subTest(security=security):
                 data=copy.deepcopy(self.base); data['securities']=[security]
                 self.write('中文/嵌套',data)
@@ -112,7 +113,7 @@ class EntryTests(unittest.TestCase):
         self.assertEqual(lookup_market(result,'US','ORCL','XNYS')['status'],'ok')
 
     def test_extended_market_combinations(self):
-        for market,mic,symbol in [('JP','XTKS','285A'),('KR','XKRX','000660'),
+        for market,mic,symbol in [('CN','BJSE','920001'),('JP','XTKS','285A'),('KR','XKRX','000660'),
                                   ('DE','XETR','ENR'),('CA','XTSE','BB'),('TW','XTAI','2330'),
                                   ('IN','XNSE','TCS'),('FR','XPAR','CAP'),('AU','XASX','APX'),('IT','XMIL','PRY')]:
             with self.subTest(market=market):

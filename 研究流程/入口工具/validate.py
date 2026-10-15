@@ -8,7 +8,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[2]
 KEYS = {'schema_version', 'entity_id', 'kind', 'name', 'aliases', 'securities',
         'primary_document', 'documents', 'related_entities', 'sections'}
-MARKETS = {'US': {'XNYS', 'XNAS'}, 'HK': {'XHKG'}, 'CN': {'XSHG', 'XSHE', 'XBSE'},
+MARKETS = {'US': {'XNYS', 'XNAS'}, 'HK': {'XHKG'}, 'CN': {'XSHG', 'XSHE', 'BJSE'},
            'JP': {'XTKS'}, 'KR': {'XKRX'}, 'DE': {'XETR', 'XFRA'},
            'CA': {'XTSE'}, 'TW': {'XTAI'}, 'IN': {'XNSE', 'XBOM'}, 'FR': {'XPAR'}, 'AU': {'XASX'}, 'IT': {'XMIL'}}
 MIC_MARKET = {mic: market for market, mics in MARKETS.items() for mic in mics}
