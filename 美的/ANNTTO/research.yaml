@@ -1,0 +1,21 @@
+# 研究边界：仅基于原文 IPO 申请材料；证券尚未核实正式挂牌，不填写拟上市代码。
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:anntto
+kind: company
+name: 安得智联
+aliases:
+- 安得智联
+securities: []
+primary_document: ../7. 智慧物流.md
+documents: []
+related_entities:
+- entity_id: company:midea
+  relation: parent
+sections:
+  thesis: null
+  open_questions: null
+  metrics: null
+  risks: null
+  research_metadata: null
+research_scope: 仅基于原文 IPO 申请材料；证券尚未核实正式挂牌，不填写拟上市代码。

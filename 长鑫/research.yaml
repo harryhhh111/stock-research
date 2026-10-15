@@ -1,0 +1,41 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:cxmt
+kind: company
+name: 长鑫科技
+aliases:
+- 长鑫科技
+- 长鑫
+- '688825'
+securities:
+- market: CN
+  mic: XSHG
+  symbol: '688825'
+primary_document: 长鑫科技.md
+documents:
+- path: 资本开支与扩产.md
+  role: supplement
+related_entities: []
+sections:
+  thesis:
+    path: 长鑫科技.md
+    heading_path:
+    - 长鑫科技（688825）调研底稿
+    - 先给结论
+  open_questions:
+    path: 长鑫科技.md
+    heading_path:
+    - 长鑫科技（688825）调研底稿
+    - 9. 后续跟踪清单
+  metrics:
+    path: 长鑫科技.md
+    heading_path:
+    - 长鑫科技（688825）调研底稿
+    - 9. 后续跟踪清单
+  risks:
+    path: 长鑫科技.md
+    heading_path:
+    - 长鑫科技（688825）调研底稿
+    - 8. 核心矛盾、风险与治理
+    - 主要风险
+  research_metadata: null

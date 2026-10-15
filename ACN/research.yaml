@@ -1,0 +1,29 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:accenture
+kind: company
+name: Accenture
+aliases:
+- Accenture
+- ACN
+securities:
+- market: US
+  mic: XNYS
+  symbol: ACN
+primary_document: ACN.md
+documents: []
+related_entities: []
+sections:
+  thesis:
+    path: ACN.md
+    heading_path:
+    - 埃森哲（ACN）研究笔记
+    - 9. 我的看法【我的推演】
+  open_questions:
+    path: ACN.md
+    heading_path:
+    - 埃森哲（ACN）研究笔记
+    - 11. 后续研究方向
+  metrics: null
+  risks: null
+  research_metadata: null

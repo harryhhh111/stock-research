@@ -1,0 +1,29 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:jd
+kind: company
+name: JD.com
+aliases:
+- JD.com
+- JD
+- 09618
+securities:
+- market: US
+  mic: XNAS
+  symbol: JD
+- market: HK
+  mic: XHKG
+  symbol: 09618
+primary_document: 京东研究笔记.md
+documents: []
+related_entities: []
+sections:
+  thesis:
+    path: 京东研究笔记.md
+    heading_path:
+    - 京东研究笔记
+    - 10. 我的看法与可观察的判据
+  open_questions: null
+  metrics: null
+  risks: null
+  research_metadata: null

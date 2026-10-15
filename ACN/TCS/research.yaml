@@ -1,0 +1,32 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+# 研究边界：公司研究位于 ACN 主文档第 8.1 节；主文档其他部分属于 ACN 或其他竞争对手。
+# 本公司内容限定于第 8.1 节。
+schema_version: 2
+entity_id: company:tcs
+kind: company
+name: Tata Consultancy Services
+aliases:
+- Tata Consultancy Services
+- TCS
+securities:
+- market: IN
+  mic: XNSE
+  symbol: TCS
+- market: IN
+  mic: XBOM
+  symbol: '532540'
+primary_document: ../ACN.md
+documents: []
+related_entities: []
+sections:
+  thesis: null
+  open_questions: null
+  metrics: null
+  risks: null
+  research_metadata: null
+primary_section:
+  heading_path:
+  - 埃森哲（ACN）研究笔记
+  - 8. 竞争对手深度笔记
+  - 8.1 TCS 深度笔记：财务数据 + 客户订单分析
+research_scope: 公司研究位于 ACN 主文档第 8.1 节；主文档其他部分属于 ACN 或其他竞争对手。

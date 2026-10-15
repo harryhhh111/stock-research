@@ -1,0 +1,31 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:amd
+kind: company
+name: Advanced Micro Devices
+aliases:
+- Advanced Micro Devices
+- AMD
+securities:
+- market: US
+  mic: XNAS
+  symbol: AMD
+primary_document: AMD.md
+documents:
+- path: 基本情况.md
+  role: supplement
+related_entities: []
+sections:
+  thesis:
+    path: AMD.md
+    heading_path:
+    - AMD（Advanced Micro Devices）研究笔记
+    - 9. 我的看法（初版）
+  open_questions:
+    path: AMD.md
+    heading_path:
+    - AMD（Advanced Micro Devices）研究笔记
+    - 11. 后续研究方向
+  metrics: null
+  risks: null
+  research_metadata: null

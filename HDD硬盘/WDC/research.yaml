@@ -1,0 +1,30 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:western-digital
+kind: company
+name: Western Digital
+aliases:
+- Western Digital
+- WDC
+securities:
+- market: US
+  mic: XNAS
+  symbol: WDC
+primary_document: ../WDC.md
+documents: []
+related_entities: []
+sections:
+  thesis:
+    path: ../WDC.md
+    heading_path:
+    - Western Digital（WDC）研究笔记
+    - 4. 周期位置判断
+    - 4.3 当前判断
+  open_questions:
+    path: ../WDC.md
+    heading_path:
+    - Western Digital（WDC）研究笔记
+    - 14. 后续研究方向
+  metrics: null
+  risks: null
+  research_metadata: null

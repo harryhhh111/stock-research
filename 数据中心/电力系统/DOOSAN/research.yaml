@@ -1,0 +1,30 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:doosan-enerbility
+kind: company
+name: Doosan Enerbility
+aliases:
+- Doosan Enerbility
+- DOOSAN
+- '034020'
+securities:
+- market: KR
+  mic: XKRX
+  symbol: '034020'
+primary_document: ../Doosan_Enerbility.md
+documents: []
+related_entities: []
+sections:
+  thesis:
+    path: ../Doosan_Enerbility.md
+    heading_path:
+    - 'Doosan Enerbility（斗山恒能，KRX: 034020）研究笔记'
+    - 8. 我的看法【我的推演】
+  open_questions:
+    path: ../Doosan_Enerbility.md
+    heading_path:
+    - 'Doosan Enerbility（斗山恒能，KRX: 034020）研究笔记'
+    - 10. 后续研究方向
+  metrics: null
+  risks: null
+  research_metadata: null

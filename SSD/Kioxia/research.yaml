@@ -1,0 +1,32 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:kioxia
+kind: company
+name: Kioxia Holdings
+aliases:
+- Kioxia Holdings
+- Kioxia
+- 285A
+securities:
+- market: JP
+  mic: XTKS
+  symbol: 285A
+primary_document: Kioxia.md
+documents:
+- path: DC.md
+  role: supplement
+related_entities: []
+sections:
+  thesis:
+    path: Kioxia.md
+    heading_path:
+    - Kioxia（铠侠，285A.T）研究主报告
+    - 8. 我的看法（初版）
+  open_questions:
+    path: Kioxia.md
+    heading_path:
+    - Kioxia（铠侠，285A.T）研究主报告
+    - 10. 后续研究方向
+  metrics: null
+  risks: null
+  research_metadata: null

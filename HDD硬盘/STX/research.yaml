@@ -1,0 +1,29 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:seagate
+kind: company
+name: Seagate Technology
+aliases:
+- Seagate Technology
+- STX
+securities:
+- market: US
+  mic: XNAS
+  symbol: STX
+primary_document: ../希捷.md
+documents: []
+related_entities: []
+sections:
+  thesis:
+    path: ../希捷.md
+    heading_path:
+    - Seagate（希捷，STX）研究笔记
+    - 12. 我的看法（【我的推演】，整篇主观，待事实纠正）
+  open_questions:
+    path: ../希捷.md
+    heading_path:
+    - Seagate（希捷，STX）研究笔记
+    - 14. 后续研究方向
+  metrics: null
+  risks: null
+  research_metadata: null

@@ -1,0 +1,33 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:charter
+kind: company
+name: Charter Communications
+aliases:
+- Charter Communications
+- CHTR
+securities:
+- market: US
+  mic: XNAS
+  symbol: CHTR
+primary_document: CHTR研究整合.md
+documents:
+- path: ROE 情况.md
+  role: supplement
+- path: 基本情况.md
+  role: supplement
+- path: 数据.md
+  role: supplement
+- path: 负债情况.md
+  role: supplement
+related_entities: []
+sections:
+  thesis:
+    path: CHTR研究整合.md
+    heading_path:
+    - CHTR（Charter Communications）研究整合笔记
+    - 一、先给结论
+  open_questions: null
+  metrics: null
+  risks: null
+  research_metadata: null

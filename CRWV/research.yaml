@@ -1,0 +1,29 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:coreweave
+kind: company
+name: CoreWeave
+aliases:
+- CoreWeave
+- CRWV
+securities:
+- market: US
+  mic: XNAS
+  symbol: CRWV
+primary_document: CRWV.md
+documents: []
+related_entities: []
+sections:
+  thesis:
+    path: CRWV.md
+    heading_path:
+    - CoreWeave（CRWV）研究笔记
+    - 12. 我的看法【我的推演】
+  open_questions:
+    path: CRWV.md
+    heading_path:
+    - CoreWeave（CRWV）研究笔记
+    - 14. 后续研究方向
+  metrics: null
+  risks: null
+  research_metadata: null

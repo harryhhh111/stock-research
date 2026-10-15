@@ -1,0 +1,21 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:ant-group
+kind: company
+name: 蚂蚁集团
+aliases:
+- 蚂蚁集团
+securities: []
+primary_document: 蚂蚁集团.md
+documents: []
+related_entities: []
+sections:
+  thesis: null
+  open_questions:
+    path: 蚂蚁集团.md
+    heading_path:
+    - 蚂蚁集团研究笔记
+    - 5. 下一步核验
+  metrics: null
+  risks: null
+  research_metadata: null

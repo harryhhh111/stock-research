@@ -1,0 +1,306 @@
+{
+  "retrieved_on": "2026-10-15",
+  "source": "https://www.sec.gov/files/company_tickers_exchange.json",
+  "records": [
+    {
+      "cik": 1058290,
+      "name": "COGNIZANT TECHNOLOGY SOLUTIONS CORP",
+      "ticker": "CTSH",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1467373,
+      "name": "Accenture plc",
+      "ticker": "ACN",
+      "exchange": "NYSE"
+    },
+    {
+      "cik": 796343,
+      "name": "ADOBE INC.",
+      "ticker": "ADBE",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1703056,
+      "name": "ADT Inc.",
+      "ticker": "ADT",
+      "exchange": "NYSE"
+    },
+    {
+      "cik": 1652044,
+      "name": "Alphabet Inc.",
+      "ticker": "GOOGL",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1652044,
+      "name": "Alphabet Inc.",
+      "ticker": "GOOG",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1018724,
+      "name": "AMAZON COM INC",
+      "ticker": "AMZN",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1730168,
+      "name": "Broadcom Inc.",
+      "ticker": "AVGO",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1835632,
+      "name": "Marvell Technology, Inc.",
+      "ticker": "MRVL",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 789019,
+      "name": "MICROSOFT CORP",
+      "ticker": "MSFT",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 2488,
+      "name": "ADVANCED MICRO DEVICES INC",
+      "ticker": "AMD",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1577552,
+      "name": "Alibaba Group Holding Ltd",
+      "ticker": "BABA",
+      "exchange": "NYSE"
+    },
+    {
+      "cik": 1810997,
+      "name": "XPENG INC.",
+      "ticker": "XPEV",
+      "exchange": "NYSE"
+    },
+    {
+      "cik": 1070235,
+      "name": "BLACKBERRY Ltd",
+      "ticker": "BB",
+      "exchange": "NYSE"
+    },
+    {
+      "cik": 1091667,
+      "name": "CHARTER COMMUNICATIONS, INC. /MO/",
+      "ticker": "CHTR",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1679788,
+      "name": "Coinbase Global, Inc.",
+      "ticker": "COIN",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1769628,
+      "name": "CoreWeave, Inc.",
+      "ticker": "CRWV",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1137789,
+      "name": "Seagate Technology Holdings plc",
+      "ticker": "STX",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 106040,
+      "name": "WESTERN DIGITAL CORP",
+      "ticker": "WDC",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1046179,
+      "name": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD",
+      "ticker": "TSM",
+      "exchange": "NYSE"
+    },
+    {
+      "cik": 50863,
+      "name": "INTEL CORP",
+      "ticker": "INTC",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1549802,
+      "name": "JD.com, Inc.",
+      "ticker": "JD",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1326801,
+      "name": "Meta Platforms, Inc.",
+      "ticker": "META",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 723125,
+      "name": "MICRON TECHNOLOGY INC",
+      "ticker": "MU",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1045810,
+      "name": "NVIDIA CORP",
+      "ticker": "NVDA",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1513845,
+      "name": "Nebius Group N.V.",
+      "ticker": "NBIS",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1341439,
+      "name": "ORACLE CORP",
+      "ticker": "ORCL",
+      "exchange": "NYSE"
+    },
+    {
+      "cik": 1737806,
+      "name": "PDD Holdings Inc.",
+      "ticker": "PDD",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1321655,
+      "name": "Palantir Technologies Inc.",
+      "ticker": "PLTR",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 2023554,
+      "name": "Sandisk Corp",
+      "ticker": "SNDK",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1318605,
+      "name": "Tesla, Inc.",
+      "ticker": "TSLA",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1996810,
+      "name": "GE Vernova Inc.",
+      "ticker": "GEV",
+      "exchange": "NYSE"
+    },
+    {
+      "cik": 1050915,
+      "name": "QUANTA SERVICES, INC.",
+      "ticker": "PWR",
+      "exchange": "NYSE"
+    },
+    {
+      "cik": 1899123,
+      "name": "Bitdeer Technologies Group",
+      "ticker": "BTDR",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1839341,
+      "name": "Core Scientific, Inc./tx",
+      "ticker": "CORZ",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1720424,
+      "name": "HIVE Digital Technologies Ltd.",
+      "ticker": "HIVE",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1878848,
+      "name": "IREN Ltd",
+      "ticker": "IREN",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 4904,
+      "name": "AMERICAN ELECTRIC POWER CO INC",
+      "ticker": "AEP",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1664703,
+      "name": "Bloom Energy Corp",
+      "ticker": "BE",
+      "exchange": "NYSE"
+    },
+    {
+      "cik": 18230,
+      "name": "CATERPILLAR INC",
+      "ticker": "CAT",
+      "exchange": "NYSE"
+    },
+    {
+      "cik": 26172,
+      "name": "CUMMINS INC",
+      "ticker": "CMI",
+      "exchange": "NYSE"
+    },
+    {
+      "cik": 715957,
+      "name": "DOMINION ENERGY, INC",
+      "ticker": "D",
+      "exchange": "NYSE"
+    },
+    {
+      "cik": 1551182,
+      "name": "Eaton Corp plc",
+      "ticker": "ETN",
+      "exchange": "NYSE"
+    },
+    {
+      "cik": 105634,
+      "name": "EMCOR Group, Inc.",
+      "ticker": "EME",
+      "exchange": "NYSE"
+    },
+    {
+      "cik": 65984,
+      "name": "ENTERGY CORP /DE/",
+      "ticker": "ETR",
+      "exchange": "NYSE"
+    },
+    {
+      "cik": 700923,
+      "name": "MYR GROUP INC.",
+      "ticker": "MYRG",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 80420,
+      "name": "POWELL INDUSTRIES INC",
+      "ticker": "POWL",
+      "exchange": "Nasdaq"
+    },
+    {
+      "cik": 1032208,
+      "name": "SEMPRA",
+      "ticker": "SRE",
+      "exchange": "NYSE"
+    },
+    {
+      "cik": 92122,
+      "name": "SOUTHERN CO",
+      "ticker": "SO",
+      "exchange": "NYSE"
+    },
+    {
+      "cik": 1674101,
+      "name": "Vertiv Holdings Co",
+      "ticker": "VRT",
+      "exchange": "NYSE"
+    }
+  ]
+}

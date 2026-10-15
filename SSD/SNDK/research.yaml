@@ -1,0 +1,30 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:sandisk
+kind: company
+name: Sandisk Corporation
+aliases:
+- Sandisk Corporation
+- SNDK
+securities:
+- market: US
+  mic: XNAS
+  symbol: SNDK
+primary_document: SanDisk.md
+documents: []
+related_entities: []
+sections:
+  thesis: null
+  open_questions: null
+  metrics:
+    path: SanDisk.md
+    heading_path:
+    - Sandisk Corporation（SNDK）公司研究
+    - 8. 核心矛盾、风险与跟踪清单
+  risks:
+    path: SanDisk.md
+    heading_path:
+    - Sandisk Corporation（SNDK）公司研究
+    - 8. 核心矛盾、风险与跟踪清单
+    - 主要风险
+  research_metadata: null

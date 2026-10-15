@@ -1,0 +1,29 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:ge-vernova
+kind: company
+name: GE Vernova
+aliases:
+- GE Vernova
+- GEV
+securities:
+- market: US
+  mic: XNYS
+  symbol: GEV
+primary_document: ../GEV.md
+documents: []
+related_entities: []
+sections:
+  thesis:
+    path: ../GEV.md
+    heading_path:
+    - GE Vernova（GEV）研究笔记
+    - 10. 我的看法（修订版）【我的推演】
+  open_questions:
+    path: ../GEV.md
+    heading_path:
+    - GE Vernova（GEV）研究笔记
+    - 12. 后续研究方向
+  metrics: null
+  risks: null
+  research_metadata: null

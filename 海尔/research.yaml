@@ -1,0 +1,32 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:haier-smart-home
+kind: company
+name: 海尔智家
+aliases:
+- 海尔智家
+- 海尔
+- '600690'
+- 06690
+- 690D
+securities:
+- market: CN
+  mic: XSHG
+  symbol: '600690'
+- market: HK
+  mic: XHKG
+  symbol: 06690
+- market: DE
+  mic: XFRA
+  symbol: 690D
+primary_document: 海尔智家.md
+documents: []
+related_entities:
+- entity_id: company:haier-group
+  relation: parent
+sections:
+  thesis: null
+  open_questions: null
+  metrics: null
+  risks: null
+  research_metadata: null

@@ -1,0 +1,44 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:bytedance
+kind: company
+name: 字节跳动
+aliases:
+- 字节跳动
+securities: []
+primary_document: 字节跳动.md
+documents:
+- path: 业务与客户.md
+  role: supplement
+- path: 估值与资金效率.md
+  role: supplement
+- path: 我的看法.md
+  role: opinion
+- path: 护城河与竞争地位.md
+  role: supplement
+- path: 核心矛盾与治理.md
+  role: supplement
+- path: 盈利与负债.md
+  role: supplement
+- path: 竞争对手与行业.md
+  role: supplement
+- path: 营收情况.md
+  role: supplement
+- path: 资料来源-2026-10-05.md
+  role: source
+- path: 资本分配与AI投入.md
+  role: supplement
+related_entities: []
+sections:
+  thesis:
+    path: 我的看法.md
+    heading_path:
+    - 我的看法
+  open_questions:
+    path: 字节跳动.md
+    heading_path:
+    - 字节跳动研究
+    - 结论强度与后续跟踪
+  metrics: null
+  risks: null
+  research_metadata: null

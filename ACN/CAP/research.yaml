@@ -1,0 +1,25 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:capgemini
+kind: company
+name: Capgemini SE
+aliases:
+- Capgemini SE
+securities:
+- market: FR
+  mic: XPAR
+  symbol: CAP
+primary_document: ../ACN.md
+documents: []
+related_entities: []
+sections:
+  thesis: null
+  open_questions: null
+  metrics: null
+  risks: null
+  research_metadata: null
+primary_section:
+  heading_path:
+  - 埃森哲（ACN）研究笔记
+  - 7. 竞争对手
+  - 7.4 ACN vs Capgemini

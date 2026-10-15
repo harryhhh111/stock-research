@@ -1,0 +1,27 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:xai
+kind: company
+name: xAI
+aliases:
+- xAI
+- XAI
+securities: []
+primary_document: ../xAI的数据中心.md
+documents: []
+related_entities: []
+sections:
+  thesis:
+    path: ../xAI的数据中心.md
+    heading_path:
+    - xAI 孟菲斯 Colossus 数据中心研究笔记
+    - 6. 核心结论
+  open_questions:
+    path: ../xAI的数据中心.md
+    heading_path:
+    - xAI 孟菲斯 Colossus 数据中心研究笔记
+    - 6. 核心结论
+    - 待研究问题
+  metrics: null
+  risks: null
+  research_metadata: null

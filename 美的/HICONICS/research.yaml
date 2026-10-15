@@ -1,0 +1,24 @@
+# 研究边界：与美的另一能源子公司共用比较底稿，表格中分别列示两家公司，不能将合计当作本公司收入。
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:hiconics
+kind: company
+name: 合康新能
+aliases:
+- 合康新能
+securities:
+- market: CN
+  mic: XSHE
+  symbol: '300048'
+primary_document: ../5. 新能源(美的能源).md
+documents: []
+related_entities:
+- entity_id: company:midea
+  relation: parent
+sections:
+  thesis: null
+  open_questions: null
+  metrics: null
+  risks: null
+  research_metadata: null
+research_scope: 与美的另一能源子公司共用比较底稿，表格中分别列示两家公司，不能将合计当作本公司收入。

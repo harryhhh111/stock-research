@@ -1,0 +1,29 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:meta
+kind: company
+name: Meta Platforms
+aliases:
+- Meta Platforms
+- META
+securities:
+- market: US
+  mic: XNAS
+  symbol: META
+primary_document: META.md
+documents: []
+related_entities: []
+sections:
+  thesis:
+    path: META.md
+    heading_path:
+    - Meta Platforms（META）研究笔记
+    - 8. 当前判断与跟踪清单【我的推演】
+  open_questions: null
+  metrics:
+    path: META.md
+    heading_path:
+    - Meta Platforms（META）研究笔记
+    - 8. 当前判断与跟踪清单【我的推演】
+  risks: null
+  research_metadata: null

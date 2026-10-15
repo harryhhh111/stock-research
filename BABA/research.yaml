@@ -1,0 +1,43 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:alibaba
+kind: company
+name: Alibaba Group
+aliases:
+- Alibaba Group
+- BABA
+- 09988
+securities:
+- market: US
+  mic: XNYS
+  symbol: BABA
+- market: HK
+  mic: XHKG
+  symbol: 09988
+primary_document: BABA.md
+documents:
+- path: AI与云业务.md
+  role: supplement
+- path: 千问模型与产品.md
+  role: supplement
+- path: 海外电商.md
+  role: supplement
+related_entities: []
+sections:
+  thesis:
+    path: BABA.md
+    heading_path:
+    - 阿里巴巴（BABA / 9988.HK）研究笔记
+    - 8. 我的看法【我的推演】
+  open_questions:
+    path: BABA.md
+    heading_path:
+    - 阿里巴巴（BABA / 9988.HK）研究笔记
+    - 10. 后续研究方向
+  metrics:
+    path: AI与云业务.md
+    heading_path:
+    - 阿里巴巴 AI 与云业务：收入、利润、资本开支拆解
+    - 七、后续每季跟踪表
+  risks: null
+  research_metadata: null

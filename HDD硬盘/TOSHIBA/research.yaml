@@ -1,0 +1,26 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:toshiba
+kind: company
+name: Toshiba
+aliases:
+- Toshiba
+- TOSHIBA
+securities: []
+primary_document: ../东芝.md
+documents: []
+related_entities: []
+sections:
+  thesis:
+    path: ../东芝.md
+    heading_path:
+    - Toshiba（东芝）研究笔记：退市后的 HDD 第三家供给者
+    - 11. 我的看法（整章【我的推演】）
+  open_questions:
+    path: ../东芝.md
+    heading_path:
+    - Toshiba（东芝）研究笔记：退市后的 HDD 第三家供给者
+    - 12. 后续跟踪与披露缺口
+  metrics: null
+  risks: null
+  research_metadata: null

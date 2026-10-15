@@ -111,11 +111,59 @@ class EntryTests(unittest.TestCase):
         self.assertEqual(lookup_market(result,'US','ORCL')['status'],'ambiguous')
         self.assertEqual(lookup_market(result,'US','ORCL','XNYS')['status'],'ok')
 
+    def test_extended_market_combinations(self):
+        for market,mic,symbol in [('JP','XTKS','285A'),('KR','XKRX','000660'),
+                                  ('DE','XETR','ENR'),('CA','XTSE','BB'),('TW','XTAI','2330'),
+                                  ('IN','XNSE','TCS'),('FR','XPAR','CAP'),('AU','XASX','APX'),('IT','XMIL','PRY')]:
+            with self.subTest(market=market):
+                data=copy.deepcopy(self.base)
+                data['securities']=[{'market':market,'mic':mic,'symbol':symbol}]
+                self.write('中文/嵌套',data)
+                self.assertFalse(validate(self.root)['errors'])
+
+    def test_shared_primary_section_and_company_row(self):
+        data=copy.deepcopy(self.base)
+        data['primary_section']={'heading_path':['研究','比较'],'table_row':'Company A'}
+        data['research_scope']='公司比较专题'
+        path=self.write('中文/嵌套',data)
+        (path/'main.md').write_text('# 研究\n## 比较\n| 公司 | 收入 |\n|---|---|\n| Company A | 10 |\n| Company B | 20 |\n| Company A | 30 |\n## 其他\n别的研究')
+        result=validate(self.root)
+        self.assertFalse(result['errors'])
+        text=result['entities'][0]['primary_excerpt']['text']
+        self.assertIn('| 公司 | 收入 |',text)
+        self.assertIn('| Company A | 10 |',text)
+        self.assertIn('| Company A | 30 |',text)
+        self.assertNotIn('Company B',text)
+        self.assertNotIn('别的研究',text)
+        self.assertEqual(validate(self.root,limit=12)['entities'][0]['primary_excerpt']['status'],'truncated')
+        data['primary_section']['table_row']='Unknown'
+        self.write('中文/嵌套',data)
+        self.assertTrue(validate(self.root)['errors'])
+        data['primary_section']={'heading_path':['Unknown']}
+        self.write('中文/嵌套',data)
+        self.assertTrue(validate(self.root)['errors'])
+
+    def test_full_library_sections_and_subject_boundaries(self):
+        result=validate(ROOT)
+        self.assertFalse(result['errors'])
+        for entity in result['entities']:
+            self.assertEqual(entity['schema_version'],2)
+            for section in entity['extracted_sections'].values():
+                if section.get('path'):
+                    self.assertEqual(section['status'],'ok',entity['entry'])
+            if entity.get('primary_section'):
+                self.assertEqual(entity['primary_excerpt']['status'],'ok',entity['entry'])
+        identities={e['entity_id']:e for e in result['entities']}
+        for subject in ('company:haier-group','company:hitachi-energy','company:telus-digital','company:stateline-power'):
+            self.assertEqual(identities[subject]['securities'],[])
+        self.assertEqual(identities['company:haier-smart-home']['related_entities'][0]['entity_id'],'company:haier-group')
+
     def test_real_pilot(self):
         result=validate(ROOT)
         self.assertFalse(result['errors'])
         for data in result['entities']:
-            self.assertEqual(data['extracted_sections']['thesis']['status'],'ok')
+            if data['entity_id'] in {'company:oracle','company:nebius','company:intel','topic:nand'}:
+                self.assertEqual(data['extracted_sections']['thesis']['status'],'ok')
         self.assertTrue({'company:oracle','company:nebius','company:intel','topic:nand'} <= {d['entity_id'] for d in result['entities']})
 
 if __name__=='__main__':

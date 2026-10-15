@@ -1,0 +1,29 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:gree
+kind: company
+name: 格力电器
+aliases:
+- 格力电器
+- 格力
+- '000651'
+securities:
+- market: CN
+  mic: XSHE
+  symbol: '000651'
+primary_document: 基本情况.md
+documents:
+- path: 消费降级.md
+  role: supplement
+- path: 财务数据.md
+  role: supplement
+related_entities: []
+sections:
+  thesis: null
+  open_questions: null
+  metrics: null
+  risks:
+    path: 基本情况.md
+    heading_path:
+    - 七、主要风险
+  research_metadata: null

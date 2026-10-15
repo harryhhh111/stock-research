@@ -1,0 +1,26 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:vertiv
+kind: company
+name: Vertiv
+aliases:
+- Vertiv
+securities:
+- market: US
+  mic: XNYS
+  symbol: VRT
+primary_document: ../../数据中心/电力系统/2026-09-28-电力接入受益公司首轮补充.md
+documents: []
+related_entities: []
+sections:
+  thesis: null
+  open_questions: null
+  metrics: null
+  risks: null
+  research_metadata: null
+research_scope: 首轮横向核验；限定章节为多公司比较表，只使用 Vertiv 对应行，非完整公司报告。
+primary_section:
+  heading_path:
+  - 美国数据中心电力接入：受益公司首轮补充
+  - 第二组：园区内电气与机电设备
+  table_row: Vertiv（VRT）

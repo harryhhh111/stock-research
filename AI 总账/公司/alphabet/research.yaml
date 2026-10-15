@@ -1,0 +1,29 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:alphabet
+kind: company
+name: Alphabet（Google）
+aliases:
+- Alphabet（Google）
+securities:
+- market: US
+  mic: XNAS
+  symbol: GOOGL
+- market: US
+  mic: XNAS
+  symbol: GOOG
+primary_document: ../../AI 总账.md
+documents: []
+related_entities: []
+sections:
+  thesis: null
+  open_questions: null
+  metrics: null
+  risks: null
+  research_metadata: null
+research_scope: AI 投入、收入与融资台账专题；限定章节为跨公司表，只使用本公司对应行，不把其他公司的数据或观点归于本公司。
+primary_section:
+  heading_path:
+  - AI 总账 —— 需求端到底有多少钱，是不是泡沫
+  - 1. 台账 A：基建买家（钱花出去的一侧）
+  table_row: Google

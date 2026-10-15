@@ -1,0 +1,25 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:emcor
+kind: company
+name: EMCOR Group
+aliases:
+- EMCOR Group
+- EME
+securities:
+- market: US
+  mic: XNYS
+  symbol: EME
+primary_document: EMCOR.md
+documents: []
+related_entities: []
+sections:
+  thesis:
+    path: EMCOR.md
+    heading_path:
+    - 'EMCOR Group（NYSE: EME）：数据中心电气/机电施工观察股'
+    - 0. 结论先行
+  open_questions: null
+  metrics: null
+  risks: null
+  research_metadata: null

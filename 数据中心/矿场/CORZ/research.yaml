@@ -1,0 +1,42 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:core-scientific
+kind: company
+name: Core Scientific
+aliases:
+- Core Scientific
+- CORZ
+securities:
+- market: US
+  mic: XNAS
+  symbol: CORZ
+primary_document: CORZ.md
+documents:
+- path: 业务与每MW经济账.md
+  role: supplement
+- path: 估值口径.md
+  role: supplement
+- path: 合同与2026-2028容量.md
+  role: supplement
+- path: 我的看法.md
+  role: opinion
+- path: 护城河与治理.md
+  role: supplement
+- path: 来源.md
+  role: source
+- path: 盈利负债与资本分配.md
+  role: supplement
+- path: 竞争对手.md
+  role: supplement
+- path: 营收与客户.md
+  role: supplement
+related_entities: []
+sections:
+  thesis:
+    path: 我的看法.md
+    heading_path:
+    - 我的看法
+  open_questions: null
+  metrics: null
+  risks: null
+  research_metadata: null

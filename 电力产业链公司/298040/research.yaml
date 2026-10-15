@@ -1,0 +1,29 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:hyosung-heavy-industries
+kind: company
+name: Hyosung Heavy Industries
+aliases:
+- Hyosung Heavy Industries
+- '298040'
+securities:
+- market: KR
+  mic: XKRX
+  symbol: '298040'
+primary_document: Hyosung Heavy Industries.md
+documents: []
+related_entities: []
+sections:
+  thesis:
+    path: Hyosung Heavy Industries.md
+    heading_path:
+    - 'Hyosung Heavy Industries（KRX: 298040）研究'
+    - 结论先行
+  open_questions:
+    path: Hyosung Heavy Industries.md
+    heading_path:
+    - 'Hyosung Heavy Industries（KRX: 298040）研究'
+    - 6. 风险、治理与下一步核验
+  metrics: null
+  risks: null
+  research_metadata: null

@@ -1,0 +1,33 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:nvidia
+kind: company
+name: NVIDIA
+aliases:
+- NVIDIA
+- NVDA
+securities:
+- market: US
+  mic: XNAS
+  symbol: NVDA
+primary_document: NVDA.md
+documents: []
+related_entities: []
+sections:
+  thesis:
+    path: NVDA.md
+    heading_path:
+    - NVIDIA（NVDA）研究笔记
+    - 结论先行
+  open_questions:
+    path: NVDA.md
+    heading_path:
+    - NVIDIA（NVDA）研究笔记
+    - 10. 后续研究清单
+  metrics: null
+  risks:
+    path: NVDA.md
+    heading_path:
+    - NVIDIA（NVDA）研究笔记
+    - 7. 关键风险与治理
+  research_metadata: null

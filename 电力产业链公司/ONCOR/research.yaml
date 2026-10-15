@@ -1,0 +1,24 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:oncor
+kind: company
+name: Oncor
+aliases:
+- Oncor
+securities: []
+primary_document: ../../数据中心/电力系统/2026-09-28-电力接入受益公司首轮补充.md
+documents: []
+related_entities: []
+sections:
+  thesis: null
+  open_questions: null
+  metrics: null
+  risks: null
+  research_metadata: null
+research_scope: 首轮横向核验；限定章节为多公司比较表，只使用 Oncor 对应行，非完整公司报告。Oncor 为 Sempra 权益法投资，不能视为
+  Sempra 100% 并表主体。
+primary_section:
+  heading_path:
+  - 美国数据中心电力接入：受益公司首轮补充
+  - 第一组：供电与变电站的决策方（优先补）
+  table_row: Sempra / Oncor（SRE；Oncor 非独立上市）

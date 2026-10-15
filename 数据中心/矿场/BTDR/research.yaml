@@ -1,0 +1,25 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:bitdeer
+kind: company
+name: Bitdeer Technologies Group
+aliases:
+- Bitdeer Technologies Group
+- BTDR
+securities:
+- market: US
+  mic: XNAS
+  symbol: BTDR
+primary_document: ../BTDR-比特小鹿.md
+documents: []
+related_entities: []
+sections:
+  thesis: null
+  open_questions: null
+  metrics: null
+  risks:
+    path: ../BTDR-比特小鹿.md
+    heading_path:
+    - Bitdeer（BTDR / 比特小鹿）：矿企、ASIC 制造商到 AI 托管的早期转型样本
+    - 7. 投资观察清单与主要风险
+  research_metadata: null

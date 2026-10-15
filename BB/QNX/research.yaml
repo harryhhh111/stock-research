@@ -1,0 +1,28 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:qnx
+kind: company
+name: QNX（BlackBerry 子公司业务主体）
+aliases:
+- QNX（BlackBerry 子公司业务主体）
+securities: []
+primary_document: ../QNX.md
+documents: []
+related_entities:
+- entity_id: company:blackberry
+  relation: parent
+sections:
+  thesis:
+    path: ../QNX.md
+    heading_path:
+    - QNX 业务研究笔记
+    - 4. 客户深度：比营收数字更有意思
+    - 4.6 对 QNX 客户变化的理解【我的推演】
+  open_questions:
+    path: ../QNX.md
+    heading_path:
+    - QNX 业务研究笔记
+    - 6. 后续研究方向
+  metrics: null
+  risks: null
+  research_metadata: null

@@ -1,0 +1,24 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:xpeng
+kind: company
+name: 小鹏汽车
+aliases:
+- 小鹏汽车
+securities:
+- market: US
+  mic: XNYS
+  symbol: XPEV
+- market: HK
+  mic: XHKG
+  symbol: 09868
+primary_document: ../一辆汽车上的系统.md
+documents: []
+related_entities: []
+sections:
+  thesis: null
+  open_questions: null
+  metrics: null
+  risks: null
+  research_metadata: null
+research_scope: 仅研究小鹏汽车车载操作系统分工，不是完整公司报告。

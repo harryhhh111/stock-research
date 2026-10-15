@@ -1,0 +1,34 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:coinbase
+kind: company
+name: Coinbase Global
+aliases:
+- Coinbase Global
+- COIN
+securities:
+- market: US
+  mic: XNAS
+  symbol: COIN
+primary_document: 2026-10-01-Coinbase研究报告.md
+documents:
+- path: 我的看法.md
+  role: opinion
+related_entities: []
+sections:
+  thesis:
+    path: 我的看法.md
+    heading_path:
+    - Coinbase：我的看法
+  open_questions:
+    path: 2026-10-01-Coinbase研究报告.md
+    heading_path:
+    - Coinbase（NASDAQ：COIN）研究报告
+    - 八、后续跟踪清单与核对结论
+  metrics:
+    path: 2026-10-01-Coinbase研究报告.md
+    heading_path:
+    - Coinbase（NASDAQ：COIN）研究报告
+    - 八、后续跟踪清单与核对结论
+  risks: null
+  research_metadata: null

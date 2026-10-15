@@ -1,0 +1,40 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:samsung-electronics
+kind: company
+name: Samsung Electronics
+aliases:
+- Samsung Electronics
+- 三星
+- 005930
+- 005935
+securities:
+- market: KR
+  mic: XKRX
+  symbol: 005930
+- market: KR
+  mic: XKRX
+  symbol: 005935
+primary_document: 三星电子.md
+documents:
+- path: FY2026H1数据与HBM协同.md
+  role: supplement
+- path: 产能与数据中心供需量化.md
+  role: supplement
+- path: 资本开支与产能.md
+  role: supplement
+related_entities: []
+sections:
+  thesis:
+    path: 三星电子.md
+    heading_path:
+    - 三星电子：第一阶段——内存与闪存研究
+    - 6. 当前研究判断与待补证事项
+  open_questions:
+    path: 三星电子.md
+    heading_path:
+    - 三星电子：第一阶段——内存与闪存研究
+    - 6. 当前研究判断与待补证事项
+  metrics: null
+  risks: null
+  research_metadata: null

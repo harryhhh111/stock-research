@@ -1,0 +1,42 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+# 研究边界：以 Hitachi Energy 业务为切入点的日立母公司研究，并非集团全业务研究。
+schema_version: 2
+entity_id: company:hitachi
+kind: company
+name: Hitachi, Ltd.
+aliases:
+- Hitachi, Ltd.
+- HITACHI
+- '6501'
+securities:
+- market: JP
+  mic: XTKS
+  symbol: '6501'
+primary_document: Hitachi Energy.md
+documents: []
+related_entities: []
+sections:
+  thesis:
+    path: Hitachi Energy.md
+    heading_path:
+    - Hitachi Energy（Hitachi 6501.T 子公司）研究
+    - 结论先行
+  open_questions:
+    path: Hitachi Energy.md
+    heading_path:
+    - Hitachi Energy（Hitachi 6501.T 子公司）研究
+    - 9. 核心矛盾、风险与跟踪清单
+    - 下一步研究任务（按优先级）
+  metrics:
+    path: Hitachi Energy.md
+    heading_path:
+    - Hitachi Energy（Hitachi 6501.T 子公司）研究
+    - 9. 核心矛盾、风险与跟踪清单
+  risks:
+    path: Hitachi Energy.md
+    heading_path:
+    - Hitachi Energy（Hitachi 6501.T 子公司）研究
+    - 9. 核心矛盾、风险与跟踪清单
+    - 主要风险
+  research_metadata: null
+research_scope: 以 Hitachi Energy 业务为切入点的日立母公司研究，并非集团全业务研究。

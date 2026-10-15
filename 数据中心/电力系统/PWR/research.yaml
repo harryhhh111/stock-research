@@ -1,0 +1,25 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:quanta-services
+kind: company
+name: Quanta Services
+aliases:
+- Quanta Services
+- PWR
+securities:
+- market: US
+  mic: XNYS
+  symbol: PWR
+primary_document: ../Quanta.md
+documents: []
+related_entities: []
+sections:
+  thesis: null
+  open_questions: null
+  metrics: null
+  risks:
+    path: ../Quanta.md
+    heading_path:
+    - Quanta Services（PWR）研究笔记
+    - 8. 风险
+  research_metadata: null

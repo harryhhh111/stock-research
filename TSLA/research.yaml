@@ -1,0 +1,38 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:tesla
+kind: company
+name: Tesla
+aliases:
+- Tesla
+- TSLA
+securities:
+- market: US
+  mic: XNAS
+  symbol: TSLA
+primary_document: TSLA.md
+documents:
+- path: 业务与经营.md
+  role: supplement
+- path: 估值与股价.md
+  role: supplement
+- path: 指标跟踪.md
+  role: supplement
+related_entities: []
+sections:
+  thesis: null
+  open_questions:
+    path: TSLA.md
+    heading_path:
+    - Tesla（TSLA）研究总览
+    - 8. 后续研究优先级
+  metrics:
+    path: 指标跟踪.md
+    heading_path:
+    - Tesla 十项指标跟踪清单
+  risks:
+    path: TSLA.md
+    heading_path:
+    - Tesla（TSLA）研究总览
+    - 7. 核心矛盾、治理与风险
+  research_metadata: null

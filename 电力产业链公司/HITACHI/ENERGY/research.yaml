@@ -1,0 +1,40 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+# 研究边界：未单独上市的 Hitachi Energy 子公司，证券列表为空；与母公司共用底稿。
+schema_version: 2
+entity_id: company:hitachi-energy
+kind: company
+name: Hitachi Energy
+aliases:
+- Hitachi Energy
+- ENERGY
+securities: []
+primary_document: ../Hitachi Energy.md
+documents: []
+related_entities:
+- entity_id: company:hitachi
+  relation: parent
+sections:
+  thesis:
+    path: ../Hitachi Energy.md
+    heading_path:
+    - Hitachi Energy（Hitachi 6501.T 子公司）研究
+    - 结论先行
+  open_questions:
+    path: ../Hitachi Energy.md
+    heading_path:
+    - Hitachi Energy（Hitachi 6501.T 子公司）研究
+    - 9. 核心矛盾、风险与跟踪清单
+    - 下一步研究任务（按优先级）
+  metrics:
+    path: ../Hitachi Energy.md
+    heading_path:
+    - Hitachi Energy（Hitachi 6501.T 子公司）研究
+    - 9. 核心矛盾、风险与跟踪清单
+  risks:
+    path: ../Hitachi Energy.md
+    heading_path:
+    - Hitachi Energy（Hitachi 6501.T 子公司）研究
+    - 9. 核心矛盾、风险与跟踪清单
+    - 主要风险
+  research_metadata: null
+research_scope: 未单独上市的 Hitachi Energy 子公司，证券列表为空；与母公司共用底稿。

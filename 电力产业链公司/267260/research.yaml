@@ -1,0 +1,35 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:hd-hyundai-electric
+kind: company
+name: HD Hyundai Electric
+aliases:
+- HD Hyundai Electric
+- '267260'
+securities:
+- market: KR
+  mic: XKRX
+  symbol: '267260'
+primary_document: HD Hyundai Electric.md
+documents: []
+related_entities: []
+sections:
+  thesis:
+    path: HD Hyundai Electric.md
+    heading_path:
+    - 'HD Hyundai Electric（KRX: 267260）研究'
+    - 结论先行
+  open_questions:
+    path: HD Hyundai Electric.md
+    heading_path:
+    - 'HD Hyundai Electric（KRX: 267260）研究'
+    - 3. 数据中心订单：目前最有价值、也最易被误读的一条证据
+    - 3.2 下一步怎样把它变成可计算证据
+  metrics: null
+  risks:
+    path: HD Hyundai Electric.md
+    heading_path:
+    - 'HD Hyundai Electric（KRX: 267260）研究'
+    - 5. 客户、竞争与风险
+    - 主要风险
+  research_metadata: null

@@ -1,0 +1,51 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+# 研究边界：历史业务拆分文档为导航主入口，财务估值和业务模块列作辅助；未合并或重写。
+schema_version: 2
+entity_id: company:midea
+kind: company
+name: 美的集团
+aliases:
+- 美的集团
+- 美的
+- '000333'
+- '00300'
+securities:
+- market: CN
+  mic: XSHE
+  symbol: '000333'
+- market: HK
+  mic: XHKG
+  symbol: '00300'
+primary_document: 业务拆分方式.md
+documents:
+- path: 1. 智能家居.md
+  role: supplement
+- path: 2. 工业技术.md
+  role: supplement
+- path: 3. 楼宇科技.md
+  role: supplement
+- path: 4. 机器人与自动化.md
+  role: supplement
+- path: 5. 新能源(美的能源).md
+  role: supplement
+- path: 6. 医疗.md
+  role: supplement
+- path: 7. 智慧物流.md
+  role: supplement
+- path: 估值和半年报.md
+  role: supplement
+- path: 分析框架.md
+  role: supplement
+- path: 协同关系.md
+  role: supplement
+related_entities: []
+sections:
+  thesis: null
+  open_questions:
+    path: 2. 工业技术.md
+    heading_path:
+    - 下一步研究问题
+  metrics: null
+  risks: null
+  research_metadata: null
+research_scope: 历史业务拆分文档为导航主入口，财务估值和业务模块列作辅助；未合并或重写。

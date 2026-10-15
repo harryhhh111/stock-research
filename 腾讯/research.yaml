@@ -1,0 +1,33 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:tencent
+kind: company
+name: 腾讯控股
+aliases:
+- 腾讯控股
+- 腾讯
+- '00700'
+securities:
+- market: HK
+  mic: XHKG
+  symbol: '00700'
+primary_document: 腾讯.md
+documents:
+- path: AI与云投入产出.md
+  role: supplement
+- path: 我的看法.md
+  role: opinion
+- path: 游戏与金融科技企业服务.md
+  role: supplement
+- path: 营销服务业务分析.md
+  role: supplement
+related_entities: []
+sections:
+  thesis:
+    path: 我的看法.md
+    heading_path:
+    - 我的看法：腾讯
+  open_questions: null
+  metrics: null
+  risks: null
+  research_metadata: null

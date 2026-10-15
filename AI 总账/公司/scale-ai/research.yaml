@@ -1,0 +1,23 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:scale-ai
+kind: company
+name: Scale AI
+aliases:
+- Scale AI
+securities: []
+primary_document: ../../2026-09-14-训练数据公司组织规模研究.md
+documents: []
+related_entities: []
+sections:
+  thesis: null
+  open_questions: null
+  metrics: null
+  risks: null
+  research_metadata: null
+research_scope: 公司组织与训练数据交付能力专题；不是完整基本面报告。
+primary_section:
+  heading_path:
+  - 私有 AI 训练数据公司的组织规模与能力研究
+  - 二、核心公司逐家研判
+  - 2.1 Scale AI：从“数据运营”升级为 RL 系统平台的证据最充分

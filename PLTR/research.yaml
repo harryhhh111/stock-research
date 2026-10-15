@@ -1,0 +1,33 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:palantir
+kind: company
+name: Palantir Technologies
+aliases:
+- Palantir Technologies
+- PLTR
+securities:
+- market: US
+  mic: XNAS
+  symbol: PLTR
+primary_document: PLTR.md
+documents: []
+related_entities: []
+sections:
+  thesis:
+    path: PLTR.md
+    heading_path:
+    - Palantir（PLTR）研究笔记
+    - 11. 投资判断与风险
+  open_questions:
+    path: PLTR.md
+    heading_path:
+    - Palantir（PLTR）研究笔记
+    - 12. 后续研究方向
+  metrics: null
+  risks:
+    path: PLTR.md
+    heading_path:
+    - Palantir（PLTR）研究笔记
+    - 11. 投资判断与风险
+  research_metadata: null

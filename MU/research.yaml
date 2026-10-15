@@ -1,0 +1,42 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:micron
+kind: company
+name: Micron Technology
+aliases:
+- Micron Technology
+- MU
+securities:
+- market: US
+  mic: XNAS
+  symbol: MU
+primary_document: MU.md
+documents:
+- path: 2027内存供给与价格.md
+  role: supplement
+- path: 业务与营收拆分.md
+  role: supplement
+- path: 估值与资金效率.md
+  role: supplement
+- path: 订单、产能与资本开支.md
+  role: supplement
+related_entities: []
+sections:
+  thesis:
+    path: MU.md
+    heading_path:
+    - Micron Technology（MU）研究整合
+    - 一、投资摘要
+  open_questions: null
+  metrics:
+    path: MU.md
+    heading_path:
+    - Micron Technology（MU）研究整合
+    - 十、待跟踪清单
+  risks:
+    path: MU.md
+    heading_path:
+    - Micron Technology（MU）研究整合
+    - 九、核心矛盾、风险与治理
+    - 主要风险
+  research_metadata: null

@@ -1,0 +1,29 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:dominion-energy
+kind: company
+name: Dominion Energy
+aliases:
+- Dominion Energy
+- D
+securities:
+- market: US
+  mic: XNYS
+  symbol: D
+primary_document: Dominion Energy.md
+documents: []
+related_entities: []
+sections:
+  thesis:
+    path: Dominion Energy.md
+    heading_path:
+    - 'Dominion Energy（NYSE: D）研究'
+    - 结论先行
+  open_questions:
+    path: Dominion Energy.md
+    heading_path:
+    - 'Dominion Energy（NYSE: D）研究'
+    - 7. 下一步研究任务
+  metrics: null
+  risks: null
+  research_metadata: null

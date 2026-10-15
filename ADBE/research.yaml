@@ -1,0 +1,31 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:adobe
+kind: company
+name: Adobe
+aliases:
+- Adobe
+- ADBE
+securities:
+- market: US
+  mic: XNAS
+  symbol: ADBE
+primary_document: ADBE.md
+documents:
+- path: 视频工作流调研.md
+  role: supplement
+related_entities: []
+sections:
+  thesis:
+    path: ADBE.md
+    heading_path:
+    - Adobe（ADBE）研究笔记
+    - 10. 我的看法
+  open_questions:
+    path: ADBE.md
+    heading_path:
+    - Adobe（ADBE）研究笔记
+    - 12. 后续研究方向
+  metrics: null
+  risks: null
+  research_metadata: null

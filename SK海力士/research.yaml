@@ -1,0 +1,32 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:sk-hynix
+kind: company
+name: SK hynix
+aliases:
+- SK hynix
+- SK海力士
+- '000660'
+securities:
+- market: KR
+  mic: XKRX
+  symbol: '000660'
+primary_document: SK海力士.md
+documents:
+- path: 产能专题.md
+  role: supplement
+related_entities: []
+sections:
+  thesis:
+    path: SK海力士.md
+    heading_path:
+    - SK 海力士（SK hynix，000660.KS）研究主报告
+    - 先给结论
+  open_questions: null
+  metrics:
+    path: SK海力士.md
+    heading_path:
+    - SK 海力士（SK hynix，000660.KS）研究主报告
+    - 8. 核心矛盾、情景与跟踪清单
+  risks: null
+  research_metadata: null

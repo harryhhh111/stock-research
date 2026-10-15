@@ -1,0 +1,18 @@
+market,MIC,OPERATING MIC,OPRT/SGMT,ISO COUNTRY CODE (ISO 3166),STATUS,retrieved_on,source
+AU,XASX,XASX,OPRT,AU,ACTIVE,2026-10-15,https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+CA,XTSE,XTSE,OPRT,CA,ACTIVE,2026-10-15,https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+CN,XBSE,XBSE,OPRT,RO,ACTIVE,2026-10-15,https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+CN,XSHE,XSHE,OPRT,CN,ACTIVE,2026-10-15,https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+CN,XSHG,XSHG,OPRT,CN,ACTIVE,2026-10-15,https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+DE,XETR,XETR,OPRT,DE,ACTIVE,2026-10-15,https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+DE,XFRA,XFRA,OPRT,DE,ACTIVE,2026-10-15,https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+FR,XPAR,XPAR,OPRT,FR,ACTIVE,2026-10-15,https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+HK,XHKG,XHKG,OPRT,HK,ACTIVE,2026-10-15,https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+IN,XBOM,XBOM,OPRT,IN,ACTIVE,2026-10-15,https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+IN,XNSE,XNSE,OPRT,IN,ACTIVE,2026-10-15,https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+IT,XMIL,XMIL,OPRT,IT,ACTIVE,2026-10-15,https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+JP,XTKS,XJPX,SGMT,JP,ACTIVE,2026-10-15,https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+KR,XKRX,XKRX,OPRT,KR,ACTIVE,2026-10-15,https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+TW,XTAI,XTAI,OPRT,TW,ACTIVE,2026-10-15,https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+US,XNAS,XNAS,OPRT,US,ACTIVE,2026-10-15,https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+US,XNYS,XNYS,OPRT,US,ACTIVE,2026-10-15,https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv

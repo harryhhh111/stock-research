@@ -1,0 +1,26 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:wandong-medical
+kind: company
+name: 万东医疗
+aliases:
+- 万东医疗
+securities:
+- market: CN
+  mic: XSHG
+  symbol: '600055'
+primary_document: ../6. 医疗.md
+documents: []
+related_entities:
+- entity_id: company:midea
+  relation: parent
+sections:
+  thesis: null
+  open_questions: null
+  metrics: null
+  risks: null
+  research_metadata: null
+primary_section:
+  heading_path:
+  - 6. 医疗 / 美的医疗
+  - 核心资产之一：万东医疗

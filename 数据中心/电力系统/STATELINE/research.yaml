@@ -1,0 +1,22 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+# 研究边界：仅指 Solaris 与 xAI 的合资主体，不与同名独立发电机制造商混同，不使用 Solaris 的 SEI 作为本主体证券。
+schema_version: 2
+entity_id: company:stateline-power
+kind: company
+name: Stateline Power（Solaris/xAI 合资主体）
+aliases:
+- Stateline Power（Solaris/xAI 合资主体）
+- STATELINE
+securities: []
+primary_document: ../Stateline_Power.md
+documents: []
+related_entities:
+- entity_id: company:xai
+  relation: related
+sections:
+  thesis: null
+  open_questions: null
+  metrics: null
+  risks: null
+  research_metadata: null
+research_scope: 仅指 Solaris 与 xAI 的合资主体，不与同名独立发电机制造商混同，不使用 Solaris 的 SEI 作为本主体证券。

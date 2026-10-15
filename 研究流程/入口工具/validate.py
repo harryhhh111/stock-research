@@ -8,7 +8,9 @@ import yaml
 ROOT = Path(__file__).resolve().parents[2]
 KEYS = {'schema_version', 'entity_id', 'kind', 'name', 'aliases', 'securities',
         'primary_document', 'documents', 'related_entities', 'sections'}
-MARKETS = {'US': {'XNYS', 'XNAS'}, 'HK': {'XHKG'}, 'CN': {'XSHG', 'XSHE', 'XBSE'}}
+MARKETS = {'US': {'XNYS', 'XNAS'}, 'HK': {'XHKG'}, 'CN': {'XSHG', 'XSHE', 'XBSE'},
+           'JP': {'XTKS'}, 'KR': {'XKRX'}, 'DE': {'XETR', 'XFRA'},
+           'CA': {'XTSE'}, 'TW': {'XTAI'}, 'IN': {'XNSE', 'XBOM'}, 'FR': {'XPAR'}, 'AU': {'XASX'}, 'IT': {'XMIL'}}
 MIC_MARKET = {mic: market for market, mics in MARKETS.items() for mic in mics}
 SEMANTICS = {'thesis', 'open_questions', 'metrics', 'risks', 'research_metadata'}
 
@@ -88,12 +90,14 @@ def extract(text, heading_path, limit=None):
 
 def read_entry(root, entry, limit=None):
     data = yaml.load(entry.read_text(encoding='utf-8'), Loader=UniqueLoader)
-    shape(data, KEYS - {'aliases'}, {'aliases'})
+    shape(data, KEYS - {'aliases'}, {'aliases', 'primary_section', 'research_scope'})
     require(type(data['schema_version']) is int and data['schema_version'] in (1, 2), '未知 schema_version')
     string(data['entity_id']); string(data['name'])
     require(re.fullmatch(r'(company|topic|protocol|token|other):[a-z0-9][a-z0-9-]*', data['entity_id']), '非法 ID')
     require(data['kind'] == data['entity_id'].split(':')[0], 'kind 与 ID 不匹配')
     strings(data.get('aliases', []))
+    if 'research_scope' in data:
+        string(data['research_scope'])
     for field in ('securities', 'documents', 'related_entities'):
         require(isinstance(data[field], list), f'{field} 需要列表')
     require(data['kind'] == 'company' or not data['securities'], '非公司不能填股票证券')
@@ -108,7 +112,34 @@ def read_entry(root, entry, limit=None):
         string(security['market'])
         require(security['market'] in MARKETS, '未知或未支持 market')
         require(security['mic'] in MARKETS[security['market']], 'market/MIC 不匹配')
-    declared = {document(root, entry, data['primary_document'])}
+    primary = document(root, entry, data['primary_document'])
+    primary_excerpt = None
+    if 'primary_section' in data:
+        shape(data['primary_section'], {'heading_path'}, {'table_row'})
+        strings(data['primary_section']['heading_path'])
+        require(bool(data['primary_section']['heading_path']), '主研究标题链不能为空')
+        primary_excerpt = extract(primary.read_text(encoding='utf-8'), data['primary_section']['heading_path'])
+        require(primary_excerpt['status'] == 'ok', '主研究限定章节不存在或不唯一')
+        if 'table_row' in data['primary_section']:
+            row_key = data['primary_section']['table_row']
+            string(row_key)
+            rows = primary_excerpt['text'].splitlines()
+            selected, table_header = [], []
+            for i, row in enumerate(rows):
+                if row.startswith('|') and i + 1 < len(rows) and re.match(r'^\|[ :|-]+\|$', rows[i+1]):
+                    table_header = [row, rows[i+1]]
+                if row.startswith('|') and row.split('|')[1].strip() == row_key:
+                    if not selected:
+                        selected.extend(table_header)
+                    selected.append(row)
+            require(bool(selected), '主研究表格行不存在')
+            primary_excerpt['text'] = '\n'.join(selected)
+            primary_excerpt['table_row'] = row_key
+            primary_excerpt['total_chars'] = len(primary_excerpt['text'])
+        if limit is not None and len(primary_excerpt['text']) > limit:
+            primary_excerpt['text'] = primary_excerpt['text'][:limit]
+            primary_excerpt['status'] = 'truncated'
+    declared = {primary}
     for doc in data['documents']:
         shape(doc, {'path', 'role'})
         require(doc['role'] in {'supplement', 'opinion', 'review', 'source'}, '非法文档角色')
@@ -133,6 +164,7 @@ def read_entry(root, entry, limit=None):
         sections[key] = {**extract(path.read_text(encoding='utf-8'), locator['heading_path'], limit),
                          'path': str(path.relative_to(root.resolve()))}
     return {**data, 'entry': str(entry.relative_to(root.resolve())), 'extracted_sections': sections,
+            'primary_excerpt': primary_excerpt,
             'market_source': 'explicit' if data['schema_version'] == 2 else 'inferred-from-mic',
             'warnings': [] if data['schema_version'] == 2 else ['旧格式版本 1：market 由已知 MIC 推导，请迁移到版本 2']}
 

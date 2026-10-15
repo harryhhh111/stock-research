@@ -1,0 +1,54 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+# 研究边界：历史多篇笔记暂无综合主报告，暂以公司业务为入口；独立我的看法尚无标题且内容很短，不冒充完整判断。
+schema_version: 2
+entity_id: company:blackberry
+kind: company
+name: BlackBerry
+aliases:
+- BlackBerry
+- BB
+securities:
+- market: US
+  mic: XNYS
+  symbol: BB
+- market: CA
+  mic: XTSE
+  symbol: BB
+primary_document: 公司业务.md
+documents:
+- path: QNX 业务的竞对.md
+  role: supplement
+- path: QNX.md
+  role: supplement
+- path: 一辆汽车上的系统.md
+  role: supplement
+- path: 估值数据.md
+  role: supplement
+- path: 安全通信业务.md
+  role: supplement
+- path: 安全通信业务的竞争对手.md
+  role: supplement
+- path: 安全通信市场需求增长情况.md
+  role: supplement
+- path: 客户是谁.md
+  role: supplement
+- path: 我的看法.md
+  role: opinion
+- path: 盈利和负债情况.md
+  role: supplement
+- path: 营收情况.md
+  role: supplement
+- path: 车企转型或者增长.md
+  role: supplement
+related_entities: []
+sections:
+  thesis: null
+  open_questions:
+    path: QNX.md
+    heading_path:
+    - QNX 业务研究笔记
+    - 6. 后续研究方向
+  metrics: null
+  risks: null
+  research_metadata: null
+research_scope: 历史多篇笔记暂无综合主报告，暂以公司业务为入口；独立我的看法尚无标题且内容很短，不冒充完整判断。

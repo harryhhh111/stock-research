@@ -1,0 +1,36 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:adt
+kind: company
+name: ADT
+aliases:
+- ADT
+securities:
+- market: US
+  mic: XNYS
+  symbol: ADT
+primary_document: ADT.md
+documents:
+- path: ADT 的整体情况.md
+  role: supplement
+- path: 有意思的点.md
+  role: supplement
+related_entities: []
+sections:
+  thesis:
+    path: ADT.md
+    heading_path:
+    - ADT Inc.（ADT）研究笔记
+    - 11. 投资判断与风险
+  open_questions:
+    path: ADT.md
+    heading_path:
+    - ADT Inc.（ADT）研究笔记
+    - 12. 后续研究方向
+  metrics: null
+  risks:
+    path: ADT 的整体情况.md
+    heading_path:
+    - 十、我的判断
+    - 主要风险
+  research_metadata: null

@@ -1,0 +1,33 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:pdd
+kind: company
+name: PDD Holdings
+aliases:
+- PDD Holdings
+- PDD
+securities:
+- market: US
+  mic: XNAS
+  symbol: PDD
+primary_document: PDD.md
+documents:
+- path: 用户与市场份额-2026-09-28.md
+  role: supplement
+- path: 研究路线-2026-09-28.md
+  role: supplement
+related_entities: []
+sections:
+  thesis:
+    path: PDD.md
+    heading_path:
+    - '拼多多 / PDD Holdings（NASDAQ: PDD）研究笔记'
+    - 核心结论【我的推演】
+  open_questions:
+    path: 用户与市场份额-2026-09-28.md
+    heading_path:
+    - PDD 用户规模、增长瓶颈与市场份额核验
+    - 机制判断与待验证指标
+  metrics: null
+  risks: null
+  research_metadata: null

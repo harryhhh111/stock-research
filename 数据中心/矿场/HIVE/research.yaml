@@ -1,0 +1,24 @@
+# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+schema_version: 2
+entity_id: company:hive-digital
+kind: company
+name: HIVE Digital Technologies
+aliases:
+- HIVE Digital Technologies
+- HIVE
+securities:
+- market: US
+  mic: XNAS
+  symbol: HIVE
+- market: CA
+  mic: XTSE
+  symbol: HIVE
+primary_document: ../HIVE.md
+documents: []
+related_entities: []
+sections:
+  thesis: null
+  open_questions: null
+  metrics: null
+  risks: null
+  research_metadata: null
