@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-21",
+  "pair": "HYPE/BTC",
+  "direction": "long HYPE / short BTC",
+  "granularity": "1m→日桶",
+  "fee_side": 0.0005,
+  "reference": "对数线性口径(2026-10-09归档): 净+90.8% 回撤-61.1%",
+  "rows": [
+    {
+      "tau": 0.0,
+      "net_pct": 86.43,
+      "max_dd_pct": -37.91,
+      "sharpe": 1.47,
+      "n_rebalance": 365,
+      "cost_pct": 0.43,
+      "funding_note": "资金费按单位名义日净流入×当日名义均值近似"
+    },
+    {
+      "tau": 0.02,
+      "net_pct": 86.07,
+      "max_dd_pct": -37.93,
+      "sharpe": 1.46,
+      "n_rebalance": 208,
+      "cost_pct": 0.37,
+      "funding_note": "资金费按单位名义日净流入×当日名义均值近似"
+    },
+    {
+      "tau": 0.05,
+      "net_pct": 87.91,
+      "max_dd_pct": -37.77,
+      "sharpe": 1.49,
+      "n_rebalance": 97,
+      "cost_pct": 0.28,
+      "funding_note": "资金费按单位名义日净流入×当日名义均值近似"
+    },
+    {
+      "tau": 0.1,
+      "net_pct": 85.6,
+      "max_dd_pct": -38.59,
+      "sharpe": 1.45,
+      "n_rebalance": 33,
+      "cost_pct": 0.17,
+      "funding_note": "资金费按单位名义日净流入×当日名义均值近似"
+    }
+  ]
+}

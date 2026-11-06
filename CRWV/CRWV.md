@@ -456,3 +456,6 @@ EBITDA 在利润瀑布的**最上游**，净利润在**最下游**，中间隔�
 [S17-prospectus]: https://www.publicnow.com/view/FA0EEB9C6B6207C730253965E30330C9C51F724B "PublicNow 转载 9/17 424B5，搜索索引可读"
 [S17-st]: https://stocktwits.com/news-articles/markets/equity/core-weave-lands-higher-priced-ai-compute-deals-seeks-3-b-more/cZtrFqjRB5H "Stocktwits，9/17 08:27 EDT"
 [S17-dj]: https://www.marketscreener.com/news/coreweave-moves-to-raise-billions-via-convertible-debt-share-offerings-ce785bd3dd8ffe2d "Dow Jones / MarketScreener，9/17 盘前报道及行情快照"
+
+---
+**相关研究**：[2026-10-21-NBIS-CRWV-pair回测](2026-10-21-NBIS-CRWV-pair回测.md)（与 Nebius 的等名义多空 pair，一年日线回测，探索性）

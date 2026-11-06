@@ -48,3 +48,13 @@ venv/
 # Large derived curves can be regenerated; retain compact results and ledgers.
 /HYPE/factcheck/*-pair净值曲线.json
 
+# Rolling Polygon downloads stay local; keep the three fixed inputs for the published pair run.
+/CRWV/factcheck/data/*-nbis-1d.csv
+/CRWV/factcheck/data/*-crwv-1d.csv
+/CRWV/factcheck/data/*-qqq-1d.csv
+/CRWV/factcheck/data/*-nbis-1h.csv
+/CRWV/factcheck/data/*-crwv-1h.csv
+/CRWV/factcheck/data/*-qqq-1h.csv
+!/CRWV/factcheck/data/2026-10-21-nbis-1d.csv
+!/CRWV/factcheck/data/2026-10-21-crwv-1d.csv
+!/CRWV/factcheck/data/2026-10-21-qqq-1d.csv

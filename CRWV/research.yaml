@@ -11,7 +11,9 @@ securities:
   mic: XNAS
   symbol: CRWV
 primary_document: CRWV.md
-documents: []
+documents:
+- path: 2026-10-21-NBIS-CRWV-pair回测.md
+  role: supplement
 related_entities: []
 sections:
   thesis:
