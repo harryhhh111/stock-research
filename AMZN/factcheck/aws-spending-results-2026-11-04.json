@@ -1,0 +1,100 @@
+{
+  "2023": {
+    "revenue": 90.757,
+    "op": 24.631,
+    "additions": 24.843,
+    "depreciation": 12.531,
+    "ppe": 72.701,
+    "addition_revenue_pct": 27.37309518824994,
+    "addition_depreciation_multiple": 1.9825233421115633,
+    "depreciation_revenue_pct": 13.807199444670934,
+    "op_margin_pct": 27.139504390845886
+  },
+  "2024": {
+    "revenue": 107.556,
+    "op": 39.834,
+    "additions": 53.267,
+    "depreciation": 13.32,
+    "ppe": 110.683,
+    "addition_revenue_pct": 49.524898657443565,
+    "addition_depreciation_multiple": 3.999024024024024,
+    "depreciation_revenue_pct": 12.38424634608948,
+    "op_margin_pct": 37.03559076202165
+  },
+  "2025": {
+    "revenue": 128.725,
+    "op": 45.606,
+    "additions": 96.496,
+    "depreciation": 21.45,
+    "ppe": 190.055,
+    "addition_revenue_pct": 74.96290541852787,
+    "addition_depreciation_multiple": 4.498648018648018,
+    "depreciation_revenue_pct": 16.66342979219266,
+    "op_margin_pct": 35.42901534278501
+  },
+  "2025_9m": {
+    "revenue": 93.146,
+    "op": 33.141,
+    "additions": 64.808,
+    "depreciation": 14.882,
+    "addition_revenue_pct": 69.5767934210809,
+    "addition_depreciation_multiple": 4.354791022712002,
+    "depreciation_revenue_pct": 15.977068258432997,
+    "op_margin_pct": 35.57962768127456
+  },
+  "2026_9m": {
+    "revenue": 125.803,
+    "op": 48.555,
+    "additions": 147.236,
+    "depreciation": 24.583,
+    "ppe": 313.009,
+    "addition_revenue_pct": 117.03695460362631,
+    "addition_depreciation_multiple": 5.989342228369198,
+    "depreciation_revenue_pct": 19.540869454623497,
+    "op_margin_pct": 38.59605891751389,
+    "yoy_pct": {
+      "revenue": 35.06001331243424,
+      "op": 46.51036480492443,
+      "additions": 127.18800148129858,
+      "depreciation": 65.1861308963849
+    }
+  },
+  "2025Q3": {
+    "revenue": 33.006,
+    "op": 11.434,
+    "additions": 28.301,
+    "depreciation": 5.648,
+    "addition_revenue_pct": 85.74501605768647,
+    "addition_depreciation_multiple": 5.010800283286119,
+    "depreciation_revenue_pct": 17.112040235108765,
+    "op_margin_pct": 34.642186269163176
+  },
+  "2026Q3": {
+    "revenue": 45.984,
+    "op": 17.773,
+    "additions": 57.116,
+    "depreciation": 9.23,
+    "addition_revenue_pct": 124.20842032011134,
+    "addition_depreciation_multiple": 6.188082340195016,
+    "depreciation_revenue_pct": 20.072199025748088,
+    "op_margin_pct": 38.65040013917884,
+    "yoy_pct": {
+      "revenue": 39.32012361388839,
+      "op": 55.439916039881055,
+      "additions": 101.81619024062756,
+      "depreciation": 63.42067988668556
+    }
+  },
+  "depreciation_sensitivity": {
+    "0.1": {
+      "extra_cost": 0.923,
+      "op": 16.85,
+      "margin_pct": 36.64318023660404
+    },
+    "0.2": {
+      "extra_cost": 1.846,
+      "op": 15.927,
+      "margin_pct": 34.63596033402923
+    }
+  }
+}

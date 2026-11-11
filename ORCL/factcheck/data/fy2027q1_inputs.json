@@ -1,0 +1,110 @@
+{
+  "as_of": "2026-11-04",
+  "unit": "USD million unless EPS or shares_m",
+  "sources": {
+    "q1": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+    "release": "https://investor.oracle.com/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+    "annual": "R4.htm / R8.htm / orcl_companyfacts.json",
+    "price": "https://au.finance.yahoo.com/quote/ORCL/history/"
+  },
+  "fy26": {
+    "revenue": 67357,
+    "operating_income": 20606,
+    "net_income": 17087,
+    "common_income": 16984,
+    "cfo": 31977,
+    "capex": 55663,
+    "sbc": 4811,
+    "eps": 5.83
+  },
+  "fy26q1": {
+    "revenue": 14926,
+    "cloud": 7186,
+    "iaas": 3347,
+    "saas": 3839,
+    "software": 5721,
+    "license": 766,
+    "support": 4955,
+    "hardware": 670,
+    "services": 1349,
+    "operating_income": 4277,
+    "net_income": 2927,
+    "common_income": 2927,
+    "cfo": 8140,
+    "capex": 8502,
+    "sbc": 1124,
+    "interest": 923,
+    "eps": 1.01,
+    "da": 1771
+  },
+  "fy27q1": {
+    "revenue": 19345,
+    "cloud": 11607,
+    "iaas": 7388,
+    "saas": 4219,
+    "software": 5550,
+    "license": 655,
+    "support": 4895,
+    "hardware": 774,
+    "services": 1414,
+    "operating_income": 6728,
+    "net_income": 4760,
+    "common_income": 4679,
+    "cfo": 23103,
+    "capex": 28499,
+    "sbc": 1127,
+    "interest": 1428,
+    "eps": 1.56,
+    "da": 3358,
+    "prepayments": 11363,
+    "other_capex_finance": -830,
+    "dividends": 1565,
+    "buybacks": 0,
+    "atm_net": 19909,
+    "atm_shares_m": 141
+  },
+  "balance_fy26": {
+    "cash": 31289,
+    "marketable": 605,
+    "assets": 261759,
+    "ppe": 99957,
+    "current_debt": 7199,
+    "noncurrent_debt": 122342,
+    "operating_lease": 30190,
+    "finance_lease": 7701,
+    "equity": 42508,
+    "shares_m": 2880
+  },
+  "balance_q1": {
+    "cash": 36369,
+    "restricted_cash": 2565,
+    "marketable": 708,
+    "assets": 303259,
+    "ppe": 127845,
+    "current_debt": 7625,
+    "noncurrent_debt": 117712,
+    "operating_lease": 34621,
+    "finance_lease": 9185,
+    "equity": 66772,
+    "shares_m": 3024,
+    "uncommenced_leases": 288000,
+    "purchase_obligations": 34150
+  },
+  "price": {
+    "date": "2026-11-03",
+    "session": "NYSE regular close",
+    "value": 126.19
+  },
+  "nov2": {
+    "new_shares": 86206897,
+    "share_price": 116,
+    "debt_m": 10000,
+    "annual_coupon_m": 776.75,
+    "expected_close": "2026-11-04"
+  },
+  "roe_fy26": {
+    "net_income": 17087,
+    "begin_parent_equity": 20451,
+    "end_parent_equity": 42508
+  }
+}

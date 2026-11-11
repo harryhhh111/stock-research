@@ -1,0 +1,13 @@
+{
+  "units": "USD billion",
+  "as_of": "2026-09-30",
+  "debt": 179.952,
+  "net_debt_ex_leases": 65.726,
+  "net_debt_finance_leases": 80.221,
+  "net_debt_all_leases": 180.50900000000001,
+  "interest_coverage_9m": 20.864388961892246,
+  "ttm_fcf_gross": -46.891999999999996,
+  "ttm_fcf_company": -42.357,
+  "ttm_fcf_less_sbc_sensitivity": -62.230000000000004,
+  "checks": "debt reconciliation and commitment sums passed"
+}

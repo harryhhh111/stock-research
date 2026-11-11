@@ -1,0 +1,44 @@
+schema_version: 2
+entity_id: topic:risc-v
+kind: topic
+name: RISC-V公司专题
+aliases:
+- RISC-V
+- RISC V
+securities: []
+primary_document: RISC-V公司专题.md
+research_scope: RISC-V首次跨公司比较；已取财务已复算，最新披露与估值尚有原件缺口，非完整财务研究验收
+documents: []
+related_entities:
+- entity_id: company:andes-technology
+  relation: related
+- entity_id: company:eswin-computing
+  relation: related
+- entity_id: company:sifive
+  relation: related
+sections:
+  thesis:
+    path: RISC-V公司专题.md
+    heading_path:
+    - RISC-V 公司专题：开放架构，谁能赚到钱
+    - 研究摘要与我的判断
+  open_questions:
+    path: RISC-V公司专题.md
+    heading_path:
+    - RISC-V 公司专题：开放架构，谁能赚到钱
+    - 待验证问题
+  metrics:
+    path: RISC-V公司专题.md
+    heading_path:
+    - RISC-V 公司专题：开放架构，谁能赚到钱
+    - 跟踪指标
+  risks:
+    path: RISC-V公司专题.md
+    heading_path:
+    - RISC-V 公司专题：开放架构，谁能赚到钱
+    - 主要风险
+  research_metadata:
+    path: RISC-V公司专题.md
+    heading_path:
+    - RISC-V 公司专题：开放架构，谁能赚到钱
+    - 研究日期与数据截止日

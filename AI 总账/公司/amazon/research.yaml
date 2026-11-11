@@ -1,26 +1,50 @@
-# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
 schema_version: 2
 entity_id: company:amazon
 kind: company
 name: Amazon
 aliases:
 - Amazon
+- AMZN
+- 亚马逊
 securities:
 - market: US
   mic: XNAS
   symbol: AMZN
-primary_document: ../../AI 总账.md
-documents: []
+primary_document: ../../../AMZN/AMZN.md
+documents:
+- path: ../../../AMZN/AWS.md
+  role: supplement
+- path: ../../AI 总账.md
+  role: supplement
+- path: ../../../数据中心/建设进度2026-2029.md
+  role: supplement
+- path: ../../../AMZN/updates/2026-11-03-财报与行情核验记录.md
+  role: review
 related_entities: []
 sections:
-  thesis: null
-  open_questions: null
-  metrics: null
-  risks: null
-  research_metadata: null
-research_scope: AI 投入、收入与融资台账专题；限定章节为跨公司表，只使用本公司对应行，不把其他公司的数据或观点归于本公司。
-primary_section:
-  heading_path:
-  - AI 总账 —— 需求端到底有多少钱，是不是泡沫
-  - 1. 台账 A：基建买家（钱花出去的一侧）
-  table_row: Amazon
+  thesis:
+    path: ../../../AMZN/AMZN.md
+    heading_path:
+    - Amazon（AMZN）公司研究
+    - 研究摘要与我的判断
+  open_questions:
+    path: ../../../AMZN/AMZN.md
+    heading_path:
+    - Amazon（AMZN）公司研究
+    - 待验证问题
+  metrics:
+    path: ../../../AMZN/AMZN.md
+    heading_path:
+    - Amazon（AMZN）公司研究
+    - 跟踪指标
+  risks:
+    path: ../../../AMZN/AMZN.md
+    heading_path:
+    - Amazon（AMZN）公司研究
+    - 主要风险
+  research_metadata:
+    path: ../../../AMZN/AMZN.md
+    heading_path:
+    - Amazon（AMZN）公司研究
+    - 研究日期与数据截止日
+research_scope: 按股票研究SOP十一项问题组织，业务相关模块分别分析AWS与电商生态；另设AWS子文档深入业务、资本开支、数据中心建设接电与市场份额；数据截止与研究缺口见各文档。

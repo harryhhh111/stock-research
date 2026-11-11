@@ -1,0 +1,142 @@
+{
+  "checked": "2026-11-04",
+  "note": "冻结研究输入；source_type区分公司公告、二手转录及网页快照。不是全量资产清单。",
+  "sources": {
+    "q1": "https://investor.oracle.com/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+    "nvidia": "https://www.oracle.com/news/announcement/ai-world-nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-2026-10-27/",
+    "investor_day": "https://stockanalysis.com/stocks/orcl/transcripts/780561-investor-day-2026/",
+    "crusoe": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure",
+    "zettascale": "https://www.oracle.com/news/announcement/ai-world-oracle-unveils-next-generation-oci-zettascale10-cluster-for-ai-2025-10-14/",
+    "bloom": "https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energy-and-Oracle-Expand-Strategic-Partnership-to-Deploy-up-to-2-8-GW-to-Accelerate-AI-Infrastructure-Build-Out/default.aspx",
+    "amd": "https://newsroom.amd.com/news/oracle-and-amd-expand-partnership-to-help-customers-ach.html",
+    "stargate": "https://openai.com/index/five-new-stargate-sites/",
+    "regions": "https://www.oracle.com/cloud/public-cloud-regions/"
+  },
+  "observations": [
+    {
+      "id": "q1_increment",
+      "object": "Oracle global",
+      "value": 850,
+      "unit": "MW",
+      "status": "company_reported_delivered_increment",
+      "period": "2026-06-01..2026-08-31",
+      "published": "2026-09-10",
+      "source": "q1"
+    },
+    {
+      "id": "q1_gpu",
+      "object": "Oracle AI cloud customers",
+      "lower_bound_exclusive": 300000,
+      "unit": "GPU",
+      "status": "company_reported_delivered_increment",
+      "period": "2026-06-01..2026-08-31",
+      "published": "2026-09-10",
+      "source": "q1"
+    },
+    {
+      "id": "abilene_actual",
+      "object": "Abilene OCI supercluster",
+      "lower_bound_exclusive": 100000,
+      "unit": "Blackwell GPU",
+      "status": "company_reports_used_for_training_and_serving",
+      "published": "2026-10-27",
+      "source": "nvidia"
+    },
+    {
+      "id": "abilene_design",
+      "object": "Oracle/OpenAI Abilene campus eight buildings",
+      "value": 1.2,
+      "unit": "GW",
+      "status": "campus_design_not_full_energized_confirmation",
+      "published": "2026-03-27",
+      "source": "crusoe"
+    },
+    {
+      "id": "abilene_completion",
+      "object": "Abilene",
+      "status": "management_says_nearing_completion_not_fully_complete",
+      "published": "2026-10-28",
+      "source": "investor_day",
+      "source_type": "secondary_transcript"
+    },
+    {
+      "id": "planned_increment",
+      "value_approx": 7,
+      "unit": "GW",
+      "status": "contracted_future_delivery_plan",
+      "period": "next couple of years as described on 2026-10-28",
+      "published": "2026-10-28",
+      "source": "investor_day",
+      "source_type": "secondary_transcript"
+    },
+    {
+      "id": "portfolio_target",
+      "value_approx": 10,
+      "unit": "GW",
+      "status": "future_portfolio_target",
+      "period_end": "2028-05-31",
+      "published": "2026-10-28",
+      "source": "investor_day",
+      "source_type": "secondary_transcript"
+    },
+    {
+      "id": "five_sites",
+      "value_approx": 5,
+      "unit": "GW",
+      "status": "five_large_sites_delivery_total",
+      "period": "FY2026..mid-FY2029",
+      "published": "2026-10-28",
+      "source": "investor_day",
+      "source_type": "secondary_transcript"
+    },
+    {
+      "id": "rubin",
+      "status": "generally_available_product_plus_planned_multi_gigawatt_expansion_no_total_gpu_count",
+      "published": "2026-10-27",
+      "source": "nvidia"
+    },
+    {
+      "id": "zettascale",
+      "upper_bound_inclusive": 800000,
+      "unit": "NVIDIA GPU",
+      "status": "platform_initial_design_target_not_installed_count",
+      "published": "2025-10-14",
+      "source": "zettascale"
+    },
+    {
+      "id": "amd_plan",
+      "value": 50000,
+      "unit": "MI450 GPU",
+      "status": "announced_initial_deployment_plan_actual_count_not_confirmed",
+      "planned_start": "2026 calendar Q3",
+      "published": "2025-10-14",
+      "source": "amd"
+    },
+    {
+      "id": "bloom_agreement",
+      "upper_bound_inclusive": 2.8,
+      "initial_contracted": 1.2,
+      "unit": "GW",
+      "status": "master_agreement_and_initial_deployment_not_energized_total",
+      "published": "2026-04-13",
+      "source": "bloom"
+    },
+    {
+      "id": "stargate",
+      "value_approx": 7,
+      "unit": "GW",
+      "status": "multi_partner_planned_capacity_not_Oracle_total",
+      "published": "2025-09-23",
+      "source": "stargate"
+    },
+    {
+      "id": "regions",
+      "lower_bound_exclusive": 50,
+      "countries": 28,
+      "unit": "public_cloud_regions",
+      "status": "dynamic_page_snapshot_not_gw",
+      "checked": "2026-11-04",
+      "source": "regions"
+    }
+  ]
+}

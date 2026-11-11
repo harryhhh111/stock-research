@@ -1,0 +1,758 @@
+{
+  "andes": {
+    "2022": {
+      "revenue": 931.821,
+      "segments": {
+        "授权": 557351,
+        "版税": 229725,
+        "维护": 138547,
+        "其他": 6198
+      },
+      "segment_metrics": {
+        "授权": {
+          "revenue_M": 557.351,
+          "share_pct": 59.81309715063301,
+          "yoy_pct": null
+        },
+        "版税": {
+          "revenue_M": 229.725,
+          "share_pct": 24.653340072825145,
+          "yoy_pct": null
+        },
+        "维护": {
+          "revenue_M": 138.547,
+          "share_pct": 14.868413568700426,
+          "yoy_pct": null
+        },
+        "其他": {
+          "revenue_M": 6.198,
+          "share_pct": 0.6651492078414202,
+          "yoy_pct": null
+        }
+      }
+    },
+    "2023": {
+      "revenue": 1057.818,
+      "gross": 1056.995,
+      "operating": -268.494,
+      "net": -101.718,
+      "rd": 766.251,
+      "cfo": -69.133,
+      "ppe_cash": 50.643,
+      "intangibles_cash": 743.174,
+      "cash": 1889.825,
+      "equity_open": 4989.172,
+      "equity": 4810.926,
+      "segments": {
+        "授权": 668210,
+        "版税": 226977,
+        "维护": 160422,
+        "其他": 2209
+      },
+      "other_nc_cash": 160.138,
+      "selling": 343.1,
+      "admin": 186.804,
+      "credit_loss": 29.334,
+      "gross_margin_pct": 99.92219833657586,
+      "operating_margin_pct": -25.381870983477313,
+      "net_margin_pct": -9.61583183496594,
+      "rd_margin_pct": 72.43694094825386,
+      "revenue_yoy_pct": 13.521588373732719,
+      "cash_capex": 793.817,
+      "fcf": -862.95,
+      "fcf_after_other_nc_cash": -1023.0880000000001,
+      "roe_pct": -2.0758567924524836,
+      "segment_metrics": {
+        "授权": {
+          "revenue_M": 668.21,
+          "share_pct": 63.16871144185484,
+          "yoy_pct": 19.890338404344842
+        },
+        "版税": {
+          "revenue_M": 226.977,
+          "share_pct": 21.457093753367783,
+          "yoy_pct": -1.1962128632060032
+        },
+        "维护": {
+          "revenue_M": 160.422,
+          "share_pct": 15.16536871181999,
+          "yoy_pct": 15.788865872231096
+        },
+        "其他": {
+          "revenue_M": 2.209,
+          "share_pct": 0.20882609295738963,
+          "yoy_pct": -64.3594707970313
+        }
+      }
+    },
+    "2024": {
+      "revenue": 1381.507,
+      "gross": 1380.861,
+      "operating": -276.079,
+      "net": 1.893,
+      "rd": 1083.192,
+      "cfo": 372.171,
+      "ppe_cash": 4.447,
+      "intangibles_cash": 1152.904,
+      "cash": 2082.726,
+      "equity_open": 4810.926,
+      "equity": 4820.757,
+      "segments": {
+        "授权": 924824,
+        "版税": 283797,
+        "维护": 170017,
+        "其他": 2869
+      },
+      "other_nc_cash": 73.925,
+      "selling": 384.817,
+      "admin": 186.092,
+      "credit_loss": 2.839,
+      "gross_margin_pct": 99.95323946965162,
+      "operating_margin_pct": -19.9839016378491,
+      "net_margin_pct": 0.13702427855957297,
+      "rd_margin_pct": 78.40655168594876,
+      "revenue_yoy_pct": 30.599687280798783,
+      "cash_capex": 1157.351,
+      "fcf": -785.18,
+      "fcf_after_other_nc_cash": -859.1049999999999,
+      "roe_pct": 0.03930777206849519,
+      "segment_metrics": {
+        "授权": {
+          "revenue_M": 924.824,
+          "share_pct": 66.9431280478492,
+          "yoy_pct": 38.4031965998713
+        },
+        "版税": {
+          "revenue_M": 283.797,
+          "share_pct": 20.54256692148502,
+          "yoy_pct": 25.03337342550127
+        },
+        "维护": {
+          "revenue_M": 170.017,
+          "share_pct": 12.306633263530333,
+          "yoy_pct": 5.981099849147875
+        },
+        "其他": {
+          "revenue_M": 2.869,
+          "share_pct": 0.20767176713545424,
+          "yoy_pct": 29.877772747849708
+        }
+      }
+    },
+    "2025": {
+      "revenue": 1478.187,
+      "gross": 1477.17,
+      "operating": -419.841,
+      "net": -415.259,
+      "rd": 1284.555,
+      "cfo": 309.922,
+      "ppe_cash": 16.016,
+      "intangibles_cash": 1241.818,
+      "cash": 1419.588,
+      "equity_open": 4820.757,
+      "equity": 4514.834,
+      "segments": {
+        "授权": 965403,
+        "版税": 282337,
+        "维护": 226957,
+        "其他": 3490
+      },
+      "other_nc_cash": 963.637,
+      "selling": 399.635,
+      "admin": 189.368,
+      "credit_loss": 23.453,
+      "gross_margin_pct": 99.93119950317518,
+      "operating_margin_pct": -28.402428109569357,
+      "net_margin_pct": -28.09245379644118,
+      "rd_margin_pct": 86.90071012666192,
+      "revenue_yoy_pct": 6.998154913438737,
+      "cash_capex": 1257.834,
+      "fcf": -947.912,
+      "fcf_after_other_nc_cash": -1911.549,
+      "roe_pct": -8.896255202268394,
+      "segment_metrics": {
+        "授权": {
+          "revenue_M": 965.403,
+          "share_pct": 65.30993710538652,
+          "yoy_pct": 4.387753778016146
+        },
+        "版税": {
+          "revenue_M": 282.337,
+          "share_pct": 19.100222096392404,
+          "yoy_pct": -0.5144522317008238
+        },
+        "维护": {
+          "revenue_M": 226.957,
+          "share_pct": 15.353740764869398,
+          "yoy_pct": 33.49076857020181
+        },
+        "其他": {
+          "revenue_M": 3.49,
+          "share_pct": 0.2361000333516666,
+          "yoy_pct": 21.64517253398397
+        }
+      }
+    },
+    "2025Q1": {
+      "revenue": 271.262,
+      "gross": 270.951,
+      "operating": -164.403,
+      "net": -114.524,
+      "cfo": 68.992,
+      "ppe_cash": 0.945,
+      "intangibles_cash": 277.136,
+      "other_nc_cash": 24.712,
+      "gross_margin_pct": 99.88535069416284,
+      "operating_margin_pct": -60.606719702722835,
+      "net_margin_pct": -42.218961741784696,
+      "cash_capex": 278.081,
+      "fcf": -209.089,
+      "fcf_after_other_nc_cash": -233.801
+    },
+    "2025Q2": {
+      "revenue": 279.505,
+      "gross": 279.179,
+      "operating": -172.714,
+      "net": -282.865,
+      "cfo": -126.755,
+      "ppe_cash": 0.166,
+      "intangibles_cash": 291.397,
+      "other_nc_cash": 811.868,
+      "gross_margin_pct": 99.88336523496896,
+      "operating_margin_pct": -61.79281229316113,
+      "net_margin_pct": -101.20212518559597,
+      "cash_capex": 291.563,
+      "fcf": -418.318,
+      "fcf_after_other_nc_cash": -1230.1860000000001
+    },
+    "2025Q3": {
+      "revenue": 466.534,
+      "gross": 466.388,
+      "operating": -24.06,
+      "net": 8.456,
+      "gross_margin_pct": 99.96870538910348,
+      "operating_margin_pct": -5.157180398427553,
+      "net_margin_pct": 1.8125152721988107
+    },
+    "20259M": {
+      "revenue": 1017.301,
+      "gross": 1016.518,
+      "operating": -361.177,
+      "net": -388.933,
+      "cfo": -84.575,
+      "ppe_cash": 8.547,
+      "intangibles_cash": 909.556,
+      "gross_margin_pct": 99.92303162977329,
+      "operating_margin_pct": -35.5034547297211,
+      "net_margin_pct": -38.23185075017129,
+      "cash_capex": 918.103,
+      "fcf": -1002.678
+    },
+    "2026Q1": {
+      "revenue": 326.356,
+      "gross": 325.982,
+      "operating": -202.956,
+      "net": -166.231,
+      "rd": 380.315,
+      "cfo": -61.274,
+      "ppe_cash": 6.873,
+      "intangibles_cash": 275.975,
+      "segments": {
+        "授权": 178745,
+        "版税": 82351,
+        "维护及其他": 65260
+      },
+      "other_nc_cash": 23.737,
+      "selling": 93.196,
+      "admin": 47.103,
+      "credit_loss": 8.324,
+      "gross_margin_pct": 99.88540121830148,
+      "operating_margin_pct": -62.1885303165868,
+      "net_margin_pct": -50.93548149873145,
+      "rd_margin_pct": 116.53378519163122,
+      "revenue_yoy_pct": 20.310253555603076,
+      "cash_capex": 282.848,
+      "fcf": -344.122,
+      "fcf_after_other_nc_cash": -367.85900000000004,
+      "segment_metrics": {
+        "授权": {
+          "revenue_M": 178.745,
+          "share_pct": 54.76994447780951,
+          "yoy_pct": null
+        },
+        "版税": {
+          "revenue_M": 82.351,
+          "share_pct": 25.233487357364346,
+          "yoy_pct": null
+        },
+        "维护及其他": {
+          "revenue_M": 65.26,
+          "share_pct": 19.99656816482614,
+          "yoy_pct": null
+        }
+      }
+    },
+    "2026H1": {
+      "revenue": 892.623,
+      "gross": 891.467,
+      "operating": -306.979,
+      "net": -233.886,
+      "rd": 837.135,
+      "cfo": -121.31,
+      "ppe_cash": 11.312,
+      "intangibles_cash": 479.27,
+      "cash": 754.993,
+      "equity": 4284.338,
+      "segments": {
+        "授权": 599222,
+        "版税": 153263,
+        "维护及其他": 140138
+      },
+      "other_nc_cash": 42.597,
+      "selling": 240.151,
+      "admin": 114.812,
+      "credit_loss": 6.348,
+      "gross_margin_pct": 99.87049403835661,
+      "operating_margin_pct": -34.390666608411394,
+      "net_margin_pct": -26.202103239553544,
+      "rd_margin_pct": 93.7837138411177,
+      "cash_capex": 490.582,
+      "fcf": -611.892,
+      "fcf_after_other_nc_cash": -654.489,
+      "segment_metrics": {
+        "授权": {
+          "revenue_M": 599.222,
+          "share_pct": 67.13046829400542,
+          "yoy_pct": null
+        },
+        "版税": {
+          "revenue_M": 153.263,
+          "share_pct": 17.169958649956367,
+          "yoy_pct": null
+        },
+        "维护及其他": {
+          "revenue_M": 140.138,
+          "share_pct": 15.699573056038215,
+          "yoy_pct": null
+        }
+      }
+    },
+    "20269M": {
+      "revenue": 1319.862,
+      "gross": 1318.866,
+      "operating": -320.79,
+      "net": -263.292,
+      "equity": 4538.832,
+      "gross_margin_pct": 99.92453756529092,
+      "operating_margin_pct": -24.304813685067074,
+      "net_margin_pct": -19.94844915604813,
+      "revenue_yoy_pct": 29.741541588969245
+    },
+    "2026Q2": {
+      "revenue": 566.267,
+      "gross": 565.485,
+      "operating": -104.023,
+      "net": -67.655,
+      "rd": 456.82,
+      "selling": 146.955,
+      "admin": 67.709,
+      "credit_loss": -1.976,
+      "cfo": -60.036,
+      "ppe_cash": 4.439,
+      "intangibles_cash": 203.295,
+      "other_nc_cash": 18.86,
+      "segments": {
+        "授权": 420477,
+        "版税": 70912,
+        "维护及其他": 74878
+      },
+      "gross_margin_pct": 99.86190260071662,
+      "operating_margin_pct": -18.369956222064857,
+      "net_margin_pct": -11.947544179689086,
+      "rd_margin_pct": 80.67219173993894,
+      "revenue_yoy_pct": 102.59637573567555,
+      "cash_capex": 207.734,
+      "fcf": -267.77,
+      "fcf_after_other_nc_cash": -286.63,
+      "segment_metrics": {
+        "授权": {
+          "revenue_M": 420.477,
+          "share_pct": 74.25419457605688,
+          "yoy_pct": null
+        },
+        "版税": {
+          "revenue_M": 70.912,
+          "share_pct": 12.522714549850159,
+          "yoy_pct": null
+        },
+        "维护及其他": {
+          "revenue_M": 74.878,
+          "share_pct": 13.223090874092962,
+          "yoy_pct": null
+        }
+      }
+    },
+    "2026Q3": {
+      "revenue": 427.239,
+      "gross": 427.399,
+      "operating": -13.811,
+      "net": -29.406,
+      "gross_margin_pct": 100.03744976465163,
+      "operating_margin_pct": -3.2326168725233417,
+      "net_margin_pct": -6.882798620912417,
+      "revenue_yoy_pct": -8.422751610815071
+    },
+    "2025Q4": {
+      "revenue": 460.886,
+      "gross": 460.652,
+      "operating": -58.664,
+      "net": -26.326,
+      "cfo": 394.497,
+      "ppe_cash": 7.469,
+      "intangibles_cash": 332.262,
+      "gross_margin_pct": 99.94922822563497,
+      "operating_margin_pct": -12.728527227991304,
+      "net_margin_pct": -5.7120415894603,
+      "cash_capex": 339.731,
+      "fcf": 54.766
+    },
+    "TTM_9M": {
+      "revenue": 1780.748,
+      "gross": 1779.518,
+      "operating": -379.454,
+      "net": -289.618,
+      "gross_margin_pct": 99.93092790220739,
+      "operating_margin_pct": -21.308686012844042,
+      "net_margin_pct": -16.263839689838203
+    },
+    "cashflow_TTM_H1": {
+      "cfo": 246.375,
+      "ppe_cash": 26.217,
+      "intangibles_cash": 1152.555,
+      "other_nc_cash": 169.654,
+      "fcf": -932.397
+    }
+  },
+  "eswin": {
+    "2023": {
+      "revenue": 1752.185,
+      "gross": 270.228,
+      "operating": -1823.68,
+      "net": -1837.464,
+      "rd": 1444.738,
+      "cfo": -1250.818,
+      "ppe_cash": 533.366,
+      "intangibles_cash": 0.0,
+      "cash": 808.06,
+      "equity_open": 3746.415,
+      "equity": 5069.166,
+      "segments": {
+        "人机交互": 1519445,
+        "多媒体": 116108,
+        "互连": 42459,
+        "计算": 375,
+        "其他产品": 23024,
+        "许可服务": 50774
+      },
+      "gross_margin_pct": 15.422344101792904,
+      "operating_margin_pct": -104.08033398299837,
+      "net_margin_pct": -104.86700890602305,
+      "rd_margin_pct": 82.45350804852227,
+      "cash_capex": 533.366,
+      "fcf": -1784.184,
+      "roe_pct": -41.686736245744896,
+      "segment_metrics": {
+        "人机交互": {
+          "revenue_M": 1519.445,
+          "share_pct": 86.71715600806994,
+          "yoy_pct": null
+        },
+        "多媒体": {
+          "revenue_M": 116.108,
+          "share_pct": 6.626469236981254,
+          "yoy_pct": null
+        },
+        "互连": {
+          "revenue_M": 42.459,
+          "share_pct": 2.4232030293604843,
+          "yoy_pct": null
+        },
+        "计算": {
+          "revenue_M": 0.375,
+          "share_pct": 0.021401849690529252,
+          "yoy_pct": null
+        },
+        "其他产品": {
+          "revenue_M": 23.024,
+          "share_pct": 1.3140164993993213,
+          "yoy_pct": null
+        },
+        "许可服务": {
+          "revenue_M": 50.774,
+          "share_pct": 2.8977533764984864,
+          "yoy_pct": null
+        }
+      }
+    },
+    "2024": {
+      "revenue": 2025.379,
+      "gross": 357.54,
+      "operating": -1527.9,
+      "net": -1547.355,
+      "rd": 1336.952,
+      "cfo": -780.654,
+      "ppe_cash": 353.953,
+      "intangibles_cash": 0.0,
+      "cash": 1587.739,
+      "equity_open": 5069.166,
+      "equity": 3627.229,
+      "segments": {
+        "人机交互": 1690930,
+        "多媒体": 100706,
+        "互连": 103134,
+        "计算": 72262,
+        "其他产品": 13302,
+        "许可服务": 45045
+      },
+      "gross_margin_pct": 17.652992353529882,
+      "operating_margin_pct": -75.43773288851123,
+      "net_margin_pct": -76.39829385018804,
+      "rd_margin_pct": 66.00996652972111,
+      "revenue_yoy_pct": 15.591618464945189,
+      "cash_capex": 353.953,
+      "fcf": -1134.607,
+      "roe_pct": -35.58612505526715,
+      "segment_metrics": {
+        "人机交互": {
+          "revenue_M": 1690.93,
+          "share_pct": 83.48709056428451,
+          "yoy_pct": 11.286028780245427
+        },
+        "多媒体": {
+          "revenue_M": 100.706,
+          "share_pct": 4.9722052020881025,
+          "yoy_pct": -13.265235814930932
+        },
+        "互连": {
+          "revenue_M": 103.134,
+          "share_pct": 5.092084000080972,
+          "yoy_pct": 142.9025648272451
+        },
+        "计算": {
+          "revenue_M": 72.262,
+          "share_pct": 3.567826071071143,
+          "yoy_pct": 19169.86666666667
+        },
+        "其他产品": {
+          "revenue_M": 13.302,
+          "share_pct": 0.6567659682459431,
+          "yoy_pct": -42.22550382209867
+        },
+        "许可服务": {
+          "revenue_M": 45.045,
+          "share_pct": 2.224028194229327,
+          "yoy_pct": -11.283333989837319
+        }
+      }
+    },
+    "2025": {
+      "revenue": 2431.237,
+      "gross": 452.912,
+      "operating": -1501.357,
+      "net": -1515.844,
+      "rd": 1041.639,
+      "cfo": -1171.001,
+      "ppe_cash": 313.703,
+      "intangibles_cash": 0.0,
+      "cash": 188.274,
+      "equity_open": 3627.229,
+      "equity": 2685.751,
+      "segments": {
+        "人机交互": 1855718,
+        "多媒体": 150617,
+        "互连": 60298,
+        "计算": 319779,
+        "其他产品": 3078,
+        "许可服务": 41747
+      },
+      "gross_margin_pct": 18.628870817612597,
+      "operating_margin_pct": -61.75280320264952,
+      "net_margin_pct": -62.34867271269729,
+      "rd_margin_pct": 42.84399258484467,
+      "revenue_yoy_pct": 20.038619932368217,
+      "cash_capex": 313.703,
+      "fcf": -1484.704,
+      "roe_pct": -48.023088937395656,
+      "segment_metrics": {
+        "人机交互": {
+          "revenue_M": 1855.718,
+          "share_pct": 76.32814077771933,
+          "yoy_pct": 9.745406374007203
+        },
+        "多媒体": {
+          "revenue_M": 150.617,
+          "share_pct": 6.195076827146016,
+          "yoy_pct": 49.561098643576344
+        },
+        "互连": {
+          "revenue_M": 60.298,
+          "share_pct": 2.4801366547152743,
+          "yoy_pct": -41.53431458103051
+        },
+        "计算": {
+          "revenue_M": 319.779,
+          "share_pct": 13.152934082526713,
+          "yoy_pct": 342.5271927153967
+        },
+        "其他产品": {
+          "revenue_M": 3.078,
+          "share_pct": 0.12660221936405214,
+          "yoy_pct": -76.86062246278755
+        },
+        "许可服务": {
+          "revenue_M": 41.747,
+          "share_pct": 1.7171094385286172,
+          "yoy_pct": -7.321567321567324
+        }
+      }
+    },
+    "2025Q1": {
+      "revenue": 417.48,
+      "gross": 33.963,
+      "operating": -393.867,
+      "net": -399.276,
+      "rd": 275.307,
+      "cfo": -228.436,
+      "ppe_cash": 68.587,
+      "intangibles_cash": 0.0,
+      "segments": {
+        "人机交互": 331873,
+        "多媒体": 13253,
+        "互连": 21421,
+        "计算": 44740,
+        "其他产品": 679,
+        "许可服务": 5514
+      },
+      "gross_margin_pct": 8.135240011497556,
+      "operating_margin_pct": -94.3439206668583,
+      "net_margin_pct": -95.639551595286,
+      "rd_margin_pct": 65.94495544696753,
+      "cash_capex": 68.587,
+      "fcf": -297.023,
+      "segment_metrics": {
+        "人机交互": {
+          "revenue_M": 331.873,
+          "share_pct": 79.49434703458849,
+          "yoy_pct": null
+        },
+        "多媒体": {
+          "revenue_M": 13.253,
+          "share_pct": 3.174523330458944,
+          "yoy_pct": null
+        },
+        "互连": {
+          "revenue_M": 21.421,
+          "share_pct": 5.131024240682188,
+          "yoy_pct": null
+        },
+        "计算": {
+          "revenue_M": 44.74,
+          "share_pct": 10.716681038612629,
+          "yoy_pct": null
+        },
+        "其他产品": {
+          "revenue_M": 0.679,
+          "share_pct": 0.16264252179745137,
+          "yoy_pct": null
+        },
+        "许可服务": {
+          "revenue_M": 5.514,
+          "share_pct": 1.3207818338603046,
+          "yoy_pct": null
+        }
+      }
+    },
+    "2026Q1": {
+      "revenue": 494.213,
+      "gross": 73.361,
+      "operating": -367.737,
+      "net": -374.923,
+      "rd": 251.824,
+      "cfo": 170.557,
+      "ppe_cash": 84.628,
+      "intangibles_cash": 0.0,
+      "cash": 1305.951,
+      "equity": 2394.654,
+      "segments": {
+        "人机交互": 227625,
+        "多媒体": 14219,
+        "互连": 11127,
+        "计算": 222984,
+        "其他产品": 12,
+        "许可服务": 18246
+      },
+      "gross_margin_pct": 14.844004508177647,
+      "operating_margin_pct": -74.40860519654481,
+      "net_margin_pct": -75.86263412739042,
+      "rd_margin_pct": 50.95454793783247,
+      "revenue_yoy_pct": 18.380042157708143,
+      "cash_capex": 84.628,
+      "fcf": 85.929,
+      "segment_metrics": {
+        "人机交互": {
+          "revenue_M": 227.625,
+          "share_pct": 46.05807617363363,
+          "yoy_pct": -31.41201604228123
+        },
+        "多媒体": {
+          "revenue_M": 14.219,
+          "share_pct": 2.8770995501939445,
+          "yoy_pct": 7.288915717196098
+        },
+        "互连": {
+          "revenue_M": 11.127,
+          "share_pct": 2.2514583792818077,
+          "yoy_pct": -48.05564632836936
+        },
+        "计算": {
+          "revenue_M": 222.984,
+          "share_pct": 45.1190073915498,
+          "yoy_pct": 398.3996423781851
+        },
+        "其他产品": {
+          "revenue_M": 0.012,
+          "share_pct": 0.002428102862530933,
+          "yoy_pct": -98.23269513991163
+        },
+        "许可服务": {
+          "revenue_M": 18.246,
+          "share_pct": 3.6919304024782837,
+          "yoy_pct": 230.9031556039173
+        }
+      },
+      "cfo_without_receivable_release_M": -452.135
+    },
+    "TTM_Q1": {
+      "revenue": 2507.97,
+      "gross": 492.31,
+      "operating": -1475.227,
+      "net": -1491.491,
+      "cfo": -772.008,
+      "ppe_cash": 329.744,
+      "intangibles_cash": 0.0,
+      "gross_margin_pct": 19.629820133414675,
+      "operating_margin_pct": -58.82155687667715,
+      "net_margin_pct": -59.47004948225059,
+      "cash_capex": 329.744,
+      "fcf": -1101.752
+    }
+  },
+  "valuation": {
+    "andes_marketcap_M_TWD": 12983.905886,
+    "andes_ps_ttm": 7.291265179576223,
+    "andes_pb_sep_before_oct_raise": 2.8606271142003052,
+    "andes_pb_proforma_raise": 2.21385810983162,
+    "andes_new_shares_pct": 13.425227435692126,
+    "sifive_implied_new_money_pct": 10.95890410958904
+  }
+}

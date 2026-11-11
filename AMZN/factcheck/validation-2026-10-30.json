@@ -1,0 +1,15 @@
+{
+  "checked_date": "2026-10-30",
+  "validator": "研究流程/入口工具/validate.py",
+  "all_library_error_count": 0,
+  "amazon_warnings": [],
+  "amazon_sections": {
+    "thesis": "ok",
+    "open_questions": "ok",
+    "metrics": "ok",
+    "risks": "ok",
+    "research_metadata": "ok"
+  },
+  "calculation_check": "verify.py passed; segment sums, product sums, annual and TTM FCF matched",
+  "completion_limit": "2026 Q3 primary results unavailable during retrieval; latest-disclosure SOP check remains open"
+}

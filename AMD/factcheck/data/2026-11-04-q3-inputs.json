@@ -1,0 +1,25 @@
+{
+  "retrieved": "2026-11-04",
+  "unit": "USD million, EPS USD",
+  "evidence_type": "Manual transcription from company releases; not a database export or complete filing archive",
+  "sources": {
+    "q1": "https://ir.amd.com/news-events/press-releases/detail/1284/amd-reports-first-quarter-2026-financial-results",
+    "q2": "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+    "q3": "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results"
+  },
+  "quarters": {
+    "Q4'25": {"source":"q1", "revenue":10270,"gross":5577,"op":1752,"net":1511,"ng_gross":5855,"ng_op":2854,"ng_net":2519,"eps":0.92,"ng_eps":1.53,"cfo":2304,"capex":222,"fcf":2082},
+    "Q1'26": {"source":"q1", "revenue":10253,"gross":5416,"op":1476,"net":1383,"ng_gross":5685,"ng_op":2540,"ng_net":2265,"eps":0.84,"ng_eps":1.37,"cfo":2955,"capex":389,"fcf":2566,"dc":5775,"client":2885,"gaming":720,"embedded":873,"dc_op":1599,"cg_op":575,"embedded_op":338,"all_other_op":-1036},
+    "Q2'26": {"source":"q2", "revenue":11536,"gross":6203,"op":1990,"net":2297,"ng_gross":6488,"ng_op":3094,"ng_net":2760,"eps":1.38,"ng_eps":1.66,"cfo":2366,"capex":808,"fcf":1558,"dc":6718,"client":3062,"gaming":779,"embedded":977,"dc_op":2103,"cg_op":582,"embedded_op":386,"all_other_op":-1081},
+    "Q3'26": {"source":"q3", "revenue":13377,"gross":7210,"op":2832,"net":2428,"ng_gross":7483,"ng_op":3923,"ng_net":3471,"eps":1.46,"ng_eps":2.09,"cfo":1202,"capex":648,"fcf":554,"dc":8546,"client":2949,"gaming":773,"embedded":1109,"dc_op":2882,"cg_op":573,"embedded_op":453,"all_other_op":-1076},
+    "Q3'25": {"source":"q3", "revenue":9246,"gross":4780,"op":1270,"net":1243,"ng_gross":4992,"ng_op":2238,"ng_net":1965,"eps":0.75,"ng_eps":1.20,"cfo":1788,"capex":258,"fcf":1530,"dc":4341,"client":2750,"gaming":1298,"embedded":857}
+  },
+  "nine_months_2026": {"source":"q3","revenue":35166,"gross":18829,"op":6298,"net":6108,"cfo":6523,"capex":1845,"fcf":4678,"dc":21039,"client":8896,"gaming":2272,"embedded":2959,"embedded_op":1177},
+  "nine_months_2025": {"source":"q3","cfo":4189,"capex":752,"fcf":3437},
+  "comparison_revenue_2025": {
+    "Q1'26": {"source":"q1","revenue":7438,"dc":3674,"client":2294,"gaming":647,"embedded":823},
+    "Q2'26": {"source":"q2","revenue":7685,"dc":3240,"client":2499,"gaming":1122,"embedded":824},
+    "Q3'26": {"source":"q3","revenue":9246,"dc":4341,"client":2750,"gaming":1298,"embedded":857}
+  },
+  "guidance": {"source":"q3","q4_revenue_mid":17000,"relative_range":0.03,"fy2025_revenue":34639}
+}

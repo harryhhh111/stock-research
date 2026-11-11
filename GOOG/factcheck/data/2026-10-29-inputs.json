@@ -1,0 +1,204 @@
+{
+  "unit": "USD million except EPS; shares million",
+  "sources": {
+    "annual": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/GOOG-10-K-2025.pdf",
+    "quarter": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf",
+    "2024": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001652044/228e3674-05ba-49db-a0c6-486e783dfe86.html"
+  },
+  "years": {
+    "2023": {
+      "revenue": 307394,
+      "cost": 133332,
+      "op": 84293,
+      "net": 73795,
+      "cfo": 101746,
+      "capex": 32251,
+      "equity": 283379,
+      "begin_equity": 256144,
+      "cash": 24048,
+      "liquid": 110916,
+      "long_debt": 11870,
+      "buyback_cash": 61504,
+      "dividend_cash": 0,
+      "shares": 12460,
+      "eps": 5.8
+    },
+    "2024": {
+      "revenue": 350018,
+      "cost": 146306,
+      "op": 112390,
+      "net": 100118,
+      "cfo": 125299,
+      "capex": 52535,
+      "equity": 325084,
+      "begin_equity": 283379,
+      "cash": 23466,
+      "liquid": 95657,
+      "long_debt": 10883,
+      "buyback_cash": 62222,
+      "dividend_cash": 7363,
+      "shares": 12211,
+      "eps": 8.04
+    },
+    "2025": {
+      "revenue": 402836,
+      "cost": 162535,
+      "op": 129039,
+      "net": 132170,
+      "cfo": 164713,
+      "capex": 91447,
+      "equity": 415265,
+      "begin_equity": 325084,
+      "cash": 30708,
+      "liquid": 126843,
+      "long_debt": 46547,
+      "buyback_cash": 45709,
+      "dividend_cash": 10049,
+      "shares": 12088,
+      "eps": 10.81
+    }
+  },
+  "segments": {
+    "Search": [
+      175033,
+      198084,
+      224532
+    ],
+    "YouTube ads": [
+      31510,
+      36147,
+      40367
+    ],
+    "Network": [
+      31312,
+      30359,
+      29792
+    ],
+    "Subscriptions/platforms/devices": [
+      34688,
+      40340,
+      48030
+    ],
+    "Services": [
+      272543,
+      304930,
+      342721
+    ],
+    "Cloud": [
+      33088,
+      43229,
+      58705
+    ],
+    "Other Bets": [
+      1527,
+      1648,
+      1537
+    ],
+    "Hedging": [
+      236,
+      211,
+      -127
+    ]
+  },
+  "segment_op": {
+    "Services": [
+      95858,
+      121263,
+      139404
+    ],
+    "Cloud": [
+      1716,
+      6112,
+      13910
+    ],
+    "Other Bets": [
+      -4095,
+      -4444,
+      -7515
+    ],
+    "Corporate": [
+      -9186,
+      -10541,
+      -16760
+    ]
+  },
+  "q3_2025": {
+    "revenue": 102346,
+    "cost": 41369,
+    "op": 31228,
+    "net": 34979,
+    "common_net": 34979,
+    "cfo": 48414,
+    "capex": 23953,
+    "eps": 2.87
+  },
+  "q3_2026": {
+    "revenue": 127577,
+    "cost": 51419,
+    "op": 40576,
+    "net": 26468,
+    "common_net": 26170,
+    "cfo": 42290,
+    "capex": 51355,
+    "eps": 2.12
+  },
+  "ytd_2025": {
+    "revenue": 289007,
+    "cost": 116768,
+    "op": 93105,
+    "net": 97715,
+    "common_net": 97715,
+    "cfo": 112311,
+    "capex": 63596,
+    "eps": 7.99
+  },
+  "ytd_2026": {
+    "revenue": 357269,
+    "cost": 138633,
+    "op": 121042,
+    "net": 201239,
+    "common_net": 200855,
+    "cfo": 127149,
+    "capex": 131953,
+    "eps": 16.33
+  },
+  "q_segments": {
+    "Search": [
+      56567,
+      63350
+    ],
+    "YouTube ads": [
+      10261,
+      11207
+    ],
+    "Network": [
+      7354,
+      7455
+    ],
+    "Subscriptions/platforms/devices": [
+      12870,
+      14290
+    ],
+    "Services": [
+      87052,
+      96302
+    ],
+    "Cloud": [
+      15157,
+      30709
+    ],
+    "Other Bets": [
+      344,
+      372
+    ]
+  },
+  "price": {
+    "symbol": "GOOG",
+    "date": "2026-10-28 regular close US Eastern",
+    "price": 321.89,
+    "after_hours": 290.54,
+    "source": "https://www.marketbeat.com/earnings/reports/2026-10-28-alphabet-inc-stock/",
+    "shares_at_20260930": 12294,
+    "note": "GOOG price proxy for all common classes; not exact class-weighted market cap"
+  }
+}

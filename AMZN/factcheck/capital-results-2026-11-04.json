@@ -1,0 +1,25 @@
+{
+  "2025Q3": {
+    "net_capex": 34228.0,
+    "company_fcf": 1297.0,
+    "after_acquisition_investment": 511.0
+  },
+  "2026Q3": {
+    "net_capex": 75878.0,
+    "company_fcf": -33456.0,
+    "after_acquisition_investment": -57442.0
+  },
+  "2025_9m": {
+    "net_capex": 89851.0,
+    "company_fcf": -4796.0,
+    "after_acquisition_investment": -7234.0
+  },
+  "2026_9m": {
+    "net_capex": 172188.0,
+    "company_fcf": -58347.0,
+    "after_acquisition_investment": -122100.0
+  },
+  "dilution_ytd_pct": 0.7455036809244309,
+  "aws_asset_additions_share_pct": 74.77324666091107,
+  "asset_addition_reconciliation": 196910
+}

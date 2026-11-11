@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="zh-Hant">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- prettier-ignore -->
+        <script id="web-rum-probe">(function(){var CFG = { threshold: 10000, cap: 30, resBatch: 8, resInterval: 3000, forwardToThirdPartyRum: false, resourceFilterDomains: ["adsrvr\\.org","ads-twitter\\.com","linkedin\\.com","stackadapt\\.com","appsflyer\\.com","baidu\\.com","branch\\.io","yimg\\.com","yahoo\\.com","licdn\\.com","gstatic\\.com","redditstatic\\.com","bugsnag\\.com","bat\\.bing\\.(?:com|net)","googleadservices\\.com","google-analytics\\.com","www\\.google\\.com","reddit\\.com","go-mpulse\\.net","pdst\\.fm","facebook\\.(?:com|net)","akamaihd\\.net","spotify\\.com","doubleclick\\.net","googletagmanager\\.com"], dropOpaqueErrors: true, debug: false };if(!(window.TigerBridge&&window.TigerBridge.reportTrackEvents)){return}var traceId=window.__APP_TRACE_ID__||"";var injectedN=window.__APP_WHITESCREEN_N__;var N=typeof injectedN==="number"&&injectedN>=1e3&&injectedN<=1e5?injectedN:CFG.threshold;var CAP=CFG.cap;var RES_BATCH=CFG.resBatch;var RES_INTERVAL=CFG.resInterval;var forwardToThirdPartyRum=CFG.forwardToThirdPartyRum;var FILTER=CFG.resourceFilterDomains||[];var FILTER_RE=createResourceFilterRegExp(FILTER);var DROP_OPAQUE=CFG.dropOpaqueErrors;var DEBUG=CFG.debug;var errors=[];var resources=[];var sent={};var destroyed=false;var lastSend=-Infinity;var sentCnt=0;var po=null;var resTimer=null;var reportFails=0;var navStart=(new Date).getTime();function clock(){return window.performance&&performance.now?performance.now():(new Date).getTime()-navStart}function now(){return(new Date).getTime()}function genEventId(){return"eventxxxxxxx4xxxyxxxxxxxxxxxxxxx".replace(/[xy]/g,function(c){var r=Math.random()*16|0;return(c==="x"?r:r&3|8).toString(16)})}function push(arr,x){if(arr.length<CAP){arr.push(x)}}function createResourceFilterRegExp(patterns){var validPatterns=[];var i;var pattern;for(i=0;i<patterns.length;i++){pattern=String(patterns[i]||"");if(pattern){validPatterns.push(pattern)}}return validPatterns.length?new RegExp(validPatterns.join("|"),"i"):null}function isFilteredResource(url){return!!(url&&FILTER_RE&&FILTER_RE.test(url))}function createEventItem(type){return{time:now(),type:type,eventId:genEventId(),traceId:traceId,url:window.location.href}}function clampDur(v){return v>0?v:0}function seg(start,end){return start>0&&end>0?clampDur(end-start):-1}function parseTopFrame(stack){if(!stack){return null}var m=/((?:https?|file|capacitor|ionic|webpack-internal):\/\/[^\s)]+?):(\d+):(\d+)/.exec(stack);if(!m){return null}return{name:m[1],line:+m[2],column:+m[3]}}function resInitiatorType(tag){tag=String(tag||"").toUpperCase();if(tag==="SCRIPT"){return"script"}if(tag==="IMG"){return"img"}if(tag==="LINK"){return"link"}if(tag==="VIDEO"||tag==="AUDIO"||tag==="SOURCE"){return"media"}return tag?tag.toLowerCase():"other"}function resStatusCode(url){try{if(url&&window.performance&&performance.getEntriesByName){var es=performance.getEntriesByName(url);if(es&&es.length){var rs=es[es.length-1].responseStatus;if(typeof rs==="number"){return String(rs)}}}}catch(err){}return"0"}function buildResourceItem(entry){var item=createEventItem("resource");var rs=+entry.responseStatus||0;var redirectStart=+entry.redirectStart||0;var redirectEnd=+entry.redirectEnd||0;var dnsStart=+entry.domainLookupStart||0;var dnsEnd=+entry.domainLookupEnd||0;var connectStart=+entry.connectStart||0;var connectEnd=+entry.connectEnd||0;var sslStart=+entry.secureConnectionStart||0;var reqStart=+entry.requestStart||0;var respStart=+entry.responseStart||0;var respEnd=+entry.responseEnd||0;item.name=entry.name||"";item.startTime=+entry.startTime||0;item.duration=+entry.duration||0;item.initiatorType=entry.initiatorType||"";item.nextHopProtocol=entry.nextHopProtocol||"";item.renderBlockingStatus=entry.renderBlockingStatus||"";item.statusCode=String(rs);item.success=rs===0?-1:rs>=400?0:1;item.size=+entry.decodedBodySize||0;item.transferSize=+entry.transferSize||0;item.redirectDuration=redirectStart>0?redirectEnd>0?clampDur(redirectEnd-redirectStart):-1:0;item.dnsDuration=seg(dnsStart,dnsEnd);item.connectDuration=seg(connectStart,connectEnd);item.sslDuration=sslStart>0?clampDur(connectEnd-sslStart):connectEnd>0?0:-1;item.firstByteDuration=seg(reqStart,respStart);item.downloadDuration=seg(respStart,respEnd);return item}function report(items){if(!items||!items.length){return true}var pending=[];var i;for(i=0;i<items.length;i++){if(items[i]&&items[i].eventId&&sent[items[i].eventId]){continue}pending.push(items[i])}if(!pending.length){return true}try{if(window.TigerBridge&&window.TigerBridge.reportTrackEvents){if(DEBUG&&window.console&&console.debug){console.debug("[web-rum] report → TigerBridge.reportTrackEvents",pending)}window.TigerBridge.reportTrackEvents(JSON.stringify({items:pending}));for(i=0;i<pending.length;i++){if(pending[i]&&pending[i].eventId){sent[pending[i].eventId]=1}}return true}return false}catch(e){reportFails++;return false}}function reportNow(){if(sentCnt>=20||clock()-lastSend<200){return}lastSend=clock();sentCnt++;report(errors.slice(-3))}function onError(e){if(destroyed){return}var item;if(e&&e.target&&e.target.tagName){var url=e.target.src||e.target.href||"";if(isFilteredResource(url)){return}item=createEventItem("error");item.errSource="res_error";item.name=url;item.initiatorType=resInitiatorType(e.target.tagName);item.statusCode=resStatusCode(url);item.errStartTime=clock()}else{var message=e.message||"";var stack=e.error&&e.error.stack?String(e.error.stack).slice(0,1e3):"";if(DROP_OPAQUE&&!stack&&(message===""||message==="Script error.")){return}item=createEventItem("error");item.errSource="js_error";item.name=e.filename||"";item.errorName=e.error&&e.error.name?e.error.name:"";item.errMessage=message;item.errStack=stack;item.errLine=e.lineno;item.errColumn=e.colno;item.errStartTime=clock()}push(errors,item);reportNow()}function stringifyRejectionReason(value){if(value===null){return"null"}if(typeof value==="undefined"){return"undefined"}if(typeof value!=="object"){try{return String(value)}catch(e){return"UnserializableValue"}}try{var ancestors=[];var json=JSON.stringify(value,function(key,current){var i;while(ancestors.length&&ancestors[ancestors.length-1]!==this){ancestors.pop()}if(current&&typeof current==="object"){for(i=0;i<ancestors.length;i++){if(ancestors[i]===current){return"[Circular]"}}ancestors.push(current)}return current});if(typeof json!=="undefined"){return json}}catch(e){}var keys=[];try{keys=Object.keys(value)}catch(e){}return"UnserializableObject{keys:"+(keys.length?keys.join(","):"unknown")+"}"}function onRejection(e){if(destroyed){return}var reason=e?e.reason:"";var item=createEventItem("error");var reasonMessage=reason&&reason.message;var isErrorLike=reason&&typeof reason==="object"&&(typeof reason.name==="string"||typeof reason.stack==="string"||typeof reason.message!=="undefined");item.errSource="promise_reject";if(reason&&(reasonMessage||isErrorLike)){item.errorName=reason.name?String(reason.name):"Error";item.errMessage=reasonMessage!==undefined&&reasonMessage!==null&&reasonMessage!==""?stringifyRejectionReason(reasonMessage).slice(0,500):String(reason.name||"Error").slice(0,500);item.errStack=reason.stack?String(reason.stack).slice(0,1e3):"";var frame=parseTopFrame(item.errStack);if(frame){item.name=frame.name;item.errLine=frame.line;item.errColumn=frame.column}}else{item.errMessage=stringifyRejectionReason(reason).slice(0,500)}item.errStartTime=clock();push(errors,item);reportNow()}function flush(){report(resources.concat(errors))}function flushResources(){resTimer=null;if(destroyed||resources.length===0){return}var batch=resources.slice(0,RES_BATCH);if(report(batch)){resources.splice(0,batch.length);if(resources.length>0){scheduleResFlush()}}}function scheduleResFlush(){if(destroyed){return}if(resources.length>=RES_BATCH){if(resTimer){clearTimeout(resTimer)}resTimer=setTimeout(flushResources,0);return}if(!resTimer){resTimer=setTimeout(flushResources,RES_INTERVAL)}}function destroy(){if(destroyed){return}flush();destroyed=true;window.removeEventListener("error",onError,true);window.removeEventListener("unhandledrejection",onRejection);if(resTimer){clearTimeout(resTimer);resTimer=null}if(po){try{po.disconnect()}catch(e){}po=null}}function isBodyEmpty(){if(document.querySelector("[isHtmlLoading]")){return true}var b=document.body;if(!b||b.children.length===0){return true}var text=(b.innerText||b.textContent||"").replace(/^\s+|\s+$/g,"");return text.length===0&&b.querySelectorAll("img,svg,canvas,video").length===0}window.addEventListener("error",onError,true);window.addEventListener("unhandledrejection",onRejection);if(window.PerformanceObserver){try{po=new PerformanceObserver(function(list){if(destroyed){return}try{var es=list.getEntries();var i;for(i=0;i<es.length;i++){if(es[i].entryType==="resource"){var resource=es[i].toJSON();if(resource.initiatorType==="xmlhttprequest"||resource.initiatorType==="fetch"){continue}if(isFilteredResource(resource.name)){continue}push(resources,buildResourceItem(resource))}}scheduleResFlush()}catch(e){}});po.observe({entryTypes:["resource"],buffered:true})}catch(e){}}var wait=N-clock();setTimeout(function(){if(destroyed){return}if(isBodyEmpty()){var item=createEventItem("webview_white_screen");item.white_screen_type="dom_empty";report([item])}},wait>0?wait:0);window.__TIGER_PROBE__={flush:flush,destroy:destroy,forwardToThirdPartyRum:forwardToThirdPartyRum,getData:function(){return{errors:errors,resources:resources,reportFails:reportFails}}}})();</script>
+         <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, shrink-to-fit=no" />
+          <meta name="author" content="tigerbrokers" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="renderer" content="webkit" />
+        <meta name="apple-itunes-app" content="app-id=1023600494" />
+        <meta name="google-play-app" content="app-id=com.tigerbrokers.stock" />
+        <meta name="theme-color" content="#ffe100" />
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="msapplication-TileImage" content="https://c1.itigergrowtha.com/portal5/static/media/tiger.round.9e976572.png" />
+        <meta name="screen-orientation" content="portrait" />
+        <meta name="x5-orientation" content="portrait" />
+        <meta name="fullscreen" content="yes" />
+        <meta name="full-screen" content="yes" />
+        <meta name="x5-fullscreen" content="true" />
+        <meta name="x5-page-mode" content="app" />
+        <meta name="nightmode" content="disable" />
+        <meta name="wap-font-scale" content="no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta
+            name="apple-mobile-web-app-title"
+            content="老虎證券官網" />
+        <meta name="facebook-domain-verification" content="uh6rkcckhy6afy4jvfe53jyjed7dzw" />
+         <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="https://c1.itigergrowtha.com/portal5/static/media/logo.152.1b48fddb.png" sizes="152x152" />
+        <link rel="apple-touch-icon" href="https://c1.itigergrowtha.com/portal5/static/media/logo.120.b1a2a198.png" sizes="120x120" />
+        <link rel="apple-touch-icon" href="https://c1.itigergrowtha.com/portal5/static/media/logo.76.f451ce0c.png" sizes="76x76" />
+        <link rel="apple-touch-icon" href="https://c1.itigergrowtha.com/portal5/static/media/logo.60.ebe437a8.png" sizes="60x60" />
+        <meta name="google" content="notranslate" />
+        <link rel="license" href="/info/declaration" />
+        <link rel="me" href="mailto:service@tigerbrokers.com.sg" />
+        <link rel="me" href="sms:+6569500591" />
+  <title data-react-helmet="true">奕斯偉計算(01256)財報日期、財務報告及業績會詳情 - 老虎證券</title>
+            <meta data-react-helmet="true" property="og:image" content="https://c1.itigergrowtha.com/portal5/static/media/og-logo.0a0bd8dc.png"/><meta data-react-helmet="true" property="og:url" content="https://www.itiger.com/hant/stock/01256/filings"/><meta data-react-helmet="true" name="twitter:image" content="https://c1.itigergrowtha.com/portal5/static/media/og-logo.0a0bd8dc.png"/><meta data-react-helmet="true" property="og:site_name" content="老虎證券"/><meta data-react-helmet="true" name="twitter:url" content="https://www.itiger.com/hant/stock/01256/filings"/><meta data-react-helmet="true" name="description" content="通過老虎證券瞭解奕斯偉計算(01256)公司財報發佈日期、財務報告以及業績會詳情。查看每股收益、收入、稅前利潤的預期與歷史數據，助您做出明智的投資決策。"/><meta data-react-helmet="true" name="keywords" content="奕斯偉計算(01256)公司財報,奕斯偉計算(01256)公司財報日期,奕斯偉計算(01256)公司財務報告,奕斯偉計算(01256)公司利潤表,奕斯偉計算(01256)公司財務分析,奕斯偉計算(01256)公司資產負債表,奕斯偉計算(01256)公司主營構成,奕斯偉計算(01256)公司每股收益,公司稅前利潤,老虎證券"/><meta data-react-helmet="true" property="og:title" content="奕斯偉計算(01256)財報日期、財務報告及業績會詳情"/><meta data-react-helmet="true" property="og:description" content="通過老虎證券瞭解奕斯偉計算(01256)公司財報發佈日期、財務報告以及業績會詳情。查看每股收益、收入、稅前利潤的預期與歷史數據，助您做出明智的投資決策。"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:title" content="奕斯偉計算(01256)財報日期、財務報告及業績會詳情"/><meta data-react-helmet="true" name="twitter:description" content="通過老虎證券瞭解奕斯偉計算(01256)公司財報發佈日期、財務報告以及業績會詳情。查看每股收益、收入、稅前利潤的預期與歷史數據，助您做出明智的投資決策。"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:site" content="@Tiger_Brokers"/><meta data-react-helmet="true" name="twitter:creator" content="@Tiger_Brokers"/>
+              <link rel="stylesheet" href="https://c1.itigergrowtha.com/portal5/static/css/vendor.867bf3dd.css" />
+<link rel="stylesheet" href="https://c1.itigergrowtha.com/portal5/static/css/common.6982df39.css" />
+<link rel="stylesheet" href="https://c1.itigergrowtha.com/portal5/static/css/financial-centre.9c2edbe7.css" />
+<noscript>
+    <link rel="preload" as="style" href="https://c1.itigergrowtha.com/portal5/static/js/runtime.43bde59b.js" />
+    <link rel="preload" as="style" href="https://c1.itigergrowtha.com/portal5/static/js/i18n.ef3c1825.js" />
+    <link rel="preload" as="style" href="https://c1.itigergrowtha.com/portal5/static/js/vendor.b7ea34f7.js" />
+    <link rel="preload" as="style" href="https://c1.itigergrowtha.com/portal5/static/js/common.725557f0.js" />
+    <link rel="preload" as="style" href="https://c1.itigergrowtha.com/portal5/static/js/financial-centre.3f34b8c2.js" />
+</noscript>
+<script>
+       var SETTINGS = {
+           isProfileHost: false,
+           isGenericRequest: false,
+           region: 'SGP',
+           edition: 'fundamental',
+           tenantId: 'TBGLOBAL',
+           entityId: 'TBSG',
+           pathRegion: 'sg',
+           pathLang: 'hant',
+           globalPrefix: '/hant',
+           prefixPattern: ':pathRegion(cn|sg|au|nz|hk)?/:pathLang(en|hans|hant)?',
+           cgWhiteDomainList: ["www.tradeup.com","www.tigerbrokers.nz","www.itigerup.com","www.tigertrader.app","www.tigerhkgo.com","www.gotigerhk.com","www.thetigerbrokers.com","www.tigrgood.com","www-nd.tigerbaas.com","www.itigertrader.com","www.atigrburst.com","www.atigrpulse.com","www.pocboost.com","cn.tigrdw.com","hk.tigrdw.com","au.tigrdw.com","sg.tigrdw.com","nz.tigrdw.com","ms.tigrdw.com","www.tigrdw.com","www.etasphere.com","au.etasphere.com","sg.etasphere.com","tradeup-us-uat1.qa.tigerfintech.com","www.itigertech.com","www.uat.itigertech.com","cn.tigermarketr.com","hk.tigermarketr.com","ms.tigermarketr.com","nz.tigermarketr.com","au.tigermarketw.com","cn.tigermarketw.cn","hk.tigermarketw.com","ms.tigermarketw.com","nz.tigermarketw.com","sg.tigermarketw.com","avnrnz.itigertech.com","www-sg.uat.tigerbrokers.net","itfsua.uat.itigertech.com","itfsub.uat.itigertech.com","www-tbus.uat.tradeup.com","www-wlsec.uat.itigertech.com","www-fswh.uat.itigertech.com","www-csbhk.uat.itigertech.com","www-paob.uat.itigertech.com","www-ituata.uat.itigertech.com","www-ituatb.uat.itigertech.com","avnrhk.uat.itigertech.com","zabank.uat.itigertech.com","cmsihk.uat.itigertech.com","sg.etaspherek.com","hk.tigeractivity.com","au.tigeractivity.com","www-ituata.itigertech.com","ms.tigerreferral.com","hk1.tigermarketr.com","au.tigershowtime.com","cn.tigershowtime.com","hk.tigershowtime.com","ms.tigershowtime.com","nz1.tigershowtime.com","sg.tigerhit.com","sg.tigerkickoff.com","sgp.itiger.com","hkg.itiger.com","aus.itiger.com","nzl.itiger.com","www-paob.itigertech.com"],
+           lang: 'zh_TW',
+           license: 'TBSG',
+           location: 'JPN',
+           currentUser: null,
+           guestUser: {"uuid":5100088418,"token_type":"Guest","access_token":"eyJhbGciOiJFUzI1NiIsImtpZCI6IjVVQzB5NGhnUXUiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE3OTY5NjI3OTAsImlzcyI6IkdMT0JBTCIsIm5vbmNlIjoiRVlvT3ZQcm5TYTd1cVduem9ndlZNWmxzb2drRnVPZlBEN2FwaE12OEJ4d1J4U0hrb1oiLCJ0ZW5hbnRfaWQiOiJUQkdMT0JBTCJ9.cKWtbCgN5-8gAKDF3XGKaRzrYfpule0j92kaMKj3MJssPjLxNYuY1UGYRDU5BXzAfetvZ-pB53kHq6aWsaHqzw","expires_at":1796962790,"scopes":"common read write guest","pid":0,"authRoute":"GLOBAL","tenantId":"TBGLOBAL","env":"default"},
+           promotionMaterial: {"buoy":"quoteOrdinaryBuoy","bottomBanner":"quoteBottomBanner"},
+       };
+    var __downloadLinks = {"ios":"https://da.tigerfintech.com/r/m","android":"https://da.tigerfintech.com/r/u","androidMarket":"market://details?id=com.tigerbrokers.stock","mac":"https://download.tigerfintech.com/desktop/cdn/f/TigerTrade_latest.dmg","windows":"https://download.tigerfintech.com/desktop/cdn/f/TigerTradeSetup_latest.exe","region":"SGP"};
+</script>
+         <!-- canonical -->
+        <link rel="canonical" href="https://www.itiger.com/hant/stock/01256/filings" />
+        <!-- hreflang -->
+        <link rel="alternate" hreflang="en" href="https://www.itiger.com/stock/01256/filings" />
+        <link rel="alternate" hreflang="zh-Hant-SG" href="https://www.itiger.com/hant/stock/01256/filings" />
+        <link rel="alternate" hreflang="zh-Hans-SG" href="https://www.itiger.com/hans/stock/01256/filings" />
+        <link rel="alternate" hreflang="en-HK" href="https://www.itiger.com/stock/01256/filings" />
+        <link rel="alternate" hreflang="zh-Hant-HK" href="https://www.itiger.com/hant/stock/01256/filings" />
+        <link rel="alternate" hreflang="zh-Hans-HK" href="https://www.itiger.com/hans/stock/01256/filings" />
+        <link rel="alternate" hreflang="en-NZ" href="https://www.itiger.com/stock/01256/filings" />
+        <link rel="alternate" hreflang="zh-Hant-NZ" href="https://www.itiger.com/hant/stock/01256/filings" />
+        <link rel="alternate" hreflang="zh-Hans-NZ" href="https://www.itiger.com/hans/stock/01256/filings" />
+        <link rel="alternate" hreflang="en-AU" href="https://www.itiger.com/stock/01256/filings" />
+        <link rel="alternate" hreflang="zh-Hant-AU" href="https://www.itiger.com/hant/stock/01256/filings" />
+        <link rel="alternate" hreflang="zh-Hans-AU" href="https://www.itiger.com/hans/stock/01256/filings" />
+        <link rel="alternate" hreflang="x-default" href="https://www.itiger.com/stock/01256/filings" />
+         <!-- Structured Data -->
+        <script type="application/ld+json">
+            {"@context":"https://schema.org","@graph":[]}
+        </script>
+    </head>
+    <!-- prettier-ignore -->
+    <body class="platform-desktop language-zh_TW region-SGP page-financial-centre invisible-footer page-financial-centre">
+        <div id="wrap">
+  <nav class="site-top-navbar">
+    <div class="container navbar-collapse">
+        <button class="btn language-nav" data-lang="zh_TW">
+            ENG/中
+        </button>
+     </div>
+    <script>
+        var _TOPNAV_DATA = {
+            locate: [{"name":"热门","children":[{"name":"新加坡","code":"SGP","region":"SGP","license":"TBSG"},{"name":"新西兰","code":"NZL","region":"NZL","license":"TBKIWI"},{"name":"澳大利亚","code":"AUS","region":"AUS","license":"TBAU"},{"name":"香港特别行政区","code":"HKG","region":"HKG","license":"TBHK"}]},{"name":"亚洲地区","children":[{"name":"亚美尼亚","code":"ARM","region":"SGP","license":"TBSG"},{"name":"孟加拉国","code":"BGD","region":"SGP","license":"TBSG"},{"name":"不丹","code":"BTN","region":"SGP","license":"TBSG"},{"name":"文莱","code":"BRN","region":"SGP","license":"TBSG"},{"name":"柬埔寨","code":"KHM","region":"SGP","license":"TBSG"},{"name":"格鲁吉亚","code":"GEO","region":"SGP","license":"TBSG"},{"name":"印度","code":"IND","region":"SGP","license":"TBSG"},{"name":"印度尼西亚","code":"IDN","region":"SGP","license":"TBSG"},{"name":"以色列","code":"ISR","region":"SGP","license":"TBSG"},{"name":"日本","code":"JPN","region":"SGP","license":"TBSG"},{"name":"约旦","code":"JOR","region":"SGP","license":"TBSG"},{"name":"老挝","code":"LAO","region":"SGP","license":"TBSG"},{"name":"澳门特别行政区","code":"MAC","region":"SGP","license":"TBSG"},{"name":"马来西亚","code":"MYS","region":"SGP","license":"TBSG"},{"name":"马尔代夫","code":"MDV","region":"SGP","license":"TBSG"},{"name":"蒙古","code":"MNG","region":"SGP","license":"TBSG"},{"name":"缅甸","code":"MMR","region":"SGP","license":"TBSG"},{"name":"尼泊尔","code":"NPL","region":"SGP","license":"TBSG"},{"name":"阿曼","code":"OMN","region":"SGP","license":"TBSG"},{"name":"菲律宾","code":"PHL","region":"SGP","license":"TBSG"},{"name":"卡塔尔","code":"QAT","region":"SGP","license":"TBSG"},{"name":"新加坡","code":"SGP","region":"SGP","license":"TBSG"},{"name":"韩国","code":"KOR","region":"SGP","license":"TBSG"},{"name":"斯里兰卡","code":"LKA","region":"SGP","license":"TBSG"},{"name":"泰国","code":"THA","region":"SGP","license":"TBSG"},{"name":"东帝汶","code":"TLS","region":"SGP","license":"TBSG"},{"name":"土库曼斯坦","code":"TKM","region":"SGP","license":"TBSG"},{"name":"阿拉伯联合酋长国","code":"ARE","region":"SGP","license":"TBSG"},{"name":"越南","code":"VNM","region":"SGP","license":"TBSG"},{"name":"香港特别行政区","code":"HKG","region":"HKG","license":"TBHK"}]},{"name":"欧洲地区","children":[{"name":"安道尔","code":"AND","region":"SGP","license":"TBSG"},{"name":"奥地利","code":"AUT","region":"SGP","license":"TBSG"},{"name":"比利时","code":"BEL","region":"SGP","license":"TBSG"},{"name":"保加利亚","code":"BGR","region":"SGP","license":"TBSG"},{"name":"克罗地亚","code":"HRV","region":"SGP","license":"TBSG"},{"name":"捷克共和国","code":"CZE","region":"SGP","license":"TBSG"},{"name":"丹麦","code":"DNK","region":"SGP","license":"TBSG"},{"name":"爱沙尼亚","code":"EST","region":"SGP","license":"TBSG"},{"name":"芬兰","code":"FIN","region":"SGP","license":"TBSG"},{"name":"法国","code":"FRA","region":"SGP","license":"TBSG"},{"name":"德国","code":"DEU","region":"SGP","license":"TBSG"},{"name":"直布罗陀","code":"GIB","region":"SGP","license":"TBSG"},{"name":"希腊","code":"GRC","region":"SGP","license":"TBSG"},{"name":"格陵兰岛","code":"GRL","region":"SGP","license":"TBSG"},{"name":"根西岛","code":"GGY","region":"SGP","license":"TBSG"},{"name":"匈牙利","code":"HUN","region":"SGP","license":"TBSG"},{"name":"冰岛","code":"ISL","region":"SGP","license":"TBSG"},{"name":"爱尔兰","code":"IRL","region":"SGP","license":"TBSG"},{"name":"意大利","code":"ITA","region":"SGP","license":"TBSG"},{"name":"拉脱维亚","code":"LVA","region":"SGP","license":"TBSG"},{"name":"列支敦士登","code":"LIE","region":"SGP","license":"TBSG"},{"name":"立陶宛","code":"LTU","region":"SGP","license":"TBSG"},{"name":"卢森堡","code":"LUX","region":"SGP","license":"TBSG"},{"name":"荷兰","code":"NLD","region":"SGP","license":"TBSG"},{"name":"北马其顿","code":"MKD","region":"SGP","license":"TBSG"},{"name":"挪威","code":"NOR","region":"SGP","license":"TBSG"},{"name":"波兰","code":"POL","region":"SGP","license":"TBSG"},{"name":"葡萄牙","code":"PRT","region":"SGP","license":"TBSG"},{"name":"罗马尼亚","code":"ROU","region":"SGP","license":"TBSG"},{"name":"圣马力诺","code":"SMR","region":"SGP","license":"TBSG"},{"name":"塞尔维亚","code":"SRB","region":"SGP","license":"TBSG"},{"name":"斯洛伐克","code":"SVK","region":"SGP","license":"TBSG"},{"name":"斯洛文尼亚","code":"SVN","region":"SGP","license":"TBSG"},{"name":"西班牙","code":"ESP","region":"SGP","license":"TBSG"},{"name":"瑞典","code":"SWE","region":"SGP","license":"TBSG"},{"name":"瑞士","code":"CHE","region":"SGP","license":"TBSG"},{"name":"英国","code":"GBR","region":"SGP","license":"TBSG"}]},{"name":"大洋洲地区","children":[{"name":"澳大利亚","code":"AUS","region":"AUS","license":"TBAU"},{"name":"斐济","code":"FJI","region":"SGP","license":"TBSG"},{"name":"基里巴斯","code":"KIR","region":"SGP","license":"TBSG"},{"name":"密克罗尼西亚","code":"FSM","region":"SGP","license":"TBSG"},{"name":"新西兰","code":"NZL","region":"NZL","license":"TBNZ"},{"name":"纽埃","code":"NIU","region":"SGP","license":"TBSG"},{"name":"所罗门群岛","code":"SLB","region":"SGP","license":"TBSG"},{"name":"汤加","code":"TON","region":"SGP","license":"TBSG"}]},{"name":"非洲地区","children":[{"name":"佛得角","code":"CPV","region":"SGP","license":"TBSG"},{"name":"科摩罗","code":"COM","region":"SGP","license":"TBSG"},{"name":"埃塞俄比亚","code":"ETH","region":"SGP","license":"TBSG"},{"name":"加蓬","code":"GAB","region":"SGP","license":"TBSG"},{"name":"冈比亚","code":"GMB","region":"SGP","license":"TBSG"},{"name":"莱索托","code":"LSO","region":"SGP","license":"TBSG"},{"name":"马拉维","code":"MWI","region":"SGP","license":"TBSG"},{"name":"留尼汪","code":"REU","region":"SGP","license":"TBSG"},{"name":"卢旺达","code":"RWA","region":"SGP","license":"TBSG"},{"name":"塞内加尔","code":"SEN","region":"SGP","license":"TBSG"}]},{"name":"北美洲地区","children":[{"name":"阿鲁巴","code":"ABW","region":"SGP","license":"TBSG"},{"name":"巴巴多斯","code":"BRB","region":"SGP","license":"TBSG"},{"name":"加拿大","code":"CAN","region":"SGP","license":"TBSG"},{"name":"哥斯达黎加","code":"CRI","region":"SGP","license":"TBSG"},{"name":"多米尼加","code":"DMA","region":"SGP","license":"TBSG"},{"name":"萨尔瓦多","code":"SLV","region":"SGP","license":"TBSG"},{"name":"马提尼克岛","code":"MTQ","region":"SGP","license":"TBSG"},{"name":"蒙特塞拉特","code":"MSR","region":"SGP","license":"TBSG"},{"name":"圣卢西亚","code":"LCA","region":"SGP","license":"TBSG"}]},{"name":"南美洲地区","children":[{"name":"玻利维亚","code":"BOL","region":"SGP","license":"TBSG"},{"name":"智利","code":"CHL","region":"SGP","license":"TBSG"},{"name":"法属圭亚那","code":"GUF","region":"SGP","license":"TBSG"},{"name":"苏里南","code":"SUR","region":"SGP","license":"TBSG"},{"name":"乌拉圭","code":"URY","region":"SGP","license":"TBSG"}]}],
+            lang: ["en_US","zh_CN"]
+        }
+    </script>
+</nav>
+<!-- prettier-ignore -->
+<header class="site-header">
+    <div class="container">
+        <h1 class="site-primary-brand">
+            <a
+                class="navbar-brand site-logo-black"
+                href="/sg/hant"
+                title="老虎證券">
+                老虎證券
+            </a>
+        </h1>
+        <div class="site-primary-navbar-container">        <ul class="site-primary-navbar">
+            <li class="nav-item has-children">
+                <a class="nav-link" href="/hant/quote" title="市场">市场</a><a class="indicator"><span class="indicator-arrow-right"></span></a>                        <ul class="nav-children nav-children-level-1">
+            <li class="nav-children-item">
+                <a class="nav-link" href="/hant/quote" title="行情" target="_blank">行情</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/hant/news/top" title="24/7新闻">24/7新闻</a>                 </li>
+        </ul>
+ </li>
+            <li class="nav-item products">
+                <a class="nav-link" href="/sg/hant/invest/cash-boost" title="产品">产品</a>                 </li>
+            <li class="nav-item has-children">
+                <a class="nav-link" href="/sg/hant/invest/auto-invest" title="功能">功能</a><a class="indicator"><span class="indicator-arrow-right"></span></a>                        <ul class="nav-children nav-children-level-1">
+            <li class="nav-children-item Remiser, Investment Representatives">
+                <a class="nav-link" href="https://www.itiger.com/sg/hant/marketing/InvestmentReps?lang=en_US" title="经纪人" target="_blank">经纪人</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/invest/auto-invest" title="定投">定投</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/marketing/investwithCPF-SRS" title="CPF/SRS 投资">CPF/SRS 投资</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/learn" title="专栏">专栏</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/invest/us-fractionalshares" title="美股碎股">美股碎股</a>                 </li>
+        </ul>
+ </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/sg/hant/market/gpt" title="TigerAI">TigerAI</a>                 </li>
+            <li class="nav-item has-children">
+                <a class="nav-link" href="/sg/hant/commissions" title="费用">费用</a><a class="indicator"><span class="indicator-arrow-right"></span></a>                        <ul class="nav-children nav-children-level-1">
+            <li class="nav-children-item has-children">
+                <a class="nav-link" href="/sg/hant/commissions/fees" title="综合账户">综合账户</a><a class="indicator"><span class="indicator-arrow-right"></span></a>                        <ul class="nav-children nav-children-level-2">
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/commissions/fees/stocks_etf" title="股票与ETF">股票与ETF</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/commissions/fees/options_cbbcs" title="期权、窝轮与牛熊证">期权、窝轮与牛熊证</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/commissions/fees/futures" title="期货">期货</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/commissions/fees/bond" title="债券">债券</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/commissions/fees/fund_mall" title="基金超市">基金超市</a>                 </li>
+        </ul>
+ </li>
+            <li class="nav-children-item has-children">
+                <a class="nav-link" href="/sg/hant/commissions/cash_boost" title="Cash Boost">Cash Boost</a><a class="indicator"><span class="indicator-arrow-right"></span></a>                        <ul class="nav-children nav-children-level-2">
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/commissions/cash_boost/stocks_etf" title="股票与ETF">股票与ETF</a>                 </li>
+        </ul>
+ </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/commissions/others_fees/financing_interest_rates" title="融资利率">融资利率</a>                 </li>
+        </ul>
+ </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/sg/hant/market/promotion" title="活动">活动</a>                 </li>
+            <li class="nav-item has-children">
+                <a class="nav-link" href="/sg/hant/help" title="帮助">帮助</a><a class="indicator"><span class="indicator-arrow-right"></span></a>                        <ul class="nav-children nav-children-level-1">
+            <li class="nav-children-item has-children">
+                <a class="nav-link" href="/sg/hant/help/detail/account-operations" title="账户操作">账户操作</a><a class="indicator"><span class="indicator-arrow-right"></span></a>                        <ul class="nav-children nav-children-level-2">
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/account-opening" title="如何开户">如何开户</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/account-opening-documents" title="开户文件">开户文件</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/account-types" title="账户类型">账户类型</a>                 </li>
+        </ul>
+ </li>
+            <li class="nav-children-item has-children">
+                <a class="nav-link" href="/sg/hant/help/detail/transfer-n-pay" title="资金与转仓">资金与转仓</a><a class="indicator"><span class="indicator-arrow-right"></span></a>                        <ul class="nav-children nav-children-level-2">
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/account-funding" title="入金">入金</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/89960074" title="DDA快捷入金">DDA快捷入金</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/funds-withdrawal" title="出金">出金</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/shares-transfer-in" title="转入股票">转入股票</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/shares-transfer-out" title="转出股票">转出股票</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/currency-conversion" title="货币兑换">货币兑换</a>                 </li>
+        </ul>
+ </li>
+            <li class="nav-children-item has-children">
+                <a class="nav-link" href="/sg/hant/help/detail/products-n-trading" title="产品与交易">产品与交易</a><a class="indicator"><span class="indicator-arrow-right"></span></a>                        <ul class="nav-children nav-children-level-2">
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/products-available" title="可交易产品">可交易产品</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/order-types" title="订单类型">订单类型</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/trading-rules" title="交易规则">交易规则</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/declaration" title="申报">申报</a>                 </li>
+        </ul>
+ </li>
+            <li class="nav-children-item has-children">
+                <a class="nav-link" href="/sg/hant/help/detail/margin-trading-n-short-selling" title="融资融券">融资融券</a><a class="indicator"><span class="indicator-arrow-right"></span></a>                        <ul class="nav-children nav-children-level-2">
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/margin-n-leverage" title="保证金与杠杆">保证金与杠杆</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/risk-management" title="风险管理">风险管理</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/short-selling-risk" title="做空风险">做空风险</a>                 </li>
+        </ul>
+ </li>
+            <li class="nav-children-item has-children">
+                <a class="nav-link" href="/sg/hant/help/detail/fund-mall" title="基金超市">基金超市</a><a class="indicator"><span class="indicator-arrow-right"></span></a>                        <ul class="nav-children nav-children-level-2">
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/53925061" title="基金开户与交易">基金开户与交易</a>                 </li>
+        </ul>
+ </li>
+            <li class="nav-children-item has-children">
+                <a class="nav-link" href="/sg/hant/help/detail/21825989" title="Cash Boost账户">Cash Boost账户</a><a class="indicator"><span class="indicator-arrow-right"></span></a>                        <ul class="nav-children nav-children-level-2">
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/contra-faq" title="Cash Boost 账户FAQ">Cash Boost 账户FAQ</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/06324754" title="如何开通 Cash Boost 账户">如何开通 Cash Boost 账户</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/63375641" title="如何用Cash Boost 账户交易">如何用Cash Boost 账户交易</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/how-to-link-CDP" title="如何绑定CDP证券账户">如何绑定CDP证券账户</a>                 </li>
+        </ul>
+ </li>
+            <li class="nav-children-item has-children">
+                <a class="nav-link" href="/sg/hant/help/detail/93284971" title="Tiger Boss Debit Card">Tiger Boss Debit Card</a><a class="indicator"><span class="indicator-arrow-right"></span></a>                        <ul class="nav-children nav-children-level-2">
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/86919046" title="常见问题">常见问题</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/24801164" title="费用说明">费用说明</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/74200178" title="如何充值">如何充值</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/52687302" title="如何使用我的Debit card">如何使用我的Debit card</a>                 </li>
+        </ul>
+ </li>
+            <li class="nav-children-item has-children">
+                <a class="nav-link" href="/sg/hant/help/detail/statement-n-more" title="账单报表">账单报表</a><a class="indicator"><span class="indicator-arrow-right"></span></a>                        <ul class="nav-children nav-children-level-2">
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/statement" title="账单报表">账单报表</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/help/detail/dividends" title="股息（分红）">股息（分红）</a>                 </li>
+        </ul>
+ </li>
+        </ul>
+ </li>
+            <li class="nav-item has-children">
+                <a class="nav-link" href="/sg/hant/inst" title="机构">机构</a><a class="indicator"><span class="indicator-arrow-right"></span></a>                        <ul class="nav-children nav-children-level-1">
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/fund-management" title="Tiger Fund Management">Tiger Fund Management</a>                 </li>
+            <li class="nav-children-item has-children">
+                <a class="nav-link" href="/sg/hant/inst/external-asset" title="机构服务">机构服务</a><a class="indicator"><span class="indicator-arrow-right"></span></a>                        <ul class="nav-children nav-children-level-2">
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/inst/external-asset" title="财富及资产管理人">财富及资产管理人</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/inst/proprietary-trading-group" title="自营交易机构">自营交易机构</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/inst/introducing-brokers" title="介绍经纪商">介绍经纪商</a>                 </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="/sg/hant/inst/thirdparty-service" title="三方服务商">三方服务商</a>                 </li>
+        </ul>
+ </li>
+            <li class="nav-children-item">
+                <a class="nav-link" href="https://developer.tigerbrokers.com.sg/" title="老虎API平台" target="_blank">老虎API平台</a>                 </li>
+        </ul>
+ </li>
+        </ul>
+ </div>
+        <div class="site-navbar-search"></div>
+
+        <div class="site-navbar-search-toggle" title="立即搜索">
+            <a class="btn btn-search">
+                <svg viewBox="0 0 1024 1024" class="tigericon tigericon-search icon-search a-fadeIn" width="48" height="48" fill="currentColor" aria-hidden="true" focusable="false"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0011.6 0l43.6-43.5a8.2 8.2 0 000-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg>
+            </a>
+        </div>
+
+        <ul class="site-navbar-side">
+            <li class="nav-item">
+                <a
+                    href="/login?next=%2Fhant%2Fstock%2F01256%2Ffilings"
+                    class="btn btn-navbar btn-ghost position-sticky"
+                    rel="nofollow"
+                    data-sensors-trace='{"type":"导航","name":"登录按钮点击","entrance_type":"Header_login"}'>
+                    登入
+                </a>
+            </li>
+            <li class="nav-item">
+                <a
+                    href="/signup"
+                    rel="nofollow"
+                    class="btn btn-navbar position-sticky dialog-usa-trigger-btn"
+                    data-sensors-trace='{"type":"导航","name":"注册按钮点击","entrance_type":"Header_signup"}'>
+                    立即註冊
+                </a>
+            </li>
+        </ul>
+
+        <button class="site-mobile-nav-toggle btn">Toggle<span></span></button>
+    </div>
+</header>
+              <div id="container" class="site-container"><div class="fw-medium root__1PrHn"><div class="root__1teaZ container"><div class="content__bmPWq"><section class="root__37O_V"><div class="head__1CY8s"><div class="nav__21Sgf"><a class="prev__3BCrU" href="/hant/quote/hk">港股</a><svg class="tigericon tigericon-right arrow__22Xt8" viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"></path></svg><span>詳情</span></div><div class="entities__1ZrNs">本頁面由Tiger Trade Technology Pte. Ltd.提供服務</div></div><div class="info__2HCgv"><div class="w-100"><h1 class="text-bold name__2RLS0"><span class="text__3E1W4">奕斯偉計算</span></h1><div><div class="down__381kV greenUp__1CAw2 root__-0gXL"><div class="wrapper__1pibS"><div class="root__U9Jat text-bold price__2Z67g"><span class="root__3rdOC price__CYl-m"><span class="">1.270</span></span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow__1FBUe down__10cJU"><g clip-path="url(#clip0_252_5814)"><path id="Polygon 2" d="M8.3969 0.202397C8.20112 -0.067465 7.7989 -0.067465 7.60312 0.202397L1.89451 8.07093C1.65933 8.39509 1.89092 8.84921 2.2914 8.84921L5.61627 8.84921L5.61627 15.6C5.61627 15.8209 5.79536 16 6.01627 16L10.0528 16C10.2753 16 10.4551 15.8184 10.4528 15.5959L10.3835 8.84921L13.7086 8.84921C14.1091 8.84921 14.3407 8.39509 14.1055 8.07093L8.3969 0.202397Z" fill="currentColor"></path></g></svg></div><span class="change__1usYQ">-0.020</span><span>-1.55%</span></div><button type="button" class="btn__36afN btn btn-link"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon__1rJAx"><g><path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M1.63208 8.00008C1.63208 11.5121 4.48808 14.3681 8.00008 14.3681C9.64008 14.3681 11.1921 13.7521 12.3841 12.6241L12.3782 12.6178C12.4592 12.5183 12.504 12.3935 12.504 12.2641C12.504 12.1156 12.445 11.9731 12.34 11.8681C12.235 11.7631 12.0925 11.7041 11.944 11.7041C11.826 11.7041 11.7118 11.7413 11.6172 11.8093L11.6161 11.8081C11.6128 11.8112 11.6095 11.8144 11.6062 11.8175C11.5858 11.8329 11.5663 11.8498 11.548 11.8681C11.5399 11.8762 11.5321 11.8846 11.5245 11.8931C10.5607 12.7673 9.31821 13.2481 8.00808 13.2481C5.11208 13.2481 2.76008 10.8961 2.76008 8.00008C2.76008 7.95475 2.76008 7.90943 2.76061 7.8641H4.04001C4.13601 7.8641 4.19201 7.7681 4.14401 7.6801L2.40001 4.5441C2.35201 4.4561 2.23201 4.4561 2.19201 4.5441L0.440011 7.6801C0.392011 7.7601 0.456011 7.8641 0.544011 7.8641H1.63445C1.63297 7.90943 1.63208 7.95475 1.63208 8.00008ZM13.1902 7.2401C12.8191 4.66446 10.6257 2.75208 7.99208 2.75208C6.9684 2.75208 5.98983 3.04527 5.13653 3.59522C5.03727 3.67564 4.91293 3.7201 4.78401 3.7201C4.63549 3.7201 4.49305 3.6611 4.38803 3.55608C4.28301 3.45106 4.22401 3.30862 4.22401 3.1601C4.22401 3.01158 4.28301 2.86914 4.38803 2.76412C4.42826 2.72389 4.47397 2.69042 4.52341 2.66443C5.55312 1.9885 6.75385 1.63208 8.00008 1.63208C11.2399 1.63208 13.9463 4.03209 14.3255 7.2401H15.448C15.544 7.2401 15.6 7.3361 15.552 7.4241L13.808 10.5601C13.768 10.6401 13.648 10.6401 13.6 10.5601L11.848 7.4241C11.8 7.3441 11.864 7.2401 11.952 7.2401H13.1902Z" fill="currentColor"></path></g></svg><span class="text__1wjfd">手動刷新</span><canvas class="water-wave-canvas"></canvas></button></div><div class="root__2EbR-"><span class="item__10oPB time__2rDKd"></span></div></div><div class="detail__2fvpd"><div class="list__3Wa63 row"><div class="col-lg-6 col-12"><div class="row"><div class="item__mKzIM col-6"><span class="label__18pFX">成交量：</span><span class="root__3rdOC value__umrsq"><span class="">71.40萬</span></span></div><div class="item__mKzIM col-6"><span class="label__18pFX">成交額：</span><span class="root__3rdOC value__umrsq"><span class="">91.24萬</span></span></div><div class="item__mKzIM col-6"><span class="label__18pFX">市值：</span><span class="root__3rdOC value__umrsq"><span class="">279.30億</span></span></div><div class="item__mKzIM col-6"><span class="label__18pFX">市盈率：</span><span class="root__3rdOC value__umrsq"><span class="">-1.51</span></span></div></div></div><div class="col-lg-6 col-12"><div class="row"><div class="item__mKzIM col-6"><span class="label__18pFX">高：</span><span class="root__3rdOC value__umrsq"><span class="">1.320</span></span></div><div class="item__mKzIM col-6"><span class="label__18pFX">開：</span><span class="root__3rdOC value__umrsq"><span class="">1.300</span></span></div><div class="item__mKzIM col-6"><span class="label__18pFX">低：</span><span class="root__3rdOC value__umrsq"><span class="">1.250</span></span></div><div class="item__mKzIM col-6"><span class="label__18pFX">收：</span><span class="root__3rdOC value__umrsq"><span class="">1.290</span></span></div></div></div></div><div class="list__3Wa63 collapse-exited row"><div class="col-lg-6 col-12"><div class="row"><div class="item__mKzIM col-6"><span class="label__18pFX">52周最高：</span><span class="root__3rdOC value__umrsq"><span class="">1.640</span></span></div><div class="item__mKzIM col-6"><span class="label__18pFX">52周最低：</span><span class="root__3rdOC value__umrsq"><span class="">1.100</span></span></div><div class="item__mKzIM col-6"><span class="label__18pFX">股本：</span><span class="root__3rdOC value__umrsq"><span class="">219.92億</span></span></div><div class="item__mKzIM col-6"><span class="label__18pFX">香港流通股本：</span><span class="root__3rdOC value__umrsq"><span class="">101.56億</span></span></div></div></div><div class="col-lg-6 col-12"><div class="row"><div class="item__mKzIM col-6"><span class="label__18pFX">量比：</span><span class="root__3rdOC value__umrsq"><span class="">0.27</span></span></div><div class="item__mKzIM col-6"><span class="label__18pFX">換手率：</span><span class="root__3rdOC value__umrsq"><span class="">0.01%</span></span></div><div class="item__mKzIM col-6"><span class="label__18pFX">股息：</span><span class="root__3rdOC value__umrsq"><span class="">- -</span></span></div><div class="item__mKzIM col-6"><span class="label__18pFX">股息率：</span><span class="root__3rdOC value__umrsq"><span class="">- -</span></span></div></div></div><div class="col-lg-6 col-12"><div class="row"><div class="item__mKzIM col-6"><span class="label__18pFX">每股收益(LYR):</span><span class="root__3rdOC value__umrsq"><span class="">-0.840</span></span></div><div class="item__mKzIM col-6"><span class="label__18pFX">淨資產收益率：</span><span class="root__3rdOC value__umrsq"><span class="">-48.02%</span></span></div><div class="item__mKzIM col-6"><span class="label__18pFX">總資產收益率：</span><span class="root__3rdOC value__umrsq"><span class="">-19.66%</span></span></div><div class="item__mKzIM col-6"><span class="label__18pFX">市淨率：</span><span class="root__3rdOC value__umrsq"><span class="">9.92</span></span></div></div></div><div class="col-lg-6 col-12"><div class="row"><div class="item__mKzIM col-6"><span class="label__18pFX">市盈率(LYR):</span><span class="root__3rdOC value__umrsq"><span class="">-1.51</span></span></div><div class="item__mKzIM col-6"><span class="label__18pFX">市銷率: </span><span class="root__3rdOC value__umrsq"><span class="">9.47</span></span></div></div></div></div></div></div><button type="button" class="open__1eZbY btn btn-light"><svg class="tigericon tigericon-doubleLeft doubleLeft__2H5fB" viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M272.9 512l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L186.8 492.3a31.99 31.99 0 000 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H532c6.7 0 10.4-7.7 6.3-12.9L272.9 512zm304 0l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L490.8 492.3a31.99 31.99 0 000 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H836c6.7 0 10.4-7.7 6.3-12.9L576.9 512z"></path></svg><canvas class="water-wave-canvas"></canvas></button></div><div class="root__3cUZX chart__2o3rc"><div class="chart2" style="display:flex;flex-direction:column;user-select:none;-webkit-user-select:none;position:relative"><div style="color:#626482;flex:1;font-size:14px;display:flex;align-items:center;justify-content:center;flex-direction:column"><p>資料載入中...</p></div><div class="chart2-wrapper" style="position:relative;display:flex;overflow:hidden;flex:0;opacity:0;visibility:hidden"><canvas style="user-select:none;-webkit-user-select:none;touch-action:pan-x pan-y"></canvas></div></div></div></section><div id="fc-stock-detail-nav"></div><div class="tab-routes-wrapper root__3qOZo nav__tUemk"><div class="tab-routes-nav navs__1ic9j line__2pBzs nav nav-tabs" role="tablist"><a title="總覽" role="tab" tabindex="-1" class="tab-routes-item nav__27NTe nav-link" href="/hant/stock/01256">總覽</a><a title="公司" role="tab" tabindex="-1" class="tab-routes-item nav__27NTe nav-link" href="/hant/stock/01256/company">公司</a><a title="新聞資訊" role="tab" tabindex="-1" class="tab-routes-item nav__27NTe nav-link" href="/hant/stock/01256/news">新聞資訊</a><a title="公告" role="tab" tabindex="-1" aria-current="page" class="tab-routes-item nav__27NTe nav-link active" href="/hant/stock/01256/filings">公告</a><div class="indicator indicator__2FIE6 black__1tQmi"></div></div></div><div class="tab-content"><section><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0928/2026092800036_c.pdf" class="item__J_BYh" target="_blank" rel="noreferrer" title="全球發售"><div class="time__voPxP">2026/09/28</div><div class="wrapper__3ODcr"><h4 class="title__28SyE">股份發售</h4><div>全球發售</div></div></a><div></div></section></div></div><aside class="root__1KJAm sidebar__2yBPF"><div class="root__15gCN root__dr4_t"><h4 class="text-bold title__hsbJM">分析師評級</h4><div><div class="d-flex align-items-center"><div class="skeleton-root mean__7MSpZ"> </div><div class="w-100"><div class="skeleton-root item__34ldn" style="height:18px"> </div><div class="skeleton-root item__34ldn" style="height:18px"> </div><div class="skeleton-root item__34ldn" style="height:18px"> </div></div></div></div></div><div class="root__15gCN"><h4 class="text-bold title__hsbJM">公司行動</h4><div><div class="root__1pG_K small__2dicu"><img class="inset__RmMtq" src="https://c1.itigergrowtha.com/portal5/static/media/inset.bd0a4fbd.png" alt="no data"/><p class="mb-0">沒有相關數據</p></div></div></div><div class="root__15gCN"><h4 class="text-bold title__hsbJM">派息歷史</h4><div><div class="root__1pG_K small__2dicu"><img class="inset__RmMtq" src="https://c1.itigergrowtha.com/portal5/static/media/inset.bd0a4fbd.png" alt="no data"/><p class="mb-0">沒有相關數據</p></div></div></div><div class="root__15gCN"><h4 class="text-bold title__hsbJM">估值分析</h4><div><div><div class="card__3UwGd"><div class="item__3abX3"><div class="value__2zUxH">-16.49</div><div class="label__h86fR">當前值</div></div><div class="item__3abX3"><div class="value__2zUxH">-17.79</div><div class="label__h86fR">行情平均值</div></div><div class="item__3abX3"><span class="flat__XLF-2 greenUp__1CAw2 value__2zUxH percentile__3hnen">75.00%</span><div class="label__h86fR">歷史分位值</div></div></div><div class="chart__1LO8p"></div><div class="legend__23b23"><div class="item__3abX3 pe__wlkyG"><div class="bar__3KRsh"></div><div class="label__h86fR">市盈率（TTM）</div></div><div class="item__3abX3 high__2CvP2"><div class="bar__3KRsh"></div><div class="label__h86fR">+1標準值</div></div><div class="item__3abX3 median__3aELD"><div class="bar__3KRsh"></div><div class="label__h86fR">平均值</div></div><div class="item__3abX3 low__1tZM4"><div class="bar__3KRsh"></div><div class="label__h86fR">-1標準值</div></div></div><div class="list__2oihv row"><div class="item__3abX3 col-6"><div class="d-flex justify-content-between"><div class="label__h86fR">當前值</div><div class="value__2zUxH">-16.49</div></div></div><div class="item__3abX3 col-6"><div class="d-flex justify-content-between"><div class="label__h86fR">最多</div><div class="value__2zUxH">-16.87</div></div></div><div class="item__3abX3 col-6"><div class="d-flex justify-content-between"><div class="label__h86fR">+1標準值</div><div class="value__2zUxH">-16.85</div></div></div><div class="item__3abX3 col-6"><div class="d-flex justify-content-between"><div class="label__h86fR">低至</div><div class="value__2zUxH">-19.07</div></div></div><div class="item__3abX3 col-6"><div class="d-flex justify-content-between"><div class="label__h86fR">-1標準值</div><div class="value__2zUxH">-18.73</div></div></div><div class="item__3abX3 col-6"><div class="d-flex justify-content-between"><div class="label__h86fR">平均值</div><div class="value__2zUxH">-17.79</div></div></div></div></div></div></div><div class="root__15gCN"><h4 class="text-bold title__hsbJM">熱議股票</h4><div><ol class="list-unstyled mb-0"><li class="root__1j2cV"><div class="index__3_7WW first__SyCLb">1</div><div class="info__37Io_"><div class="skeleton-root mb-1" style="width:140px;height:20px"> </div><div class="skeleton-root" style="width:30px;height:20px"> </div></div><div class="right__3nQBF"><div class="skeleton-root ms-auto price__1qP2z" style="width:40px;height:20px"> </div><div class="skeleton-root" style="width:80px;height:20px"> </div></div></li><li class="root__1j2cV"><div class="index__3_7WW second__1vGY1">2</div><div class="info__37Io_"><div class="skeleton-root mb-1" style="width:140px;height:20px"> </div><div class="skeleton-root" style="width:30px;height:20px"> </div></div><div class="right__3nQBF"><div class="skeleton-root ms-auto price__1qP2z" style="width:40px;height:20px"> </div><div class="skeleton-root" style="width:80px;height:20px"> </div></div></li><li class="root__1j2cV"><div class="index__3_7WW thirdly__1s28f">3</div><div class="info__37Io_"><div class="skeleton-root mb-1" style="width:140px;height:20px"> </div><div class="skeleton-root" style="width:30px;height:20px"> </div></div><div class="right__3nQBF"><div class="skeleton-root ms-auto price__1qP2z" style="width:40px;height:20px"> </div><div class="skeleton-root" style="width:80px;height:20px"> </div></div></li><li class="root__1j2cV"><div class="index__3_7WW">4</div><div class="info__37Io_"><div class="skeleton-root mb-1" style="width:140px;height:20px"> </div><div class="skeleton-root" style="width:30px;height:20px"> </div></div><div class="right__3nQBF"><div class="skeleton-root ms-auto price__1qP2z" style="width:40px;height:20px"> </div><div class="skeleton-root" style="width:80px;height:20px"> </div></div></li><li class="root__1j2cV"><div class="index__3_7WW">5</div><div class="info__37Io_"><div class="skeleton-root mb-1" style="width:140px;height:20px"> </div><div class="skeleton-root" style="width:30px;height:20px"> </div></div><div class="right__3nQBF"><div class="skeleton-root ms-auto price__1qP2z" style="width:40px;height:20px"> </div><div class="skeleton-root" style="width:80px;height:20px"> </div></div></li><li class="root__1j2cV"><div class="index__3_7WW">6</div><div class="info__37Io_"><div class="skeleton-root mb-1" style="width:140px;height:20px"> </div><div class="skeleton-root" style="width:30px;height:20px"> </div></div><div class="right__3nQBF"><div class="skeleton-root ms-auto price__1qP2z" style="width:40px;height:20px"> </div><div class="skeleton-root" style="width:80px;height:20px"> </div></div></li><li class="root__1j2cV"><div class="index__3_7WW">7</div><div class="info__37Io_"><div class="skeleton-root mb-1" style="width:140px;height:20px"> </div><div class="skeleton-root" style="width:30px;height:20px"> </div></div><div class="right__3nQBF"><div class="skeleton-root ms-auto price__1qP2z" style="width:40px;height:20px"> </div><div class="skeleton-root" style="width:80px;height:20px"> </div></div></li><li class="root__1j2cV"><div class="index__3_7WW">8</div><div class="info__37Io_"><div class="skeleton-root mb-1" style="width:140px;height:20px"> </div><div class="skeleton-root" style="width:30px;height:20px"> </div></div><div class="right__3nQBF"><div class="skeleton-root ms-auto price__1qP2z" style="width:40px;height:20px"> </div><div class="skeleton-root" style="width:80px;height:20px"> </div></div></li><li class="root__1j2cV"><div class="index__3_7WW">9</div><div class="info__37Io_"><div class="skeleton-root mb-1" style="width:140px;height:20px"> </div><div class="skeleton-root" style="width:30px;height:20px"> </div></div><div class="right__3nQBF"><div class="skeleton-root ms-auto price__1qP2z" style="width:40px;height:20px"> </div><div class="skeleton-root" style="width:80px;height:20px"> </div></div></li><li class="root__1j2cV"><div class="index__3_7WW">10</div><div class="info__37Io_"><div class="skeleton-root mb-1" style="width:140px;height:20px"> </div><div class="skeleton-root" style="width:30px;height:20px"> </div></div><div class="right__3nQBF"><div class="skeleton-root ms-auto price__1qP2z" style="width:40px;height:20px"> </div><div class="skeleton-root" style="width:80px;height:20px"> </div></div></li></ol></div></div></aside></div></div><footer class="root__1Guqu"><div class="container"><div class="row"><div class="col-lg-6"><div class="text__2zlOu"><div class="item__1y7ix"><div>公司名稱：</div><div class="text-white">Tiger Trade Technology Pte. Ltd.</div></div><div class="item__1y7ix"><div>聯繫郵箱：</div><a class="text-white" href="mailto:dpo@itiger.com">dpo@itiger.com</a></div><div class="item__1y7ix"><a class="text-white" href="/hant/agreement/UserAgreement-TTT">用戶協議</a><span class="mx-3">|</span><a class="text-white" href="/hant/agreement/PrivacyPolicy-TTT">隱私政策</a></div></div><p>Copyright © Tiger Trade Technology Pte. Ltd.</p><p class="mb-lg-0">不同司法管轄區的產品供應可能有所不同。</p></div><div class="col-lg-6"><p>本網站所載信息為一般通用信息，並未考慮您的投資目標、財務狀況和具體需求，不應被視為對任何金融產品的出售要約、購買要約、推薦或認可，亦不構成投資預測、投資收益承諾、投資建議或者其他實際的操作意見。本網站所載信息僅供參考，過往業績表現不應被理解為未來業績表現。投資有風險，在您做出投資決定之前，應謹慎判斷和甄別本網站所載信息是否適合您的需求、目標和情況。</p><p>我們竭力但無法保證網站中所有信息的準確性、完整性、可靠性和及時性，亦不對任何使用或信賴相關信息導致的損失承擔責任。</p><p class="mb-0">本網站中提供的產品和服務受到適用的法律法規以及相關協議的約束。請在使用我們的產品和服務前，認真閱讀並同意相關協議。</p></div></div></div></footer></div>
+        </div>
+         <!-- Analytics -->
+         <script>
+            function __loadScripts() {
+            /* Start: Google Global site tag(gtag) */
+(function(i,s,o,g,r,a,m){a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.googletagmanager.com/gtag/js?id=AW-331929667');
+window.dataLayer = window.dataLayer || [];window.gtag = function gtag(){dataLayer.push(arguments);}
+window.__gtagConfig={"autoTrackPageView":true,"AW_id":"AW-331929667","GA_id":"G-LECRLCDT1K","cookieDomain":"auto"};
+gtag('js', new Date());
+gtag('config', 'G-LECRLCDT1K', {"cookie_domain":"auto"});
+gtag('config', 'AW-331929667', {"cookie_domain":"auto"});
+/* End: Google Global site tag (gtag) */
+/* Start: Google Tag Manager */
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N5TBBK3');
+    /* End: Google Tag Manager */
+    
+/* Start: Sensors */
+        (function(para) {
+            var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script',x = null,y = null;
+            if(typeof(w['sensorsDataAnalytic201505']) !== 'undefined') {
+                return false;
+            }
+            w['sensorsDataAnalytic201505'] = n;
+            w[n] = w[n] || function(a) {return function() {(w[n]._q = w[n]._q || []).push([a, arguments]);}};
+            var ifs = ['track','quick','register','registerPage','registerOnce','trackSignup', 'trackAbtest', 'setProfile','setOnceProfile','appendProfile', 'incrementProfile', 'deleteProfile', 'unsetProfile', 'identify','login','logout','trackLink','clearAllRegister','getAppStatus','setItem','deleteItem','use'];
+            for (var i = 0; i < ifs.length; i++) {
+              w[n][ifs[i]] = w[n].call(null, ifs[i]);
+            }
+            if (!w[n]._t) {
+              x = d.createElement(s), y = d.getElementsByTagName(s)[0];
+              x.async = 1;
+              x.src = p;
+              x.setAttribute('charset','UTF-8');
+              w[n].para = para;
+              y.parentNode.insertBefore(x, y);
+            }
+          })({"sdk_url":"https://c1.itigergrowtha.com/libs/sensors/1.26.12/sensorsdata.min.js","name":"sensors","server_url":"https://da.tigerfintech.com/sa?project=production","heatmap":{"clickmap":"default","scroll_notice_map":"default","collect_tags":{"div":true,"section":true,"img":true,"li":true,"p":true,"span":true,"h1":true,"h2":true,"h3":true,"h4":true,"h5":true,"h6":true,"label":true,"svg":true,"td":true,"th":true,"canvas":true,"video":true,"header":true,"footer":true,"aside":true,"article":true}},"is_track_single_page":true,"use_client_time":true,"send_type":"beacon","max_string_length":1000,"app_js_bridge":true});
+        sensors.registerPage({ platform: /tigerbrokers|tradeup/i.test(navigator.userAgent) ? 'h5' : 'web' });
+        sensors.quick('useModulePlugin','SiteLinker', { linker: [{"part_url":"tigersecurities.com","after_hash":false},{"part_url":"skytigris.com","after_hash":false},{"part_url":"tigertcp.cn","after_hash":false},{"part_url":"itigergrowth.com","after_hash":false},{"part_url":"itigerup.com","after_hash":false},{"part_url":"itiger.com","after_hash":false},{"part_url":"hellotigr.com","after_hash":false},{"part_url":"itigerup.net.cn","after_hash":false},{"part_url":"itigerup.com.cn","after_hash":false},{"part_url":"goodtigr.com","after_hash":false},{"part_url":"tigerbrokers.com.sg","after_hash":false},{"part_url":"mydigiuc.com","after_hash":false},{"part_url":"tigerfintech.net","after_hash":false},{"part_url":"tigerstocks.com","after_hash":false},{"part_url":"tigerbrokers.com.au","after_hash":false},{"part_url":"tigerbrokers.nz","after_hash":false},{"part_url":"tigerbrokers.com.hk","after_hash":false},{"part_url":"tigerbrokers.hk","after_hash":false},{"part_url":"tigerhkgo.com","after_hash":false},{"part_url":"gotigerhk.com","after_hash":false},{"part_url":"tigerhello.com","after_hash":false},{"part_url":"imtigers.com","after_hash":false},{"part_url":"heytigers.com","after_hash":false},{"part_url":"thetigerbrokers.com","after_hash":false},{"part_url":"mytigerbrokers.com","after_hash":false},{"part_url":"tigertrade.app","after_hash":false},{"part_url":"itigertrade.app","after_hash":false},{"part_url":"itigertrader.com","after_hash":false},{"part_url":"tigertrader.app","after_hash":false},{"part_url":"tradertiger.com","after_hash":false},{"part_url":"itigertrades.com","after_hash":false},{"part_url":"tradetiger.app","after_hash":false},{"part_url":"igrtrade.app","after_hash":false}] });
+        window.__sensorsConfig = {"showLog":false,"heatmap":{"clickmap":"default","scroll_notice_map":"default","collect_tags":{"div":true,"section":true,"img":true,"li":true,"p":true,"span":true,"h1":true,"h2":true,"h3":true,"h4":true,"h5":true,"h6":true,"label":true,"svg":true,"td":true,"th":true,"canvas":true,"video":true,"header":true,"footer":true,"aside":true,"article":true}},"autoTrack":true,"autoTrackArgs":{},"platform":"webBehavior","pageLeave":true,"linkerDomains":["tigersecurities.com","skytigris.com","tigertcp.cn","itigergrowth.com","itigerup.com","itiger.com","hellotigr.com","itigerup.net.cn","itigerup.com.cn","goodtigr.com","tigerbrokers.com.sg","mydigiuc.com","tigerfintech.net","tigerstocks.com","tigerbrokers.com.au","tigerbrokers.nz","tigerbrokers.com.hk","tigerbrokers.hk","tigerhkgo.com","gotigerhk.com","tigerhello.com","imtigers.com","heytigers.com","thetigerbrokers.com","mytigerbrokers.com","tigertrade.app","itigertrade.app","itigertrader.com","tigertrader.app","tradertiger.com","itigertrades.com","tradetiger.app","igrtrade.app"],"app_js_bridge":true};
+sensors.use('PageLeave', { heartbeat_interval_time: 5 });
+sensors.quick('autoTrack', {});
+/* End: Sensors */
+/* Start: fbq */
+!function(f,b,e,v,n,t,s){
+    if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '625055665187138');
+window.__fbqInit = function(appId) {
+	fbq('init', appId);
+};
+fbq('track', 'PageView');
+/* End: fbq */
+/* Start: twq */
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+twq('config', 'odppp');
+/* End: twq */
+/* Start: rdt */
+        !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);
+        rdt('init', 't2_b9hq2vbh');
+rdt('track', 'PageVisit');
+/* End: rdt */
+/* Start: bing */
+        (function(w,d,t,r,u)
+        {var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:'355043013'};o.q=w[u],w[u]=w.UET?new UET(o):[],w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
+        
+/* End: bing */
+            }
+
+            ;(requestAnimationFrame || setTimeout)(__loadScripts);
+        </script>
+        <!-- End Analytics -->
+<textarea style="display: none" id="__APP_DATA__">{&quot;basename&quot;:&quot;/hant&quot;,&quot;ssrTDKData&quot;:{&quot;titleTemplate&quot;:&quot;%s - 老虎證券&quot;,&quot;title&quot;:&quot;老虎证券全球投资理财平台| 一站式投资美股新股港股A股&quot;,&quot;description&quot;:&quot;老虎证券助您一站式投资美股，新股，港股，A股等全球金融理财产品。新加坡华人最信赖的在线投资平台，现在加入即享低费用，24/5 无时差炒美股投资理财！&quot;,&quot;keywords&quot;:&quot;老虎證券,老虎證券開戶,老虎券商,老虎證券官網,老虎證券app,tigertrade老虎證券,股票,炒股,新加坡股票交易平臺,投資,投資理財&quot;,&quot;social&quot;:{&quot;ogDescription&quot;:&quot;老虎证券助您一站式投资美股，新股，港股，A股等全球金融理财产品。新加坡华人最信赖的在线投资平台，现在加入即享低费用，24/5 无时差炒美股投资理财！&quot;,&quot;ogImage&quot;:&quot;https://c1.itigergrowtha.com/portal5/static/media/og-logo.0a0bd8dc.png&quot;,&quot;ogUrl&quot;:&quot;https://www.itiger.com/hant/stock/01256/filings&quot;},&quot;companyName&quot;:&quot;老虎證券&quot;},&quot;pageData&quot;:{&quot;isMobile&quot;:false,&quot;isTiger&quot;:false,&quot;isTTM&quot;:true,&quot;region&quot;:&quot;SGP&quot;,&quot;license&quot;:&quot;TBSG&quot;,&quot;edition&quot;:&quot;fundamental&quot;,&quot;symbol&quot;:&quot;01256&quot;,&quot;isAnalysisPage&quot;:false},&quot;__swrFallback__&quot;:{&quot;@#url:\&quot;https://hq.skytigris.cn/stock_info/detail/global\&quot;,params:#delay:false,,method:\&quot;POST\&quot;,data:#items:@#symbol:\&quot;01256\&quot;,,,,,undefined,&quot;:{&quot;symbol&quot;:&quot;01256&quot;,&quot;market&quot;:&quot;HK&quot;,&quot;secType&quot;:&quot;STK&quot;,&quot;nameCN&quot;:&quot;奕斯偉計算&quot;,&quot;latestPrice&quot;:1.27,&quot;timestamp&quot;:1794369473521,&quot;preClose&quot;:1.29,&quot;halted&quot;:0,&quot;volume&quot;:714000,&quot;delay&quot;:0,&quot;changeRate&quot;:-0.015503875968992262,&quot;floatShares&quot;:10156000000,&quot;shares&quot;:21992000000,&quot;eps&quot;:-0.84,&quot;marketStatus&quot;:&quot;午間休市&quot;,&quot;change&quot;:-0.02,&quot;latestTime&quot;:&quot;11-11 11:57:53&quot;,&quot;open&quot;:1.3,&quot;high&quot;:1.32,&quot;low&quot;:1.25,&quot;amount&quot;:912360,&quot;amplitude&quot;:0.054264,&quot;askPrice&quot;:1.27,&quot;askSize&quot;:4000,&quot;bidPrice&quot;:1.26,&quot;bidSize&quot;:2000,&quot;shortable&quot;:0,&quot;etf&quot;:0,&quot;ttmEps&quot;:-0.077,&quot;tradingStatus&quot;:0,&quot;nextMarketStatus&quot;:{&quot;tag&quot;:&quot;開盤&quot;,&quot;tradingStatus&quot;:2,&quot;beginTime&quot;:1794373200000},&quot;marketStatusCode&quot;:3,&quot;adr&quot;:0,&quot;listingDate&quot;:1791475200000,&quot;exchange&quot;:&quot;SEHK&quot;,&quot;adjPreClose&quot;:1.29,&quot;openAndCloseTimeList&quot;:[[1794360600000,1794369600000],[1794373200000,1794384000000]],&quot;volumeRatio&quot;:0.269786,&quot;lotSize&quot;:2000,&quot;spreadScale&quot;:0,&quot;tradeCurrency&quot;:&quot;HKD&quot;},&quot;@#url:\&quot;https://hq.skytigris.cn/stock_info/fundamental/all\&quot;,params:#delay:false,,method:\&quot;POST\&quot;,data:#items:@#symbol:\&quot;01256\&quot;,,,,,undefined,&quot;:{&quot;symbol&quot;:&quot;01256&quot;,&quot;floatShares&quot;:10156000000,&quot;roa&quot;:&quot;-19.66%&quot;,&quot;roe&quot;:&quot;-48.02%&quot;,&quot;lyrEps&quot;:-0.84,&quot;volumeRatio&quot;:0.269786,&quot;shares&quot;:21992000000,&quot;dividePrice&quot;:0,&quot;high&quot;:1.32,&quot;amplitude&quot;:0.054264,&quot;preClose&quot;:1.29,&quot;low&quot;:1.25,&quot;week52Low&quot;:1.1,&quot;pbRate&quot;:&quot;9.92&quot;,&quot;psRate&quot;:&quot;9.47&quot;,&quot;week52High&quot;:1.64,&quot;institutionHeld&quot;:0,&quot;latestPrice&quot;:1.27,&quot;committee&quot;:-0.333333,&quot;eps&quot;:-0.84,&quot;divideRate&quot;:0,&quot;volume&quot;:714000,&quot;delay&quot;:0,&quot;ttmEps&quot;:-0.077,&quot;open&quot;:1.3,&quot;prevYearClose&quot;:1.55,&quot;prevWeekClose&quot;:1.155,&quot;prevMonthClose&quot;:1.2,&quot;prevQuarterClose&quot;:1.55,&quot;fiveDayClose&quot;:1.21,&quot;twentyDayClose&quot;:1.345,&quot;sixtyDayClose&quot;:1.55},&quot;@#url:\&quot;https://hq.skytigris.cn/fundamental/corporate_actions/details/01256\&quot;,params:#limit:5,,,undefined,&quot;:[],&quot;@#url:\&quot;https://hq.skytigris.cn/fundamental/dividend/history\&quot;,params:#symbol:\&quot;01256\&quot;,market:\&quot;HK\&quot;,,,undefined,&quot;:[],&quot;@#url:\&quot;https://hq.skytigris.cn/fundamental/estimate/recommendation\&quot;,params:#symbol:\&quot;01256\&quot;,market:\&quot;HK\&quot;,delay:false,,,undefined,&quot;:{},&quot;@#url:\&quot;https://hq.skytigris.cn/hkstock/value_analysis/stock/01256\&quot;,params:#withQuantilePoint:true,period:\&quot;5year\&quot;,factor:\&quot;peRate\&quot;,delay:false,algorithm:1,,,undefined,&quot;:{&quot;brief&quot;:{&quot;id&quot;:&quot;01256&quot;,&quot;date&quot;:&quot;2026-10-15&quot;,&quot;current&quot;:-16.493506,&quot;percent&quot;:0.75,&quot;low&quot;:-19.069195,&quot;twenty&quot;:-18.696156,&quot;median&quot;:-17.741053,&quot;eighty&quot;:-16.827884,&quot;high&quot;:-16.677858,&quot;avg&quot;:-17.791278,&quot;sd&quot;:0.937154,&quot;marketCap&quot;:29972690534},&quot;quantilePoints&quot;:[{&quot;date&quot;:&quot;2026-10-09&quot;,&quot;current&quot;:-19.069195,&quot;twenty&quot;:-19.069195,&quot;median&quot;:-19.069195,&quot;eighty&quot;:-19.069195,&quot;marketCap&quot;:33829470566},{&quot;date&quot;:&quot;2026-10-15&quot;,&quot;current&quot;:-16.86539,&quot;twenty&quot;:-18.696156,&quot;median&quot;:-17.741053,&quot;eighty&quot;:-16.827884,&quot;marketCap&quot;:29972690534}],&quot;updateTime&quot;:1794371059003},&quot;$inf$@#url:\&quot;https://stock-news.skytigris.cn/v3/notice/important/events/list\&quot;,params:#symbol:\&quot;01256\&quot;,pageSize:20,pageCount:1,market:\&quot;hk\&quot;,,,undefined,&quot;:[{&quot;items&quot;:[{&quot;cdn_pdf&quot;:true,&quot;hasAttachments&quot;:false,&quot;id&quot;:&quot;21804206&quot;,&quot;market&quot;:&quot;hk&quot;,&quot;labels&quot;:[],&quot;media&quot;:&quot;港交所&quot;,&quot;original_id&quot;:&quot;N.HK61yhJEmksn&quot;,&quot;pdf_url&quot;:&quot;https://static.tigerbbs.com/5eb63f49aaac404eb954cbe69e9de342&quot;,&quot;pub_time&quot;:1790547480000,&quot;showTitleType&quot;:false,&quot;size&quot;:0,&quot;source&quot;:&quot;hk_ex_notice&quot;,&quot;summary&quot;:&quot;全球發售&quot;,&quot;symbol&quot;:&quot;01256&quot;,&quot;title&quot;:&quot;全球發售&quot;,&quot;titleType&quot;:&quot;股份發售&quot;,&quot;type&quot;:&quot;hkIPO&quot;,&quot;url&quot;:&quot;https://www.hkexnews.hk/listedco/listconews/sehk/2026/0928/2026092800036_c.pdf&quot;,&quot;us_notice_code&quot;:&quot;上市文件 - [發售以供認購]&quot;,&quot;us_title_en&quot;:&quot;&quot;,&quot;is_important&quot;:0,&quot;hasEarnInfos&quot;:false,&quot;gpt_zh_title&quot;:&quot;&quot;,&quot;gpt_en_title&quot;:&quot;&quot;,&quot;type_name&quot;:&quot;上市文件&quot;,&quot;type_name_en&quot;:&quot;Listing Document&quot;,&quot;titleTypeEn&quot;:&quot;Shares Subscription&quot;,&quot;event_type&quot;:&quot;important_notice&quot;,&quot;event_name&quot;:&quot;股份發售&quot;,&quot;pubTime&quot;:&quot;2026-09-28 06:18&quot;,&quot;pubTimestamp&quot;:1790547480,&quot;notice_type&quot;:&quot;&quot;,&quot;filling_tag&quot;:&quot;&quot;,&quot;gpt_icon&quot;:0}],&quot;pageSize&quot;:20,&quot;totalPage&quot;:1,&quot;pageCount&quot;:1,&quot;totalSize&quot;:1,&quot;code&quot;:&quot;91000000&quot;,&quot;status&quot;:&quot;200&quot;}]}}</textarea>
+<script>
+var __APP_DATA__ = JSON.parse(document.getElementById('__APP_DATA__').value);</script>
+<script crossorigin="anonymous" src="https://c1.itigergrowtha.com/portal5/static/js/runtime.43bde59b.js" type="text/javascript"></script>
+<script crossorigin="anonymous" src="https://c1.itigergrowtha.com/portal5/static/js/i18n.ef3c1825.js" type="text/javascript"></script>
+<script crossorigin="anonymous" src="https://c1.itigergrowtha.com/portal5/static/js/vendor.b7ea34f7.js" type="text/javascript"></script>
+<script crossorigin="anonymous" src="https://c1.itigergrowtha.com/portal5/static/js/common.725557f0.js" type="text/javascript"></script>
+<script crossorigin="anonymous" src="https://c1.itigergrowtha.com/portal5/static/js/financial-centre.3f34b8c2.js" type="text/javascript"></script>
+ <script>
+    !(function (c, b, d, a) {
+        c[a] || (c[a] = {});
+        c[a] = {
+            pid: 'eczp7ijd7o@364c965242ebd91',
+            endpoint: 'https://eczp7ijd7o-default-sea.rum.aliyuncs.com',
+            env: 'prod',
+            version: '7.78.3',
+            spaMode: 'history',
+            properties: {
+                region: 'SGP',
+                userAgent: navigator.userAgent,
+                referrer: document.referrer
+            },
+            filters: {
+                resource: function (url) {
+                    return new RegExp([
+                        'adsrvr.org',
+                        'linkedin.com',
+                        'stackadapt.com',
+                        'yimg.com',
+                        'licdn.com',
+                        'adsrvr.org',
+                        'gstatic.com',
+                        'redditstatic.com',
+                        'bugsnag.com',
+                        'googleadservices.com',
+                        'reddit.com',
+                        'go-mpulse.net',
+                        'facebook.com',
+                        'facebook.net',
+                        'akamaihd.net',
+                        'spotify.com',
+                        'doubleclick.net',
+                        'googletagmanager.com'
+                    ].join('|'), 'i').test(url);
+                }
+            },
+            collectors: {
+                perf: true,
+                webVitals: true,
+                api: true,
+                staticResource: true,
+                jsError: true,
+                consoleError: true,
+                action: true
+            },
+            tracing: true
+        };
+        with (b)
+            with (body)
+                with (insertBefore(createElement('script'), firstChild)) setAttribute('crossorigin', '', (src = d));
+    })(window, document, 'https://sdk.rum.aliyuncs.com/v2/browser-sdk.js', '__rum');
+</script>
+    </body>
+</html>

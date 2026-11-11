@@ -1,0 +1,28 @@
+schema_version: 2
+entity_id: company:arm-holdings
+kind: company
+name: Arm Holdings
+aliases: [ARM, Arm Holdings plc]
+securities:
+  - market: US
+    mic: XNAS
+    symbol: ARM
+primary_document: ARM.md
+documents: []
+related_entities: []
+sections:
+  thesis:
+    path: ARM.md
+    heading_path: ["Arm Holdings（ARM）公司研究", "研究摘要与我的判断"]
+  open_questions:
+    path: ARM.md
+    heading_path: ["Arm Holdings（ARM）公司研究", "待验证问题"]
+  metrics:
+    path: ARM.md
+    heading_path: ["Arm Holdings（ARM）公司研究", "跟踪指标"]
+  risks:
+    path: ARM.md
+    heading_path: ["Arm Holdings（ARM）公司研究", "主要风险"]
+  research_metadata:
+    path: ARM.md
+    heading_path: ["Arm Holdings（ARM）公司研究", "研究日期与数据截止日"]

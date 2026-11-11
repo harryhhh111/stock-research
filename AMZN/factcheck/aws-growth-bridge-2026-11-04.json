@@ -1,0 +1,26 @@
+{
+  "checked": "2026-11-04",
+  "units": "B美元；比例为%",
+  "source": "2026Q3 10-Q Note 8及MD&A，链接见AWS.md F3",
+  "periods": [
+    "2025Q3",
+    "2026Q3"
+  ],
+  "operating_costs": [
+    21.572000000000003,
+    28.211000000000002
+  ],
+  "operating_cost_yoy_pct": 30.776005933617647,
+  "profit_increase": 6.339,
+  "revenue_scale_at_old_margin": 4.495862934011998,
+  "margin_change_at_current_revenue": 1.8431370659880033,
+  "scale_share_pct": 70.92385130165638,
+  "margin_share_pct": 29.07614869834364,
+  "incremental_operating_margin_pct": 48.844197873324084,
+  "cost_excluding_DA": [
+    15.924000000000003,
+    18.981
+  ],
+  "cost_excluding_DA_yoy_pct": 19.19743782969101,
+  "caveat": "先按上年利润率估收入规模效应，再按本期收入估利润率效应；分解次序影响归属，不等同AI、芯片或降本的因果贡献。剔折旧成本也不是现金成本。"
+}

@@ -1,0 +1,168 @@
+{
+  "annual": {
+    "2023": {
+      "revenue": 90.757,
+      "op": 24.631,
+      "additions": 24.843,
+      "depreciation": 12.531,
+      "ppe": 72.701,
+      "addition_revenue_pct": 27.37309518824994,
+      "addition_depreciation_multiple": 1.9825233421115633,
+      "depreciation_revenue_pct": 13.807199444670934,
+      "op_margin_pct": 27.139504390845886,
+      "group_revenue": 574.785,
+      "group_op": 36.852,
+      "group_cash_capex_gross": 52.729,
+      "group_cash_capex_net": 48.133,
+      "revenue_yoy_pct": 13.310277666799841,
+      "group_revenue_share_pct": 15.789730072983813,
+      "group_op_share_pct": 66.83762075328342
+    },
+    "2024": {
+      "revenue": 107.556,
+      "op": 39.834,
+      "additions": 53.267,
+      "depreciation": 13.32,
+      "ppe": 110.683,
+      "addition_revenue_pct": 49.524898657443565,
+      "addition_depreciation_multiple": 3.999024024024024,
+      "depreciation_revenue_pct": 12.38424634608948,
+      "op_margin_pct": 37.03559076202165,
+      "group_revenue": 637.959,
+      "group_op": 68.593,
+      "group_cash_capex_gross": 82.999,
+      "group_cash_capex_net": 77.658,
+      "revenue_yoy_pct": 18.509867007503544,
+      "group_revenue_share_pct": 16.85939065049635,
+      "group_op_share_pct": 58.07298120799499
+    },
+    "2025": {
+      "revenue": 128.725,
+      "op": 45.606,
+      "additions": 96.496,
+      "depreciation": 21.45,
+      "ppe": 190.055,
+      "addition_revenue_pct": 74.96290541852787,
+      "addition_depreciation_multiple": 4.498648018648018,
+      "depreciation_revenue_pct": 16.66342979219266,
+      "op_margin_pct": 35.42901534278501,
+      "group_revenue": 716.924,
+      "group_op": 79.975,
+      "group_cash_capex_gross": 131.819,
+      "group_cash_capex_net": 128.32,
+      "revenue_yoy_pct": 19.681840157685304,
+      "group_revenue_share_pct": 17.955180744402472,
+      "group_op_share_pct": 57.02532041262896
+    }
+  },
+  "quarters": {
+    "2026Q1": {
+      "revenue": 37.587,
+      "op": 14.161,
+      "additions": 41.516,
+      "depreciation": 7.277,
+      "op_margin_pct": 37.67526006331976,
+      "group_revenue_share_pct": 20.70692324219503,
+      "group_op_share_pct": 59.37028341438872,
+      "yoy_pct": {
+        "revenue": 28.427922233231982,
+        "op": 22.637914609855358,
+        "additions": 102.87333854573886,
+        "depreciation": 65.76309794988613
+      },
+      "qoq_pct": {
+        "revenue": 5.643778633463592,
+        "op": 13.606097071801004
+      }
+    },
+    "2026Q2": {
+      "revenue": 42.232,
+      "op": 16.621,
+      "additions": 48.604,
+      "depreciation": 8.076,
+      "op_margin_pct": 39.356412199280165,
+      "group_revenue_share_pct": 21.0522117982513,
+      "group_op_share_pct": 60.52583664105459,
+      "yoy_pct": {
+        "revenue": 36.792666731448186,
+        "op": 63.59251968503936,
+        "additions": 202.96079286916412,
+        "depreciation": 66.72171758876961
+      },
+      "qoq_pct": {
+        "revenue": 12.357996115678272,
+        "op": 17.3716545441706
+      }
+    },
+    "2026Q3": {
+      "revenue": 45.984,
+      "op": 17.773,
+      "additions": 57.116,
+      "depreciation": 9.23,
+      "op_margin_pct": 38.65040013917884,
+      "group_revenue_share_pct": 22.77066909638316,
+      "group_op_share_pct": 63.30317709075367,
+      "yoy_pct": {
+        "revenue": 39.32012361388839,
+        "op": 55.439916039881055,
+        "additions": 101.81619024062756,
+        "depreciation": 63.42067988668556
+      },
+      "qoq_pct": {
+        "revenue": 8.884258382269383,
+        "op": 6.9309909151074045
+      }
+    }
+  },
+  "market": [
+    {
+      "period": "2023Q3",
+      "aws": 32,
+      "azure": 23,
+      "google": 11,
+      "source": "synergy-q3-2023.html",
+      "note": "Amazon正文区间32—34%，三家合计66%；32%为据合计扣除23/11的复算约值"
+    },
+    {
+      "period": "2024Q3",
+      "aws": 31,
+      "azure": 20,
+      "google": 13,
+      "source": "synergy-q3-2024.html"
+    },
+    {
+      "period": "2025Q3",
+      "aws": 29,
+      "azure": 20,
+      "google": 13,
+      "source": "synergy-q3-2025.html"
+    },
+    {
+      "period": "2026Q3",
+      "aws": 26,
+      "azure": 19,
+      "google": 16,
+      "market_revenue": 167.7,
+      "source": "synergy-q3-2026.html"
+    }
+  ],
+  "ttm": {
+    "revenue": 161.382,
+    "op": 61.02,
+    "additions": 178.92399999999998,
+    "depreciation": 31.150999999999996,
+    "op_margin_pct": 37.8109082797338
+  },
+  "market_change_pp": {
+    "aws_2026_vs_2025": -3,
+    "aws_2026_vs_2023": -6,
+    "google_2026_vs_2025": 3
+  },
+  "illustrative_power": {
+    "site_MW": 100,
+    "PUE": 1.2,
+    "IT_MW": 83.33333333333334,
+    "IT_MW_at_90pct": 75.00000000000001,
+    "IT_MW_at_60pct": 50.00000000000001
+  }
+}

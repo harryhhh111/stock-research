@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://www.sifive.com/about/business-model",
+    "file": "2026-11-11-sifive-business-model.html",
+    "sha256": "62a3792c62aceaf97c7d4dc74ee969d45eb617d5806114429a5c5dda01b35bb1",
+    "retrieved": "2026-11-11"
+  },
+  {
+    "url": "https://www.sifive.com/press/sifive-raises-400-million-to-accelerate-high-performance-risc-v-data-center-solutions",
+    "file": "2026-11-11-sifive-2026-funding.html",
+    "sha256": "e2f2816d2f47a57fa38bc40bc4dba541055e1e9977ef4673c6304e7f0df68a69",
+    "retrieved": "2026-11-11"
+  },
+  {
+    "url": "https://www.sifive.com/press/sifive-amd-rocm-riscv-datacenter-servers",
+    "file": "2026-11-11-sifive-2026-amd.html",
+    "sha256": "e04f7b31b03512e43e123131c351f6a03c0551687f67e9af454b7cc380ea3daf",
+    "retrieved": "2026-11-11"
+  },
+  {
+    "url": "https://www.sifive.com/press/risc-v-in-the-datacenter-bigsky-development-server",
+    "file": "2026-11-11-sifive-2026-bigsky.html",
+    "sha256": "1955e304edc1a3af18d98b1823127a712184b51d9fe74b780bb9ee9e58fec7f2",
+    "retrieved": "2026-11-11"
+  },
+  {
+    "url": "https://riscv.org/blog/shd-forecast-2026/",
+    "file": "2026-11-11-riscv-2026-market-methodology.html",
+    "sha256": "4965d403ea8006362b7b9527e254092d06a584fa5335eddaca51255af1efe08e",
+    "retrieved": "2026-11-11"
+  },
+  {
+    "url": "https://www.ahan.net/announcements.php?q=6533",
+    "file": "2026-11-11-andes-q3-announcement-secondary.html",
+    "sha256": "716eb4687d147bb4085a8ba78ab82dc1f0c2e1060fdefea63ed0d5cf5045c9fa",
+    "retrieved": "2026-11-11"
+  },
+  {
+    "url": "https://www.nstock.tw/news/article_m?id=553703",
+    "file": "2026-11-11-andes-share-issue-secondary.html",
+    "sha256": "356c1db7132285134446e0539328672b7ae748aea0332348efe078c2882a58c0",
+    "retrieved": "2026-11-11"
+  },
+  {
+    "url": "https://www.cnyes.com/twstock/ps_historyprice.aspx?code=6533",
+    "file": "2026-11-11-andes-price-secondary.html",
+    "sha256": "17105528883fa4574bd9d909e0d9a00685891f879abd2d16f9408a6558f1f6a3",
+    "retrieved": "2026-11-11"
+  },
+  {
+    "url": "https://www.itiger.com/hant/stock/01256/filings",
+    "file": "2026-11-11-eswin-quote-secondary.html",
+    "sha256": "c483cea99ef96404783fae6d4d5e25017beec89ced854a1149c422c12c417cea",
+    "retrieved": "2026-11-11"
+  },
+  {
+    "url": "https://www.hstong.com/news/detail/26110421300491859",
+    "file": "2026-11-11-eswin-monthly-secondary.html",
+    "sha256": "4a03a597d67873a52be507dc0d275ebdc7e16edb5a45531395dd918e9bdbd5d7",
+    "retrieved": "2026-11-11"
+  },
+  {
+    "file": "2026-11-10-andes-twse-prices.json",
+    "url": "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20261110&stockNo=6533",
+    "retrieved": "2026-11-11",
+    "sha256": "852011893e3ac7dec10fe54e7c5ab57b739a2bb37070e4f6a9340df58d808cab"
+  },
+  {
+    "file": "2026-11-11-andes-twse-document-index.html",
+    "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&co_id=6533&year=115&mtype=A",
+    "retrieved": "2026-11-11",
+    "sha256": "409f623878c7130e77b443e637da8e7163339f422c3afb62282cd00fbd451de1"
+  }
+]

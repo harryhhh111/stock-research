@@ -1,0 +1,43 @@
+schema_version: 2
+entity_id: company:andes-technology
+kind: company
+name: 晶心科技
+aliases:
+- Andes Technology
+- 晶心科
+securities:
+- market: TW
+  mic: XTAI
+  symbol: '6533'
+primary_document: 晶心科技研究.md
+research_scope: RISC-V首次跨公司比较；已取财务已复算，最新披露与估值尚有原件缺口，非完整财务研究验收
+documents: []
+related_entities:
+- entity_id: topic:risc-v
+  relation: theme
+sections:
+  thesis:
+    path: 晶心科技研究.md
+    heading_path:
+    - 晶心科技：RISC-V IP 的收入增长能否转成现金回报
+    - 研究摘要与我的判断
+  open_questions:
+    path: 晶心科技研究.md
+    heading_path:
+    - 晶心科技：RISC-V IP 的收入增长能否转成现金回报
+    - 待验证问题
+  metrics:
+    path: 晶心科技研究.md
+    heading_path:
+    - 晶心科技：RISC-V IP 的收入增长能否转成现金回报
+    - 跟踪指标
+  risks:
+    path: 晶心科技研究.md
+    heading_path:
+    - 晶心科技：RISC-V IP 的收入增长能否转成现金回报
+    - 主要风险
+  research_metadata:
+    path: 晶心科技研究.md
+    heading_path:
+    - 晶心科技：RISC-V IP 的收入增长能否转成现金回报
+    - 研究日期与数据截止日

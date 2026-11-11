@@ -1,0 +1,24 @@
+{
+  "checked": "2026-11-04",
+  "units": "B美元；份额为%",
+  "annual": {
+    "2022": {"revenue": 80.096},
+    "2023": {"group_revenue": 574.785, "group_op": 36.852, "group_cash_capex_gross": 52.729, "group_cash_capex_net": 48.133},
+    "2024": {"group_revenue": 637.959, "group_op": 68.593, "group_cash_capex_gross": 82.999, "group_cash_capex_net": 77.658},
+    "2025": {"group_revenue": 716.924, "group_op": 79.975, "group_cash_capex_gross": 131.819, "group_cash_capex_net": 128.320}
+  },
+  "quarterly_assets": {
+    "2025Q1": {"additions": 20.464, "depreciation": 4.390},
+    "2025Q2": {"additions": 16.043, "depreciation": 4.844},
+    "2026Q1": {"additions": 41.516, "depreciation": 7.277},
+    "2026Q2": {"additions": 48.604, "depreciation": 8.076}
+  },
+  "quarterly_asset_source": "2026 Q2 10-Q Note 8；Q1=H1-Q2，B美元；原始2026-q2-10q.html，H1增加90.120/36.507，折旧15.353/9.234",
+  "market": [
+    {"period": "2023Q3", "aws": 32, "azure": 23, "google": 11, "source": "synergy-q3-2023.html", "note": "Amazon正文区间32—34%，三家合计66%；32%为据合计扣除23/11的复算约值"},
+    {"period": "2024Q3", "aws": 31, "azure": 20, "google": 13, "source": "synergy-q3-2024.html"},
+    {"period": "2025Q3", "aws": 29, "azure": 20, "google": 13, "source": "synergy-q3-2025.html"},
+    {"period": "2026Q3", "aws": 26, "azure": 19, "google": 16, "market_revenue": 167.7, "source": "synergy-q3-2026.html"}
+  ],
+  "notes": "市场为Synergy各期公开估计；整点份额独立舍入、不强行对齐其合计，统计范围随市场变化；AWS财报收入不直接除其市场总额复算份额。"
+}

@@ -1,0 +1,155 @@
+{
+  "checked": "2026-11-04",
+  "units": "USD million; price and EPS USD",
+  "method": "TTM = annual + current interim - prior interim; prior TTM revenues computed independently",
+  "MSFT": {
+    "annual": {
+      "revenue": 331839,
+      "op": 155237,
+      "common_net": 133749,
+      "cfo": 182935,
+      "capex": 115948,
+      "eps": 17.95
+    },
+    "current_interim": {
+      "revenue": 92279,
+      "op": 45915,
+      "common_net": 36629,
+      "cfo": 58000,
+      "capex": 39367,
+      "eps": 4.92
+    },
+    "prior_interim": {
+      "revenue": 77673,
+      "op": 37961,
+      "common_net": 27747,
+      "cfo": 45057,
+      "capex": 19394,
+      "eps": 3.72
+    },
+    "prior_ttm_revenue_inputs": {
+      "annual": 281724,
+      "current_interim": 77673,
+      "prior_interim": 65585
+    },
+    "start": "2025-10-01",
+    "end": "2026-09-30",
+    "quarters": "FY2026 Q2/Q3/Q4 + FY2027 Q1",
+    "release": "2026-10-28",
+    "price": 520.99,
+    "sources": [
+      "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast",
+      "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast",
+      "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q1/income-statements"
+    ]
+  },
+  "AMZN": {
+    "annual": {
+      "revenue": 716924,
+      "op": 79975,
+      "common_net": 77670,
+      "cfo": 139514,
+      "capex": 131819,
+      "eps": 7.17
+    },
+    "current_interim": {
+      "revenue": 584069,
+      "op": 79389,
+      "common_net": 113587,
+      "cfo": 113841,
+      "capex": 175670,
+      "eps": 10.42
+    },
+    "prior_interim": {
+      "revenue": 503538,
+      "op": 54998,
+      "common_net": 56478,
+      "cfo": 85055,
+      "capex": 92297,
+      "eps": 5.22
+    },
+    "prior_ttm_revenue_inputs": {
+      "annual": 637959,
+      "current_interim": 503538,
+      "prior_interim": 450167
+    },
+    "ttm_asset_proceeds": 4535,
+    "start": "2025-10-01",
+    "end": "2026-09-30",
+    "quarters": "2025 Q4 + 2026 Q1/Q2/Q3",
+    "release": "2026-10-29",
+    "price": 250.69,
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+      "https://ir.aboutamazon.com/files/doc_earnings/2026/q3/earnings-result/AMZN-Q3-2026-Earnings-Release.pdf"
+    ],
+    "local_sources": [
+      "../../../AMZN/factcheck/data/2026-q3.html",
+      "../../../AMZN/factcheck/data/2025-q4.html",
+      "../../../AMZN/factcheck/data/2024-q4.html"
+    ]
+  },
+  "GOOG": {
+    "annual": {
+      "revenue": 402836,
+      "op": 129039,
+      "common_net": 132170,
+      "cfo": 164713,
+      "capex": 91447,
+      "eps": 10.81
+    },
+    "current_interim": {
+      "revenue": 357269,
+      "op": 121042,
+      "common_net": 200855,
+      "cfo": 127149,
+      "capex": 131953,
+      "eps": 16.33
+    },
+    "prior_interim": {
+      "revenue": 289007,
+      "op": 93105,
+      "common_net": 97715,
+      "cfo": 112311,
+      "capex": 63596,
+      "eps": 7.99
+    },
+    "prior_ttm_revenue_inputs": {
+      "annual": 350018,
+      "current_interim": 289007,
+      "prior_interim": 253549
+    },
+    "start": "2025-10-01",
+    "end": "2026-09-30",
+    "quarters": "2025 Q4 + 2026 Q1/Q2/Q3",
+    "release": "2026-10-28",
+    "price": 278.27,
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+      "https://s206.q4cdn.com/479360582/files/doc_financials/2024/q3/2024q3-alphabet-earnings-release.pdf"
+    ],
+    "local_sources": [
+      "../../../GOOG/factcheck/data/2026-10-29-inputs.json",
+      "../../../GOOG/factcheck/data/2025-q4-release.txt"
+    ]
+  },
+  "ORCL": {
+    "prior_ttm_revenue_inputs": {
+      "annual": 57399,
+      "current_interim": 14926,
+      "prior_interim": 13307
+    },
+    "start": "2025-09-01",
+    "end": "2026-08-31",
+    "quarters": "FY2026 Q2/Q3/Q4 + FY2027 Q1",
+    "release": "2026-09-10",
+    "price": 126.19,
+    "sources": [
+      "https://investor.oracle.com/files/content_files/1q27-pressrelease-September_FINAL.pdf",
+      "https://investor.oracle.com/investor-news/news-details/2025/Oracle-Announces-Fiscal-2025-Fourth-Quarter-and-Fiscal-Full-Year-Financial-Results/"
+    ]
+  },
+  "price_date": "2026-11-03",
+  "price_session": "US regular close",
+  "price_source": "https://finance.yahoo.com/quote/{symbol}/history/"
+}

@@ -1,0 +1,15 @@
+{
+  "cap_hkd_million": 3628800.0,
+  "cap_cny_million": 3087745.92,
+  "ttm_profit": 235508,
+  "ttm_adjusted_profit": 271565,
+  "ttm_fcf": 135400,
+  "pe": 13.111002258946618,
+  "adjusted_pe": 11.37019100399536,
+  "pb": 2.718437966884799,
+  "fcf_yield": 4.385075829037125,
+  "fy2025_fcf_yield": 5.913699013162327,
+  "fcf_ex_prepaid_yield": 6.049720567681942,
+  "dividend_yield": 1.314484126984127,
+  "fcf_yield_if_200bn": 6.477216881886448
+}

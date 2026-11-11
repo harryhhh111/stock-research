@@ -1,0 +1,51 @@
+[
+  {
+    "file": "andes-23_晶心科-英文財報合併.pdf",
+    "url": "https://www.andestech.com/wp-content/uploads/23_晶心科-英文財報合併.pdf",
+    "status": 200,
+    "retrieved": "2026-11-11",
+    "sha256": "2894f09e566f70dcad55274024ed1651d668a1cb9bdc317e155babf6b6d80028"
+  },
+  {
+    "file": "andes-24_A920_晶心_合併_財務報告ENG-1.pdf",
+    "url": "https://www.andestech.com/wp-content/uploads/24_A920_晶心_合併_財務報告ENG-1.pdf",
+    "status": 200,
+    "retrieved": "2026-11-11",
+    "sha256": "92132d5c434b6a40e187bb7304be251774e7c68a8c1883e6e2d46144abcb69cf"
+  },
+  {
+    "file": "andes-25Q3_晶心_合併財務報表用印-FINAL.pdf",
+    "url": "https://www.andestech.com/wp-content/uploads/25Q3_晶心_合併財務報表用印-FINAL.pdf",
+    "status": 200,
+    "retrieved": "2026-11-11",
+    "sha256": "32bff22c612f79948b5d5c0875eee7639dfceee717366977a9028b647d753204"
+  },
+  {
+    "file": "andes-25_A920_晶心_合併_財務報告ENG.pdf",
+    "url": "https://www.andestech.com/wp-content/uploads/25_A920_晶心_合併_財務報告ENG.pdf",
+    "status": 200,
+    "retrieved": "2026-11-11",
+    "sha256": "0fc95d1810d376a065c390b7f1332a23a09f0817cc10541af582cbcbbc871010"
+  },
+  {
+    "file": "andes-26Q1_晶心_財務報告書用印版.pdf",
+    "url": "https://www.andestech.com/wp-content/uploads/26Q1_晶心_財務報告書用印版.pdf",
+    "status": 200,
+    "retrieved": "2026-11-11",
+    "sha256": "378ee93cc8790511d37b12473736eb3f8b6d254210082d98788bb8c52cc2db06"
+  },
+  {
+    "file": "andes-26Q2_晶心_合併財報用印版.pdf",
+    "url": "https://www.andestech.com/wp-content/uploads/26Q2_晶心_合併財報用印版.pdf",
+    "status": 200,
+    "retrieved": "2026-11-11",
+    "sha256": "0e133d3e92d8663efae804d8fb5cb116cec94ab7bdf5b6b74eaff46d47611d17"
+  },
+  {
+    "file": "2026-09-28-eswin-prospectus.pdf",
+    "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0928/2026092800036_c.pdf",
+    "status": 200,
+    "retrieved": "2026-11-11",
+    "sha256": "2f9e255bfe9d9727b96ebd273b5921e4e5bf72aed58f758e01b891ad82cd3190"
+  }
+]

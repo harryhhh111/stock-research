@@ -1,0 +1,39 @@
+schema_version: 2
+entity_id: company:sifive
+kind: company
+name: SiFive
+aliases:
+- SiFive Inc.
+securities: []
+primary_document: SiFive研究.md
+research_scope: RISC-V首次跨公司比较；已取财务已复算，最新披露与估值尚有原件缺口，非完整财务研究验收
+documents: []
+related_entities:
+- entity_id: topic:risc-v
+  relation: theme
+sections:
+  thesis:
+    path: SiFive研究.md
+    heading_path:
+    - SiFive：RISC-V IP 的高性能商业化对标
+    - 研究摘要与我的判断
+  open_questions:
+    path: SiFive研究.md
+    heading_path:
+    - SiFive：RISC-V IP 的高性能商业化对标
+    - 待验证问题
+  metrics:
+    path: SiFive研究.md
+    heading_path:
+    - SiFive：RISC-V IP 的高性能商业化对标
+    - 跟踪指标
+  risks:
+    path: SiFive研究.md
+    heading_path:
+    - SiFive：RISC-V IP 的高性能商业化对标
+    - 主要风险
+  research_metadata:
+    path: SiFive研究.md
+    heading_path:
+    - SiFive：RISC-V IP 的高性能商业化对标
+    - 研究日期与数据截止日

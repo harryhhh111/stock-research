@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="referrer" content="origin">
+<meta http-equiv="content-language" content="zh-CN"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="Keywords" content="北京奕斯伟计算技术股份有限公司,奕斯伟,奕斯伟计算,奕斯伟计算官网,RISC-V,计算SoC,5G,显示驱动,电视SoC,车载"/>
+<meta name="Description" content="北京奕斯伟计算技术股份有限公司（以下简称“奕斯伟计算”）是一家以RISC-V为核心底层技术的新一代计算架构芯片与方案提供商，围绕智慧家居、智慧园区、智能交通、无线通信、工业物联网等应用场景，为客户提供多媒体系统、显示交互、智慧连接、电源管理、智能计算、车载系统等芯片及解决方案，推动AIoT时代云网融合的算力网络发展。"/>
+<meta name="author" content="博采网络-高端网站建设-https://www.bocweb.cn"/>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="baidu-site-verification" content="code-HcTdIQHqS7" />
+<title>奕斯伟计算 | 推出AI NAS主控方案 携手极空间打造消费级RISC-V新品-北京奕斯伟计算技术股份有限公司-官网</title>
+<link href="https://www.eswincomputing.com/favicon.ico" rel="shortcut icon">
+<script>
+    var STATIC_URL = "https://www.eswincomputing.com/bocstatic/";
+    var GLOBAL_URL = "https://www.eswincomputing.com/";
+    var UPLOAD_URL = "https://www.eswincomputing.com/bocupload/";
+    var SITE_URL = "https://www.eswincomputing.com/";
+</script>
+<script src="https://www.eswincomputing.com/bocstatic/js/jquery-3.5.1.min.js?v=v51" type="text/javascript" charset="utf-8"></script><link rel="stylesheet" href="https://www.eswincomputing.com/bocstatic/web/css/hamburgers.css?v=v51" type="text/css" media="screen" charset="utf-8"><link rel="stylesheet" href="https://www.eswincomputing.com/bocstatic/web/css/bootstrap.css?v=v51" type="text/css" media="screen" charset="utf-8"><link rel="stylesheet" href="https://www.eswincomputing.com/bocstatic/web/css/boc_reset.css?v=v51" type="text/css" media="screen" charset="utf-8"><link rel="stylesheet" href="https://www.eswincomputing.com/bocstatic/web/css/g_boc.css?v=v51" type="text/css" media="screen" charset="utf-8"><script src="https://www.eswincomputing.com/bocstatic/js/jquery.easing.1.3.js?v=v51" type="text/javascript" charset="utf-8"></script><script src="https://www.eswincomputing.com/bocstatic/js/jquery.transit.js?v=v51" type="text/javascript" charset="utf-8"></script><script src="https://www.eswincomputing.com/bocstatic/js/html5.min.js?v=v51" type="text/javascript" charset="utf-8"></script><script src="https://www.eswincomputing.com/bocstatic/js/prefixfree.min.js?v=v51" type="text/javascript" charset="utf-8"></script><script src="https://www.eswincomputing.com/bocstatic/js/new_bocfe.js?v=v51" type="text/javascript" charset="utf-8"></script><script src="https://www.eswincomputing.com/bocstatic/js/tools.js?v=v51" type="text/javascript" charset="utf-8"></script><!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> -->
+</head>
+<body class="cssanimations">
+<!--[if lt IE 10]>
+<div class="browsers"></div>
+<![endif]-->
+
+<div class="pc-block warp-header4 por fon1">
+    <header class="header4 f-no-b-center">
+        <h1>
+            <a class="por" href="https://www.eswincomputing.com/welcome.html">
+                <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241.05 23.52">
+                    <path class="cls-1"
+                          d="M104.56,31.26v.39h-.39V53.22h-3.81l-11-15.28V53.22H85.51v-22h3.81l11,15.29V31.26ZM9.31,43.64H20.74V40.15H9.31v-5.4H21.5V31.26H5.5V49.74l-.38.38v3.1H21.88V49.74H9.31ZM37,40.53,32.16,39.2c-1.21-.33-2.76-1-2.66-2.57C29.59,35.26,31,34,33.65,34,36.47,34,38,35,38.46,37h3.81c-.26-2.61-2.07-6.55-8.62-6.55-4.94,0-8,3.1-8,6.18s1.79,5,4.85,5.89l4.62,1.28c2,.54,3.69,1.32,3.69,3.31S37,50.51,34,50.51a5,5,0,0,1-5.28-4.26H24.93C25.39,50.9,29,54,34,54a9.52,9.52,0,0,0,6.65-2.17,6.36,6.36,0,0,0,2-4.69C42.66,43.76,40.79,41.6,37,40.53Zm39.8,12.69h3.81v-22H76.75ZM65.13,46.64,60.94,31.26h-4L52.75,46.64,48.56,31.26h-4l6.19,22h4l4.19-15.37,4.19,15.37h4l6.19-22h-4Z"
+                          transform="translate(-5.12 -30.48)"/>
+                    <path class="cls-1"
+                          d="M129.66,37.52a4.49,4.49,0,0,1-1.31,3.23,10.38,10.38,0,0,1-2.54,1.8L128,44.07a10.82,10.82,0,0,0,2.53-1.8,6,6,0,0,0,1.83-4.37V35.22h2.82v3.51A4.63,4.63,0,0,1,133.79,42l2.14,1.52h0a6,6,0,0,0,1.85-4.37V35.22h6.15V33h-9.14V31.27h-3V33h-9.14v2.18h7Zm-1.57-.63-2.43-.74a13.59,13.59,0,0,1-3.38,3.53l2.14,1.52A17.19,17.19,0,0,0,128.09,36.89Zm10.63.41a23.8,23.8,0,0,1,3.12,4.59l2.43-1.15A23.88,23.88,0,0,0,141,36.29Zm5.21,10.25V45.37h-9.14V43.48h-3v1.89h-9.14v2.18h7.94a13.21,13.21,0,0,1-8.28,3.36l1.32,2.31a13.16,13.16,0,0,0,9.67-4.84A13.19,13.19,0,0,0,143,53.22l1.32-2.31A13.21,13.21,0,0,1,136,47.55Z"
+                          transform="translate(-5.12 -30.48)"/>
+                    <path class="cls-1"
+                          d="M151,47.54l2.62.8a16.45,16.45,0,0,1-3.35,4.8l-2.22-1.73A11.33,11.33,0,0,0,151,47.54Zm8.55,0h-11.5V45.36h1.83V35.21h-1.83V33h1.83V31.26h2.39V33h3.57V31.26h2.4V33h1.31v2.18h-1.31V45.36h1.31Zm-3.71-4.11H152.3v1.93h3.57Zm0-4.11H152.3v1.93h3.57Zm0-4.11H152.3v1.93h3.57Zm7.62,3.17V34.7a53,53,0,0,0,6.67-1.12l-.83-2.32a64.23,64.23,0,0,1-8.49,1.39v7.91c0,3.37-.08,6.72-1.73,10a23.75,23.75,0,0,0-2-3l-2.25,1.09a23.07,23.07,0,0,1,2,3.32L159,50.79c-.13.26-.28.51-.44.77l2.34,1.66c2.06-4.07,2.62-6.8,2.62-12.66h2.17V53.22h2.65V40.56h2.13V38.38Z"
+                          transform="translate(-5.12 -30.48)"/>
+                    <path class="cls-1"
+                          d="M179.6,35.78V53.22H177v-13q-.62.91-1.29,1.8l-2.17-1.55a37.57,37.57,0,0,0,5.23-9.25l2.49.92C180.73,33.41,180.19,34.61,179.6,35.78Zm9.75,7.12V40.72h5.86V38.54h-5.86V36.36h6.39V34.18h-6.39V31.26H186.7v2.92h-5.59v2.18h5.59v2.18h-5.2v2.18h5.2V42.9h-6v2.19h6v8.13h2.65V45.09h4V47.4A4,4,0,0,1,192,50.23l2.15,1.54A6.08,6.08,0,0,0,196,47.4V42.9Z"
+                          transform="translate(-5.12 -30.48)"/>
+                    <path class="cls-1"
+                          d="M207.82,45.84a12.44,12.44,0,0,0,.9,2.59c-4.77,3.44-5.64,4.13-6.09,4.72a12,12,0,0,0-1.38-2.63,2.82,2.82,0,0,0,1.28-2.21V41.17h-3.46v-2.8h6.33V47.5Zm-3-9a30.89,30.89,0,0,0-3.86-3.75l1.78-1.8a31.65,31.65,0,0,1,4,3.49ZM221,41.45h-5.45v11.8h-3V41.45h-5.69V38.51h5.69V31.18h3v7.33H221Z"
+                          transform="translate(-5.12 -30.48)"/>
+                    <path class="cls-1"
+                          d="M246.17,49.4h-5v3.8h-2.92V49.4H232.9c-.66,1.52-2.32,2.9-6,3.85a10.18,10.18,0,0,0-1.81-2.07,9.2,9.2,0,0,0,4.44-1.78h-4.75V47.17h5.65V45.72h-2.89V36.61h2.37a10.53,10.53,0,0,0-.95-1.75h-.5a15.41,15.41,0,0,1-2.06,2.32,14.74,14.74,0,0,0-2.28-1.56,12.36,12.36,0,0,0,3.65-4.73l2.64.72c-.17.33-.33.68-.52,1h5.24V34.5a10.36,10.36,0,0,0,2.25-3.61l2.68.64c-.14.36-.3.74-.47,1.1h6.53v2.23h-3.49a7.67,7.67,0,0,1,.76,1l-1.59.71h2.11v9.11h-2.73v1.45h5ZM230.36,38.3v.83H240.9V38.3Zm0,3.27H240.9v-.88H230.36Zm0,2.47H240.9v-.88H230.36Zm1.47-9.18a6.49,6.49,0,0,1,.62,1.18l-1.56.57H236A23,23,0,0,0,234,35.54a6.49,6.49,0,0,0,.81-.68Zm6.41,12.31V45.72h-5v1.45Zm0-12.31a14.85,14.85,0,0,1-1.5,1.75h4.06a16,16,0,0,0-1.3-1.75Z"
+                          transform="translate(-5.12 -30.48)"/>
+                </svg>
+
+
+            </a>
+        </h1>
+
+        <div class="leftbox fon-middle f-no-s-center tran-middle">
+            <div class="nav f-no-s-center tit-18 col-fff">
+                <div class="li f-no-c-center" data-id="6">
+                    <a href="https://www.eswincomputing.com/risc.html" class="fonbold tit-18 col-fff fon1 f-no-c-center">
+                        技术
+                        <svg t="1639115347808" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" p-id="1186" width="200" height="200">
+                            <path d="M854.009856 299.870208L513.934336 643.571712 168.822784 302.094336c-15.154176-15.1552-39.7824-15.100928-55.000064 0.116736-15.220736 15.220736-15.271936 39.844864 3.771392 54.99392l364.266496 364.266496c5.499904 4.916224 11.995136 10.561536 15.504384 11.497472 14.301184 5.75488 31.873024 2.874368 46.317568-8.63744l369.3568-369.355776c11.387904-15.284224 11.447296-40.022016-3.776512-55.243776-15.220736-15.217664-39.958528-15.158272-55.251968 0.13312l-0.001024 0.00512z"
+                                  p-id="1187"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="li f-no-c-center" data-id="0">
+                    <a href="https://www.eswincomputing.com/solutions.html"
+                       class="fonbold tit-18 col-fff fon1 f-no-c-center">
+                        解决方案
+                        <svg t="1639115347808" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" p-id="1186" width="200" height="200">
+                            <path d="M854.009856 299.870208L513.934336 643.571712 168.822784 302.094336c-15.154176-15.1552-39.7824-15.100928-55.000064 0.116736-15.220736 15.220736-15.271936 39.844864 3.771392 54.99392l364.266496 364.266496c5.499904 4.916224 11.995136 10.561536 15.504384 11.497472 14.301184 5.75488 31.873024 2.874368 46.317568-8.63744l369.3568-369.355776c11.387904-15.284224 11.447296-40.022016-3.776512-55.243776-15.220736-15.217664-39.958528-15.158272-55.251968 0.13312l-0.001024 0.00512z"
+                                  p-id="1187"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="li f-no-c-center" data-id="3">
+                    <a href="https://www.eswincomputing.com/services/aftersaleindex.html " class="fonbold tit-18 col-fff fon1">支持
+                        <svg t="1639115347808" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" p-id="1186" width="200" height="200">
+                            <path d="M854.009856 299.870208L513.934336 643.571712 168.822784 302.094336c-15.154176-15.1552-39.7824-15.100928-55.000064 0.116736-15.220736 15.220736-15.271936 39.844864 3.771392 54.99392l364.266496 364.266496c5.499904 4.916224 11.995136 10.561536 15.504384 11.497472 14.301184 5.75488 31.873024 2.874368 46.317568-8.63744l369.3568-369.355776c11.387904-15.284224 11.447296-40.022016-3.776512-55.243776-15.220736-15.217664-39.958528-15.158272-55.251968 0.13312l-0.001024 0.00512z"
+                                  p-id="1187"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="li f-no-c-center" data-id="7">
+                    <a href="https://www.eswincomputing.com/community/h5/index.html#/index" class="fonbold tit-18 col-fff fon1">开发者社区
+                        <svg t="1639115347808" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" p-id="1186" width="200" height="200">
+                            <path d="M854.009856 299.870208L513.934336 643.571712 168.822784 302.094336c-15.154176-15.1552-39.7824-15.100928-55.000064 0.116736-15.220736 15.220736-15.271936 39.844864 3.771392 54.99392l364.266496 364.266496c5.499904 4.916224 11.995136 10.561536 15.504384 11.497472 14.301184 5.75488 31.873024 2.874368 46.317568-8.63744l369.3568-369.355776c11.387904-15.284224 11.447296-40.022016-3.776512-55.243776-15.220736-15.217664-39.958528-15.158272-55.251968 0.13312l-0.001024 0.00512z"
+                                p-id="1187"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="li f-no-c-center" data-id="4">
+                    <a href="https://www.eswincomputing.com/investor/prospectus.html " class="fonbold tit-18 col-fff fon1">投资者关系</a>
+                </div>
+                <div class="li f-no-c-center" data-id="5">
+                    <a href="https://www.eswincomputing.com/about.html" class="fonbold tit-18 col-fff fon1">公司
+                        <svg t="1639115347808" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" p-id="1186" width="200" height="200">
+                            <path d="M854.009856 299.870208L513.934336 643.571712 168.822784 302.094336c-15.154176-15.1552-39.7824-15.100928-55.000064 0.116736-15.220736 15.220736-15.271936 39.844864 3.771392 54.99392l364.266496 364.266496c5.499904 4.916224 11.995136 10.561536 15.504384 11.497472 14.301184 5.75488 31.873024 2.874368 46.317568-8.63744l369.3568-369.355776c11.387904-15.284224 11.447296-40.022016-3.776512-55.243776-15.220736-15.217664-39.958528-15.158272-55.251968 0.13312l-0.001024 0.00512z"
+                                  p-id="1187"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightbox f-no">
+            <div class="search por">
+                <form action="https://www.eswincomputing.com/search.html">
+                    <input type="hidden" name="csrf" value="59205fc85bdd3fc6aaa33a076dada859">
+                    <input class="input1 fonbold tit-15 col-fff" type="text" name="keys"
+                           value="" placeholder="搜索">
+                    <input type="submit" value=" " class="input2">
+                </form>
+            </div>
+            <div class="langbox f-no-b-center">
+                <a href="javaScript:;" class="litip f-no-c-center tit-15 col-fff">
+                    <svg t="1638502625669" class="img1" viewBox="0 0 1024 1024" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg" p-id="6617" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         width="200" height="200">
+                        <defs>
+                            <style type="text/css"></style>
+                        </defs>
+                        <path d="M947.108756 511.648694c0-240.108606-194.801924-434.755236-435.1032-434.755236-240.305873 0-435.111994 194.64663-435.111994 434.755236 0 221.801619 166.222901 404.794749 380.984293 431.422296 12.106792 2.55127 26.852794 4.038062 44.415686 4.038062 4.930457 0 9.685034-0.259424 14.27692-0.729505C754.768563 943.931606 947.108756 750.242528 947.108756 511.648694zM884.893338 517.799924c-1.251751-21.692093-4.117408-42.925497-8.48125-63.560906 0.387337-7.368204 0.492666-14.349071 0.2952-20.839071 5.396141 25.231293 8.241812 51.407945 8.241812 78.248547C884.9499 513.703701 884.926516 515.752712 884.893338 517.799924zM139.053218 511.648694c0-26.351534 2.74374-52.061502 7.95021-76.867284 16.10568 17.224122 54.066743 16.817798 63.324466-8.917554 16.564569 9.871507 38.824677 11.669088 38.824677 31.400111 0 65.118849 2.319028 134.932116 61.48951 136.010585 1.66607 0.021785 32.998427 11.87355 47.909917 50.543531 5.155904 13.365538 25.549677 0 47.914314 0 11.16483 0 0 18.808248 0 59.480272 0 40.514331 87.352575 102.896636 87.352575 102.896636-0.404726 26.818217 0.696328 48.503115 2.928215 65.827569-19.717432-0.362954-36.334165 2.250074-49.388714 6.693662C272.196747 848.12916 139.053218 695.432289 139.053218 511.648694zM603.819307 872.916555c-1.933289-9.465183-10.391954-14.648468-25.824691-10.592418 12.313851-52.435848 18.300192-81.808734 44.006564-104.111013 37.193383-32.239142 4.428997-68.090635-23.874013-63.865499-22.307875 3.367717-8.210433-27.618874-28.121134-29.332712-19.910701-1.66607-45.912871-41.267221-74.568443-54.893982-15.189901-7.213309-30.11798-26.544003-53.544497-27.410016-20.763722-0.805054-51.107949 17.555897-51.107949 3.402493 0-45.588091-4.61627-78.118835-5.565027-91.110227-0.766081-10.437323-6.822974-3.515616 21.245995-2.841074 15.276243 0.409123 7.814302-30.681998 22.93465-31.896174 14.850531-1.175003 50.237539 13.900975 59.253226 7.892249 8.375721-5.595206 61.567857 139.617739 61.567857 24.003126 0-13.718099-7.104983-37.568728 0-50.56092 28.099349-51.339991 54.405313-93.181823 52.042915-99.302673-1.340691-3.446064-28.747909-6.291534-50.677241 1.066277-7.400782 2.471125 2.353804 14.061866-8.275589 16.537388-39.825598 9.193567-75.012541-10.73772-62.690696-29.472018 12.617645-19.199982 58.334849-8.375322 62.342532-46.893007 2.305837-22.062841 4.216541-47.615317 5.495274-66.606441 53.59926 8.381317 47.69926-69.55724-31.998305-77.899584 161.233284 1.886321 297.86145 106.006727 347.998057 250.511153-2.535881-2.312632-5.485881-3.718479-8.892971-4.061446-24.096063-60.184395-82.583209-16.628726-62.74306 36.455483-106.305525 81.712999-79.094174 138.703759-44.167654 171.339032 18.378539 17.155369 35.900659 42.956076 47.309324 61.485713-12.417581 36.205653 45.75278 21.707682 74.441329-39.73446C833.914302 741.574005 732.115122 840.463158 603.819307 872.916555z"
+                              p-id="6618"></path>
+                    </svg>
+                    语言
+                    <svg t="1639115347808" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg" p-id="1186" width="200" height="200">
+                        <path d="M854.009856 299.870208L513.934336 643.571712 168.822784 302.094336c-15.154176-15.1552-39.7824-15.100928-55.000064 0.116736-15.220736 15.220736-15.271936 39.844864 3.771392 54.99392l364.266496 364.266496c5.499904 4.916224 11.995136 10.561536 15.504384 11.497472 14.301184 5.75488 31.873024 2.874368 46.317568-8.63744l369.3568-369.355776c11.387904-15.284224 11.447296-40.022016-3.776512-55.243776-15.220736-15.217664-39.958528-15.158272-55.251968 0.13312l-0.001024 0.00512z"
+                              p-id="1187"></path>
+                    </svg>
+                </a>
+                <div class="libox">
+                    <a href="https://www.eswincomputing.com/en/" class="tit-15 col-999">English</a>
+                     <a href="https://www.eswincomputing.com/kr/" class="tit-15 col-999">한국어</a>
+                    <a href="https://www.eswincomputing.com/jp" class="tit-15 col-999">日本語</a> 
+                </div>
+            </div>
+        </div>
+
+        <div class="header-navbox">
+
+            <div class="subitem subitem5">
+                <div class="sub-ul  f-no-c-start">
+
+                                                                        <div class="subli  f-no-col-s-center col-333 tit-18">
+                                <a href="https://www.eswincomputing.com/solutions/index/60.html"
+                                   class="subtitle fon1 text-bold f-no-col-c-center">
+                                    <div class="icon"
+                                         style="background-image:url(https://www.eswincomputing.com/bocupload/2025/04/30/174599432606035yfs2.png);">
+                                    </div>
+                                    <p>智能家居</p>
+                                </a>
+                                <div class="subbot f-no-col-c-center">
+                                                                            <a class="fon1" style="color:#666;"
+                                           href="https://www.eswincomputing.com/solutions/index/60/1.html">
+                                            智能视显                                        </a>
+                                                                            <a class="fon1" style="color:#666;"
+                                           href="https://www.eswincomputing.com/solutions/index/60/3.html">
+                                            智能白电                                        </a>
+                                                                    </div>
+                            </div>
+                                                                                                <div class="subli  f-no-col-s-center col-333 tit-18">
+                                <a href="https://www.eswincomputing.com/solutions/index/61.html"
+                                   class="subtitle fon1 text-bold f-no-col-c-center">
+                                    <div class="icon"
+                                         style="background-image:url(https://www.eswincomputing.com/bocupload/2025/04/30/174599800924729i04u.png);">
+                                    </div>
+                                    <p>智能办公</p>
+                                </a>
+                                <div class="subbot f-no-col-c-center">
+                                                                            <a class="fon1" style="color:#666;"
+                                           href="https://www.eswincomputing.com/solutions/index/61/4.html">
+                                            办公显示器                                        </a>
+                                                                            <a class="fon1" style="color:#666;"
+                                           href="https://www.eswincomputing.com/solutions/index/61/5.html">
+                                            笔记本电脑                                        </a>
+                                                                    </div>
+                            </div>
+                                                                                                <div class="subli  f-no-col-s-center col-333 tit-18">
+                                <a href="https://www.eswincomputing.com/solutions/index/62.html"
+                                   class="subtitle fon1 text-bold f-no-col-c-center">
+                                    <div class="icon"
+                                         style="background-image:url(https://www.eswincomputing.com/bocupload/2025/04/23/17454093568893jxxx.png);">
+                                    </div>
+                                    <p>智能便携</p>
+                                </a>
+                                <div class="subbot f-no-col-c-center">
+                                                                            <a class="fon1" style="color:#666;"
+                                           href="https://www.eswincomputing.com/solutions/index/62/6.html">
+                                            智能手机                                        </a>
+                                                                            <a class="fon1" style="color:#666;"
+                                           href="https://www.eswincomputing.com/solutions/index/62/7.html">
+                                            智能手表                                        </a>
+                                                                            <a class="fon1" style="color:#666;"
+                                           href="https://www.eswincomputing.com/solutions/index/62/8.html">
+                                            平板电脑                                        </a>
+                                                                    </div>
+                            </div>
+                                                                                                <div class="subli  f-no-col-s-center col-333 tit-18">
+                                <a href="https://www.eswincomputing.com/solutions/index/63.html"
+                                   class="subtitle fon1 text-bold f-no-col-c-center">
+                                    <div class="icon"
+                                         style="background-image:url(https://www.eswincomputing.com/bocupload/2025/04/30/174599561587176knla.png);">
+                                    </div>
+                                    <p>智能汽车</p>
+                                </a>
+                                <div class="subbot f-no-col-c-center">
+                                                                            <a class="fon1" style="color:#666;"
+                                           href="https://www.eswincomputing.com/solutions/index/63/9.html">
+                                            智能座舱                                        </a>
+                                                                            <a class="fon1" style="color:#666;"
+                                           href="https://www.eswincomputing.com/solutions/index/63/11.html">
+                                            车身控制                                        </a>
+                                                                            <a class="fon1" style="color:#666;"
+                                           href="https://www.eswincomputing.com/solutions/index/63/12.html">
+                                            车路云                                        </a>
+                                                                    </div>
+                            </div>
+                            <div class="subli  f-no-col-s-center col-333 tit-18">
+                                <a href="https://www.eswincomputing.com/industry/index/26.html"
+                                   class="subtitle fon1 text-bold f-no-col-c-center">
+                                    <div class="icon"
+                                         style="background-image:url(https://www.eswincomputing.com/bocstatic/web/img/wdcy2.png?v=v51);">
+                                    </div>
+                                    <p>产业智能化</p>
+                                </a>
+                                <div class="subbot f-no-col-c-center">
+                                                                                                                        <a href="https://www.eswincomputing.com/industry/index/26.html" class="fon1"
+                                               style="color:#666;">
+                                                智能制造                                            </a>
+                                                                                    <a href="https://www.eswincomputing.com/industry/index/29.html" class="fon1"
+                                               style="color:#666;">
+                                                智慧园区                                            </a>
+                                                                                    <a href="https://www.eswincomputing.com/industry/index/30.html" class="fon1"
+                                               style="color:#666;">
+                                                智慧能源                                            </a>
+                                                                                    <a href="https://www.eswincomputing.com/industry/index/17.html" class="fon1"
+                                               style="color:#666;">
+                                                智慧教育                                            </a>
+                                                                                    <a href="https://www.eswincomputing.com/industry/index/27.html" class="fon1"
+                                               style="color:#666;">
+                                                智慧医健                                            </a>
+                                                                            
+                                </div>
+                            </div>
+                                                                                                <div class="subli  f-no-col-s-center col-333 tit-18">
+                                <a href="https://www.eswincomputing.com/solutions/index/75.html"
+                                   class="subtitle fon1 text-bold f-no-col-c-center">
+                                    <div class="icon"
+                                         style="background-image:url(https://www.eswincomputing.com/bocupload/2025/04/28/17458320064359ruke0.png);">
+                                    </div>
+                                    <p>机器人</p>
+                                </a>
+                                <div class="subbot f-no-col-c-center">
+                                                                            <a class="fon1" style="color:#666;"
+                                           href="https://www.eswincomputing.com/solutions/index/75/13.html">
+                                            机器人                                        </a>
+                                                                    </div>
+                            </div>
+                                            
+                </div>
+            </div>
+
+
+            <div class="subitem subitem5" style="display:none">
+                <div class="sub-ul fon1 text-bold f-no-c-center">
+                </div>
+            </div>
+
+            <div class="subitem subitem5" style="display:none">
+                <div class="sub-ul fon-middle f-no-c-start">
+
+                </div>
+            </div>
+
+            <div class="subitem subitem5">
+                <div class="sub-ul sub-ul2 f-no-c-start">
+                    <div class="subli f-no-col-s-center col-333 tit-18" style="display:none;">
+                        <a href="https://www.eswincomputing.com/services.html" class="subtitle f-no-col-c-center text-bold fon1">
+                            <div class="icon"
+                                 style="background-image:url(https://www.eswincomputing.com/bocstatic/web/img/headericon1-6.png?v=v51);">
+
+                            </div>
+                            <p>下载中心</p>
+                        </a>
+                        <div class="subbot f-no-col-c-center">
+                            <a class="fon1" style="color:#666;"
+                               href="https://www.eswincomputing.com/services.html">文件下载 </a>
+                            <!-- <a class="fon1" style="color:#666;" href="https://www.eswincomputing.com/services_drive.html">驱动程序与软件下载</a> -->
+                        </div>
+                    </div>
+                    <div class="subli f-no-col-s-center col-333 tit-18">
+                        <a href="https://www.eswincomputing.com/services/aftersaleindex.html"
+                           class="subtitle f-no-col-c-center text-bold fon1" style="border-bottom:none;">
+                            <div class="icon"
+                                 style="background-image:url(https://www.eswincomputing.com/bocstatic/web/img/headericon1-7.png?v=v51);">
+
+                            </div>
+                            <p>销售联络</p>
+                        </a>
+
+                    </div>
+                    <div class="subli f-no-col-s-center col-333 tit-18">
+                        <a href="https://www.eswincomputing.com/services/aftersale.html"
+                           class="subtitle f-no-col-c-center text-bold fon1" style="border-bottom:none;">
+                            <div class="icon"
+                                 style="background-image:url(https://www.eswincomputing.com/bocstatic/web/img/headericon1-8.png?v=v51);">
+
+                            </div>
+                            <p>售后服务</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="subitem subitem5">
+                <div class="sub-ul sub-ul2 ">
+                    <div class="w1400 f-no-c-start">
+                        <div class="subli f-no-col-s-center col-333 tit-18">
+                            <a href="https://www.eswincomputing.com/investor/prospectus.html"
+                               class="subtitle f-no-col-c-center text-bold fon1" style="border-bottom:none;">
+                                <div class="icon" style='background-image:url(https://www.eswincomputing.com/bocstatic/web/img/headericon09-01.png);'>
+                                </div>
+                                <p>信息披露</p>
+                            </a>
+                        </div>
+                        <div class="subli f-no-col-s-center col-333 tit-18">
+                            <a href="https://www.eswincomputing.com/investor/court.html"
+                               class="subtitle f-no-col-c-center text-bold fon1" style="border-bottom:none;">
+                                <div class="icon" style='background-image:url(https://www.eswincomputing.com/bocstatic/web/img/headericon09-02.png);'>
+				</div>
+                                <p>公司治理</p>
+                            </a>
+                        </div>
+                        <div class="subli f-no-col-s-center col-333 tit-18">
+
+                            <a href="https://www.eswincomputing.com/investor/about.html"
+                               class="subtitle f-no-col-c-center text-bold fon1" style="border-bottom:none;">
+                                <div class="icon" style='background-image:url(https://www.eswincomputing.com/bocstatic/web/img/headericon09-03.png);'>
+                                </div>
+                                <p>公司信息</p>
+                            </a>
+                        </div>
+                        <div class="subli f-no-col-s-center col-333 tit-18">
+
+                            <a href="https://www.eswincomputing.com/investor/activity.html"
+                               class="subtitle f-no-col-c-center text-bold fon1" style="border-bottom:none;">
+                                <div class="icon" style='background-image:url(https://www.eswincomputing.com/bocstatic/web/img/headericon09-04.png);' >
+                                </div>
+                                <p>投资者活动</p>
+                            </a>
+                        </div>
+                        <div class="subli f-no-col-s-center col-333 tit-18">
+                            <a href="https://www.eswincomputing.com/investor/contact.html"
+                               class="subtitle f-no-col-c-center text-bold fon1" style="border-bottom:none;">
+                                <div class="icon" style='background-image:url(https://www.eswincomputing.com/bocstatic/web/img/headericon09-05.png);'>
+                                </div>
+                                <p>投资者联络</p>
+                            </a>
+                        </div>
+                        <!-- <div class="subli f-no-col-s-center col-333 tit-18">
+                        <a href="https://www.eswincomputing.com/investor/announcement.html"
+                           class="subtitle f-no-col-c-center text-bold fon1" style="border-bottom:none;">
+                            <div class="icon"
+                                 style="background-image:url(https://www.eswincomputing.com/bocstatic/web/img4/headericon1-8-1.png?v=v51);">
+
+                            </div>
+                            <p>公司公告</p>
+                        </a>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="subitem subitem7">
+                <div class="sub-ul text-bold fon1 f-no-c-start">
+                    <a href="https://www.eswincomputing.com/about.html" class="subli f-no-col-c-center col-333 tit-18">
+                        <div class="icon"
+                             style="background-image:url(https://www.eswincomputing.com/bocstatic/web/img/headericon1.png?v=v51);">
+
+                        </div>
+                        <p>关于我们</p>
+                    </a>
+                    <a href="https://www.eswincomputing.com/news.html" class="subli f-no-col-c-center col-333 tit-18">
+                        <div class="icon"
+                             style="background-image:url(https://www.eswincomputing.com/bocstatic/web/img/headericon1-1.png?v=v51);">
+
+                        </div>
+                        <p>公司动态</p>
+                    </a>
+                    <a href="https://eswinchipch.zhiye.com/social?#zw" class="subli f-no-col-c-center col-333 tit-18">
+                        <div class="icon"
+                             style="background-image:url(https://www.eswincomputing.com/bocstatic/web/img/headericon1-2.png?v=v51);">
+
+                        </div>
+                        <p>加入我们</p>
+                    </a>
+                    <a href="https://www.eswincomputing.com/contact.html" class="subli f-no-col-c-center col-333 tit-18">
+                        <div class="icon"
+                             style="background-image:url(https://www.eswincomputing.com/bocstatic/web/img/headericon1-3.png?v=v51);">
+
+                        </div>
+                        <p>联系我们</p>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="subitem subitem7 ">
+                <div class="sub-ul text-bold fon1 f-no-c-start">
+                    <a href="https://www.eswincomputing.com/risc.html" class="subli f-no-col-c-center col-333 tit-18">
+                        <div class="icon"
+                             style="background-image:url(https://www.eswincomputing.com/bocstatic/web/newimg/x2.png?v=v51);">
+
+                        </div>
+                        <p>RISC-V 技术</p>
+                    </a>
+                    <a href="https://www.eswincomputing.com/risc/technology.html" class="subli f-no-col-c-center col-333 tit-18">
+                        <div class="icon"
+                             style="background-image:url(https://www.eswincomputing.com/bocstatic/web/newimg/x3.png?v=v51);">
+
+                        </div>
+                        <p>领域专用技术</p>
+                    </a>
+                    <a href="https://www.eswincomputing.com/risc/software.html" class="subli f-no-col-c-center col-333 tit-18">
+                        <div class="icon"
+                             style="background-image:url(https://www.eswincomputing.com/bocstatic/web/newimg/x1.png?v=v51);">
+
+                        </div>
+                        <p>RISAA软件平台</p>
+                    </a>
+
+                </div>
+            </div>
+          <div class="subitem subitem7 ">
+                <div class="sub-ul text-bold fon1 f-no-c-start">
+                    <a href="https://www.eswincomputing.com/community/h5/index.html#/devSport?tid=1" class="subli f-no-col-c-center col-333 tit-18">
+                        <div class="icon"
+                            style="background-image:url(https://www.eswincomputing.com/bocstatic/web/newimg/z1.png?v=v51);">
+
+                        </div>
+                        <p>开发支持</p>
+                    </a>
+                    <a href="https://www.eswincomputing.com/community/h5/index.html#/bbsIndex" class="subli f-no-col-c-center col-333 tit-18">
+                        <div class="icon"
+                            style="background-image:url(https://www.eswincomputing.com/bocstatic/web/newimg/z2.png?v=v51);">
+
+                        </div>
+                        <p>技术论坛</p>
+                    </a>
+                    <a href="https://www.eswincomputing.com/community/h5/index.html#/tasklist" class="subli f-no-col-c-center col-333 tit-18">
+                        <div class="icon"
+                            style="background-image:url(https://www.eswincomputing.com/bocstatic/web/newimg/z3.png?v=v51);">
+
+                        </div>
+                        <p>任务平台</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+
+
+<div class="m-bocweb-header3 m-block fon1">
+    <header class="header2 f-no-b-center">
+        <a href="https://www.eswincomputing.com/welcome.html" class="logo">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241.05 23.52">
+                <path class="cls-1"
+                      d="M104.56,31.26v.39h-.39V53.22h-3.81l-11-15.28V53.22H85.51v-22h3.81l11,15.29V31.26ZM9.31,43.64H20.74V40.15H9.31v-5.4H21.5V31.26H5.5V49.74l-.38.38v3.1H21.88V49.74H9.31ZM37,40.53,32.16,39.2c-1.21-.33-2.76-1-2.66-2.57C29.59,35.26,31,34,33.65,34,36.47,34,38,35,38.46,37h3.81c-.26-2.61-2.07-6.55-8.62-6.55-4.94,0-8,3.1-8,6.18s1.79,5,4.85,5.89l4.62,1.28c2,.54,3.69,1.32,3.69,3.31S37,50.51,34,50.51a5,5,0,0,1-5.28-4.26H24.93C25.39,50.9,29,54,34,54a9.52,9.52,0,0,0,6.65-2.17,6.36,6.36,0,0,0,2-4.69C42.66,43.76,40.79,41.6,37,40.53Zm39.8,12.69h3.81v-22H76.75ZM65.13,46.64,60.94,31.26h-4L52.75,46.64,48.56,31.26h-4l6.19,22h4l4.19-15.37,4.19,15.37h4l6.19-22h-4Z"
+                      transform="translate(-5.12 -30.48)"/>
+                <path class="cls-1"
+                      d="M129.66,37.52a4.49,4.49,0,0,1-1.31,3.23,10.38,10.38,0,0,1-2.54,1.8L128,44.07a10.82,10.82,0,0,0,2.53-1.8,6,6,0,0,0,1.83-4.37V35.22h2.82v3.51A4.63,4.63,0,0,1,133.79,42l2.14,1.52h0a6,6,0,0,0,1.85-4.37V35.22h6.15V33h-9.14V31.27h-3V33h-9.14v2.18h7Zm-1.57-.63-2.43-.74a13.59,13.59,0,0,1-3.38,3.53l2.14,1.52A17.19,17.19,0,0,0,128.09,36.89Zm10.63.41a23.8,23.8,0,0,1,3.12,4.59l2.43-1.15A23.88,23.88,0,0,0,141,36.29Zm5.21,10.25V45.37h-9.14V43.48h-3v1.89h-9.14v2.18h7.94a13.21,13.21,0,0,1-8.28,3.36l1.32,2.31a13.16,13.16,0,0,0,9.67-4.84A13.19,13.19,0,0,0,143,53.22l1.32-2.31A13.21,13.21,0,0,1,136,47.55Z"
+                      transform="translate(-5.12 -30.48)"/>
+                <path class="cls-1"
+                      d="M151,47.54l2.62.8a16.45,16.45,0,0,1-3.35,4.8l-2.22-1.73A11.33,11.33,0,0,0,151,47.54Zm8.55,0h-11.5V45.36h1.83V35.21h-1.83V33h1.83V31.26h2.39V33h3.57V31.26h2.4V33h1.31v2.18h-1.31V45.36h1.31Zm-3.71-4.11H152.3v1.93h3.57Zm0-4.11H152.3v1.93h3.57Zm0-4.11H152.3v1.93h3.57Zm7.62,3.17V34.7a53,53,0,0,0,6.67-1.12l-.83-2.32a64.23,64.23,0,0,1-8.49,1.39v7.91c0,3.37-.08,6.72-1.73,10a23.75,23.75,0,0,0-2-3l-2.25,1.09a23.07,23.07,0,0,1,2,3.32L159,50.79c-.13.26-.28.51-.44.77l2.34,1.66c2.06-4.07,2.62-6.8,2.62-12.66h2.17V53.22h2.65V40.56h2.13V38.38Z"
+                      transform="translate(-5.12 -30.48)"/>
+                <path class="cls-1"
+                      d="M179.6,35.78V53.22H177v-13q-.62.91-1.29,1.8l-2.17-1.55a37.57,37.57,0,0,0,5.23-9.25l2.49.92C180.73,33.41,180.19,34.61,179.6,35.78Zm9.75,7.12V40.72h5.86V38.54h-5.86V36.36h6.39V34.18h-6.39V31.26H186.7v2.92h-5.59v2.18h5.59v2.18h-5.2v2.18h5.2V42.9h-6v2.19h6v8.13h2.65V45.09h4V47.4A4,4,0,0,1,192,50.23l2.15,1.54A6.08,6.08,0,0,0,196,47.4V42.9Z"
+                      transform="translate(-5.12 -30.48)"/>
+                <path class="cls-1"
+                      d="M207.82,45.84a12.44,12.44,0,0,0,.9,2.59c-4.77,3.44-5.64,4.13-6.09,4.72a12,12,0,0,0-1.38-2.63,2.82,2.82,0,0,0,1.28-2.21V41.17h-3.46v-2.8h6.33V47.5Zm-3-9a30.89,30.89,0,0,0-3.86-3.75l1.78-1.8a31.65,31.65,0,0,1,4,3.49ZM221,41.45h-5.45v11.8h-3V41.45h-5.69V38.51h5.69V31.18h3v7.33H221Z"
+                      transform="translate(-5.12 -30.48)"/>
+                <path class="cls-1"
+                      d="M246.17,49.4h-5v3.8h-2.92V49.4H232.9c-.66,1.52-2.32,2.9-6,3.85a10.18,10.18,0,0,0-1.81-2.07,9.2,9.2,0,0,0,4.44-1.78h-4.75V47.17h5.65V45.72h-2.89V36.61h2.37a10.53,10.53,0,0,0-.95-1.75h-.5a15.41,15.41,0,0,1-2.06,2.32,14.74,14.74,0,0,0-2.28-1.56,12.36,12.36,0,0,0,3.65-4.73l2.64.72c-.17.33-.33.68-.52,1h5.24V34.5a10.36,10.36,0,0,0,2.25-3.61l2.68.64c-.14.36-.3.74-.47,1.1h6.53v2.23h-3.49a7.67,7.67,0,0,1,.76,1l-1.59.71h2.11v9.11h-2.73v1.45h5ZM230.36,38.3v.83H240.9V38.3Zm0,3.27H240.9v-.88H230.36Zm0,2.47H240.9v-.88H230.36Zm1.47-9.18a6.49,6.49,0,0,1,.62,1.18l-1.56.57H236A23,23,0,0,0,234,35.54a6.49,6.49,0,0,0,.81-.68Zm6.41,12.31V45.72h-5v1.45Zm0-12.31a14.85,14.85,0,0,1-1.5,1.75h4.06a16,16,0,0,0-1.3-1.75Z"
+                      transform="translate(-5.12 -30.48)"/>
+            </svg>
+
+
+        </a>
+
+        <div class="rightbox f-no-s-center">
+            <div class="langbox f-no-b-center">
+                <a href="javaScript:;" class="litip f-no-c-center tit-15 col-fff">
+                    <svg t="1638502625669" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg" p-id="6617" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         width="200" height="200">
+                        <path d="M947.108756 511.648694c0-240.108606-194.801924-434.755236-435.1032-434.755236-240.305873 0-435.111994 194.64663-435.111994 434.755236 0 221.801619 166.222901 404.794749 380.984293 431.422296 12.106792 2.55127 26.852794 4.038062 44.415686 4.038062 4.930457 0 9.685034-0.259424 14.27692-0.729505C754.768563 943.931606 947.108756 750.242528 947.108756 511.648694zM884.893338 517.799924c-1.251751-21.692093-4.117408-42.925497-8.48125-63.560906 0.387337-7.368204 0.492666-14.349071 0.2952-20.839071 5.396141 25.231293 8.241812 51.407945 8.241812 78.248547C884.9499 513.703701 884.926516 515.752712 884.893338 517.799924zM139.053218 511.648694c0-26.351534 2.74374-52.061502 7.95021-76.867284 16.10568 17.224122 54.066743 16.817798 63.324466-8.917554 16.564569 9.871507 38.824677 11.669088 38.824677 31.400111 0 65.118849 2.319028 134.932116 61.48951 136.010585 1.66607 0.021785 32.998427 11.87355 47.909917 50.543531 5.155904 13.365538 25.549677 0 47.914314 0 11.16483 0 0 18.808248 0 59.480272 0 40.514331 87.352575 102.896636 87.352575 102.896636-0.404726 26.818217 0.696328 48.503115 2.928215 65.827569-19.717432-0.362954-36.334165 2.250074-49.388714 6.693662C272.196747 848.12916 139.053218 695.432289 139.053218 511.648694zM603.819307 872.916555c-1.933289-9.465183-10.391954-14.648468-25.824691-10.592418 12.313851-52.435848 18.300192-81.808734 44.006564-104.111013 37.193383-32.239142 4.428997-68.090635-23.874013-63.865499-22.307875 3.367717-8.210433-27.618874-28.121134-29.332712-19.910701-1.66607-45.912871-41.267221-74.568443-54.893982-15.189901-7.213309-30.11798-26.544003-53.544497-27.410016-20.763722-0.805054-51.107949 17.555897-51.107949 3.402493 0-45.588091-4.61627-78.118835-5.565027-91.110227-0.766081-10.437323-6.822974-3.515616 21.245995-2.841074 15.276243 0.409123 7.814302-30.681998 22.93465-31.896174 14.850531-1.175003 50.237539 13.900975 59.253226 7.892249 8.375721-5.595206 61.567857 139.617739 61.567857 24.003126 0-13.718099-7.104983-37.568728 0-50.56092 28.099349-51.339991 54.405313-93.181823 52.042915-99.302673-1.340691-3.446064-28.747909-6.291534-50.677241 1.066277-7.400782 2.471125 2.353804 14.061866-8.275589 16.537388-39.825598 9.193567-75.012541-10.73772-62.690696-29.472018 12.617645-19.199982 58.334849-8.375322 62.342532-46.893007 2.305837-22.062841 4.216541-47.615317 5.495274-66.606441 53.59926 8.381317 47.69926-69.55724-31.998305-77.899584 161.233284 1.886321 297.86145 106.006727 347.998057 250.511153-2.535881-2.312632-5.485881-3.718479-8.892971-4.061446-24.096063-60.184395-82.583209-16.628726-62.74306 36.455483-106.305525 81.712999-79.094174 138.703759-44.167654 171.339032 18.378539 17.155369 35.900659 42.956076 47.309324 61.485713-12.417581 36.205653 45.75278 21.707682 74.441329-39.73446C833.914302 741.574005 732.115122 840.463158 603.819307 872.916555z"
+                              p-id="6618"></path>
+                    </svg>
+                </a>
+
+
+                <div class="libox" style="right:-25px;">
+                    <a href="https://www.eswincomputing.com/en/" class="tit-15 col-999">English</a>
+                     <a href="https://www.eswincomputing.com/kr/" class="tit-15 col-999">한국어</a>
+                    <a href="https://www.eswincomputing.com/jp" class="tit-15 col-999">日本語</a>
+                </div>
+            </div>
+            <div class="h-right f-no-c-center">
+                <div class="hamburger hamburger--3dx-r">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="warp-nav">
+            <div class="nav">
+                <form action="https://www.eswincomputing.com/search.html">
+                    <input type="hidden" name="csrf" value="eeb7a62f18027f417d00b958f28919fe"/>
+                    <div class="search por">
+                        <input class="input1 fonbold tit-15 col-fff" type="text" name="keys"
+                               value="" placeholder="搜索">
+                        <input type="submit" value=" " class="input2">
+                    </div>
+                </form>
+                <div class="li trans js-m js-m-2-1">
+                    <a href="https://www.eswincomputing.com/welcome.html" class="warp-btn col-fff">
+                        <span>首页</span>
+                    </a>
+                </div>
+                <div class="li trans js-m js-m-2-1">
+                    <div class="tit sub-tit fonbold col-fff">技术</div>
+                    <div class="sec-list fon1">
+                        <p><a href="https://www.eswincomputing.com/risc.html">RISC-V 技术</a></p>
+                        <p><a href="https://www.eswincomputing.com/risc/technology.html">领域专用技术 </a></p>
+
+                        <div class="sec-list-item">
+                            <div class="sec-tit">RISAA软件平台</div>
+                            <div class="sec-list-nav">
+                                                                    <p>
+                                        <a class="col-333" href="https://www.eswincomputing.com/risc/software/11.html">
+                                            基础软件平台                                        </a>
+                                    </p>
+                                                                    <p>
+                                        <a class="col-333" href="https://www.eswincomputing.com/risc/software/9.html">
+                                            工具软件平台                                        </a>
+                                    </p>
+                                                                <p><a href="https://www.eswincomputing.com/risc/specific_software.html">领域专用软件</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="li trans js-m js-m-2-1">
+                    <div class="tit sub-tit fonbold col-fff">解决方案</div>
+                    <div class="sec-list">
+
+                        
+                                                            <div class="sec-list-item">
+                                    <div class="sec-tit">智能家居</div>
+                                    <div class="sec-list-nav">
+                                                                                    <p>
+                                                <a href="https://www.eswincomputing.com/solutions/index/60/1.html">
+                                                    智能视显                                                </a>
+                                            </p>
+                                                                                    <p>
+                                                <a href="https://www.eswincomputing.com/solutions/index/60/3.html">
+                                                    智能白电                                                </a>
+                                            </p>
+                                                                            </div>
+                                </div>
+                                                    
+                                                            <div class="sec-list-item">
+                                    <div class="sec-tit">智能办公</div>
+                                    <div class="sec-list-nav">
+                                                                                    <p>
+                                                <a href="https://www.eswincomputing.com/solutions/index/61/4.html">
+                                                    办公显示器                                                </a>
+                                            </p>
+                                                                                    <p>
+                                                <a href="https://www.eswincomputing.com/solutions/index/61/5.html">
+                                                    笔记本电脑                                                </a>
+                                            </p>
+                                                                            </div>
+                                </div>
+                                                    
+                                                            <div class="sec-list-item">
+                                    <div class="sec-tit">智能便携</div>
+                                    <div class="sec-list-nav">
+                                                                                    <p>
+                                                <a href="https://www.eswincomputing.com/solutions/index/62/6.html">
+                                                    智能手机                                                </a>
+                                            </p>
+                                                                                    <p>
+                                                <a href="https://www.eswincomputing.com/solutions/index/62/7.html">
+                                                    智能手表                                                </a>
+                                            </p>
+                                                                                    <p>
+                                                <a href="https://www.eswincomputing.com/solutions/index/62/8.html">
+                                                    平板电脑                                                </a>
+                                            </p>
+                                                                            </div>
+                                </div>
+                                                    
+                                                            <div class="sec-list-item">
+                                    <div class="sec-tit">智能汽车</div>
+                                    <div class="sec-list-nav">
+                                                                                    <p>
+                                                <a href="https://www.eswincomputing.com/solutions/index/63/9.html">
+                                                    智能座舱                                                </a>
+                                            </p>
+                                                                                    <p>
+                                                <a href="https://www.eswincomputing.com/solutions/index/63/11.html">
+                                                    车身控制                                                </a>
+                                            </p>
+                                                                                    <p>
+                                                <a href="https://www.eswincomputing.com/solutions/index/63/12.html">
+                                                    车路云                                                </a>
+                                            </p>
+                                                                            </div>
+                                </div>
+                                <div class="sec-list-item">
+                                    <div class="sec-tit">产业智能化</div>
+                                    <div class="sec-list-nav">
+
+                                                                                                                                    <p><a href="https://www.eswincomputing.com/industry/index/26.html">
+                                                        智能制造                                                    </a></p>
+                                                                                            <p><a href="https://www.eswincomputing.com/industry/index/29.html">
+                                                        智慧园区                                                    </a></p>
+                                                                                            <p><a href="https://www.eswincomputing.com/industry/index/30.html">
+                                                        智慧能源                                                    </a></p>
+                                                                                            <p><a href="https://www.eswincomputing.com/industry/index/17.html">
+                                                        智慧教育                                                    </a></p>
+                                                                                            <p><a href="https://www.eswincomputing.com/industry/index/27.html">
+                                                        智慧医健                                                    </a></p>
+                                                                                                                        </div>
+                                </div>
+                                                    
+                                                            <div class="sec-list-item">
+                                    <div class="sec-tit">机器人</div>
+                                    <div class="sec-list-nav">
+                                                                                    <p>
+                                                <a href="https://www.eswincomputing.com/solutions/index/75/13.html">
+                                                    机器人                                                </a>
+                                            </p>
+                                                                            </div>
+                                </div>
+                                                                        </div>
+                </div>
+
+                <div class="li trans js-m js-m-2-1" style="display:none;">
+                    <div class="tit sub-tit fonbold col-fff"></div>
+                    <div class="sec-list">
+                    </div>
+                </div>
+
+
+                <div class="li trans js-m js-m-2-1" style="display:none;">
+                    <div class="tit sub-tit fonbold col-fff"></div>
+                    <div class="sec-list">
+                    </div>
+                </div>
+
+                <div class="li trans js-m js-m-2-1">
+                    <div class="tit sub-tit fonbold col-fff">支持</div>
+                    <div class="sec-list">
+                        <div class="sec-list-item" style="display: none;">
+                            <div class="sec-tit">下载中心</div>
+                            <div class="sec-list-nav">
+                                <p><a href="https://www.eswincomputing.com/services.html">文件下载 </a></p>
+                            </div>
+                        </div>
+                        <p><a href="https://www.eswincomputing.com/services/aftersaleindex.html">销售联络 </a></p>
+                        <p><a href="https://www.eswincomputing.com/services/aftersale.html">售后服务 </a></p>
+                    </div>
+                </div>
+               <div class="li trans js-m js-m-2-1">
+                    <div class="tit sub-tit fonbold col-fff">开发者社区</div>
+                    <div class="sec-list">
+
+                        <p><a href="https://www.eswincomputing.com/community/h5/index.html#/devSport?tid=1">开发支持 </a></p>
+                        <p><a href="https://www.eswincomputing.com/community/h5/index.html#/bbsIndex">技术论坛 </a></p>
+                        <p><a href="https://www.eswincomputing.com/community/h5/index.html#/tasklist">任务平台 </a></p>
+                    </div>
+                </div>
+                <!-- <div class="li trans js-m js-m-2-1">
+                    <a href="https://www.eswincomputing.com/investor/contact.html" class="warp-btn col-fff">
+                        <span>投资者关系</span>
+                    </a>
+                </div> -->
+
+                <div class="li trans js-m js-m-2-1">
+                    <div class="tit sub-tit fonbold col-fff">投资者关系</div>
+                    <div class="sec-list">
+                        <p><a href="https://www.eswincomputing.com/investor/prospectus.html" class=" ">
+                                <span>信息披露</span>
+                            </a>
+                        </p>
+                        <p><a href="https://www.eswincomputing.com/investor/court.html" class=" ">
+                                <span>公司治理</span>
+                            </a>
+                        </p>
+                        <p><a href="https://www.eswincomputing.com/investor/about.html" class=" ">
+                                <span>公司信息</span>
+                            </a>
+                        </p>
+                        <p><a href="https://www.eswincomputing.com/investor/activity.html" class=" ">
+                                <span>投资者活动</span>
+                            </a>
+                        </p>
+                        <p><a href="https://www.eswincomputing.com/investor/contact.html" class=" ">
+                                <span>投资者联络</span>
+                            </a>
+                        </p>
+                        <!-- <p><a href="https://www.eswincomputing.com/investor/announcement.html" class=" ">
+                                <span>公司公告</span>
+                            </a></p> -->
+                    </div>
+                </div>
+
+                <div class="li trans js-m js-m-2-1">
+                    <div class="tit sub-tit fonbold col-fff">公司</div>
+                    <div class="sec-list">
+                        <p><a href="https://www.eswincomputing.com/about.html" class=" ">
+                                <span>关于我们</span>
+                            </a></p>
+                        <p><a href="https://www.eswincomputing.com/news.html" class=" ">
+                                <span>公司动态</span>
+                            </a></p>
+                        <p><a href="https://eswinchipch.zhiye.com/social?#zw" class=" ">
+                                <span>加入我们 </span>
+                            </a></p>
+                        <p><a href="https://www.eswincomputing.com/contact.html" class=" ">
+                                <span>联系我们</span>
+                            </a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $(".header4 .leftbox .li").hover(function () {
+            var idtype = $(this).attr("data-id");
+            $(".header-navbox .subitem").eq(idtype).stop().slideDown().siblings(".subitem").stop().slideUp();
+        }, function () {
+            var idtype = $(this).attr("data-id");
+            $(".header-navbox .subitem").eq(idtype).stop().slideUp()
+            $(".header-navbox .subitem").hover(function () {
+                $(this).stop().slideDown();
+            }, function () {
+                $(this).stop().slideUp();
+            })
+        })
+    })
+</script>
+
+
+<div class="newsinfo">
+    <div class="tipbox w1400 f-no-s-center tit-16 col-">
+        <a href="https://www.eswincomputing.com/about.html" title="">关于我们</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="https://www.eswincomputing.com/news.html" title="">公司动态</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a
+                href="javaScript:;" title="">新闻详情</a>
+    </div>
+    <div class="contentbox w1400 f-no-b-start">
+        <div class="leftbox">
+            <div class="news-top">
+                <div class="news-tit tit-32">奕斯伟计算 | 推出AI NAS主控方案 携手极空间打造消费级RISC-V新品</div>
+                <div class="time fon1 tit-16 col-999">2026-07-22</div>
+            </div>
+            <div class="news-text tit-18 col-666">
+                <p style="line-height: 1.75em;"><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">7</span><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">月21日，国内AI NAS领军品牌极空间私有云正式宣布与RISC-V架构芯片产品和方案提供商奕斯伟计算达成深度合作。双方将合作推出全球首款基于RISC-V架构打造的消费级AI NAS产品，并于2026年第四季度正式量产发售。该产品搭载奕斯伟计算面向消费级场景推出的RISC-V架构AI NAS主控解决方案，专为7×24小时全在线、高能效比场景设计，是RISC-V架构切入消费级高性能NAS赛道的重要技术拓展与实践。</span></p><p style="line-height: 1.75em;"><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="line-height: 1.75em;"><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">AI NAS</span><span style="font-size:16px;font-family: &#39;微软雅黑&#39;,sans-serif">是传统网络附加存储与端侧AI技术融合的全新品类，核心定位正从被动存放数据的“仓库”，向可理解、可检索、可交互的“本地存算智能中枢”演进。当前，AI NAS市场整体保持高速增长，AI功能已从旗舰机型向中端市场渗透，存算一体与异构算力成为行业重要趋势，但此前市场方案仍以X86、ARM架构为主。</span></p><br/><p style="text-align: center; line-height: 1.75em;"><img style="max-width: 65%; vertical-align: middle;" src="https://www.eswincomputing.com/bocupload/at/image/20260727/17851379177504649joO.jpg" title="17851379177504649joO.jpg" alt="修图版本.jpg"/></p><p style="line-height: 1.75em;"><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">奕斯伟计算推出的RISC-V AI NAS主控方案搭载自研边缘计算芯片，该芯片采用四核64位RISC-V CPU，自研高能效NPU内核，支持INT8/INT16/FP16数据格式，具备丰富的接口，强大的音频/视频处理能力，可面向个人、家庭、办公、车载、机器人数据存储等多元场景提供统一算力底座。其核心优势体现在三方面：</span></p><p style="line-height: 1.75em;"><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="margin-left: 28px; line-height: 1.75em;"><span style="font-size:16px;font-family:Wingdings">l<span style="font:9px &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">系统兼容性方面，主控板预装基于Debian（Trixie）与OpenMediaVault深度定制的NAS操作系统，同时兼容多个主流NAS OS，为开发者提供开箱即用的稳定环境，助力合作伙伴快速完成从方案验证到产品化设计的全流程。</span></p><p style="line-height: 1.75em;"><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="margin-left: 28px; line-height: 1.75em;"><span style="font-size:16px;font-family:Wingdings">l<span style="font:9px &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">AI</span><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">能力方面，依托SoC自带NPU提供的算力支持，可高效运行AI人像识别、自然语言搜索、图片文字提取、特殊证件识别、智能素材整理等NAS场景高频AI任务。同时支持算力扩展和本地一键部署开源大模型，所有数据本地计算、不上传云端，充分保障用户隐私安全。</span></p><p style="line-height: 1.75em;"><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="margin-left: 28px; line-height: 1.75em;"><span style="font-size:16px;font-family:Wingdings">l<span style="font:9px &#39;Times New Roman&#39;">&nbsp; </span></span><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">多媒体功能方面，主控板提供丰富的音视频编解码与转码能力，可满足AI NAS场景下的影视照片播放、在线预览、多终端流媒体推送等需求，覆盖家庭影音、内容创作者素材管理等多元场景。</span></p><p style="line-height: 1.75em;"><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="line-height: 1.75em;"><span style="font-size: 16px;font-family:&#39;微软雅黑&#39;,sans-serif">基于全新主控方案，极空间新品完成从硬件整机、底层系统、上层应用全链路深度定制优化。硬件沿用经典“4+2”盘位架构，支持SATA硬盘与M.2 SSD混搭扩容，最高144TB海量存储，可满足家庭备份、生产创作素材归档、企业数据管理等全场景使用，全面贴合个人/家庭、SOHO内容创作工作室、小微企业等多维用户的生活和工作需求。软件方面，新品搭载极空间广受好评的ZOS智能系统，并针对RISC-V架构完全重构内核，优化硬件调度与多任务协同，充分发挥硬件平台的全部潜力。凭借强劲NPU算力，AI相册智能识别、自然语义检索更精准快速，配合本地AI大模型，可离线享受智能问答、内容创作、办公协助等多种AI智能服务，数据全程本地分析处理，充分保障用户隐私和数据安全。</span></p><p style="line-height: 1.75em;"><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="line-height: 1.75em;"><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">从“能用”到“好用”，RISC-V正在消费级高性能计算场景中落地。作为中国RISC-V产业的核心推动者，奕斯伟计算自研的RISC-V架构芯片与方案已实现车载、商业显示、办公设备、边缘计算等多场景规模化应用，构建起覆盖多领域、全链路的软硬件生态体系。这一体系在多场景规模化部署中持续积累实战数据与工程经验，反向驱动底层技术不断迭代。</span></p><p style="line-height: 1.75em;"><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="line-height: 1.75em;"><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">基础软件层面，带动Linux内核与驱动、文件系统、容器及虚拟化能力持续优化；信息安全层面，推动安全启动、可信执行环境等关键能力成熟落地；网络层面，依托边缘盒子应用，促进家庭网络互联与边缘计算协同能力不断提升；AI能力层面，借助端侧AI规模化落地，加速完善推理框架适配、算子库优化、模型量化及移植工具链等RISC-V AI软件栈。</span></p><p style="line-height: 1.75em;"><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="line-height: 1.75em;"><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">依托这套日渐成熟的生态体系，AI NAS可高效复用标准化软硬件成果，同步升级算力、安全与本地化智能体验。针对相册智能分类、监控解析、文档识别等AI NAS核心需求，奕斯伟计算端侧AI软件栈可实现高效本地运算，数据全程不出设备，精准匹配用户隐私绝对可控的核心需求。</span></p><p style="line-height: 1.75em;"><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">&nbsp;</span></p><p style="line-height: 1.75em;"><span style="font-size:16px;font-family:&#39;微软雅黑&#39;,sans-serif">本次奕斯伟计算与极空间的深度合作，进一步丰富和验证了RISC-V在AI NAS等多领域多场景的生态落地能力。未来，奕斯伟计算将持续聚焦技术创新、产品研发与生态共建，积极参与RISC-V应用生态与AI模型生态的建设，携手产业链伙伴推动RISC-V在更多垂直场景的创新应用！</span></p>            </div>
+            <div class="news-nav f-no-b-start">
+                <div class="nav-l tit-16 f-no-b-start">
+
+                                            <span class="f-no-s-center">上一篇：
+                        <a class="t-jh f-no" href="https://www.eswincomputing.com/news/info/113.html"
+                           title="奕斯伟计算 | CMS电子后视镜专用SoC EAI8800斩获ASIL-B与AEC-Q100双认证">
+                        奕斯伟计算 | CMS电子后视镜专用SoC EAI8800斩获ASIL-B与AEC-Q100双认证                        </a>
+                    </span>
+                    
+                                            <span class="f-no-s-center">
+                            下一篇：
+                        <a class="t-jh f-no" href="https://www.eswincomputing.com/news/info/111.html"
+                           title="RISC-V欧洲峰会 | 奕斯伟计算携多款RISC-V+AI产品亮相">
+                            RISC-V欧洲峰会 | 奕斯伟计算携多款RISC-V+AI产品亮相                        </a>
+                    </span>
+                    
+                </div>
+
+
+                <a href="https://www.eswincomputing.com/news.html" class="back-btn">返回</a>
+            </div>
+        </div>
+        <div class="rightbox">
+            <div class="tit3 tit-22 col-333 line-4">热门推荐</div>
+
+                                <a class="tit-18 col-222 por trans" title="奕斯伟计算 | 与SiFive签署黄金合作伙伴联盟MOU 深化RISC-V+AI技术与产业生态合作" href="https://www.eswincomputing.com/news/info/119.html"
+                       title="https://www.eswincomputing.com/news/info/119.html">
+                        奕斯伟计算 | 与SiFive签署黄金合作伙伴联盟MOU 深化RIS…                    </a>
+                                    <a class="tit-18 col-222 por trans" title="2026 RISC-V中国峰会 | 深度共创 重构RISC-V产业生态" href="https://www.eswincomputing.com/news/info/123.html"
+                       title="https://www.eswincomputing.com/news/info/123.html">
+                        2026 RISC-V中国峰会 | 深度共创 重构RISC-V产业生态                    </a>
+                                    <a class="tit-18 col-222 por trans" title="奕斯伟计算（01256.HK）登陆港交所，开启RISC-V+AI发展新阶段" href="https://www.eswincomputing.com/news/info/118.html"
+                       title="https://www.eswincomputing.com/news/info/118.html">
+                        奕斯伟计算（01256.HK）登陆港交所，开启RISC-V+AI发展…                    </a>
+                                    <a class="tit-18 col-222 por trans" title="奕斯伟计算 | EBC7700赋能边缘AI创新 斩获韩国Tech Day 2026奖项" href="https://www.eswincomputing.com/news/info/117.html"
+                       title="https://www.eswincomputing.com/news/info/117.html">
+                        奕斯伟计算 | EBC7700赋能边缘AI创新 斩获韩国Tech Day 2…                    </a>
+                                    <a class="tit-18 col-222 por trans" title="HICOOL 2026 全球创业大赛｜聚力RISC-V+AI  奕斯伟计算与全球创业者共赴开源芯未来" href="https://www.eswincomputing.com/news/info/116.html"
+                       title="https://www.eswincomputing.com/news/info/116.html">
+                        HICOOL 2026 全球创业大赛｜聚力RISC-V+AI  奕斯伟…                    </a>
+                                    <a class="tit-18 col-222 por trans" title="奕斯伟计算 | 获TISAX AL3最高等级认证 车规级信息安全能力达国际一线标准" href="https://www.eswincomputing.com/news/info/115.html"
+                       title="https://www.eswincomputing.com/news/info/115.html">
+                        奕斯伟计算 | 获TISAX AL3最高等级认证 车规级信息安全能…                    </a>
+                        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="w1400 contentbox f-no-b-start">
+        <div class="leftbox">
+
+
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241.05 23.52">
+                <path class="cls-1"
+                      d="M104.56,31.26v.39h-.39V53.22h-3.81l-11-15.28V53.22H85.51v-22h3.81l11,15.29V31.26ZM9.31,43.64H20.74V40.15H9.31v-5.4H21.5V31.26H5.5V49.74l-.38.38v3.1H21.88V49.74H9.31ZM37,40.53,32.16,39.2c-1.21-.33-2.76-1-2.66-2.57C29.59,35.26,31,34,33.65,34,36.47,34,38,35,38.46,37h3.81c-.26-2.61-2.07-6.55-8.62-6.55-4.94,0-8,3.1-8,6.18s1.79,5,4.85,5.89l4.62,1.28c2,.54,3.69,1.32,3.69,3.31S37,50.51,34,50.51a5,5,0,0,1-5.28-4.26H24.93C25.39,50.9,29,54,34,54a9.52,9.52,0,0,0,6.65-2.17,6.36,6.36,0,0,0,2-4.69C42.66,43.76,40.79,41.6,37,40.53Zm39.8,12.69h3.81v-22H76.75ZM65.13,46.64,60.94,31.26h-4L52.75,46.64,48.56,31.26h-4l6.19,22h4l4.19-15.37,4.19,15.37h4l6.19-22h-4Z"
+                      transform="translate(-5.12 -30.48)"/>
+                <path class="cls-1"
+                      d="M129.66,37.52a4.49,4.49,0,0,1-1.31,3.23,10.38,10.38,0,0,1-2.54,1.8L128,44.07a10.82,10.82,0,0,0,2.53-1.8,6,6,0,0,0,1.83-4.37V35.22h2.82v3.51A4.63,4.63,0,0,1,133.79,42l2.14,1.52h0a6,6,0,0,0,1.85-4.37V35.22h6.15V33h-9.14V31.27h-3V33h-9.14v2.18h7Zm-1.57-.63-2.43-.74a13.59,13.59,0,0,1-3.38,3.53l2.14,1.52A17.19,17.19,0,0,0,128.09,36.89Zm10.63.41a23.8,23.8,0,0,1,3.12,4.59l2.43-1.15A23.88,23.88,0,0,0,141,36.29Zm5.21,10.25V45.37h-9.14V43.48h-3v1.89h-9.14v2.18h7.94a13.21,13.21,0,0,1-8.28,3.36l1.32,2.31a13.16,13.16,0,0,0,9.67-4.84A13.19,13.19,0,0,0,143,53.22l1.32-2.31A13.21,13.21,0,0,1,136,47.55Z"
+                      transform="translate(-5.12 -30.48)"/>
+                <path class="cls-1"
+                      d="M151,47.54l2.62.8a16.45,16.45,0,0,1-3.35,4.8l-2.22-1.73A11.33,11.33,0,0,0,151,47.54Zm8.55,0h-11.5V45.36h1.83V35.21h-1.83V33h1.83V31.26h2.39V33h3.57V31.26h2.4V33h1.31v2.18h-1.31V45.36h1.31Zm-3.71-4.11H152.3v1.93h3.57Zm0-4.11H152.3v1.93h3.57Zm0-4.11H152.3v1.93h3.57Zm7.62,3.17V34.7a53,53,0,0,0,6.67-1.12l-.83-2.32a64.23,64.23,0,0,1-8.49,1.39v7.91c0,3.37-.08,6.72-1.73,10a23.75,23.75,0,0,0-2-3l-2.25,1.09a23.07,23.07,0,0,1,2,3.32L159,50.79c-.13.26-.28.51-.44.77l2.34,1.66c2.06-4.07,2.62-6.8,2.62-12.66h2.17V53.22h2.65V40.56h2.13V38.38Z"
+                      transform="translate(-5.12 -30.48)"/>
+                <path class="cls-1"
+                      d="M179.6,35.78V53.22H177v-13q-.62.91-1.29,1.8l-2.17-1.55a37.57,37.57,0,0,0,5.23-9.25l2.49.92C180.73,33.41,180.19,34.61,179.6,35.78Zm9.75,7.12V40.72h5.86V38.54h-5.86V36.36h6.39V34.18h-6.39V31.26H186.7v2.92h-5.59v2.18h5.59v2.18h-5.2v2.18h5.2V42.9h-6v2.19h6v8.13h2.65V45.09h4V47.4A4,4,0,0,1,192,50.23l2.15,1.54A6.08,6.08,0,0,0,196,47.4V42.9Z"
+                      transform="translate(-5.12 -30.48)"/>
+                <path class="cls-1"
+                      d="M207.82,45.84a12.44,12.44,0,0,0,.9,2.59c-4.77,3.44-5.64,4.13-6.09,4.72a12,12,0,0,0-1.38-2.63,2.82,2.82,0,0,0,1.28-2.21V41.17h-3.46v-2.8h6.33V47.5Zm-3-9a30.89,30.89,0,0,0-3.86-3.75l1.78-1.8a31.65,31.65,0,0,1,4,3.49ZM221,41.45h-5.45v11.8h-3V41.45h-5.69V38.51h5.69V31.18h3v7.33H221Z"
+                      transform="translate(-5.12 -30.48)"/>
+                <path class="cls-1"
+                      d="M246.17,49.4h-5v3.8h-2.92V49.4H232.9c-.66,1.52-2.32,2.9-6,3.85a10.18,10.18,0,0,0-1.81-2.07,9.2,9.2,0,0,0,4.44-1.78h-4.75V47.17h5.65V45.72h-2.89V36.61h2.37a10.53,10.53,0,0,0-.95-1.75h-.5a15.41,15.41,0,0,1-2.06,2.32,14.74,14.74,0,0,0-2.28-1.56,12.36,12.36,0,0,0,3.65-4.73l2.64.72c-.17.33-.33.68-.52,1h5.24V34.5a10.36,10.36,0,0,0,2.25-3.61l2.68.64c-.14.36-.3.74-.47,1.1h6.53v2.23h-3.49a7.67,7.67,0,0,1,.76,1l-1.59.71h2.11v9.11h-2.73v1.45h5ZM230.36,38.3v.83H240.9V38.3Zm0,3.27H240.9v-.88H230.36Zm0,2.47H240.9v-.88H230.36Zm1.47-9.18a6.49,6.49,0,0,1,.62,1.18l-1.56.57H236A23,23,0,0,0,234,35.54a6.49,6.49,0,0,0,.81-.68Zm6.41,12.31V45.72h-5v1.45Zm0-12.31a14.85,14.85,0,0,1-1.5,1.75h4.06a16,16,0,0,0-1.3-1.75Z"
+                      transform="translate(-5.12 -30.48)"/>
+            </svg>
+
+            <div class="linkbox por">
+                <div class="sp tit-15 col-666 f-no-b-center">快速链接
+                    <svg t="1639200262646" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg" p-id="1186" width="200" height="200">
+                        <path d="M373.504 169.990144l343.701504 340.07552-341.477376 345.111552c-15.1552 15.154176-15.100928 39.7824 0.116736 55.000064 15.220736 15.220736 39.844864 15.271936 54.99392-3.771392L795.10528 542.139392c4.916224-5.499904 10.561536-11.995136 11.497472-15.504384 5.75488-14.301184 2.874368-31.873024-8.63744-46.317568l-369.355776-369.3568c-15.284224-11.387904-40.022016-11.447296-55.243776 3.776512-15.217664 15.220736-15.158272 39.958528 0.13312 55.251968l0.00512 0.001024z"
+                              p-id="1187"></path>
+                    </svg>
+                </div>
+                <div class="linkitem tit-14 col-666">
+                                                                <a class="trans" href="http://www.eswin.com/" title="北京奕斯伟科技集团有限公司"
+                           target="_blank">北京奕斯伟科技集团有限公司</a>
+                                    </div>
+            </div>
+            <div class="wxbox f-no">
+                
+                                    <div class="item f-no-col-c-center">
+                        <img src="https://www.eswincomputing.com/bocupload/2022/06/20/16556932363472qgw0l.jpg" alt="奕斯伟计算微信公众号">
+                        <p class="tit-15 col-999 line-6 text-center">奕斯伟计算<br>微信公众号</p>
+                    </div>
+                
+                                    <div class="item f-no-col-c-center">
+                        <img src="https://www.eswincomputing.com/bocupload/2022/06/20/16556932440212fcw6v.jpg" alt="奕斯伟招聘微信公众号">
+                        <p class="tit-15 col-999 line-6 text-center">奕斯伟招聘<br>微信公众号</p>
+                    </div>
+                
+            </div>
+        </div>
+        <div class="rightbox f-no-b-start">
+            <div class="item f-no-col-c-start">
+                <a href="https://www.eswincomputing.com/about.html " class="tit2 tit-20 col-333 line-4 text-bold">关于我们</a>
+
+                <a href="https://www.eswincomputing.com/about.html" title=""
+                   class="tit3 trans col-999 tit-18 line-6">公司简介 </a>
+                <a href="https://www.eswincomputing.com/about.html?md=1" title="" class="tit3 trans col-999 tit-18 line-6">
+                    业务网络 </a>
+                <!-- <a href="https://www.eswincomputing.com/about.html?md=2" title="" class="tit3 trans col-999 tit-18 line-6">
+                    公司动态 </a> -->
+                <a href="https://www.eswincomputing.com/about.html?md=2" title=""
+                   class="tit3 trans col-999 tit-18 line-6">行业协会伙伴 </a>
+
+            </div>
+            <div class="item f-no-col-c-start">
+                <a href="https://eswinchipch.zhiye.com/social?#zw" class="tit2 tit-20 col-333 line-4 text-bold">加入我们</a>
+
+                <a href="https://eswinchipch.zhiye.com/social?#zw" title=""
+                   class="tit3 trans col-999 tit-18 line-6">社会招聘</a>
+                <a href="https://eswinchipch.zhiye.com/campus?#zw" title="" class="tit3 trans col-999 tit-18 line-6">
+                    校园招聘 </a>
+                <a href="https://eswinchipch.zhiye.com/intern?#zw" title="" class="tit3 trans col-999 tit-18 line-6">实习生招聘 </a>
+                <a href="https://neitui.zhiye.com/eswin#vertify%2Fwechat" title=""
+                   class="tit3 trans col-999 tit-18 line-6">内部推荐专区 </a>
+                <a href="https://www.eswincomputing.com/join/welfare.html " title="" class="tit3 trans col-999 tit-18 line-6">员工福利 </a>
+                <!-- <a href="javaScript:;" title="" class="tit3 trans col-999 tit-18 line-6">活动专区 </a> -->
+            </div>
+
+            <div class="item f-no-col-c-start">
+                <a href="https://www.eswincomputing.com/investor/contact.html" class="tit2 tit-20 col-333 line-4 text-bold">投资者关系</a>
+
+                <!--  -->
+
+                <a href="https://www.eswincomputing.com/investor/prospectus.html" title="" class="tit3 trans col-999 tit-18 line-6">信息披露</a>
+                <a href="https://www.eswincomputing.com/investor/court.html" title="" class="tit3 trans col-999 tit-18 line-6">公司治理</a>
+                <a href="https://www.eswincomputing.com/investor/about.html" title="" class="tit3 trans col-999 tit-18 line-6">公司信息</a>
+                <a href="https://www.eswincomputing.com/investor/activity.html" title="" class="tit3 trans col-999 tit-18 line-6">投资者活动</a>
+                <a href="https://www.eswincomputing.com/investor/contact.html" title="" class="tit3 trans col-999 tit-18 line-6">投资者联络</a>
+                <!-- <a href="https://www.eswincomputing.com/investor/announcement.html" title="" class="tit3 trans col-999 tit-18 line-6">公司公告</a> -->
+            </div>
+            <div class="item f-no-col-c-start">
+                <a href="https://www.eswincomputing.com/contact.html" class="tit2 tit-20 col-333 line-4 text-bold">联系我们</a>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="f-bot f-no-c-center tit-14 col-999">
+        Copyright ©2024 北京奕斯伟计算技术股份有限公司版权所有        <a href="http://beian.miit.gov.cn/" target="_blank">京ICP备2021040528号</a> <img src="https://www.bocweb.cn/static/web/img/an.png"/>京公网安备 11030102011303号        <script type="text/javascript" id="cnzz_js">document.write(unescape("%3Cspan id='cnzz_stat_icon_1281144872'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1281144872%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+</div>
+<style>
+    #cnzz_stat_icon_1281144872{
+        /* display: none; */
+        position: absolute;
+        opacity: 0;        
+        visibility: hidden;
+        z-index: -1;
+    }
+</style>
+<script type="text/javascript">
+    $(function () {
+        $(".linkbox").click(function () {
+            $(this).find(".linkitem").stop().slideToggle();
+        })
+    })
+</script>
+<script src="https://www.eswincomputing.com/bocstatic/web/js/main.js?v=v51" type="text/javascript" charset="utf-8"></script>
+<script>
+    $(function () {
+        $(".warp-header4").addClass("active");
+
+        $(".header4").addClass("on");
+    })
+</script>
+</body>
+</html>

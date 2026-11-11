@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""Reproduce the strict lower-bound calculation in MU capacity research.
+"""Reproduce the conditional project-increment threshold in MU research.
 
-This is not a forecast of Micron's total output.  It only converts the public
-relative Tongluo Phase 1 statement into WSPM and annual-average equivalents.
+This is not a forecast of Micron's total output or a guaranteed net increase.
+It converts the historical third-party Tongluo Phase 1 forecast into WSPM and
+annual-average equivalents. Retirements, downtime and product allocation must
+be modeled separately. The 385k upper baseline is an analyst sensitivity.
 """
 
 from __future__ import annotations
@@ -36,7 +38,7 @@ def main() -> None:
     share = inputs["tongluo_share"]
 
     tongluo_end = tuple(base * share for base in base_range)
-    print("# Micron Tongluo Phase 1: strict lower-bound calculation")
+    print("# Micron Tongluo Phase 1: conditional project-increment threshold")
     print(f"2026Q4 DRAM baseline (third-party): {base_range[0]:.0f}–{base_range[1]:.0f} kWSPM")
     print(
         "Tongluo 2027H2 end run-rate lower bound: "
@@ -56,6 +58,9 @@ def main() -> None:
         )
     print()
     print("Idaho Fab 1 is deliberately excluded: public information gives first-wafer timing, not WSPM.")
+    print("This is a gross project scenario, not a guaranteed company net-capacity floor.")
+    print("385 kWSPM is a historical sensitivity upper bound, not an independent source estimate.")
+    print("Latest 2026-09-30 company timing: meaningful Tongluo shipments in mid-calendar 2027.")
 
 
 if __name__ == "__main__":

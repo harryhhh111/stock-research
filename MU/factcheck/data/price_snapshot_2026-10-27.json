@@ -1,0 +1,18 @@
+{
+  "retrieved": "2026-10-27",
+  "currency": "USD",
+  "source_dram": "https://www.trendforce.com/price/dram/lpddr_spot",
+  "source_nand": "https://www.trendforce.com/price/flash/flash_spot",
+  "historical_note": "Old values transcribed from the existing dated September research; the eTT old row has no separately preserved quote timestamp. These are not fixed-weight price indices or manufacturer ASP.",
+  "rows": [
+    {"item": "DDR5 16Gb 4800/5600 branded spot IC", "quote_at": "2026-10-27 11:00 GMT+8", "low": 47.20, "high": 72.50, "average": 61.333, "old_average": 54.333, "old_quote": "2026-09-14"},
+    {"item": "DDR5 16Gb eTT spot IC", "quote_at": "2026-10-27 11:00 GMT+8", "low": 28.60, "high": 30.20, "average": 29.30, "old_average": 24.20, "old_quote": "September research snapshot, individual timestamp not retained"},
+    {"item": "DDR4 16Gb 3200 branded spot IC", "quote_at": "2026-10-27 11:00 GMT+8", "low": 45.60, "high": 115.00, "average": 82.623, "old_average": 89.25, "old_quote": "2026-09-14"},
+    {"item": "DDR4 8Gb 3200 branded spot IC", "quote_at": "2026-10-27 11:00 GMT+8", "low": 25.80, "high": 84.00, "average": 47.043, "old_average": 45.214, "old_quote": "2026-09-14"},
+    {"item": "DDR5 UDIMM 16GB spot module", "quote_at": "2026-10-19 14:40 GMT+8", "low": 220, "high": 270, "average": 240, "old_average": 234, "old_quote": "2026-09-07"},
+    {"item": "DDR5 RDIMM 32GB spot module", "quote_at": "2026-10-19 14:40 GMT+8", "low": 2100, "high": 2370, "average": 2165, "old_average": 1900, "old_quote": "2026-09-07"},
+    {"item": "512Gb TLC wafer quotation item, not entire wafer", "quote_at": "2026-10-19 14:40 GMT+8", "low": 16.80, "high": 21.00, "average": 18.592, "old_average": 20.708, "old_quote": "2026-08-31"},
+    {"item": "256Gb TLC wafer quotation item, not entire wafer", "quote_at": "2026-10-19 14:40 GMT+8", "low": 16.80, "high": 20.00, "average": 18.365, "old_average": 16.808, "old_quote": "2026-08-31"},
+    {"item": "Samsung 990 Pro 1TB street SSD", "quote_at": "2026-10-16 10:30 GMT+8", "low": 239.99, "high": 259.99, "average": 249.99, "old_average": 239.99, "old_quote": "2026-09-11"}
+  ]
+}

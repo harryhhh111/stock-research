@@ -1,0 +1,27 @@
+{
+  "checked": "2026-10-21",
+  "quote_time": "2026-10-21 10:35 HKT delayed",
+  "price_hkd": 403.2,
+  "shares_million_rounded": 9000,
+  "hkd_cny": 0.8509,
+  "fx_date": "2026-10-20",
+  "profit_fy2025": 224842,
+  "profit_h1_2025": 103449,
+  "profit_h1_2026": 114115,
+  "adj_profit_fy2025": 259626,
+  "adj_profit_h1_2025": 124381,
+  "adj_profit_h1_2026": 136320,
+  "fcf_fy2025": 182600,
+  "fcf_h1_2025": 90100,
+  "fcf_h1_2026": 42900,
+  "compute_prepaid": 51400,
+  "parent_equity_h1_2026": 1135853,
+  "dividend_hkd": 5.3,
+  "sources": {
+    "quote_shares": "https://stockanalysis.com/quote/hkg/0700/statistics/",
+    "fx": "https://uk.investing.com/currencies/hkd-cny-historical-data",
+    "financials": "2025-annual-report-mirror.pdf;2026-interim-report.pdf;roe_fcf_inputs.csv",
+    "calendar": "https://www.tencent.com/investors/",
+    "quote_note": "Shares rounded service data, market cap reconstructed. Ratios independently recomputed; not service PE. Amounts RMB million except price and FX."
+  }
+}

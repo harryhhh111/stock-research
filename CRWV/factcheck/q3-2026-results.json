@@ -1,0 +1,73 @@
+{
+  "q1": {
+    "revenue": 2078.0,
+    "op": -144.0,
+    "interest": -536.0,
+    "net": -740.0,
+    "ebitda": 1157.0,
+    "adj_op": 21.0,
+    "cfo": 2984.0,
+    "capex": -7695.0,
+    "sbc": 153.0,
+    "cash_capex": 7695.0,
+    "fcf": -4711.0,
+    "revenue_yoy_pct": 111.60896130346232,
+    "op_margin": -6.9297401347449465,
+    "net_margin": -35.611164581328204,
+    "ebitda_margin": 55.67853705486044,
+    "gross_margin": 65.54379210779597
+  },
+  "q2": {
+    "revenue": 2575.0,
+    "op": -49.0,
+    "interest": -640.0,
+    "net": -626.0,
+    "ebitda": 1510.0,
+    "adj_op": 128.0,
+    "cfo": 679.0,
+    "capex": -6422.0,
+    "sbc": 165.0,
+    "cash_capex": 6422.0,
+    "fcf": -5743.0,
+    "revenue_yoy_pct": 112.45874587458746,
+    "op_margin": -1.9029126213592233,
+    "net_margin": -24.310679611650485,
+    "ebitda_margin": 58.64077669902913,
+    "gross_margin": 65.86407766990291
+  },
+  "q3": {
+    "revenue": 3661.0,
+    "op": 207.0,
+    "interest": -846.0,
+    "net": -709.0,
+    "ebitda": 2256.0,
+    "adj_op": 379.0,
+    "cfo": 1975.0,
+    "capex": -9441.0,
+    "sbc": 160.0,
+    "cash_capex": 9441.0,
+    "fcf": -7466.0,
+    "revenue_yoy_pct": 168.20512820512818,
+    "op_margin": 5.6541928434853865,
+    "net_margin": -19.36629336246927,
+    "ebitda_margin": 61.622507511608845,
+    "gross_margin": 67.68642447418738,
+    "revenue_qoq_pct": 42.1747572815534
+  },
+  "ttm": {
+    "revenue": 9886,
+    "net": -2527,
+    "cfo": 7197,
+    "cash_capex": 27618,
+    "fcf": -20421
+  },
+  "balance": {
+    "cash": 4122,
+    "restricted_cash": 2282,
+    "debt_ex_leases": 46873,
+    "finance_leases": 649,
+    "operating_leases": 18697,
+    "net_debt_ex_leases": 42751,
+    "equity": 4025
+  }
+}

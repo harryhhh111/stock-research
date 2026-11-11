@@ -1,0 +1,110 @@
+{
+  "unit": "USD million; EPS USD",
+  "method": "All quarters directly disclosed; 2025 Q1-Q3 comparatives in respective 2026 releases; Q4 from 2025 release",
+  "sources": {
+    "2026Q1": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q1/2026q1-alphabet-earnings-release.pdf",
+    "2026Q2": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf",
+    "2026Q3": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf",
+    "2025Q4": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/2025q4-alphabet-earnings-release.pdf"
+  },
+  "quarters": {
+    "2025Q4": {
+      "revenue": 113828,
+      "cloud": 17664,
+      "cloud_op": 5313,
+      "op": 35934,
+      "common_net": 34455,
+      "cfo": 52402,
+      "capex": 27851,
+      "sbc": 7071,
+      "eps": 2.82,
+      "fcf": 24551,
+      "cloud_margin": 0.30078125,
+      "cloud_share": 0.15518150191517024
+    },
+    "2025Q1": {
+      "revenue": 90234,
+      "cloud": 12260,
+      "cloud_op": 2177,
+      "op": 30606,
+      "common_net": 34540,
+      "cfo": 36150,
+      "capex": 17197,
+      "sbc": 5516,
+      "eps": 2.81,
+      "fcf": 18953,
+      "cloud_margin": 0.17756933115823817,
+      "cloud_share": 0.13586896291863376
+    },
+    "2025Q2": {
+      "revenue": 96428,
+      "cloud": 13624,
+      "cloud_op": 2826,
+      "op": 31271,
+      "common_net": 28196,
+      "cfo": 27747,
+      "capex": 22446,
+      "sbc": 5998,
+      "eps": 2.31,
+      "fcf": 5301,
+      "cloud_margin": 0.207428068115091,
+      "cloud_share": 0.14128676318081884
+    },
+    "2025Q3": {
+      "revenue": 102346,
+      "cloud": 15157,
+      "cloud_op": 3594,
+      "op": 31228,
+      "common_net": 34979,
+      "cfo": 48414,
+      "capex": 23953,
+      "sbc": 6368,
+      "eps": 2.87,
+      "fcf": 24461,
+      "cloud_margin": 0.23711816322491258,
+      "cloud_share": 0.1480956754538526
+    },
+    "2026Q1": {
+      "revenue": 109896,
+      "cloud": 20028,
+      "cloud_op": 6598,
+      "op": 39696,
+      "common_net": 62578,
+      "cfo": 45790,
+      "capex": 35674,
+      "sbc": 6751,
+      "eps": 5.11,
+      "fcf": 10116,
+      "cloud_margin": 0.32943878570002,
+      "cloud_share": 0.18224503166630268
+    },
+    "2026Q2": {
+      "revenue": 119796,
+      "cloud": 24768,
+      "cloud_op": 8814,
+      "op": 40770,
+      "common_net": 112107,
+      "cfo": 39069,
+      "capex": 44924,
+      "sbc": 7957,
+      "eps": 9.11,
+      "fcf": -5855,
+      "cloud_margin": 0.3558624031007752,
+      "cloud_share": 0.20675147751177
+    },
+    "2026Q3": {
+      "revenue": 127577,
+      "cloud": 30709,
+      "cloud_op": 11121,
+      "op": 40576,
+      "common_net": 26170,
+      "cfo": 42290,
+      "capex": 51355,
+      "sbc": 8630,
+      "eps": 2.12,
+      "fcf": -9065,
+      "cloud_margin": 0.36214139177439836,
+      "cloud_share": 0.2407095322824647
+    }
+  }
+}

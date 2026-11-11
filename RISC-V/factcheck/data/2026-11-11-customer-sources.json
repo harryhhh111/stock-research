@@ -1,0 +1,48 @@
+[
+  {
+    "url": "https://www.andestech.com/en/partners/licensees/mvc/",
+    "file": "2026-11-11-andes-customer-cases.html",
+    "retrieved": "2026-11-11",
+    "sha256": "991268275e90dee495500b23c2a86f28aa7b874b6fb866f9f32a63e4301a0eae"
+  },
+  {
+    "url": "https://www.andestech.com/en/2026/02/05/phison-selects-andes-risc-v-cores-for-its-first-aidaptiv-ai-solution-marking-a-major-milestone-in-ai-architecture/",
+    "file": "2026-11-11-andes-phison-2026.html",
+    "retrieved": "2026-11-11",
+    "sha256": "944df74c1f0bb4f8f697b33a3009dbfa984421e7c0c5ed6ea6fcb92f3007f3a3"
+  },
+  {
+    "url": "https://www.andestech.com/en/2023/04/25/andes-technologys-n25f-risc-v-processor-enables-superior-performance-and-low-power-for-phisons-x1-enterprise-ssd-controller/",
+    "file": "2026-11-11-andes-phison-x1.html",
+    "retrieved": "2026-11-11",
+    "sha256": "042b6f2b8e67e7ec1fef926f903052ed71903a520603fc59f4bbe56f9b5a1d0f"
+  },
+  {
+    "url": "https://www.andestech.com/en/2026/06/01/axelera-ai-and-andes-technology-partner-to-power-next-generation-europa-ai-platform-with-high-performance-risc-v-ax65-cores/",
+    "file": "2026-11-11-andes-axelera-2026.html",
+    "retrieved": "2026-11-11",
+    "sha256": "d48426a98fa54baf1e71294be6f5e7bb8fb713acff98d46be668210c22dc61d3"
+  },
+  {
+    "url": "https://www.renesas.com/en/products/rz-five?page=1&recommended=on&tab=software-tools",
+    "error": "403 Client Error: Forbidden for url: https://www.renesas.com/en/products/rz-five?page=1&recommended=on&tab=software-tools",
+    "verification": "2026-11-11已通过web工具读取该官方网页；本地requests抓取403，因此没有本地HTML原件，保留在线来源。"
+  },
+  {
+    "url": "https://www.sifive.com/blog/sifive-intelligence-x280-as-ai-compute-host-google",
+    "file": "2026-11-11-sifive-google-case.html",
+    "retrieved": "2026-11-11",
+    "sha256": "557fee30468f34fc2f028e314c70bb9374f9eb0b3f3ecf36911cd2d671ac2466"
+  },
+  {
+    "url": "https://www.microchip.com/en-us/about/news-releases/products/industry's-first-risc-v-soc-fpga-architecture-brings-real-time-to-linux-giving-developers-the-freedom-to-innovate-in-low-power-secure-and-reliable-designs",
+    "error": "403 Client Error: Forbidden for url: https://www.microchip.com/en-us/about/news-releases/products/industry's-first-risc-v-soc-fpga-architecture-brings-real-time-to-linux-giving-developers-the-freedom-to-innovate-in-low-power-secure-and-reliable-designs",
+    "verification": "2026-11-11已通过web工具读取该官方网页；本地requests抓取403，因此没有本地HTML原件，保留在线来源。"
+  },
+  {
+    "url": "https://www.eswincomputing.com/news/info/112.html",
+    "file": "2026-11-11-eswin-zspace-customer.html",
+    "retrieved": "2026-11-11",
+    "sha256": "6af3114e4dceef50fe30ccc825788334d4f17da0455a48faa63418a1b4b92c76"
+  }
+]

@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-05",
+  "unit": "USD million",
+  "ttm": {
+    "MSFT": {
+      "cfo": 195878,
+      "capex": 135921,
+      "fcf_before_finance_lease_principal": 59957,
+      "capex_to_cfo_pct": 69.39064111334606
+    },
+    "AMZN": {
+      "cfo": 168300,
+      "capex": 215192,
+      "fcf_before_finance_lease_principal": -46892,
+      "capex_to_cfo_pct": 127.86215092097446
+    },
+    "GOOG": {
+      "cfo": 179551,
+      "capex": 159804,
+      "fcf_before_finance_lease_principal": 19747,
+      "capex_to_cfo_pct": 89.00201057081274
+    },
+    "META": {
+      "cfo": 133087,
+      "capex": 104438,
+      "finance_lease_principal": 3523,
+      "fcf_before_finance_lease_principal": 28649,
+      "capex_to_cfo_pct": 78.47347975384523
+    },
+    "ORCL": {
+      "cfo": 46940,
+      "capex": 75660,
+      "fcf_before_finance_lease_principal": -28720,
+      "capex_to_cfo_pct": 161.1844908393694
+    }
+  },
+  "totals": {
+    "cfo": 723756,
+    "capex": 691015,
+    "fcf_before_finance_lease_principal": 32741,
+    "capex_to_cfo_pct": 95.47623784811455
+  },
+  "guidance_growth_pct": {
+    "AMZN": [
+      71.44638403990025,
+      71.44638403990025
+    ],
+    "GOOG": [
+      113.23826916137216,
+      124.17356501580153
+    ],
+    "META": [
+      86.94177110018695,
+      100.78930970020079
+    ],
+    "ORCL": [
+      61.68729676805058,
+      70.66992436627561
+    ]
+  },
+  "quarters": {
+    "AMZN": {
+      "fcf": [
+        -18171,
+        -8821,
+        -34837
+      ],
+      "capex_q2_qoq_pct": 22.634210347713957,
+      "capex_q3_qoq_pct": 42.52324380165289
+    },
+    "GOOG": {
+      "fcf": [
+        10116,
+        -5855,
+        -9065
+      ],
+      "capex_q2_qoq_pct": 25.92924819196054,
+      "capex_q3_qoq_pct": 14.31528804202653
+    },
+    "META": {
+      "fcf": [
+        13225,
+        1749,
+        -1156
+      ],
+      "capex_q2_qoq_pct": 58.48947368421054,
+      "capex_q3_qoq_pct": 12.715438514927113
+    }
+  }
+}

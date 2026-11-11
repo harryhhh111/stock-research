@@ -1,0 +1,26 @@
+schema_version: 2
+entity_id: topic:china-15th-five-year-plan
+kind: topic
+name: 十五五
+aliases: [十五五规划, 第十五个五年规划]
+securities: []
+primary_document: 十五五规划研究.md
+research_scope: 国家十五五规划及配套政策的产业与投资影响；已完成首轮政策核验，行业订单与公司估值待深入。
+documents: []
+related_entities: []
+sections:
+  thesis:
+    path: 十五五规划研究.md
+    heading_path: ["十五五规划研究", "核心判断"]
+  open_questions:
+    path: 十五五规划研究.md
+    heading_path: ["十五五规划研究", "待验证问题"]
+  metrics:
+    path: 十五五规划研究.md
+    heading_path: ["十五五规划研究", "跟踪指标"]
+  risks:
+    path: 十五五规划研究.md
+    heading_path: ["十五五规划研究", "主要风险"]
+  research_metadata:
+    path: 十五五规划研究.md
+    heading_path: ["十五五规划研究", "研究日期与数据截止日"]

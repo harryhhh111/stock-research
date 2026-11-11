@@ -1,0 +1,10 @@
+{
+  "checked_on": "2026-10-29",
+  "unit": "亿元",
+  "annual_source": "https://www.miit.gov.cn/xwfb/szyw/art/2026/art_a0f73af7d13b44b080ae9b71903939af.html",
+  "prior_source": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202603/t20260316_3985331.htm",
+  "execution_source": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202610/t20261009_4002434.htm",
+  "special_treasury": {"2025": 13000, "2026": 13000, "2026_h1_issued": 5720},
+  "local_special": {"2025": 44000, "2026": 44000, "2026_h1_issued": 20700},
+  "note": "人工摘录的官方引用值，非下载原始数据；专项债上半年值由2.07万亿元换算，精度有限。原输入保留不覆盖。"
+}

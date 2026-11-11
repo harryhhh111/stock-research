@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-29",
+  "price_snapshot": "2026-10-28 19:59 EDT GOOG StockAnalysis",
+  "price": 290.5,
+  "shares_million": 12294,
+  "assumed_tax": 0.2,
+  "assumed_annual_preferred_dividend_million": 1187.5,
+  "ttm_op": 156976,
+  "operating_earnings_proxy_million": 124393.3,
+  "proxy_eps": 10.118212136001302,
+  "proxy_pe": 28.710605796292885,
+  "excluded": "net interest and other non-operating items; full conversion dilution not modeled",
+  "multiple_sensitivity": {
+    "20": 202.36424272002606,
+    "25": 252.95530340003256,
+    "30": 303.5463640800391
+  },
+  "growth_sensitivity": {
+    "0.2": 23.925504830244073,
+    "0.3": 22.085081381763757
+  }
+}

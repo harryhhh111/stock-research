@@ -1,0 +1,27 @@
+{
+  "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+  "checked": "2026-11-04",
+  "units": "USD billion",
+  "debt_face": 180.887,
+  "discount_cost": 0.935,
+  "debt_current": 6.827,
+  "debt_noncurrent": 173.125,
+  "cash": 55.783,
+  "securities": 58.443,
+  "operating_lease": 100.288,
+  "finance_lease": 14.495,
+  "equity": 613.601,
+  "commitments": [
+    294.254,
+    121.492,
+    17.955,
+    11.565,
+    164.922,
+    159.64,
+    94.759,
+    18.994
+  ],
+  "commitments_total": 883.581,
+  "RPO": 578,
+  "RPO_years": 6.1
+}

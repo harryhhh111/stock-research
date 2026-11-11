@@ -1,0 +1,81 @@
+{
+  "expense_bridges": {
+    "2023": {
+      "gross_M": 1056.995,
+      "rd_M": 766.251,
+      "selling_M": 343.1,
+      "admin_M": 186.804,
+      "credit_loss_M": 29.334,
+      "total_expenses_M": 1325.489,
+      "expense_ratio_pct": 125.30406932005316,
+      "operating_M": -268.494,
+      "residual_thousand": 0
+    },
+    "2024": {
+      "gross_M": 1380.861,
+      "rd_M": 1083.192,
+      "selling_M": 384.817,
+      "admin_M": 186.092,
+      "credit_loss_M": 2.839,
+      "total_expenses_M": 1656.94,
+      "expense_ratio_pct": 119.93714110750071,
+      "operating_M": -276.079,
+      "residual_thousand": 0
+    },
+    "2025": {
+      "gross_M": 1477.17,
+      "rd_M": 1284.555,
+      "selling_M": 399.635,
+      "admin_M": 189.368,
+      "credit_loss_M": 23.453,
+      "total_expenses_M": 1897.011,
+      "expense_ratio_pct": 128.33362761274455,
+      "operating_M": -419.841,
+      "residual_thousand": 0
+    },
+    "2026Q1": {
+      "gross_M": 325.982,
+      "rd_M": 380.315,
+      "selling_M": 93.196,
+      "admin_M": 47.103,
+      "credit_loss_M": 8.324,
+      "total_expenses_M": 528.938,
+      "expense_ratio_pct": 162.07393153488826,
+      "operating_M": -202.956,
+      "residual_thousand": 0
+    },
+    "2026H1": {
+      "gross_M": 891.467,
+      "rd_M": 837.135,
+      "selling_M": 240.151,
+      "admin_M": 114.812,
+      "credit_loss_M": 6.348,
+      "total_expenses_M": 1198.446,
+      "expense_ratio_pct": 134.26116064676802,
+      "operating_M": -306.979,
+      "residual_thousand": 0
+    },
+    "2026Q2": {
+      "gross_M": 565.485,
+      "rd_M": 456.82,
+      "selling_M": 146.955,
+      "admin_M": 67.709,
+      "credit_loss_M": -1.976,
+      "total_expenses_M": 669.508,
+      "expense_ratio_pct": 118.23185882278149,
+      "operating_M": -104.023,
+      "residual_thousand": 0
+    }
+  },
+  "unresolved_flags": [
+    {
+      "company": "andes",
+      "period": "2026Q3",
+      "gross_margin_pct": 100.03744976465163,
+      "implied_cogs_M": -0.160000000000025,
+      "status": "原因未核实；不据此推断定价权或盈利改善",
+      "next_evidence": "原始单季成本、同期重述及成本冲回附注"
+    }
+  ],
+  "note": "勾稽通过只证明输入算术一致；Q3输入为二手公告，未证明原始披露及经济原因。"
+}

@@ -1,4 +1,4 @@
-# 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+# 更新日期：2026-10-29；拟上市证券待正式交易后登记。
 schema_version: 2
 entity_id: company:anthropic
 kind: company
@@ -6,18 +6,42 @@ name: Anthropic
 aliases:
 - Anthropic
 securities: []
-primary_document: ../../AI 总账.md
-documents: []
+primary_document: Anthropic公司研究.md
+documents:
+- path: ../../AI 总账.md
+  role: supplement
+- path: 术语.md
+  role: supplement
+- path: factcheck/核验结果.md
+  role: source
 related_entities: []
 sections:
-  thesis: null
-  open_questions: null
-  metrics: null
-  risks: null
-  research_metadata: null
-research_scope: AI 投入、收入与融资台账专题；限定章节为跨公司表，只使用本公司对应行，不把其他公司的数据或观点归于本公司。
-primary_section:
-  heading_path:
-  - AI 总账 —— 需求端到底有多少钱，是不是泡沫
-  - 3. 台账 C：终端付费（真实需求锚）
-  table_row: Anthropic
+  thesis:
+    path: Anthropic公司研究.md
+    heading_path:
+    - Anthropic 公司研究：增长、算力承诺与 IPO 估值
+    - 核心判断
+  open_questions:
+    path: Anthropic公司研究.md
+    heading_path:
+    - Anthropic 公司研究：增长、算力承诺与 IPO 估值
+    - 11. 跟踪指标、待验证问题与观点调整
+    - 待验证问题
+  metrics:
+    path: Anthropic公司研究.md
+    heading_path:
+    - Anthropic 公司研究：增长、算力承诺与 IPO 估值
+    - 11. 跟踪指标、待验证问题与观点调整
+    - 跟踪指标
+  risks:
+    path: Anthropic公司研究.md
+    heading_path:
+    - Anthropic 公司研究：增长、算力承诺与 IPO 估值
+    - 8. 治理、关联交易与主要风险
+    - 主要风险
+  research_metadata:
+    path: Anthropic公司研究.md
+    heading_path:
+    - Anthropic 公司研究：增长、算力承诺与 IPO 估值
+    - 研究日期与数据截止日
+research_scope: 公司基本面与IPO估值研究；三完整财年及2026半年，Q3媒体数据单列；拟上市尚未登记为已交易证券。

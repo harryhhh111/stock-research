@@ -1,0 +1,113 @@
+[
+  {
+    "id": "synergy-q3-2026",
+    "url": "https://www.srgresearch.com/articles/cloud-market-growth-rate-surges-to-well-over-50-per-year-q3-revenues-reach-168-billion",
+    "checked": "2026-11-04",
+    "file": "synergy-q3-2026.html",
+    "sha256": "ef513d5cdff65a82519ad0280249dc3168565711551812b28a757cff374d216c",
+    "bytes": 23153,
+    "status": "saved"
+  },
+  {
+    "id": "synergy-q3-2025",
+    "url": "https://www.srgresearch.com/articles/cloud-market-growth-rate-rises-again-in-q3-biggest-ever-sequential-increase",
+    "checked": "2026-11-04",
+    "file": "synergy-q3-2025.html",
+    "sha256": "decf820993af1ecd5ec93000d05e5b948776e5a55ea3661704cf0e990e63043e",
+    "bytes": 22704,
+    "status": "saved"
+  },
+  {
+    "id": "synergy-q3-2024",
+    "url": "https://www.srgresearch.com/articles/cloud-market-growth-surge-continues-in-q3-growth-rate-increases-for-the-fourth-consecutive-quarter",
+    "checked": "2026-11-04",
+    "file": "synergy-q3-2024.html",
+    "sha256": "36745d567814903e258dfa518ed5c23e7e809eaca417e8085d429aa49f66a41b",
+    "bytes": 23130,
+    "status": "saved"
+  },
+  {
+    "id": "synergy-q3-2023",
+    "url": "https://www.srgresearch.com/articles/ai-helps-to-stabilize-quarterly-cloud-market-growth-rate-microsoft-market-share-nudges-up-again",
+    "checked": "2026-11-04",
+    "file": "synergy-q3-2023.html",
+    "sha256": "319bfdcf9301d4ca768048e17a7b90e7febcc0793f86acd993b2e1aba377cd42",
+    "bytes": 22814,
+    "status": "saved"
+  },
+  {
+    "id": "nvidia-expansion",
+    "url": "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+    "checked": "2026-11-04",
+    "file": "nvidia-expansion.html",
+    "sha256": "35027759434073bffddbb4c9a6c0e476ed2af606d296c1b6964b47ddb5d6c06d",
+    "bytes": 159868,
+    "status": "saved"
+  },
+  {
+    "id": "anthropic-capacity",
+    "url": "https://www.anthropic.com/news/anthropic-amazon-compute",
+    "checked": "2026-11-04",
+    "file": "anthropic-capacity.html",
+    "sha256": "079aa0956a85fa79b136b95f7297b660db41d642a689b76a84db5645085fd582",
+    "bytes": 141884,
+    "status": "saved"
+  },
+  {
+    "id": "rainier",
+    "url": "https://www.aboutamazon.com/news/aws/aws-project-rainier-ai-trainium-chips-compute-cluster",
+    "checked": "2026-11-04",
+    "file": "rainier.html",
+    "sha256": "c75591fa514238b9df2219547df9014df61646063bda2d5c92926a9b439128db",
+    "bytes": 244388,
+    "status": "saved"
+  },
+  {
+    "id": "pa-salem",
+    "url": "https://www.amazoninnovationinpa.com/salem-township-innovation-campus/",
+    "checked": "2026-11-04",
+    "status": "fetch_failed",
+    "error": "403 Client Error: Forbidden for url: https://www.amazoninnovationinpa.com/salem-township-innovation-campus/"
+  },
+  {
+    "id": "pa-falls",
+    "url": "https://www.amazoninnovationinpa.com/falls-township-innovation-campus/",
+    "checked": "2026-11-04",
+    "status": "fetch_failed",
+    "error": "403 Client Error: Forbidden for url: https://www.amazoninnovationinpa.com/falls-township-innovation-campus/"
+  },
+  {
+    "id": "pa-kline",
+    "url": "https://www.amazoninnovationinpa.com/kline-township-innovation-campus/",
+    "checked": "2026-11-04",
+    "status": "fetch_failed",
+    "error": "403 Client Error: Forbidden for url: https://www.amazoninnovationinpa.com/kline-township-innovation-campus/"
+  },
+  {
+    "id": "mississippi",
+    "url": "https://www.aboutamazon.com/news/company-news/amazon-25-billion-mississippi-data-centers",
+    "checked": "2026-11-04",
+    "file": "mississippi.html",
+    "sha256": "fdaa8c4ecbcb43db04bf7582ddec600ef8c2f1f70eb6d9cc229a3160783202b4",
+    "bytes": 242862,
+    "status": "saved"
+  },
+  {
+    "id": "custom-chips-q3",
+    "url": "https://www.aboutamazon.com/news/company-news/amazon-custom-chips-demand-q3-2026-earnings",
+    "checked": "2026-11-04",
+    "file": "custom-chips-q3.html",
+    "sha256": "b1bad576e7f427709fe3a56542020147c0b72ebe7496cf7847a57491f17930a4",
+    "bytes": 191771,
+    "status": "saved"
+  },
+  {
+    "id": "aws-q3-commentary",
+    "url": "https://www.aboutamazon.com/news/company-news/aws-growth-ai-demand-q3-2026-earnings",
+    "checked": "2026-11-04",
+    "file": "aws-q3-commentary.html",
+    "sha256": "3b60dd2439c2c347b106905203899557ff5cc0afcbb5cc98b539bd0b888ab95a",
+    "bytes": 210310,
+    "status": "saved"
+  }
+]

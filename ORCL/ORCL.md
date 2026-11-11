@@ -1,9 +1,22 @@
 # Oracle（ORCL）研究笔记
 
-> 整理日期：2026-08-31 ｜ 最新财务更新：2026-09-10（FY2027 Q1）｜行情数据截止：2026-08-27
-> 研究重点：**Oracle 的数据中心业务**（OCI 扩张、资本开支、Stargate、融资结构）
-> 单位：全文统一用 $B（十亿美元）；财年口径：Oracle 财年截至 5 月 31 日，FY2026 = 2025-06-01 ~ 2026-05-31
-> 数据基准：财务报表与行情以 stock_data 库为准（标注【库核实】）；10-K 原文核对标注【10-K核实】；库外数据带来源链接
+## 研究摘要与我的判断
+
+Oracle通过数据库软件支持、云应用订阅及OCI基础设施服务赚钱。FY2027 Q1主要增长来自IaaS，但IaaS包括传统企业云，不能全部当AI收入。核心矛盾是算力合同转收入的速度，能否覆盖设备、租赁与供电投入。
+
+【我的推演】Q1增长及利润改善支持需求兑现，但预付款和增发仍是重要资金来源；TTM FCF为负，不能仅凭净利润或订单认定资本回报已兑现。当前保留观察，关键假设与反证见§10。
+
+## 研究日期与数据截止日
+
+- 修订/核验：2026-11-04。本轮为FY2027 Q1财报联动及融资/Jupiter期后事项；保留历史章节组织，不宣称完整研究验收通过。
+- 主体：Oracle Corporation集团；证券US / XNYS / ORCL；币种美元。财年截至5/31，FY2026＝2025-06-01～2026-05-31；FY2027 Q1＝2026-06-01～2026-08-31。
+- 三完整财年：FY2024～FY2026（保留更早历史）；最新期末8/31；TTM＝2025-09-01～2026-08-31。业绩稿9/10、10-Q提交9/11、电话会9/10（二手转录）分别核对。
+- 行情截止2026-11-03 NYSE常规收盘126.19美元；估值用8/31普通股本，跨时点限制见§8。11/2融资按“预计11/4交割”处理，未假定已到账。
+- 金额以B美元（1 B＝10亿）或M美元（1 M＝100万）；旧表$B/$M同义。EPS/股数单列单位；原始披露、指引、转述、复算与推演分开。
+- 容量台账：10/27公司设备使用披露及10/28投资者日转录已于11/4核对；全集团实际在用GW/GPU总数未取得，见§6.2。
+- 研究维护中；缺现时完整股本、完整EV/DCF、项目合同及最新信用评级复核等，见§12；同业四家公司TTM比较已按截至8/31～9/30最新窗口复算；neocloud完整TTM未在本轮完成。
+- [输入底表](factcheck/data/fy2027q1_inputs.json)、[网页提取片段](factcheck/data/fy2027q1_web_excerpts.json)、[复算结果](factcheck/fy2027q1_results.json)。新季度以原始披露优先，旧库取数保留为历史。
+
 
 ## 目录
 
@@ -13,7 +26,7 @@
 - 4. 盈利与负债（含信用评级分析）
 - 5. 竞争对手
 - 6. 专题：数据中心（OCI 基建）
-- 6+. 专题：两年股价复盘（独立文档：[股价复盘-2024-2026.md](/Users/vinci/Documents/stock_research/ORCL/股价复盘-2024-2026.md)）
+- 6+. 专题：两年股价复盘（独立文档：[股价复盘-2024-2026.md](股价复盘-2024-2026.md)）
 - 7. 订单与客户承诺（RPO）
 - 8. 估值与资金效率
 - 9. 值得注意的点
@@ -26,20 +39,20 @@
 
 Oracle 是企业级数据库与应用软件的老牌巨头，2016 年起向云转型，2024 年后因 AI 算力需求爆发，其云基础设施业务（OCI）成为增长引擎。当前（2026 年）市场已基本把 ORCL 当作"AI 基建股"定价：公司正以远超自身现金流的规模举债建设数据中心，承接 OpenAI 等 AI 客户的算力合同。
 
-关键身份变化：CEO 为 Clay Magouyrk（原 OCI 负责人）；创始人 Larry Ellison 仍是最大股东与 CTO。FY2026（截至 2026-05-31）营收 $67.4B，市值 $437.7B（2026-08-27，【库核实】daily_quote）。
+管理层为联席CEO Clay Magouyrk与Mike Sicilia，Larry Ellison为执行董事长与CTO（Q1电话会及10/28投资者日）。FY2026营收67.357B美元；Q1营收19.345B，TTM营收71.776B；当前估值限制见§8。
 
 ## 2. 业务模块
 
-Oracle 是单一经营分部，FY2026 起利润表按四条收入线披露：Cloud / Software / Hardware / Services（此前口径为 Cloud Services & License Support 等四线，新口径把"云"与"软件"彻底分开——本身就是转型完成的信号）【10-K核实】：
+Oracle按Cloud and software、Hardware、Services三个经营业务报告分部结果；合并损益表四条收入线与之不同（Q1 10-Q附注9）。FY2026起损益表按四条收入线披露：Cloud / Software / Hardware / Services（此前口径为 Cloud Services & License Support 等四线，新口径把"云"与"软件"彻底分开——本身就是转型完成的信号）【10-K核实】：
 
-1. **Cloud（云）**——IaaS（OCI 算力）+ SaaS（Fusion/NetSuite 等云应用订阅）。全部增长来自这里。
+1. **Cloud（云）**——IaaS（OCI 算力）+ SaaS（Fusion/NetSuite 等云应用订阅）。主要增长来自这里。
 2. **Software（软件）**——传统数据库/中间件：大头是存量客户的年度支持费（support），小头是新增许可（license，长期缓慢萎缩）。
 3. **Hardware（硬件）**——Exadata 一体机与服务器，规模小。
 4. **Services（服务）**——咨询实施，规模小、毛利薄。
 
 理解本项目要抓住的一条暗线：**Cloud 内部的 IaaS 再分两层**——
 - **企业级 OCI**（数据库上云、主权云、多云互联 Multicloud）：高毛利、需求稳定；
-- **AI 训练/推理算力（GPU 数据中心）**：即本研究的"数据中心业务"——重资产、低毛利（GPU 折旧+电力）、靠超长约（RPO）锁定需求。Oracle 正在从"软件公司"变成"软件现金流供养 AI 基建"的结构。
+- **AI 训练/推理算力（GPU 数据中心）**：是本研究的重点——需要设备、折旧和电力投入，通常通过多年合同安排需求；公司未单独披露该子业务利润，不能假定其精确毛利率。Oracle 正在从"软件公司"变成"软件现金流供养 AI 基建"的结构。
 
 竞争对手差异：Oracle 相对 AWS/Azure/Google 的差异化是数据库存量客户 + 全栈（应用+数据库+基础设施）+ 多云互联（Oracle Database@Azure/Google/AWS）；在 AI 算力上靠敢于接超大单（OpenAI $300B）抢位，代价是资产负债表激进扩张。
 
@@ -57,9 +70,9 @@ Oracle 是单一经营分部，FY2026 起利润表按四条收入线披露：Clo
 
 要点：
 
-- FY2026 营收 +17.3%，为十余年最快增速，驱动全部来自云（[Oracle Q4 FY2026 财报新闻稿](https://www.oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10/)，2026-06-10）。
+- FY2026 营收 +17.3%，为十余年最快增速，主要驱动来自云（[Oracle Q4 FY2026 财报新闻稿](https://www.oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10/)，2026-06-10）。
 - 营业利润率五年从 25.7% 抬到 30.6%——AI 重资产扩张尚未压垮利润率（折旧高峰在后头，见 §6）。
-- **净利含金量需打折**：FY2026 利润表含非经营净收益 +$3.5B（FY2025 仅 +$0.06B）【10-K核实，R4 利润表】，叠加重组费用 $1.8B。Q2 FY2026 单季净利 $6.1B 异常偏高即源于此一次性项目（具体构成疑与 Ampere 股权处置相关，待查附注）。
+- **净利含金量需打折**：FY2026 利润表含非经营净收益 +$3.5B（FY2025 仅 +$0.06B）【10-K核实，R4 利润表】，叠加重组费用 $1.8B。Q2 FY2026 单季净利 $6.1B 异常偏高即源于此一次性项目。本轮从本地10-K MD&A核到：税前Ampere处置收益约2.7B美元，其他投资净收益约0.380B；递延薪酬投资收益和利息收入同比增加约0.205B/0.202B。后两项是同比增量，不是全年余额。独立税后影响未还原，不能从净利直接减税前收益。
 
 ### 3.2 收入结构（四条收入线 + 云内部拆分）
 
@@ -81,10 +94,10 @@ FY2026 10-K 利润表（R4）+ 收入明细附注（R89）【10-K核实】，单
 
 结构判读：
 
-- **云已占半壁江山**（50.4%），且增长全部来自 IaaS（+77%）；SaaS 只有 +11%，是成熟的应用订阅业务。
+- **云已占半壁江山**（50.4%），增长主要来自IaaS（+77%）；SaaS同样增长约+11%，是成熟的应用订阅业务。
 - **存量软件业务停滞**：软件线整体 -0.7%，其中新增许可 -8.9% 持续萎缩，靠支持费（存量年金，+1.4%）撑着——这条线是典型的"现金牛遗产"，高粘性但零增长。
-- 换个说法：**Oracle = 一个零增长的软件年金业务（~$25B 收入、极高利润率）+ 一个爆发中的 AI 算力业务（IaaS $18.1B、+77%）+ 边缘业务（硬件+服务 $8.8B）**。估值矛盾集中在第二块。
-- 分部盈利（R86，直接费用口径）：Cloud+Software 直接营业利润 $34.5B（直接利润率 59%），Hardware $2.0B，Services 微利——硬件和服务基本只贡献收入不贡献利润。
+- 换个说法：**Oracle = 一个零增长的软件年金业务（~$25B 收入、极高利润率）+ 一个快速增长的基础设施云业务（IaaS $18.1B、+77%，包括AI和传统云）+ 边缘业务（硬件+服务 $8.8B）**。估值矛盾集中在第二块。
+- 分部盈利（R86，直接费用口径）：Cloud+Software 直接营业利润 $34.5B（直接利润率 59%），Hardware $2.0B，Services 微利——该直接利润口径未完整分摊总部、研发、SBC等，不等于业务GAAP净利润。
 
 ### 3.3 FY2026 单季拆分（【库核实】fact_version，YTD 差额法；单位 $B）
 
@@ -102,21 +115,40 @@ FY2026 10-K 利润表（R4）+ 收入明细附注（R89）【10-K核实】，单
 - FY2025 员工约 16.2 万人；FY2026 据媒体复算 10-K 为约 14.1 万人，人均创收约 $478K（+35%）（[Axis Intelligence](https://axis-intelligence.com/oracle-statistics/)，2026-07-27，二手转述）。
 - 旁证【10-K核实】：FY2026 重组费用 $1.84B（FY2025 仅 $0.37B），与大规模裁员/重组一致。
 
-### 3.5 FY2027 指引与 Q1 开局（2026-09-10 更新）
+### 3.5 FY2027 Q1单季收入结构
 
-| 项目 | 管理层 FY2027 指引 / Q1 实际 | 信息属性 |
-|---|---|---|
-| 全年营收 | **至少 $90B** | 管理层电话会指引 |
-| 全年 non-GAAP EPS | **$8.10** | 管理层电话会指引，较此前 $8.05 上调 |
-| Q2 营收增速 | +30% 至 +34% | 公司新闻稿指引 |
-| Q2 云收入增速 | +65% 至 +71% | 公司新闻稿指引 |
-| Q1 营收 / 云收入 | $19.3B（+30%）/ $11.6B（+62%） | 公司实际披露 |
-| Q1 IaaS / SaaS | $7.4B（+121%）/ $4.2B（+10%） | 公司实际披露 |
+单位：B美元。最新季度每格“收入 / 同比 / 占集团收入比”。FY2027目前只披露Q1，累计与单季相同。
 
-- 年度营收与 EPS 是管理层的非 GAAP 预测，不等于已签约收入或现金流；$90B 相比 FY2026 的 $67.4B 意味着至少约 34% 的增长。
-- CapEx 指引另见 §4.1.1 与 §6.1：全年总 CapEx $90–95B、净现金 CapEx 不超过 $70B。因此，本轮增长指引的核心问题不是需求是否增长，而是收入确认、预付款和外部融资能否跟上建设支出。
+| 业务 | FY2026 Q1基数 | FY2027 Q1 |
+|---|---:|---:|
+| 集团 | 14.926 | 19.345 / 29.61% / 100.00% |
+| Cloud | 7.186 | 11.607 / 61.52% / 60.00% |
+| — IaaS | 3.347 | 7.388 / 120.73% / 38.19% |
+| — SaaS | 3.839 | 4.219 / 9.90% / 21.81% |
+| Software | 5.721 | 5.550 / -2.99% / 28.69% |
+| — 支持费 | 4.955 | 4.895 / -1.21% / 25.30% |
+| — 新增许可 | 0.766 | 0.655 / -14.49% / 3.39% |
+| Hardware | 0.670 | 0.774 / 15.52% / 4.00% |
+| Services | 1.349 | 1.414 / 4.82% / 7.31% |
 
-来源：[Oracle FY2027 Q1 财报新闻稿](https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx)（2026-09-10，S）；年度营收/EPS 为管理层电话会表述，见 [Q1 电话会文字稿](https://stockanalysis.com/stocks/orcl/transcripts/689425-q1-2027/)（2026-09-10，二手转录）。
+【复算，✅】四条收入线加总19.345；IaaS+SaaS＝Cloud，支持费+许可＝Software，子项不重复加总。集团增加4.419B＝IaaS增加4.041B+SaaS增加0.380B−软件减少0.171B+硬件服务增加0.169B。IaaS为主要增长来源，但不是全部AI收入。公司整数同比与本表精确值复算有舍入差异。[10-Q损益表及附注9](https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm)（9/11）。
+
+### 3.6 管理层指引（与实绩分表）
+
+单位：金额B美元；EPS美元/股。指引不是实绩。
+
+| 发布日 | 预测期间/指标 | 指引 | 基数与限制 |
+|---|---|---|---|
+| 2026-09-10，10-28重申 | FY2027营收 | 至少90 | 对FY2026的67.357，复算至少+33.62%；不是“非GAAP营收” |
+| 同上 | FY2027 non-GAAP EPS | 8.10 | 与GAAP EPS口径不同 |
+| 9/10 | Q2营收同比 | 美元+30%～+34% | 对上年同季 |
+| 9/10 | Q2云收入同比 | 美元+65%～+71% | 固定汇率+64%～+70%，不是独立IaaS指引 |
+| 9/10 | Q2 non-GAAP EPS | 1.85～1.93 | 上年含一次性收益，增速需调整基数 |
+| 9/10电话会 | FY2027现金CapEx / 净现金CapEx | 90～95 / 不超过70 | 集团购建支出；后者扣融资和预付款 |
+| 10/28 | FY2028下半年FCF / FY2029 FCF | 转正 / 至少30 | 未来目标，不改变当前负FCF |
+| 10/28 | FY2030营收/非GAAP经营利润率/EPS | 至少225 / 至少40% / 至少21 | 长期目标，依赖交付和资金安排 |
+
+来源：[Q1业绩稿](https://investor.oracle.com/files/content_files/1q27-pressrelease-September_FINAL.pdf)（9/10）、[电话会](https://stockanalysis.com/stocks/orcl/transcripts/689425-q1-2027/)（9/10，二手转录）、[投资者日](https://www.prnewswire.com/news-releases/oracle-investor-day-2026-accelerating-value-creation-302922564.html)（10/28）。年度营收和EPS本轮直接从公司业绩稿核到。
 
 ## 4. 盈利与负债
 
@@ -131,26 +163,69 @@ FY2026 10-K 利润表（R4）+ 收入明细附注（R89）【10-K核实】，单
 | FY2026 | 32.0 | 55.7 | **-23.7** | 4.8 | 5.8 | 0.1 |
 
 - **这是全篇最重要的一张表**：FY2025 起 FCF 转负，FY2026 负 $23.7B。CapEx/营收比从 FY2022 的 11% 升到 FY2026 的 82.6%。
-- 资本分配彻底掉头：FY2022 还回购 $16.2B，FY2026 回购只剩 $0.1B；分红仍在涨（$5.8B，股息率约 1.3%），且 FY2026 已出现优先股股息（$0.1B，强制可转债）。FY2026 的 CapEx + 普通股分红合计 $61.5B，显著超过 $32.0B 经营现金流；不能按单笔现金追溯“哪笔债直接发了股息”，但从整体资金来源看，外部融资是覆盖建设与分配的必要部分。
-- SBC $4.8B/年（占营收 7.1%），摊薄股数 FY2022→FY2026 从 27.86 亿股增至 29.14 亿股（四年 +4.6%，温和）；但 FY2026 已启动 $5B 股权融资，FY2027 还有 $20B ATM 增发计划，稀释将加速（见 §6.6）。
+- 资本分配彻底掉头：FY2022 还回购 $16.2B，FY2026 回购只剩 $0.1B；分红仍在涨（$5.8B，股息率约 1.3%），且 FY2026 已出现优先股股息（$0.1B，强制可转优先股，非普通债券）。FY2026 的 CapEx + 普通股分红合计 $61.5B，显著超过 $32.0B 经营现金流；不能按单笔现金追溯“哪笔债直接发了股息”，但从整体资金来源看，外部融资是覆盖建设与分配的必要部分。
+- SBC $4.8B/年（占营收 7.1%），摊薄股数 FY2022→FY2026 从 27.86 亿股增至 29.14 亿股（四年 +4.6%，温和）；但 FY2026 已发行约$5B强制可转优先股，FY2027 Q1的$20B ATM已完成（1.41亿股），期末普通股数环比+5.00%；11/2新发行定价见§6.6（见 §6.6）。
 
-### 4.1.1 FY2027 Q1：客户预付款缓冲 CapEx，但不改变 FCF 为负
+### 4.1.1 FY2027 Q1盈利、现金流与分配
 
-| FY2027 Q1（截至 2026-08-31） | $B | 口径 |
-|---|---:|---|
-| 经营现金流 | +23.10 | GAAP 现金流量表 |
-| 总 CapEx | -28.50 | 现金购置 PP&E |
-| 自由现金流 | **-5.40** | 经营现金流 - 总 CapEx |
-| 客户预付款（含重大融资成分） | +11.36 | 已包含在经营现金流，不能再额外相加 |
-| “净现金 CapEx” | 17.97 | 公司调整口径：计入客户预付款及与 CapEx 有关的短期融资现金流 |
+单位：B美元；EPS美元/股。Q1为6～8月，上一财年Q4为3～5月。
 
-- Q1 的 **GAAP 自由现金流仍为 -$5.40B**。公司披露的“净现金 CapEx”是解释建设资金由谁承担的辅助口径，而不是自由现金流的替代品；由于经营现金流本身已经含有客户预付款，不能用 $23.10B - $17.97B 再称为 FCF，否则会重复计算预付款。
-- 管理层在 Q1 电话会上维持 FY2027 **总 CapEx $90–95B、净现金 CapEx 不超过 $70B** 的预期。Q1 总 CapEx 已达 $28.50B，约为全年总额区间的 30%；季度建设和付款节奏会高度不均匀，不能机械年化。
-- 这说明“客户出一部分钱”确实降低 Oracle 自有现金压力，却没有消除项目的资本密集性；应同时看总 CapEx、GAAP FCF、预付款及融资，而非只看任一单一指标。
+| 指标 | FY2026 Q1 | FY2027 Q1 | 同比或金额变化 |
+|---|---:|---:|---:|
+| 营收 | 14.926 | 19.345 | +29.61% |
+| 经营利润 | 4.277 | 6.728 | +57.31% |
+| 经营利润率 | 28.65% | 34.78% | +6.12个百分点 |
+| 归属Oracle净利润（优先股分红前） | 2.927 | 4.760 | +62.62% |
+| 普通股股东净利润 | 2.927 | 4.679 | +59.86% |
+| 归属Oracle净利率 | 19.61% | 24.61% | +5.00个百分点 |
+| GAAP摊薄EPS | 1.01 | 1.56 | +54.46%（舍入值复算） |
+| 利息费用 | 0.923 | 1.428 | +54.71% |
+| CFO经营现金流 | 8.140 | 23.103 | +183.82% |
+| 现金购建固定资产CapEx | 8.502 | 28.499 | +235.20% |
+| FCF＝CFO−现金CapEx | -0.362 | -5.396 | 缺口扩大5.034 |
+| SBC股权薪酬 | 1.124 | 1.127 | +0.003 |
+| 现金分红（普通股+优先股） | 1.413 | 1.565 | +0.152 |
+| 回购 | 0.093 | 0.000 | 本季未执行 |
 
-来源：[Oracle FY2027 Q1 财报新闻稿](https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx)（2026-09-10，S）；[Q1 财报 PDF](https://investor.oracle.com/files/content_files/1q27-pressrelease-September_FINAL.pdf)（2026-09-10，S）；全年 CapEx 指引为管理层电话会表述，见 [Q1 电话会文字稿](https://stockanalysis.com/stocks/orcl/transcripts/689425-q1-2027/)（2026-09-10，二手转录）。
+【复算，✅】FCF是依据GAAP现金流表计算的**非GAAP指标**，原稿将它标为GAAP指标有误。普通股利润扣除优先股股息0.081B；摊薄股数从2.909B升至3.000B，EPS增速慢于利润。
 
-### 4.1.2 FCF 为负仍分红：资本配置选择，不是现金充足证明
+**利润变化桥：**经营利润增加2.451B＝收入增加4.419B−云软件成本增加2.793B−硬件成本增加0.103B+服务成本减少0.047B+销售营销节约0.252B+研发节约0.090B+摊销减少0.218B+重组及其他减少0.321B。后两项0.539B约占利润增量22%；其他费用减少还含法律事项保险收款，不能全部归因云规模效应。同期云软件分部直接利润率约59.59%→54.54%，集团利润改善与基础设施成本压力并存。归属净利4.760＝经营利润6.728−利息1.428+非经营收益0.307−税0.847；新增利息抵消部分经营改善。
+
+| 环比（当年Q1对上年Q4） | FY2026 Q4 | FY2027 Q1 | 环比/金额变化 |
+|---|---:|---:|---:|
+| 经营利润 | 6.133 | 6.728 | +9.70% |
+| 归属Oracle净利润 | 4.304 | 4.760 | +10.59% |
+| GAAP摊薄EPS | 1.45 | 1.56 | +7.59% |
+| CFO | 14.620 | 23.103 | +58.02% |
+| 现金CapEx | 16.493 | 28.499 | +72.79% |
+| FCF | -1.873 | -5.396 | 缺口扩大3.523 |
+
+Q4经营利润＝年报20.606−前三季14.473；其他现金流和利润与公司季度表勾稽，EPS用单季披露而非累计相减。Q1受Q4合同收款的季节性影响，预付款进一步放大本季现金流，不宜单纯环比外推。
+
+**预付款与现金桥：**23.103B CFO已包含11.363B含重大融资成分客户预付款，占CFO同比增加14.963B的75.94%。分析性扣除这一项后CFO为11.740B，仍含其他营运资本变化，并非“正常化CFO”。净现金CapEx＝28.499−11.363−(-0.830)＝17.966B；-0.830B为偿还设备相关短期融资，所以增加净现金投入。不能再用23.103−17.966称FCF，否则预付款重复计入。
+
+CFO+投资+融资+汇率＝23.103−28.580+13.111+0.011＝7.645B，等于现金及受限现金增加额。融资流量主要包括ATM净入账19.909B、借款偿还4.202B和分红1.565B，现金增加不等于经营自给。CapEx为集团现金购建固定资产，未按Jupiter等项目拆分；本季经营租赁/融资租赁取得使用权资产4.903/1.539B为非现金，不算进现金CapEx。
+
+### 4.1.2 最新滚动TTM（2025-09-01～2026-08-31）
+
+单位：B美元。每项＝FY2026全年−FY2026 Q1+FY2027 Q1。
+
+| 指标 | 最新TTM |
+|---|---:|
+| 营收 | 71.776 |
+| 经营利润 / 利润率 | 23.057 / 32.12% |
+| 归属Oracle净利润 / 净利率 | 18.920 / 26.36% |
+| 普通股股东净利润 | 18.736 |
+| CFO | 46.940 |
+| 现金CapEx | 75.660 |
+| FCF | -28.720 |
+| SBC | 4.814 |
+
+TTM包含FY2026投资处置收益和大额客户预付款，不能用净利率提升证明AI单位回报。现金CapEx/CFO为161.18%，FCF较FY2026全年再恶化5.034B。输入、公式见[底表](factcheck/data/fy2027q1_inputs.json)、[脚本](factcheck/verify_fy2027q1.py)和[结果](factcheck/fy2027q1_results.json)。
+
+来源：[Q1 10-Q](https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm)（9/11，三报表、MD&A、附注6/7/9）、[业绩稿季度表](https://investor.oracle.com/files/content_files/1q27-pressrelease-September_FINAL.pdf)（9/10）、本地FY2026年报与companyfacts。
+
+### 4.1.3 FCF 为负仍分红：资本配置选择，不是现金充足证明
 
 - FY2026 的经营现金流 $32.0B 减总 CapEx $55.7B，已形成 -$23.7B FCF；再加 $5.8B 普通股分红，建设和分红合计比经营现金流多消耗约 $29.5B（尚未计入还债等其他资金用途）。
 - 同期公司取得约 $42.7B 净发债资金、$5.0B 强制可转优先股融资，并有约 $4.9B 投资处置收入及 $3.3B 与 CapEx 有关的短期融资现金流【10-K核实】。这些不是“债券直接拿来付股息”的逐笔归因，而是 FY2026 总体流动性来源。
@@ -158,7 +233,9 @@ FY2026 10-K 利润表（R4）+ 收入明细附注（R89）【10-K核实】，单
 
 来源：[Oracle FY2026 10-K](https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm)（2026-06-22，S）。
 
-### 4.2 资产负债表（【库核实】+ SEC companyfacts，$B）
+### 4.2 资产负债表与承诺
+
+以下为历史年度表（B美元），最新期末另列：
 
 | 财年 | 总资产 | 股东权益 | 净PP&E | 现金 | 长期债券 | 一年内到期债券 | 经营租赁负债 |
 |---|---|---|---|---|---|---|---|
@@ -168,104 +245,200 @@ FY2026 10-K 利润表（R4）+ 收入明细附注（R89）【10-K核实】，单
 | FY2025 | 168.4 | 20.5 | 43.5 | 10.8 | 85.3 | 7.3 | 13.5 |
 | FY2026 | 261.8 | 42.5 | **100.0** | 31.3 | **122.3** | 7.2 | **30.2** |
 
-- 有息债券合计 FY2026 末约 **$129.5B**（SEC XBRL：LongTermNotesPayable + NotesPayableCurrent）；加经营租赁负债 $30.2B（数据中心租约，FY2022 才 $3.7B，四年 8 倍），广义负债约 $160B，现金 $31.3B，净债务约 $128B。
-- 净 PP&E 一年翻倍以上（$43.5B → $100.0B），直接对应数据中心投建。
-- 利息费用 FY2026 $4.6B（FY2022 $2.8B），随发债继续上行。
-- **表外承诺才是真正的规模【10-K核实，R64/R69 承诺附注】**：已签约但尚未起租的经营租赁承诺高达 **$260B**（租期 15-19 年，起租后才进资产负债表）——对比表内经营租赁负债仅 $30.2B，数据中心的真实承诺规模是表内数字的 9 倍；另有融资租赁负债 $7.7B（FY2025 仅 $2.9B，FY2026 新增融资租赁资产 $4.9B）、为出租方借款提供的担保 $3.3B（2026-09 到期）、无条件采购义务 $13.3B（期后又新增 $19B）。广义"表内债务+租赁+表外承诺"合计超 **$430B**，这才是穆迪说"支出承诺是重大信用关切"的完整图景。
 
-### 4.3 为什么评级只有 Baa2/BBB（离垃圾级两档）
+最新期末，单位：B美元；股数B股。来源：[Q1 10-Q资产负债表、附注6](https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm)（9/11）。
 
-这是三层原因叠加，不是AI周期才开始的：
+| 指标 | 2026-05-31 | 2026-08-31 |
+|---|---:|---:|
+| 现金及等价物 | 31.289 | 36.369 |
+| 短期有价证券 | 0.605 | 0.708 |
+| 总资产 | 261.759 | 303.259 |
+| 净固定资产 | 99.957 | 127.845 |
+| 一年内借款 | 7.199 | 7.625 |
+| 非流动借款 | 122.342 | 117.712 |
+| 借款合计 | 129.541 | 125.337 |
+| 经营租赁负债（含流动） | 30.190 | 34.621 |
+| 融资租赁负债（含流动） | 7.701 | 9.185 |
+| Oracle权益（含优先股，不含少数股东） | 42.508 | 66.772 |
+| 期末普通股 | 2.880 | 3.024 |
+
+【复算，✅】借款净债务＝125.337−36.369−0.708＝88.260B；含两类租赁的分析性净负担132.066B。与旧“净债务128B”口径不同，不直接比较。受限现金约2.565B列其他流动资产，未扣作自由可用现金。权益增长含ATM增发，不全是利润积累。
+
+**未起租租赁承诺288B美元**，预计FY2027 Q2～FY2029开始，租期15～19年；它是未来未折现承诺，不等于表内折现租赁负债。删除原稿将表内债务、未折现承诺合计称实际债务的做法。无条件采购及其他长期义务34.150B（云设备组件及电力等），FY2026末13.3B与期后19B为旧披露，不能再加到最新余额上。
+
+近端现金约束：一年内借款7.625B；已起租租赁在FY2027剩余期间支付经营3.219B、融资0.620B；采购等长期义务同期5.449B。后两项是支付计划，非新增借款；承诺与未来CapEx可能包含不同资产及付款安排，不简单相加。逐笔债务到期结构仍需进一步归集，当前不能由单一期末推出全部风险。
+
+### 4.3 信用评级与融资压力（历史评级待最新复核）
+
+> **时效警示：本章评级与债市资料主要来自2025年12月至2026年8月的历史材料，并未更新为2026-11-04的现行评级或债券/CDS报价。2026-11-04是日期标注与表述修订日，不是评级、报价核验截止日。** 本章用于解释信用压力形成过程；最新已核财务期末为2026-08-31（§4.2），最新已核融资定价公告为2026-11-02（§6.6），三者时间与口径不同。
+
+| 信息 | 已有材料的事件/数据日期 | 来源公开日期 | 时效与使用限制 |
+|---|---|---|---|
+| 穆迪A3→Baa2的历史降级 | 2021-03-22 | 2021-03-22评级公告转载 | 历史事件，不能据此确认现行评级 |
+| 穆迪Baa2、负面展望 | 2025年12月材料所述状态 | 2025-12-15信用展望 | 后续是否变更未在本轮复核；不能写“截至2026-11-04仍为” |
+| 标普BBB→BBB-、稳定展望 | 原稿记录的评级行动日2026-07-09 | 公告2026-07-09；转述2026-07-12 | 该次行动的历史记录；最新是否维持/变更未复核 |
+| 惠誉BBB | 原稿未记录评级行动日 | 原稿未留可追溯公告日期 | 日期与来源缺失，暂不作为有效的现行评级结论 |
+| 杠杆接近5倍、租赁灵活性及分析师判断 | 采访/估计的实际基准日未明确 | Economic Times 2026-08-05 | 媒体转述当时判断，不是最新实绩或评级公告 |
+| 净债务98B、净负债率228%、利息保障6.5倍等 | 报道采用的财务基准日未逐项核定 | Bondsupermart 2026-07-29 | 仅保留历史媒体口径；最新财务应看§4.2 |
+| Oracle债券收益率7%～8%、同业2.5%～3.5%、巴克莱低配 | 未提供具体债券、期限及报价/建议生效日 | 原稿概括为2026年8月媒体材料 | **不能当当前报价，亦不足以作同期限信用利差比较** |
+| CDS曾突破125bp | 原稿指向2025年12月，具体交易日未留存 | 原稿转引2026年8月材料 | 历史波动；未明确期限与报价日，不当作最新CDS |
+| 股价244.58→117.74美元 | 2026-06-03→2026-07-29 | 原研究2026-08-31取库 | 历史起止点回撤；不是当前回撤或债务违约概率 |
+
+本章后续更新应逐家记录“评级行动日、评级/展望、来源公开日、最新核验日”；债券/CDS须另记“证券或合约、期限、报价时点”。缺少日期的值保留为研究缺口，不用整篇更新时间覆盖。
+
+以下解释历史信用压力的三层来源；涉及杠杆、融资计划和市场定价的句子，均按对应历史材料理解：
 
 **第一层：历史包袱——举债回购把评级买下来的（2021 年就被降级）**
 穆迪 2021-03 把 Oracle 从 A3 降到 Baa2，理由原文："elevated financial leverage, aggressive use of debt to finance large shareholder returns, and lack of any long-term financial policy goals"（杠杆高、激进举债回购分红、且没有任何长期财务政策目标——对大债务公司很罕见，制造了管理层风险偏好不确定性）。当时背景：税改后 Oracle 从净现金 $10B+ 变成净负债 $33B，2021-03 又发债 $15B 用于回购（回购授权加 $20B、分红加 33%），债务/EBITDA 约 4.3×（[穆迪评级公告](https://finance.yahoo.com/news/oracle-corporation-moodys-downgrades-oracles-120807586.html)，2021-03-22，S）。**其他科技巨头是 A/AA 级，是因为它们净现金或低杠杆；Oracle 是唯一一家十几年来把资本回报放在资产负债表前面的 mega-cap**——FY2022 股东权益甚至是负的（-$6.2B）。
 
 **第二层：AI 扩张让本就高的杠杆雪上加霜**
 - 穆迪（2025-12，Baa2 负面展望）：RPO 暴涨令人印象深刻，但"支持增长所需的交易对手风险与支出承诺是重大信用关切，是负面展望的主要驱动"（[Moody's Credit Outlook](https://www.moodys.com/web/en/us/insights/credit-risk/outlooks/mco-15-december-2025.html)，2025-12-15，S）。
-- **标普已于 2026-07-09 降级 BBB → BBB-（展望稳定），距垃圾级仅一档**（[S&P 公告](https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101695609)，2026-07-09，S）。降级理由：FY2027 capex 预测上修至 $90-95B、FY2027 自由经营现金流缺口预计 -$42B（此前预测 -$24B）、调整后杠杆 FY2027 将达 mid-4×、**OpenAI 约占 RPO 一半**、且与三大云不同，Oracle 没有自有 AI 负载可以在客户流失时消化产能（[mlq.ai](https://mlq.ai/news/sp-downgrades-oracle-to-bbb-one-notch-above-junk-citing-openai-concentration-risk/)，2026-07-12，B）。标普/Nikkei 还估算 Oracle 有 ~$273B 数据中心租赁与电力采购承诺（FY2027-29 起陆续进表）且大多不可撤销——与 10-K 披露的 $260B 未起租租赁承诺互相印证 ✅。惠誉 BBB。
+- **原稿记录的标普评级行动：2026-07-09，BBB→BBB-、稳定展望，当时距非投资级一档；本轮未复核此后变化。**（[S&P 公告](https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101695609)，2026-07-09，S）。当时预测包括：FY2027 capex $90-95B、自由经营现金流缺口-$42B、调整后杠杆mid-4×及OpenAI约占RPO一半等（[mlq.ai转述](https://mlq.ai/news/sp-downgrades-oracle-to-bbb-one-notch-above-junk-citing-openai-concentration-risk/)，2026-07-12，二手转述）。这些是当时预测，不能替代Q1实绩；媒体估算租赁及电力采购承诺约273B，与FY2026未起租租约260B范围不同，最新未起租余额288B见§4.2。原“惠誉BBB”缺公告日期及来源，已撤出现行评级判断。
 - 穆迪 2026 年进一步表示：**没有其他大型 AI 基建商是以这种杠杆水平和负现金流进入本轮投资周期的**；杠杆近期可能接近 **5× EBITDA**（[Economic Times](https://m.economictimes.com/markets/us-stocks/wall-street-guide/global-market-oracles-ai-spending-spree-pushes-credit-rating-to-brink-of-junk-status/articleshow/132892290.cms)，2026-08-05，A）。
 - 租赁的隐性代价：穆迪警告大量租赁数据中心虽降低前期资本需求，但**租赁资产不能出售或抵押**，削弱了财务灵活性（ET，2026-08-05）。
 - 信用基本面数据点（[Bondsupermart](https://www.bondsupermart.com/bsm/article-detail/oracle-downgraded-to-bbb-yields-as-high-as-7-8-is-it-an-opportunity-or-a-warning-sign-RSS380)，2026-07-29，NA 级但数据翔实）：净债务 ~$98B、净负债率 228%、利息保障倍数 6.5×、现金 $30B+——短期偿债无虞，风险在长期承诺；OpenAI 合同年付款义务约 $60B，而 OpenAI 年化收入仅 ~$24B、尚未盈利，2026-03 完成 $122B 融资（亚马逊/英伟达/软银参投）。
 
-**第三层：市场已经在定价"堕落天使"（fallen angel）风险**
-- 若从 BBB 跌入垃圾级（BB），大量养老金/保险等授权受限机构将被强制抛售其约 $129.5B 债券——垃圾级利差比 IG 高约 300-400bp，对 FY2027 计划新增 $40B 债务意味着每年多 $0.8-1.2B 利息（Market Supply Chain，2026-06-25，NA，机制分析可靠）。
-- 市场证据：Oracle 债券收益率已到 **7-8%** 区间，而 Alphabet/Amazon 只有 2.5-3.5%；2025-12 股价暴跌期间 CDS 利差一度突破 125bp（正常 IG 为 50-100bp）；巴克莱将其债券下调至低配；股价从 2026-06-03 高点 $244.58 到 2026-07-29 低点 $117.74，**区间最大跌幅 -52%**（【库核实】daily_quote；债券/CDS 数据为 ET 与 Market Supply Chain 媒体转述，2026-08）。
+**第三层：历史市场材料反映的“堕落天使”（fallen angel）担忧**
+- 机制分析（原引用2026-06-25）：若债券降至非投资级，部分授权受限机构可能需要调整持仓，具体取决于机构条款和评级规则，不能认定全部债券都被强制出售。原稿将旧40B融资计划全部当新增债务，且利息复算不一致，已撤回该金额判断；最新融资安排见§6.6。收益率还受无风险利率和期限影响，不等于信用利差。
+- **历史媒体材料，实际报价日及证券期限缺失：**原稿引用Oracle债券收益率7%～8%、Alphabet/Amazon 2.5%～3.5%、巴克莱低配，不用于当前或同期限比较。CDS突破125bp指向2025年12月，合约期限/具体交易日未留存，暂不作量化定价证据。股价244.58→117.74美元对应2026-06-03至2026-07-29，【复算】起止点回撤约-51.86%；未重新检查区间内所有高低点，故不称“区间最大跌幅”。
 - 摩根士丹利信用分析师：堕落天使式降级不是迫在眉睫，但属中期风险，取决于 AI 投资的执行与变现（ET 引述，2026-08-05）。
 
 ## 5. 竞争对手
 
-同口径对比（【库核实】，各公司财年口径不同：ORCL/MSFT 为 5/31 与 6/30 财年，AMZN/GOOGL 为日历年）：
+> **核对日：2026-11-04。财务统一使用各公司最近已披露四个季度TTM；Oracle截至2026-08-31，其余三家截至2026-09-30，终点相差30天、窗口重合11个月。** 旧版FY2026/FY2025全年、单季增速与TTM混排表已替换。未用最新单季乘4，也未用全年指引充当实绩。
 
-| 公司 | 最新财年营收 | 营收增速 | 营业利润率 | 财年CapEx | 财年FCF | TTM CapEx | 市值（8/27） | PE TTM |
-|---|---|---|---|---|---|---|---|---|
-| ORCL（FY2026） | $67.4B | +17.3% | 30.6% | $55.7B | **-$23.7B** | $55.7B | $438B | 26.1 |
-| MSFT（FY2026） | $331.8B | +17.8% | 46.8% | $115.9B | +$67.0B | $115.9B | $3,750B | 28.1 |
-| AMZN（CY2025） | $716.9B | +12.4% | 11.2% | $131.8B | +$7.7B | $197.2B | $2,764B | 20.6 |
-| GOOGL（CY2025） | $402.8B | +15.1% | 32.0% | $91.4B | +$73.3B | $132.4B | $4,166B | 17.1 |
+### 5.1 比较期间与TTM方法
 
-- 四家都在重资本开支，但**只有 Oracle 的 FCF 深度为负**：MSFT/GOOGL 的 CapEx 仍被经营现金流覆盖（FCF 为正），AMZN TTM FCF 也已转负（-$17.4B）但其 CapEx/CFO 约 95%，而 Oracle FY2026 CapEx/CFO 达 174%——Oracle 是唯一必须持续大规模外部融资的一家，这直接解释了 §4.3 的评级差距。
-- 行业背景：2026 年五大厂（MSFT/GOOGL/AMZN/Meta/ORCL）合计 CapEx 指引约 $660-690B，全部声称"供给受限而非需求受限"（[Futurum](https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/)，2026-02-12，B 级）。
-- Oracle 相对三大的位置：IaaS 体量仍小一个数量级（FY2026 IaaS $18.1B vs Azure/AWS 单季 $30-40B 级），靠 AI 训练大单实现最快增速；另有一类新对手是 CoreWeave 等 neocloud（GPU 专营云，本工作区已有 [CRWV 项目](/Users/vinci/Documents/stock_research/CRWV)），它们在 Stargate 体系中既是合作方也是替代方。
+| 公司 | 最近四个季度 | TTM起止日 | 最新业绩公开日 | 计算方式 |
+|---|---|---|---|---|
+| Oracle | FY2026 Q2/Q3/Q4＋FY2027 Q1 | 2025-09-01～2026-08-31 | 2026-09-10；10-Q于9/11提交 | FY2026＋FY2027 Q1−FY2026 Q1 |
+| Microsoft | FY2026 Q2/Q3/Q4＋FY2027 Q1 | 2025-10-01～2026-09-30 | 2026-10-28 | FY2026＋FY2027 Q1−FY2026 Q1；其财年截至6/30 |
+| Amazon | 2025 Q4＋2026 Q1/Q2/Q3 | 2025-10-01～2026-09-30 | 2026-10-29 | 2025全年＋2026前九月−2025前九月 |
+| Alphabet | 2025 Q4＋2026 Q1/Q2/Q3 | 2025-10-01～2026-09-30 | 2026-10-28 | 2025全年＋2026前九月−2025前九月 |
 
-### 5.1 与 neocloud 的估值分层（2026-09-01，回答"同样的逻辑为什么不同价"）
+每家公司收入同比均为“最新TTM / 该公司上年同期TTM−1”，没有混用单季同比。可比基数依次为59.018、293.812、691.330、385.476B美元。Oracle与其余三家仍存在一个月时差，不插值虚构9月财务，也不为了日期对齐把其余三家回退到旧6月报表。
 
-| | ORCL | CoreWeave | Nebius |
-|---|---|---|---|
-| 市值 / 现价 | $429.5B / $149.12【库，8-31】 | ~$42B / $81.39（Yahoo 9-1） | ~$53.5B / $196.62（Yahoo 9-1） |
-| TTM 营收 / 增速 | $67.4B / +17% | ~$7.6B / Q2 +112%【库：FY25 $5.13B、26H1 $4.65B】 | ~$1B / Q1 +684% |
-| 净利润 | +$17.1B | -$1.2B（FY25，【库】） | +$102M（FY25，已盈利） |
-| P/S（TTM） | 6.4× | ~5.5× | ~45× |
-| 资产负债表 | BBB-、$130B 债、$260B 表外租赁、FCF -$24B | $21B+ 债务、FCF 深负、adj OI 利润率 19%→1% | 净现金 + 客户预付 capex |
-| Backlog / EV÷Backlog | RPO $638B / 0.83× | $99.4B / ~0.80× | ~$44B / 1.1-1.6× |
-| 股价位置 | YTD -22% | 距 2025-06 峰值 -43% | YTD +135% |
+### 5.2 集团TTM盈利与现金投入
 
-判读（【我的推演】）：市场并非无差别给 AI 算力高估值，而是按四个维度分层——
-1. **纯度**：NBIS/CRWV 是 100% AI 敞口；ORCL 一半是零增长软件年金，合并增速被稀释；
-2. **谁为 capex 买单**：客户预付（NBIS）> 举债+backlog 对冲（CRWV）> 举债+评级悬崖（ORCL），NBIS 的 45× P/S 买的是"不用自己烧钱"的确定性；
-3. **EV/Backlog 口径三家趋同（0.8-1.6×）**——市场对"订单资产证券化"的隐含定价一致，分歧在兑现路径上谁会死在半路；
-4. **边际买家**：ORCL 受 BBB- 授权约束（机构被迫卖），neocloud 买家本来是高风险偏好资金，无机械卖出压力。
+单位：B美元（1 B＝10亿美元）；比例为%。利润均按GAAP，净利润统一为可归普通股股东的金额；各栏的“利润率”均以该行TTM集团收入为分母。
 
-CRWV/NBIS 数据来源：库 fact_version（FY25 年报与 26 年季报）；[Motley Fool 对比](https://www.fool.com/coverage/charts/2026/04/09/nebius-vs-coreweave-accelerating-growth-vs-massive-scale-in-revenue/)（2026-04-09，A）；[daloopa 财务对比](https://daloopa.com/blog/analyst-pov/nebius-vs-coreweave-neoclouds-financial-analysis-daloopa-mcp-sourced)（2026-06-03，NA）；[sec-api Nebius 分析](https://sec-api.io/insights/nebius-financial-analysis)（2026-08-26，NA）；Yahoo Finance 报价页（2026-09-01，S）。
+| 公司 | TTM收入 | TTM收入同比 | 经营利润 / 经营利润率 | 普通股净利润 / 净利率 |
+|---|---:|---:|---:|---:|
+| Oracle | 71.776 | 21.62% | 23.057 / 32.12% | 18.736 / 26.10% |
+| Microsoft | 346.445 | 17.91% | 163.191 / 47.10% | 142.631 / 41.17% |
+| Amazon | 797.455 | 15.35% | 104.366 / 13.09% | 134.779 / 16.90% |
+| Alphabet | 471.098 | 22.21% | 156.976 / 33.32% | 235.310 / 49.95% |
+
+单位：B美元；比例为%。下表“现金CapEx”统一取现金流表购建/增加固定资产现金支出，未扣资产出售回款、激励或客户预付款；FCF统一复算为CFO−该项现金CapEx。
+
+| 公司 | TTM经营现金流CFO | TTM现金CapEx | TTM统一口径FCF | CapEx/CFO | CapEx/收入 |
+|---|---:|---:|---:|---:|---:|
+| Oracle | 46.940 | 75.660 | -28.720 | 161.18% | 105.41% |
+| Microsoft | 195.878 | 135.921 | 59.957 | 69.39% | 39.23% |
+| Amazon | 168.300 | 215.192 | -46.892 | 127.86% | 26.98% |
+| Alphabet | 179.551 | 159.804 | 19.747 | 89.00% | 33.92% |
+
+【复算，✅】以上金额、增速和比率见[冻结输入](factcheck/data/peers_ttm_2026-11-04_inputs.json)、[复算脚本](factcheck/verify_peers_ttm.py)与[结果](factcheck/peers_ttm_2026-11-04_results.json)。脚本核对12个月期间及30天终点差，并将Amazon年度滚动结果与四个单季直接加总交叉核对。Oracle与§4.1 TTM一致；此表普通股净利润18.736B与§4.1优先股分红前18.920B分子不同。
+
+**按这一窗口重新看资金压力：**Oracle和Amazon均为负FCF，不能说只有Oracle需要补充资金。Oracle现金CapEx相当于CFO的161.18%，高于Amazon的127.86%；但Amazon绝对现金缺口46.892B大于Oracle的28.720B。Microsoft约有59.957B、Alphabet约有19.747B的该口径正FCF。它只说明经营现金对固定资产付款的覆盖能力，尚未扣除并购、模型公司股权投资、分红和偿债，不能等同全部可分配现金或断言哪家没有融资需要。
+
+**现金口径边界：**Amazon公司FCF扣的是固定资产净现金支出，故为-42.357B；本表不减回款/激励4.535B，得到-46.892B，避免与Oracle毛现金支出混比。Microsoft融资租赁的非现金资产增加未纳入现金CapEx；其投资活动“Other”还包含组件采购等其他现金用途，亦不在PP&E行，故不能把本表FCF当完整AI建设后的剩余现金。其他公司同样不把非现金租赁、股权投资或承诺当本期现金CapEx；集团CapEx均不等于纯AI数据中心支出。
+
+**利润口径边界：**Alphabet与Amazon的TTM净利包含重大投资估值/处置收益，不能直接当主营利润；Alphabet普通股净利率49.95%高于经营利润率33.32%，就是需要警惕的信号。Microsoft净利也受OpenAI投资收益及同期基数影响；Oracle仍包含FY2026投资处置收益。比较云业务竞争力应优先看匹配业务的收入、经营利润与客户，而不是按集团净利润率排名。
+
+### 5.3 同一行情日的TTM估值参照
+
+统一取2026-11-03美国常规收盘，价格和EPS单位为美元；财务期间沿用§5.1。无已连接行情插件可取值，本轮使用[Yahoo ORCL](https://au.finance.yahoo.com/quote/ORCL/history/)、[MSFT](https://finance.yahoo.com/quote/MSFT/history/)、[AMZN](https://finance.yahoo.com/quote/AMZN/history/)、[GOOG](https://finance.yahoo.com/quote/GOOG/history/)。
+
+| 股票 | 收盘价 | 摊薄EPS拼接TTM（近似） | 收盘价 / 拼接EPS |
+|---|---:|---:|---:|
+| ORCL | 126.19 | 6.38 | 19.78倍 |
+| MSFT | 520.99 | 19.15 | 27.21倍 |
+| AMZN | 250.69 | 12.37 | 20.27倍 |
+| GOOG | 278.27 | 19.15 | 14.53倍 |
+
+【复算，✅】EPS按相同年度/累计滚动公式拼接，不从累计EPS直接相减冒充精确单季EPS；由于各期加权股本和优先股稀释处理不同，它是近似TTM PE，非以现时市值/TTM净利计算的精确倍数。Amazon不同报价商收盘数可略有差异，本表固定使用Yahoo的250.69美元。剔除原来未统一股本/价格日期的市值列，不将GAAP与各家公司non-GAAP前瞻PE混比。Alphabet的低表面PE尤其受投资收益影响，不能直接推导其经营业务最便宜。
+
+### 5.4 哪些业务才在直接竞争，neocloud为何另看
+
+集团TTM表比较盈利和自筹能力，不能当云市场份额表：Microsoft含应用/授权，Amazon含电商/物流，Alphabet含广告，Oracle含数据库支持与SaaS。Oracle的IaaS只是集团的一部分；Azure、AWS、Google Cloud披露范围不同，不能将集团收入直接比较云体量。
+
+| Oracle业务/客户需求 | 更贴近的竞争对象 | 比较时的限制 |
+|---|---|---|
+| 企业OCI和AI云算力 | Azure、AWS、Google Cloud；AI专用负载另看CoreWeave、Nebius | IaaS不全是AI；分部利润与集团利润不能替换 |
+| 数据库上云/多云 | 各云数据库及替代数据库产品 | Oracle也通过Database@其他云合作，既有竞争亦有渠道合作 |
+| Fusion/NetSuite云应用 | 对应ERP、财务、HR等应用厂商 | 大型云集团的总收入无法评价应用层竞争 |
+| GPU专用云交付 | [CoreWeave](../CRWV/CRWV.md)、[Nebius](../Nebius公司研究) | 看客户集中、交付、融资租赁、毛/净CapEx和取消条款；不把backlog当现金 |
+
+保留此前“同属AI算力却估值不同”的研究问题：业务组合、客户信用、合同期限/取消权、资产融资和稀释都会影响价格。旧版neocloud表把FY2025净利润、2026单季增速与不同日期股价拼在一起，不能支持定价排序，本轮撤下该数值排名；原历史可由Git追溯。neocloud的最新完整TTM比较另需以其对应四季披露核验，不用旧表或“45倍PS等于不用烧钱”的推断替代。集团四家已经同窗口复算，不据此给neocloud相对贵贱结论。
+
+本节主要原始来源（各数据已在底表留公开日/链接）：
+
+- Oracle：[Q1 FY2027业绩稿](https://investor.oracle.com/files/content_files/1q27-pressrelease-September_FINAL.pdf)（9/10），FY2026及FY2025年报/业绩稿，详见§13。
+- Microsoft：[FY2026 Q4及全年](https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast)（2026-07-29）、[FY2027 Q1](https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast)（2026-10-28）、[上年同期收入基数](https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q1/income-statements)；[本轮网页提取证据](factcheck/data/peers_msft_2026-11-04_web_excerpts.json)。
+- Amazon：[Q3业绩稿](https://ir.aboutamazon.com/files/doc_earnings/2026/q3/earnings-result/AMZN-Q3-2026-Earnings-Release.pdf)（10/29）、[10-Q](https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm)；本地原件[Q3](../AMZN/factcheck/data/2026-q3.html)、[2025 Q4](../AMZN/factcheck/data/2025-q4.html)、[2024 Q4](../AMZN/factcheck/data/2024-q4.html)。
+- Alphabet：[Q3业绩稿SEC附件](https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm)（10/28）、[2025全年业绩稿](../GOOG/factcheck/data/2025-q4-release.txt)、[已核季度输入](../GOOG/factcheck/data/2026-10-29-inputs.json)，以及2024Q3原始披露的上年TTM收入基数。
 
 ## 6. 专题：数据中心（OCI 基建）
 
 ### 6.1 扩张规模：从数字看
 
 - CapEx：FY2024 $6.9B → FY2025 $21.2B → FY2026 $55.7B（+163%）。FY2027 管理层指引为 **总 CapEx $90–95B、净现金 CapEx 不超过 $70B**；两者不能混用，后者计入客户预付款及与 CapEx 有关的短期融资现金流。Q1 FY2027 已发生总 CapEx $28.5B、净现金 CapEx $18.0B（见 §4.1.1）。
-- 净 PP&E：FY2022 $9.7B → FY2026 $100.0B（四年 10 倍）。
+- 净PP&E：FY2022约9.7B → FY2026末99.957B → FY2027 Q1末127.845B美元；这是资产账面净值，不是GW或GPU实物数量。
 - 容量兑现：CEO Magouyrk 曾预计 FY2027 Q1 将有接近 1 GW 容量上线；Q1 实际披露为交付 **850 MW** 新数据中心容量及 30 万块以上 GPU。容量交付不等于当季已完全变现，需与后续 IaaS 收入、利用率和 FCF 一起观察（[Oracle FY2027 Q1 财报](https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx)，2026-09-10，S）。
 
-### 6.2 物理产能台账：GW 与 GPU（截至 2026-08-31）
+### 6.2 物理产能台账：GW 与 GPU
 
-**电力容量（GW）分层**——注意区分"投运 / 签约 / 规划"三个口径，媒体常混用：
+> **核对日：2026-11-04。最新实际季度交付截至2026-08-31；新增平台/Abilene使用情况来自2026-10-27公司公告；容量扩张计划来自2026-10-28投资者日二手转录。** 这些日期分别标注，不能把11/4核对日写成所有资产均已更新到11/4。
 
-| 层级 | 容量 | 内容 | 来源 |
+本节区分“季度交付增量、在用设备、园区设计、已签约待交付、技术平台上限”。GW是功率单位，不是发电量；1GW＝1,000MW。园区总供电与服务器IT负荷也不同，未明确负荷边界时不直接换算。
+
+#### 6.2.1 容量：已交付与待兑现计划
+
+| 对象/层级 | 最新可核数字 | 实际期间/状态 | 公开日期及来源 |
 |---|---|---|---|
-| 已投运（AI） | ~1.2 GW | Abilene 旗舰园区 2026 年初开始投运，8 栋楼中前 2 栋已满负荷运营，全部预计 2026 年中完工 | TechGig 2026-03-09；IntuitionLabs 2025-11-30 |
-| 上线节奏 | 近 1 GW / 季 | CEO：FY2027 Q1（2026 年 6-8 月，即当前季度）将有接近 1 GW 容量上线 | 财报电话会转述，etfpedia 2026-06-11 |
-| 已签约 | 4.5 GW | Oracle 确认已完成美国 4.5 GW 电力容量租赁签约（Stargate 相关） | TechGig 2026-03-09 |
-| 电力采购 | 2.8 GW | Bloom Energy 燃料电池协议扩至 2.8 GW（2026-04-17），现场发电绕开电网排队；Ellison 明言瓶颈是电力不是硬件 | Finexus/媒体 2026-04-17（B 级） |
-| Stargate 规划 | 近 7 GW / $400B+ | OpenAI 官宣（2025-09-23）：五个新站点 + Abilene + CoreWeave 项目合计；目标 2025 年底锁定全部 $500B / 10 GW | [OpenAI 官网](https://openai.com/index/five-new-stargate-sites/)（S） |
-| 传统云底座 | 100+ 区域 | 全球 101+ OCI 云区域（2025-03）；第三方数据库统计美国 17 个设施合计约 4.3 GW（口径含在建/规划，谨慎使用） | Blackridge 2026-03-05（B）；DataCenterMap（NA） |
+| Oracle集团季度交付增量 | **850MW＝0.850GW** | FY2027 Q1（2026-06-01～8/31）交付；不是集团存量总规模 | 9/10业绩稿；[10/27公司博客再次确认](https://www.oracle.com/news/announcement/blog/ai-world-building-the-next-decade-of-oracle-cloud-infrastructure-2026-10-27/) |
+| 同一季度交付分布 | 约38个项目、11个国家 | 10/28管理层回顾Q1，只有其中一个项目在Abilene；不能将850MW全归Abilene | [投资者日转录](https://stockanalysis.com/stocks/orcl/transcripts/780561-investor-day-2026/)，二手转录 |
+| Oracle已签约项目的新增容量计划 | **约7GW增量** | 管理层称未来约两年逐步交付，属于已签约但仍需建设/上线的计划 | 10/28投资者日，二手转录 |
+| Oracle容量组合目标 | **FY2028末约10GW** | 对应2028-05-31的未来目标，包含上述增量；不是当前已投运10GW | 10/28投资者日，二手转录 |
+| 五个大型站点 | **合计约5GW** | FY2026至FY2029中期分批交付；属前述项目组合的一部分，不再与7GW/10GW相加 | 10/28投资者日，二手转录 |
+| 五站点的首期服务 | Abilene接近完成；其余四站点预计2027自然年开始服务 | 首批机房上线≠整个园区满规模；管理层称指引考虑个别项目约一至两季度延误 | 10/28投资者日，二手转录 |
 
-- 站点清单（在建/规划）：Abilene TX（1.2 GW，投运中）、Shackelford County TX、Milam County TX（SB Energy，1.2 GW，2026 年初步投运）、Doña Ana County NM（~0.5 GW）、Port Washington/Racine WI（~0.4 GW，Vantage）、Saline Township/Mount Pleasant MI（~0.4 GW）、Salem Township PA（~0.4 GW）、Lordstown OH（软银）。
-- 用工口径：Oracle 官方称 1 GW 站点运营期约需 1,000+ 名长期员工（[Oracle 社区公告](https://www.oracle.com/news/announcement/blog/oracle-ai-infrastructure-in-2026-and-our-commitment-to-local-communities-2026-01-26/)，2026-01-26）。
+**现有存量总数的边界：**本轮查阅Q1业绩稿、10/27公司公告及10/28投资者日转录，未取得可勾稽的“当前集团全量已投运GW＋全舰队在用GPU”清单。因此不把10GW−7GW的差额直接命名为已核投运存量，也不把850MW年化成固定季度交付速度。原稿“已投运AI约1.2GW”实际取自单一园区设计，已撤回。
 
-**GPU 数量分层**：
+**Abilene的进度修正：**[Crusoe 2026-03-27公告](https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure)描述Oracle/OpenAI原园区八栋楼、总设计1.2GW，首两栋合计约200MW已通电，其余六栋当时预计2026年底完成；比2025年“2026年中完成”的旧计划更新。10/28管理层表述仍为“接近完成”，所以本轮不能确认八栋全部交付或1.2GW全部带电。Crusoe同日在Abilene另宣布的900MW新园区服务Microsoft，不能算进Oracle容量。
 
-| 口径 | 数量 | 内容 | 来源 |
+#### 6.2.2 GPU：实际使用、季度交付、平台与采购分开
+
+| 对象 | 数量/状态 | 证据属性与适用日期 | 不能推导什么 |
 |---|---|---|---|
-| 单集群上限（传统） | 131,072 | OCI Supercluster 最大规模（B200/GB200 NVL72），2025-06 GA | [Oracle 官网](https://www.oracle.com/cloud/compute/gpu/)（A） |
-| 单集群上限（新） | 800,000 | OCI Zettascale10：跨多数据中心、2km 半径内、16 zettaFLOPS、multi-GW，2025-10-14 AI World 官宣，首发即 Abilene，2026 日历年下半年起交付 | [Oracle 新闻稿](https://www.oracle.com/news/announcement/ai-world-oracle-unveils-next-generation-oci-zettascale10-cluster-for-ai-2025-10-14/)（A） |
-| Abilene 实际部署 | 64,000 GB200 | 2026 年底前部署 64,000 块 GB200（首批 16,000 块 2025 年夏末安装） | Bloomberg 经 [DCD](https://www.datacenterdynamics.com/en/news/openai-and-oracle-to-deploy-64000-gb200-gpus-at-stargate-abilene-data-center-by-2026-report/) 转述（B 级，原文为 2025 年报道口径，时间点待核） |
-| 采购承诺 | ~400,000 GB200 / ~$40B | Oracle 采购约 40 万块 GB200，以 15 年租约向 OpenAI 供算力；"全部给 Abilene 还是分摊整个 Stargate"各来源口径不一 | Bloomberg 原始报道，经 [GPUSmith](https://gpusmith.com/articles/en/nvidia-gpu-lead-times-h100-h200-gb200)（NA）/IntuitionLabs（C）转述 |
+| Oracle向AI云客户交付 | **超过300,000块GPU** | 9/10公司业绩稿，回顾FY2027 Q1自Q4末以来交付 | 是季度增量，不是全舰队或Abilene存量；芯片分型未在该数字中拆出 |
+| Abilene OCI Supercluster | **超过100,000块NVIDIA Blackwell GPU已用于OpenAI训练和服务** | [Oracle与NVIDIA 10/27公告](https://www.oracle.com/news/announcement/ai-world-nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-2026-10-27/)，当事人披露，非独立现场盘点 | 不代表八栋满配；与集团季度交付部分可能重叠，不能相加 |
+| Vera Rubin NVL72 | 公司称已在OCI普遍可用（GA）；同时计划扩至多GW | 10/27公司公告，72GPU/机架为产品结构 | GA不等于全部地区可用，更不等于已建成多GW；未给已部署GPU总数 |
+| OCI Zettascale10 | 初始设计目标最高800,000块NVIDIA GPU | [2025-10-14公司公告](https://www.oracle.com/news/announcement/ai-world-oracle-unveils-next-generation-oci-zettascale10-cluster-for-ai-2025-10-14/)；本轮查到的新公告未给80万块已安装确认 | 是集群平台扩展目标，不能写成现有80万块超算 |
+| AMD MI450初始部署 | 50,000块，原计划2026自然年Q3开始 | [AMD 2025-10-14公告](https://newsroom.amd.com/news/oracle-and-amd-expand-partnership-to-help-customers-ach.html)，属于既有计划；本轮未取得实际安装数量或该5万块全部开放的确认 | 开始部署计划≠已全部装机；不直接加入实际交付总数 |
+| 当前全舰队在用GPU总数 | **本轮未取得统一可核总数** | 既有H100/H200、Blackwell、AMD及其他代际需分别统计 | 撤下来源不清的“1M+已装机”现状值 |
 
-**采购承诺的一手核对【10-K核实，R64/R69 承诺附注】**：FY2026 末（2026-05-31）Oracle 的**无条件采购义务合计仅 $13.3B**（付款计划：FY2027 $1.84B / FY2028 $1.03B / FY2029 $1.05B / FY2030 $0.95B / FY2031 $0.90B / 其后 $7.53B）；财报日后（2026-06 期后事项）又新增 **$19B、五年期**无条件采购承诺。两者合计 $32.3B——与 Bloomberg 的"$40B"在量级上接近但**对不上**，说明 40 万块/$40B 的说法要么含有条件/意向部分，要么把客户预付采购部分算了进去。结论：Bloomberg GPU 数字 ⚠️ 无法与一手文件勾稽，引用时用 $13.3B+$19B 的 10-K 口径为准。
-| 全舰队规模 | "hundreds of thousands"~1M+ | Oracle 自述数十万块（2024-09）；第三方评估称 1M+（含 H100/H200/A100/AMD MI300X 存量） | [ServeTheHome](https://www.servethehome.com/2025-zettaflops-scale-compute-as-oracle-looks-to-operate-hundreds-of-thousands-of-nvidia-gpus/)（B）；layer2c 评估（NA，待核） |
+Abilene“64,000块GB200”是旧媒体计划，已被10/27的“超过100,000块Blackwell在用”这一更近的公司披露替代；新披露未逐一拆分GB200/GB300，不能自动给芯片型号占比。原稿约400,000块/$40B媒体采购说法不是收货/验收证明，亦未与一手采购附注一一勾稽，撤出现有设备统计。
 
-**GW↔GPU 换算（【我的推演】，供估算用）**：按 Abilene 口径 40 万块 GB200 / 1.2 GW ≈ 每 GW 约 33 万块 Blackwell 级 GPU（即每 GPU 分摊约 3 kW 含网络/存储/制冷 overhead）。由此粗算：Stargate 规划 7 GW ≈ 230 万块 GPU 量级；FY2026 CapEx $55.7B ÷ 每 GPU 全系统成本约 $50-60K ≈ 当年部署能力约 100 万块 GPU 量级——与"舰队 1M+"说法在数量级上自洽。
+#### 6.2.3 供应协议与其他口径：不加进已投运总数
 
-**判读**：Oracle 当前"手里有电"的确定性排序是 投运 1.2 GW < 已签约 4.5 GW < 电力采购 2.8 GW（部分重叠）< 规划 7 GW。真正的瓶颈变量是电力接入与建设速度，不是 GPU 供应（Ellison 原话佐证）；GPU 侧的约束是 Blackwell 交付排期与 2026-2027 换代（GB300/Vera Rubin）。
+| 数字 | 对象及日期 | 本轮处理 |
+|---|---|---|
+| 最高2.8GW，初始1.2GW签约并在部署 | [Bloom 2026-04-13公告](https://investor.bloomenergy.com/press-releases/press-release-details/2026/Bloom-Energy-and-Oracle-Expand-Strategic-Partnership-to-Deploy-up-to-2-8-GW-to-Accelerate-AI-Infrastructure-Build-Out/default.aspx)中的燃料电池供电协议 | 供应商协议，不是Oracle已投运数据中心或GPU IT负荷；实际分站点通电要另查 |
+| 额外最高4.5GW | [OpenAI 2025-09-23公告](https://openai.com/index/five-new-stargate-sites/)回顾双方7月协议 | Oracle/OpenAI的历史开发合作，不称“已完成全部电力租赁签约”；与新7GW计划范围不同 |
+| Stargate近7GW、400B美元以上 | 同一2025-09-23公告中的多伙伴规划，含Abilene及CoreWeave等 | 不是Oracle独有，也不是10/28 Oracle新增7GW的同一统计对象，不相加 |
+| 50多个公共云区域、28国 | [Oracle公共云区域页](https://www.oracle.com/cloud/public-cloud-regions/)，2026-11-04网页快照，无统一公告日 | 仅公共区域口径，不是全部专有/合作区域；区域数不是GW，也不表示每区有同规模GPU |
+
+旧站点清单将Stargate不同伙伴项目和不同负荷边界混在一起，已撤下其加总用途；具体站点供电见§6.3及[电力跟踪表](电力供应链跟踪表.md)。Jupiter燃料电池微电网约2.45GW是发电方案，Port Washington的902MW IT与更高总用电口径也不可直接相加；Milam、Lordstown等Stargate伙伴项目不能自动视为Oracle自有产能。
+
+#### 6.2.4 为什么撤回旧GW↔GPU及CapEx推算
+
+原稿用“40万GPU/1.2GW”反推每GW约33万GPU，但分子是未核媒体采购/设计值、分母是园区设计电力，既非同日验收存量，也未统一IT负荷边界。因此撤回“7GW等于230万GPU”的产能结论。不同芯片、CPU/网络/存储负荷、冷却效率会改变映射；没有同项目同代际的验收和功耗数据，不给通用换算系数。
+
+同理，集团现金CapEx包含建筑、服务器、网络及其他长期资产，且部分设备可能由客户提供或通过租赁取得；不能将全部CapEx除以GPU单价当年部署量，再据此验证“舰队1M+”。当前可跟踪的顺序是许可与燃料/电网、机房通电、设备安装验收、实际使用及收入，季度交付和在用GPU分别记录。
+
+本轮证据：[冻结数字与状态](factcheck/data/capacity_2026-11-04_inputs.json)、[网页提取片段](factcheck/data/capacity_2026-11-04_web_excerpts.json)。10/28项目容量数字来自二手转录，本轮未取得官方完整容量台账，明确保留该来源等级；更换为“最新”不提升证据等级。
 
 ### 6.3 电力从哪来（2026-09-02 专题）
 
@@ -275,7 +448,7 @@ CRWV/NBIS 数据来源：库 fact_version（FY25 年报与 26 年季报）；[Mo
 
 | 站点 | 供电安排 | 来源 |
 |---|---|---|
-| Abilene TX（1.2 GW，投运中） | 主用 ERCOT 电网（含附近风电），现场 350 MW 燃气电厂仅作备份（Oracle 自述）；Altman 2025 年承认"我们在烧天然气跑这个数据中心" | [AP 经 Newsday](https://www.newsday.com/business/ai-stargate-microsoft-openai-crusoe-oracle-r10037)（2026-03-27，B） |
+| Abilene TX（1.2GW为园区设计；已部分投运，最新GPU使用与施工状态见§6.2） | 主用 ERCOT 电网（含附近风电），现场 350 MW 燃气电厂仅作备份（Oracle 自述）；Altman 2025 年承认"我们在烧天然气跑这个数据中心" | [AP 经 Newsday](https://www.newsday.com/business/ai-stargate-microsoft-openai-crusoe-oracle-r10037)（2026-03-27，B） |
 | Port Washington WI "Lighthouse"（902 MW，2028 投运） | We Energies（WEC Energy）专用大负荷费率，Vantage 承担 100% 电力基建投资；We Energies 已在建 150 MW 光伏 + 110 MW 风电 + 75 MW 储能，约一半容量定向供给园区；WEC 口径合计新增近 2 GW 零排放容量（70% 园区 / 30% 居民）；**剩余缺口仍靠化石电力 + 年度绿证匹配** | [DigitalBridge 新闻稿](https://ir.digitalbridge.com/news-releases/news-release-details/openai-oracle-and-vantage-data-centers-announce-stargate-data)（2025-10-22）；[DCD](https://www.datacenterdynamics.com/en/news/we-energies-begins-work-on-three-renewable-projects-slated-to-help-power-vantages-data-center-in-port-washington-wisconsin/)（2026-08-06，B） |
 
 **第二层：现场自发电（绕开电网并网排队，ERCOT 排队 5-7 年）**
@@ -285,17 +458,34 @@ CRWV/NBIS 数据来源：库 fact_version（FY25 年报与 26 年季报）；[Mo
 | Bloom Energy 燃料电池总协议 | 最高 2.8 GW（已签约 1.2 GW，部署中） | 2026-04-13 官宣；固体氧化物燃料电池（SOFC），**烧天然气而非氢**，无燃烧、低水耗；此前一单 55 天交付（计划 90 天）；Oracle 另持 Bloom 认股权证（$113.28 × 353 万股 ≈ $400M），利益深度绑定 | [Reuters 经 socastsrm](https://d2233.cms.socastsrm.com/2026/04/13/bloom-energy-to-supply-up-to-2-8-gw-of-fuel-cells-under-expanded-oracle-deal/)（2026-04-13）；[Converge Digest](https://convergedigest.com/bloom-energy-oracle-scale-fuel-cell-deal-to-2-8-gw/)（2026-04-14，A） |
 | VoltaGrid 模块化燃气发电 | 2.3 GW（德州多站点） | 2025-10-15 官宣；INNIO Jenbacher 往复式燃气发动机（单节点 20 MW）+ ABB 控制系统；气源为 Energy Transfer 管道网络 | [POWER Magazine](https://www.powermag.com/oracle-taps-voltagrid-for-2-3-gw-modular-gas-fleet-to-power-ai-data-centers-across-texas/)（2025-10-15，A） |
 | Shackelford County TX "Frontier"（Vantage，1.4 GW） | 700 MW 已获批，**完全离网** | TCEQ 批准 210 台 Jenbacher 机组（197 主用 + 13 备用），美国最大燃气微电网之一 | [Business Insider 经 constructionowners](https://www.constructionowners.com/news/oracle-and-openai-to-power-new-texas-data-center-off-the-grid)（2025-10-24）；[Natural Gas Intelligence](https://naturalgasintel.com/news/no-turbine-data-centers-find-faster-path-with-natural-gas-reciprocating-engines/)（2026-05-29） |
-| Project Jupiter（新墨西哥 Doña Ana/Santa Teresa，$165B，STACK+BorderPlex 开发） | 微电网规划 2.45 GW Bloom 燃料电池 | 原方案为燃气轮机 + 柴油机（县文件 700-900 MW，空气许可申请到 2.8 GW），2026-04 在社区反对下改为燃料电池；**但燃料电池仍烧天然气**——17.77 英里输气管道被州政府拒绝穿越州土地、空气许可未批，Oracle 向监管承认"没有可靠的天然气来源，电厂无法运行"；SemiAnalysis 把首次供电从 2027 推到 2029（访谈暗示可能滑到 2030s）；2026-08 新墨西哥最高法院两次不利裁决 | [DCD](https://www.datacenterdynamics.com/en/news/oracle-revealed-as-tenant-of-project-jupiter-data-center-campus-in-new-mexico/)（2026-08-19，B）；[AI Weekly](https://aiweekly.co/alerts/oracle-jupiter-swaps-gas-turbines-for-costlier-bloom-fuel-cells)（2026-07-19，B）；[KOB](https://www.kob.com/new-mexico/nm-supreme-court-delivers-two-blows-to-oracle-data-center-in-southern-new-mexico/)（2026-08-25）；[Energy News Beat](https://energynewsbeat.co/ai/oracles-165-billion-data-center-plan-gets-a-gas-pipeline-delay/)（2026-08-15，NA） |
+| Project Jupiter（新墨西哥，STACK等开发） | Bloom天然气燃料电池微电网规划约2.45GW | 管线/空气许可和合同责任仍待解决；9/17法院已解除暂停，10/27报道听证改至12/7。此前第三方2029预测不是公司确认工期 | 见下方§6.3.1最新进展与来源 |
 | Abilene 现场燃气电厂 | 350 MW（备份定位） | GE Vernova / Solar Turbines 涡轮机；隔壁微软 900 MW 扩建则配 900 MW 自备燃气电厂（100% 离网口径） | [National Law Review](https://natlawreview.com/article/turbines-fence-line-how-gas-power-fueling-ai-data-center-race)（2026-02-27，A）；Newsday（同上） |
 
-**气源层**：Energy Transfer 与 Oracle 签多份长约，向三个数据中心（两个在德州）合计供约 **900 MMcf/d**（约 90 万 Mcf/天）天然气，第一条支线已向 Abilene 供气，另两条 2026 年中接通（[Energy News Beat](https://energynewsbeat.co/ai/oracles-165-billion-data-center-plan-gets-a-gas-pipeline-delay/)，2026-08-15，NA 级但与 Energy Transfer 财报口径一致）。
+### 6.3.1 Project Jupiter：供电、审批与付款责任（核对至2026-11-04）
+
+Jupiter在新墨西哥Santa Teresa附近，Stack等开发，Oracle作为主要租户部署算力。约1,400英亩、2.45GW是媒体报道规划，不是已投运容量。“165B美元”项目/地方激励口径未完成与实际现金投入的勾稽，不当Oracle本期CapEx计算回报。
+
+| 日期 | 事实及信息属性 | 判断影响 |
+|---|---|---|
+| 9/14 | Oracle称机房与微电网在相邻独立地块，施工许可与空气许可不同【公司】 | 机房施工不等于具备电力 |
+| 9/17 | 法院解除此前空气许可/用水程序暂停【法院文件】 | 原“法院两次不利裁决”不是最新状态，也不等于许可已获批 |
+| 9/24 | Reuters称Oracle发不可抗力通知涉及供电；Oracle称按计划，Blue Owl称财务承诺不变【媒体/当事人】 | 通知不等于取消、确定延期或免责 |
+| 10/14、10/27报道 | 设计再调整，10/26听证官拒驳回申请，听证现排12/7【媒体】 | 程序继续，尚无最终许可批准确认；11/23决定期限与12/7听证的协调仍有争议，媒体说可能顺延，不写确定结果 |
+
+来源：[Oracle声明](https://www.oracle.com/news/announcement/project-jupiter-statement-on-construction-permitting-2026-09-14/)、[法院9/17文件](https://nmcourts.gov/wp-content/uploads/2026/09/Orders-in-Project-Jupiter-air-quality-permit-and-water-cases.pdf)、[Reuters 9/24（MarketScreener转载）](https://au.marketscreener.com/news/oracle-cites-force-majeure-to-shield-itself-on-data-center-bloomberg-news-reports-ce785adede8cfe2d)、[Searchlight 10/27](https://searchlightnm.org/project-jupiter-foes-dealt-blow-in-data-center-permit-fight/)。
+
+天然气燃料电池仍需气源，换设备未消除管线和排放许可问题。Reuters采访称Oracle承担供电责任、不能简单终止租约，等待期仍有开发资金成本；较高运营期租金递延不等于等待期不付钱。完整租约未公开，无法独立确认不可抗力适用、宽限年限与最终金额，不采用网络“免付三年”的确定说法。报道中的18B项目贷款与3B股权也不能全部当Oracle公司债再加到§4.2。
+
+【我的推演】应观察燃料许可、微电网建成调试、机房通电、客户使用及收款的连续进度；设备或租赁成本可能先于收入。集团Q1交付850MW不能证明Jupiter已通电。完整项目成本、赔偿和投运时间仍属证据边界。
+
+**气源层**：Energy Transfer 与 Oracle 签多份长约，向三个数据中心（两个在德州）合计供约 **900 MMcf/d**（约 90 万 Mcf/天）天然气，第一条支线已向 Abilene 供气，另两条原计划2026年中接通，本轮未核到实际通气（[Energy News Beat](https://energynewsbeat.co/ai/oracles-165-billion-data-center-plan-gets-a-gas-pipeline-delay/)，2026-08-15，NA 级但与 Energy Transfer 财报口径一致）。
 
 **第三层：远期叙事**——Stargate 规划文件提到中期考虑核电 SMR；BorderPlex 计划为新墨西哥项目 2028 年采购 500 MW 可再生、2032 年 1 GW（[DCD](https://www.datacenterdynamics.com/en/news/oracle-revealed-as-tenant-of-project-jupiter-data-center-campus-in-new-mexico/)，2026-08-19）。Oracle 目前没有已披露的核电采购合同（对照：亚马逊买 Talen 核电、微软签 Constellation/三里岛）。
 
 **判读**：
-- **电的真实瓶颈是"时间"不是"资源"**：电网并网排队 5-7 年，而 Oracle 承诺 2027 年起向 OpenAI 供 4.5 GW——所以燃气现场发电（涡轮/发动机/燃料电池三条技术线都上）是抢时间的唯一解。"燃料电池"不等于清洁，只是换了种方式烧天然气（无燃烧、低水耗、低 NOx，但碳排放仍在，Jupiter 口径年排放约 1,000 万吨 CO₂e）。
+- **电的真实瓶颈是"时间"不是"资源"**：电网并网排队 5-7 年，而 Oracle 承诺 2027 年起向 OpenAI 供 4.5 GW——所以燃气现场发电（涡轮/发动机/燃料电池三条技术线都上）是公司采取的抢时间路径之一。"燃料电池"不等于清洁，只是换了种方式烧天然气（无燃烧、低水耗、低 NOx，但碳排放仍在，Jupiter 口径年排放约 1,000 万吨 CO₂e）。
 - **自建电源不是免责金牌**：Jupiter 卡住的不是发电设备而是**输气管道和空气许可**——把电网审批换成了管道审批，SemiAnalysis 已把供电时点推后两年。这是 §6.7 风险清单里"电力与建设进度"的具体化，也解释了 Oracle 为什么要同时押注 Bloom（燃料电池）、VoltaGrid（往复式发动机）、GE Vernova（涡轮机）三条技术路线对冲审批风险。
-- **电力链受益方**（研究延伸）：Energy Transfer（气源长约）、Bloom Energy（Oracle 持股绑定）、VoltaGrid/Jenbacher/GE Vernova（发电设备）。行业背景：Cleanview 统计全美数据中心自建电源设备 75% 是燃气（2026-02，[Unbreakable Ventures 转述](https://www.unbreakableventures.com/p/the-pin-how-the-strait-of-hormuz)，NA 级，仅作行业背景）。供应链各环节的承诺容量、交付里程碑与审批闸门已单列跟踪：[电力供应链跟踪表.md](/Users/vinci/Documents/stock_research/ORCL/电力供应链跟踪表.md)（2026-09-02）。
+- **电力链受益方**（研究延伸）：Energy Transfer（气源长约）、Bloom Energy（Oracle 持股绑定）、VoltaGrid/Jenbacher/GE Vernova（发电设备）。行业背景：Cleanview 统计全美数据中心自建电源设备 75% 是燃气（2026-02，[Unbreakable Ventures 转述](https://www.unbreakableventures.com/p/the-pin-how-the-strait-of-hormuz)，NA 级，仅作行业背景）。供应链各环节的承诺容量、交付里程碑与审批闸门已单列跟踪：[电力供应链跟踪表.md](电力供应链跟踪表.md)（2026-09-02）。
 
 **附：三种现场发电技术的原理与取舍**（2026-09-02 补，技术常识整理，非 Oracle 披露口径）
 
@@ -307,22 +497,28 @@ CRWV/NBIS 数据来源：库 fact_version（FY25 年报与 26 年季报）；[Mo
 ### 6.4 Stargate 与旗舰项目（库外来源）
 
 - **Stargate 项目**（2025-01-21 官宣）：OpenAI + 软银 + Oracle，宣称四年 $500B、10 GW 美国 AI 基建（[IntuitionLabs 综述](https://intuitionlabs.ai/articles/oracle-openai-300b-deal-analysis)，2025-11-30；[Futurum](https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/)，2026-02-12）。
-- **Abilene, TX 旗舰站**：1.2 GW 园区，2026 年初已投运（Crusoe 开发，Oracle 运营 OCI 算力），部署数十万块 Nvidia GB200（GPU 采购约 $40B）。
-- **扩张**：2025-07 OpenAI 与 Oracle 追加 4.5 GW，在建容量超 5 GW；至 2026 年初 Stargate 规划近 **7 GW、投资超 $400B**，站点扩至密歇根、威斯康星、怀俄明、宾夕法尼亚、新墨西哥及德州多地（Milam County 由软银旗下 SB Energy 开发 1.2 GW）。
-- 值得注意的插曲：微软在 Abilene 隔壁向 Crusoe 租了 900 MW（OpenAI 放弃的扩容选项）——OpenAI 与微软渐行渐远，Oracle 成为 OpenAI 基建主力承接方（IntuitionLabs，C 级来源，细节待更权威来源复核）。
+- **Abilene, TX旗舰站**：1.2GW为八栋园区设计容量，不能全部当已投运。Oracle 2026-10-27称超过10万块Blackwell已用于OpenAI训练和服务；10/28转录仍称园区接近完成，详见§6.2。撤下未核的40B美元GPU采购对应实际装机说法。
+- **扩张口径**：2025年OpenAI/Oracle额外4.5GW开发协议、多伙伴Stargate近7GW历史规划、2026-10-28 Oracle未来约两年增量7GW和FY2028末10GW组合目标，范围与时点不同，均不可当当前Oracle已投运总量；容量证据和期限见§6.2。
+- 同城另一个900MW园区：Crusoe 2026-03-27公告明确服务Microsoft，首栋当时预计2027年中通电；不能算Oracle容量，也不足以单凭地理邻近推断OpenAI与Microsoft关系变化。
 
 ### 6.5 需求侧：OpenAI 集中度
 
-- **OpenAI–Oracle $300B / 5 年合同**（2025-09）：自 2027 年起每年供应约 4.5 GW 算力，是 RPO 暴涨的最大单一来源（[Yahoo Finance](https://finance.yahoo.com/sectors/technology/article/oracle-q4-earnings-beat-on-revenue-but-miss-on-cloud-sales-221337908.html)，2026-06-11）。
+- **OpenAI–Oracle $300B / 5 年合同**（2025-09）：额外最高4.5GW是开发容量协议，不是“每年新增4.5GW”或已实现年交付。2025-09-23 OpenAI公告将双方合作描述为五年超过300B美元，交付按项目分期；它是RPO增长的重要背景（[Yahoo Finance](https://finance.yahoo.com/sectors/technology/article/oracle-q4-earnings-beat-on-revenue-but-miss-on-cloud-sales-221337908.html)，2026-06-11）。
 - OpenAI 自身状态（决定合同履约能力）：2025 年底 ARR 约 $20B，2026 年初约 $25B；已完成 $122B 融资（估值 $852B）、重组为 PBC；2026-06 已秘密提交 IPO 文件，可能 Q4 2026 上市（IntuitionLabs 2025-11-30；Yahoo 2026-06-11）。
 - 风险含义：Oracle 数据中心的故事本质上是**单一客户信用 + 单一技术周期（大模型训练）的双重集中赌注**。穆迪在负面展望中点名的"交易对手风险"（counterparty risk）即指此。Oracle 管理层口径是"AI 客户多元化在推进"，但 RPO 增量大部分仍来自"超大规模 AI 合同"（财报原话）。
 
 ### 6.6 资金侧：怎么付这笔钱
 
 - FY2026：发债 $43B + 股权融资 $5B（[Oracle Q4 FY2026 财报](https://www.oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10/)，2026-06-10）。
-- CY2026 融资计划（2026-02-01 官宣，少见的前置披露）：一次性投资级债券发行（高盛牵头，实际 $20-25B 于 2026-02 完成）+ **$20B ATM 增发** + 强制可转债（花旗牵头）；公司承诺 2026 日历年不再增发债券（[Oracle IR](https://investor.oracle.com/investor-news/news-details/2026/Oracle-announces-Equity-and-Debt-Financing-Plan-for-Calendar-Year-2026/default.aspx)，2026-02-01；[TwentyFour AM](https://blog.twentyfouram.com/insights/oracle-clears-the-supply-cloud-with-record-demand)，2026-02-03）。
+- CY2026 融资计划（2026-02-01 官宣，少见的前置披露）：一次性投资级债券发行（高盛牵头，实际 $20-25B 于 2026-02 完成）+ **$20B ATM 增发** + 强制可转债（花旗牵头）；公司当时预计2026日历年不再增发债券（已被11/2新债定价更新，见下文）（[Oracle IR](https://investor.oracle.com/investor-news/news-details/2026/Oracle-announces-Equity-and-Debt-Financing-Plan-for-Calendar-Year-2026/default.aspx)，2026-02-01；[TwentyFour AM](https://blog.twentyfouram.com/insights/oracle-clears-the-supply-cloud-with-record-demand)，2026-02-03）。
 - FY2027 资金安排：Q4 FY2026 时公司预计 FY2027 融资约 $40B（债+股组合，含 $20B ATM）；到 FY2027 Q1，**$20B ATM 已完成**。这不是“尚有 $20B 必定继续举债”的承诺；其余资金缺口取决于 CapEx、经营现金流、客户预付款与后续融资决策。
 - 项目级融资（表外化倾向）：2025-11 报道 $38B 银行贷款（摩根大通牵头，Vantage 的威斯康星/德州数据中心）+ $18B 新墨西哥项目债（STACK 开发）——数据中心越来越多以项目融资/租赁结构而非 Oracle 表内 capex 推进（[Octus](https://octus.com/resources/articles/banks-prep-series-of-multibillion-dollar-debt-offerings-for-oracle/)，2025-11-11）。经营租赁负债 $30.2B（FY2026）的暴涨正是这一结构的会计体现；代价见 §4.3（租赁资产不能抵押/出售）。
+- 10/28投资者日【管理层目标】：Q1已完成20B ATM之外，FY2027～FY2030额外融资20B（股10B+债10B），不含现有债务再融资；旧FY2027约40B与新20B框架不能叠加。
+- 11/2定价【公司公告】：86,206,897股、116美元/股（约10B），另10B债券、票息7.000%～8.650%、2029～2046到期。预计11/4交割，股/债净募资约9.9B/10.0B，未核到实际交割，不计入8/31余额。它与10/28框架金额匹配，不是额外第三笔20B。
+- 【复算，✅】新债面额×票息合计0.77675B美元年票息，不是净增利息或有效融资成本；新增股数约为8/31普通股本2.85%，不是所有潜在可转证券的完全稀释率。
+- Q1分红1.565B（含优先股0.081B），回购零；8/31剩余回购授权6.3B不是执行额。SBC1.127B是费用而非同额现金；期末普通股2.880→3.024B（+5.00%），ATM贡献0.141B股。
+- 来源：[投资者日](https://www.prnewswire.com/news-releases/oracle-investor-day-2026-accelerating-value-creation-302922564.html)、[融资定价公告](https://www.prnewswire.com/news-releases/oracle-announces-pricing-of-20-billion-of-common-stock-and-senior-notes-302927244.html)、[10-Q附注7](https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm)。
+
 - 客户预付缓冲：FY2026 Q4 时 RPO 中已有 **$75B** 属"客户预付 GPU 采购款或自带 GPU"的 AI 合同；FY2027 Q1 单季客户预付款（含重大融资成分）为 $11.36B。它们实质上将部分建设资金前置由客户承担，降低 Oracle 自有现金需求，但不降低总资产建设规模（见 §4.1.1）。
 - 宏观面：2026 年 AI 相关发债近 $570B（摩根士丹利预测），Oracle 是被信用市场点名"显著再杠杆化"的发行人（[Credence Wire](https://credencewire.com/article/morgan-stanley-ai-debt-issuance-surge-2026)，2026-06-24；[UBS 观点转述](https://www.fi-desk.com/usd-issuance-to-hit-record-highs-in-2026-ubs-predicts/)，2026-01-29）。
 
@@ -332,56 +528,84 @@ Oracle 的数据中心业务=**用 BBB- 信用 + 客户长约 + 预付款/项目
 
 ## 7. 订单与客户承诺（RPO）
 
-（研究方式.md 第 10 问，对 Oracle 升格为重点章节）
+【公司披露】RPO（尚未履约的合同金额）：FY2025末138B→FY2026 Q1 455B→Q2 523B→Q3 553B→FY2026末638B→FY2027 Q1 **664B美元**；环比增加26B（4.08%）、同比增加209B（45.93%）。新签30B以上AI合同不等于RPO净增同额，履约确认也会消耗余额。
 
-- RPO 轨迹（库外，公司披露）：FY2025 Q4（2025-05）约 $138B → Q1 FY2026 $455B（2025-09，OpenAI 大单落定，单季 +$317B）→ Q2 FY2026 $523B（[穆迪引用](https://www.moodys.com/web/en/us/insights/credit-risk/outlooks/mco-15-december-2025.html)，2025-12-15，S）→ Q3 FY2026 $553B → Q4 FY2026 $638B → **Q1 FY2027 $664B**（环比 +$26B，同比 +$209B）（[Oracle FY2027 Q1 财报](https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx)，2026-09-10，S）。
-- 转化节奏：公司此前指引 RPO 中仅约 **12% 在未来 12 个月转为收入**（媒体转述财报口径，ifyouspent 2026-07-27）——因此 RPO 大部分仍是多年期收入承诺；以 Q1 FY2027 的 $664B 粗算，不能将其直接等同于当期收入或现金流。
-- 对比参照（媒体整理，粗略口径）：RPO/IaaS 年化收入 Oracle 约 110×，微软约 5.7×，AWS 约 4.4×——Oracle 的"承诺/交付"杠杆比同行高一个数量级（[Beancount 整理](https://beancount.io/blog/2026/08/26/oracle-fy2026-q4-earnings-analysis)，2026-08-27，NA 级来源，该文其他数字有明显错误，仅取此对比框架，数值待核）。
-- 结构性折价因素：$75B 是预付/自带 GPU 部分（资本风险降，但这部分 RPO 对应的利润率也更接近"托管"而非"云服务"）。
+[10-Q附注1](https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm)（9/11）：未来12个月预计确认13%、第13～36个月37%、第37～60个月34%、此后16%。【复算，✅】664×13%≈86.32B为该时点RPO未来12个月转化，不等于FY2027全年营收：时间起点不同，且不含以后新签收入。37%/34%各跨24个月，不能直接当单年收入率。
+
+OpenAI最新单客户RPO、完整取消/赔偿条款未披露，媒体300B合同不能自动当100%不可取消资产。评级/媒体历史“约一半”不是最新集中度实绩。FY2026末75B预付/自带GPU合同规模不等于已收到75B现金；Q1预付款11.363B才是当季现金流。未起租租约288B、采购等34.150B与订单分别展示，不能相互抵销称无风险。
+
+【我的推演】客户信用、期限、取消权、供电、投入和毛利影响订单价值；旧稿跨公司“RPO/IaaS110倍”未核数据不再作为当前估值依据。
 
 ## 8. 估值与资金效率
 
-（按纪律：Reverse DCF 先行，假设显式标记）
+### 8.1 2026-11-03收盘复算（明确跨时点）
 
-- 现状（2026-08-27，【库核实】）：股价 $151.94，市值 $437.7B，PE TTM 26.1；FY2027 指引 non-GAAP EPS $8.05 → 前瞻 PE 约 18.9。EV ≈ 市值 + 净债务 $128B ≈ **$566B**。
-- **反推市场预期**：EV $566B 对 FY2027 指引营收 $90B ≈ EV/S 6.3×。若假设【假设】稳态营业利润率回到 32-35%（折旧爬坡后）、【假设】10 年后营收达到 $200B 级（隐含 RPO 大部分转化为收入，FY2027-2036 CAGR 约 9%+）、【假设】WACC 9%，则当前价格大体合理——即**市场已经把 $638B RPO 的成功转化计入价格**，留给"执行失败"的安全边际很薄。
-- 估值的另一个参照系是信用市场（见 §4.3）：债券 7-8% 的收益率说明债市给 Oracle 的风险定价比股市苛刻得多——股债两个市场对同一家公司给出了分裂定价。
-- 资金效率警讯：FY2026 ROE 因权益基数小（$42.5B）虚高至 40%，无参考意义；更有意义的指标是 ROIC 趋势——CapEx 狂奔期 ROIC 必然被稀释，等 FY2027-28 折旧与收入确认后再看。
-- ±30% 规则：未自建完整 DCF 模型（FCF 为负、资本结构剧变中，模型输出噪音大于信号），本节仅做反推预期分析，不给出公允价值结论。
+价格126.19美元，NYSE常规收盘；[Yahoo](https://au.finance.yahoo.com/quote/ORCL/history/)与[StockAnalysis](https://stockanalysis.com/stocks/orcl/history/)交叉核对。本轮无已连接行情插件可取值，使用网页行情。股本用8/31的3.024B股，不冒充实时股本。
+
+| 指标 | 复算值 | 口径/限制 |
+|---|---:|---|
+| 股本快照市值 | 381.60B美元 | 126.19×3.024B，与行情商实时市值可不同 |
+| 借款净债务 | 88.26B美元 | 8/31借款−现金−短期证券，不含租赁 |
+| 简化EV（未计租赁/优先股/少数权益） | 469.86B美元 | 不是完整EV，不据其给精确EV倍数 |
+| 市值/TTM普通股净利润 | 20.37倍 | 381.60/18.736，期末股数与利润加权股数不同 |
+| 股价/单季摊薄EPS加总TTM | 19.78倍 | 126.19/(5.83−1.01+1.56＝6.38)，舍入及各季股数限制 |
+| FY2027管理层non-GAAP指引PE | 15.58倍 | 126.19/8.10，与GAAP PE分开 |
+| TTM FCF/快照市值 | -7.53% | -28.720/381.60，负值为现金缺口 |
+
+【复算，✅】见[结果](factcheck/fy2027q1_results.json)。11/2发行预计交割未核，8/31后员工股及其他变动未全量取得，不能给精确当前市值/完整EV。仅将新股86.207M加入会机械得到约3.110B股，但现金、债务也变化，故不据其构造“当前EV”。8月旧估值已撤出当前判断；§5同业表已改为最近四季TTM和11/3同日行情。
+
+### 8.2 资金效率与定价条件
+
+【复算，✅】FY2026 ROE＝归属Oracle净利17.087/[(20.451+42.508)/2]＝54.28%，纠正原稿用期末权益得40%。此口径含优先股权益；如算普通股ROE应同时调整收益与权益。Q1 ROE＝4.760/[(42.508+66.772)/2]＝8.71%（单季未年化）；增发发生在季度中，两端平均法仅为近似。高ROE受历史分配和权益基数影响，不是新AI项目回报证明。项目ROIC需分业务税后收益与投入资本，尚未独立取得。
+
+【我的推演】15.58倍指引PE低于历史快照，但非GAAP费用剔除、稀释、设备投入和租赁决定最终每股现金回报。管理层预计FY2028下半年FCF转正、FY2029至少30B，是可验证目标。若FY2029真有30B可持续、可归普通股FCF（假设同口径且不再稀释），相对快照市值为7.86%；它未折现、非当前收益率，还要承担此前现金缺口。完整DCF未建，删除原“价格大体合理、已计入RPO成功兑现”的确定判断，不给公允价值。
 
 ## 9. 值得注意的点
 
-- **治理/股东**：Larry Ellison 仍为最大股东与 CTO，Ellison 家族利益与 OpenAI/Stargate 深度绑定；CEO Clay Magouyrk 出身 OCI，说明公司已把战略重心完全押在云基建上。治理上另一个信用相关点是：公司历史上没有公开财务政策目标（穆迪 2021 年降级理由之一），资本纪律全靠管理层自我约束。
+- **治理/股东**：Larry Ellison 仍为最大股东与 CTO，Ellison 家族利益与 OpenAI/Stargate 深度绑定；联席CEO Clay Magouyrk出身OCI，说明公司已把战略重心完全押在云基建上。治理上另一个信用相关点是：历史缺少明确财务目标；10/28已提出FY2029净债务/调整后EBITDA低于3.5倍及融资框架，应跟踪兑现。
 - **TikTok 入股（Deal Radar 命中）**：2026-01-22 TikTok 美国合资公司成立，Oracle/Silver Lake/MGX 各持 15%，字节保留 19.9%；交易估值约 $14B。Oracle 同时承接 TikTok 美国数据托管与算法重训练（在 Oracle 云上）（[ABC News](https://abcnews.com/US/tiktok-signs-deal-create-new-us-joint-venture/story?id=128540504)，2025-12-19；[Harvard HKS](https://www.hks.harvard.edu/centers/carr-ryan/our-work/carr-ryan-commentary/under-us-ownership-tiktok-poses-even-greater-threat)，2026-01-27）。金额对 Oracle 不大，但带来持续的政策/隐私争议敞口。
-- **评级风险**：见 §4.3——穆迪 Baa2 负面展望；**标普已于 2026-07-09 降至 BBB-（距垃圾级一档）**；债市已在定价堕落天使风险（30 年债收益率 7.8%，5 年 CDS 破 198bp 创纪录）。
+- **历史评级及市场风险资料（主要截至2026年8月，本轮未复核现时等级/报价）**：见 §4.3——穆迪 Baa2 负面展望；**标普已于 2026-07-09 降至 BBB-（距垃圾级一档）**；债市已在定价堕落天使风险（30 年债收益率 7.8%，5 年 CDS 破 198bp 创纪录）。
 - **裁员与人效**：FY2026 重组费用 $1.84B【10-K核实】，员工据传降至约 14.1 万（二手转述待核）——一边大裁员一边大建数据中心，是典型的"软件公司变公用事业"转型。
 - 未发现激进股东介入、针对 Oracle 本身的反垄断审查或进行中的大型并购（Deal Radar，2026-08-31 检索）。
 
 ## 10. 我的看法
 
-（整篇【我的推演】，待事实纠正）
+【我的推演，2026-11-04】数据库支持与应用仍是经营基础，新增增长依赖资本密集的OCI。Q1 IaaS+120.73%、经营利润+57.31%为需求及交付的正证据；TTM FCF -28.720B、未起租租约288B、持续股债融资为反证据。旧“唯一负FCF、评级两档离垃圾、26倍PE”不再概括当前公司。
 
-1. Oracle 已经不再是"数据库公司上云"的故事，而是"**用软件现金流和 BBB 信用给 AI 基建加杠杆**"的故事。分析它应该用重资产基建股（甚至公用事业）的框架，而不是 SaaS 框架——PE 26 对这个结构不便宜，因为利润表还没反映 $100B PP&E 的折旧高峰。
-2. 核心问题只有一个：**$638B RPO 的转化速度 vs $100B+ 资产的折旧速度**。如果 OpenAI 2027 年如期起量（4.5 GW/年），Oracle 营收可以在 FY2028 冲击 $120B+，当前估值说得通；如果 AI 训练需求 2027 年见顶回落，Oracle 是五大厂中资产负债表最脆弱的一家（唯一 FCF 深负 + 评级两档离垃圾）。
-3. $75B 客户预付/自带 GPU 是聪明的缓冲，但也说明客户（OpenAI）同样资金紧张——双方是互相担保的关系，一损俱损。
-4. 信用市场是更诚实的温度计：股市还在给 26 倍 PE，债市已经按准垃圾级收 7-8% 利息。历史上债市对资本结构恶化的判断通常比股市早。跟踪 Oracle 的正确姿势是盯债券利差/CDS，而不是盯财报 beat/miss。
-5. 我不具备判断"AI 算力需求 2027-2028 是否持续"的信息优势，所以对 ORCL 不下买卖结论；但会把它放进"AI 资本开支链条风险敞口最大者"的观察名单，跟踪三个先行指标：季度 RPO 环比增量、FY2027 实际融资节奏 vs $40B 计划、OCI IaaS 增速是否守住 50%+。
+1. **履约假设：**664B RPO能按合同转收入和收款。观察未来12个月13%转化、收入及站点供电；交付迟滞而RPO只增不转，会削弱判断。
+2. **资金假设：**预付款、自带GPU和供应商融资持续缓冲。Q1预付款不能每季线性重复；预付减弱且投入未降、再融资条件恶化会增加风险。
+3. **每股回报假设：**增长后的现金覆盖折旧、租赁和融资。10/28的FCF转正与融资目标可检验，若超额增发或下调目标需重估。
+
+保留观察，不给买卖结论，也不因入口自动加入关注池。预付/自带GPU不足以证明客户资金紧张或双方“互相担保”，撤回该无合同证据的推断；信用市场是风险信号，但不同期限/时点必须可比，不以“债市更诚实”替代估值。
 
 ## 11. 跳过的模块及原因
 
-- **护城河与竞争壁垒**：数据库存量粘性是真实护城河（软件支持费 $19.8B/年、零增长但极稳定，见 §3.2），但本项目的投资问题在数据中心，存量业务护城河已被充分讨论过，暂不深挖。
+- **护城河与竞争壁垒**：数据库存量粘性是真实护城河（软件支持费 $19.8B/年、零增长但极稳定，见 §3.2），但本项目的投资问题在数据中心，本轮未完成3～5年方向、定价权和迁移成本的系统核验，不能称已充分研究。
 - **完整 DCF 估值**：FCF 为负且资本结构剧变中，模型噪音大于信号（见 §8）。
-- **客户结构（独立章节）**：并入 §6.3/§7——Oracle 客户集中问题当前≈OpenAI 单客户问题，无需重复。
+- **客户结构（独立章节）**：并入 §6.3/§7——本轮重点核查OpenAI相关集中与履约风险；传统数据库、应用和其他客户画像未完整刷新，不能等同只有一个客户。
 
 ## 12. 后续研究方向
 
-- 确认 FY2026 非经营净收益 +$3.5B 的具体构成（10-K 附注，疑为 Ampere 股权处置收益）→ 据此把 FY2026"经营性净利"还原出来
-- FY2026 10-K 原文核对：员工数 14.1 万、RPO 12 个月转化比例
-- 数据中心项目融资的表外化程度：Vantage/STACK/Crusoe 各项目中 Oracle 的担保与最低租赁承诺
-- Q1 FY2027 已核对：RPO $664B、IaaS $7.4B（+121%）、$20B ATM 完成、850 MW 新容量交付；下一步跟踪 Q2 的 RPO 转化、总/净 CapEx、客户预付款与 FCF 是否继续背离
-- 建立 Oracle 债券利差/CDS 跟踪（债市定价是先行指标，见《我的看法》第 4 条）
-- 与 [CRWV](/Users/vinci/Documents/stock_research/CRWV) / [数据中心](/Users/vinci/Documents/stock_research/数据中心) 项目交叉：neocloud 与 hyperscaler 的单位经济学对比
-- 电力侧：Oracle 各站点的电力来源安排（核电/燃气/PPA）——行业瓶颈变量
+### 跟踪指标
+
+| 指标 | 已核观察值/截止 | 触发复核 |
+|---|---|---|
+| IaaS/交付 | Q1收入7.388B、+120.73%；850MW/30万以上GPU为季度增量（8/31）；Abilene在用Blackwell超过10万（10/27） | 交付利用与收入背离、重大站点延误 |
+| RPO转化 | 664B；未来12个月13%（8/31） | 转化变慢、客户违约或改约 |
+| CFO/投入/FCF | Q1 23.103/28.499/-5.396B；TTM FCF -28.720B | 预付回落但投入未减 |
+| 预付款/设备融资 | Q1预付11.363B，设备融资净偿还0.830B | 资金来源收缩；不可线性年化 |
+| 租赁 | 未起租288B；表内经营34.621/融资9.185B（8/31） | 投产慢但租赁支付开始 |
+| 股权/债务 | Q1 ATM完成；11/2新20B定价，预计11/4交割 | 条款、实际交割或额外融资 |
+| Jupiter | 9/17解除暂停；10/27报道12/7听证 | 最终许可、管线/供电或付款责任变化 |
+
+### 缺口分类
+
+- **公司未单列/合同未公开：**已查Q1业绩稿与完整10-Q，未单列AI收入利润、Jupiter现金CapEx、OpenAI最新单客户RPO和完整项目租约；不能据集团数计算项目IRR。
+- **研究尚未完成：**8/31后完整股数、发行实际交割、最新逐笔债务到期及评级复核、Ampere独立税后影响、项目ROIC、完整DCF、neocloud当前一致期间TTM与估值。暂不给精确当前EV/公平价值。
+- **不可比：**年度/季度/TTM、分部直接利润/GAAP利润、折现租赁负债/未折现承诺、毛CapEx/扣预付净投入分别展示。
+- **不适用：**目前只有Q1实绩，累计与单季相同，不再造累计表。
+
+已完成移出待办：Ampere主要税前收益构成、Q1 RPO转化13%、最新租赁/采购承诺、ATM发行实绩。
 
 ## 13. 数据来源与核实记录
 
@@ -390,7 +614,7 @@ Oracle 的数据中心业务=**用 BBB- 信用 + 客户长约 + 预付款/项目
 **一手/库数据**
 
 - stock_data 库（ssh my-t-vinci）：`us_financial_current_annual` / `us_financial_current_ttm` / `us_financial_fact_version` / `daily_quote`，2026-08-31 取数【库核实】
-- SEC XBRL companyfacts（CIK 0001341439）：债务与租赁负债年度值，2026-08-31 下载，本地存档 [orcl_companyfacts.json](/Users/vinci/Documents/stock_research/ORCL/factcheck/data/orcl_companyfacts.json)
+- SEC XBRL companyfacts（CIK 0001341439）：债务与租赁负债年度值，2026-08-31 下载，本地存档 [orcl_companyfacts.json](factcheck/data/orcl_companyfacts.json)
 - Oracle FY2026 10-K（accession 0001193125-26-277521，2026-06-22 提交）：利润表（R4）、分部信息（R86）、收入明细附注（R89），2026-08-31 从 EDGAR 提取【10-K核实】，R 文件存档于 `factcheck/data/`
 - [Oracle Q4/FY2026 财报新闻稿](https://www.oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10/)（2026-06-10）：RPO、云收入拆分、融资额、$75B 预付款
 - [Oracle FY2027 Q1 财报新闻稿](https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx)（2026-09-10）：营收/云收入/RPO、850 MW 容量、$20B ATM 完成、GAAP 经营现金流与 FCF
@@ -403,7 +627,29 @@ Oracle 的数据中心业务=**用 BBB- 信用 + 客户长约 + 预付款/项目
 - Yahoo Finance（2026-06-11，S）；Economic Times（2026-08-05，A）；Futurum（2026-02-12，B）；Octus（2025-11-11）；TwentyFour AM（2026-02-03）；ABC News（2025-12-19，B）；Harvard HKS（2026-01-27，S）
 - C/NA 级（使用时已注明或标记待核）：IntuitionLabs（2025-11-30，C）；etfpedia（2026-06-11）；ifyouspent（2026-07-27，NA）；Axis Intelligence（2026-07-27，NA）；Credence Wire（2026-06-24，NA）；Deepstory Research（2026-08-06，NA）；Beancount（2026-08-27，NA，仅取对比框架）；Market Supply Chain（2026-06-25，NA）
 
+### 本轮SOP验收记录（2026-11-04）
+
+| 项目 | 结论与定位 |
+|---|---|
+| 类型/范围 | Q1财报联动及相关期后事项；保留旧章节组织，未重构十一项完整研究 |
+| 材料/截止 | 业绩稿9/10、10-Q提交9/11（截至8/31）；电话会二手稿；本地FY2026 10-K/companyfacts；10/28与11/2公告 |
+| 重要解释保留 | 负FCF分红及预付款在§4.1；供电技术/Jupiter在§6.3；容量和换算边界在§6.2；收入兑现§7；资金效率§8和判断§10 |
+| 期间/旧值 | Q1实绩与指引分表，新增同比/环比/TTM及最新期末；同业四家公司已换为最近四季TTM、统一11/3报价；清理当前旧RPO/ATM/估值 |
+| 计算 | [同业TTM脚本](factcheck/verify_peers_ttm.py)核对四家窗口、FCF和增速；[Q1脚本](factcheck/verify_fy2027q1.py)核验收入加总、利润桥、FCF/净投入、现金变动、TTM、净债务和估值，见[结果](factcheck/fy2027q1_results.json) |
+| 证据限制 | SEC及PDF直接下载403，已在线读取并保留[网页片段](factcheck/data/fy2027q1_web_excerpts.json)，不声称本地拥有完整Q1原件 |
+| 结构/入口 | 已运行研究流程/入口工具/validate.py，全库入口零错误，ORCL五个语义章节均ok；两份改动正文的本地链接无缺失，git diff --check通过 |
+| 未通过项 | 完整现时股本/EV、评级刷新、完整DCF等见§12；历史护城河深度和完整十一项结构非本轮完成范围 |
+| 交付结论 | Q1主要财务联动修订完成；估值按明确跨时点口径复算，未宣称整篇完整研究通过 |
+
+### 本轮新增来源
+
+- [FY2027 Q1 10-Q](https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm)（2026-09-11，三报表与附注1/6/7/9）；[SEC索引](https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/0001193125-26-389274-index.htm)。
+- [10/28投资者日](https://www.prnewswire.com/news-releases/oracle-investor-day-2026-accelerating-value-creation-302922564.html)、[11/2融资定价](https://www.prnewswire.com/news-releases/oracle-announces-pricing-of-20-billion-of-common-stock-and-senior-notes-302927244.html)；项目/行情来源就近列于§6.3.1/§8。
+- 历史来源清单保留作研究依据，不代表每项均重新验证。
+
 ### 核实记录
+
+以下保留历史研究过程，旧期容量、采购及推算说法可能已由后续条目更正；当前结论以§6.2各行状态/来源日期为准。
 
 - 2026-08-31：建项目文件夹与骨架。
 - 2026-08-31：刷新数据库 schema——旧表 `us_income_statement` 等已删除，美股数据迁往 `us_financial_current_*` + `us_financial_fact_version`；通用三报表（income_statement 等）现为 A 股/港股口径（无 ORCL 数据）。SOP 的 database.md 已于当日同步重写。
@@ -414,9 +660,15 @@ Oracle 的数据中心业务=**用 BBB- 信用 + 客户长约 + 预付款/项目
   - 新增 §4.3 信用评级分析：2021 年举债回购降级史 + 当前穆迪/标普/惠誉口径 + 堕落天使风险的市场证据；股价 6-7 月最大回撤 -52% 用库数据复算 ✅（244.58→117.74）。
 - 2026-08-31（v3，物理产能专题）：新增 §6.2"物理产能台账：GW 与 GPU"——分层整理电力容量（投运 1.2 GW / 已签约 4.5 GW / 燃料电池采购 2.8 GW / Stargate 规划近 7 GW）与 GPU 数量（单集群上限 131K→800K、Abilene 实际部署 64K GB200、采购承诺约 400K GB200/$40B、舰队数十万至 1M+），并给出 GW↔GPU 换算框架；小节重编号（原 6.2-6.5 → 6.3-6.6）。
 - 2026-08-31（v4，10-K 承诺附注深挖）：从 R64/R69 提取并核实——**未起租经营租赁承诺 $260B**（15-19 年租期，表内仅 $30.2B）、融资租赁负债 $7.7B、出租方借款担保 $3.3B（2026-09 到期）、无条件采购义务 $13.3B + 期后新增 $19B。结论：Bloomberg"40 万块 GB200/$40B"无法与一手文件勾稽（⚠️），采购口径以 10-K 的 $13.3B+$19B 为准；§4.2 新增表外承诺段。
-- 2026-09-01（v5，两年股价复盘）：新建独立专题文档 [股价复盘-2024-2026.md](/Users/vinci/Documents/stock_research/ORCL/股价复盘-2024-2026.md)（六幕时间线，全部转折点收盘价库核实）；**重要更新：标普 2026-07-09 已降级 BBB→BBB-（展望稳定）**，§4.3/§9 评级相关内容已修正——此前 v1-v4 的"标普 BBB 负面展望"口径已过时；补充 OpenAI 约占 RPO 一半、FY2027 capex $90-95B（S&P 口径）、OpenAI 年付款义务 ~$60B vs 其年化收入 ~$24B 等关键事实。
+- 2026-09-01（v5，两年股价复盘）：新建独立专题文档 [股价复盘-2024-2026.md](股价复盘-2024-2026.md)（六幕时间线，全部转折点收盘价库核实）；**重要更新：标普 2026-07-09 已降级 BBB→BBB-（展望稳定）**，§4.3/§9 评级相关内容已修正——此前 v1-v4 的"标普 BBB 负面展望"口径已过时；补充 OpenAI 约占 RPO 一半、FY2027 capex $90-95B（S&P 口径）、OpenAI 年付款义务 ~$60B vs 其年化收入 ~$24B 等关键事实。
 - 2026-09-01（v6，neocloud 估值对比）：§5 新增 5.1"与 neocloud 的估值分层"——ORCL/CRWV/NBIS 三家同口径对比（市值、增速、P/S、EV/Backlog、资产负债表），回答"逻辑相近为何定价不同"。CRWV/NBIS 财务取库 fact_version（FY25 年报 + 26H1 季报），报价用 Yahoo（2026-09-01）；注意 daily_quote/us_financial_current_* 未覆盖 CRWV/NBIS（行情与精选表缺口，fact_version 有数）。
-- 2026-09-02（v7，电力来源专题）：新增 §6.3"电力从哪来"（小节重编号 6.3-6.6 → 6.4-6.7）。核心结论：以天然气为主，"电网专线 + 现场自发电"两条腿；Bloom 燃料电池总协议 2.8 GW（烧气不烧氢）、VoltaGrid 燃气 2.3 GW、Energy Transfer 供气长约 900 MMcf/d、Jupiter 因输气管道与空气许可被 SemiAnalysis 推迟至 2029。已下载 10-K 主文档 [orcl_10k_main.htm](/Users/vinci/Documents/stock_research/ORCL/factcheck/data/orcl_10k_main.htm) 全文检索——10-K 不点名任何电力项目，仅风险章节通用表述。Oracle 无已披露核电合同。同日补充 §6.3 附录"三种现场发电技术的原理与取舍"（燃气轮机/往复式发动机/SOFC 燃料电池的原理、效率、审批路径差异）——属技术常识整理，非 Oracle 披露口径。
-- 2026-09-02（v8，电力供应链跟踪表）：新建独立文档 [电力供应链跟踪表.md](/Users/vinci/Documents/stock_research/ORCL/电力供应链跟踪表.md)——按环节（气源/燃料电池/燃气发电/电网/开发商）整理供应商承诺容量、交付里程碑、审批闸门与 7 条可核查监控点（含"被打脸信号"和应对动作）。新发现：Milam 站点由 SB Energy 负责"综合能源交付"（OpenAI+软银各投 $500M，拟 IPO），首栋楼目标 2026-10；GE Vernova 重型涡轮售罄至 2028、新订单交期 ~3 年（行业层约束）；Bloom 产能 2026 年底翻倍至 2 GW/年、总 backlog ~$20B。站点容量口径更新：Shackelford 2.0 GW / Jupiter 2.2 GW / Port Washington 1.3 GW / Saline Township 1.4 GW（Epoch AI 卫星分析口径，与 §6.2 旧口径差异已标注待核）。
+- 2026-09-02（v7，电力来源专题）：新增 §6.3"电力从哪来"（小节重编号 6.3-6.6 → 6.4-6.7）。核心结论：以天然气为主，"电网专线 + 现场自发电"两条腿；Bloom 燃料电池总协议 2.8 GW（烧气不烧氢）、VoltaGrid 燃气 2.3 GW、Energy Transfer 供气长约 900 MMcf/d、Jupiter 因输气管道与空气许可被 SemiAnalysis 推迟至 2029。已下载 10-K 主文档 [orcl_10k_main.htm](factcheck/data/orcl_10k_main.htm) 全文检索——10-K 不点名任何电力项目，仅风险章节通用表述。Oracle 无已披露核电合同。同日补充 §6.3 附录"三种现场发电技术的原理与取舍"（燃气轮机/往复式发动机/SOFC 燃料电池的原理、效率、审批路径差异）——属技术常识整理，非 Oracle 披露口径。
+- 2026-09-02（v8，电力供应链跟踪表）：新建独立文档 [电力供应链跟踪表.md](电力供应链跟踪表.md)——按环节（气源/燃料电池/燃气发电/电网/开发商）整理供应商承诺容量、交付里程碑、审批闸门与 7 条可核查监控点（含"被打脸信号"和应对动作）。新发现：Milam 站点由 SB Energy 负责"综合能源交付"（OpenAI+软银各投 $500M，拟 IPO），首栋楼目标 2026-10；GE Vernova 重型涡轮售罄至 2028、新订单交期 ~3 年（行业层约束）；Bloom 产能 2026 年底翻倍至 2 GW/年、总 backlog ~$20B。站点容量口径更新：Shackelford 2.0 GW / Jupiter 2.2 GW / Port Washington 1.3 GW / Saline Township 1.4 GW（Epoch AI 卫星分析口径，与 §6.2 旧口径差异已标注待核）。
 - 2026-09-02（v9，目录整理）：按 AGENTS.md 第 2 条约定，将 14 个 10-K 原始文件（R*.htm、FilingSummary.xml、orcl_10k_main.htm、orcl_companyfacts.json）从项目根层收进 `factcheck/data/`；删除 330 字节空壳 FY2026_10K_Financial_Report.xlsx；ORCL.md 内两处文件链接与"R 文件存档位置"表述已同步更新。根层现仅存三份研究文档：ORCL.md、股价复盘-2024-2026.md、电力供应链跟踪表.md。
 - 2026-09-15（v10，FY2027 Q1 与资本配置更新）：补充 FY2027 Q1 的经营现金流 $23.10B、总 CapEx $28.50B、GAAP FCF -$5.40B、客户预付款 $11.36B 与公司“净现金 CapEx”$17.97B；明确后者不能替代 FCF，避免在经营现金流中重复计算预付款。更新 FY2027 指引为总 CapEx $90–95B、净现金 CapEx 不超过 $70B（管理层电话会二手转录），并记录 FY2027 营收“至少 $90B”、non-GAAP EPS $8.10 的管理层指引；补充 FY2026 FCF 为负仍分红的总体资金来源分析，以及 Q1 RPO $664B、850 MW 新容量和 $20B ATM 完成情况。
+
+- 2026-11-04：按SOP联动修订Q1营收、盈利、现金流、TTM、期末、承诺、融资和估值；更新Jupiter、跟踪/缺口与研究判断，更正FCF、分部和ROE口径，保留预付款/分红及供电解释。
+
+- 2026-11-04（同业窗口修订）：§5改用ORCL截至8/31、MSFT/AMZN/GOOG截至9/30的最近四季TTM，全部TTM同比，统一现金PP&E支出与FCF公式；股价统一11/3收盘。撤下旧neocloud混期间数值排名，保留商业模式差异及完整TTM缺口；复算脚本验证Amazon四季直接加总与年度滚动相等。
+
+- 2026-11-04（容量台账修订）：§6.2更新Q1季度交付、10/27 Abilene超过10万块Blackwell在用及Rubin GA；加入10/28转录的约7GW增量、FY2028末10GW组合及五站点约5GW计划，分别标明范围。Abilene1.2GW改为园区设计容量，撤回媒体40万/$40B、舰队1M+和GW/CapEx倒算装机结论。已核来源/状态存档，未取得全集团实物盘点总数。

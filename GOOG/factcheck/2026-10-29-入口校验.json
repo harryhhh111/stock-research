@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-29",
+  "source": "working-tree",
+  "errors": [],
+  "alphabet_entry": "GOOG/research.yaml",
+  "sections": {
+    "thesis": "ok",
+    "open_questions": "ok",
+    "metrics": "ok",
+    "risks": "ok",
+    "research_metadata": "ok"
+  },
+  "security_index": {
+    "XNAS:GOOGL": "company:alphabet",
+    "XNAS:GOOG": "company:alphabet"
+  }
+}

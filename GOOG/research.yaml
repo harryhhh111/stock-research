@@ -1,0 +1,51 @@
+schema_version: 2
+entity_id: company:alphabet
+kind: company
+name: Alphabet（Google）
+aliases:
+- Alphabet
+- Google
+- 谷歌
+- GOOG
+- GOOGL
+securities:
+- market: US
+  mic: XNAS
+  symbol: GOOGL
+- market: US
+  mic: XNAS
+  symbol: GOOG
+primary_document: GOOG.md
+documents:
+- path: ../AI 总账/AI 总账.md
+  role: supplement
+- path: 云服务与AI基础设施.md
+  role: supplement
+related_entities: []
+sections:
+  thesis:
+    path: GOOG.md
+    heading_path:
+    - Alphabet（Google）公司研究
+    - 核心判断
+  open_questions:
+    path: GOOG.md
+    heading_path:
+    - Alphabet（Google）公司研究
+    - 10. 跟踪指标与待验证问题
+  metrics:
+    path: GOOG.md
+    heading_path:
+    - Alphabet（Google）公司研究
+    - 10. 跟踪指标与待验证问题
+  risks:
+    path: GOOG.md
+    heading_path:
+    - Alphabet（Google）公司研究
+    - 8. 核心矛盾、治理与主要风险
+  research_metadata:
+    path: GOOG.md
+    heading_path:
+    - Alphabet（Google）公司研究
+    - 研究日期与数据截止日
+research_scope: Alphabet集团独立公司研究；含Google Services、Google Cloud及Other Bets。

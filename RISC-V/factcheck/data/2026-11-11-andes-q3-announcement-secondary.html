@@ -1,0 +1,2112 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>重大訊息 | 財智快報</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .gradient-border {
+            position: relative;
+        }
+
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            padding: 2px;
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+
+        .gradient-border:hover::before {
+            opacity: 1;
+        }
+
+        .announcement-card {
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .announcement-card:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-slate-50 via-indigo-50/20 to-slate-100 min-h-screen">
+
+    <!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TH6R3TTX');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>重大訊息 | AI 驅動的財商語言學習中心</title>
+
+    <!-- SEO: 動態 Meta Description -->
+    <meta name="description" content="財智快報 - AI 驅動的財商語言學習中心，提供即時財經新聞、深度分析與英語學習資源">
+
+    <!-- SEO: Canonical URL -->
+        <link rel="canonical" href="https://www.ahan.net/announcements.php">
+
+    <!-- PWA Support -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#4f46e5">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Apple PWA Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="財智快報">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1047793966496162"
+        crossorigin="anonymous"></script>
+
+    <!-- Open Graph / Social Meta Tags -->
+        <meta property="og:type" content="website" />
+    <meta property="og:title" content="重大訊息" />
+    <meta property="og:description" content="財智快報 - AI 驅動的財商語言學習中心" />
+    <meta property="og:image" content="https://www.ahan.net/assets/images/og-default.jpg" />
+    <meta property="og:url" content="https://www.ahan.net/announcements.php" />
+    <meta property="og:site_name" content="財智快報" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="重大訊息" />
+    <meta name="twitter:description" content="財智快報 - AI 驅動的財商語言學習中心" />
+    <meta name="twitter:image" content="https://www.ahan.net/assets/images/og-default.jpg" />
+
+    <!-- SEO: 網站結構化資料 (JSON-LD) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "財智快報",
+            "alternateName": "AHAN - AI Hub for Advanced Network",
+            "url": "https://www.ahan.net",
+            "logo": "https://www.ahan.net/assets/images/logo.png",
+            "description": "AI 驅動的財商語言學習中心，提供即時財經新聞、深度分析與英語學習資源",
+            "sameAs": [
+                "https://t.me/ahankuobot"
+            ]
+        }
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-blue': '#4f46e5',
+                        'brand-dark': '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        html, body {
+            max-width: 100%;
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .header-glass {
+            background: rgba(255, 255, 255, 0.94);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .nav-pill-item {
+            position: relative;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .nav-pill-item.active {
+            color: #4f46e5;
+            font-weight: 700;
+            background-color: #eef2ff;
+        }
+
+        .mega-menu-card {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.18);
+        }
+
+        /* 財商學院微發光動畫 */
+        @keyframes subtleGlow {
+            0%, 100% { opacity: 0.8; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.03); }
+        }
+        .glow-badge {
+            animation: subtleGlow 3s ease-in-out infinite;
+        }
+    </style>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration) {
+                        console.log('SW registered:', registration.scope);
+                    })
+                    .catch(function(error) {
+                        console.log('SW registration failed:', error);
+                    });
+            });
+        }
+    </script>
+</head>
+
+<body class="min-h-screen flex flex-col" x-data="{ globalSearchOpen: false }">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TH6R3TTX"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- ========================================== -->
+    <!-- 🌟 全域頂部導航列 (Global Navigation Bar) -->
+    <!-- ========================================== -->
+    <header class="header-glass sticky top-0 z-40 shadow-xs" x-data="{ mobileOpen: false }">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+
+                <!-- 1. Brand Logo 區域 -->
+                <div class="flex items-center gap-4">
+                    <a href="/index.php" class="flex-shrink-0 flex items-center gap-3 group">
+                        <div class="relative">
+                            <img src="/assets/images/logo.png" alt="財智快報" class="h-10 w-10 sm:h-11 sm:w-11 group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div>
+                                <span class="text-xl sm:text-2xl font-black tracking-tight flex items-center">
+                                    <span class="text-indigo-600">財智</span><span class="text-slate-900">快報</span>
+                                </span>
+                                <p class="text-[10px] text-slate-400 font-medium tracking-tight -mt-1 hidden sm:block">
+                                    <span class="text-indigo-600 font-bold">A</span>I-<span class="text-indigo-600 font-bold">H</span>ub for <span class="text-indigo-600 font-bold">A</span>dvanced <span class="text-indigo-600 font-bold">N</span>etwork
+                                </p>
+                            </div>
+
+                                                    </div>
+                    </a>
+                </div>
+
+                <!-- 2. 桌面版導航主選單 -->
+                <nav class="hidden lg:flex items-center gap-1">
+                    
+                    <!-- 財商學院 -->
+                    <a href="/fincollege/" class="nav-pill-item flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-sm font-black text-emerald-700 hover:bg-emerald-50 transition-colors">
+                        <span>🎓</span> 財商學院
+                        <span class="px-1.5 py-0.2 bg-emerald-500 text-white text-[10px] font-black rounded-md shadow-xs">HOT</span>
+                    </a>
+
+                    <!-- 財經新聞 -->
+                    <a href="/channel.php" class="nav-pill-item px-3.5 py-2 rounded-xl text-sm font-bold text-slate-700 hover:text-indigo-600 hover:bg-slate-100/70 transition-colors ">
+                        財經新聞
+                    </a>
+
+                    <!-- 全球新聞 -->
+                    <a href="https://news.ahan.net/" class="nav-pill-item px-3.5 py-2 rounded-xl text-sm font-bold text-slate-700 hover:text-indigo-600 hover:bg-slate-100/70 transition-colors">
+                        全球新聞
+                    </a>
+
+                    <!-- 財經影音 -->
+                    <a href="/video.php" class="nav-pill-item px-3.5 py-2 rounded-xl text-sm font-bold text-slate-700 hover:text-indigo-600 hover:bg-slate-100/70 transition-colors ">
+                        影音專區
+                    </a>
+
+                    <!-- 關於我們 -->
+                    <a href="/about.php" class="nav-pill-item px-3.5 py-2 rounded-xl text-sm font-bold text-slate-700 hover:text-indigo-600 hover:bg-slate-100/70 transition-colors ">
+                        關於我們
+                    </a>
+
+                </nav>
+
+                <!-- 3. 右側工具列 (全域搜尋按鈕 + 用戶登入) -->
+                <div class="flex items-center gap-2.5">
+                    
+                    <!-- 🔍 全域快速搜尋膠囊 (桌面版快捷鍵 ⌘K) -->
+                    <button @click="globalSearchOpen = true"
+                        class="hidden sm:flex items-center gap-2 px-3 py-1.5 bg-slate-100 hover:bg-indigo-50 text-slate-500 hover:text-indigo-600 rounded-xl border border-slate-200/80 transition-all text-xs font-medium group">
+                        <svg class="w-4 h-4 text-slate-400 group-hover:text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                        <span>搜尋股票、代號、新聞...</span>
+                        <kbd class="hidden md:inline-block px-1.5 py-0.5 bg-white border border-slate-200 rounded text-[10px] font-mono text-slate-400 shadow-2xs">⌘K</kbd>
+                    </button>
+
+                    <!-- 手機版搜尋 Icon 按鈕 -->
+                    <button @click="globalSearchOpen = true"
+                        class="sm:hidden p-2 text-slate-500 hover:text-indigo-600 hover:bg-slate-100 rounded-xl transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </button>
+
+                    <!-- 用戶狀態 (桌面版) -->
+                    <div class="hidden lg:flex items-center gap-2">
+                                                    <a href="/auth/login.php" class="px-3 py-1.5 text-xs font-bold text-slate-600 hover:text-indigo-600 transition-colors">登入</a>
+                            <a href="/auth/register.php" class="px-3.5 py-1.5 text-xs font-bold text-white bg-indigo-600 rounded-xl hover:bg-indigo-700 transition-all shadow-sm">註冊</a>
+                                            </div>
+
+                    <!-- 手機版漢堡按鈕 -->
+                    <button @click="mobileOpen = !mobileOpen" class="lg:hidden p-2 text-slate-600 hover:text-indigo-600 hover:bg-slate-100 rounded-xl transition-colors">
+                        <svg x-show="!mobileOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg x-show="mobileOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" x-cloak>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- 📱 手機版抽屜導航 (Mobile Navigation Drawer) -->
+        <!-- ========================================== -->
+        <div x-show="mobileOpen"
+            x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 -translate-y-4"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-150"
+            x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-4"
+            class="lg:hidden bg-white/98 backdrop-blur-xl border-t border-slate-100 shadow-2xl max-h-[calc(100vh-4rem)] overflow-y-auto"
+            style="-webkit-overflow-scrolling: touch;"
+            x-cloak>
+            
+            <div class="max-w-7xl mx-auto px-4 py-4 space-y-3">
+                
+                <!-- 手機版快速搜尋條 -->
+                <form action="/index.php" method="GET" class="relative">
+                    <input type="text" name="q" placeholder="搜尋股票代號 (如 2330)、關鍵字..."
+                        class="w-full pl-10 pr-4 py-2.5 bg-slate-100 border border-slate-200 rounded-xl text-xs font-medium focus:ring-2 focus:ring-indigo-300 focus:outline-none">
+                    <svg class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </form>
+
+                <!-- 4 格高頻快捷按鈕 (2x2 Grid) -->
+                <div class="grid grid-cols-2 gap-2 pt-1">
+                    <a href="/announcements.php" class="flex items-center gap-2 p-2.5 rounded-xl bg-rose-50 border border-rose-100 text-rose-700 text-xs font-bold">
+                        <span>🔔</span> 重大訊息
+                    </a>
+                    <a href="/calendar.php" class="flex items-center gap-2 p-2.5 rounded-xl bg-amber-50 border border-amber-100 text-amber-700 text-xs font-bold">
+                        <span>💰</span> 除權息日曆
+                    </a>
+                    <a href="/companies.php" class="flex items-center gap-2 p-2.5 rounded-xl bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-bold">
+                        <span>🏢</span> 上市公司名錄
+                    </a>
+                    <a href="/offshore_funds.php" class="flex items-center gap-2 p-2.5 rounded-xl bg-emerald-50 border border-emerald-100 text-emerald-700 text-xs font-bold">
+                        <span>🌍</span> 境外基金資料
+                    </a>
+                </div>
+
+                <!-- 手機版主要單元列表 -->
+                <div class="space-y-1 border-t border-slate-100 pt-2 text-xs font-bold text-slate-700">
+                    <a href="/fincollege/" class="flex items-center justify-between px-3 py-2.5 rounded-xl hover:bg-slate-50 text-emerald-600">
+                        <span class="flex items-center gap-2">🎓 財商學院</span>
+                        <span class="text-[10px] px-1.5 py-0.5 bg-emerald-500 text-white rounded font-black">HOT</span>
+                    </a>
+                    <a href="/channel.php" class="flex items-center px-3 py-2.5 rounded-xl hover:bg-slate-50">
+                        📰 財經新聞
+                    </a>
+                    <a href="https://news.ahan.net/" class="flex items-center px-3 py-2.5 rounded-xl hover:bg-slate-50">
+                        🌐 全球新聞
+                    </a>
+                    <a href="/video.php" class="flex items-center px-3 py-2.5 rounded-xl hover:bg-slate-50">
+                        📺 影音專區
+                    </a>
+                    <a href="/stock_daily.php" class="flex items-center px-3 py-2.5 rounded-xl hover:bg-slate-50">
+                        📈 即時盤勢走勢
+                    </a>
+                    <a href="/funds.php" class="flex items-center px-3 py-2.5 rounded-xl hover:bg-slate-50">
+                        🏦 境內基金淨值
+                    </a>
+                    <a href="/about.php" class="flex items-center px-3 py-2.5 rounded-xl hover:bg-slate-50 text-slate-500">
+                        ℹ️ 關於我們
+                    </a>
+                </div>
+
+                <!-- 手機版用戶登入區域 -->
+                <div class="border-t border-slate-100 pt-3">
+                                            <div class="flex gap-2">
+                            <a href="/auth/login.php" class="flex-1 py-2 text-center text-xs font-bold text-slate-700 border border-slate-200 rounded-xl hover:bg-slate-50">會員登入</a>
+                            <a href="/auth/register.php" class="flex-1 py-2 text-center text-xs font-bold text-white bg-indigo-600 rounded-xl hover:bg-indigo-700">免費註冊</a>
+                        </div>
+                                    </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- 🔍 全域快速搜尋 Modal (支援 ⌘K 觸發) -->
+    <!-- ========================================== -->
+    <div x-show="globalSearchOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+        @keydown.escape.window="globalSearchOpen = false"
+        @keydown.window="if (($event.metaKey || $event.ctrlKey) && $event.key === 'k') { $event.preventDefault(); globalSearchOpen = !globalSearchOpen; }"
+        class="fixed inset-0 z-50 overflow-y-auto p-4 sm:p-6 md:p-20 bg-slate-950/60 backdrop-blur-md flex items-start justify-center"
+        x-cloak>
+        
+        <div class="w-full max-w-xl bg-white rounded-3xl shadow-2xl border border-slate-200/80 overflow-hidden transform transition-all"
+            @click.outside="globalSearchOpen = false">
+            
+            <!-- 搜尋輸入框 -->
+            <form action="/index.php" method="GET" class="relative border-b border-slate-100">
+                <div class="flex items-center px-6 py-4">
+                    <svg class="w-6 h-6 text-indigo-600 shrink-0 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                    <input type="text" name="q" autofocus
+                        placeholder="搜尋新聞關鍵字、個股代號 (如 2330、台積電)、基金..."
+                        class="w-full text-base font-bold text-slate-800 placeholder-slate-400 bg-transparent border-none outline-none focus:ring-0">
+                    <button type="button" @click="globalSearchOpen = false"
+                        class="px-2 py-1 bg-slate-100 text-slate-500 rounded-lg text-xs font-mono font-bold hover:bg-slate-200">
+                        ESC
+                    </button>
+                </div>
+            </form>
+
+            <!-- 快捷檢索建議與熱搜 -->
+            <div class="p-6 space-y-4">
+                <div>
+                    <div class="text-[11px] font-black text-slate-400 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                        <span>🔥</span> 今日市場熱搜標籤
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="/index.php?q=2330" class="px-3 py-1 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-bold rounded-xl transition-colors">
+                            台積電 (2330)
+                        </a>
+                        <a href="/index.php?q=AI" class="px-3 py-1 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-xl transition-colors">
+                            #AI 伺服器
+                        </a>
+                        <a href="/index.php?q=鴻海" class="px-3 py-1 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-xl transition-colors">
+                            鴻海 (2317)
+                        </a>
+                        <a href="/index.php?q=降息" class="px-3 py-1 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-xl transition-colors">
+                            #聯準會降息
+                        </a>
+                        <a href="/index.php?q=高股息" class="px-3 py-1 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-xl transition-colors">
+                            #高股息 ETF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="border-t border-slate-100 pt-3 flex items-center justify-between text-xs text-slate-400">
+                    <span>💡 提示：輸入 4 碼股票代號可精確查找個股情報</span>
+                    <span>按 <kbd class="font-mono bg-slate-100 px-1 rounded">Enter</kbd> 立即檢索</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 主要內容區 -->
+    <main class="flex-1">
+
+    <!-- Hero Section -->
+    <div class="relative overflow-hidden bg-gradient-to-r from-indigo-900 via-indigo-800 to-purple-900 text-white">
+        <!-- Background Orbs -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute -top-40 -right-40 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/10 rounded-full text-white/90 text-xs font-medium mb-3 backdrop-blur-sm border border-white/10">
+                        <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+                        即時連線 TWSE 證交所重大訊息庫
+                    </div>
+                    <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                        上市公司<span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-amber-200 to-yellow-400">重大訊息</span>
+                    </h1>
+                    <p class="mt-2 text-sm md:text-base text-indigo-200 max-w-xl">
+                        即時掌握上市櫃公司盤後動態、法說會簡報、股利政策與營收公告
+                    </p>
+
+                    <!-- Stats & Sync -->
+                    <div class="flex items-center gap-6 mt-5 justify-center md:justify-start">
+                        <div>
+                            <div class="text-2xl font-black text-white">11</div>
+                            <div class="text-xs text-indigo-300">總公告數</div>
+                        </div>
+                        <div class="w-px h-8 bg-white/20"></div>
+                        <div>
+                            <div class="text-2xl font-black text-amber-300">0</div>
+                            <div class="text-xs text-indigo-300">今日新增</div>
+                        </div>
+                        <div class="w-px h-8 bg-white/20"></div>
+                        <div>
+                            <button onclick="syncAnnouncements(this)" class="px-3 py-1.5 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl text-xs font-bold text-white transition-all flex items-center gap-1.5 active:scale-95 shadow-sm">
+                                <span class="sync-icon text-sm">🔄</span>
+                                <span class="sync-text">立即同步</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Search Box -->
+                <div class="w-full md:w-auto">
+                    <form action="announcements.php" method="GET" class="relative">
+                                                <input type="text" name="q" value="6533"
+                            placeholder="搜尋股票代號、公司名稱、關鍵字..."
+                            class="w-full md:w-80 pl-11 pr-10 py-3.5 bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl border-0 outline-none focus:ring-4 focus:ring-indigo-400/40 transition-all text-slate-800 placeholder-slate-400 text-sm font-medium">
+                        <div class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </div>
+                                                    <a href="announcements.php" class="absolute right-3.5 top-1/2 -translate-y-1/2 w-6 h-6 flex items-center justify-center bg-slate-200 hover:bg-slate-300 rounded-full transition-colors">
+                                <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </a>
+                                            </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category Filter Pills Bar -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-5 relative z-10">
+        <div class="bg-white rounded-2xl shadow-md border border-slate-200/80 p-2.5 flex items-center gap-2 overflow-x-auto no-scrollbar">
+            <a href="announcements.php?q=6533"
+                class="px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all bg-indigo-600 text-white shadow-md shadow-indigo-200">
+                🔥 全部重訊
+            </a>
+                                            <a href="announcements.php?q=6533&type=revenue"
+                    class="px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all text-slate-600 hover:bg-slate-100">
+                    📈 營收公告                </a>
+                                            <a href="announcements.php?q=6533&type=dividend"
+                    class="px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all text-slate-600 hover:bg-slate-100">
+                    💰 股利除息                </a>
+                                            <a href="announcements.php?q=6533&type=briefing"
+                    class="px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all text-slate-600 hover:bg-slate-100">
+                    🎤 法說會                </a>
+                                            <a href="announcements.php?q=6533&type=buyback"
+                    class="px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all text-slate-600 hover:bg-slate-100">
+                    🏦 庫藏股                </a>
+                                            <a href="announcements.php?q=6533&type=warning"
+                    class="px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all text-slate-600 hover:bg-slate-100">
+                    ⚠️ 注意處置                </a>
+                                            <a href="announcements.php?q=6533&type=board"
+                    class="px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all text-slate-600 hover:bg-slate-100">
+                    👥 董事會                </a>
+                                            <a href="announcements.php?q=6533&type=capital"
+                    class="px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all text-slate-600 hover:bg-slate-100">
+                    📊 增減資                </a>
+                    </div>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- 同步狀態提示 Alert -->
+        <div id="syncToast" class="hidden mb-6 p-4 rounded-2xl border text-sm font-medium transition-all"></div>
+
+        <!-- 列表 -->
+        <div class="space-y-4">
+                                                                    <div class="announcement-card glass-card rounded-2xl shadow-sm border border-slate-200/80 overflow-hidden gradient-border"
+                        x-data="{ open: false, copied: false }">
+
+                        <div class="p-5 md:p-6 cursor-pointer group" @click="open = !open">
+                            <div class="flex flex-col md:flex-row md:items-start gap-4">
+
+                                <!-- 左側：公司資訊 -->
+                                <div class="flex items-center gap-3 md:w-52 flex-shrink-0">
+                                    <a href="dividend.php?code=6533"
+                                        @click.stop
+                                        class="w-13 h-13 px-3 py-2.5 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-700 flex flex-col items-center justify-center shadow-md shadow-indigo-200 text-white hover:opacity-90 transition-opacity flex-shrink-0"
+                                        title="點擊查看個股除權息與殖利率">
+                                        <span class="font-black text-sm tracking-wider font-mono">6533</span>
+                                    </a>
+                                    <div>
+                                        <h2 class="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors text-base flex items-center gap-1.5">
+                                            <a href="index.php?q=6533" @click.stop class="hover:underline">
+                                                晶心科                                            </a>
+                                        </h2>
+                                        <div class="flex items-center gap-1.5 text-xs text-slate-400 mt-1 font-mono">
+                                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>2026-11-09 18:49</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 中間：標題與標籤 -->
+                                <div class="flex-1 min-w-0">
+                                    <!-- 標籤 -->
+                                                                            <div class="flex flex-wrap gap-1.5 mb-2">
+                                                                                            <a href="announcements.php?type=board" @click.stop
+                                                    class="inline-flex items-center px-2 py-0.5 rounded-lg text-xs font-bold text-white bg-gradient-to-r from-cyan-500 to-sky-500 shadow-sm hover:opacity-90 transition-opacity">
+                                                    👥 董事會                                                </a>
+                                                                                    </div>
+                                    
+                                    <!-- 標題 -->
+                                    <h3 class="text-slate-800 font-semibold leading-relaxed line-clamp-2 text-base group-hover:text-indigo-600 transition-colors">
+                                        公告本公司115年第三季合併財務報告業經董事會決議通過                                    </h3>
+                                </div>
+
+                                <!-- 右側：展開箭頭 -->
+                                <div class="flex items-center md:ml-4 self-end md:self-center">
+                                    <div class="w-9 h-9 rounded-full bg-slate-100 group-hover:bg-indigo-50 flex items-center justify-center transition-all"
+                                        :class="open ? 'bg-indigo-100 text-indigo-600 rotate-180' : 'text-slate-400'">
+                                        <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 詳情內容 -->
+                        <div x-show="open" x-collapse x-cloak>
+                            <div class="border-t border-slate-100 bg-slate-50/70 p-5 md:p-6">
+                                <div class="flex items-center justify-between gap-2 mb-3">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-1.5 h-4 bg-indigo-600 rounded-full"></span>
+                                        <h4 class="font-bold text-slate-800 text-sm">公告完整內容</h4>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <button @click="
+                                            navigator.clipboard.writeText(`【${'晶心科'} (6533) 重大訊息】\n主旨：${'公告本公司115年第三季合併財務報告業經董事會決議通過'}\n時間：${'2026-11-09 18:49:29'}\n\n說明：\n${'1.提報董事會或經董事會決議日期:115/11/09
+2.審計委員會通過日期:115/11/09
+3.財務報告或年度自結財務資訊報導期間
+起訖日期(XXX/XX/XX~XXX/XX/XX):
+115/01/01~115/09/30
+4.1月1日累計至本期止營業收入(仟元):1,319,862
+5.1月1日累計至本期止營業毛利(毛損) (仟元):1,318,866
+6.1月1日累計至本期止營業利益(損失) (仟元):(320,790)
+7.1月1日累計至本期止稅前淨利(淨損) (仟元):(324,267)
+8.1月1日累計至本期止本期淨利(淨損) (仟元):(263,292)
+9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):(263,292)
+10.1月1日累計至本期止基本每股盈餘(損失) (元):(5.20)
+11.期末總資產(仟元):6,384,369
+12.期末總負債(仟元):1,845,537
+13.期末歸屬於母公司業主之權益(仟元):4,538,832
+14.其他應敘明事項:無'}`);
+                                            copied = true;
+                                            setTimeout(() => copied = false, 2000);
+                                        " class="px-3 py-1 bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium transition-colors flex items-center gap-1 shadow-sm">
+                                            <span x-text="copied ? '✅ 已複製' : '📋 複製內文'"></span>
+                                        </button>
+                                        <a href="index.php?q=6533" class="px-3 py-1 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 rounded-lg text-xs font-bold transition-colors">
+                                            相關新聞 →
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-xl border border-slate-200/80 p-4 md:p-5 shadow-inner">
+                                    <pre class="text-slate-700 text-sm leading-relaxed whitespace-pre-wrap font-sans">1.提報董事會或經董事會決議日期:115/11/09
+2.審計委員會通過日期:115/11/09
+3.財務報告或年度自結財務資訊報導期間
+起訖日期(XXX/XX/XX~XXX/XX/XX):
+115/01/01~115/09/30
+4.1月1日累計至本期止營業收入(仟元):1,319,862
+5.1月1日累計至本期止營業毛利(毛損) (仟元):1,318,866
+6.1月1日累計至本期止營業利益(損失) (仟元):(320,790)
+7.1月1日累計至本期止稅前淨利(淨損) (仟元):(324,267)
+8.1月1日累計至本期止本期淨利(淨損) (仟元):(263,292)
+9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):(263,292)
+10.1月1日累計至本期止基本每股盈餘(損失) (元):(5.20)
+11.期末總資產(仟元):6,384,369
+12.期末總負債(仟元):1,845,537
+13.期末歸屬於母公司業主之權益(仟元):4,538,832
+14.其他應敘明事項:無</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                        <div class="announcement-card glass-card rounded-2xl shadow-sm border border-slate-200/80 overflow-hidden gradient-border"
+                        x-data="{ open: false, copied: false }">
+
+                        <div class="p-5 md:p-6 cursor-pointer group" @click="open = !open">
+                            <div class="flex flex-col md:flex-row md:items-start gap-4">
+
+                                <!-- 左側：公司資訊 -->
+                                <div class="flex items-center gap-3 md:w-52 flex-shrink-0">
+                                    <a href="dividend.php?code=6533"
+                                        @click.stop
+                                        class="w-13 h-13 px-3 py-2.5 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-700 flex flex-col items-center justify-center shadow-md shadow-indigo-200 text-white hover:opacity-90 transition-opacity flex-shrink-0"
+                                        title="點擊查看個股除權息與殖利率">
+                                        <span class="font-black text-sm tracking-wider font-mono">6533</span>
+                                    </a>
+                                    <div>
+                                        <h2 class="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors text-base flex items-center gap-1.5">
+                                            <a href="index.php?q=6533" @click.stop class="hover:underline">
+                                                晶心科                                            </a>
+                                        </h2>
+                                        <div class="flex items-center gap-1.5 text-xs text-slate-400 mt-1 font-mono">
+                                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>2026-11-09 15:58</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 中間：標題與標籤 -->
+                                <div class="flex-1 min-w-0">
+                                    <!-- 標籤 -->
+                                                                            <div class="flex flex-wrap gap-1.5 mb-2">
+                                                                                            <a href="announcements.php?type=warning" @click.stop
+                                                    class="inline-flex items-center px-2 py-0.5 rounded-lg text-xs font-bold text-white bg-gradient-to-r from-yellow-500 to-amber-500 shadow-sm hover:opacity-90 transition-opacity">
+                                                    ⚠️ 注意                                                </a>
+                                                                                    </div>
+                                    
+                                    <!-- 標題 -->
+                                    <h3 class="text-slate-800 font-semibold leading-relaxed line-clamp-2 text-base group-hover:text-indigo-600 transition-colors">
+                                        因本公司有價證券於集中交易市場達公布注意交易資訊標準，
+故公布相關財務業務等重大訊息，以利投資人區別瞭解。                                    </h3>
+                                </div>
+
+                                <!-- 右側：展開箭頭 -->
+                                <div class="flex items-center md:ml-4 self-end md:self-center">
+                                    <div class="w-9 h-9 rounded-full bg-slate-100 group-hover:bg-indigo-50 flex items-center justify-center transition-all"
+                                        :class="open ? 'bg-indigo-100 text-indigo-600 rotate-180' : 'text-slate-400'">
+                                        <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 詳情內容 -->
+                        <div x-show="open" x-collapse x-cloak>
+                            <div class="border-t border-slate-100 bg-slate-50/70 p-5 md:p-6">
+                                <div class="flex items-center justify-between gap-2 mb-3">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-1.5 h-4 bg-indigo-600 rounded-full"></span>
+                                        <h4 class="font-bold text-slate-800 text-sm">公告完整內容</h4>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <button @click="
+                                            navigator.clipboard.writeText(`【${'晶心科'} (6533) 重大訊息】\n主旨：${'因本公司有價證券於集中交易市場達公布注意交易資訊標準，
+故公布相關財務業務等重大訊息，以利投資人區別瞭解。'}\n時間：${'2026-11-09 15:58:33'}\n\n說明：\n${'1.事實發生日:115/11/09
+2.發生緣由:依臺灣證券交易所股份有限公司通知辦理。
+3.公司每股面額（元）:10元
+4.財務業務資訊（倘公司股票每股面額非10元，每股盈餘、每股淨值及每股股利等，與
+  其他每股面額10元之公司可能無法直接比較，建議投資人參考公開資訊觀測站公佈之
+  財務比率分析資料，包含股價淨值比、股東權益報酬率、股利殖利率及本益比等，以
+  保障自身權益）:
+本公司合併財務資訊：
+期間                    (  月  )             (   季   )        (最近四季累計)
+               ===================== ======================== ===============
+科目            最近一月  與去年同期  最近一季     與去年同期    114第4季至
+                115年9月   增減%     115年第3季      增減%        115第3季
+                (自結數)              (自結數)                     (自結數)
+                ========   ========   ========    ==========   ============
+營業收入(百萬)     193       -10%       427         -8%           1,781
+稅前淨(損)利(百萬)  42       133%       (27)       -664%          (365)
+本期淨(損)利(百萬)  41        80%       (29)       -448%          (290)
+每股盈餘(元)       0.80       80%      (0.58)      -441%          (5.72)
+5.有無「臺灣證券交易所股份有限公司對有價證券上市公司重大訊息之查證暨公開處理
+  程序」第4條所列重大訊息之情事（如「有」，請說明）:無
+6.有無「臺灣證券交易所股份有限公司對有價證券上市公司重大訊息之查證暨公開處理
+  程序」第11條所列重大訊息說明記者會之情事:無
+7.完整財務資訊請至公開資訊觀測站查閱，路徑如下：
+(1)近期營業收入及損益資訊：基本資料>精華版
+(2)歷史每月營業收入：營運概況>每月營收>採用IFRSs後之月營業收入資訊
+(3)歷史損益(會計師查核/核閱數)：財務報表>採IFRSs後>合併/個別報表>綜合損益表
+(4)歷史損益(自願性公告自結數)：營運概況>自結損益公告:
+8.其他應敘明事項:無'}`);
+                                            copied = true;
+                                            setTimeout(() => copied = false, 2000);
+                                        " class="px-3 py-1 bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium transition-colors flex items-center gap-1 shadow-sm">
+                                            <span x-text="copied ? '✅ 已複製' : '📋 複製內文'"></span>
+                                        </button>
+                                        <a href="index.php?q=6533" class="px-3 py-1 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 rounded-lg text-xs font-bold transition-colors">
+                                            相關新聞 →
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-xl border border-slate-200/80 p-4 md:p-5 shadow-inner">
+                                    <pre class="text-slate-700 text-sm leading-relaxed whitespace-pre-wrap font-sans">1.事實發生日:115/11/09
+2.發生緣由:依臺灣證券交易所股份有限公司通知辦理。
+3.公司每股面額（元）:10元
+4.財務業務資訊（倘公司股票每股面額非10元，每股盈餘、每股淨值及每股股利等，與
+  其他每股面額10元之公司可能無法直接比較，建議投資人參考公開資訊觀測站公佈之
+  財務比率分析資料，包含股價淨值比、股東權益報酬率、股利殖利率及本益比等，以
+  保障自身權益）:
+本公司合併財務資訊：
+期間                    (  月  )             (   季   )        (最近四季累計)
+               ===================== ======================== ===============
+科目            最近一月  與去年同期  最近一季     與去年同期    114第4季至
+                115年9月   增減%     115年第3季      增減%        115第3季
+                (自結數)              (自結數)                     (自結數)
+                ========   ========   ========    ==========   ============
+營業收入(百萬)     193       -10%       427         -8%           1,781
+稅前淨(損)利(百萬)  42       133%       (27)       -664%          (365)
+本期淨(損)利(百萬)  41        80%       (29)       -448%          (290)
+每股盈餘(元)       0.80       80%      (0.58)      -441%          (5.72)
+5.有無「臺灣證券交易所股份有限公司對有價證券上市公司重大訊息之查證暨公開處理
+  程序」第4條所列重大訊息之情事（如「有」，請說明）:無
+6.有無「臺灣證券交易所股份有限公司對有價證券上市公司重大訊息之查證暨公開處理
+  程序」第11條所列重大訊息說明記者會之情事:無
+7.完整財務資訊請至公開資訊觀測站查閱，路徑如下：
+(1)近期營業收入及損益資訊：基本資料&gt;精華版
+(2)歷史每月營業收入：營運概況&gt;每月營收&gt;採用IFRSs後之月營業收入資訊
+(3)歷史損益(會計師查核/核閱數)：財務報表&gt;採IFRSs後&gt;合併/個別報表&gt;綜合損益表
+(4)歷史損益(自願性公告自結數)：營運概況&gt;自結損益公告:
+8.其他應敘明事項:無</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                        <div class="announcement-card glass-card rounded-2xl shadow-sm border border-slate-200/80 overflow-hidden gradient-border"
+                        x-data="{ open: false, copied: false }">
+
+                        <div class="p-5 md:p-6 cursor-pointer group" @click="open = !open">
+                            <div class="flex flex-col md:flex-row md:items-start gap-4">
+
+                                <!-- 左側：公司資訊 -->
+                                <div class="flex items-center gap-3 md:w-52 flex-shrink-0">
+                                    <a href="dividend.php?code=6533"
+                                        @click.stop
+                                        class="w-13 h-13 px-3 py-2.5 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-700 flex flex-col items-center justify-center shadow-md shadow-indigo-200 text-white hover:opacity-90 transition-opacity flex-shrink-0"
+                                        title="點擊查看個股除權息與殖利率">
+                                        <span class="font-black text-sm tracking-wider font-mono">6533</span>
+                                    </a>
+                                    <div>
+                                        <h2 class="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors text-base flex items-center gap-1.5">
+                                            <a href="index.php?q=6533" @click.stop class="hover:underline">
+                                                晶心科                                            </a>
+                                        </h2>
+                                        <div class="flex items-center gap-1.5 text-xs text-slate-400 mt-1 font-mono">
+                                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>2026-08-31 15:32</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 中間：標題與標籤 -->
+                                <div class="flex-1 min-w-0">
+                                    <!-- 標籤 -->
+                                                                            <div class="flex flex-wrap gap-1.5 mb-2">
+                                                                                            <a href="announcements.php?type=capital" @click.stop
+                                                    class="inline-flex items-center px-2 py-0.5 rounded-lg text-xs font-bold text-white bg-gradient-to-r from-amber-500 to-orange-500 shadow-sm hover:opacity-90 transition-opacity">
+                                                    📊 增資                                                </a>
+                                                                                    </div>
+                                    
+                                    <!-- 標題 -->
+                                    <h3 class="text-slate-800 font-semibold leading-relaxed line-clamp-2 text-base group-hover:text-indigo-600 transition-colors">
+                                        公告本公司現金增資認股基準日及相關事宜(補充公告
+每股發行價格、代收存款及存儲款項機構)                                    </h3>
+                                </div>
+
+                                <!-- 右側：展開箭頭 -->
+                                <div class="flex items-center md:ml-4 self-end md:self-center">
+                                    <div class="w-9 h-9 rounded-full bg-slate-100 group-hover:bg-indigo-50 flex items-center justify-center transition-all"
+                                        :class="open ? 'bg-indigo-100 text-indigo-600 rotate-180' : 'text-slate-400'">
+                                        <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 詳情內容 -->
+                        <div x-show="open" x-collapse x-cloak>
+                            <div class="border-t border-slate-100 bg-slate-50/70 p-5 md:p-6">
+                                <div class="flex items-center justify-between gap-2 mb-3">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-1.5 h-4 bg-indigo-600 rounded-full"></span>
+                                        <h4 class="font-bold text-slate-800 text-sm">公告完整內容</h4>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <button @click="
+                                            navigator.clipboard.writeText(`【${'晶心科'} (6533) 重大訊息】\n主旨：${'公告本公司現金增資認股基準日及相關事宜(補充公告
+每股發行價格、代收存款及存儲款項機構)'}\n時間：${'2026-08-31 15:32:23'}\n\n說明：\n${'1.董事會決議或公司決定增資基準日期:115/08/10
+2.是否採總括申報發行新股(是，請併敘明預定發行期間/否):否
+3.主管機關申報生效日期:115/08/10
+4.董事會決議(追補)發行日期:115/05/11
+5.發行總金額及股數:
+發行總金額：發行總面額新台幣68,000,000元。
+發行總股數：普通股6,800,000股
+6.採總括申報發行新股案件，本次發行金額及股數:不適用
+7.採總括申報發行新股案件，本次發行後，剩餘之金額及股數餘額:不適用
+8.每股面額:新台幣10元
+9.發行價格:每股新台幣195.00元。(補充公告)
+10.員工認股股數:
+依公司法第267條規定，保留發行新股總額10%計680,000股由本公司員工認購。
+11.原股東認購比率:
+80%，計5,440,000股，由原股東按照認股基準日股東名簿記載之持股比例認購，
+每仟股可認購107.40181948股。
+12.公開銷售方式及股數:
+依證券交易法第28條之1規定，提撥發行新股總額10%計680,000股對外公開承銷。
+13.畸零股及逾期未認購股份之處理方式:
+原股東認購不足一股之畸零股得由股東自行在停止過戶日起五日內，逕向本公司
+股務代理機構辦理拼湊成一整股認購，其拼湊不足一股之畸零股及原股東、員工
+放棄認購或認購不足及逾期未辦理拼湊之部份，擬授權董事長洽特定人按發行價
+格認購。
+14.本次發行新股之權利義務:與原已發行之股份相同。
+15.本次增資資金用途:充實營運資金。
+16.現金增資認股基準日:115/09/13
+17.最後過戶日:115/09/08
+18.停止過戶起始日期:115/09/09
+19.停止過戶截止日期:115/09/13
+20.股款繳納期間:
+原股東及員工股款繳納期間：115年9月17日至115年10月19日
+特定人認股繳款日期：115年10月20日至115年10月27日
+21.與代收及專戶存儲價款行庫訂約日期:115年8月31日(補充公告)
+22.委託代收存款機構:永豐商業銀行股份有限公司新竹分行。(補充公告)
+23.委託存儲款項機構:聯邦商業銀行股份有限公司竹北分行。(補充公告)
+24.其他應敘明事項:
+(1)本公司辦理115年現金增資發行新股6,800,000股乙案，業經金管會115年
+   8月10日金管證發字第1150350140號函生效在案。
+(2)最後過戶日:115年9月8日
+(3)本次現金增資發行計劃所訂之內容及其他相關未盡事宜，如遇法令變更、
+   經主管機關修正、客觀環境改變或因應主客觀環境需要而須修正或調整時
+   ，包括向主管機關申請延期或撤銷，授權董事長得全權辦理修正或調整。'}`);
+                                            copied = true;
+                                            setTimeout(() => copied = false, 2000);
+                                        " class="px-3 py-1 bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium transition-colors flex items-center gap-1 shadow-sm">
+                                            <span x-text="copied ? '✅ 已複製' : '📋 複製內文'"></span>
+                                        </button>
+                                        <a href="index.php?q=6533" class="px-3 py-1 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 rounded-lg text-xs font-bold transition-colors">
+                                            相關新聞 →
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-xl border border-slate-200/80 p-4 md:p-5 shadow-inner">
+                                    <pre class="text-slate-700 text-sm leading-relaxed whitespace-pre-wrap font-sans">1.董事會決議或公司決定增資基準日期:115/08/10
+2.是否採總括申報發行新股(是，請併敘明預定發行期間/否):否
+3.主管機關申報生效日期:115/08/10
+4.董事會決議(追補)發行日期:115/05/11
+5.發行總金額及股數:
+發行總金額：發行總面額新台幣68,000,000元。
+發行總股數：普通股6,800,000股
+6.採總括申報發行新股案件，本次發行金額及股數:不適用
+7.採總括申報發行新股案件，本次發行後，剩餘之金額及股數餘額:不適用
+8.每股面額:新台幣10元
+9.發行價格:每股新台幣195.00元。(補充公告)
+10.員工認股股數:
+依公司法第267條規定，保留發行新股總額10%計680,000股由本公司員工認購。
+11.原股東認購比率:
+80%，計5,440,000股，由原股東按照認股基準日股東名簿記載之持股比例認購，
+每仟股可認購107.40181948股。
+12.公開銷售方式及股數:
+依證券交易法第28條之1規定，提撥發行新股總額10%計680,000股對外公開承銷。
+13.畸零股及逾期未認購股份之處理方式:
+原股東認購不足一股之畸零股得由股東自行在停止過戶日起五日內，逕向本公司
+股務代理機構辦理拼湊成一整股認購，其拼湊不足一股之畸零股及原股東、員工
+放棄認購或認購不足及逾期未辦理拼湊之部份，擬授權董事長洽特定人按發行價
+格認購。
+14.本次發行新股之權利義務:與原已發行之股份相同。
+15.本次增資資金用途:充實營運資金。
+16.現金增資認股基準日:115/09/13
+17.最後過戶日:115/09/08
+18.停止過戶起始日期:115/09/09
+19.停止過戶截止日期:115/09/13
+20.股款繳納期間:
+原股東及員工股款繳納期間：115年9月17日至115年10月19日
+特定人認股繳款日期：115年10月20日至115年10月27日
+21.與代收及專戶存儲價款行庫訂約日期:115年8月31日(補充公告)
+22.委託代收存款機構:永豐商業銀行股份有限公司新竹分行。(補充公告)
+23.委託存儲款項機構:聯邦商業銀行股份有限公司竹北分行。(補充公告)
+24.其他應敘明事項:
+(1)本公司辦理115年現金增資發行新股6,800,000股乙案，業經金管會115年
+   8月10日金管證發字第1150350140號函生效在案。
+(2)最後過戶日:115年9月8日
+(3)本次現金增資發行計劃所訂之內容及其他相關未盡事宜，如遇法令變更、
+   經主管機關修正、客觀環境改變或因應主客觀環境需要而須修正或調整時
+   ，包括向主管機關申請延期或撤銷，授權董事長得全權辦理修正或調整。</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                        <div class="announcement-card glass-card rounded-2xl shadow-sm border border-slate-200/80 overflow-hidden gradient-border"
+                        x-data="{ open: false, copied: false }">
+
+                        <div class="p-5 md:p-6 cursor-pointer group" @click="open = !open">
+                            <div class="flex flex-col md:flex-row md:items-start gap-4">
+
+                                <!-- 左側：公司資訊 -->
+                                <div class="flex items-center gap-3 md:w-52 flex-shrink-0">
+                                    <a href="dividend.php?code=6533"
+                                        @click.stop
+                                        class="w-13 h-13 px-3 py-2.5 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-700 flex flex-col items-center justify-center shadow-md shadow-indigo-200 text-white hover:opacity-90 transition-opacity flex-shrink-0"
+                                        title="點擊查看個股除權息與殖利率">
+                                        <span class="font-black text-sm tracking-wider font-mono">6533</span>
+                                    </a>
+                                    <div>
+                                        <h2 class="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors text-base flex items-center gap-1.5">
+                                            <a href="index.php?q=6533" @click.stop class="hover:underline">
+                                                晶心科                                            </a>
+                                        </h2>
+                                        <div class="flex items-center gap-1.5 text-xs text-slate-400 mt-1 font-mono">
+                                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>2026-08-10 20:01</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 中間：標題與標籤 -->
+                                <div class="flex-1 min-w-0">
+                                    <!-- 標籤 -->
+                                                                            <div class="flex flex-wrap gap-1.5 mb-2">
+                                                                                            <a href="announcements.php?type=capital" @click.stop
+                                                    class="inline-flex items-center px-2 py-0.5 rounded-lg text-xs font-bold text-white bg-gradient-to-r from-amber-500 to-orange-500 shadow-sm hover:opacity-90 transition-opacity">
+                                                    📊 增資                                                </a>
+                                                                                    </div>
+                                    
+                                    <!-- 標題 -->
+                                    <h3 class="text-slate-800 font-semibold leading-relaxed line-clamp-2 text-base group-hover:text-indigo-600 transition-colors">
+                                        公告本公司現金增資認股基準日及相關事宜                                    </h3>
+                                </div>
+
+                                <!-- 右側：展開箭頭 -->
+                                <div class="flex items-center md:ml-4 self-end md:self-center">
+                                    <div class="w-9 h-9 rounded-full bg-slate-100 group-hover:bg-indigo-50 flex items-center justify-center transition-all"
+                                        :class="open ? 'bg-indigo-100 text-indigo-600 rotate-180' : 'text-slate-400'">
+                                        <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 詳情內容 -->
+                        <div x-show="open" x-collapse x-cloak>
+                            <div class="border-t border-slate-100 bg-slate-50/70 p-5 md:p-6">
+                                <div class="flex items-center justify-between gap-2 mb-3">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-1.5 h-4 bg-indigo-600 rounded-full"></span>
+                                        <h4 class="font-bold text-slate-800 text-sm">公告完整內容</h4>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <button @click="
+                                            navigator.clipboard.writeText(`【${'晶心科'} (6533) 重大訊息】\n主旨：${'公告本公司現金增資認股基準日及相關事宜'}\n時間：${'2026-08-10 20:01:09'}\n\n說明：\n${'1.董事會決議或公司決定增資基準日期:115/08/10
+2.是否採總括申報發行新股(是，請併敘明預定發行期間/否):否
+3.主管機關申報生效日期:115/08/10
+4.董事會決議(追補)發行日期:115/05/11
+5.發行總金額及股數:
+發行總金額：發行總面額新台幣68,000,000元。
+發行總股數：普通股6,800,000股
+6.採總括申報發行新股案件，本次發行金額及股數:不適用
+7.採總括申報發行新股案件，本次發行後，剩餘之金額及股數餘額:不適用
+8.每股面額:新台幣10元
+9.發行價格:實際發行價格於訂定後另行公告。
+10.員工認股股數:
+依公司法第267條規定，保留發行新股總額10%計680,000股由本公司員工認購。
+11.原股東認購比率:
+80%，計5,440,000股，由原股東按照認股基準日股東名簿記載之持股比例認購，
+每仟股可認購107.40181948股。
+12.公開銷售方式及股數:
+依證券交易法第28條之1規定，提撥發行新股總額10%計680,000股對外公開承銷。
+13.畸零股及逾期未認購股份之處理方式:
+原股東認購不足一股之畸零股得由股東自行在停止過戶日起五日內，逕向本公司
+股務代理機構辦理拼湊成一整股認購，其拼湊不足一股之畸零股及原股東、員工
+放棄認購或認購不足及逾期未辦理拼湊之部份，擬授權董事長洽特定人按發行價
+格認購。
+14.本次發行新股之權利義務:與原已發行之股份相同。
+15.本次增資資金用途:充實營運資金。
+16.現金增資認股基準日:115/09/13
+17.最後過戶日:115/09/08
+18.停止過戶起始日期:115/09/09
+19.停止過戶截止日期:115/09/13
+20.股款繳納期間:
+原股東及員工股款繳納期間：115年9月17日至115年10月19日
+特定人認股繳款日期：115年10月20日至115年10月27日
+21.與代收及專戶存儲價款行庫訂約日期:俟正式簽約後再另行公告
+22.委託代收存款機構:俟正式簽約後再另行公告
+23.委託存儲款項機構:俟正式簽約後再另行公告
+24.其他應敘明事項:
+(1)本公司辦理115年現金增資發行新股6,800,000股乙案，業經金管會115年
+   8月10日金管證發字第1150350140號函生效在案。
+(2)最後過戶日:115年9月8日
+(3)本次現金增資發行計劃所訂之內容及其他相關未盡事宜，如遇法令變更、
+   經主管機關修正、客觀環境改變或因應主客觀環境需要而須修正或調整時
+   ，包括向主管機關申請延期或撤銷，授權董事長得全權辦理修正或調整。'}`);
+                                            copied = true;
+                                            setTimeout(() => copied = false, 2000);
+                                        " class="px-3 py-1 bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium transition-colors flex items-center gap-1 shadow-sm">
+                                            <span x-text="copied ? '✅ 已複製' : '📋 複製內文'"></span>
+                                        </button>
+                                        <a href="index.php?q=6533" class="px-3 py-1 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 rounded-lg text-xs font-bold transition-colors">
+                                            相關新聞 →
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-xl border border-slate-200/80 p-4 md:p-5 shadow-inner">
+                                    <pre class="text-slate-700 text-sm leading-relaxed whitespace-pre-wrap font-sans">1.董事會決議或公司決定增資基準日期:115/08/10
+2.是否採總括申報發行新股(是，請併敘明預定發行期間/否):否
+3.主管機關申報生效日期:115/08/10
+4.董事會決議(追補)發行日期:115/05/11
+5.發行總金額及股數:
+發行總金額：發行總面額新台幣68,000,000元。
+發行總股數：普通股6,800,000股
+6.採總括申報發行新股案件，本次發行金額及股數:不適用
+7.採總括申報發行新股案件，本次發行後，剩餘之金額及股數餘額:不適用
+8.每股面額:新台幣10元
+9.發行價格:實際發行價格於訂定後另行公告。
+10.員工認股股數:
+依公司法第267條規定，保留發行新股總額10%計680,000股由本公司員工認購。
+11.原股東認購比率:
+80%，計5,440,000股，由原股東按照認股基準日股東名簿記載之持股比例認購，
+每仟股可認購107.40181948股。
+12.公開銷售方式及股數:
+依證券交易法第28條之1規定，提撥發行新股總額10%計680,000股對外公開承銷。
+13.畸零股及逾期未認購股份之處理方式:
+原股東認購不足一股之畸零股得由股東自行在停止過戶日起五日內，逕向本公司
+股務代理機構辦理拼湊成一整股認購，其拼湊不足一股之畸零股及原股東、員工
+放棄認購或認購不足及逾期未辦理拼湊之部份，擬授權董事長洽特定人按發行價
+格認購。
+14.本次發行新股之權利義務:與原已發行之股份相同。
+15.本次增資資金用途:充實營運資金。
+16.現金增資認股基準日:115/09/13
+17.最後過戶日:115/09/08
+18.停止過戶起始日期:115/09/09
+19.停止過戶截止日期:115/09/13
+20.股款繳納期間:
+原股東及員工股款繳納期間：115年9月17日至115年10月19日
+特定人認股繳款日期：115年10月20日至115年10月27日
+21.與代收及專戶存儲價款行庫訂約日期:俟正式簽約後再另行公告
+22.委託代收存款機構:俟正式簽約後再另行公告
+23.委託存儲款項機構:俟正式簽約後再另行公告
+24.其他應敘明事項:
+(1)本公司辦理115年現金增資發行新股6,800,000股乙案，業經金管會115年
+   8月10日金管證發字第1150350140號函生效在案。
+(2)最後過戶日:115年9月8日
+(3)本次現金增資發行計劃所訂之內容及其他相關未盡事宜，如遇法令變更、
+   經主管機關修正、客觀環境改變或因應主客觀環境需要而須修正或調整時
+   ，包括向主管機關申請延期或撤銷，授權董事長得全權辦理修正或調整。</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                        <div class="announcement-card glass-card rounded-2xl shadow-sm border border-slate-200/80 overflow-hidden gradient-border"
+                        x-data="{ open: false, copied: false }">
+
+                        <div class="p-5 md:p-6 cursor-pointer group" @click="open = !open">
+                            <div class="flex flex-col md:flex-row md:items-start gap-4">
+
+                                <!-- 左側：公司資訊 -->
+                                <div class="flex items-center gap-3 md:w-52 flex-shrink-0">
+                                    <a href="dividend.php?code=6533"
+                                        @click.stop
+                                        class="w-13 h-13 px-3 py-2.5 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-700 flex flex-col items-center justify-center shadow-md shadow-indigo-200 text-white hover:opacity-90 transition-opacity flex-shrink-0"
+                                        title="點擊查看個股除權息與殖利率">
+                                        <span class="font-black text-sm tracking-wider font-mono">6533</span>
+                                    </a>
+                                    <div>
+                                        <h2 class="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors text-base flex items-center gap-1.5">
+                                            <a href="index.php?q=6533" @click.stop class="hover:underline">
+                                                晶心科                                            </a>
+                                        </h2>
+                                        <div class="flex items-center gap-1.5 text-xs text-slate-400 mt-1 font-mono">
+                                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>2026-08-10 19:04</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 中間：標題與標籤 -->
+                                <div class="flex-1 min-w-0">
+                                    <!-- 標籤 -->
+                                                                            <div class="flex flex-wrap gap-1.5 mb-2">
+                                                                                            <a href="announcements.php?type=board" @click.stop
+                                                    class="inline-flex items-center px-2 py-0.5 rounded-lg text-xs font-bold text-white bg-gradient-to-r from-cyan-500 to-sky-500 shadow-sm hover:opacity-90 transition-opacity">
+                                                    👥 董事會                                                </a>
+                                                                                    </div>
+                                    
+                                    <!-- 標題 -->
+                                    <h3 class="text-slate-800 font-semibold leading-relaxed line-clamp-2 text-base group-hover:text-indigo-600 transition-colors">
+                                        公告本公司115年第二季合併財務報告業經董事會決議通過                                    </h3>
+                                </div>
+
+                                <!-- 右側：展開箭頭 -->
+                                <div class="flex items-center md:ml-4 self-end md:self-center">
+                                    <div class="w-9 h-9 rounded-full bg-slate-100 group-hover:bg-indigo-50 flex items-center justify-center transition-all"
+                                        :class="open ? 'bg-indigo-100 text-indigo-600 rotate-180' : 'text-slate-400'">
+                                        <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 詳情內容 -->
+                        <div x-show="open" x-collapse x-cloak>
+                            <div class="border-t border-slate-100 bg-slate-50/70 p-5 md:p-6">
+                                <div class="flex items-center justify-between gap-2 mb-3">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-1.5 h-4 bg-indigo-600 rounded-full"></span>
+                                        <h4 class="font-bold text-slate-800 text-sm">公告完整內容</h4>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <button @click="
+                                            navigator.clipboard.writeText(`【${'晶心科'} (6533) 重大訊息】\n主旨：${'公告本公司115年第二季合併財務報告業經董事會決議通過'}\n時間：${'2026-08-10 19:04:04'}\n\n說明：\n${'1.提報董事會或經董事會決議日期:115/08/10
+2.審計委員會通過日期:115/08/10
+3.財務報告或年度自結財務資訊報導期間
+起訖日期(XXX/XX/XX~XXX/XX/XX):
+115/01/01~115/06/30
+4.1月1日累計至本期止營業收入(仟元):892,623
+5.1月1日累計至本期止營業毛利(毛損) (仟元):891,467
+6.1月1日累計至本期止營業利益(損失) (仟元):(306,979)
+7.1月1日累計至本期止稅前淨利(淨損) (仟元):(297,276)
+8.1月1日累計至本期止本期淨利(淨損) (仟元):(233,886)
+9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):(233,886)
+10.1月1日累計至本期止基本每股盈餘(損失) (元):(4.62)
+11.期末總資產(仟元):6,058,454
+12.期末總負債(仟元):1,774,116
+13.期末歸屬於母公司業主之權益(仟元):4,284,338
+14.其他應敘明事項:無'}`);
+                                            copied = true;
+                                            setTimeout(() => copied = false, 2000);
+                                        " class="px-3 py-1 bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium transition-colors flex items-center gap-1 shadow-sm">
+                                            <span x-text="copied ? '✅ 已複製' : '📋 複製內文'"></span>
+                                        </button>
+                                        <a href="index.php?q=6533" class="px-3 py-1 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 rounded-lg text-xs font-bold transition-colors">
+                                            相關新聞 →
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-xl border border-slate-200/80 p-4 md:p-5 shadow-inner">
+                                    <pre class="text-slate-700 text-sm leading-relaxed whitespace-pre-wrap font-sans">1.提報董事會或經董事會決議日期:115/08/10
+2.審計委員會通過日期:115/08/10
+3.財務報告或年度自結財務資訊報導期間
+起訖日期(XXX/XX/XX~XXX/XX/XX):
+115/01/01~115/06/30
+4.1月1日累計至本期止營業收入(仟元):892,623
+5.1月1日累計至本期止營業毛利(毛損) (仟元):891,467
+6.1月1日累計至本期止營業利益(損失) (仟元):(306,979)
+7.1月1日累計至本期止稅前淨利(淨損) (仟元):(297,276)
+8.1月1日累計至本期止本期淨利(淨損) (仟元):(233,886)
+9.1月1日累計至本期止歸屬於母公司業主淨利(損) (仟元):(233,886)
+10.1月1日累計至本期止基本每股盈餘(損失) (元):(4.62)
+11.期末總資產(仟元):6,058,454
+12.期末總負債(仟元):1,774,116
+13.期末歸屬於母公司業主之權益(仟元):4,284,338
+14.其他應敘明事項:無</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                        <div class="announcement-card glass-card rounded-2xl shadow-sm border border-slate-200/80 overflow-hidden gradient-border"
+                        x-data="{ open: false, copied: false }">
+
+                        <div class="p-5 md:p-6 cursor-pointer group" @click="open = !open">
+                            <div class="flex flex-col md:flex-row md:items-start gap-4">
+
+                                <!-- 左側：公司資訊 -->
+                                <div class="flex items-center gap-3 md:w-52 flex-shrink-0">
+                                    <a href="dividend.php?code=6533"
+                                        @click.stop
+                                        class="w-13 h-13 px-3 py-2.5 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-700 flex flex-col items-center justify-center shadow-md shadow-indigo-200 text-white hover:opacity-90 transition-opacity flex-shrink-0"
+                                        title="點擊查看個股除權息與殖利率">
+                                        <span class="font-black text-sm tracking-wider font-mono">6533</span>
+                                    </a>
+                                    <div>
+                                        <h2 class="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors text-base flex items-center gap-1.5">
+                                            <a href="index.php?q=6533" @click.stop class="hover:underline">
+                                                晶心科                                            </a>
+                                        </h2>
+                                        <div class="flex items-center gap-1.5 text-xs text-slate-400 mt-1 font-mono">
+                                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>2026-06-03 09:28</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 中間：標題與標籤 -->
+                                <div class="flex-1 min-w-0">
+                                    <!-- 標籤 -->
+                                    
+                                    <!-- 標題 -->
+                                    <h3 class="text-slate-800 font-semibold leading-relaxed line-clamp-2 text-base group-hover:text-indigo-600 transition-colors">
+                                        本公司受邀參加大和證券舉辦Daiwa Tech Conference 2026 (Hong Kong)                                    </h3>
+                                </div>
+
+                                <!-- 右側：展開箭頭 -->
+                                <div class="flex items-center md:ml-4 self-end md:self-center">
+                                    <div class="w-9 h-9 rounded-full bg-slate-100 group-hover:bg-indigo-50 flex items-center justify-center transition-all"
+                                        :class="open ? 'bg-indigo-100 text-indigo-600 rotate-180' : 'text-slate-400'">
+                                        <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 詳情內容 -->
+                        <div x-show="open" x-collapse x-cloak>
+                            <div class="border-t border-slate-100 bg-slate-50/70 p-5 md:p-6">
+                                <div class="flex items-center justify-between gap-2 mb-3">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-1.5 h-4 bg-indigo-600 rounded-full"></span>
+                                        <h4 class="font-bold text-slate-800 text-sm">公告完整內容</h4>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <button @click="
+                                            navigator.clipboard.writeText(`【${'晶心科'} (6533) 重大訊息】\n主旨：${'本公司受邀參加大和證券舉辦Daiwa Tech Conference 2026 (Hong Kong)'}\n時間：${'2026-06-03 09:28:31'}\n\n說明：\n${'符合條款第四條第XX款：12
+事實發生日：115/06/09
+1.召開法人說明會之日期：115/06/09 ~ 115/06/10
+2.召開法人說明會之時間：09 時 00 分 
+3.召開法人說明會之地點：香港 JW 萬豪酒店
+4.法人說明會擇要訊息：本公司受邀參加大和證券舉辦Daiwa Tech Conference 2026 (Hong Kong)，說明本公司營運概況。
+5.其他應敘明事項：無
+完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。'}`);
+                                            copied = true;
+                                            setTimeout(() => copied = false, 2000);
+                                        " class="px-3 py-1 bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium transition-colors flex items-center gap-1 shadow-sm">
+                                            <span x-text="copied ? '✅ 已複製' : '📋 複製內文'"></span>
+                                        </button>
+                                        <a href="index.php?q=6533" class="px-3 py-1 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 rounded-lg text-xs font-bold transition-colors">
+                                            相關新聞 →
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-xl border border-slate-200/80 p-4 md:p-5 shadow-inner">
+                                    <pre class="text-slate-700 text-sm leading-relaxed whitespace-pre-wrap font-sans">符合條款第四條第XX款：12
+事實發生日：115/06/09
+1.召開法人說明會之日期：115/06/09 ~ 115/06/10
+2.召開法人說明會之時間：09 時 00 分 
+3.召開法人說明會之地點：香港 JW 萬豪酒店
+4.法人說明會擇要訊息：本公司受邀參加大和證券舉辦Daiwa Tech Conference 2026 (Hong Kong)，說明本公司營運概況。
+5.其他應敘明事項：無
+完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                        <div class="announcement-card glass-card rounded-2xl shadow-sm border border-slate-200/80 overflow-hidden gradient-border"
+                        x-data="{ open: false, copied: false }">
+
+                        <div class="p-5 md:p-6 cursor-pointer group" @click="open = !open">
+                            <div class="flex flex-col md:flex-row md:items-start gap-4">
+
+                                <!-- 左側：公司資訊 -->
+                                <div class="flex items-center gap-3 md:w-52 flex-shrink-0">
+                                    <a href="dividend.php?code=6533"
+                                        @click.stop
+                                        class="w-13 h-13 px-3 py-2.5 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-700 flex flex-col items-center justify-center shadow-md shadow-indigo-200 text-white hover:opacity-90 transition-opacity flex-shrink-0"
+                                        title="點擊查看個股除權息與殖利率">
+                                        <span class="font-black text-sm tracking-wider font-mono">6533</span>
+                                    </a>
+                                    <div>
+                                        <h2 class="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors text-base flex items-center gap-1.5">
+                                            <a href="index.php?q=6533" @click.stop class="hover:underline">
+                                                晶心科                                            </a>
+                                        </h2>
+                                        <div class="flex items-center gap-1.5 text-xs text-slate-400 mt-1 font-mono">
+                                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>2026-04-20 15:58</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 中間：標題與標籤 -->
+                                <div class="flex-1 min-w-0">
+                                    <!-- 標籤 -->
+                                                                            <div class="flex flex-wrap gap-1.5 mb-2">
+                                                                                            <a href="announcements.php?type=warning" @click.stop
+                                                    class="inline-flex items-center px-2 py-0.5 rounded-lg text-xs font-bold text-white bg-gradient-to-r from-yellow-500 to-amber-500 shadow-sm hover:opacity-90 transition-opacity">
+                                                    ⚠️ 注意                                                </a>
+                                                                                    </div>
+                                    
+                                    <!-- 標題 -->
+                                    <h3 class="text-slate-800 font-semibold leading-relaxed line-clamp-2 text-base group-hover:text-indigo-600 transition-colors">
+                                        因本公司有價證券於集中交易市場達公布注意交易資訊標準，
+故公布相關財務業務等重大訊息，以利投資人區別瞭解。                                    </h3>
+                                </div>
+
+                                <!-- 右側：展開箭頭 -->
+                                <div class="flex items-center md:ml-4 self-end md:self-center">
+                                    <div class="w-9 h-9 rounded-full bg-slate-100 group-hover:bg-indigo-50 flex items-center justify-center transition-all"
+                                        :class="open ? 'bg-indigo-100 text-indigo-600 rotate-180' : 'text-slate-400'">
+                                        <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 詳情內容 -->
+                        <div x-show="open" x-collapse x-cloak>
+                            <div class="border-t border-slate-100 bg-slate-50/70 p-5 md:p-6">
+                                <div class="flex items-center justify-between gap-2 mb-3">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-1.5 h-4 bg-indigo-600 rounded-full"></span>
+                                        <h4 class="font-bold text-slate-800 text-sm">公告完整內容</h4>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <button @click="
+                                            navigator.clipboard.writeText(`【${'晶心科'} (6533) 重大訊息】\n主旨：${'因本公司有價證券於集中交易市場達公布注意交易資訊標準，
+故公布相關財務業務等重大訊息，以利投資人區別瞭解。'}\n時間：${'2026-04-20 15:58:58'}\n\n說明：\n${'1.事實發生日:115/04/20
+2.發生緣由:依臺灣證券交易所股份有限公司通知辦理。
+3.財務業務資訊:
+期間                    (  月  )             (   季   )        (最近四季累計)
+               ===================== ======================== ===============
+科目            最近一月  與去年同期  最近一季     與去年同期    114第2季至
+                115年3月   增減%     115年第1季      增減%        115第1季
+                (自結數)              (自結數)                     (自結數)
+                ========   ========   ========    ==========   ============
+營業收入(百萬)     134          40%        326         20%           1,533
+稅前淨(損)利(百萬) (35)         44%       (192)        58%           (552)
+本期淨(損)利(百萬) (23)         36%       (184)        61%           (485)
+每股盈餘(元)      (0.46)        36%       (3.63)       61%           (9.57)
+4.有無「臺灣證券交易所股份有限公司對有價證券上市公司重大訊息之查證暨公開處理
+  程序」第4條所列重大訊息之情事（如「有」，請說明）:無
+5.有無「臺灣證券交易所股份有限公司對有價證券上市公司重大訊息之查證暨公開處理
+  程序」第11條所列重大訊息說明記者會之情事:無
+6.完整財務資訊請至公開資訊觀測站查閱，路徑如下：
+(1)近期營業收入及損益資訊：基本資料>精華版
+(2)歷史每月營業收入：營運概況>每月營收>採用IFRSs後之月營業收入資訊
+(3)歷史損益(會計師查核/核閱數)：財務報表>採IFRSs後>合併/個別報表>綜合損益表
+(4)歷史損益(自願性公告自結數)：營運概況>自結損益公告:無
+7.其他應敘明事項:無'}`);
+                                            copied = true;
+                                            setTimeout(() => copied = false, 2000);
+                                        " class="px-3 py-1 bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium transition-colors flex items-center gap-1 shadow-sm">
+                                            <span x-text="copied ? '✅ 已複製' : '📋 複製內文'"></span>
+                                        </button>
+                                        <a href="index.php?q=6533" class="px-3 py-1 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 rounded-lg text-xs font-bold transition-colors">
+                                            相關新聞 →
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-xl border border-slate-200/80 p-4 md:p-5 shadow-inner">
+                                    <pre class="text-slate-700 text-sm leading-relaxed whitespace-pre-wrap font-sans">1.事實發生日:115/04/20
+2.發生緣由:依臺灣證券交易所股份有限公司通知辦理。
+3.財務業務資訊:
+期間                    (  月  )             (   季   )        (最近四季累計)
+               ===================== ======================== ===============
+科目            最近一月  與去年同期  最近一季     與去年同期    114第2季至
+                115年3月   增減%     115年第1季      增減%        115第1季
+                (自結數)              (自結數)                     (自結數)
+                ========   ========   ========    ==========   ============
+營業收入(百萬)     134          40%        326         20%           1,533
+稅前淨(損)利(百萬) (35)         44%       (192)        58%           (552)
+本期淨(損)利(百萬) (23)         36%       (184)        61%           (485)
+每股盈餘(元)      (0.46)        36%       (3.63)       61%           (9.57)
+4.有無「臺灣證券交易所股份有限公司對有價證券上市公司重大訊息之查證暨公開處理
+  程序」第4條所列重大訊息之情事（如「有」，請說明）:無
+5.有無「臺灣證券交易所股份有限公司對有價證券上市公司重大訊息之查證暨公開處理
+  程序」第11條所列重大訊息說明記者會之情事:無
+6.完整財務資訊請至公開資訊觀測站查閱，路徑如下：
+(1)近期營業收入及損益資訊：基本資料&gt;精華版
+(2)歷史每月營業收入：營運概況&gt;每月營收&gt;採用IFRSs後之月營業收入資訊
+(3)歷史損益(會計師查核/核閱數)：財務報表&gt;採IFRSs後&gt;合併/個別報表&gt;綜合損益表
+(4)歷史損益(自願性公告自結數)：營運概況&gt;自結損益公告:無
+7.其他應敘明事項:無</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                        <div class="announcement-card glass-card rounded-2xl shadow-sm border border-slate-200/80 overflow-hidden gradient-border"
+                        x-data="{ open: false, copied: false }">
+
+                        <div class="p-5 md:p-6 cursor-pointer group" @click="open = !open">
+                            <div class="flex flex-col md:flex-row md:items-start gap-4">
+
+                                <!-- 左側：公司資訊 -->
+                                <div class="flex items-center gap-3 md:w-52 flex-shrink-0">
+                                    <a href="dividend.php?code=6533"
+                                        @click.stop
+                                        class="w-13 h-13 px-3 py-2.5 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-700 flex flex-col items-center justify-center shadow-md shadow-indigo-200 text-white hover:opacity-90 transition-opacity flex-shrink-0"
+                                        title="點擊查看個股除權息與殖利率">
+                                        <span class="font-black text-sm tracking-wider font-mono">6533</span>
+                                    </a>
+                                    <div>
+                                        <h2 class="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors text-base flex items-center gap-1.5">
+                                            <a href="index.php?q=6533" @click.stop class="hover:underline">
+                                                晶心科                                            </a>
+                                        </h2>
+                                        <div class="flex items-center gap-1.5 text-xs text-slate-400 mt-1 font-mono">
+                                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>2026-04-16 10:06</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 中間：標題與標籤 -->
+                                <div class="flex-1 min-w-0">
+                                    <!-- 標籤 -->
+                                    
+                                    <!-- 標題 -->
+                                    <h3 class="text-slate-800 font-semibold leading-relaxed line-clamp-2 text-base group-hover:text-indigo-600 transition-colors">
+                                        澄清工商時報報導                                    </h3>
+                                </div>
+
+                                <!-- 右側：展開箭頭 -->
+                                <div class="flex items-center md:ml-4 self-end md:self-center">
+                                    <div class="w-9 h-9 rounded-full bg-slate-100 group-hover:bg-indigo-50 flex items-center justify-center transition-all"
+                                        :class="open ? 'bg-indigo-100 text-indigo-600 rotate-180' : 'text-slate-400'">
+                                        <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 詳情內容 -->
+                        <div x-show="open" x-collapse x-cloak>
+                            <div class="border-t border-slate-100 bg-slate-50/70 p-5 md:p-6">
+                                <div class="flex items-center justify-between gap-2 mb-3">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-1.5 h-4 bg-indigo-600 rounded-full"></span>
+                                        <h4 class="font-bold text-slate-800 text-sm">公告完整內容</h4>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <button @click="
+                                            navigator.clipboard.writeText(`【${'晶心科'} (6533) 重大訊息】\n主旨：${'澄清工商時報報導'}\n時間：${'2026-04-16 10:06:33'}\n\n說明：\n${'1.事實發生日:115/04/16
+2.公司名稱:晶心科技股份有限公司
+3.與公司關係(請輸入本公司或子公司):本公司
+4.相互持股比例:不適用
+5.傳播媒體名稱:工商時報
+6.報導內容:
+工商時報04/16報導提及「晶心科今年營收規模在AI、IOT、消費電子應用帶動
+下，有望雙位數成長」
+7.發生緣由:
+(1)媒體報導所提及本公司業績之財務預測資訊，非本公司對外發佈之新聞內容，純屬
+   媒體推估，有關財務業務相關資訊，請以本公司於公開資訊觀測站所公告之內容為
+   準，特此澄清。
+(2)本公司未對外發佈財務預測資訊，謹提醒投資大眾，未經本公司於公開資訊觀測站
+   發布之消息，若造成投資大眾之誤導或損失，純屬投資大眾個人理財行為，敬請　
+   投資大眾謹慎小心
+8.因應措施:發布重大訊息澄清報導。
+9.其他應敘明事項:無。'}`);
+                                            copied = true;
+                                            setTimeout(() => copied = false, 2000);
+                                        " class="px-3 py-1 bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium transition-colors flex items-center gap-1 shadow-sm">
+                                            <span x-text="copied ? '✅ 已複製' : '📋 複製內文'"></span>
+                                        </button>
+                                        <a href="index.php?q=6533" class="px-3 py-1 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 rounded-lg text-xs font-bold transition-colors">
+                                            相關新聞 →
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-xl border border-slate-200/80 p-4 md:p-5 shadow-inner">
+                                    <pre class="text-slate-700 text-sm leading-relaxed whitespace-pre-wrap font-sans">1.事實發生日:115/04/16
+2.公司名稱:晶心科技股份有限公司
+3.與公司關係(請輸入本公司或子公司):本公司
+4.相互持股比例:不適用
+5.傳播媒體名稱:工商時報
+6.報導內容:
+工商時報04/16報導提及「晶心科今年營收規模在AI、IOT、消費電子應用帶動
+下，有望雙位數成長」
+7.發生緣由:
+(1)媒體報導所提及本公司業績之財務預測資訊，非本公司對外發佈之新聞內容，純屬
+   媒體推估，有關財務業務相關資訊，請以本公司於公開資訊觀測站所公告之內容為
+   準，特此澄清。
+(2)本公司未對外發佈財務預測資訊，謹提醒投資大眾，未經本公司於公開資訊觀測站
+   發布之消息，若造成投資大眾之誤導或損失，純屬投資大眾個人理財行為，敬請　
+   投資大眾謹慎小心
+8.因應措施:發布重大訊息澄清報導。
+9.其他應敘明事項:無。</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                        <div class="announcement-card glass-card rounded-2xl shadow-sm border border-slate-200/80 overflow-hidden gradient-border"
+                        x-data="{ open: false, copied: false }">
+
+                        <div class="p-5 md:p-6 cursor-pointer group" @click="open = !open">
+                            <div class="flex flex-col md:flex-row md:items-start gap-4">
+
+                                <!-- 左側：公司資訊 -->
+                                <div class="flex items-center gap-3 md:w-52 flex-shrink-0">
+                                    <a href="dividend.php?code=6533"
+                                        @click.stop
+                                        class="w-13 h-13 px-3 py-2.5 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-700 flex flex-col items-center justify-center shadow-md shadow-indigo-200 text-white hover:opacity-90 transition-opacity flex-shrink-0"
+                                        title="點擊查看個股除權息與殖利率">
+                                        <span class="font-black text-sm tracking-wider font-mono">6533</span>
+                                    </a>
+                                    <div>
+                                        <h2 class="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors text-base flex items-center gap-1.5">
+                                            <a href="index.php?q=6533" @click.stop class="hover:underline">
+                                                晶心科                                            </a>
+                                        </h2>
+                                        <div class="flex items-center gap-1.5 text-xs text-slate-400 mt-1 font-mono">
+                                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>2026-03-31 13:46</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 中間：標題與標籤 -->
+                                <div class="flex-1 min-w-0">
+                                    <!-- 標籤 -->
+                                    
+                                    <!-- 標題 -->
+                                    <h3 class="text-slate-800 font-semibold leading-relaxed line-clamp-2 text-base group-hover:text-indigo-600 transition-colors">
+                                        公告本公司代理發言人異動                                    </h3>
+                                </div>
+
+                                <!-- 右側：展開箭頭 -->
+                                <div class="flex items-center md:ml-4 self-end md:self-center">
+                                    <div class="w-9 h-9 rounded-full bg-slate-100 group-hover:bg-indigo-50 flex items-center justify-center transition-all"
+                                        :class="open ? 'bg-indigo-100 text-indigo-600 rotate-180' : 'text-slate-400'">
+                                        <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 詳情內容 -->
+                        <div x-show="open" x-collapse x-cloak>
+                            <div class="border-t border-slate-100 bg-slate-50/70 p-5 md:p-6">
+                                <div class="flex items-center justify-between gap-2 mb-3">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-1.5 h-4 bg-indigo-600 rounded-full"></span>
+                                        <h4 class="font-bold text-slate-800 text-sm">公告完整內容</h4>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <button @click="
+                                            navigator.clipboard.writeText(`【${'晶心科'} (6533) 重大訊息】\n主旨：${'公告本公司代理發言人異動'}\n時間：${'2026-03-31 13:46:49'}\n\n說明：\n${'1.人員變動別（請輸入發言人、代理發言人、重要營運主管(如:執行長、營運長、
+行銷長及策略長等)、財務主管、會計主管、公司治理主管、資訊安全長、研發主管、
+內部稽核主管或訴訟及非訟代理人）:代理發言人
+2.發生變動日期:115/03/31
+3.舊任者姓名、級職及簡歷:陳志賢/總部管理室特別助理
+4.新任者姓名、級職及簡歷:
+(1)謝幼齡/Great China IP事業部協理
+(2)謝光宇/市場處技術副處長
+5.異動情形（請輸入「辭職」、「職務調整」、「資遣」、「退休」、「死亡」、「新
+任」或「解任」）:職務調整
+6.異動原因:職務調整
+7.生效日期:115/03/31
+8.其他應敘明事項:無'}`);
+                                            copied = true;
+                                            setTimeout(() => copied = false, 2000);
+                                        " class="px-3 py-1 bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium transition-colors flex items-center gap-1 shadow-sm">
+                                            <span x-text="copied ? '✅ 已複製' : '📋 複製內文'"></span>
+                                        </button>
+                                        <a href="index.php?q=6533" class="px-3 py-1 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 rounded-lg text-xs font-bold transition-colors">
+                                            相關新聞 →
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-xl border border-slate-200/80 p-4 md:p-5 shadow-inner">
+                                    <pre class="text-slate-700 text-sm leading-relaxed whitespace-pre-wrap font-sans">1.人員變動別（請輸入發言人、代理發言人、重要營運主管(如:執行長、營運長、
+行銷長及策略長等)、財務主管、會計主管、公司治理主管、資訊安全長、研發主管、
+內部稽核主管或訴訟及非訟代理人）:代理發言人
+2.發生變動日期:115/03/31
+3.舊任者姓名、級職及簡歷:陳志賢/總部管理室特別助理
+4.新任者姓名、級職及簡歷:
+(1)謝幼齡/Great China IP事業部協理
+(2)謝光宇/市場處技術副處長
+5.異動情形（請輸入「辭職」、「職務調整」、「資遣」、「退休」、「死亡」、「新
+任」或「解任」）:職務調整
+6.異動原因:職務調整
+7.生效日期:115/03/31
+8.其他應敘明事項:無</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                        <div class="announcement-card glass-card rounded-2xl shadow-sm border border-slate-200/80 overflow-hidden gradient-border"
+                        x-data="{ open: false, copied: false }">
+
+                        <div class="p-5 md:p-6 cursor-pointer group" @click="open = !open">
+                            <div class="flex flex-col md:flex-row md:items-start gap-4">
+
+                                <!-- 左側：公司資訊 -->
+                                <div class="flex items-center gap-3 md:w-52 flex-shrink-0">
+                                    <a href="dividend.php?code=6533"
+                                        @click.stop
+                                        class="w-13 h-13 px-3 py-2.5 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-700 flex flex-col items-center justify-center shadow-md shadow-indigo-200 text-white hover:opacity-90 transition-opacity flex-shrink-0"
+                                        title="點擊查看個股除權息與殖利率">
+                                        <span class="font-black text-sm tracking-wider font-mono">6533</span>
+                                    </a>
+                                    <div>
+                                        <h2 class="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors text-base flex items-center gap-1.5">
+                                            <a href="index.php?q=6533" @click.stop class="hover:underline">
+                                                晶心科                                            </a>
+                                        </h2>
+                                        <div class="flex items-center gap-1.5 text-xs text-slate-400 mt-1 font-mono">
+                                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>2026-03-16 18:08</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 中間：標題與標籤 -->
+                                <div class="flex-1 min-w-0">
+                                    <!-- 標籤 -->
+                                    
+                                    <!-- 標題 -->
+                                    <h3 class="text-slate-800 font-semibold leading-relaxed line-clamp-2 text-base group-hover:text-indigo-600 transition-colors">
+                                        本公司於115/03/18召開第四季法人說明會                                    </h3>
+                                </div>
+
+                                <!-- 右側：展開箭頭 -->
+                                <div class="flex items-center md:ml-4 self-end md:self-center">
+                                    <div class="w-9 h-9 rounded-full bg-slate-100 group-hover:bg-indigo-50 flex items-center justify-center transition-all"
+                                        :class="open ? 'bg-indigo-100 text-indigo-600 rotate-180' : 'text-slate-400'">
+                                        <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 詳情內容 -->
+                        <div x-show="open" x-collapse x-cloak>
+                            <div class="border-t border-slate-100 bg-slate-50/70 p-5 md:p-6">
+                                <div class="flex items-center justify-between gap-2 mb-3">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-1.5 h-4 bg-indigo-600 rounded-full"></span>
+                                        <h4 class="font-bold text-slate-800 text-sm">公告完整內容</h4>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <button @click="
+                                            navigator.clipboard.writeText(`【${'晶心科'} (6533) 重大訊息】\n主旨：${'本公司於115/03/18召開第四季法人說明會'}\n時間：${'2026-03-16 18:08:26'}\n\n說明：\n${'符合條款第四條第XX款：12
+事實發生日：115/03/18
+1.召開法人說明會之日期：115/03/18
+2.召開法人說明會之時間：16 時 00 分 
+3.召開法人說明會之地點：臺灣證券交易所1F資訊展示中心(台北市信義路五段7號1樓)
+4.法人說明會擇要訊息：本公司於115/03/18召開第四季法人說明會，說明本公司營運概況及成果說明。
+5.其他應敘明事項：無
+完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。'}`);
+                                            copied = true;
+                                            setTimeout(() => copied = false, 2000);
+                                        " class="px-3 py-1 bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium transition-colors flex items-center gap-1 shadow-sm">
+                                            <span x-text="copied ? '✅ 已複製' : '📋 複製內文'"></span>
+                                        </button>
+                                        <a href="index.php?q=6533" class="px-3 py-1 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 rounded-lg text-xs font-bold transition-colors">
+                                            相關新聞 →
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-xl border border-slate-200/80 p-4 md:p-5 shadow-inner">
+                                    <pre class="text-slate-700 text-sm leading-relaxed whitespace-pre-wrap font-sans">符合條款第四條第XX款：12
+事實發生日：115/03/18
+1.召開法人說明會之日期：115/03/18
+2.召開法人說明會之時間：16 時 00 分 
+3.召開法人說明會之地點：臺灣證券交易所1F資訊展示中心(台北市信義路五段7號1樓)
+4.法人說明會擇要訊息：本公司於115/03/18召開第四季法人說明會，說明本公司營運概況及成果說明。
+5.其他應敘明事項：無
+完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                        <div class="announcement-card glass-card rounded-2xl shadow-sm border border-slate-200/80 overflow-hidden gradient-border"
+                        x-data="{ open: false, copied: false }">
+
+                        <div class="p-5 md:p-6 cursor-pointer group" @click="open = !open">
+                            <div class="flex flex-col md:flex-row md:items-start gap-4">
+
+                                <!-- 左側：公司資訊 -->
+                                <div class="flex items-center gap-3 md:w-52 flex-shrink-0">
+                                    <a href="dividend.php?code=6533"
+                                        @click.stop
+                                        class="w-13 h-13 px-3 py-2.5 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-700 flex flex-col items-center justify-center shadow-md shadow-indigo-200 text-white hover:opacity-90 transition-opacity flex-shrink-0"
+                                        title="點擊查看個股除權息與殖利率">
+                                        <span class="font-black text-sm tracking-wider font-mono">6533</span>
+                                    </a>
+                                    <div>
+                                        <h2 class="font-bold text-slate-900 group-hover:text-indigo-600 transition-colors text-base flex items-center gap-1.5">
+                                            <a href="index.php?q=6533" @click.stop class="hover:underline">
+                                                晶心科                                            </a>
+                                        </h2>
+                                        <div class="flex items-center gap-1.5 text-xs text-slate-400 mt-1 font-mono">
+                                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                            </svg>
+                                            <span>2026-03-06 18:03</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 中間：標題與標籤 -->
+                                <div class="flex-1 min-w-0">
+                                    <!-- 標籤 -->
+                                    
+                                    <!-- 標題 -->
+                                    <h3 class="text-slate-800 font-semibold leading-relaxed line-clamp-2 text-base group-hover:text-indigo-600 transition-colors">
+                                        本公司受邀參加台新證券舉辦之2026年第一季全球投資論壇                                    </h3>
+                                </div>
+
+                                <!-- 右側：展開箭頭 -->
+                                <div class="flex items-center md:ml-4 self-end md:self-center">
+                                    <div class="w-9 h-9 rounded-full bg-slate-100 group-hover:bg-indigo-50 flex items-center justify-center transition-all"
+                                        :class="open ? 'bg-indigo-100 text-indigo-600 rotate-180' : 'text-slate-400'">
+                                        <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 詳情內容 -->
+                        <div x-show="open" x-collapse x-cloak>
+                            <div class="border-t border-slate-100 bg-slate-50/70 p-5 md:p-6">
+                                <div class="flex items-center justify-between gap-2 mb-3">
+                                    <div class="flex items-center gap-2">
+                                        <span class="w-1.5 h-4 bg-indigo-600 rounded-full"></span>
+                                        <h4 class="font-bold text-slate-800 text-sm">公告完整內容</h4>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <button @click="
+                                            navigator.clipboard.writeText(`【${'晶心科'} (6533) 重大訊息】\n主旨：${'本公司受邀參加台新證券舉辦之2026年第一季全球投資論壇'}\n時間：${'2026-03-06 18:03:35'}\n\n說明：\n${'符合條款第四條第XX款：12
+事實發生日：115/03/11
+1.召開法人說明會之日期：115/03/11
+2.召開法人說明會之時間：14 時 00 分 
+3.召開法人說明會之地點：台北晶華酒店
+4.法人說明會擇要訊息：本公司受邀參加台新證券舉辦之2026年第一季全球投資論壇，會中就本公司已公開發布之財務數字、經營績效等相關資訊作說明。
+5.其他應敘明事項：無
+完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。'}`);
+                                            copied = true;
+                                            setTimeout(() => copied = false, 2000);
+                                        " class="px-3 py-1 bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 rounded-lg text-xs font-medium transition-colors flex items-center gap-1 shadow-sm">
+                                            <span x-text="copied ? '✅ 已複製' : '📋 複製內文'"></span>
+                                        </button>
+                                        <a href="index.php?q=6533" class="px-3 py-1 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 rounded-lg text-xs font-bold transition-colors">
+                                            相關新聞 →
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-xl border border-slate-200/80 p-4 md:p-5 shadow-inner">
+                                    <pre class="text-slate-700 text-sm leading-relaxed whitespace-pre-wrap font-sans">符合條款第四條第XX款：12
+事實發生日：115/03/11
+1.召開法人說明會之日期：115/03/11
+2.召開法人說明會之時間：14 時 00 分 
+3.召開法人說明會之地點：台北晶華酒店
+4.法人說明會擇要訊息：本公司受邀參加台新證券舉辦之2026年第一季全球投資論壇，會中就本公司已公開發布之財務數字、經營績效等相關資訊作說明。
+5.其他應敘明事項：無
+完整財務業務資訊請至公開資訊觀測站之法人說明會一覽表或法說會項目下查閱。</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
+
+        <!-- 分頁導航 -->
+        
+    </main>
+
+    <script>
+    async function syncAnnouncements(btn) {
+        const icon = btn.querySelector('.sync-icon');
+        const text = btn.querySelector('.sync-text');
+        const toast = document.getElementById('syncToast');
+
+        const originalText = text ? text.textContent : '立即同步';
+        btn.disabled = true;
+        btn.classList.add('opacity-75', 'cursor-not-allowed');
+        if (icon) icon.classList.add('animate-spin');
+        if (text) text.textContent = '同步中...';
+
+        if (toast) {
+            toast.className = 'mb-6 p-4 rounded-2xl border border-indigo-200 bg-indigo-50 text-indigo-800 text-sm font-medium flex items-center gap-3';
+            toast.innerHTML = '<span class="w-3 h-3 rounded-full bg-indigo-600 animate-ping"></span> 正在向台灣證券交易所請求最新上市公司重大訊息，請稍候...';
+            toast.classList.remove('hidden');
+        }
+
+        try {
+            const res = await fetch('admin/update_announcements.php');
+            const textResp = await res.text();
+            let data;
+            try {
+                data = JSON.parse(textResp);
+            } catch (e) {
+                throw new Error('伺服器回傳格式異常');
+            }
+
+            if (data.success) {
+                if (toast) {
+                    toast.className = 'mb-6 p-4 rounded-2xl border border-emerald-200 bg-emerald-50 text-emerald-800 text-sm font-bold flex items-center gap-2';
+                    toast.innerHTML = `✅ ${data.message || '重大訊息同步完成！'} 頁面即將自動更新...`;
+                }
+                setTimeout(() => {
+                    window.location.reload();
+                }, 1000);
+            } else {
+                throw new Error(data.message || '同步失敗');
+            }
+        } catch (err) {
+            btn.disabled = false;
+            btn.classList.remove('opacity-75', 'cursor-not-allowed');
+            if (icon) icon.classList.remove('animate-spin');
+            if (text) text.textContent = originalText;
+
+            if (toast) {
+                toast.className = 'mb-6 p-4 rounded-2xl border border-rose-200 bg-rose-50 text-rose-800 text-sm font-medium';
+                toast.innerHTML = `❌ 同步發生錯誤：${err.message}`;
+            }
+        }
+    }
+    </script>
+
+        </main>
+
+    <!-- 頁尾 -->
+    <footer class="relative mt-6 md:mt-16 overflow-hidden">
+        <!-- 背景裝飾 -->
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950"></div>
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute -top-40 -left-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-40 -right-40 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-x-hidden">
+
+            <!-- 主要內容區 - 四欄式佈局 -->
+            <div class="py-12 grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-12 border-b border-white/10">
+
+                <!-- 品牌區塊 -->
+                <div class="col-span-2 md:col-span-1">
+                    <a href="/index.php" class="inline-flex items-center gap-3 mb-4 group">
+                        <img src="/assets/images/logo.png" alt="財智快報" class="h-10 w-10 group-hover:scale-105 transition-transform">
+                        <div>
+                            <span class="text-lg font-black">
+                                <span class="text-blue-400">財智</span><span class="text-white">快報</span>
+                            </span>
+                            <p class="text-xs text-gray-500">AI Financial Express</p>
+                        </div>
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-5">
+                        AI 驅動的財商語言學習中心，掌握財經脈動、精進商務英語，開啟智能學習新體驗。
+                    </p>
+
+                    <!-- 訂閱與安裝按鈕容器 -->
+                    <div class="flex flex-wrap gap-3 mb-4">
+                        <!-- 訂閱按鈕 -->
+                        <a href="https://t.me/ahankuobot" target="_blank"
+                            class="inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-[#0088cc] to-[#006699] text-white text-sm font-bold rounded-xl hover:from-[#0099dd] hover:to-[#0077aa] transition-all shadow-lg shadow-[#0088cc]/20">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 11.944 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                            </svg>
+                            免費訂閱
+                        </a>
+
+                        <!-- 安裝 PWA 按鈕 (僅行動版顯示) -->
+                        <button onclick="window.installPWA()"
+                            class="md:hidden inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-emerald-500 to-teal-600 text-white text-sm font-bold rounded-xl hover:from-emerald-600 hover:to-teal-700 transition-all shadow-lg shadow-emerald-500/20">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4-4v12"></path>
+                            </svg>
+                            安裝 APP
+                        </button>
+                    </div>
+
+                    <!-- 社群連結 -->
+                    <div class="flex items-center gap-2">
+                        <a href="https://t.me/ahankuobot" target="_blank"
+                            class="w-9 h-9 bg-white/10 hover:bg-[#0088cc] rounded-lg flex items-center justify-center text-gray-400 hover:text-white transition-all"
+                            title="Telegram">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 11.944 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="w-9 h-9 bg-white/10 hover:bg-[#1877F2] rounded-lg flex items-center justify-center text-gray-400 hover:text-white transition-all" title="Facebook">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.971.956-2.971 3.594v.376h3.617l-.571 3.667h-3.046v7.98" />
+                            </svg>
+                        </a>
+                        <a href="#" class="w-9 h-9 bg-white/10 hover:bg-black rounded-lg flex items-center justify-center text-gray-400 hover:text-white transition-all border border-white/10 hover:border-white/30" title="X / Twitter">
+                            <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 市場動態 (行動版隱藏) -->
+                <div class="hidden md:block">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
+                        <span class="w-1.5 h-5 bg-gradient-to-b from-blue-500 to-cyan-500 rounded-full"></span>
+                        市場動態
+                    </h4>
+                    <div class="space-y-2.5">
+                        <a href="/index.php" class="block text-gray-400 hover:text-blue-400 text-sm transition-colors">📰 即時新聞</a>
+                        <a href="/announcements.php" class="block text-gray-400 hover:text-blue-400 text-sm transition-colors">🔔 重大訊息</a>
+                        <a href="/stock_daily.php" class="block text-gray-400 hover:text-blue-400 text-sm transition-colors">📈 即時行情</a>
+                        <a href="/twse_news.php" class="block text-gray-400 hover:text-blue-400 text-sm transition-colors">📰 證交所新聞</a>
+                        <a href="/calendar.php" class="block text-gray-400 hover:text-blue-400 text-sm transition-colors">📅 財經日曆</a>
+                        <a href="/stock_analysis.php" class="block text-gray-400 hover:text-blue-400 text-sm transition-colors">🤖 AI 智慧分析</a>
+                    </div>
+                </div>
+
+                <!-- 財商學習 (行動版隱藏) -->
+                <div class="hidden md:block">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
+                        <span class="w-1.5 h-5 bg-gradient-to-b from-emerald-500 to-teal-500 rounded-full"></span>
+                        財商學習
+                    </h4>
+                    <div class="space-y-2.5">
+                        <a href="/fincollege/" class="block text-gray-400 hover:text-blue-400 text-sm transition-colors">🎓 財商學院</a>
+                        <a href="/fincollege/course.php" class="block text-gray-400 hover:text-blue-400 text-sm transition-colors">📚 全部課程</a>
+                        <a href="/video.php" class="block text-gray-400 hover:text-blue-400 text-sm transition-colors">🎬 影音專區</a>
+                        <a href="/funds.php" class="block text-gray-400 hover:text-blue-400 text-sm transition-colors">🏦 基金淨值</a>
+                        <a href="/offshore_funds.php" class="block text-gray-400 hover:text-blue-400 text-sm transition-colors">🌍 境外基金</a>
+                    </div>
+                    <!-- 特色標籤 -->
+                    <div class="flex flex-wrap gap-1.5 mt-4">
+                        <span class="px-2 py-0.5 bg-emerald-500/10 text-emerald-400 text-xs rounded">🇬🇧 雙語字幕</span>
+                        <span class="px-2 py-0.5 bg-purple-500/10 text-purple-400 text-xs rounded">🤖 AI 教學</span>
+                    </div>
+                </div>
+
+                <!-- 關於我們 (行動版隱藏) -->
+                <div class="hidden md:block">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
+                        <span class="w-1.5 h-5 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></span>
+                        關於我們
+                    </h4>
+                    <div class="space-y-2.5">
+                        <a href="/about.php" class="block text-gray-400 hover:text-blue-400 text-sm transition-colors">ℹ️ 關於財智快報</a>
+                        <a href="/search.php" class="block text-gray-400 hover:text-blue-400 text-sm transition-colors">🔍 全站搜尋</a>
+                        <a href="/terms.php" class="block text-gray-400 hover:text-blue-400 text-sm transition-colors">📋 使用條款</a>
+                        <a href="/privacy.php" class="block text-gray-400 hover:text-blue-400 text-sm transition-colors">🔒 隱私政策</a>
+                        <a href="/disclaimer.php" class="block text-gray-400 hover:text-blue-400 text-sm transition-colors">⚠️ 免責聲明</a>
+                        <a href="/contact.php" class="block text-gray-400 hover:text-blue-400 text-sm transition-colors">📧 聯絡我們</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 資料來源聲明 (行動版隱藏) -->
+            <div class="hidden md:block py-5 border-b border-white/5">
+                <div class="flex flex-wrap items-center justify-center gap-4 text-xs text-gray-500">
+                    <span class="flex items-center gap-1.5">
+                        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                        資料來源：TWSE 台灣證券交易所、TPEx 證券櫃檯買賣中心、TDCC 臺灣集中保管結算所、MOPS 公開資訊觀測站、SITCA 投信投顧公會、FinMind、Yahoo Finance、CoinGecko、GoldAPI
+                    </span>
+                    <span class="text-gray-700">|</span>
+                    <span>部份內容由 AI 生成，僅供參考</span>
+                </div>
+            </div>
+
+            <!-- 底部版權區 -->
+            <div class="py-5">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-xs text-gray-500 text-center md:text-left">
+                        &copy; 2026 財智快報 - AI 驅動的財商語言學習中心. Powered by AI & Vibe Coding Prompts by Ahan.
+                    </p>
+                    <div class="flex items-center gap-4 text-xs text-gray-500">
+                        <a href="/terms.php" class="hover:text-blue-400 transition-colors">使用條款</a>
+                        <span class="text-gray-700">|</span>
+                        <a href="/privacy.php" class="hover:text-blue-400 transition-colors">隱私政策</a>
+                        <span class="text-gray-700">|</span>
+                        <a href="/disclaimer.php" class="hover:text-blue-400 transition-colors">免責聲明</a>
+                        <span class="text-gray-700">|</span>
+                        <a href="/admin/index.php" class="hover:text-blue-400 transition-colors">後台管理</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- 返回頂部按鈕 -->
+    <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        class="fixed bottom-6 right-6 w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full shadow-lg shadow-blue-500/30 flex items-center justify-center opacity-0 invisible transition-all hover:scale-110 z-50">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <script>
+        // 返回頂部按鈕顯示邏輯
+        const backToTopBtn = document.getElementById('backToTop');
+        if (backToTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 500) {
+                    backToTopBtn.classList.remove('opacity-0', 'invisible');
+                    backToTopBtn.classList.add('opacity-100', 'visible');
+                } else {
+                    backToTopBtn.classList.add('opacity-0', 'invisible');
+                    backToTopBtn.classList.remove('opacity-100', 'visible');
+                }
+            });
+        }
+    </script>
+
+    <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a58a86bdbe148a36',t:'MTc5NDM3MTA1Ng=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a58a86bdbe148a36',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+    </html>
+</body>
+</html>

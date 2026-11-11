@@ -1,0 +1,1158 @@
+{
+  "source": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+  "filed": "2026-10-26",
+  "retrieved": "2026-10-29",
+  "unit": "USD million unless share fields state otherwise",
+  "sha256": "5eefb1418f52c29470845bde626de347b71333be4f8f3757ca631b8d88ba26ed",
+  "tables": {
+    "income": {
+      "html_table_index": 108,
+      "rows": [
+        [
+          "Year Ended December 31,",
+          "Six Months Ended June 30,"
+        ],
+        [
+          "2023",
+          "2024",
+          "2025",
+          "2025",
+          "2026"
+        ],
+        [
+          "(unaudited)"
+        ],
+        [
+          "Revenue",
+          "$ 41",
+          "$ 386",
+          "$ 4,585",
+          "$ 1,163",
+          "$ 16,286"
+        ],
+        [
+          "Operating expenses:"
+        ],
+        [
+          "Compute and infrastructure",
+          "433",
+          "2,522",
+          "7,326",
+          "2,334",
+          "8,945"
+        ],
+        [
+          "Personnel",
+          "95",
+          "454",
+          "1,839",
+          "538",
+          "3,152"
+        ],
+        [
+          "Bartz settlement",
+          "—",
+          "—",
+          "1,500",
+          "—",
+          "—"
+        ],
+        [
+          "Sales, marketing, and partnerships",
+          "2",
+          "43",
+          "568",
+          "120",
+          "3,168"
+        ],
+        [
+          "Other operating and administrative",
+          "62",
+          "347",
+          "1,412",
+          "306",
+          "1,714"
+        ],
+        [
+          "Total operating expenses",
+          "592",
+          "3,366",
+          "12,645",
+          "3,298",
+          "16,979"
+        ],
+        [
+          "Operating loss",
+          "(551)",
+          "(2,980)",
+          "(8,060)",
+          "(2,135)",
+          "(693)"
+        ],
+        [
+          "Interest income",
+          "69",
+          "106",
+          "431",
+          "115",
+          "1,111"
+        ],
+        [
+          "Change in fair value of convertible notes, derivative liabilities, and SAFEs",
+          "(1,045)",
+          "(5,434)",
+          "(34,308)",
+          "(10,942)",
+          "(72,388)"
+        ],
+        [
+          "Other income (expense), net",
+          "(2)",
+          "—",
+          "(8)",
+          "—",
+          "(8,757)"
+        ],
+        [
+          "Total other income (expense), net",
+          "(978)",
+          "(5,328)",
+          "(33,885)",
+          "(10,827)",
+          "(80,034)"
+        ],
+        [
+          "Loss before provision for income taxes",
+          "(1,529)",
+          "(8,308)",
+          "(41,945)",
+          "(12,962)",
+          "(80,727)"
+        ],
+        [
+          "Provision for income taxes",
+          "2",
+          "1",
+          "20",
+          "7",
+          "21"
+        ],
+        [
+          "Net loss",
+          "$ (1,531)",
+          "$ (8,309)",
+          "$ (41,965)",
+          "$ (12,969)",
+          "$ (80,748)"
+        ],
+        [
+          "Net loss per share attributable to common stockholders, basic and diluted",
+          "$ (1.42)",
+          "$ (5.43)",
+          "$ (23.04)",
+          "$ (7.25)",
+          "$ (39.88)"
+        ],
+        [
+          "Weighted-average shares outstanding, basic and diluted",
+          "1,076,881",
+          "1,528,995",
+          "1,821,085",
+          "1,788,731",
+          "2,024,973"
+        ]
+      ]
+    },
+    "cashflow": {
+      "html_table_index": 113,
+      "rows": [
+        [
+          "Year Ended December 31,",
+          "Six Months Ended June 30,"
+        ],
+        [
+          "2023",
+          "2024",
+          "2025",
+          "2025",
+          "2026"
+        ],
+        [
+          "(unaudited)"
+        ],
+        [
+          "Cash flows from operating activities:"
+        ],
+        [
+          "Net loss",
+          "$ (1,531)",
+          "$ (8,309)",
+          "$ (41,965)",
+          "$ (12,969)",
+          "$ (80,748)"
+        ],
+        [
+          "Adjustments to reconcile net loss to net cash provided by (used in) operating activities:"
+        ],
+        [
+          "Stock-based compensation expense",
+          "29",
+          "192",
+          "1,158",
+          "279",
+          "2,185"
+        ],
+        [
+          "Depreciation and amortization",
+          "3",
+          "21",
+          "40",
+          "14",
+          "97"
+        ],
+        [
+          "Change in fair value of convertible notes, derivative liabilities, and SAFEs",
+          "1,045",
+          "5,434",
+          "34,308",
+          "10,942",
+          "72,388"
+        ],
+        [
+          "Donation matching program liability",
+          "—",
+          "—",
+          "541",
+          "—",
+          "126"
+        ],
+        [
+          "Recognition and change in fair value of other financial instruments",
+          "—",
+          "—",
+          "—",
+          "—",
+          "8,720"
+        ],
+        [
+          "Other",
+          "—",
+          "7",
+          "11",
+          "5",
+          "(7)"
+        ],
+        [
+          "Changes in operating assets and liabilities:"
+        ],
+        [
+          "Accounts receivable, net",
+          "(10)",
+          "(90)",
+          "(834)",
+          "(384)",
+          "(4,982)"
+        ],
+        [
+          "Prepaid expenses and other assets",
+          "(1,253)",
+          "(3,190)",
+          "1,771",
+          "212",
+          "2,094"
+        ],
+        [
+          "Accounts payable, accrued expenses, and other liabilities",
+          "84",
+          "222",
+          "2,079",
+          "257",
+          "2,679"
+        ],
+        [
+          "Lease liabilities",
+          "(1)",
+          "—",
+          "13",
+          "7",
+          "(3)"
+        ],
+        [
+          "Deferred revenue",
+          "7",
+          "21",
+          "241",
+          "124",
+          "1,380"
+        ],
+        [
+          "Net cash provided by (used in) operating activities",
+          "(1,627)",
+          "(5,692)",
+          "(2,637)",
+          "(1,513)",
+          "3,929"
+        ],
+        [
+          "Cash flows from investing activities:"
+        ],
+        [
+          "Purchases of property and equipment",
+          "(2)",
+          "(15)",
+          "(131)",
+          "(18)",
+          "(482)"
+        ],
+        [
+          "Purchases of short-term investments",
+          "—",
+          "—",
+          "(3,082)",
+          "—",
+          "(18,972)"
+        ],
+        [
+          "Sales and maturities of short-term investments",
+          "—",
+          "—",
+          "213",
+          "—",
+          "2,610"
+        ],
+        [
+          "Other investing activities",
+          "—",
+          "(7)",
+          "(77)",
+          "(31)",
+          "(337)"
+        ],
+        [
+          "Net cash used in investing activities",
+          "(2)",
+          "(22)",
+          "(3,077)",
+          "(49)",
+          "(17,181)"
+        ],
+        [
+          "Cash flows from financing activities:"
+        ],
+        [
+          "Proceeds from issuance of redeemable convertible preferred stock, net of issuance costs",
+          "445",
+          "1,188",
+          "16,548",
+          "3,549",
+          "110,432"
+        ],
+        [
+          "Principal payments for finance leases",
+          "—",
+          "—",
+          "—",
+          "—",
+          "(4)"
+        ],
+        [
+          "Issuance of convertible notes for cash",
+          "1,750",
+          "6,050",
+          "3,450",
+          "1,300",
+          "—"
+        ],
+        [
+          "Proceeds from issuance of common stock",
+          "3",
+          "10",
+          "111",
+          "49",
+          "355"
+        ],
+        [
+          "Repurchase of common stock",
+          "—",
+          "—",
+          "(149)",
+          "(149)",
+          "—"
+        ],
+        [
+          "Issuance of SAFEs for cash",
+          "122",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        [
+          "Payment of deferred offering costs",
+          "—",
+          "—",
+          "—",
+          "—",
+          "(9)"
+        ],
+        [
+          "Net cash provided by financing activities",
+          "2,320",
+          "7,248",
+          "19,960",
+          "4,749",
+          "110,774"
+        ],
+        [
+          "Effect of exchange rate changes on cash, cash equivalents, and restricted cash",
+          "—",
+          "—",
+          "1",
+          "1",
+          "(5)"
+        ],
+        [
+          "Net increase in cash, cash equivalents, and restricted cash",
+          "691",
+          "1,534",
+          "14,247",
+          "3,188",
+          "97,517"
+        ]
+      ]
+    },
+    "cash_reconciliation": {
+      "html_table_index": 114,
+      "rows": [
+        [
+          "Year Ended December 31,",
+          "Six Months Ended June 30,"
+        ],
+        [
+          "2023",
+          "2024",
+          "2025",
+          "2025",
+          "2026"
+        ],
+        [
+          "(unaudited)"
+        ],
+        [
+          "Cash, cash equivalents, and restricted cash at beginning of period",
+          "929",
+          "1,620",
+          "3,154",
+          "3,154",
+          "17,401"
+        ],
+        [
+          "Cash, cash equivalents, and restricted cash at end of period",
+          "$ 1,620",
+          "$ 3,154",
+          "$ 17,401",
+          "$ 6,342",
+          "$ 114,918"
+        ]
+      ]
+    },
+    "revenue_type": {
+      "html_table_index": 119,
+      "rows": [
+        [
+          "Year Ended December 31,",
+          "Six Months Ended June 30,"
+        ],
+        [
+          "2023",
+          "2024",
+          "2025",
+          "2025",
+          "2026"
+        ],
+        [
+          "(unaudited)"
+        ],
+        [
+          "Consumption-based",
+          "$ 39",
+          "$ 288",
+          "$ 3,796",
+          "$ 983",
+          "$ 13,064"
+        ],
+        [
+          "Subscription-based",
+          "2",
+          "98",
+          "789",
+          "180",
+          "3,222"
+        ],
+        [
+          "Total",
+          "$ 41",
+          "$ 386",
+          "$ 4,585",
+          "$ 1,163",
+          "$ 16,286"
+        ]
+      ]
+    },
+    "geography": {
+      "html_table_index": 118,
+      "rows": [
+        [
+          "Year Ended December 31,",
+          "Six Months Ended June 30,"
+        ],
+        [
+          "2023",
+          "2024",
+          "2025",
+          "2025",
+          "2026"
+        ],
+        [
+          "(unaudited)"
+        ],
+        [
+          "United States",
+          "$ 34",
+          "$ 263",
+          "$ 3,362",
+          "$ 820",
+          "$ 11,763"
+        ],
+        [
+          "International",
+          "7",
+          "123",
+          "1,223",
+          "343",
+          "4,523"
+        ],
+        [
+          "Total",
+          "$ 41",
+          "$ 386",
+          "$ 4,585",
+          "$ 1,163",
+          "$ 16,286"
+        ]
+      ]
+    },
+    "functional_costs": {
+      "html_table_index": 146,
+      "rows": [
+        [
+          "Year Ended December 31,",
+          "Six Months Ended June 30,"
+        ],
+        [
+          "2023",
+          "2024",
+          "2025",
+          "2025",
+          "2026"
+        ],
+        [
+          "(unaudited)"
+        ],
+        [
+          "Cost of revenue (1)",
+          "$ 26",
+          "$ 752",
+          "$ 2,773",
+          "$ 1,019",
+          "$ 2,380"
+        ],
+        [
+          "Research and development (2)",
+          "422",
+          "2,275",
+          "6,338",
+          "1,850",
+          "9,741"
+        ],
+        [
+          "Sales and marketing (3)",
+          "76",
+          "163",
+          "911",
+          "239",
+          "3,808"
+        ],
+        [
+          "Bartz settlement",
+          "—",
+          "—",
+          "1,500",
+          "—",
+          "—"
+        ],
+        [
+          "General and administrative (4)",
+          "68",
+          "176",
+          "1,123",
+          "190",
+          "1,050"
+        ],
+        [
+          "Total operating expenses",
+          "$ 592",
+          "$ 3,366",
+          "$ 12,645",
+          "$ 3,298",
+          "$ 16,979"
+        ]
+      ]
+    },
+    "balance_assets_liabilities": {
+      "html_table_index": 106,
+      "rows": [
+        [
+          "As of December 31,",
+          "As of June 30,"
+        ],
+        [
+          "2024",
+          "2025",
+          "2026"
+        ],
+        [
+          "(unaudited)"
+        ],
+        [
+          "Assets"
+        ],
+        [
+          "Current assets:"
+        ],
+        [
+          "Cash and cash equivalents",
+          "$ 3,141",
+          "$ 17,388",
+          "$ 112,389"
+        ],
+        [
+          "Short-term investments",
+          "—",
+          "2,889",
+          "19,262"
+        ],
+        [
+          "Accounts receivable, net",
+          "95",
+          "909",
+          "5,833"
+        ],
+        [
+          "Prepaid expenses and other current assets",
+          "2,076",
+          "2,560",
+          "496"
+        ],
+        [
+          "Total current assets",
+          "5,312",
+          "23,746",
+          "137,980"
+        ],
+        [
+          "Restricted cash",
+          "13",
+          "13",
+          "2,529"
+        ],
+        [
+          "Property and equipment, net",
+          "19",
+          "146",
+          "1,187"
+        ],
+        [
+          "Operating lease right-of-use assets",
+          "35",
+          "126",
+          "1,157"
+        ],
+        [
+          "Goodwill",
+          "—",
+          "154",
+          "576"
+        ],
+        [
+          "Other assets, noncurrent",
+          "2,373",
+          "476",
+          "3,929"
+        ],
+        [
+          "Total assets",
+          "$ 7,752",
+          "$ 24,661",
+          "$ 147,358"
+        ],
+        [
+          "Liabilities, Redeemable Convertible Preferred Stock, and Stockholders’ Deficit"
+        ],
+        [
+          "Current liabilities:"
+        ],
+        [
+          "Accounts payable, accrued expenses, and other current liabilities",
+          "$ 333",
+          "$ 2,511",
+          "$ 5,422"
+        ],
+        [
+          "Operating lease liabilities, current",
+          "13",
+          "37",
+          "148"
+        ],
+        [
+          "Deferred revenue",
+          "28",
+          "269",
+          "1,650"
+        ],
+        [
+          "Total current liabilities",
+          "374",
+          "2,817",
+          "7,220"
+        ],
+        [
+          "Operating lease liabilities, noncurrent",
+          "39",
+          "80",
+          "931"
+        ],
+        [
+          "Convertible notes payable",
+          "14,116",
+          "41,677",
+          "108,566"
+        ],
+        [
+          "Other noncurrent liabilities",
+          "150",
+          "823",
+          "750"
+        ],
+        [
+          "Total liabilities",
+          "14,679",
+          "45,397",
+          "117,467"
+        ],
+        [
+          "Commitments and contingencies (Note 13)"
+        ],
+        [
+          "Redeemable convertible preferred stock, $0.00001 par value; 360,995, 728,289, and 1,040,441 shares authorized as of December 31, 2024 and 2025 and June 30, 2026 (unaudited), respectively; 220,219, 544,322, and 853,394 shares issued and outstanding as of December 31, 2024 and 2025 and June 30, 2026 (unaudited), respectively; aggregate liquidation preference of $2,874, $24,646, and $136,286 as of December 31, 2024 and 2025 and June 30, 2026 (unaudited), respectively",
+          "2,874",
+          "29,769",
+          "157,510"
+        ]
+      ]
+    },
+    "balance_equity": {
+      "html_table_index": 107,
+      "rows": [
+        [
+          "As of December 31,",
+          "As of June 30,"
+        ],
+        [
+          "2024",
+          "2025",
+          "2026"
+        ],
+        [
+          "(unaudited)"
+        ],
+        [
+          "Stockholders’ deficit:"
+        ],
+        [
+          "Class A common stock, $0.00001 par value; 6,319,705, 8,162,757, and 10,991,000 shares authorized as of December 31, 2024 and 2025 and June 30, 2026 (unaudited), respectively; 1,779,060, 1,901,267, and 2,157,398 shares issued and outstanding as of December 31, 2024 and 2025 and June 30, 2026 (unaudited), respectively",
+          "—",
+          "—",
+          "—"
+        ],
+        [
+          "Class N common stock, $0.00001 par value; 2,148,900, 5,547,243, and 7,044,000 shares authorized as of December 31, 2024 and 2025 and June 30, 2026 (unaudited), respectively; no shares issued and outstanding as of December 31, 2024 and 2025, and 30,643 shares issued and outstanding as of June 30, 2026 (unaudited)",
+          "—",
+          "—",
+          "—"
+        ],
+        [
+          "Class T common stock, $0.00001 par value; 0 shares authorized and issued as of December 31, 2024 and 2025 and June 30, 2026 (unaudited)",
+          "—",
+          "—",
+          "—"
+        ],
+        [
+          "Additional paid-in capital",
+          "239",
+          "1,644",
+          "5,336"
+        ],
+        [
+          "Accumulated other comprehensive income (loss)",
+          "—",
+          "5",
+          "(53)"
+        ],
+        [
+          "Accumulated deficit",
+          "(10,040)",
+          "(52,154)",
+          "(132,902)"
+        ],
+        [
+          "Total stockholders’ deficit",
+          "(9,801)",
+          "(50,505)",
+          "(127,619)"
+        ],
+        [
+          "Total liabilities, redeemable convertible preferred stock, and stockholders’ deficit",
+          "$ 7,752",
+          "$ 24,661",
+          "$ 147,358"
+        ]
+      ]
+    },
+    "adjusted_operating": {
+      "html_table_index": 60,
+      "rows": [
+        [
+          "Year Ended December 31,",
+          "Six Months Ended June 30,"
+        ],
+        [
+          "(in millions, except for percentages)",
+          "2023",
+          "2024",
+          "2025",
+          "2025",
+          "2026"
+        ],
+        [
+          "Operating loss",
+          "$ (551)",
+          "$ (2,980)",
+          "$ (8,060)",
+          "$ (2,135)",
+          "$ (693)"
+        ],
+        [
+          "Stock-based compensation expense",
+          "29",
+          "192",
+          "1,165",
+          "286",
+          "2,185"
+        ],
+        [
+          "Non-cash charitable contributions (1)",
+          "—",
+          "—",
+          "541",
+          "—",
+          "126"
+        ],
+        [
+          "Bartz settlement (2)",
+          "—",
+          "—",
+          "1,500",
+          "—",
+          "—"
+        ],
+        [
+          "Adjusted Operating Income (Loss)",
+          "$ (522)",
+          "$ (2,788)",
+          "$ (4,854)",
+          "$ (1,849)",
+          "$ 1,618"
+        ],
+        [
+          "Revenue",
+          "$ 41",
+          "$ 386",
+          "$ 4,585",
+          "$ 1,163",
+          "$ 16,286"
+        ],
+        [
+          "Operating margin",
+          "(1,344) %",
+          "(772) %",
+          "(176) %",
+          "(184) %",
+          "(4) %"
+        ],
+        [
+          "Adjusted Operating Margin",
+          "(1,273) %",
+          "(722) %",
+          "(106) %",
+          "(159) %",
+          "10 %"
+        ]
+      ]
+    },
+    "quarterly": {
+      "html_table_index": 62,
+      "rows": [
+        [
+          "Three Months Ended"
+        ],
+        [
+          "(in millions)",
+          "March 31, 2025",
+          "June 30, 2025",
+          "September 30, 2025",
+          "December 31, 2025",
+          "March 31, 2026",
+          "June 30, 2026"
+        ],
+        [
+          "Revenue",
+          "$ 376",
+          "$ 787",
+          "$ 1,382",
+          "$ 2,040",
+          "$ 4,731",
+          "$ 11,555"
+        ],
+        [
+          "Operating expenses:"
+        ],
+        [
+          "Compute and infrastructure",
+          "944",
+          "1,390",
+          "2,047",
+          "2,945",
+          "3,387",
+          "5,558"
+        ],
+        [
+          "Personnel (1)",
+          "218",
+          "320",
+          "489",
+          "812",
+          "1,295",
+          "1,857"
+        ],
+        [
+          "Bartz settlement",
+          "—",
+          "—",
+          "1,500",
+          "—",
+          "—",
+          "—"
+        ],
+        [
+          "Sales, marketing, and partnerships",
+          "24",
+          "96",
+          "202",
+          "246",
+          "1,033",
+          "2,135"
+        ],
+        [
+          "Other operating and administrative",
+          "125",
+          "181",
+          "233",
+          "873",
+          "683",
+          "1,031"
+        ],
+        [
+          "Total operating expenses",
+          "1,311",
+          "1,987",
+          "4,471",
+          "4,876",
+          "6,398",
+          "10,581"
+        ],
+        [
+          "Operating income (loss)",
+          "(935)",
+          "(1,200)",
+          "(3,089)",
+          "(2,836)",
+          "(1,667)",
+          "974"
+        ],
+        [
+          "Interest income",
+          "51",
+          "64",
+          "124",
+          "192",
+          "349",
+          "762"
+        ],
+        [
+          "Change in fair value of convertible notes, derivative liabilities, and SAFEs",
+          "(5,701)",
+          "(5,241)",
+          "(9,165)",
+          "(14,201)",
+          "(12,791)",
+          "(59,597)"
+        ],
+        [
+          "Other income (expense), net",
+          "—",
+          "—",
+          "(3)",
+          "(5)",
+          "(309)",
+          "(8,448)"
+        ],
+        [
+          "Total other income (expense), net",
+          "(5,650)",
+          "(5,177)",
+          "(9,044)",
+          "(14,014)",
+          "(12,751)",
+          "(67,283)"
+        ],
+        [
+          "Loss before provision for income taxes",
+          "(6,585)",
+          "(6,377)",
+          "(12,133)",
+          "(16,850)",
+          "(14,418)",
+          "(66,309)"
+        ],
+        [
+          "Provision for income taxes",
+          "7",
+          "—",
+          "5",
+          "8",
+          "21",
+          "—"
+        ],
+        [
+          "Net loss",
+          "$ (6,592)",
+          "$ (6,377)",
+          "$ (12,138)",
+          "$ (16,858)",
+          "$ (14,439)",
+          "$ (66,309)"
+        ]
+      ]
+    },
+    "quarterly_adjusted": {
+      "html_table_index": 64,
+      "rows": [
+        [
+          "Three Months Ended"
+        ],
+        [
+          "(in millions, except for percentages)",
+          "March 31, 2025",
+          "June 30, 2025",
+          "September 30, 2025",
+          "December 31, 2025",
+          "March 31, 2026",
+          "June 30, 2026"
+        ],
+        [
+          "Operating income (loss)",
+          "$ (935)",
+          "$ (1,200)",
+          "$ (3,089)",
+          "$ (2,836)",
+          "$ (1,667)",
+          "$ 974"
+        ],
+        [
+          "Stock-based compensation expense",
+          "105",
+          "181",
+          "305",
+          "574",
+          "924",
+          "1,261"
+        ],
+        [
+          "Non-cash charitable contributions (1)",
+          "—",
+          "—",
+          "—",
+          "541",
+          "126",
+          "—"
+        ],
+        [
+          "Bartz settlement (2)",
+          "—",
+          "—",
+          "1,500",
+          "—",
+          "—",
+          "—"
+        ],
+        [
+          "Adjusted Operating Income (Loss)",
+          "$ (830)",
+          "$ (1,019)",
+          "$ (1,284)",
+          "$ (1,721)",
+          "$ (617)",
+          "$ 2,235"
+        ],
+        [
+          "Revenue",
+          "$ 376",
+          "$ 787",
+          "$ 1,382",
+          "$ 2,040",
+          "$ 4,731",
+          "$ 11,555"
+        ],
+        [
+          "Operating margin",
+          "(249) %",
+          "(152) %",
+          "(224) %",
+          "(139) %",
+          "(35) %",
+          "8 %"
+        ],
+        [
+          "Adjusted Operating Margin",
+          "(221) %",
+          "(129) %",
+          "(93) %",
+          "(84) %",
+          "(13) %",
+          "19 %"
+        ]
+      ]
+    }
+  }
+}

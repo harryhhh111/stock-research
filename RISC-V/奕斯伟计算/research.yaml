@@ -1,0 +1,43 @@
+schema_version: 2
+entity_id: company:eswin-computing
+kind: company
+name: 奕斯伟计算
+aliases:
+- ESWIN Computing
+- 北京奕斯伟计算
+securities:
+- market: HK
+  mic: XHKG
+  symbol: '01256'
+primary_document: 奕斯伟计算研究.md
+research_scope: RISC-V首次跨公司比较；已取财务已复算，最新披露与估值尚有原件缺口，非完整财务研究验收
+documents: []
+related_entities:
+- entity_id: topic:risc-v
+  relation: theme
+sections:
+  thesis:
+    path: 奕斯伟计算研究.md
+    heading_path:
+    - 奕斯伟计算：RISC-V 芯片量产能否带来盈利
+    - 研究摘要与我的判断
+  open_questions:
+    path: 奕斯伟计算研究.md
+    heading_path:
+    - 奕斯伟计算：RISC-V 芯片量产能否带来盈利
+    - 待验证问题
+  metrics:
+    path: 奕斯伟计算研究.md
+    heading_path:
+    - 奕斯伟计算：RISC-V 芯片量产能否带来盈利
+    - 跟踪指标
+  risks:
+    path: 奕斯伟计算研究.md
+    heading_path:
+    - 奕斯伟计算：RISC-V 芯片量产能否带来盈利
+    - 主要风险
+  research_metadata:
+    path: 奕斯伟计算研究.md
+    heading_path:
+    - 奕斯伟计算：RISC-V 芯片量产能否带来盈利
+    - 研究日期与数据截止日

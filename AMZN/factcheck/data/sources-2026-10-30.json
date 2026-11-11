@@ -1,0 +1,50 @@
+{
+  "retrieved_date_Asia_Shanghai": "2026-10-30",
+  "sources": [
+    {
+      "file": "2023-q4.html",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2024/Amazon-com-Announces-Fourth-Quarter-Results/default.aspx",
+      "sha256": "2bb1dac433dbfc474b89118d930c1fd556a1d8438209cc040cb771474d95294f"
+    },
+    {
+      "file": "2024-q4.html",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-Fourth-Quarter-Results/",
+      "sha256": "1e7d38c7dfd2dfacd78de05aad528bc8b3929572b6df2658cf1b4f7e76dfe26c"
+    },
+    {
+      "file": "2025-q4.html",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Fourth-Quarter-Results/",
+      "sha256": "f20639a8c108f62908a59c7c6d7cfeabff81135d612c6cf77054a129a0f79f1b"
+    },
+    {
+      "file": "2026-q2.html",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/",
+      "sha256": "fd90fe5d1cef1431a9b739314bd1f361ebab4997063cecaa8864c3295349bb0f"
+    },
+    {
+      "file": "2026-q2-10q.html",
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001018724/575d79fb-3eda-4e99-9920-97324791ae65.html",
+      "sha256": "dd2c47224305d217768ab2b6036e3876ed863211d92fa031fb4aeec272b97370"
+    },
+    {
+      "file": "2025-annual-report.pdf",
+      "url": "https://s2.q4cdn.com/299287126/files/doc_financials/2026/ar/Amazon-2025-Annual-Report.pdf",
+      "sha256": "63196177ef83756ddfaff5aacda547f0eabac4669c0f6144bcee8401cd8cfbfc"
+    },
+    {
+      "file": "2024-annual-report.pdf",
+      "url": "https://s2.q4cdn.com/299287126/files/doc_financials/2025/ar/Amazon-2024-Annual-Report.pdf",
+      "sha256": "d6c8919af431fbf38d5d92f2060ba8f45d084f26495c6f17ce81232102977908"
+    },
+    {
+      "file": "2026-q3-page.html",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q3-2026-report",
+      "sha256": "bee636e5d793650010454c7d5a01648b38ae4681584b081c2d286766c162ecc1"
+    }
+  ],
+  "limitations": [
+    "SEC direct download returned403; used official IR mirror for Q2 and annual PDFs.",
+    "Q3 result URL returned404; official news page still preview.",
+    "Price 254.60 from web-retrieved StockAnalysis and FT Oct28 close; Oct29 snapshots intraday excluded."
+  ]
+}

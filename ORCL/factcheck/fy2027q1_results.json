@@ -1,0 +1,125 @@
+{
+  "period": "2025-09-01..2026-08-31",
+  "revenue_rows": {
+    "revenue": {
+      "current": 19345,
+      "prior": 14926,
+      "yoy_pct": 29.606056545625094,
+      "group_share_pct": 100.0
+    },
+    "cloud": {
+      "current": 11607,
+      "prior": 7186,
+      "yoy_pct": 61.52240467575842,
+      "group_share_pct": 60.0
+    },
+    "iaas": {
+      "current": 7388,
+      "prior": 3347,
+      "yoy_pct": 120.73498655512398,
+      "group_share_pct": 38.190746963039544
+    },
+    "saas": {
+      "current": 4219,
+      "prior": 3839,
+      "yoy_pct": 9.898411044542854,
+      "group_share_pct": 21.809253036960456
+    },
+    "software": {
+      "current": 5550,
+      "prior": 5721,
+      "yoy_pct": -2.9889879391714724,
+      "group_share_pct": 28.6895838718015
+    },
+    "license": {
+      "current": 655,
+      "prior": 766,
+      "yoy_pct": -14.490861618798956,
+      "group_share_pct": 3.3858878263117087
+    },
+    "support": {
+      "current": 4895,
+      "prior": 4955,
+      "yoy_pct": -1.2108980827447047,
+      "group_share_pct": 25.303696045489794
+    },
+    "hardware": {
+      "current": 774,
+      "prior": 670,
+      "yoy_pct": 15.522388059701498,
+      "group_share_pct": 4.001033858878263
+    },
+    "services": {
+      "current": 1414,
+      "prior": 1349,
+      "yoy_pct": 4.818383988139363,
+      "group_share_pct": 7.3093822693202375
+    }
+  },
+  "q1_yoy_pct": {
+    "operating_income": 57.30652326397008,
+    "net_income": 62.62384694226171,
+    "common_income": 59.85650837034506,
+    "eps": 54.45544554455446,
+    "cfo": 183.82063882063883,
+    "capex": 235.20348153375673,
+    "interest": 54.71289274106175
+  },
+  "q1_margins_pct": {
+    "operating": 34.77901266477126,
+    "net": 24.60584130266219
+  },
+  "op_margin_change_pp": 6.124316162024375,
+  "operating_profit_bridge_m": {
+    "revenue_increase": 4419,
+    "cloud_software_cost_increase": -2793,
+    "hardware_cost_increase": -103,
+    "services_cost_decrease": 47,
+    "sales_marketing_savings": 252,
+    "rd_savings": 90,
+    "amortization_savings": 218,
+    "restructuring_savings": 321
+  },
+  "ttm": {
+    "revenue": 71776,
+    "operating_income": 23057,
+    "net_income": 18920,
+    "common_income": 18736,
+    "cfo": 46940,
+    "capex": 75660,
+    "sbc": 4814,
+    "fcf": -28720
+  },
+  "net_cash_capex": 17966,
+  "cfo_excluding_specific_prepayment": 11740,
+  "net_debt": 88260,
+  "lease_inclusive_net_debt": 132066,
+  "roe_fy26_pct": 54.2797693737194,
+  "q1_roe_not_annualized_pct": 8.711566617862372,
+  "shares_qoq_pct": 5.000000000000004,
+  "valuation": {
+    "market_cap_m": 381598.56,
+    "ev_excluding_leases_and_preferred_m": 469858.56,
+    "market_cap_to_ttm_common_income": 20.36713065755764,
+    "ttm_diluted_eps_sum": 6.380000000000001,
+    "pe_diluted_eps_sum": 19.77899686520376,
+    "guidance_pe": 15.579012345679013,
+    "fcf_yield_pct": -7.526233851616211
+  },
+  "nov2_coupon_m": 776.75,
+  "rpo_next_12months_m": 86320.0,
+  "q1_qoq_pct": {
+    "operating_income": 9.701614218164023,
+    "net_income": 10.594795539033463,
+    "eps": 7.586206896551739,
+    "cfo": 58.02325581395349,
+    "capex": 72.79451888680046
+  },
+  "prepayment_share_of_cfo_increase_pct": 75.94065361224354,
+  "net_margin_change_pp": 4.9957649258700165,
+  "ttm_operating_margin_pct": 32.12355104770397,
+  "ttm_net_margin_pct": 26.35978600089166,
+  "ttm_capex_to_cfo_pct": 161.1844908393694,
+  "guidance_revenue_growth_pct": 33.61640215567796,
+  "future_30b_fcf_to_snapshot_market_cap_pct": 7.861664886785737
+}

@@ -1,0 +1,20 @@
+{
+  "checked": "2026-11-04",
+  "scope": "AWS子文档与Amazon关联更新",
+  "financial_checks": "verify_aws_supplement.py通过：三季与累计勾稽、同比/环比/TTM",
+  "entry_errors": [],
+  "entry_count": 93,
+  "local_link_errors": [],
+  "preserved_explanations": [
+    "集团Q2 Anthropic重估与AWS经营区分",
+    "现金CapEx毛净及资产增加区分",
+    "设备回本与园区回本区分",
+    "机柜/芯片与接电状态区分"
+  ],
+  "remaining": [
+    "全球完整项目及逐站已接电MW台账",
+    "AWS独立AI损益/现金流/ROIC",
+    "同规格实际成交价与单位成本"
+  ],
+  "document": "AWS.md"
+}

@@ -1,0 +1,422 @@
+{
+  "source": "working-tree",
+  "version_note": "本地工作树预览，未声明为已审核 commit",
+  "errors": [],
+  "entities": [
+    {
+      "schema_version": 2,
+      "entity_id": "company:sifive",
+      "kind": "company",
+      "name": "SiFive",
+      "aliases": [
+        "SiFive Inc."
+      ],
+      "securities": [],
+      "primary_document": "SiFive研究.md",
+      "research_scope": "RISC-V首次跨公司比较；已取财务已复算，最新披露与估值尚有原件缺口，非完整财务研究验收",
+      "documents": [],
+      "related_entities": [
+        {
+          "entity_id": "topic:risc-v",
+          "relation": "theme"
+        }
+      ],
+      "sections": {
+        "thesis": {
+          "path": "SiFive研究.md",
+          "heading_path": [
+            "SiFive：RISC-V IP 的高性能商业化对标",
+            "研究摘要与我的判断"
+          ]
+        },
+        "open_questions": {
+          "path": "SiFive研究.md",
+          "heading_path": [
+            "SiFive：RISC-V IP 的高性能商业化对标",
+            "待验证问题"
+          ]
+        },
+        "metrics": {
+          "path": "SiFive研究.md",
+          "heading_path": [
+            "SiFive：RISC-V IP 的高性能商业化对标",
+            "跟踪指标"
+          ]
+        },
+        "risks": {
+          "path": "SiFive研究.md",
+          "heading_path": [
+            "SiFive：RISC-V IP 的高性能商业化对标",
+            "主要风险"
+          ]
+        },
+        "research_metadata": {
+          "path": "SiFive研究.md",
+          "heading_path": [
+            "SiFive：RISC-V IP 的高性能商业化对标",
+            "研究日期与数据截止日"
+          ]
+        }
+      },
+      "entry": "SiFive/research.yaml",
+      "extracted_sections": {
+        "thesis": {
+          "status": "ok",
+          "text": "## 研究摘要与我的判断\n\n【我的推演】SiFive 是理解商业 RISC-V CPU IP 的重要对标，适合跟踪高性能处理器和软件生态，当前不适合作为可公开交易证券。它卖自有实现与服务，开放指令集不妨碍其收费。\n\n2026-04-09 公司披露融资400 M美元、公司估值3,650 M美元；累计超过100亿核心、500项设计是采用规模证据，不能换算为营收、市占率或利润。2026年开发服务器与AMD软件演示表明生态推进，但尚不能证明大规模数据中心商业部署。公开资料不足以核验三年营收、盈利、现金流及投资回报，不给虚构估值倍数或买入结论。",
+          "line": 3,
+          "total_chars": 270,
+          "path": "SiFive/SiFive研究.md"
+        },
+        "open_questions": {
+          "status": "ok",
+          "text": "## 待验证问题\n\n公司未在所查官方材料披露可审计三年及当年季度财务、客户集中和完整融资条款；因此本稿仅作非上市业务/生态对标，不构成完整财务估值研究。后续若有招股文件或审计财务，再按三年与最新季度补齐，不以旧融资估值当当前股价。",
+          "line": 103,
+          "total_chars": 115,
+          "path": "SiFive/SiFive研究.md"
+        },
+        "metrics": {
+          "status": "ok",
+          "text": "## 跟踪指标\n\n| 指标 | 已有证据 | 进一步验证 |\n|---|---|---|\n| 付费量产 | 累计核心及设计数量（公司口径） | 客户量产、版税和可审计财务 |\n| 数据中心商业化 | BigSky开发平台、AMD演示 | 稳定生产部署及采购规模 |\n| 资本回报 | 400 M美元融资 | 现金余额、消耗、研发产出与稀释 |",
+          "line": 95,
+          "total_chars": 171,
+          "path": "SiFive/SiFive研究.md"
+        },
+        "risks": {
+          "status": "ok",
+          "text": "## 主要风险\n\n高性能性能/功耗与软件成熟慢于资金消耗；客户自研或竞品压授权价格；融资估值与普通股经济权益不同；开发演示被误认为大规模订单；公开信息不足掩盖现金需求。",
+          "line": 91,
+          "total_chars": 84,
+          "path": "SiFive/SiFive研究.md"
+        },
+        "research_metadata": {
+          "status": "ok",
+          "text": "## 研究日期与数据截止日\n\n整理/核对2026-11-11。研究主体SiFive, Inc.；未上市，securities为空，融资估值币种USD。状态draft，作为非上市行业对标，不纳入股票关注池。融资截止2026-04-09；产品与生态进展核对至2026-09-15；截至本轮未取得审计财务报告。\n\n来源包括公司[商业模式](https://www.sifive.com/about/business-model)、[2026-04-09融资](https://www.sifive.com/press/sifive-raises-400-million-to-accelerate-high-performance-risc-v-data-center-solutions)、[8月24日开发服务器](https://www.sifive.com/press/risc-v-in-the-datacenter-bigsky-development-server)、[9月15日AMD合作](https://www.sifive.com/press/sifive-amd-rocm-riscv-datacenter-servers)。这些是当事人披露及产品公告，不等于审计财报或独立性能验证。",
+          "line": 9,
+          "total_chars": 550,
+          "path": "SiFive/SiFive研究.md"
+        }
+      },
+      "primary_excerpt": null,
+      "market_source": "explicit",
+      "warnings": []
+    },
+    {
+      "schema_version": 2,
+      "entity_id": "topic:risc-v",
+      "kind": "topic",
+      "name": "RISC-V公司专题",
+      "aliases": [
+        "RISC-V",
+        "RISC V"
+      ],
+      "securities": [],
+      "primary_document": "RISC-V公司专题.md",
+      "research_scope": "RISC-V首次跨公司比较；已取财务已复算，最新披露与估值尚有原件缺口，非完整财务研究验收",
+      "documents": [],
+      "related_entities": [
+        {
+          "entity_id": "company:andes-technology",
+          "relation": "related"
+        },
+        {
+          "entity_id": "company:eswin-computing",
+          "relation": "related"
+        },
+        {
+          "entity_id": "company:sifive",
+          "relation": "related"
+        }
+      ],
+      "sections": {
+        "thesis": {
+          "path": "RISC-V公司专题.md",
+          "heading_path": [
+            "RISC-V 公司专题：开放架构，谁能赚到钱",
+            "研究摘要与我的判断"
+          ]
+        },
+        "open_questions": {
+          "path": "RISC-V公司专题.md",
+          "heading_path": [
+            "RISC-V 公司专题：开放架构，谁能赚到钱",
+            "待验证问题"
+          ]
+        },
+        "metrics": {
+          "path": "RISC-V公司专题.md",
+          "heading_path": [
+            "RISC-V 公司专题：开放架构，谁能赚到钱",
+            "跟踪指标"
+          ]
+        },
+        "risks": {
+          "path": "RISC-V公司专题.md",
+          "heading_path": [
+            "RISC-V 公司专题：开放架构，谁能赚到钱",
+            "主要风险"
+          ]
+        },
+        "research_metadata": {
+          "path": "RISC-V公司专题.md",
+          "heading_path": [
+            "RISC-V 公司专题：开放架构，谁能赚到钱",
+            "研究日期与数据截止日"
+          ]
+        }
+      },
+      "entry": "research.yaml",
+      "extracted_sections": {
+        "thesis": {
+          "status": "ok",
+          "text": "## 研究摘要与我的判断\n\n【我的推演】RISC-V 已有商业规模，但“架构被采用”“芯片收入增长”和“股东获得回报”是三件事。先研究能向谁收费、收费有多少现金兑现，再看技术愿景。\n\n本专题比较前面讨论的三家企业：**晶心科技看授权能否转成量产版税，奕斯伟计算看芯片销售能否覆盖研发与费用，SiFive看高性能商业化与软件生态**。研究顺序仍优先晶心，但这只是信息与商业模式的研究顺序，不是股票收益排名。\n\n| 公司 | 证券与商业模式 | 最重要的正面证据 | 反面证据/限制 | 主研究 |\n|---|---|---|---|---|\n| 晶心科技 | TW / XTAI / 6533；CPU IP授权、版税、维护 | 2023—2025授权收入增长，26H1授权明显增加 | FY25版税−0.51%，扣开发投入后FCF为负 | [晶心科技](晶心科技/晶心科技研究.md) |\n| 奕斯伟计算 | HK / XHKG / 01256；芯片/芯片组/板卡与方案 | 三年收入增长，计算产品开始贡献收入 | 显示交互仍是主要历史收入；亏损与烧钱，Q1正CFO含营运资金释放 | [奕斯伟计算](奕斯伟计算/奕斯伟计算研究.md) |\n| SiFive | 未上市；商业CPU与系统IP | 产品、累计采用和开发生态推进 | 无足够审计财务；融资、演示不能当盈利和量产订单 | [SiFive](SiFive/SiFive研究.md) |\n\n当前不作买入或目标价结论：两家上市公司均需用利润和含研发投入的现金回报检验增长。SiFive融资估值也不能直接作为晶心估值锚。",
+          "line": 3,
+          "total_chars": 686,
+          "path": "RISC-V公司专题.md"
+        },
+        "open_questions": {
+          "status": "ok",
+          "text": "## 待验证问题\n\n按类别分清：\n\n- **研究未完成／原件获取受阻**：晶心Q3完整财报；奕斯伟上市后最新财务、10月证券月报、最终融资净额及同日汇率。已查官方入口和公告索引并保存证据线索，不写成未披露。\n- **已查材料未披露**：SiFive审计三年财务、客户版税率；上市公司逐产品纯RISC-V利润贡献。没有披露不填零。\n- **不可比**：行业累计核心/年度芯片、同芯片多架构、不同版本市场预测；不据此做市占率或单位价值计算。\n- **不适用**：SiFive普通公开市场股票估值；亏损公司以PE衡量当前盈利价值。",
+          "line": 122,
+          "total_chars": 262,
+          "path": "RISC-V公司专题.md"
+        },
+        "metrics": {
+          "status": "ok",
+          "text": "## 跟踪指标\n\n| 主体 | 必看指标 | 当前可验证信号 | 触发复核的条件 |\n|---|---|---|---|\n| 晶心 | 授权、版税、现金开发投入、FCF、净股数 | FY25版税略降；26H1有增长，资本化仍大 | 多季版税与含开发投入FCF改善，或资本化/稀释加速 |\n| 奕斯伟 | 分产品收入/毛利、销量/单价、回款、库存 | Q1计算收入跳升，现金流有应收释放 | 重复交付、毛利与排除营运资金释放后现金质量变化 |\n| SiFive | 量产部署、审计财务、融资条款 | 开发平台和生态演示 | 实际生产部署/付费订单或新融资需求 |\n| 行业 | 主CPU与辅助核分开、IP收入与SoC收入分开 | 统计足迹明显扩大 | 新原始报告明确同口径实际渗透与变现 |",
+          "line": 113,
+          "total_chars": 344,
+          "path": "RISC-V公司专题.md"
+        },
+        "risks": {
+          "status": "ok",
+          "text": "## 主要风险\n\n- 开放标准扩大采用，也扩大客户自研与开源替代，供应商不必然获得同幅收入。\n- 辅助管理核进入高价值GPU，会放大“相关芯片销售额”，却未必放大IP收入。\n- 数据中心、汽车需要软件/安全认证与长期验证，技术演示领先于财务兑现。\n- 客户项目、产品组合、汇率、库存及资本化影响利润；只看高毛利或收入增速会误判。\n- 财务披露覆盖与行情股本仍有缺口，本稿不作可交易价格结论。",
+          "line": 105,
+          "total_chars": 195,
+          "path": "RISC-V公司专题.md"
+        },
+        "research_metadata": {
+          "status": "ok",
+          "text": "## 研究日期与数据截止日\n\n整理/核对：2026-11-11。专题状态draft。范围为首次跨公司商业模式及可得财务比较，不将存在文档等同完整研究验收、关注池或交易建议。\n\n- 晶心：2023—2025原始年报，2026Q1/H1原报，Q3公告二手转载、10月营收和增资公告线索；行情已用交易所JSON核实11月10日收盘226元。\n- 奕斯伟：2026-09-28招股书，2023—2025及2026Q1原始财务；上市后更新财务和股本原件尚有获取缺口。\n- SiFive：2026-04-09融资、8—9月公司产品与合作公告；未取得完整财务。\n- 行业：采用2026-06-19官方对SHD方法的说明，历史规模和未来预测分别标注。不同统计分母不强行拼接。",
+          "line": 17,
+          "total_chars": 329,
+          "path": "RISC-V公司专题.md"
+        }
+      },
+      "primary_excerpt": null,
+      "market_source": "explicit",
+      "warnings": []
+    },
+    {
+      "schema_version": 2,
+      "entity_id": "company:eswin-computing",
+      "kind": "company",
+      "name": "奕斯伟计算",
+      "aliases": [
+        "ESWIN Computing",
+        "北京奕斯伟计算"
+      ],
+      "securities": [
+        {
+          "market": "HK",
+          "mic": "XHKG",
+          "symbol": "01256"
+        }
+      ],
+      "primary_document": "奕斯伟计算研究.md",
+      "research_scope": "RISC-V首次跨公司比较；已取财务已复算，最新披露与估值尚有原件缺口，非完整财务研究验收",
+      "documents": [],
+      "related_entities": [
+        {
+          "entity_id": "topic:risc-v",
+          "relation": "theme"
+        }
+      ],
+      "sections": {
+        "thesis": {
+          "path": "奕斯伟计算研究.md",
+          "heading_path": [
+            "奕斯伟计算：RISC-V 芯片量产能否带来盈利",
+            "研究摘要与我的判断"
+          ]
+        },
+        "open_questions": {
+          "path": "奕斯伟计算研究.md",
+          "heading_path": [
+            "奕斯伟计算：RISC-V 芯片量产能否带来盈利",
+            "待验证问题"
+          ]
+        },
+        "metrics": {
+          "path": "奕斯伟计算研究.md",
+          "heading_path": [
+            "奕斯伟计算：RISC-V 芯片量产能否带来盈利",
+            "跟踪指标"
+          ]
+        },
+        "risks": {
+          "path": "奕斯伟计算研究.md",
+          "heading_path": [
+            "奕斯伟计算：RISC-V 芯片量产能否带来盈利",
+            "主要风险"
+          ]
+        },
+        "research_metadata": {
+          "path": "奕斯伟计算研究.md",
+          "heading_path": [
+            "奕斯伟计算：RISC-V 芯片量产能否带来盈利",
+            "研究日期与数据截止日"
+          ]
+        }
+      },
+      "entry": "奕斯伟计算/research.yaml",
+      "extracted_sections": {
+        "thesis": {
+          "status": "ok",
+          "text": "## 研究摘要与我的判断\n\n【我的推演】它更适合研究芯片产品商业化，而非纯处理器 IP 收租。2025 年76.33%收入来自人机交互产品，许可及服务只占1.72%；计算产品在2026Q1收入占比跳升至45.12%，但其毛利率只有约13.38%。不能把“计算业务增长”直接解读为利润质量提高。\n\n三年收入增长，但2025仍净亏损1,515.84 M人民币、FCF−1,484.70 M。2026Q1 CFO转正主要依靠应收及预付款释放，不能据一季宣布现金流拐点。当前优先验证产品组合和稳定客户订单，尚无足够证据给出买入结论。",
+          "line": 3,
+          "total_chars": 262,
+          "path": "奕斯伟计算/奕斯伟计算研究.md"
+        },
+        "open_questions": {
+          "status": "ok",
+          "text": "## 待验证问题\n\n- **研究未完成／获取受阻**：上市后更新财务、2026H1或最新期间原件、10月股本月报、最终IPO净额、期后现金、同日汇率和当前估值。已查公司官网、披露易招股书、公告索引及月报转载；不能宣布“公司尚未披露”。\n- **披露边界**：现有分产品表不提供各产品独立营业利润及纯RISC-V经济贡献；不能由架构标签补造。\n- **不可比**：芯片/芯片组/板卡混合“件数”、季度产品组合与前期不同，不把单位收入跳升当相同芯片涨价。",
+          "line": 194,
+          "total_chars": 225,
+          "path": "奕斯伟计算/奕斯伟计算研究.md"
+        },
+        "metrics": {
+          "status": "ok",
+          "text": "## 跟踪指标\n\n| 指标 | 最新已核原件观察 | 判断变化条件 |\n|---|---|---|\n| 人机交互盈利质量 | 26Q1收入227.63 M、毛利率7.32% | 同口径毛利恢复且销量不依赖继续降价 |\n| 计算产品复购 | 26Q1收入222.98 M、毛利率13.38% | 多客户连续收入及毛利额增长 |\n| 营运资金 | Q1应收释放363.77 M，库存增加161.28 M | 排除一次性回收后仍稳定正CFO |\n| 资金消耗 | FY25 FCF−1,484.70 M | 融资后现金消耗速度下降并能解释投入产出 |",
+          "line": 185,
+          "total_chars": 272,
+          "path": "奕斯伟计算/奕斯伟计算研究.md"
+        },
+        "risks": {
+          "status": "ok",
+          "text": "## 主要风险\n\n计算大项目重复性不足使收入回落；交互产品价格竞争压毛利；存货旧版减值消耗资本；客户/供应商集中扰动交付；持续研发与融资造成股东稀释；把集团其他资产或行业全部销售额归入上市主体会高估估值支撑。",
+          "line": 181,
+          "total_chars": 104,
+          "path": "奕斯伟计算/奕斯伟计算研究.md"
+        },
+        "research_metadata": {
+          "status": "ok",
+          "text": "## 研究日期与数据截止日\n\n整理/核对2026-11-11。主体北京奕斯伟计算技术股份有限公司及合并子公司，HK / XHKG / 01256；报表CNY、股价HKD；与奕斯伟材料及集团其他资产分开。2026-10-09上市，依据[公司公告](https://www.eswincomputing.com/kr/news/info/150.html)。研究状态draft，不自动纳入关注池。\n\n原始核心资料：[2026-09-28招股书](../factcheck/data/2026-09-28-eswin-prospectus.pdf)，覆盖2023—2025完整年度和2025/2026Q1；财务不能称截至11月。招股书还有7月末债务更新。尚未取得上市后完整更新报表及10月股本月报原件，搜索到月报存在；获取不足不等于公司没有披露。",
+          "line": 9,
+          "total_chars": 370,
+          "path": "奕斯伟计算/奕斯伟计算研究.md"
+        }
+      },
+      "primary_excerpt": null,
+      "market_source": "explicit",
+      "warnings": []
+    },
+    {
+      "schema_version": 2,
+      "entity_id": "company:andes-technology",
+      "kind": "company",
+      "name": "晶心科技",
+      "aliases": [
+        "Andes Technology",
+        "晶心科"
+      ],
+      "securities": [
+        {
+          "market": "TW",
+          "mic": "XTAI",
+          "symbol": "6533"
+        }
+      ],
+      "primary_document": "晶心科技研究.md",
+      "research_scope": "RISC-V首次跨公司比较；已取财务已复算，最新披露与估值尚有原件缺口，非完整财务研究验收",
+      "documents": [],
+      "related_entities": [
+        {
+          "entity_id": "topic:risc-v",
+          "relation": "theme"
+        }
+      ],
+      "sections": {
+        "thesis": {
+          "path": "晶心科技研究.md",
+          "heading_path": [
+            "晶心科技：RISC-V IP 的收入增长能否转成现金回报",
+            "研究摘要与我的判断"
+          ]
+        },
+        "open_questions": {
+          "path": "晶心科技研究.md",
+          "heading_path": [
+            "晶心科技：RISC-V IP 的收入增长能否转成现金回报",
+            "待验证问题"
+          ]
+        },
+        "metrics": {
+          "path": "晶心科技研究.md",
+          "heading_path": [
+            "晶心科技：RISC-V IP 的收入增长能否转成现金回报",
+            "跟踪指标"
+          ]
+        },
+        "risks": {
+          "path": "晶心科技研究.md",
+          "heading_path": [
+            "晶心科技：RISC-V IP 的收入增长能否转成现金回报",
+            "主要风险"
+          ]
+        },
+        "research_metadata": {
+          "path": "晶心科技研究.md",
+          "heading_path": [
+            "晶心科技：RISC-V IP 的收入增长能否转成现金回报",
+            "研究日期与数据截止日"
+          ]
+        }
+      },
+      "entry": "晶心科技/research.yaml",
+      "extracted_sections": {
+        "thesis": {
+          "status": "ok",
+          "text": "## 研究摘要与我的判断\n\n【我的推演】三家中，晶心最适合用来观察处理器 IP 的商业闭环，但目前证据支持“授权增长、研发先行”，尚不支持“版税已全面放量”。客户已核实到瑞萨、群联、Axelera AI、联咏和泰凌微的具体产品采用，详见第4节；客户采用证据不等于逐客户收入已披露。2025 年营收增长 7.00%，版税却下降 0.51%；当年毛利率 99.93%，经营亏损仍达 419.84 M新台币。2025营业费用率128.33%超过毛利率99.93%，费用桥解释经营亏损；Q3毛利率超过100%隐含负成本，原数与原因尚未确认，不能用于判断改善。\n\n关键假设：新授权能转为客户量产；版税增长能够覆盖持续研发；开发资本化最终创造足够现金回报。反证是版税停滞、无形资产继续累积、增资后每股回报仍不改善。现阶段判断为值得持续研究，不能仅据行业增长给出买入结论。",
+          "line": 3,
+          "total_chars": 379,
+          "path": "晶心科技/晶心科技研究.md"
+        },
+        "open_questions": {
+          "status": "ok",
+          "text": "## 待验证问题\n\n- **研究未完成／获取受阻**：已核读官网与交易所电子资料索引，本次索引只列Q1/Q2原件；Q3董事会公告已有、完整原件本轮未取得；需补Q3现金流、资产负债细项、收入结构及毛利异常。Q3公告转载只作暂算，不宣称公司未披露。\n- **研究未完成**：最新股本变动再与期后完整报告对账、完整三年回购与分红执行、治理持股和激励；因此估值只暂算，尚不构成完整公司研究验收。\n- **公司披露边界**：所核读财报未拆逐客户版税率或全部产品的纯RISC-V收入；不能拿集团收入代替。",
+          "line": 249,
+          "total_chars": 246,
+          "path": "晶心科技/晶心科技研究.md"
+        },
+        "metrics": {
+          "status": "ok",
+          "text": "## 跟踪指标\n\n| 指标 | 当前观察与来源 | 改变判断的条件 |\n|---|---|---|\n| 客户项目阶段 | 瑞萨RZ/Five已发布产品；群联E28、Axelera Europa有采用公告，见第4节 | 新项目进入可核验量产并与集团版税增长相互印证 |\n| 量产版税 | FY25 282.34 M、同比−0.51%；26H1 153.26 M | 连续多个可比季度增长且足以降低授权波动依赖 |\n| 现金转化 | FY25扣无形资产后FCF−947.91 M | 含开发投入及预付后的现金回报持续改善 |\n| 经营利润 | 26Q3暂算亏损13.81 M | 原件确认并能持续经营转盈，排除汇兑/一次性支撑 |\n| 每股稀释 | 10月现增680万股 | 收入与现金回报增长超过股数扩张 |",
+          "line": 239,
+          "total_chars": 353,
+          "path": "晶心科技/晶心科技研究.md"
+        },
+        "risks": {
+          "status": "ok",
+          "text": "## 主要风险\n\n客户量产推迟会延后版税；资本化项目商业失败会造成后续摊销或减值；融资扩大股数使总收入增长未必变成每股增长；汇率会掩盖或放大主业亏损；若开放核足够好，授权定价可能承压。",
+          "line": 235,
+          "total_chars": 92,
+          "path": "晶心科技/晶心科技研究.md"
+        },
+        "research_metadata": {
+          "status": "ok",
+          "text": "## 研究日期与数据截止日\n\n整理/核对：2026-11-11。主体：晶心科技股份有限公司及合并子公司；TW / XTAI / 6533，报表及股价币种 TWD。本文是 RISC-V 首轮比较研究中的公司底稿，状态 draft，未加入关注池。\n\n财务：2023—2025 三完整自然年度；2026Q1、Q2 原始财报；2026Q3 仅取得 11 月 9 日公告的第三方完整转载，附注和现金流原件未取得，不把半年报称最新完整财报。月营收另跟踪至 2026 年 10 月。行情已由台湾证券交易所月成交数据核实2026-11-10收盘226元；Yahoo的224.50元与交易所不符，采用官方值。估值仍受Q3附注/期后资金未齐限制。股本含 2026-11-03 上市缴款凭证。",
+          "line": 9,
+          "total_chars": 335,
+          "path": "晶心科技/晶心科技研究.md"
+        }
+      },
+      "primary_excerpt": null,
+      "market_source": "explicit",
+      "warnings": []
+    }
+  ],
+  "security_index": {
+    "XHKG:01256": "company:eswin-computing",
+    "XTAI:6533": "company:andes-technology"
+  }
+}

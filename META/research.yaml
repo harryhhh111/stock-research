@@ -11,7 +11,9 @@ securities:
   mic: XNAS
   symbol: META
 primary_document: META.md
-documents: []
+documents:
+- path: 数据中心与算力基础设施.md
+  role: supplement
 related_entities: []
 sections:
   thesis:

@@ -14,6 +14,8 @@ primary_document: AMD.md
 documents:
 - path: 基本情况.md
   role: supplement
+- path: ../数据中心/行业背景/x86与Arm：历史、架构与竞争.md
+  role: supplement
 related_entities: []
 sections:
   thesis:

@@ -29,11 +29,20 @@ sections:
     heading_path:
     - Oracle（ORCL）研究笔记
     - 12. 后续研究方向
-  metrics: null
+  metrics:
+    path: ORCL.md
+    heading_path:
+    - Oracle（ORCL）研究笔记
+    - 12. 后续研究方向
+    - 跟踪指标
   risks:
     path: ORCL.md
     heading_path:
     - Oracle（ORCL）研究笔记
     - 4. 盈利与负债
-    - 4.3 为什么评级只有 Baa2/BBB（离垃圾级两档）
-  research_metadata: null
+    - 4.3 信用评级与融资压力（历史评级待最新复核）
+  research_metadata:
+    path: ORCL.md
+    heading_path:
+    - Oracle（ORCL）研究笔记
+    - 研究日期与数据截止日

@@ -1,0 +1,45 @@
+schema_version: 2
+entity_id: company:microsoft
+kind: company
+name: Microsoft
+aliases:
+- MSFT
+- 微软
+securities:
+- market: US
+  mic: XNAS
+  symbol: MSFT
+primary_document: MSFT.md
+documents:
+- path: ../AI 总账/AI 总账.md
+  role: supplement
+- path: 云服务、数据中心与AI业务.md
+  role: supplement
+related_entities: []
+research_scope: 集团基本面首轮研究；完整验收与剩余缺口见主文档
+sections:
+  thesis:
+    path: MSFT.md
+    heading_path:
+    - 微软（MSFT）公司研究
+    - 研究摘要与我的判断
+  open_questions:
+    path: MSFT.md
+    heading_path:
+    - 微软（MSFT）公司研究
+    - 待验证问题
+  metrics:
+    path: MSFT.md
+    heading_path:
+    - 微软（MSFT）公司研究
+    - 跟踪指标
+  risks:
+    path: MSFT.md
+    heading_path:
+    - 微软（MSFT）公司研究
+    - 主要风险
+  research_metadata:
+    path: MSFT.md
+    heading_path:
+    - 微软（MSFT）公司研究
+    - 研究日期与数据截止日

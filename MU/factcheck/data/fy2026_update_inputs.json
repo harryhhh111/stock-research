@@ -1,0 +1,43 @@
+{
+  "checked_on": "2026-10-27",
+  "unit": "USD million, except per-share amounts and shares",
+  "sources": {
+    "annual": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0000723125/5dafce68-38e8-4cad-a8f3-ab56d04d73fd.pdf",
+    "release": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/",
+    "deck": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-26-Earnings-Deck.pdf",
+    "remarks": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+    "price": "https://stockanalysis.com/stocks/mu/history/",
+    "consensus": "https://stockanalysis.com/stocks/mu/forecast/"
+  },
+  "source_mapping": {
+    "annuals": "10-K printed pp.67,70,88,93; deck p.49 for adjusted FCF bridge",
+    "segments": "10-K printed pp.57,93; Q4 deck p.37",
+    "quarters": "Q4 release and deck pp.35,37; Q1-Q3 retained historical 10-Q values",
+    "balance": "10-K printed p.68 and cover (shares as of 2026-10-02)",
+    "market": "2026-10-26 regular-session unadjusted close; S&P Global via StockAnalysis",
+    "consensus": "retrieved 2026-10-27; page last updated 2026-10-26; adjusted non-GAAP EPS"
+  },
+  "annuals": {
+    "2024": {"revenue": 25111, "gross_profit": 5613, "operating_income": 1304, "net_income": 778, "eps": 0.70, "cfo": 8507, "cash_capex": 8386, "incentives": 315, "rd": 3430, "dram": 17603, "nand": 7227, "other": 281},
+    "2025": {"revenue": 37378, "gross_profit": 14873, "operating_income": 9770, "net_income": 8539, "eps": 7.59, "cfo": 17525, "cash_capex": 15857, "incentives": 2005, "asset_sales": 48, "rd": 3798, "dram": 28578, "nand": 8503, "other": 297},
+    "2026": {"revenue": 133188, "gross_profit": 107504, "operating_income": 99340, "net_income": 84969, "eps": 74.33, "adjusted_eps": 75.52, "cfo": 89675, "cash_capex": 30712, "incentives": 3316, "asset_sales": 29, "rd": 5650, "dram": 100679, "nand": 31785, "other": 724}
+  },
+  "segments": {
+    "CMBU": {"2024": 3792, "2025": 13524, "2026": 43085, "q1": 5284, "q2": 7749, "q3": 13769, "q4": 16283, "q4_prior": 4543, "op_2026": 31225, "q4_gm_pct": 83, "q4_op_pct": 76},
+    "CDBU": {"2024": 4984, "2025": 7229, "2026": 37592, "q1": 2379, "q2": 5687, "q3": 11524, "q4": 18002, "q4_prior": 1577, "op_2026": 29539, "q4_gm_pct": 90, "q4_op_pct": 85},
+    "MCBU": {"2024": 11667, "2025": 11859, "2026": 36601, "q1": 4255, "q2": 7711, "q3": 11521, "q4": 13114, "q4_prior": 3760, "op_2026": 29208, "q4_gm_pct": 90, "q4_op_pct": 88},
+    "AEBU": {"2024": 4631, "2025": 4753, "2026": 15886, "q1": 1720, "q2": 2708, "q3": 4634, "q4": 6824, "q4_prior": 1434, "op_2026": 11217, "q4_gm_pct": 84, "q4_op_pct": 79},
+    "Other": {"2024": 37, "2025": 13, "2026": 24, "q1": 5, "q2": 5, "q3": 8, "q4": 6, "q4_prior": 1, "op_2026": 2}
+  },
+  "quarters": {
+    "q1": {"revenue": 13643, "net_income": 5240, "eps": 4.60, "dram": 10812, "nand": 2743, "other": 88},
+    "q2": {"revenue": 23860, "net_income": 13785, "eps": 12.07, "dram": 18768, "nand": 4997, "other": 95},
+    "q3": {"revenue": 41456, "net_income": 28243, "eps": 24.67, "dram": 31328, "nand": 9943, "other": 185},
+    "q4": {"revenue": 54229, "net_income": 37701, "eps": 32.87, "dram": 39771, "nand": 14102, "other": 356, "cfo": 43973, "cash_capex": 11110, "asset_sales": 9, "incentives": 327},
+    "q4_prior": {"revenue": 11315, "net_income": 3201, "eps": 2.83, "dram": 8984, "nand": 2252, "other": 79}
+  },
+  "balance": {"equity_begin": 54165, "equity_end": 138378, "assets_begin": 82798, "assets_end": 195888, "cash": 38364, "short_investments": 5070, "long_investments": 30019, "restricted_cash": 27, "debt_current": 491, "debt_long": 4688, "shares": 1131423212, "cip_begin": 5518, "cip_end": 11424, "cash_deposits": 12747},
+  "market": {"date": "2026-10-26", "close": 903.70},
+  "consensus": {"date": "2026-10-26", "fy2027_adjusted_eps": 176.58, "eps_low": 161.00, "eps_high": 214.70, "fy2027_revenue": 275510, "fy2028_adjusted_eps": 206.89},
+  "guidance": {"fy2027q1_revenue": 61500, "gaap_eps": 37.84, "adjusted_eps": 38.15, "gaap_gm_pct": 85.95, "adjusted_gm_pct": 86.25}
+}

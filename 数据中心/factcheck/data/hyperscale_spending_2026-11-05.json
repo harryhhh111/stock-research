@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-05",
+  "unit": "USD million",
+  "existing_peer_inputs": "../../../ORCL/factcheck/data/peers_ttm_2026-11-04_inputs.json",
+  "existing_oracle_inputs": "../../../ORCL/factcheck/data/fy2027q1_inputs.json",
+  "meta": {
+    "annual_2025": {"cfo":115800,"capex":69691,"finance_lease_principal":2524},
+    "nine_months_2025": {"cfo":79586,"capex":48308,"finance_lease_principal":1770},
+    "nine_months_2026": {"cfo":96873,"capex":83055,"finance_lease_principal":2769},
+    "sources":["https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/","https://www.prnewswire.com/news-releases/meta-reports-third-quarter-2026-results-302915964.html"]
+  },
+  "calendar_quarters_2026": {
+    "AMZN":{"cfo":[26032,45387,42422],"capex":[44203,54208,77259],"source":"../../../AMZN/AMZN.md"},
+    "GOOG":{"cfo":[45790,39069,42290],"capex":[35674,44924,51355],"source":"../../../GOOG/云服务与AI基础设施.md"},
+    "META":{"cfo":[32225,31862,32786],"capex":[19000,30113,33942],"source":"../../../META/数据中心与算力基础设施.md"}
+  },
+  "annual_guidance_million": {
+    "AMZN":{"period":"CY2026","range":[220000,220000],"prior_comparable":128320,"definition":"net cash PPE; group, not AWS"},
+    "GOOG":{"period":"CY2026","range":[195000,205000],"prior_comparable":91447,"definition":"cash capex; group"},
+    "META":{"period":"CY2026","range":[135000,145000],"prior_comparable":72215,"definition":"PPE cash purchases plus finance lease principal"},
+    "ORCL":{"period":"FY2027 Jun2026-May2027","range":[90000,95000],"prior_comparable":55663,"definition":"gross cash capex; net company capex at most 70000 is different"},
+    "MSFT":{"period":"CY2026","range":[170000,170000],"prior_comparable":null,"definition":"company capex includes principal recognized on finance lease commencement; not cash PPE"}
+  }
+}
