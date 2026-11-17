@@ -66,10 +66,31 @@ class ReportTests(unittest.TestCase):
  def test_demo_must_be_synthetic(self):
   r=self.registered(path='TEST/reports/demo.html',kind='demo');self.assertTrue(self.errors())
   r['content_status']='synthetic';self.assertEqual(self.errors(),[])
- def test_ready_requires_metadata_and_no_unpublished_links(self):
+ def ready(self,r):
+  r.update(status='ready',document_updated_at='2026-11-17',content_sha256=__import__('hashlib').sha256((self.root/r['entry_path']).read_bytes()).hexdigest())
+ def test_ready_requires_date_and_hash(self):
   r=self.registered();r['status']='ready';self.assertTrue(self.errors())
-  r.update(document_updated_at='2026-11-17',content_status='partial',content_sha256=__import__('hashlib').sha256((self.root/r['entry_path']).read_bytes()).hexdigest());self.assertEqual(self.errors(),[])
-  r['unpublished_links']={'x.md':'待审核'};self.assertTrue(self.errors())
+  self.ready(r);self.assertEqual(self.errors(),[])
+  r['document_updated_at']=None;self.assertTrue(self.errors())
+  r['document_updated_at']='2026-11-17';r['content_sha256']=None;self.assertTrue(self.errors())
+ def test_ready_keeps_independent_content_status_and_warns(self):
+  r=self.registered();self.ready(r)
+  for state in ['unreviewed','partial','verified']:
+   with self.subTest(state=state):
+    r['content_status']=state;errors,warnings=m.validate(self.root,self.index)
+    self.assertEqual(errors,[]);self.assertEqual(r['content_status'],state)
+    self.assertEqual(any('内容核验状态=' in x for x in warnings),state!='verified')
+ def test_ready_allows_explicitly_unavailable_source(self):
+  r=self.registered();self.file(r['entry_path'],'<a href="../factcheck/missing.json">source</a>')
+  r['unpublished_links']={'../factcheck/missing.json':'未纳入网站访问范围'};self.ready(r)
+  errors,warnings=m.validate(self.root,self.index)
+  self.assertEqual(errors,[]);self.assertTrue(any('来源链接' in x for x in warnings))
+ def test_unpublished_link_does_not_exempt_display_dependency(self):
+  r=self.registered();self.file(r['entry_path'],'<a href="assets/chart.json">source</a><script>fetch("assets/chart.json")</script>')
+  r['unpublished_links']={'assets/chart.json':'附件未开放'};self.ready(r)
+  self.assertTrue(any('不存在' in x for x in self.errors()))
+  self.file('TEST/reports/assets/chart.json','{}')
+  self.assertTrue(any('展示依赖未登记assets' in x for x in self.errors()))
  def test_image_must_exist_and_be_registered(self):
   r=self.registered();self.file(r['entry_path'],'<img src="assets/image.png">');self.file('TEST/reports/assets/image.png','not real image')
   self.assertTrue(any('未登记assets' in x for x in self.errors()))

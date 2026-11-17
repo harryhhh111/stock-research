@@ -12,7 +12,7 @@
     "qxo-main: 38个来源链接尚未批准网站发布；状态=draft",
     "ai-berkshire-msft-experiment: 5个来源链接尚未批准网站发布；状态=draft"
   ],
-  "unittest_cases": 33,
+  "unittest_cases": 36,
   "unittest_result": "passed",
   "checks": [
     "registration and missing-index discovery",
@@ -34,7 +34,7 @@
   "github_workflow_run": "not run; changes not pushed",
   "branch_protection_required_check": "not configured in this task",
   "remaining": [
-    "Five existing company/topic entries remain draft/unreviewed; source-link publication scopes and financial cutoffs need review, not fabricated by index import.",
+    "Existing company reports retain their current delivery/content statuses; imported draft defaults require individual review. Source attachments and unknown financial cutoffs remain explicit gaps.",
     "Existing report relocation is deferred; six frozen legacy paths are explicit exceptions.",
     "Website backend integration and permissions remain outside this repository change.",
     "Static scanning cannot discover arbitrary dynamically constructed JavaScript dependencies."
@@ -66,5 +66,17 @@
     "old_index_history_fallback": "covered by test_git_base_recognises_index_before_directory_move",
     "scope": "Directory/reference changes only; no financial research refresh. QXO scripts only receive required path substitutions; concurrent research edits and staging are preserved.",
     "github_workflow": "paths updated locally; workflow and required-branch checks not run/configured by this task"
+  },
+  "status_semantics_revision": {
+    "date": "2026-11-17",
+    "scope": "Delivery status, content verification and website authorization are independent; authenticated company reading includes draft and ready. No report metadata or research facts changed.",
+    "report_tool_tests": {
+      "count": 36,
+      "result": "passed"
+    },
+    "index_check": "passed; 6 reports, 0 errors; existing source-attachment warnings retained",
+    "ready_requirements": "Non-scaffold body, document update date and matching content hash. Unreviewed/partial content generates a warning; unavailable source links do not block ready.",
+    "display_dependency_checks": "Required local display dependencies still must exist and be registered; unpublished_links cannot bypass these checks.",
+    "website_implementation": "Documentation contract only; hl-trader not modified."
   }
 }

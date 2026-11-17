@@ -214,8 +214,10 @@ def validate(root, index, discover=True):
             if r['status'] == 'ready':
                 if 'data-report-scaffold' in path.read_text(encoding='utf-8'):
                     raise ReportError('尚为工具生成的占位草稿，不能标ready')
-                if not r['document_updated_at'] or not r['content_sha256'] or r['content_status'] == 'unreviewed' or r['unpublished_links']:
-                    raise ReportError('ready须有更新日、正文哈希、明确内容状态，且无未发布链接')
+                if not r['document_updated_at'] or not r['content_sha256']:
+                    raise ReportError('ready须有更新日和正文哈希')
+            if r['status'] == 'ready' and r['content_status'] in ('unreviewed', 'partial'):
+                warnings.append(f'{label}: 已交付阅读但内容核验状态={r["content_status"]}，网站须显示核验状态及缺口')
             if r['content_sha256'] and hashlib.sha256(path.read_bytes()).hexdigest() != r['content_sha256']:
                 raise ReportError('正文已修改但索引内容哈希未同步；请复核后运行update')
             allowed = set(r['assets'])
