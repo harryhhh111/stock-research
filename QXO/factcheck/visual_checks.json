@@ -2,23 +2,34 @@
   "desktop": {
     "width": 1440,
     "scrollWidth": 1425,
-    "height": 22944,
+    "height": 30265,
     "charts": 4
   },
+  "sankeyLabels": [
+    {
+      "flow": "income",
+      "overflow": []
+    },
+    {
+      "flow": "cash",
+      "overflow": []
+    }
+  ],
   "mobile": {
     "width": 390,
     "scrollWidth": 375,
-    "height": 41349
+    "height": 50861
   },
   "print": {
     "pdf": "assets/2026-11-17-print.pdf",
-    "bytes": 3164391
+    "bytes": 3786735
   },
+  "audit_revision": "sop-reaudit-2026-11-17",
+  "status": "passed",
   "review_date": "2026-11-17",
   "offline": true,
-  "print_pages": 19,
-  "visual_review": "All 19 pages reviewed as rendered contact sheet; representative charts, mobile and valuation screenshots inspected. No clipped or overlapping figures/tables observed. Wide content scrolls within mobile containers.",
-  "print_text_bounds": "No extracted words outside page bounds; pdfplumber emitted Chrome font descriptor warnings, visual review used for layout.",
-  "last_page_text_characters": 1127,
-  "status": "passed for observed desktop, mobile and print views"
+  "print_pages": 25,
+  "last_page_text_characters": 1696,
+  "visual_review": "After synchronizing the 48th SOP index rule and QXO metadata, final desktop/mobile layouts and all 25 rendered print pages were inspected. Sankey labels remain inside each SVG; no clipped/overlapping table columns or figures observed. Wide mobile content scrolls within its own container.",
+  "report_sha256": "43358ca2946f9b5cb2e92b9617f9bc3561637bc5cb2ffce1ed3a13794e6311fb"
 }

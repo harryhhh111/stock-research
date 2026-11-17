@@ -54,6 +54,7 @@ def waterfall(items,label):
   svg.append(f'<text x="{x+bw/2}" y="{max(20,y-8)}" text-anchor="middle">{num(val,0)}</text>')
   for j,line in enumerate(name.split('/')):svg.append(f'<text x="{x+bw/2}" y="{239+j*16}" text-anchor="middle">{e(line)}</text>')
  svg.append('</svg>');return ''.join(svg)
+from flow_graphs import render as flow,metadata as flow_metadata
 blocks={}
 blocks['annual-products']=product_table(['2023','2024','2025'],True)+source(1,2,7)
 blocks['quarter-products']=product_table(['2026Q1','2026Q2','2026Q3'])+source(3,4,5)
@@ -76,10 +77,15 @@ for i,label in enumerate(['毛利率','经营利润率','净利率']):
 blocks['quarter-compare']=table(['指标','Q1：2025→2026','Q2：2025→2026','Q3：2025→2026'],rows,'同比、环比；金额变化用Δ（M美元），跨零不报百分比。Q1环比基期2025Q4。')+source(2,3,4,5)
 blocks['cumulative']=financial_table(['2025','2026'],C,'9M累计（各年1月1日—9月30日）；M美元。')+source(5)
 blocks['ttm']=financial_table(['2026-09 TTM'],{'2026-09 TTM':D['ttm']},'TTM：2025-10-01—2026-09-30；2025全年＋2026年9M−2025年9M；M美元。')+source(2,5)
-blocks['revenue-chart']=stacked()+source(5)
+blocks['revenue-chart']=flow('income')+source(5)
+blocks['income-flow-table']=table(['2026Q3收入来源','M美元','集团利润形成（不是产品费用分摊）','M美元'],[
+ ['屋顶产品','1,996','销售成本','3,515'],['保温与服务','1,644','毛利＝收入−销售成本','1,380'],['配套建材','1,240','其中：销售管理费','1,024'],['软件与服务','15','其中：折旧','66'],['集团收入合计','4,895','其中：摊销','288'],['—','—','其中：经营利润','2']], '2026Q3 QXO合并，M美元；收入来源合计4895，毛利1380＝1024＋66＋288＋2，毛利及其拆分不重复加总。')+source(5)
 blocks['cash-use-chart']=waterfall([('CFO',-145,True),('现金/CapEx',-111,False),('FCF',-256,True),('优先股/现金分配',-150,False),('分配后/现金缺口',-406,True)],'2026年9M，经营现金至自由现金及优先分配后缺口，M美元')+source(5)
 blocks['profit-chart']=waterfall([('毛利',1380,True),('销售管理费',-1024,False),('折旧',-66,False),('摊销',-288,False),('经营利润',2,True),('净利息',-163,False),('其他收益',11,False),('税收收益',27,False),('净亏损',-123,True)],'2026Q3毛利至净亏损，M美元')+source(5)
-blocks['cash-chart']=waterfall([('期初/含受限现金',2366,True),('经营活动',-145,False),('投资活动',-11040,False),('融资活动',9373,False),('期末/含受限现金',554,True)],'2026年9M完整现金桥，M美元；汇率影响零')+source(5)
+blocks['cash-chart']=flow('cash')+source(5)
+blocks['cash-flow-table']=table(['现金来源（含期初余额）','M美元','现金净用途及期末余额','M美元'],[
+ ['期初含受限现金','2,366','并购净现金支付','10,933'],['新增借款（循环26＋定期2993＋债券3000）','6,019','经营活动净耗现','145'],['普通股净发行','748','现金CapEx','111'],['C优先股净发行','2,989','融资现金支出（下表）','386'],['股权奖励行权收入','3','期末含受限现金','554'],['其他投资净流入','4','—','—'],['合计','12,129','合计','12,129']], '2026年9M，M美元；集团净额口径，来源和用途分别加总，不是全部客户/供应商逐笔现金。')+source(5)
+blocks['cash-financing-table']=table(['融资现金支出明细','M美元'],[[k,num(v,0)] for k,v in flow_metadata['financing_cash_paid'].items()]+[['合计',num(sum(flow_metadata['financing_cash_paid'].values()),0)]],'融资现金支出386的互斥明细；2026年9M，M美元。')+source(5)
 rows=[]
 for y,d in A.items():rows.append([y,num(d['assets']),num(d['equity']),num(d['cash']),num(d['roe'],2)+'%'])
 rows.append(['2026-09-30','34,470.0','15,681.0','528.0','9M简单年化 −4.25%（见口径）'])
@@ -103,6 +109,20 @@ for s in V['scenarios']:
 blocks['forecast-inputs']=table(['路径','财年','收入','EBITDA','SBC经济成本','整合现金费','实物折旧','现金CapEx','新增营运资金','企业现金流','折现值'],rows,'【我的推演】全部为M美元；分路径逐年输入与输出。保留负营运资金变动，表示释放现金。')
 rows=[['仅普通股市值',num(V['basic_marketcap'])],['简式EV=普通股市值＋债务本金−现金',num(V['basic_EV'])],['经济索取权口径EV（含融资租赁）',num(V['economic_EV_required'])],['调整后的净债务（含融资租赁）',num(V['net_debt_including_finance_leases'])],['支撑现价所需2030调整后EBITDA（10倍、10%）',num(V['required_2030_ebitda'])]]
 blocks['valuation-snapshot']=table(['指标','M美元'],rows,'行情2026-11-16常规收盘$12.01；普通股1,039.958653百万股，截至2026-11-06；资产负债截至2026-09-30。')+source(5,8)
+AUD=json.loads((P/'sop_audit.json').read_text())
+auditrows=[]
+for x in AUD['items']:
+ links=' · '.join(f'<a href="#{a}">{a}</a>' for a in x['evidence'])
+ auditrows.append([x['id'],e(x['requirement']),e(x['result']),links+'<small>'+e(x['review'])+'</small>'])
+counts=AUD['summary']
+blocks['sop-audit']='<div id="sop-review"><p><b>逐项内容验收：</b>'+f"共{counts['total']}项；通过{counts['passed']}项，未通过{counts['failed']}项，不适用{counts['not_applicable']}项，待复核{counts['pending']}项。"+'这些是按正文证据作出的审阅判断，不是由算术测试数推导。<a href="factcheck/sop_audit.json">逐项记录JSON</a>。</p>'+table(['编号','SOP要求','本轮结果','证据位置 / 实质判断'],auditrows,'完整研究验收逐项映射；依据2026-11-17执行清单，保留未通过项。').replace('<table>','<table class="audit-table">',1)+'</div>'
+blocks['coverage-matrix']='<div id="coverage-review">'+table(['指标组 / 主体','预期单季','实际单季','同比及环比基期','来源 / 拆季','结果及边界'],[
+ ['集团及已披露主要产品收入','2026Q1/Q2/Q3','1730.2 / 3246 / 4895；四条产品线逐季列示','2025各同季；Q1环比2025Q4','[3][4][5]主表及产品线附注','覆盖通过；并表范围不可比，跨版本差异原因另列未通过'],
+ ['集团经营利润、净利和利润率','2026Q1/Q2/Q3','经营−251.9 / −42 / 2；净利−227.1 / −55 / −123；各利润率已复算','2025各同季；Q1环比2025Q4','[2]全年减[5]2025年9M得Q4，[3—5]当年单季','覆盖及算术通过；2025比较列税项与版本成因未通过'],
+ ['集团CFO / 现金CapEx / FCF','2026Q1/Q2/Q3','CFO70.6 / −216.6 / 1；CapEx22.5 / 31.5 / 57；FCF48.1 / −248.1 / −56','2025各同季；Q1环比2025Q4','Q1原表，Q2=H1−Q1；Q3=9M−H1；拆季见financials.json','覆盖通过；原始精度不同，容差不当成因证据'],
+ ['集团SBC','2026Q1/Q2/Q3','39.2 / 28.8 / 79','2025各同季；Q1环比2025Q4','[3—5]；Q2按累计差分保留来源精度','覆盖通过；未把费用金额当发行股数'],
+ ['产品线经营利润 / CFO / CapEx','同期间披露范围','集团仅一个报告分部；未单列四条产品的独立三表','不伪造同比 / 环比','[2—5]分部附注；收购贡献另列','公司未披露：以集团三表与收购后贡献说明，不按收入分摊']
+ ],'季度覆盖与成因确认分开；金额M美元，利润率在正文精确表。')+'</div>'
 html=(ROOT/'QXO.html').read_text()
 for key,value in blocks.items():
  pattern=r'<!-- BEGIN:'+re.escape(key)+r' -->.*?<!-- END:'+re.escape(key)+r' -->'

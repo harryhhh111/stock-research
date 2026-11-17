@@ -2,6 +2,9 @@
   "date": "2026-11-17",
   "scope": "financial arithmetic, provenance, valuation reconstruction and HTML local structure only",
   "all_passed": true,
+  "mechanical_checks_passed": true,
+  "content_acceptance_passed": false,
+  "content_acceptance_record": "sop_audit.json",
   "checks": [
     {
       "check": "2023 gross",
@@ -508,9 +511,1234 @@
       "passed": true
     },
     {
+      "check": "raw XBRL 2024FY:revenue:2023-01-01:2023-12-31",
+      "actual": 54.517,
+      "expected": 54.517,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2024FY:cost:2023-01-01:2023-12-31",
+      "actual": 32.903,
+      "expected": 32.903,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2024FY:op:2023-01-01:2023-12-31",
+      "actual": -1.311,
+      "expected": -1.311,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2024FY:net:2023-01-01:2023-12-31",
+      "actual": -1.07,
+      "expected": -1.07,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2024FY:cfo:2023-01-01:2023-12-31",
+      "actual": 0.584,
+      "expected": 0.584,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2024FY:capex:2023-01-01:2023-12-31",
+      "actual": 0.121,
+      "expected": 0.121,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2024FY:sbc:2023-01-01:2023-12-31",
+      "actual": 0.041,
+      "expected": 0.041,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2024FY:interest_net:2023-01-01:2023-12-31",
+      "actual": -0.056,
+      "expected": -0.056,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2024FY:equity:None:2023-12-31",
+      "actual": 7.471,
+      "expected": 7.471,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2024FY:assets:None:2023-12-31",
+      "actual": 20.495,
+      "expected": 20.495,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2024FY:cash:None:2023-12-31",
+      "actual": 6.143,
+      "expected": 6.143,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:revenue:2024-01-01:2024-12-31",
+      "actual": 56.9,
+      "expected": 56.9,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:cost:2024-01-01:2024-12-31",
+      "actual": 33.8,
+      "expected": 33.8,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:op:2024-01-01:2024-12-31",
+      "actual": -71.0,
+      "expected": -71.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:net:2024-01-01:2024-12-31",
+      "actual": 28.0,
+      "expected": 28.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:cfo:2024-01-01:2024-12-31",
+      "actual": 84.8,
+      "expected": 84.8,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:capex:2024-01-01:2024-12-31",
+      "actual": 0.1,
+      "expected": 0.1,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:sbc:2024-01-01:2024-12-31",
+      "actual": 34.4,
+      "expected": 34.4,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:interest_net:2024-01-01:2024-12-31",
+      "actual": 121.8,
+      "expected": 121.8,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:equity:None:2024-12-31",
+      "actual": 5052.9,
+      "expected": 5052.9,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:assets:None:2024-12-31",
+      "actual": 5098.3,
+      "expected": 5098.3,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:cash:None:2024-12-31",
+      "actual": 5068.5,
+      "expected": 5068.5,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:revenue:2025-01-01:2025-12-31",
+      "actual": 6842.2,
+      "expected": 6842.2,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:cost:2025-01-01:2025-12-31",
+      "actual": 5269.5,
+      "expected": 5269.5,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:op:2025-01-01:2025-12-31",
+      "actual": -245.2,
+      "expected": -245.2,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:net:2025-01-01:2025-12-31",
+      "actual": -279.4,
+      "expected": -279.4,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:cfo:2025-01-01:2025-12-31",
+      "actual": 261.4,
+      "expected": 261.4,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:capex:2025-01-01:2025-12-31",
+      "actual": 78.2,
+      "expected": 78.2,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:sbc:2025-01-01:2025-12-31",
+      "actual": 144.5,
+      "expected": 144.5,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:interest_net:2025-01-01:2025-12-31",
+      "actual": -47.7,
+      "expected": -47.7,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:equity:None:2025-12-31",
+      "actual": 9706.8,
+      "expected": 9706.8,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:assets:None:2025-12-31",
+      "actual": 15887.3,
+      "expected": 15887.3,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2025FY:cash:None:2025-12-31",
+      "actual": 2361.6,
+      "expected": 2361.6,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q1:revenue:2025-01-01:2025-03-31",
+      "actual": 13.5,
+      "expected": 13.5,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q1:cost:2025-01-01:2025-03-31",
+      "actual": 8.1,
+      "expected": 8.1,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q1:op:2025-01-01:2025-03-31",
+      "actual": -39.3,
+      "expected": -39.3,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q1:net:2025-01-01:2025-03-31",
+      "actual": 8.8,
+      "expected": 8.8,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q1:cfo:2025-01-01:2025-03-31",
+      "actual": 36.5,
+      "expected": 36.5,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q1:capex:2025-01-01:2025-03-31",
+      "actual": 0.1,
+      "expected": 0.1,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q1:sbc:2025-01-01:2025-03-31",
+      "actual": 20.2,
+      "expected": 20.2,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q1:interest_net:2025-01-01:2025-03-31",
+      "actual": 56.6,
+      "expected": 56.6,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:revenue:2025-04-01:2025-06-30",
+      "actual": 1906.0,
+      "expected": 1906.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:cost:2025-04-01:2025-06-30",
+      "actual": 1505.0,
+      "expected": 1505.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:op:2025-04-01:2025-06-30",
+      "actual": -163.0,
+      "expected": -163.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:net:2025-04-01:2025-06-30",
+      "actual": -59.0,
+      "expected": -59.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:interest_net:2025-04-01:2025-06-30",
+      "actual": -30.0,
+      "expected": -30.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:revenue:2025-01-01:2025-06-30",
+      "actual": 1920.0,
+      "expected": 1920.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:cost:2025-01-01:2025-06-30",
+      "actual": 1513.0,
+      "expected": 1513.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:op:2025-01-01:2025-06-30",
+      "actual": -201.0,
+      "expected": -201.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:net:2025-01-01:2025-06-30",
+      "actual": -50.0,
+      "expected": -50.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:cfo:2025-01-01:2025-06-30",
+      "actual": -138.0,
+      "expected": -138.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:capex:2025-01-01:2025-06-30",
+      "actual": 20.0,
+      "expected": 20.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:sbc:2025-01-01:2025-06-30",
+      "actual": 85.0,
+      "expected": 85.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:interest_net:2025-01-01:2025-06-30",
+      "actual": 26.0,
+      "expected": 26.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:revenue:2025-07-01:2025-09-30",
+      "actual": 2728.0,
+      "expected": 2728.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:cost:2025-07-01:2025-09-30",
+      "actual": 2092.0,
+      "expected": 2092.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:op:2025-07-01:2025-09-30",
+      "actual": 25.0,
+      "expected": 25.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:net:2025-07-01:2025-09-30",
+      "actual": -139.0,
+      "expected": -139.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:interest_net:2025-07-01:2025-09-30",
+      "actual": -37.0,
+      "expected": -37.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:revenue:2025-01-01:2025-09-30",
+      "actual": 4648.0,
+      "expected": 4648.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:cost:2025-01-01:2025-09-30",
+      "actual": 3605.0,
+      "expected": 3605.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:op:2025-01-01:2025-09-30",
+      "actual": -176.0,
+      "expected": -176.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:net:2025-01-01:2025-09-30",
+      "actual": -189.0,
+      "expected": -189.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:cfo:2025-01-01:2025-09-30",
+      "actual": 75.0,
+      "expected": 75.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:capex:2025-01-01:2025-09-30",
+      "actual": 50.0,
+      "expected": 50.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:sbc:2025-01-01:2025-09-30",
+      "actual": 116.0,
+      "expected": 116.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:interest_net:2025-01-01:2025-09-30",
+      "actual": -11.0,
+      "expected": -11.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q1:revenue:2026-01-01:2026-03-31",
+      "actual": 1730.2,
+      "expected": 1730.2,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q1:cost:2026-01-01:2026-03-31",
+      "actual": 1320.9,
+      "expected": 1320.9,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q1:op:2026-01-01:2026-03-31",
+      "actual": -251.9,
+      "expected": -251.9,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q1:net:2026-01-01:2026-03-31",
+      "actual": -227.1,
+      "expected": -227.1,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q1:cfo:2026-01-01:2026-03-31",
+      "actual": 70.6,
+      "expected": 70.6,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q1:capex:2026-01-01:2026-03-31",
+      "actual": 22.5,
+      "expected": 22.5,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q1:sbc:2026-01-01:2026-03-31",
+      "actual": 39.2,
+      "expected": 39.2,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q1:interest_net:2026-01-01:2026-03-31",
+      "actual": -31.1,
+      "expected": -31.1,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:revenue:2026-04-01:2026-06-30",
+      "actual": 3246.0,
+      "expected": 3246.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:cost:2026-04-01:2026-06-30",
+      "actual": 2443.0,
+      "expected": 2443.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:op:2026-04-01:2026-06-30",
+      "actual": -42.0,
+      "expected": -42.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:net:2026-04-01:2026-06-30",
+      "actual": -55.0,
+      "expected": -55.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:interest_net:2026-04-01:2026-06-30",
+      "actual": -38.0,
+      "expected": -38.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:revenue:2026-01-01:2026-06-30",
+      "actual": 4976.0,
+      "expected": 4976.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:cost:2026-01-01:2026-06-30",
+      "actual": 3764.0,
+      "expected": 3764.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:op:2026-01-01:2026-06-30",
+      "actual": -294.0,
+      "expected": -294.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:net:2026-01-01:2026-06-30",
+      "actual": -282.0,
+      "expected": -282.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:cfo:2026-01-01:2026-06-30",
+      "actual": -146.0,
+      "expected": -146.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:capex:2026-01-01:2026-06-30",
+      "actual": 54.0,
+      "expected": 54.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:sbc:2026-01-01:2026-06-30",
+      "actual": 68.0,
+      "expected": 68.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q2:interest_net:2026-01-01:2026-06-30",
+      "actual": -69.0,
+      "expected": -69.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:revenue:2026-07-01:2026-09-30",
+      "actual": 4895.0,
+      "expected": 4895.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:cost:2026-07-01:2026-09-30",
+      "actual": 3515.0,
+      "expected": 3515.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:op:2026-07-01:2026-09-30",
+      "actual": 2.0,
+      "expected": 2.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:net:2026-07-01:2026-09-30",
+      "actual": -123.0,
+      "expected": -123.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:interest_net:2026-07-01:2026-09-30",
+      "actual": -163.0,
+      "expected": -163.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:revenue:2026-01-01:2026-09-30",
+      "actual": 9871.0,
+      "expected": 9871.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:cost:2026-01-01:2026-09-30",
+      "actual": 7279.0,
+      "expected": 7279.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:op:2026-01-01:2026-09-30",
+      "actual": -292.0,
+      "expected": -292.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:net:2026-01-01:2026-09-30",
+      "actual": -405.0,
+      "expected": -405.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:cfo:2026-01-01:2026-09-30",
+      "actual": -145.0,
+      "expected": -145.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:capex:2026-01-01:2026-09-30",
+      "actual": 111.0,
+      "expected": 111.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:sbc:2026-01-01:2026-09-30",
+      "actual": 147.0,
+      "expected": 147.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw XBRL 2026Q3:interest_net:2026-01-01:2026-09-30",
+      "actual": -232.0,
+      "expected": -232.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "income roof outgoing conservation",
+      "actual": 1996,
+      "expected": 1996,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "income insulation outgoing conservation",
+      "actual": 1644,
+      "expected": 1644,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "income complement outgoing conservation",
+      "actual": 1240,
+      "expected": 1240,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "income software outgoing conservation",
+      "actual": 15,
+      "expected": 15,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "income revenue incoming conservation",
+      "actual": 4895,
+      "expected": 4895.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "income revenue outgoing conservation",
+      "actual": 4895.0,
+      "expected": 4895.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "income cost incoming conservation",
+      "actual": 3515.0,
+      "expected": 3515.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "income gross incoming conservation",
+      "actual": 1380.0,
+      "expected": 1380.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "income gross outgoing conservation",
+      "actual": 1380.0,
+      "expected": 1380.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "income sga incoming conservation",
+      "actual": 1024.0,
+      "expected": 1024.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "income dep incoming conservation",
+      "actual": 66.0,
+      "expected": 66.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "income amort incoming conservation",
+      "actual": 288.0,
+      "expected": 288.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "income op incoming conservation",
+      "actual": 2.0,
+      "expected": 2.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "cash start outgoing conservation",
+      "actual": 2366.0,
+      "expected": 2366.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "cash debt outgoing conservation",
+      "actual": 6019.0,
+      "expected": 6019.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "cash common outgoing conservation",
+      "actual": 748.0,
+      "expected": 748.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "cash seriesC outgoing conservation",
+      "actual": 2989.0,
+      "expected": 2989.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "cash awards outgoing conservation",
+      "actual": 3.0,
+      "expected": 3.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "cash other outgoing conservation",
+      "actual": 4.0,
+      "expected": 4.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "cash pool incoming conservation",
+      "actual": 12129.0,
+      "expected": 12129.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "cash pool outgoing conservation",
+      "actual": 12129.0,
+      "expected": 12129.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "cash acq incoming conservation",
+      "actual": 10933.0,
+      "expected": 10933.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "cash oper incoming conservation",
+      "actual": 145.0,
+      "expected": 145.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "cash capex incoming conservation",
+      "actual": 111.0,
+      "expected": 111.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "cash finpay incoming conservation",
+      "actual": 386.0,
+      "expected": 386.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "cash end incoming conservation",
+      "actual": 554.0,
+      "expected": 554.0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "cash source/use total",
+      "actual": 12129.0,
+      "expected": 12129,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "cash financing detail",
+      "actual": 386.0,
+      "expected": 386,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
       "check": "unique HTML ids",
-      "actual": 40,
-      "expected": 40,
+      "actual": 48,
+      "expected": 48,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness incomeroof",
+      "actual": 119.75999999999999,
+      "expected": 119.75999999999999,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness incomeinsulation",
+      "actual": 98.64,
+      "expected": 98.64,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness incomecomplement",
+      "actual": 74.39999999999999,
+      "expected": 74.39999999999999,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness incomesoftware",
+      "actual": 0.8999999999999999,
+      "expected": 0.8999999999999999,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness incomerevenue",
+      "actual": 293.7,
+      "expected": 293.7,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness incomecost",
+      "actual": 210.9,
+      "expected": 210.9,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness incomegross",
+      "actual": 82.8,
+      "expected": 82.8,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness incomesga",
+      "actual": 61.44,
+      "expected": 61.44,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness incomedep",
+      "actual": 3.96,
+      "expected": 3.96,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness incomeamort",
+      "actual": 17.28,
+      "expected": 17.28,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness incomeop",
+      "actual": 0.12,
+      "expected": 0.12,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness incomeroofrevenue",
+      "actual": 119.75999999999999,
+      "expected": 119.75999999999999,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness incomeinsulationrevenue",
+      "actual": 98.64,
+      "expected": 98.64,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness incomecomplementrevenue",
+      "actual": 74.39999999999999,
+      "expected": 74.39999999999999,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness incomesoftwarerevenue",
+      "actual": 0.8999999999999999,
+      "expected": 0.8999999999999999,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness incomerevenuecost",
+      "actual": 210.9,
+      "expected": 210.9,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness incomerevenuegross",
+      "actual": 82.8,
+      "expected": 82.8,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness incomegrosssga",
+      "actual": 61.44,
+      "expected": 61.44,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness incomegrossdep",
+      "actual": 3.96,
+      "expected": 3.96,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness incomegrossamort",
+      "actual": 17.28,
+      "expected": 17.28,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness incomegrossop",
+      "actual": 0.12,
+      "expected": 0.12,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness cashstart",
+      "actual": 78.078,
+      "expected": 78.078,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness cashdebt",
+      "actual": 198.627,
+      "expected": 198.627,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness cashcommon",
+      "actual": 24.684,
+      "expected": 24.684,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness cashseriesC",
+      "actual": 98.637,
+      "expected": 98.637,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness cashawards",
+      "actual": 0.099,
+      "expected": 0.099,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness cashother",
+      "actual": 0.132,
+      "expected": 0.132,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness cashpool",
+      "actual": 400.257,
+      "expected": 400.257,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness cashacq",
+      "actual": 360.78900000000004,
+      "expected": 360.78900000000004,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness cashoper",
+      "actual": 4.785,
+      "expected": 4.785,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness cashcapex",
+      "actual": 3.6630000000000003,
+      "expected": 3.6630000000000003,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness cashfinpay",
+      "actual": 12.738000000000001,
+      "expected": 12.738000000000001,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG node thickness cashend",
+      "actual": 18.282,
+      "expected": 18.282,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness cashstartpool",
+      "actual": 78.078,
+      "expected": 78.078,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness cashdebtpool",
+      "actual": 198.627,
+      "expected": 198.627,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness cashcommonpool",
+      "actual": 24.684,
+      "expected": 24.684,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness cashseriesCpool",
+      "actual": 98.637,
+      "expected": 98.637,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness cashawardspool",
+      "actual": 0.099,
+      "expected": 0.099,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness cashotherpool",
+      "actual": 0.132,
+      "expected": 0.132,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness cashpoolacq",
+      "actual": 360.78900000000004,
+      "expected": 360.78900000000004,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness cashpooloper",
+      "actual": 4.785,
+      "expected": 4.785,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness cashpoolcapex",
+      "actual": 3.6630000000000003,
+      "expected": 3.6630000000000003,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness cashpoolfinpay",
+      "actual": 12.738000000000001,
+      "expected": 12.738000000000001,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SVG edge thickness cashpoolend",
+      "actual": 18.282,
+      "expected": 18.282,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "deficit graph explanation link",
+      "actual": 1,
+      "expected": 1,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "profit graph explanation link",
+      "actual": 1,
+      "expected": 1,
       "tolerance": 1e-06,
       "passed": true
     },
@@ -541,6 +1769,34 @@
       "expected": 9,
       "tolerance": 1e-06,
       "passed": true
+    },
+    {
+      "check": "report index remains draft partial",
+      "actual": 1,
+      "expected": 1,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "report index HTML hash synchronized",
+      "actual": 1,
+      "expected": 1,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "report index preserves real cutoffs",
+      "actual": 1,
+      "expected": 1,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "SOP revision content hash",
+      "actual": 1,
+      "expected": 1,
+      "tolerance": 1e-06,
+      "passed": true
     }
   ],
   "quarter_coverage": {
@@ -559,7 +1815,8 @@
     "No uniform 3-year same-platform actual financials: acquisitions and former software entity",
     "Capital claims valuation is intrinsic approximation, lacks full option time value and dividend path",
     "Exact historical Q3 tax-event decomposition not disclosed in retrieved note",
-    "Full same-date peer capital structure multiples not completed"
+    "Full same-date peer capital structure multiples not completed",
+    "Cross-version Q3 2025 net interest 37.7 to 37 and income tax 128.9 to 128 are not fully explained by ordinary rounding"
   ],
   "raw_source_hashes": {
     "ABC.html": "6fc0fc11832b5cae54ed641c574ba2439827916358d586e4519b558d4816fa15",

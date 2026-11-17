@@ -29,10 +29,15 @@ try{
  const metrics={desktop:await evaluate('({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,height:document.documentElement.scrollHeight,charts:document.querySelectorAll("svg").length})')};
  async function shot(name){let r=await cmd('Page.captureScreenshot',{format:'png',captureBeyondViewport:false});await fs.writeFile(path.join(out,name),Buffer.from(r.data,'base64'));}
  await shot('2026-11-17-desktop.png');
+ for(const [id,name] of [['income-flow','income-flow'],['cash-full-flow','cash-flow']]){
+  await cmd('Runtime.evaluate',{expression:`document.getElementById('${id}').scrollIntoView()`});await shot(`2026-11-17-${name}.png`);
+ }
+ metrics.sankeyLabels=await evaluate(`Array.from(document.querySelectorAll('svg[data-flow]')).map(svg=>({flow:svg.dataset.flow,overflow:Array.from(svg.querySelectorAll('text')).map(t=>({text:t.textContent,b:t.getBBox()})).filter(x=>x.b.x<0||x.b.y<0||x.b.x+x.b.width>svg.viewBox.baseVal.width||x.b.y+x.b.height>svg.viewBox.baseVal.height).map(x=>x.text)}))`);
  await cmd('Runtime.evaluate',{expression:'document.getElementById("valuation").scrollIntoView()'});await shot('2026-11-17-valuation.png');
  await cmd('Emulation.setDeviceMetricsOverride',{width:390,height:1000,deviceScaleFactor:1,mobile:false});await cmd('Runtime.evaluate',{expression:'scrollTo(0,0)'});await shot('2026-11-17-mobile.png');
  metrics.mobile=await evaluate('({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,height:document.documentElement.scrollHeight})');
  await cmd('Runtime.evaluate',{expression:'document.querySelector(".chart").scrollIntoView()'});await shot('2026-11-17-mobile-chart.png');
+ await cmd('Runtime.evaluate',{expression:'document.getElementById("cash-full-flow").scrollIntoView()'});await shot('2026-11-17-mobile-cash-flow.png');
  await cmd('Emulation.setDeviceMetricsOverride',{width:1440,height:1100,deviceScaleFactor:1,mobile:false});
  await cmd('Emulation.setEmulatedMedia',{media:'print'});
  const pdf=await cmd('Page.printToPDF',{printBackground:true,preferCSSPageSize:true,displayHeaderFooter:false});await fs.writeFile(path.join(out,'2026-11-17-print.pdf'),Buffer.from(pdf.data,'base64'));

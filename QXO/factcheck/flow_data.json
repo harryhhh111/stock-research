@@ -1,0 +1,504 @@
+{
+  "date": "2026-11-17",
+  "source": "2026Q3 10-Q, 2026-11-13",
+  "provenance": {
+    "f-131": {
+      "value": 4895.0,
+      "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "context": "c-13",
+      "source": "data/2026Q3.html#f-131"
+    },
+    "f-135": {
+      "value": 3515.0,
+      "tag": "us-gaap:CostOfRevenue",
+      "context": "c-13",
+      "source": "data/2026Q3.html#f-135"
+    },
+    "f-139": {
+      "value": 1380.0,
+      "tag": "us-gaap:GrossProfit",
+      "context": "c-13",
+      "source": "data/2026Q3.html#f-139"
+    },
+    "f-143": {
+      "value": 1024.0,
+      "tag": "us-gaap:SellingGeneralAndAdministrativeExpense",
+      "context": "c-13",
+      "source": "data/2026Q3.html#f-143"
+    },
+    "f-147": {
+      "value": 66.0,
+      "tag": "us-gaap:DepreciationNonproduction",
+      "context": "c-13",
+      "source": "data/2026Q3.html#f-147"
+    },
+    "f-151": {
+      "value": 288.0,
+      "tag": "us-gaap:AmortizationOfIntangibleAssets",
+      "context": "c-13",
+      "source": "data/2026Q3.html#f-151"
+    },
+    "f-159": {
+      "value": 2.0,
+      "tag": "us-gaap:OperatingIncomeLoss",
+      "context": "c-13",
+      "source": "data/2026Q3.html#f-159"
+    },
+    "f-525": {
+      "value": 2366.0,
+      "tag": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+      "context": "c-6",
+      "source": "data/2026Q3.html#f-525"
+    },
+    "f-487": {
+      "value": 26.0,
+      "tag": "us-gaap:ProceedsFromLongTermLinesOfCredit",
+      "context": "c-1",
+      "source": "data/2026Q3.html#f-487"
+    },
+    "f-491": {
+      "value": 2993.0,
+      "tag": "qxo:ProceedsFromIssuanceOfTermLoan",
+      "context": "c-1",
+      "source": "data/2026Q3.html#f-491"
+    },
+    "f-495": {
+      "value": 3000.0,
+      "tag": "us-gaap:ProceedsFromIssuanceOfSecuredDebt",
+      "context": "c-1",
+      "source": "data/2026Q3.html#f-495"
+    },
+    "f-503": {
+      "value": 748.0,
+      "tag": "qxo:ProceedsFromIssuanceOfCommonStockNetOfIssuanceCosts",
+      "context": "c-1",
+      "source": "data/2026Q3.html#f-503"
+    },
+    "f-507": {
+      "value": 2989.0,
+      "tag": "us-gaap:ProceedsFromIssuanceOfPreferredStockPreferenceStockAndWarrants",
+      "context": "c-1",
+      "source": "data/2026Q3.html#f-507"
+    },
+    "f-501": {
+      "value": 3.0,
+      "tag": "us-gaap:ProceedsFromIssuanceOfCommonStock",
+      "context": "c-1",
+      "source": "data/2026Q3.html#f-501"
+    },
+    "f-483": {
+      "value": -4.0,
+      "tag": "us-gaap:PaymentsForProceedsFromOtherInvestingActivities",
+      "context": "c-1",
+      "source": "data/2026Q3.html#f-483"
+    },
+    "f-477": {
+      "value": -145.0,
+      "tag": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+      "context": "c-1",
+      "source": "data/2026Q3.html#f-477"
+    },
+    "f-479": {
+      "value": 111.0,
+      "tag": "us-gaap:PaymentsToAcquireProductiveAssets",
+      "context": "c-1",
+      "source": "data/2026Q3.html#f-479"
+    },
+    "f-481": {
+      "value": 10933.0,
+      "tag": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
+      "context": "c-1",
+      "source": "data/2026Q3.html#f-481"
+    },
+    "f-489": {
+      "value": 26.0,
+      "tag": "us-gaap:RepaymentsOfLongTermLinesOfCredit",
+      "context": "c-1",
+      "source": "data/2026Q3.html#f-489"
+    },
+    "f-493": {
+      "value": 0.0,
+      "tag": "qxo:RepaymentsOfTermLoan",
+      "context": "c-1",
+      "source": "data/2026Q3.html#f-493"
+    },
+    "f-497": {
+      "value": 91.0,
+      "tag": "us-gaap:PaymentsOfDebtIssuanceCosts",
+      "context": "c-1",
+      "source": "data/2026Q3.html#f-497"
+    },
+    "f-499": {
+      "value": 41.0,
+      "tag": "qxo:PaymentsUnderEquipmentFinancingFacilitiesAndFinanceLeases",
+      "context": "c-1",
+      "source": "data/2026Q3.html#f-499"
+    },
+    "f-509": {
+      "value": 31.0,
+      "tag": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+      "context": "c-1",
+      "source": "data/2026Q3.html#f-509"
+    },
+    "f-511": {
+      "value": 47.0,
+      "tag": "us-gaap:PaymentsOfStockIssuanceCosts",
+      "context": "c-1",
+      "source": "data/2026Q3.html#f-511"
+    },
+    "f-513": {
+      "value": 67.0,
+      "tag": "us-gaap:PaymentsOfDividendsPreferredStockAndPreferenceStock",
+      "context": "c-127",
+      "source": "data/2026Q3.html#f-513"
+    },
+    "f-515": {
+      "value": 24.0,
+      "tag": "qxo:PaymentsOfOrdinaryDividendsMandatoryConvertiblePreferredStock",
+      "context": "c-1",
+      "source": "data/2026Q3.html#f-515"
+    },
+    "f-517": {
+      "value": 59.0,
+      "tag": "us-gaap:PaymentsOfDividendsPreferredStockAndPreferenceStock",
+      "context": "c-129",
+      "source": "data/2026Q3.html#f-517"
+    },
+    "f-527": {
+      "value": 554.0,
+      "tag": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+      "context": "c-5",
+      "source": "data/2026Q3.html#f-527"
+    },
+    "f-519": {
+      "value": 9373.0,
+      "tag": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+      "context": "c-1",
+      "source": "data/2026Q3.html#f-519"
+    }
+  },
+  "flows": {
+    "income": {
+      "title": "2026Q3：收入来源 → 集团收入 → 成本、毛利与经营利润",
+      "unit": "MUSD",
+      "scale": 0.06,
+      "width": 1280,
+      "height": 640,
+      "nodes": [
+        [
+          "roof",
+          "屋顶产品",
+          1996,
+          155,
+          65,
+          "#194e72"
+        ],
+        [
+          "insulation",
+          "保温与服务",
+          1644,
+          155,
+          207,
+          "#38799b"
+        ],
+        [
+          "complement",
+          "配套建材",
+          1240,
+          155,
+          329,
+          "#46a9a0"
+        ],
+        [
+          "software",
+          "软件与服务",
+          15,
+          155,
+          427,
+          "#8e9aa2"
+        ],
+        [
+          "revenue",
+          "集团收入",
+          4895.0,
+          415,
+          112,
+          "#194e72"
+        ],
+        [
+          "cost",
+          "销售成本",
+          3515.0,
+          740,
+          55,
+          "#a76b56"
+        ],
+        [
+          "gross",
+          "毛利",
+          1380.0,
+          740,
+          386,
+          "#388c77"
+        ],
+        [
+          "sga",
+          "销售管理费",
+          1024.0,
+          1040,
+          330,
+          "#a76b56"
+        ],
+        [
+          "dep",
+          "折旧",
+          66.0,
+          1040,
+          435,
+          "#a76b56"
+        ],
+        [
+          "amort",
+          "摊销",
+          288.0,
+          1040,
+          493,
+          "#a76b56"
+        ],
+        [
+          "op",
+          "经营利润",
+          2.0,
+          1040,
+          560,
+          "#388c77"
+        ]
+      ],
+      "links": [
+        [
+          "roof",
+          "revenue",
+          1996
+        ],
+        [
+          "insulation",
+          "revenue",
+          1644
+        ],
+        [
+          "complement",
+          "revenue",
+          1240
+        ],
+        [
+          "software",
+          "revenue",
+          15
+        ],
+        [
+          "revenue",
+          "cost",
+          3515.0
+        ],
+        [
+          "revenue",
+          "gross",
+          1380.0
+        ],
+        [
+          "gross",
+          "sga",
+          1024.0
+        ],
+        [
+          "gross",
+          "dep",
+          66.0
+        ],
+        [
+          "gross",
+          "amort",
+          288.0
+        ],
+        [
+          "gross",
+          "op",
+          2.0
+        ]
+      ]
+    },
+    "cash": {
+      "title": "2026年9M：现金来源 → 现金汇总 → 净用途与期末余额",
+      "unit": "MUSD",
+      "scale": 0.033,
+      "width": 1280,
+      "height": 665,
+      "nodes": [
+        [
+          "start",
+          "期初含受限现金",
+          2366.0,
+          190,
+          50,
+          "#667c8b"
+        ],
+        [
+          "debt",
+          "新增借款",
+          6019.0,
+          190,
+          150,
+          "#194e72"
+        ],
+        [
+          "common",
+          "普通股净发行",
+          748.0,
+          190,
+          371,
+          "#38799b"
+        ],
+        [
+          "seriesC",
+          "C优先股净发行",
+          2989.0,
+          190,
+          420,
+          "#46a9a0"
+        ],
+        [
+          "awards",
+          "股权奖励行权",
+          3.0,
+          190,
+          545,
+          "#667c8b"
+        ],
+        [
+          "other",
+          "其他投资净流入",
+          4.0,
+          190,
+          585,
+          "#667c8b"
+        ],
+        [
+          "pool",
+          "现金汇总",
+          12129.0,
+          525,
+          130,
+          "#194e72"
+        ],
+        [
+          "acq",
+          "并购净现金支付",
+          10933.0,
+          910,
+          50,
+          "#a76b56"
+        ],
+        [
+          "oper",
+          "经营净耗现",
+          145.0,
+          910,
+          440,
+          "#a76b56"
+        ],
+        [
+          "capex",
+          "现金CapEx",
+          111.0,
+          910,
+          490,
+          "#a76b56"
+        ],
+        [
+          "finpay",
+          "融资现金支出",
+          386.0,
+          910,
+          540,
+          "#a76b56"
+        ],
+        [
+          "end",
+          "期末含受限现金",
+          554.0,
+          910,
+          605,
+          "#388c77"
+        ]
+      ],
+      "links": [
+        [
+          "start",
+          "pool",
+          2366.0
+        ],
+        [
+          "debt",
+          "pool",
+          6019.0
+        ],
+        [
+          "common",
+          "pool",
+          748.0
+        ],
+        [
+          "seriesC",
+          "pool",
+          2989.0
+        ],
+        [
+          "awards",
+          "pool",
+          3.0
+        ],
+        [
+          "other",
+          "pool",
+          4.0
+        ],
+        [
+          "pool",
+          "acq",
+          10933.0
+        ],
+        [
+          "pool",
+          "oper",
+          145.0
+        ],
+        [
+          "pool",
+          "capex",
+          111.0
+        ],
+        [
+          "pool",
+          "finpay",
+          386.0
+        ],
+        [
+          "pool",
+          "end",
+          554.0
+        ]
+      ]
+    }
+  },
+  "financing_cash_paid": {
+    "循环贷款偿还": 26.0,
+    "定期贷款偿还": 0.0,
+    "债务发行及融资费": 91.0,
+    "设备融资及融资租赁本金": 41.0,
+    "授股代扣税": 31.0,
+    "C优先股承诺费用": 47.0,
+    "A优先股现金分配": 67.0,
+    "B优先股现金分配": 24.0,
+    "C优先股现金分配": 59.0
+  }
+}
