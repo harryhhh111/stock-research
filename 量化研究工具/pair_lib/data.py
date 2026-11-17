@@ -19,7 +19,7 @@ from pathlib import Path
 import numpy as np
 
 BASE = Path(__file__).resolve().parent
-ROOT = BASE.parents[1]                     # 研究流程/pair_lib → 工作区根目录
+ROOT = BASE.parents[1]                     # 量化研究工具/pair_lib → 工作区根目录
 
 _hype_mod = None
 

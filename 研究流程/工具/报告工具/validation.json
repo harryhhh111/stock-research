@@ -12,7 +12,7 @@
     "qxo-main: 38个来源链接尚未批准网站发布；状态=draft",
     "ai-berkshire-msft-experiment: 5个来源链接尚未批准网站发布；状态=draft"
   ],
-  "unittest_cases": 32,
+  "unittest_cases": 33,
   "unittest_result": "passed",
   "checks": [
     "registration and missing-index discovery",
@@ -38,5 +38,33 @@
     "Existing report relocation is deferred; six frozen legacy paths are explicit exceptions.",
     "Website backend integration and permissions remain outside this repository change.",
     "Static scanning cannot discover arbitrary dynamically constructed JavaScript dependencies."
-  ]
+  ],
+  "directory_reorganization": {
+    "date": "2026-11-17",
+    "navigation": "研究流程/README.md",
+    "standard_directory": "研究流程/规范",
+    "index_path": "研究流程/索引/html-index.json",
+    "tools_directory": "研究流程/工具",
+    "archive_directory": "研究流程/归档",
+    "pair_library": "量化研究工具/pair_lib",
+    "report_tool_tests": {
+      "count": 33,
+      "result": "passed"
+    },
+    "legacy_entry_tests": {
+      "count": 13,
+      "result": "passed"
+    },
+    "legacy_full_library_errors": [],
+    "workflow_related_markdown_links": {
+      "count": 247,
+      "missing": []
+    },
+    "pair_library_ast_unchanged": true,
+    "pair_import_and_synthetic_smoke": "passed",
+    "raw_entry_evidence_bytes_unchanged": true,
+    "old_index_history_fallback": "covered by test_git_base_recognises_index_before_directory_move",
+    "scope": "Directory/reference changes only; no financial research refresh. QXO scripts only receive required path substitutions; concurrent research edits and staging are preserved.",
+    "github_workflow": "paths updated locally; workflow and required-branch checks not run/configured by this task"
+  }
 }

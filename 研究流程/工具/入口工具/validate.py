@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 import yaml
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 KEYS = {'schema_version', 'entity_id', 'kind', 'name', 'aliases', 'securities',
         'primary_document', 'documents', 'related_entities', 'sections'}
 MARKETS = {'US': {'XNYS', 'XNAS'}, 'HK': {'XHKG'}, 'CN': {'XSHG', 'XSHE', 'BJSE'},

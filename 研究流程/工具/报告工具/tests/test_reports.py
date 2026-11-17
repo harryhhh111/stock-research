@@ -15,7 +15,7 @@ class ReportTests(unittest.TestCase):
   self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup);self.root=Path(self.temp.name)
   subprocess.run(['git','init','-q',str(self.root)],check=True)
   self.index={'schema_version':1,'reports':[],'redirects':[]}
-  (self.root/'研究流程').mkdir();self.write_index()
+  (self.root/m.INDEX).parent.mkdir(parents=True);self.write_index()
  def write_index(self):
   (self.root/m.INDEX).write_text(json.dumps(self.index,ensure_ascii=False))
  def file(self,path,body='<html><h1 id="top">Example</h1></html>'):
@@ -165,6 +165,14 @@ class ReportTests(unittest.TestCase):
  def test_invalid_git_base_does_not_silently_skip(self):
   self.assertTrue(m.check_git_base(self.root,self.index,'--all'))
   self.assertTrue(m.check_git_base(self.root,self.index,'not-existing-ref'))
+ def test_git_base_recognises_index_before_directory_move(self):
+  self.registered();self.write_index()
+  new_path=self.root/m.INDEX
+  old_path=self.root/'研究流程/html-index.json'
+  old_path.write_bytes(new_path.read_bytes());new_path.unlink()
+  subprocess.run(['git','-C',str(self.root),'add','.'],check=True)
+  subprocess.run(['git','-C',str(self.root),'-c','user.name=Test','-c','user.email=test@example.invalid','commit','-qm','legacy location'],check=True)
+  self.assertTrue(m.check_git_base(self.root,{'reports':[]},'HEAD'))
  def test_cli_from_other_directory(self):
   result=subprocess.run([__import__('sys').executable,str(SCRIPT),'--root',str(self.root),'create','--id','test-main','--project','TEST','--title','测试','--type','company_research','--entity','company:test'],cwd='/tmp',capture_output=True,text=True)
   self.assertEqual(result.returncode,0,result.stderr)

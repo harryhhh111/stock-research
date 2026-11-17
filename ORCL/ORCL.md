@@ -637,7 +637,7 @@ OpenAI最新单客户RPO、完整取消/赔偿条款未披露，媒体300B合同
 | 期间/旧值 | Q1实绩与指引分表，新增同比/环比/TTM及最新期末；同业四家公司已换为最近四季TTM、统一11/3报价；清理当前旧RPO/ATM/估值 |
 | 计算 | [同业TTM脚本](factcheck/verify_peers_ttm.py)核对四家窗口、FCF和增速；[Q1脚本](factcheck/verify_fy2027q1.py)核验收入加总、利润桥、FCF/净投入、现金变动、TTM、净债务和估值，见[结果](factcheck/fy2027q1_results.json) |
 | 证据限制 | SEC及PDF直接下载403，已在线读取并保留[网页片段](factcheck/data/fy2027q1_web_excerpts.json)，不声称本地拥有完整Q1原件 |
-| 结构/入口 | 已运行研究流程/入口工具/validate.py，全库入口零错误，ORCL五个语义章节均ok；两份改动正文的本地链接无缺失，git diff --check通过 |
+| 结构/入口 | 已运行研究流程/工具/入口工具/validate.py，全库入口零错误，ORCL五个语义章节均ok；两份改动正文的本地链接无缺失，git diff --check通过 |
 | 未通过项 | 完整现时股本/EV、评级刷新、完整DCF等见§12；历史护城河深度和完整十一项结构非本轮完成范围 |
 | 交付结论 | Q1主要财务联动修订完成；估值按明确跨时点口径复算，未宣称整篇完整研究通过 |
 

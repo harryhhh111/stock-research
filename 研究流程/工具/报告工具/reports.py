@@ -20,9 +20,9 @@ try:
 except ImportError:
     raise SystemExit('缺少报告工具依赖，请按 HTML报告命名与索引规范.md 安装 requirements.txt')
 
-DEFAULT_ROOT = Path(__file__).resolve().parents[2]
-SCHEMA = Path(__file__).resolve().parents[1] / 'html-index.schema.json'
-INDEX = Path('研究流程/html-index.json')
+DEFAULT_ROOT = Path(__file__).resolve().parents[3]
+SCHEMA = Path(__file__).resolve().parents[2] / '索引' / 'html-index.schema.json'
+INDEX = Path('研究流程/索引/html-index.json')
 # Frozen migration exceptions: new reports cannot opt into arbitrary legacy locations.
 LEGACY_PATHS = {
     'MSFT/MSFT.html', 'MSFT/传统软件与现金流.html', 'AMD/近期股价催化.html',
@@ -410,9 +410,12 @@ def check_git_base(root, index, base):
     exists = subprocess.run(['git','-C',str(root),'rev-parse','--verify',f'{base}^{{commit}}'],capture_output=True)
     if exists.returncode:
         return ['Git基准引用不存在，请拉取完整历史']
-    result = subprocess.run(['git','-C',str(root),'show',f'{base}:{INDEX.as_posix()}'],capture_output=True,text=True)
-    if result.returncode:
-        # First rollout before the index exists at base: whole-tree validation applies.
+    for index_path in [INDEX.as_posix(), '研究流程/html-index.json']:
+        result = subprocess.run(['git','-C',str(root),'show',f'{base}:{index_path}'],capture_output=True,text=True)
+        if not result.returncode:
+            break
+    else:
+        # No index existed before initial rollout. Whole-tree validation still applies.
         return []
     old = json.loads(result.stdout)
     ids = {r['report_id']:r for r in index['reports']}

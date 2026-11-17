@@ -14,7 +14,7 @@ from pathlib import Path
 import numpy as np
 
 BASE = Path(__file__).resolve().parent
-sys.path.insert(0, str(BASE.parents[1] / '研究流程'))
+sys.path.insert(0, str(BASE.parents[1] / '量化研究工具'))
 import pair_lib as pl
 from pair_lib import ANN_CRYPTO, metrics
 

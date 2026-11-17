@@ -1,6 +1,6 @@
 # HTML 报告命名与索引规范
 
-维护日期：2026-11-17。本文是报告路径、命名、登记及兼容规则的唯一维护位置。研究内容要求仍见[研究方式](../研究方式.md)，图表见[展示规范](HTML报告与财务可视化规范.md)，网站接入见[接入入口](HTML报告内部网站接入.md)。
+维护日期：2026-11-17。本文是报告路径、命名、登记及兼容规则的唯一维护位置。研究内容要求仍见[研究方式](../../研究方式.md)，图表见[展示规范](HTML报告与财务可视化规范.md)，网站接入见[接入入口](HTML报告内部网站接入.md)。
 
 ## 1. 固定路径
 
@@ -16,7 +16,7 @@
 
 ## 2. 唯一索引及数据契约
 
-[html-index.json](html-index.json)是全库HTML报告唯一登记源；网站读取，不再另建手工维护的第二份清单。[html-index.schema.json](html-index.schema.json)是机器结构契约（Draft 2020-12），字段含义如下：
+[html-index.json](../索引/html-index.json)是全库HTML报告唯一登记源；网站读取，不再另建手工维护的第二份清单。[html-index.schema.json](../索引/html-index.schema.json)是机器结构契约（Draft 2020-12），字段含义如下：
 
 | 字段 | 要求 |
 |---|---|
@@ -50,19 +50,19 @@
 工具依赖安装到本目录被Git忽略的虚拟环境；不影响报告或Skill的运行依赖：
 
 ```bash
-python3 -m venv 研究流程/报告工具/.venv
-研究流程/报告工具/.venv/bin/python -m pip install -r 研究流程/报告工具/requirements.txt
+python3 -m venv 研究流程/工具/报告工具/.venv
+研究流程/工具/报告工具/.venv/bin/python -m pip install -r 研究流程/工具/报告工具/requirements.txt
 ```
 
 常用命令（从仓库根目录运行；其他位置用脚本绝对路径或`--root`）：
 
 ```bash
-研究流程/报告工具/.venv/bin/python 研究流程/报告工具/reports.py list
-研究流程/报告工具/.venv/bin/python 研究流程/报告工具/reports.py create --id msft-new-topic --project MSFT --title "新专题" --entity company:microsoft --type topic --slug new-topic
-研究流程/报告工具/.venv/bin/python 研究流程/报告工具/reports.py register --id amd-update-example --project AMD --title "更新示例" --entity company:amd --type update --slug earnings-update --date 2026-11-17
-研究流程/报告工具/.venv/bin/python 研究流程/报告工具/reports.py update --id msft-new-topic --metadata /path/to/reviewed-metadata.json
-研究流程/报告工具/.venv/bin/python 研究流程/报告工具/reports.py archive --id msft-new-topic
-研究流程/报告工具/.venv/bin/python 研究流程/报告工具/reports.py check
+研究流程/工具/报告工具/.venv/bin/python 研究流程/工具/报告工具/reports.py list
+研究流程/工具/报告工具/.venv/bin/python 研究流程/工具/报告工具/reports.py create --id msft-new-topic --project MSFT --title "新专题" --entity company:microsoft --type topic --slug new-topic
+研究流程/工具/报告工具/.venv/bin/python 研究流程/工具/报告工具/reports.py register --id amd-update-example --project AMD --title "更新示例" --entity company:amd --type update --slug earnings-update --date 2026-11-17
+研究流程/工具/报告工具/.venv/bin/python 研究流程/工具/报告工具/reports.py update --id msft-new-topic --metadata /path/to/reviewed-metadata.json
+研究流程/工具/报告工具/.venv/bin/python 研究流程/工具/报告工具/reports.py archive --id msft-new-topic
+研究流程/工具/报告工具/.venv/bin/python 研究流程/工具/报告工具/reports.py check
 ```
 
 上方创建命令是用法示例，不要求在正式库创建示例公司/空报告。metadata是JSON对象，只填需改字段，例如`{"document_updated_at":"2026-11-17","content_status":"partial"}`，路径替换为本次实际输入文件。不得替用户或审稿人声明核验通过。资源和未发布链接可通过metadata显式补齐；ID、主体、项目、类型、路径不能借update偷偷修改。
@@ -75,7 +75,7 @@ check先按Schema检查，再验ID/正文路径唯一、主报告唯一、路径
 
 `check --base-ref HEAD`默认对照HEAD防止静默删除稳定ID；CI按PR基线或push前版本对照。首次引入索引时旧基线无索引，仍执行全库漏登记扫描。校验失败非零退出，不改变研究文件。
 
-已加入[HTML Reports工作流](../.github/workflows/html-reports.yml)，在push和pull_request上运行工具测试与check，依赖版本固定、只读权限、不使用pull_request_target。**工作流文件不等于分支保护**：GitHub需另将`HTML report index`检查设为必需、要求PR合并并限制绕过，才能阻止不合格变更合并；本轮未改远端分支保护设置。检验工作流的权限/事件建议依据[GitHub官方安全说明](https://docs.github.com/en/actions/reference/security/secure-use)。
+已加入[HTML Reports工作流](../../.github/workflows/html-reports.yml)，在push和pull_request上运行工具测试与check，依赖版本固定、只读权限、不使用pull_request_target。**工作流文件不等于分支保护**：GitHub需另将`HTML report index`检查设为必需、要求PR合并并限制绕过，才能阻止不合格变更合并；本轮未改远端分支保护设置。检验工作流的权限/事件建议依据[GitHub官方安全说明](https://docs.github.com/en/actions/reference/security/secure-use)。
 
 ## 5. 既有报告的兼容与迁移
 
@@ -87,4 +87,4 @@ check先按Schema检查，再验ID/正文路径唯一、主报告唯一、路径
 
 ## 6. 首次落地验收记录
 
-本轮范围为规则、索引、管理脚本和本地CI同等命令，不包含网站部署或公司事实更新。六份现有报告登记；已发现未审核附件链接保留为显式缺口。实际自动检查结果见[工具验证记录](报告工具/validation.json)，现有公司内容和并行QXO改动不因此标为完整研究验收通过。
+本轮范围为规则、索引、管理脚本和本地CI同等命令，不包含网站部署或公司事实更新。六份现有报告登记；已发现未审核附件链接保留为显式缺口。实际自动检查结果见[工具验证记录](../工具/报告工具/validation.json)，现有公司内容和并行QXO改动不因此标为完整研究验收通过。

@@ -9,7 +9,7 @@ from pathlib import Path
 
 import numpy as np
 
-BASE = Path(__file__).resolve().parent          # 研究流程/pair_lib
+BASE = Path(__file__).resolve().parent          # 量化研究工具/pair_lib
 sys.path.insert(0, str(BASE.parent))            # 导入 pair_lib 包
 import pair_lib as pl
 
