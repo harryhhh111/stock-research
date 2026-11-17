@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-17",
+  "scope": "HTML report naming/index/schema/tools and local CI-equivalent checks; no report facts changed",
+  "index_schema_version": 1,
+  "registered_reports": 6,
+  "legacy_reports_kept_in_place": 6,
+  "report_index_errors": [],
+  "report_index_warnings": [
+    "msft-main: 9个来源链接尚未批准网站发布；状态=draft",
+    "msft-cloud-cashflow: 4个来源链接尚未批准网站发布；状态=draft",
+    "amd-2026-11-13-price-catalysts: 2个来源链接尚未批准网站发布；状态=draft",
+    "qxo-main: 38个来源链接尚未批准网站发布；状态=draft",
+    "ai-berkshire-msft-experiment: 5个来源链接尚未批准网站发布；状态=draft"
+  ],
+  "unittest_cases": 32,
+  "unittest_result": "passed",
+  "checks": [
+    "registration and missing-index discovery",
+    "stable IDs and main uniqueness",
+    "strict schema/date validation",
+    "ready-content hash consistency",
+    "resource/fragment existence",
+    "path/symlink/encoded traversal rejection",
+    "credential attachment rejection",
+    "create/register/update/archive",
+    "self-contained migration with compatibility pages",
+    "unsafe linked-page migration refused",
+    "no overwrite and rollback",
+    "Git baseline and silent deletion checks"
+  ],
+  "legacy_research_entry_errors": [],
+  "ci_workflow": ".github/workflows/html-reports.yml",
+  "ci_local_equivalent": "passed",
+  "github_workflow_run": "not run; changes not pushed",
+  "branch_protection_required_check": "not configured in this task",
+  "remaining": [
+    "Five existing company/topic entries remain draft/unreviewed; source-link publication scopes and financial cutoffs need review, not fabricated by index import.",
+    "Existing report relocation is deferred; six frozen legacy paths are explicit exceptions.",
+    "Website backend integration and permissions remain outside this repository change.",
+    "Static scanning cannot discover arbitrary dynamically constructed JavaScript dependencies."
+  ]
+}

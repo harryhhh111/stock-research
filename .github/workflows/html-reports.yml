@@ -1,0 +1,33 @@
+name: HTML Reports
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    name: HTML report index
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - name: Install validation dependencies
+        run: python -m pip install -r 研究流程/报告工具/requirements.txt
+      - name: Test report management
+        run: python -m unittest discover -s 研究流程/报告工具/tests -v
+      - name: Validate explicit index and detect unregistered reports
+        env:
+          BASE_REF: ${{ github.event.pull_request.base.sha || github.event.before }}
+        shell: bash
+        run: |
+          if [[ -n "$BASE_REF" && "$BASE_REF" != 0000000000000000000000000000000000000000 ]]; then
+            python 研究流程/报告工具/reports.py check --base-ref "$BASE_REF"
+          else
+            python 研究流程/报告工具/reports.py check --base-ref HEAD
+          fi
