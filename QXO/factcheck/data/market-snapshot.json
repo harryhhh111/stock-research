@@ -1,0 +1,14 @@
+{
+  "symbol": "QXO",
+  "market": "US",
+  "mic": "XNYS",
+  "currency": "USD",
+  "price": 12.01,
+  "as_of": "2026-11-16T16:00:03-05:00",
+  "share_count": 1039958653,
+  "share_count_date": "2026-11-06",
+  "source_quote": "https://finance.yahoo.com/quote/QXO/",
+  "crosscheck": "https://www.benzinga.com/quote/QXO",
+  "common_share_source": "https://www.sec.gov/Archives/edgar/data/1236275/000162828026073568/qxo-20260930.htm",
+  "note": "Regular close, excludes after hours 12.15. Market cap recomputed, not vendor implied share count."
+}

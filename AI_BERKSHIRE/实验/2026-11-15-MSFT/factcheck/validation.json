@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-15",
+  "html_local_links": "PASS",
+  "anchors": "PASS",
+  "annual_FCF": "PASS",
+  "annual_segment_revenue_and_operating_profit": "PASS",
+  "recent_quarter_FCF_and_TTM_sums": "PASS",
+  "recent_old_segment_sums": "PASS",
+  "financial_sample_audit": "3 of 6 financial input values sampled and passed; not full HTML audit",
+  "desktop_mobile_print_css": "visually inspected; paginated printing not fully checked",
+  "complete_research_acceptance": "not claimed; open gaps recorded in main report"
+}

@@ -58,3 +58,7 @@ venv/
 !/CRWV/factcheck/data/2026-10-21-nbis-1d.csv
 !/CRWV/factcheck/data/2026-10-21-crwv-1d.csv
 !/CRWV/factcheck/data/2026-10-21-qqq-1d.csv
+
+# Independent AI Berkshire reference checkouts; not part of this repository.
+/AI_BERKSHIRE/repo/
+/AI_BERKSHIRE/原生研究/

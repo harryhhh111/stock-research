@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-17",
+  "scope": "offline desktop/mobile and print CSS, not paginated print dialog",
+  "checks": [
+    {
+      "view": "desktop",
+      "offline": true,
+      "javascript_enabled": false,
+      "page_errors": [],
+      "width": 1280,
+      "bodyWidth": 1280,
+      "headingCount": 4,
+      "tables": 4,
+      "externalDependencies": 0,
+      "cells": 40,
+      "overflowContainers": [
+        {
+          "width": 992,
+          "content": 992,
+          "overflow": "auto"
+        },
+        {
+          "width": 992,
+          "content": 992,
+          "overflow": "auto"
+        },
+        {
+          "width": 992,
+          "content": 992,
+          "overflow": "auto"
+        }
+      ],
+      "containsResult": true,
+      "syntheticLabel": true,
+      "allHeadingsVisible": true
+    },
+    {
+      "view": "mobile",
+      "offline": true,
+      "javascript_enabled": false,
+      "page_errors": [],
+      "width": 390,
+      "bodyWidth": 390,
+      "headingCount": 4,
+      "tables": 4,
+      "externalDependencies": 0,
+      "cells": 40,
+      "overflowContainers": [
+        {
+          "width": 354,
+          "content": 650,
+          "overflow": "auto"
+        },
+        {
+          "width": 354,
+          "content": 650,
+          "overflow": "auto"
+        },
+        {
+          "width": 354,
+          "content": 650,
+          "overflow": "auto"
+        }
+      ],
+      "containsResult": true,
+      "syntheticLabel": true,
+      "allHeadingsVisible": true
+    },
+    {
+      "view": "print-style",
+      "offline": true,
+      "javascript_enabled": false,
+      "page_errors": [],
+      "width": 1123,
+      "bodyWidth": 1123,
+      "headingCount": 4,
+      "tables": 4,
+      "externalDependencies": 0,
+      "cells": 40,
+      "overflowContainers": [
+        {
+          "width": 1123,
+          "content": 1123,
+          "overflow": "visible"
+        },
+        {
+          "width": 1123,
+          "content": 1123,
+          "overflow": "visible"
+        },
+        {
+          "width": 1123,
+          "content": 1123,
+          "overflow": "visible"
+        }
+      ],
+      "containsResult": true,
+      "syntheticLabel": true,
+      "allHeadingsVisible": true
+    }
+  ]
+}

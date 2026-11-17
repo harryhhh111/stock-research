@@ -1,0 +1,105 @@
+{
+  "as_of": "2026-11-13",
+  "history": [
+    {
+      "fy": 2024,
+      "price": 439.21,
+      "market_cap_million": 3321869,
+      "pe_gaap": 37.69,
+      "ps": 13.55,
+      "p_fcf": 44.85,
+      "fcf_yield_pct": 2.229654403567447,
+      "price_basis": "2024-06-30或最近前交易日；供应商年度快照，非全年均值",
+      "source": "https://stockanalysis.com/stocks/msft/financials/ratios/"
+    },
+    {
+      "fy": 2025,
+      "price": 492.54,
+      "market_cap_million": 3697022,
+      "pe_gaap": 36.31,
+      "ps": 13.12,
+      "p_fcf": 51.63,
+      "fcf_yield_pct": 1.9368584156498159,
+      "price_basis": "2025-06-30或最近前交易日；供应商年度快照，非全年均值",
+      "source": "https://stockanalysis.com/stocks/msft/financials/ratios/"
+    },
+    {
+      "fy": 2026,
+      "price": 372.32,
+      "market_cap_million": 2770955,
+      "pe_gaap": 20.72,
+      "ps": 8.35,
+      "p_fcf": 41.37,
+      "fcf_yield_pct": 2.41721053903795,
+      "price_basis": "2026-06-30或最近前交易日；供应商年度快照，非全年均值",
+      "source": "https://stockanalysis.com/stocks/msft/financials/ratios/"
+    }
+  ],
+  "peers": [
+    {
+      "symbol": "MSFT",
+      "price": 523.88,
+      "ttm_pe_gaap": 27.35,
+      "forward_pe": 25.24,
+      "source": "https://stockanalysis.com/stocks/msft/statistics/"
+    },
+    {
+      "symbol": "AMZN",
+      "price": 266.66,
+      "ttm_pe_gaap": 21.55,
+      "forward_pe": 26.97,
+      "source": "https://stockanalysis.com/stocks/amzn/statistics/"
+    },
+    {
+      "symbol": "GOOGL",
+      "price": 295.77,
+      "ttm_pe_gaap": 15.44,
+      "forward_pe": 21.45,
+      "source": "https://stockanalysis.com/stocks/googl/statistics/"
+    }
+  ],
+  "peer_caveat": "第三方集团口径快照，AMZN混合零售/广告/AWS，GOOGL混合搜索/视频/云，微软混合企业软件/云/消费业务。TTM净利均可能含投资估值等非经营项；本轮未完成同业调整利润复核，不能据PE判微软比同业贵或直接套云业务估值。Forward PE为供应商一致预期，非公司指引。",
+  "reverse_bridge": {
+    "horizon": "2029-11-13；FY2030为最近完整财年代理，非精确FY2030预测",
+    "target_eps": 27.372363200000006,
+    "fixed_shares_million": 7427,
+    "target_adjusted_net_income_million": 203294.54148640003,
+    "ttm_normalized_margin": 0.387868204188255,
+    "target_revenue_if_ttm_margin_million": 524133.04130422964,
+    "q1_annualized_adjusted_margin": 0.3946943508273822,
+    "target_revenue_if_q1_margin_million": 515068.2827363546,
+    "q1_annualized_base_million": {
+      "azure": 132660,
+      "m365": 111112,
+      "other": 125344
+    },
+    "azure_conditional_bridge": [
+      {
+        "m365_growth": 0.1,
+        "other_growth": 0,
+        "required_azure_revenue_million": 241834.21073635458,
+        "required_azure_growth": 0.22159125456282847
+      },
+      {
+        "m365_growth": 0.1,
+        "other_growth": 0.05,
+        "required_azure_revenue_million": 222076.86273635455,
+        "required_azure_growth": 0.18737465237983497
+      },
+      {
+        "m365_growth": 0.15,
+        "other_growth": 0,
+        "required_azure_revenue_million": 220736.81973635464,
+        "required_azure_growth": 0.18498157066752396
+      },
+      {
+        "m365_growth": 0.15,
+        "other_growth": 0.05,
+        "required_azure_revenue_million": 200979.4717363546,
+        "required_azure_growth": 0.14851649205776485
+      }
+    ],
+    "limitations": "Q1年度化仅为条件桥，非管理层年度指引；季节性未消除。调整利润仅剔OpenAI，仍含Anthropic等其他一次性项目，非完全正常化利润率。Azure和Microsoft365包括传统业务与AI，不能将其收入全称AI。假设业务组合变化但集团利润率不变，纯敏感性，非唯一市场预期；固定股数，无净回购增厚。",
+    "source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast"
+  }
+}

@@ -1,0 +1,454 @@
+TABLE 0
+
+Delaware | 52-2084569
+(State or other jurisdiction of | incorporation or organization) | (I.R.S. Employer | Identification No.)
+
+6031 Connection Drive | , | Suite 400
+Irving | , | Texas | 75039
+(Address of principal executive offices) | (Zip Code)
+
+TABLE 1
+
+Title of Each Class | Trading Symbol(s) | Name of Each Exchange on Which Registered
+Common stock, par value $0.01 per share | BLDR | New York Stock Exchange | NYSE Texas
+
+TABLE 2
+
+Large accelerated filer | ☒ | Accelerated filer | ☐
+Non-accelerated filer | ☐ | Smaller reporting company | ☐
+Emerging growth company | ☐
+
+TABLE 3
+
+Page
+PART I — FINANCIAL INFORMATION | 3
+Item 1. | Financial Statements (Unaudited) | 3
+Condensed Consolidated Statements of Operations (Unaudited) for the Three and Nine Months Ended September 30, 2026 and 2025 | 3
+Condensed Consolidated Balance Sheets (Unaudited) as of September 30, 2026, and December 31, 2025 | 4
+Condensed Consolidated Statements of Cash Flows (Unaudited) for the Nine Months Ended September 30, 2026 and 2025 | 5
+Condensed Consolidated Statements of Changes in Stockholders’ Equity (Unaudited) for the Three and Nine Months Ended September 30, 2026 and 2025 | 6
+Notes to Condensed Consolidated Financial Statements (Unaudited) | 7
+Item 2. | Management’s Discussion and Analysis of Financial Condition and Results of Operations | 15
+Item 3. | Quantitative and Qualitative Disclosures About Market Risk | 20
+Item 4. | Controls and Procedures | 20
+PART II — OTHER INFORMATION | 21
+Item 1. | Legal Proceedings | 21
+Item 1A. | Risk Factors | 21
+Item 2. | Unregistered Sales of Equity Securities and Use of Proceeds | 21
+Item 5. | Other Information | 21
+Item 6. | Exhibits | 22
+
+TABLE 4
+
+Three Months Ended | September 30, | Nine Months Ended | September 30,
+(in thousands, except per share amounts) | 2026 | 2025 | 2026 | 2025
+Net sales | $ | 3,854,048 | $ | 3,941,190 | $ | 11,003,672 | $ | 11,832,750
+Cost of sales | 2,781,792 | 2,741,707 | 7,915,663 | 8,218,985
+Gross margin | 1,072,256 | 1,199,483 | 3,088,009 | 3,613,765
+Selling, general and administrative expenses | 973,165 | 970,715 | 2,843,896 | 2,889,269
+Income from operations | 99,091 | 228,768 | 244,113 | 724,496
+Interest expense, net | 72,244 | 69,258 | 222,740 | 206,139
+Income before income taxes | 26,847 | 159,510 | 21,373 | 518,357
+Income tax expense (benefit) | ( | 33,562 | ) | 37,126 | 12,278 | 114,638
+Net income | $ | 60,409 | $ | 122,384 | $ | 9,095 | $ | 403,719
+
+Net income per share:
+Basic | $ | 0.56 | $ | 1.11 | $ | 0.08 | $ | 3.61
+Diluted | $ | 0.56 | $ | 1.10 | $ | 0.08 | $ | 3.60
+Weighted average common shares:
+Basic | 107,598 | 110,547 | 108,335 | 111,703
+Diluted | 107,635 | 110,930 | 108,466 | 112,142
+
+TABLE 5
+
+(in thousands, except par value amounts) | September 30, | 2026 | December 31, | 2025
+ASSETS
+Current assets:
+Cash and cash equivalents | $ | 55,012 | $ | 181,753
+Accounts receivable, less allowances of $ | 43,753 | and $ | 42,511 | , respectively | 1,298,656 | 1,061,011
+Other receivables | 342,993 | 330,013
+Inventories, net | 1,241,128 | 1,094,684
+Contract assets | 151,509 | 133,011
+Other current assets | 137,133 | 126,811
+Total current assets | 3,226,431 | 2,927,283
+Property, plant and equipment, net | 2,128,983 | 2,204,184
+Operating lease right-of-use assets, net | 620,519 | 622,188
+Goodwill | 4,166,201 | 4,137,377
+Intangible assets, net | 988,594 | 1,183,793
+Deferred income taxes | 31,154 | 23,000
+Other assets, net | 172,793 | 139,705
+Total assets | $ | 11,334,675 | $ | 11,237,530
+LIABILITIES AND STOCKHOLDERS’ EQUITY
+Current liabilities:
+Accounts payable | $ | 900,192 | $ | 714,710
+Accrued liabilities | 547,613 | 566,325
+Contract liabilities | 181,883 | 168,440
+Current portion of operating lease liabilities | 114,887 | 111,132
+Current maturities of long-term debt | 4,114 | 14,334
+Total current liabilities | 1,748,689 | 1,574,941
+Noncurrent portion of operating lease liabilities | 546,388 | 547,772
+Long-term debt, net of current maturities, discounts and issuance costs | 4,615,050 | 4,427,033
+Deferred income taxes | 186,570 | 177,975
+Other long-term liabilities | 156,965 | 157,558
+Total liabilities | 7,253,662 | 6,885,279
+Commitments and contingencies | (Note 11)
+Stockholders’ equity:
+Preferred stock, $ | 0.01 | par value, | 10,000 | shares authorized; | zero | shares issued and outstanding | — | —
+Common stock, $ | 0.01 | par value, | 300,000 | shares authorized; | 107,603 | and | 110,585 | shares issued and outstanding, respectively | 1,076 | 1,106
+Additional paid-in capital | 4,023,428 | 4,197,279
+Retained earnings | 56,509 | 153,866
+Total stockholders’ equity | 4,081,013 | 4,352,251
+Total liabilities and stockholders’ equity | $ | 11,334,675 | $ | 11,237,530
+
+TABLE 6
+
+Nine Months Ended | September 30,
+(in thousands) | 2026 | 2025
+Cash flows from operating activities:
+Net income | $ | 9,095 | $ | 403,719
+Adjustments to reconcile net income to net cash provided by operating activities:
+Depreciation and amortization | 447,167 | 440,090
+Deferred income taxes | 441 | 23,876
+Stock-based compensation expense | 36,484 | 46,800
+Other non-cash adjustments | 7,613 | ( | 5,625 | )
+Changes in assets and liabilities, net of assets acquired and liabilities assumed:
+Receivables | ( | 229,466 | ) | 10,160
+Inventories, net | ( | 122,131 | ) | 103,616
+Contract assets | ( | 15,917 | ) | 2,615
+Other current assets | ( | 8,772 | ) | ( | 3,731 | )
+Other assets and liabilities | 18,193 | ( | 21,772 | )
+Accounts payable | 178,060 | 77,263
+Accrued liabilities | ( | 31,799 | ) | ( | 65,368 | )
+Contract liabilities | 13,063 | 9,449
+Net cash provided by operating activities | 302,031 | 1,021,092
+Cash flows from investing activities:
+Cash used for acquisitions, net of cash acquired | ( | 116,678 | ) | ( | 904,515 | )
+Purchases of property, plant and equipment | ( | 157,430 | ) | ( | 274,531 | )
+Proceeds from sale of property, plant and equipment | 6,274 | 18,408
+Cash used for equity investments | ( | 27,578 | ) | ( | 1,330 | )
+Net cash used in investing activities | ( | 295,412 | ) | ( | 1,161,968 | )
+Cash flows from financing activities:
+Borrowings under revolving credit facility | 1,033,000 | 4,058,000
+Repayments under revolving credit facility | ( | 836,000 | ) | ( | 4,058,000 | )
+Proceeds from long-term debt and other loans | — | 750,000
+Repayments of long-term debt and other loans | ( | 8,848 | ) | ( | 2,151 | )
+Payments of loan costs | — | ( | 19,861 | )
+Payments of acquisition-related deferred and contingent consideration | ( | 4,047 | ) | ( | 3,425 | )
+Tax withholdings on and exercises of equity awards | ( | 13,946 | ) | ( | 27,191 | )
+Repurchase of common stock | ( | 303,519 | ) | ( | 413,958 | )
+Net cash (used in) provided by financing activities | ( | 133,360 | ) | 283,414
+Net change in cash and cash equivalents | ( | 126,741 | ) | 142,538
+Cash and cash equivalents at beginning of period | 181,753 | 153,624
+Cash and cash equivalents at end of period | $ | 55,012 | $ | 296,162
+
+Supplemental disclosures of cash flow information:
+Cash paid for interest | $ | 230,109 | $ | 205,872
+Cash paid for income taxes | 6,369 | 72,760
+Supplemental disclosures of non-cash activities:
+Right-of-use assets obtained in exchange for operating lease obligations | $ | 73,220 | $ | 79,099
+Accrued consideration for acquisitions | 12,593 | 6,277
+Accrued purchases of property, plant and equipment | 5,107 | 8,164
+Accrued excise tax on repurchases of common stock | 2,806 | 3,538
+
+TABLE 7
+
+
+Common Stock | Additional | Retained Earnings
+(in thousands) | Shares | Amount | Paid-in Capital | (Accumulated Deficit) | Total
+Balance at December 31, 2024 | 113,578 | $ | 1,136 | $ | 4,271,269 | $ | 24,065 | $ | 4,296,470
+Vesting of restricted stock units | 376 | 4 | ( | 4 | ) | — | —
+Stock-based compensation expense | — | — | 14,238 | — | 14,238
+Repurchase of common stock (1) | ( | 97 | ) | ( | 1 | ) | — | ( | 12,749 | ) | ( | 12,750 | )
+Exercise of stock options | 9 | — | 77 | — | 77
+Shares withheld for restricted stock units vested | ( | 140 | ) | ( | 2 | ) | ( | 20,177 | ) | — | ( | 20,179 | )
+Net income | — | — | — | 96,304 | 96,304
+Balance at March 31, 2025 | 113,726 | 1,137 | 4,265,403 | 107,620 | 4,374,160
+Vesting of restricted stock units | 166 | 2 | ( | 2 | ) | — | —
+Stock-based compensation expense | — | — | 16,160 | — | 16,160
+Repurchase of common stock (1)(3) | ( | 3,305 | ) | ( | 33 | ) | ( | 98,172 | ) | ( | 292,651 | ) | ( | 390,856 | )
+Exercise of stock options | 5 | — | 69 | — | 69
+Shares withheld for restricted stock units vested | ( | 55 | ) | ( | 1 | ) | ( | 6,471 | ) | — | ( | 6,472 | )
+Net income | — | — | — | 185,031 | 185,031
+Balance at June 30, 2025 | 110,537 | 1,105 | 4,176,987 | — | 4,178,092
+Vesting of restricted stock units | 19 | 1 | ( | 1 | ) | — | —
+Stock-based compensation expense | — | — | 16,402 | — | 16,402
+Exercise of stock options | 2 | — | 29 | — | 29
+Shares withheld for restricted stock units vested | ( | 6 | ) | — | ( | 718 | ) | — | ( | 718 | )
+Net income | — | — | — | 122,384 | 122,384
+Balance at September 30, 2025 | 110,552 | $ | 1,106 | $ | 4,192,699 | $ | 122,384 | $ | 4,316,189
+
+
+Balance at December 31, 2025 | 110,585 | $ | 1,106 | $ | 4,197,279 | $ | 153,866 | $ | 4,352,251
+Vesting of restricted stock units | 341 | 3 | ( | 3 | ) | — | —
+Stock-based compensation expense | — | — | 13,628 | — | 13,628
+Repurchase of common stock (2)(3) | ( | 3,283 | ) | ( | 33 | ) | ( | 196,388 | ) | ( | 106,452 | ) | ( | 302,873 | )
+Exercise of stock options | 2 | — | 21 | — | 21
+Shares withheld for restricted stock units vested | ( | 127 | ) | ( | 1 | ) | ( | 11,392 | ) | — | ( | 11,393 | )
+Net loss | — | — | — | ( | 47,414 | ) | ( | 47,414 | )
+Balance at March 31, 2026 | 107,518 | 1,075 | 4,003,145 | — | 4,004,220
+Vesting of restricted stock units | 102 | 1 | ( | 1 | ) | — | —
+Stock-based compensation expense | — | — | 7,210 | — | 7,210
+Shares withheld for restricted stock units vested | ( | 26 | ) | — | ( | 2,355 | ) | — | ( | 2,355 | )
+Net loss | — | — | — | ( | 3,900 | ) | ( | 3,900 | )
+Balance at June 30, 2026 | 107,594 | 1,076 | 4,007,999 | ( | 3,900 | ) | 4,005,175
+Vesting of restricted stock units | 12 | — | — | — | —
+Stock-based compensation expense | — | — | 15,646 | — | 15,646
+Shares withheld for restricted stock units vested | ( | 3 | ) | — | ( | 217 | ) | — | ( | 217 | )
+Net income | — | — | — | 60,409 | 60,409
+Balance at September 30, 2026 | 107,603 | $ | 1,076 | $ | 4,023,428 | $ | 56,509 | $ | 4,081,013
+
+TABLE 8
+
+Total Acquisitions
+2026 | 2025
+(in thousands)
+Cash and cash equivalents | $ | — | $ | 2,785
+Accounts receivable | 21,080 | 49,795
+Other receivables | 303 | 6,842
+Inventories | 24,313 | 67,670
+Contract assets | 2,581 | —
+Other current assets | 1,324 | 766
+Property, plant and equipment | 48,753 | 193,816
+Operating lease right-of-use assets | 12,533 | 11,646
+Finance lease right-of-use assets | — | 286
+Intangible assets | 20,353 | 312,917
+Other assets | — | 262
+Total assets | 131,240 | 646,785
+
+Accounts payable | 6,960 | 14,512
+Accrued liabilities | 8,331 | 18,196
+Contract liabilities | 381 | 6,540
+Operating lease liabilities | 12,533 | 11,646
+Finance lease liabilities | — | 286
+Other long-term liabilities | 2,588 | —
+Total liabilities | 30,793 | 51,180
+
+Goodwill | 28,824 | 317,972
+Total purchase consideration | 129,271 | 913,577
+Accrued contingent consideration and purchase price adjustments | ( | 12,593 | ) | ( | 6,277 | )
+Less: cash acquired | — | ( | 2,785 | )
+Total cash consideration | $ | 116,678 | $ | 904,515
+
+TABLE 9
+
+Three Months Ended | September 30, | Nine Months Ended | September 30,
+2026 | 2025 | 2026 | 2025
+(in thousands)
+Manufactured products | $ | 845,420 | $ | 869,936 | $ | 2,412,196 | $ | 2,683,167
+Windows, doors and millwork | 937,831 | 1,011,163 | 2,746,419 | 3,006,000
+Specialty building products and services | 1,034,297 | 1,070,599 | 2,922,547 | 3,051,559
+Lumber and lumber sheet goods | 1,036,500 | 989,492 | 2,922,510 | 3,092,024
+Net sales | $ | 3,854,048 | $ | 3,941,190 | $ | 11,003,672 | $ | 11,832,750
+
+TABLE 10
+
+Three Months Ended | September 30, | Nine Months Ended | September 30,
+2026 | 2025 | 2026 | 2025
+(in thousands, except per share amounts)
+Numerator:
+Net income | $ | 60,409 | $ | 122,384 | $ | 9,095 | $ | 403,719
+
+Denominator:
+Weighted average shares outstanding, basic | 107,598 | 110,547 | 108,335 | 111,703
+Dilutive effect of options and RSUs | 37 | 383 | 131 | 439
+Weighted average shares outstanding, diluted | 107,635 | 110,930 | 108,466 | 112,142
+
+Net income per share:
+Basic | $ | 0.56 | $ | 1.11 | $ | 0.08 | $ | 3.61
+Diluted | $ | 0.56 | $ | 1.10 | $ | 0.08 | $ | 3.60
+
+Antidilutive and contingent RSUs excluded from diluted EPS | 1,134 | 118 | 805 | 323
+
+TABLE 11
+
+(in thousands)
+Balance as of December 31, 2025 (1) | $ | 4,137,377
+Acquisitions | 28,824
+Balance as of September 30, 2026 (1) | $ | 4,166,201
+
+TABLE 12
+
+September 30, 2026 | December 31, 2025
+Gross | Carrying | Amount | Accumulated Amortization | Gross | Carrying | Amount | Accumulated Amortization
+(in thousands)
+Customer relationships | $ | 2,410,710 | $ | ( | 1,482,420 | ) | $ | 2,583,516 | $ | ( | 1,474,467 | )
+Developed technology | 95,100 | ( | 53,965 | ) | 95,600 | ( | 46,503 | )
+Trade names | 57,450 | ( | 39,353 | ) | 74,950 | ( | 51,717 | )
+Non-compete agreements | 11,200 | ( | 10,128 | ) | 13,050 | ( | 10,636 | )
+Total intangible assets | $ | 2,574,460 | $ | ( | 1,585,866 | ) | $ | 2,767,116 | $ | ( | 1,583,323 | )
+
+TABLE 13
+
+(in thousands)
+2026 (from October 1, 2026) | $ | 66,907
+2027 | 224,555
+2028 | 167,187
+2029 | 105,382
+2030 | 83,280
+Thereafter | 341,283
+Total future intangible amortization expense | $ | 988,594
+
+TABLE 14
+
+September 30, | 2026 | December 31, | 2025
+(in thousands)
+Accrued payroll and other employee related expenses | $ | 223,406 | $ | 241,870
+Self-insurance reserves | 93,966 | 95,194
+Accrued business and other taxes | 91,463 | 68,071
+Accrued interest | 50,376 | 63,202
+Accrued rebates payable | 31,659 | 33,125
+Accrued professional service fees | 6,302 | 26,928
+Other | 50,441 | 37,935
+Total accrued liabilities | $ | 547,613 | $ | 566,325
+
+TABLE 15
+
+September 30, | 2026 | December 31, | 2025
+(in thousands)
+Revolving credit facility (1) | $ | 197,000 | $ | —
+4.25 | % 2032 notes | 1,300,000 | 1,300,000
+6.375 | % 2034 notes | 1,000,000 | 1,000,000
+6.75 | % 2035 notes | 750,000 | 750,000
+6.375 | % 2032 notes | 700,000 | 700,000
+5.00 | % 2030 notes | 550,000 | 550,000
+Other finance obligations | 161,174 | 183,891
+Finance lease obligations | 730 | 1,155
+4,658,904 | 4,485,046
+Unamortized debt discount/premium and debt issuance costs | ( | 39,740 | ) | ( | 43,679 | )
+4,619,164 | 4,441,367
+Less: current maturities of long-term debt | 4,114 | 14,334
+Long-term debt, net of current maturities, discounts and issuance costs | $ | 4,615,050 | $ | 4,427,033
+
+TABLE 16
+
+(in thousands)
+4.25 | % 2032 notes | $ | 1,147,250
+6.375 | % 2034 notes | 947,500
+6.75 | % 2035 notes | 712,500
+6.375 | % 2032 notes | 674,625
+5.00 | % 2030 notes | 523,875
+
+TABLE 17
+
+Expected volatility (Company) | 45.2 | %
+Expected volatility (peer group median) | 31.0 | %
+Correlation between the Company and peer group median | 0.5
+Expected dividend yield | 0.0 | %
+Risk-free rate | 3.7 | %
+
+TABLE 18
+
+Expected volatility | 45.2 | %
+Expected dividend yield | 0.0 | %
+Risk-free rate | 4.0 | %
+
+TABLE 19
+
+Three Months Ended | September 30, | Nine Months Ended | September 30,
+2026 | 2025 | 2026 | 2025
+Statutory federal income tax rate | 21.0 | % | 21.0 | % | 21.0 | % | 21.0 | %
+Discrete federal research and development credits, including non-cash settlement agreement | — | — | 205.5 | —
+State income taxes, net of federal income tax | ( | 137.8 | ) | 2.6 | ( | 173.3 | ) | 2.5
+Stock-based compensation windfall/shortfall | 2.0 | ( | 0.2 | ) | 15.5 | ( | 1.0 | )
+Permanent differences and other | ( | 10.2 | ) | ( | 0.1 | ) | ( | 11.3 | ) | ( | 0.4 | )
+Effective tax rate for continuing operations | ( | 125.0 | )% | 23.3 | % | 57.4 | % | 22.1 | %
+
+
+TABLE 20
+
+Three Months Ended | September 30, | Nine Months Ended | September 30,
+2026 | 2025 | 2026 | 2025
+Net sales | 100.0 | % | 100.0 | % | 100.0 | % | 100.0 | %
+Cost of sales | 72.2 | % | 69.6 | % | 71.9 | % | 69.5 | %
+Gross margin | 27.8 | % | 30.4 | % | 28.1 | % | 30.5 | %
+Selling, general and administrative expenses | 25.3 | % | 24.6 | % | 25.8 | % | 24.4 | %
+Income from operations | 2.5 | % | 5.8 | % | 2.3 | % | 6.1 | %
+Interest expense, net | 1.8 | % | 1.8 | % | 2.1 | % | 1.7 | %
+Income tax expense (benefit) | (0.9 | )% | 0.9 | % | 0.1 | % | 1.0 | %
+Net income | 1.6 | % | 3.1 | % | 0.1 | % | 3.4 | %
+
+TABLE 21
+
+Three Months Ended September 30,
+2026 | 2025
+(in millions)
+Net Sales | % of Net Sales | Net Sales | % of Net Sales | % Change
+Manufactured products (1) | $ | 845.4 | 21.9 | % | $ | 869.9 | 22.1 | % | (2.8 | )%
+Windows, doors and millwork (1) | 937.8 | 24.3 | % | 1,011.2 | 25.7 | % | (7.3 | )%
+Specialty building products and services | 1,034.3 | 26.9 | % | 1,070.6 | 27.1 | % | (3.4 | )%
+Lumber and lumber sheet goods | 1,036.5 | 26.9 | % | 989.5 | 25.1 | % | 4.7 | %
+Net sales | $ | 3,854.0 | 100.0 | % | $ | 3,941.2 | 100.0 | % | (2.2 | )%
+
+TABLE 22
+
+Nine Months Ended September 30,
+2026 | 2025
+(in millions)
+Net Sales | % of Net Sales | Net Sales | % of Net Sales | % Change
+Manufactured products (1) | $ | 2,412.2 | 21.9 | % | $ | 2,683.2 | 22.7 | % | (10.1 | )%
+Windows, doors and millwork (1) | 2,746.4 | 25.0 | % | 3,006.0 | 25.4 | % | (8.6 | )%
+Specialty building products & services | 2,922.6 | 26.5 | % | 3,051.6 | 25.8 | % | (4.2 | )%
+Lumber & lumber sheet goods | 2,922.5 | 26.6 | % | 3,092.0 | 26.1 | % | (5.5 | )%
+Net sales | $ | 11,003.7 | 100.0 | % | $ | 11,832.8 | 100.0 | % | (7.0 | )%
+
+TABLE 23
+
+September 30, | 2026 | December 31, | 2025
+(in millions)
+Accounts receivable availability | $ | 880.0 | $ | 686.2
+Inventory availability | 886.1 | 804.2
+Gross availability | 1,766.1 | 1,490.4
+Less:
+Agent-specified reserves | (55.7 | ) | (42.6 | )
+Plus:
+Cash in qualified accounts | 21.3 | 159.1
+Borrowing base | 1,731.7 | 1,606.9
+Aggregate revolving commitments | 2,200.0 | 2,200.0
+Maximum borrowing amount (lesser of borrowing base and | aggregate revolving commitments) | 1,731.7 | 1,606.9
+Less:
+Outstanding borrowings | (197.0 | ) | —
+Letters of credit | (75.6 | ) | (79.6 | )
+Net excess borrowing availability on revolving facility | $ | 1,459.1 | $ | 1,527.3
+
+TABLE 24
+
+Period | Total Number of Shares Purchased | Average Price Paid per Share | (including applicable fees and taxes) | Total Number of Shares Purchased as Part of Publicly Announced Plans or Programs | (1) | Approximate Dollar Value of Shares That May Yet be Purchased Under the Plans or Programs | (1)
+July 1, 2026 — July 31, 2026 | 1,694 | $ | 80.01 | — | $ | 500,000,000
+August 1, 2026 — August 31, 2026 | 1,106 | 73.56 | — | 500,000,000
+September 1, 2026 — September 30, 2026 | — | — | — | 500,000,000
+Total | 2,800 | $ | 77.46 | — | $ | 500,000,000
+
+TABLE 25
+
+Description
+3.1 | Amended and Restated Certificate of Incorporation of Builders FirstSource, Inc. (incorporated by reference to Exhibit 3.1 to the Company’s Current Report on Form 8-K, filed with the Securities and Exchange Commission on May 27, 2025, File Number 001-40620)
+3.2 | Amended and Restated By-Laws of Builders FirstSource, Inc. (incorporated by reference to Exhibit 3.2 to the Company’s Current Report on Form 8-K, filed with the Securities and Exchange Commission on May 27, 2025, File Number 001-40620)
+10.1+* | Form of Restricted Stock Unit Award Certificate (Time-Based) under the Builders FirstSource, Inc. 2026 Equity Incentive Plan
+10.2+* | Form of Restricted Stock Unit Award Certificate (Time-Based and Performance-Based) under the Builders FirstSource, Inc. 2026 Equity Incentive Plan
+31.1* | Certification of Chief Executive Officer pursuant to 17 CFR 240.13a-14(a), as adopted pursuant to Section 302 of the Sarbanes-Oxley Act of 2002, signed by Peter M. Jackson as Chief Executive Officer
+31.2* | Certification of Chief Financial Officer pursuant to 17 CFR 240.13a-14(a), as adopted pursuant to Section 302 of the Sarbanes-Oxley Act of 2002, signed by Pete R. Beckmann as Chief Financial Officer
+32.1** | Certification of Chief Executive Officer and Chief Financial Officer pursuant to 18 U.S.C. Section 1350, as adopted pursuant to Section 906 of the Sarbanes-Oxley Act of 2002, signed by Peter M. Jackson as Chief Executive Officer and Pete R. Beckmann as Chief Financial Officer
+101* | The following financial information from Builders FirstSource, Inc.’s Form 10-Q filed on October 29, 2026 formatted in Inline eXtensible Business Reporting Language (“Inline XBRL”): (i) Condensed Consolidated Statement of Operations for the three and nine months ended September 30, 2026 and 2025, (ii) Condensed Consolidated Balance Sheet as of September 30, 2026 and December 31, 2025, (iii) Condensed Consolidated Statements of Cash Flows for the nine months ended September 30, 2026 and 2025, (iv) Condensed Consolidated Statements of Changes in Stockholders’ Equity for the three and nine months ended September 30, 2026 and 2025 and (v) the Notes to Condensed Consolidated Financial Statements.
+104* | The cover page for the Company’s Quarterly Report on Form 10-Q for the quarter ended September 30, 2026, has been formatted in Inline XBRL.
+
+TABLE 26
+
+BUILDERS FIRSTSOURCE, INC.
+
+/s/ PETER M. JACKSON
+Peter M. Jackson
+President and Chief Executive Officer
+(Principal Executive Officer)
+
+TABLE 27
+
+/s/ PETE R. BECKMANN
+Pete R. Beckmann
+Executive Vice President and Chief Financial Officer | (Principal Financial Officer)
+
+TABLE 28
+
+/s/ MATTHEW TRESTER
+Matthew Trester
+Vice President and Controller
+(Principal Accounting Officer)

@@ -15,6 +15,8 @@ documents:
   role: supplement
 - path: 云服务、数据中心与AI业务.md
   role: supplement
+- path: 传统软件与现金流底稿.md
+  role: supplement
 related_entities: []
 research_scope: 集团基本面首轮研究；完整验收与剩余缺口见主文档
 sections:

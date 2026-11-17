@@ -1,0 +1,224 @@
+{
+  "model_version": "0.1.0",
+  "input_sha256": "074fdc3b3881acb697c0fa3e0ae9b9838ad92f0fa19f273557a87fe7e4fa2603",
+  "input": {
+    "schema_version": 1,
+    "company": "示例公司（纯示意）",
+    "share_basis": "股价和股数均按同一普通股单位；非ADR换算数据",
+    "currency": "USD",
+    "price": 100,
+    "price_date": "2025-12-31",
+    "net_profit": 1000,
+    "profit_unit": "M",
+    "profit_period_start": "2025-01-01",
+    "profit_period_end": "2025-12-31",
+    "profit_basis": "年度归属普通股股东净利润，纯示意非公司实绩",
+    "current_shares": 1000000000,
+    "target_shares": 1000000000,
+    "target_fiscal_year": "FY2030（纯示意）",
+    "target_date": "2030-12-31",
+    "required_return": 0.1,
+    "target_pe": 20,
+    "sensitivity_pe": [
+      15,
+      20,
+      25
+    ],
+    "assumptions_confirmed": true,
+    "applicability": {
+      "comparable_profit": true,
+      "major_capital_changes": false,
+      "special_industry": false
+    },
+    "evidence": {
+      "price": {
+        "source": "作者构造的演示值，不是实时行情",
+        "status": "synthetic",
+        "source_date": "2025-12-31",
+        "currency": "USD"
+      },
+      "net_profit": {
+        "source": "作者构造的完整年度演示值，不是真实财报",
+        "status": "synthetic",
+        "source_date": "2025-12-31",
+        "currency": "USD"
+      },
+      "current_shares": {
+        "source": "作者构造的演示股数，不是真实公司股本",
+        "status": "synthetic",
+        "source_date": "2025-12-31",
+        "currency": "shares"
+      }
+    }
+  },
+  "synthetic": true,
+  "base": {
+    "target_date": "2030-12-31",
+    "target_pe": 20,
+    "return_years": 5.0,
+    "profit_growth_years": 5.0,
+    "required_price": 161.05100000000004,
+    "required_profit": 8052.550000000002,
+    "profit_multiple": 8.052550000000002,
+    "profit_cagr": 0.5177026276073363,
+    "price_present_value": 100.0
+  },
+  "delays": [
+    {
+      "target_date": "2030-12-31",
+      "target_pe": 20,
+      "return_years": 5.0,
+      "profit_growth_years": 5.0,
+      "required_price": 161.05100000000004,
+      "required_profit": 8052.550000000002,
+      "profit_multiple": 8.052550000000002,
+      "profit_cagr": 0.5177026276073363,
+      "price_present_value": 100.0
+    },
+    {
+      "target_date": "2031-12-31",
+      "target_pe": 20,
+      "return_years": 6.0,
+      "profit_growth_years": 6.0,
+      "required_price": 177.1561000000001,
+      "required_profit": 8857.805000000004,
+      "profit_multiple": 8.857805000000004,
+      "profit_cagr": 0.4384265346130138,
+      "price_present_value": 100.0
+    },
+    {
+      "target_date": "2032-12-31",
+      "target_pe": 20,
+      "return_years": 7.0,
+      "profit_growth_years": 7.0,
+      "required_price": 194.87171000000012,
+      "required_profit": 9743.585500000007,
+      "profit_multiple": 9.743585500000007,
+      "profit_cagr": 0.3843488457060096,
+      "price_present_value": 100.0
+    }
+  ],
+  "sensitivity": [
+    {
+      "pe": 15,
+      "scenarios": [
+        {
+          "target_date": "2030-12-31",
+          "target_pe": 15,
+          "return_years": 5.0,
+          "profit_growth_years": 5.0,
+          "required_price": 161.05100000000004,
+          "required_profit": 10736.733333333335,
+          "profit_multiple": 10.736733333333335,
+          "profit_cagr": 0.6075868067841178,
+          "price_present_value": 100.0
+        },
+        {
+          "target_date": "2031-12-31",
+          "target_pe": 15,
+          "return_years": 6.0,
+          "profit_growth_years": 6.0,
+          "required_price": 177.1561000000001,
+          "required_profit": 11810.406666666673,
+          "profit_multiple": 11.810406666666672,
+          "profit_cagr": 0.5090749450879135,
+          "price_present_value": 100.0
+        },
+        {
+          "target_date": "2032-12-31",
+          "target_pe": 15,
+          "return_years": 7.0,
+          "profit_growth_years": 7.0,
+          "required_price": 194.87171000000012,
+          "required_profit": 12991.44733333334,
+          "profit_multiple": 12.99144733333334,
+          "profit_cagr": 0.4424273014218892,
+          "price_present_value": 100.0
+        }
+      ]
+    },
+    {
+      "pe": 20,
+      "scenarios": [
+        {
+          "target_date": "2030-12-31",
+          "target_pe": 20,
+          "return_years": 5.0,
+          "profit_growth_years": 5.0,
+          "required_price": 161.05100000000004,
+          "required_profit": 8052.550000000002,
+          "profit_multiple": 8.052550000000002,
+          "profit_cagr": 0.5177026276073363,
+          "price_present_value": 100.0
+        },
+        {
+          "target_date": "2031-12-31",
+          "target_pe": 20,
+          "return_years": 6.0,
+          "profit_growth_years": 6.0,
+          "required_price": 177.1561000000001,
+          "required_profit": 8857.805000000004,
+          "profit_multiple": 8.857805000000004,
+          "profit_cagr": 0.4384265346130138,
+          "price_present_value": 100.0
+        },
+        {
+          "target_date": "2032-12-31",
+          "target_pe": 20,
+          "return_years": 7.0,
+          "profit_growth_years": 7.0,
+          "required_price": 194.87171000000012,
+          "required_profit": 9743.585500000007,
+          "profit_multiple": 9.743585500000007,
+          "profit_cagr": 0.3843488457060096,
+          "price_present_value": 100.0
+        }
+      ]
+    },
+    {
+      "pe": 25,
+      "scenarios": [
+        {
+          "target_date": "2030-12-31",
+          "target_pe": 25,
+          "return_years": 5.0,
+          "profit_growth_years": 5.0,
+          "required_price": 161.05100000000004,
+          "required_profit": 6442.040000000001,
+          "profit_multiple": 6.44204,
+          "profit_cagr": 0.4514587018501838,
+          "price_present_value": 100.0
+        },
+        {
+          "target_date": "2031-12-31",
+          "target_pe": 25,
+          "return_years": 6.0,
+          "profit_growth_years": 6.0,
+          "required_price": 177.1561000000001,
+          "required_profit": 7086.244000000004,
+          "profit_multiple": 7.086244000000004,
+          "profit_cagr": 0.3859131548843606,
+          "price_present_value": 100.0
+        },
+        {
+          "target_date": "2032-12-31",
+          "target_pe": 25,
+          "return_years": 7.0,
+          "profit_growth_years": 7.0,
+          "required_price": 194.87171000000012,
+          "required_profit": 7794.868400000005,
+          "profit_multiple": 7.794868400000005,
+          "profit_cagr": 0.3409150196249231,
+          "price_present_value": 100.0
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "仅为给定假设的条件反推，不是市场共识、目标价建议或完整DCF。",
+    "期间现金分红未建模；回购/增发仅通过目标股数假设反映。",
+    "延迟情景固定PE、回报率与目标股数，未预测费用、投入及竞争变化。",
+    "本程序只验证输入结构与计算，不验证来源原数；核验标签由输入提供者声明。"
+  ],
+  "calculation_check": "公式计算完成；不代表公司事实或研究质量验收通过"
+}

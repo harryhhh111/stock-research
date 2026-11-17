@@ -1,0 +1,891 @@
+TABLE 0
+
+
+
+TABLE 1
+
+
+
+TABLE 2
+
+
+
+TABLE 3
+
+☒ | QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+
+TABLE 4
+
+☐ | TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+
+TABLE 5
+
+
+
+TABLE 6
+
+
+
+TABLE 7
+
+Delaware | 45-3707650
+(State or other jurisdiction of | incorporation or organization) | (I.R.S. Employer | Identification No.)
+
+155 East Broad Street | , | Suite 300
+Columbus | , | Ohio | 43215
+(Address of principal executive offices) | (Zip Code)
+
+TABLE 8
+
+
+
+TABLE 9
+
+Title of each class | Trading Symbol(s) | Name of each exchange on which registered
+Common Stock, | $0.01 par value per share | IBP | The New York Stock Exchange
+
+TABLE 10
+
+Large accelerated filer | ☒ | Accelerated filer | ☐
+
+Non-accelerated filer | ☐ | Smaller reporting company | ☐
+
+Emerging growth company | ☐
+
+TABLE 11
+
+
+
+TABLE 12
+
+
+PART I – FINANCIAL INFORMATION | 1
+Item 1. Financial Statements | 1
+Item 2. Management’s Discussion and Analysis of Financial Condition and Results of Operations | 28
+Item 3. Quantitative and Qualitative Disclosures About Market Risk | 37
+Item 4. Controls and Procedures | 37
+PART II – OTHER INFORMATION | 38
+Item 1. Legal Proceedings | 38
+Item 1A. Risk Factors | 38
+Item 2. Unregistered Sales of Equity Securities and Use of Proceeds | 38
+Item 3. Defaults Upon Senior Securities | 38
+Item 4. Mine Safety Disclosures | 38
+Item 5. Other Information | 38
+Item 6. Exhibits | 39
+SIGNATURES | 40
+
+TABLE 13
+
+September 30, | December 31,
+2026 | 2025
+ASSETS
+Current assets
+Cash and cash equivalents | $ | 415.9 | $ | 321.9
+
+Accounts receivable (less allowance for credit losses of $ | 16.4 | and $ | 13.9 | at September 30, 2026 and December 31, 2025, respectively) | 485.2 | 444.1
+Inventories | 223.9 | 203.0
+Prepaid expenses and other current assets | 69.3 | 73.6
+Total current assets | 1,194.3 | 1,042.6
+Property and equipment, net | 196.0 | 183.3
+Operating lease right-of-use assets | 120.0 | 98.7
+Goodwill | 475.6 | 450.4
+Customer relationships, net | 174.8 | 172.2
+Other intangibles, net | 92.6 | 89.3
+Other non-current assets | 47.6 | 31.5
+Total assets | $ | 2,300.9 | $ | 2,068.0
+LIABILITIES AND STOCKHOLDERS' EQUITY
+Current liabilities
+Current maturities of long-term debt | $ | 33.7 | $ | 36.6
+Current maturities of operating lease obligations | 39.7 | 37.0
+Current maturities of finance lease obligations | 4.0 | 2.7
+Accounts payable | 141.3 | 119.0
+Accrued compensation | 78.2 | 69.5
+Other current liabilities | 85.8 | 79.4
+Total current liabilities | 382.7 | 344.2
+Long-term debt | 1,019.7 | 850.0
+Operating lease obligations | 84.9 | 61.4
+Finance lease obligations | 6.8 | 4.0
+Deferred income taxes | 25.5 | 24.7
+Other long-term liabilities | 85.0 | 73.8
+Total liabilities | 1,604.6 | 1,358.1
+Commitments and contingencies (Note 16)
+Stockholders’ equity
+Preferred stock; $ | 0.01 | par value: | 5,000,000 | authorized and | 0 | shares issued and outstanding at September 30, 2026 and December 31, 2025, respectively | — | —
+Common stock; $ | 0.01 | par value: | 100,000,000 | authorized, | 33,942,327 | and | 33,837,379 | issued and | 26,578,484 | and | 26,975,227 | shares outstanding at September 30, 2026 and December 31, 2025, respectively | 0.3 | 0.3
+Additional paid in capital | 303.2 | 284.1
+Retained earnings | 1,122.6 | 1,043.4
+Treasury stock; at cost: | 7,363,843 | and | 6,862,152 | shares at September 30, 2026 and December 31, 2025, respectively | ( | 755.9 | ) | ( | 640.0 | )
+Accumulated other comprehensive income | 26.1 | 22.1
+Total stockholders’ equity | 696.3 | 709.9
+Total liabilities and stockholders’ equity | $ | 2,300.9 | $ | 2,068.0
+
+TABLE 14
+
+Three months ended September 30, | Nine months ended September 30,
+2026 | 2025 | 2026 | 2025
+Net revenue | $ | 808.4 | $ | 778.2 | $ | 2,246.7 | $ | 2,223.3
+Cost of sales | 551.0 | 514.0 | 1,518.1 | 1,475.5
+Gross profit | 257.4 | 264.2 | 728.6 | 747.8
+Operating expenses
+Selling | 37.3 | 36.2 | 107.9 | 107.3
+Administrative | 117.6 | 111.1 | 345.0 | 332.6
+
+Amortization | 10.8 | 10.1 | 31.8 | 30.3
+
+Operating income | 91.7 | 106.8 | 243.9 | 277.6
+Other expense, net
+Interest expense, net | 10.4 | 6.9 | 31.2 | 23.5
+Other expense (income) | 0.1 | ( | 0.4 | ) | ( | 0.7 | ) | ( | 0.9 | )
+Income before income taxes | 81.2 | 100.3 | 213.4 | 255.0
+Income tax provision | 21.8 | 25.9 | 54.3 | 66.2
+Net income | $ | 59.4 | $ | 74.4 | $ | 159.1 | $ | 188.8
+
+Other comprehensive income (loss), net of tax:
+Net change on cash flow hedges, net of tax (provision) benefit of $( | 0.9 | ) and $ | 0.7 | for the three months ended September 30, 2026 and 2025, respectively, $( | 1.4 | ) and $ | 3.9 | for the nine months ended September 30, 2026 and 2025, respectively. | 2.7 | ( | 2.2 | ) | 4.0 | ( | 11.6 | )
+Comprehensive income | $ | 62.1 | $ | 72.2 | $ | 163.1 | $ | 177.2
+
+Earnings per share:
+Basic | $ | 2.25 | $ | 2.75 | $ | 5.98 | $ | 6.92
+Diluted | $ | 2.24 | $ | 2.74 | $ | 5.95 | $ | 6.89
+Weighted average shares outstanding:
+Basic | 26,445,605 | 27,070,368 | 26,624,984 | 27,302,784
+Diluted | 26,505,382 | 27,171,749 | 26,726,085 | 27,422,926
+
+Cash dividends declared per share | $ | 0.39 | $ | 0.37 | $ | 2.97 | $ | 2.81
+
+TABLE 15
+
+
+
+TABLE 16
+
+Common Stock | Additional | Paid In | Capital | Retained | Earnings | Treasury Stock | Accumulated Other Comprehensive Income | Stockholders’ | Equity
+Shares | Amount | Shares | Amount
+BALANCE - July 1, 2025 | 33,835,259 | $ | 0.3 | $ | 275.4 | $ | 912.5 | ( | 6,508,388 | ) | $ | ( | 549.3 | ) | $ | 25.6 | $ | 664.5
+Net income | 74.4 | 74.4
+Issuance of common stock awards to employees | 2,098 | — | — | —
+Surrender of common stock awards | ( | 3,580 | ) | ( | 0.7 | ) | ( | 0.7 | )
+Share-based compensation expense | 4.4 | 4.4
+
+Share-based compensation issued to directors | 0.3 | 0.3
+
+Dividends declared ($ | 0.37 | per share) | ( | 10.1 | ) | ( | 10.1 | )
+Common stock repurchase, inclusive of excise tax obligation | ( | 200,000 | ) | ( | 52.0 | ) | ( | 52.0 | )
+Other comprehensive loss, net of tax | ( | 2.2 | ) | ( | 2.2 | )
+BALANCE - September 30, 2025 | 33,837,357 | $ | 0.3 | $ | 280.1 | $ | 976.8 | ( | 6,711,968 | ) | $ | ( | 602.0 | ) | $ | 23.4 | $ | 678.6
+
+Common Stock | Additional | Paid In | Capital | Retained | Earnings | Treasury Stock | Accumulated Other Comprehensive Income | Stockholders’ | Equity
+Shares | Amount | Shares | Amount
+BALANCE - July 1, 2026 | 33,941,274 | $ | 0.3 | $ | 297.8 | $ | 1,073.5 | ( | 7,362,106 | ) | $ | ( | 755.5 | ) | $ | 23.4 | $ | 639.5
+Net income | 59.4 | 59.4
+
+Issuance of common stock awards to employees | 1,053 | — | — | —
+Surrender of common stock awards | ( | 1,737 | ) | ( | 0.4 | ) | ( | 0.4 | )
+Share-based compensation expense | 5.1 | 5.1
+Share-based compensation issued to directors | 0.3 | 0.3
+
+Dividends declared ($ | 0.39 | per share) | ( | 10.3 | ) | ( | 10.3 | )
+
+Other comprehensive income, net of tax | 2.7 | 2.7
+BALANCE - September 30, 2026 | 33,942,327 | $ | 0.3 | $ | 303.2 | $ | 1,122.6 | ( | 7,363,843 | ) | $ | ( | 755.9 | ) | $ | 26.1 | $ | 696.3
+
+TABLE 17
+
+Common Stock | Additional | Paid In | Capital | Retained | Earnings | Treasury Stock | Accumulated Other Comprehensive Income | Stockholders’ | Equity
+Shares | Amount | Shares | Amount
+BALANCE - January 1, 2025 | 33,713,662 | $ | 0.3 | $ | 261.3 | $ | 865.5 | ( | 5,955,171 | ) | $ | ( | 456.8 | ) | $ | 35.0 | $ | 705.3
+Net income | 188.8 | 188.8
+Issuance of common stock awards to employees | 91,467 | — | — | —
+Surrender of common stock awards | ( | 56,797 | ) | ( | 9.1 | ) | ( | 9.1 | )
+Share-based compensation expense | 14.7 | 14.7
+Share-based compensation issued to directors | 5,425 | 0.7 | 0.7
+Issuance of awards previously classified as liability awards | 26,803 | 3.4 | 3.4
+Dividends declared ($ | 2.81 | per share) | ( | 77.5 | ) | ( | 77.5 | )
+Common stock repurchase, inclusive of excise tax obligation | ( | 700,000 | ) | ( | 136.1 | ) | ( | 136.1 | )
+Other comprehensive loss, net of tax | ( | 11.6 | ) | ( | 11.6 | )
+BALANCE - September 30, 2025 | 33,837,357 | $ | 0.3 | $ | 280.1 | $ | 976.8 | ( | 6,711,968 | ) | $ | ( | 602.0 | ) | $ | 23.4 | $ | 678.6
+
+Common Stock | Additional | Paid In | Capital | Retained | Earnings | Treasury Stock | Accumulated Other Comprehensive Income | Stockholders’ | Equity
+Shares | Amount | Shares | Amount
+BALANCE - January 1, 2026 | 33,837,379 | $ | 0.3 | $ | 284.1 | $ | 1,043.4 | ( | 6,862,152 | ) | $ | ( | 640.0 | ) | $ | 22.1 | $ | 709.9
+Net income | 159.1 | 159.1
+Issuance of common stock awards to employees | 85,493 | — | — | —
+Surrender of common stock awards | ( | 45,668 | ) | ( | 13.5 | ) | ( | 13.5 | )
+Share-based compensation expense | 16.5 | 16.5
+Share-based compensation issued to directors | 5,985 | 0.8 | 0.8
+Issuance of awards previously classified as liability awards | 13,470 | 1.8 | 1.8
+Dividends declared ($ | 2.97 | per share) | ( | 79.9 | ) | ( | 79.9 | )
+Common stock repurchase, inclusive of excise tax obligation | ( | 456,023 | ) | ( | 102.4 | ) | ( | 102.4 | )
+Other comprehensive income, net of tax | 4.0 | 4.0
+BALANCE - September 30, 2026 | 33,942,327 | $ | 0.3 | $ | 303.2 | $ | 1,122.6 | ( | 7,363,843 | ) | $ | ( | 755.9 | ) | $ | 26.1 | $ | 696.3
+
+TABLE 18
+
+Nine months ended September 30,
+2026 | 2025
+Cash flows from operating activities
+Net income | $ | 159.1 | $ | 188.8
+Adjustments to reconcile net income to net cash provided by operating activities
+Depreciation and amortization of property and equipment | 53.6 | 49.2
+Amortization of operating lease right-of-use assets | 29.9 | 27.2
+Amortization of intangibles | 31.8 | 30.3
+Amortization of deferred financing costs and debt discount | 1.4 | 1.2
+Provision for credit losses | 6.4 | 6.1
+Write-off of debt issuance costs | 1.2 | —
+
+Gain on sale of property and equipment | ( | 0.2 | ) | ( | 1.1 | )
+Non-cash stock compensation | 17.5 | 16.5
+
+
+Other, net | ( | 5.3 | ) | ( | 9.0 | )
+Changes in assets and liabilities, excluding effects of acquisitions
+Accounts receivable | ( | 42.3 | ) | ( | 17.5 | )
+Inventories | ( | 18.2 | ) | 8.5
+
+Other assets | 0.6 | 16.0
+Accounts payable | 19.9 | ( | 9.1 | )
+Income taxes receivable/payable | 3.9 | 4.8
+Other liabilities | ( | 13.4 | ) | ( | 5.4 | )
+Net cash provided by operating activities | 245.9 | 306.5
+Cash flows from investing activities
+
+
+Purchases of property and equipment | ( | 50.0 | ) | ( | 55.0 | )
+Acquisitions of businesses, net of cash acquired of $ | — | in 2026 and 2025, respectively | ( | 63.2 | ) | ( | 32.3 | )
+Proceeds from sale of property and equipment | 1.6 | 1.9
+Settlements with interest rate swap counterparties | — | 10.4
+Other | ( | 2.6 | ) | ( | 5.4 | )
+Net cash used in investing activities | $ | ( | 114.2 | ) | $ | ( | 80.4 | )
+
+TABLE 19
+
+
+
+Nine months ended September 30,
+2026 | 2025
+Cash flows from financing activities
+Proceeds from Senior Notes | $ | 500.0 | $ | —
+Payments on Senior Notes | ( | 300.0 | ) | —
+Payments on Term Loan | ( | 3.8 | ) | ( | 3.8 | )
+Proceeds from vehicle and equipment notes payable | — | 31.6
+Debt issuance costs | ( | 9.1 | ) | —
+Principal payments on long-term debt | ( | 24.5 | ) | ( | 22.7 | )
+Principal payments on finance lease obligations | ( | 3.1 | ) | ( | 2.2 | )
+Dividends paid | ( | 80.1 | ) | ( | 77.7 | )
+Acquisition-related obligations | ( | 1.9 | ) | ( | 1.6 | )
+Repurchase of common stock | ( | 101.7 | ) | ( | 134.9 | )
+Surrender of common stock awards by employees | ( | 13.5 | ) | ( | 9.1 | )
+Net cash used in financing activities | ( | 37.7 | ) | ( | 220.4 | )
+Net change in cash and cash equivalents | 94.0 | 5.7
+Cash and cash equivalents at beginning of period | 321.9 | 327.6
+Cash and cash equivalents at end of period | $ | 415.9 | $ | 333.3
+Supplemental disclosures of cash flow information
+Net cash paid during the period for:
+Interest | $ | 47.1 | $ | 34.9
+Income taxes, net of refunds | (1) | 50.7 | 57.7
+Supplemental disclosures of non-cash activities
+Right-of-use assets and leasehold improvements obtained in exchange for operating lease obligations | $ | 56.1 | $ | 29.8
+
+Property and equipment obtained in exchange for finance lease obligations | 7.1 | 0.6
+Seller obligations in connection with acquisition of businesses | 7.2 | 3.7
+Unpaid purchases of property and equipment included in accounts payable | 3.0 | 4.7
+Accrued excise tax on common stock repurchases | 0.8 | 1.2
+
+TABLE 20
+
+Standard | Description | Effective Date | Effect on the financial statements or other significant matters
+ASU 2024-03 "Income Statement-Reporting Comprehensive Income-Expense Disaggregation Disclosures" (Subtopic 220-40): Disaggregation of Income Statement Expenses. | This pronouncement amends Topic 220 to require all entities to disclose on an interim and annual basis disaggregated information about certain income statement costs and expenses in the notes to financial statements. | Effective for annual periods beginning after December 15, 2026, and interim periods beginning after December 15, 2027. Early adoption is permitted. | The Company will adopt and apply the guidance as prescribed by this ASU to income statement expenses that occur after the effective date. We are currently assessing the impact of the adoption on our consolidated financial information and disclosures.
+ASU 2025-06 “Intangibles-Goodwill and Other Internal-Use Software” (Subtopic 350-40): Targeted Improvements to the Accounting for Internal-Use Software. | This pronouncement amends Topic 350 to increase the operability of the recognition guidance considering different methods of software development. | Effective for annual periods beginning after December 15, 2027, and interim periods within those annual reporting periods. Early adoption is permitted. | The Company will adopt and apply the guidance as prescribed by this ASU to internal-use software costs that occur after the effective date. We are currently reviewing the impact of the adoption on our consolidated financial information.
+ASU 2025-09 “Derivatives and Hedging” (Topic 815): Hedge Accounting Improvements. | This pronouncement introduces targeted improvements to more closely align hedge accounting with the economics of an entity's risk management activities. | Effective for annual reporting periods beginning after December 15, 2026, and interim periods within those annual reporting periods. Early adoption is permitted. | The Company will adopt and apply the guidance as prescribed by this ASU to derivatives and hedge accounting that occur after the effective date. We are currently assessing the impact of the adoption on our consolidated financial statements and related disclosures.
+ASU 2025-11 “Interim Reporting” (Topic 270): Narrow-Scope Improvements. | This pronouncement amends Topic 270 to provide additional guidance on what disclosures should be provided in interim reporting periods and adds a principle that requires entities to disclose events since the end of the last annual reporting period that have a material impact on the entity. | Effective for interim reporting periods within annual reporting periods beginning after December 15, 2027. This ASU can be applied either prospectively or retrospectively to any or all prior periods presented in the financial statements. Early adoption is permitted. | The Company will adopt and apply the guidance as prescribed by this ASU to interim reporting that occurs after the effective date. We do not expect this to materially affect our consolidated financial statements and related disclosures.
+ASU 2026-02 “Environmental Credits and Environmental Credit Obligations” (Topic 818). | This pronouncement amends Topic 818 to improve the financial accounting for and disclosure of environmental credits and environmental credit obligations. The ASU provides guidance on the recognition, measurement, presentation, and disclosure of environmental credits and related obligations. | Effective for annual reporting periods beginning after December 15, 2027, and interim reporting periods within those annual reporting periods. This ASU requires adoption on a retrospective basis through a cumulative-effect adjustment to the opening balance of retained earnings. Early adoption is permitted. | The Company will adopt and apply the guidance as prescribed by this ASU to environmental credits recognized after the effective date. We are currently evaluating the impact of the accounting standards on our consolidated financial statements and related disclosures.
+
+TABLE 21
+
+Three months ended September 30, | Nine months ended September 30,
+2026 | 2025 | 2026 | 2025
+Installation:
+Residential new construction | $ | 535.5 | 67 | % | $ | 540.3 | 70 | % | $ | 1,501.4 | 67 | % | $ | 1,583.5 | 71 | %
+Repair and remodel | 48.4 | 6 | % | 46.1 | 6 | % | 136.6 | 6 | % | 131.7 | 6 | %
+Commercial | 156.5 | 19 | % | 134.7 | 17 | % | 422.9 | 19 | % | 368.7 | 17 | %
+Net revenue, Installation | $ | 740.4 | 92 | % | $ | 721.1 | 93 | % | $ | 2,060.9 | 92 | % | $ | 2,083.9 | 94 | %
+
+Other | 68.0 | 8 | % | 57.1 | 7 | % | 185.8 | 8 | % | 139.4 | 6 | %
+Net revenue, as reported | $ | 808.4 | 100 | % | $ | 778.2 | 100 | % | $ | 2,246.7 | 100 | % | $ | 2,223.3 | 100 | %
+
+TABLE 22
+
+Three months ended September 30, | Nine months ended September 30,
+2026 | 2025 | 2026 | 2025
+Installation:
+Insulation | $ | 434.6 | 54 | % | $ | 440.3 | 57 | % | $ | 1,241.6 | 56 | % | $ | 1,301.3 | 59 | %
+Shower doors, shelving and mirrors | 58.5 | 7 | % | 57.3 | 7 | % | 161.8 | 7 | % | 165.3 | 7 | %
+Waterproofing | 50.7 | 6 | % | 43.6 | 6 | % | 134.3 | 6 | % | 118.5 | 5 | %
+Garage doors | 45.4 | 6 | % | 44.5 | 6 | % | 127.3 | 6 | % | 131.1 | 6 | %
+Fireproofing/firestopping | 38.0 | 5 | % | 31.3 | 4 | % | 100.9 | 4 | % | 79.0 | 4 | %
+Rain gutters | 40.9 | 5 | % | 35.2 | 4 | % | 98.8 | 4 | % | 93.6 | 4 | %
+Window blinds | 19.3 | 2 | % | 20.5 | 3 | % | 54.3 | 3 | % | 58.6 | 3 | %
+Other building products | 53.0 | 7 | % | 48.4 | 6 | % | 141.9 | 6 | % | 136.5 | 6 | %
+Net revenue, Installation | $ | 740.4 | 92 | % | $ | 721.1 | 93 | % | $ | 2,060.9 | 92 | % | $ | 2,083.9 | 94 | %
+Other | 68.0 | 8 | % | 57.1 | 7 | % | 185.8 | 8 | % | 139.4 | 6 | %
+Net revenue, as reported | $ | 808.4 | 100 | % | $ | 778.2 | 100 | % | $ | 2,246.7 | 100 | % | $ | 2,223.3 | 100 | %
+
+TABLE 23
+
+September 30, 2026 | December 31, 2025
+Contract assets | $ | 34.0 | $ | 27.3
+Contract liabilities | ( | 22.5 | ) | ( | 20.5 | )
+
+TABLE 24
+
+September 30, 2026 | December 31, 2025
+Costs incurred on uncompleted contracts | $ | 248.5 | $ | 213.7
+Estimated earnings | 196.8 | 158.5
+Total | 445.3 | 372.2
+Less: Billings to date | 422.7 | 355.5
+Net under billings | $ | 22.6 | $ | 16.7
+
+TABLE 25
+
+September 30, 2026 | December 31, 2025
+Costs and estimated earnings in excess of billings on uncompleted contracts (contract assets) | $ | 34.0 | $ | 27.3
+Billings in excess of costs and estimated earnings on uncompleted contracts (contract liabilities) | ( | 11.4 | ) | ( | 10.6 | )
+Net under billings | $ | 22.6 | $ | 16.7
+
+TABLE 26
+
+Balance as of January 1, 2026 | $ | 13.9
+Current period provision | 6.4
+Recoveries collected and additions | 0.2
+Amounts written off | ( | 4.1 | )
+Balance as of September 30, 2026 | $ | 16.4
+
+TABLE 27
+
+Installation | Other | Consolidated
+Goodwill (gross) - January 1, 2026 | $ | 409.7 | $ | 110.7 | $ | 520.4
+Business combinations | 24.5 | — | 24.5
+Other adjustments | 0.7 | 0.0 | 0.7
+Goodwill (gross) - September 30, 2026 | 434.9 | 110.7 | 545.6
+Accumulated impairment losses | ( | 70.0 | ) | — | ( | 70.0 | )
+Goodwill (net) - September 30, 2026 | $ | 364.9 | $ | 110.7 | $ | 475.6
+
+
+TABLE 28
+
+As of September 30, | As of December 31,
+2026 | 2025
+Gross | Carrying | Amount | Accumulated | Amortization | Net | Book | Value | Gross | Carrying | Amount | Accumulated | Amortization | Net | Book | Value
+Amortized intangibles:
+Customer relationships | $ | 431.5 | $ | 256.7 | $ | 174.8 | $ | 407.8 | $ | 235.6 | $ | 172.2
+Covenants not-to-compete | 37.4 | 32.6 | 4.8 | 36.0 | 30.5 | 5.5
+Trademarks, tradenames and other | 158.5 | 71.9 | 86.6 | 148.0 | 64.7 | 83.3
+Backlog | 24.3 | 23.1 | 1.2 | 22.4 | 21.9 | 0.5
+Total intangibles | $ | 651.7 | $ | 384.3 | $ | 267.4 | $ | 614.2 | $ | 352.7 | $ | 261.5
+
+TABLE 29
+
+Remainder of 2026 | $ | 10.3
+2027 | 37.7
+2028 | 33.0
+2029 | 30.1
+2030 | 28.8
+Thereafter | 127.5
+
+TABLE 30
+
+As of September 30, | As of December 31,
+2026 | 2025
+2028 Senior Notes, net of unamortized debt issuance costs of $ | — | and $ | 1.2 | , respectively | $ | — | $ | 298.8
+2034 Senior Notes, net of unamortized debt issuance costs of $ | 6.9 | and $ | — | , respectively | 493.1 | —
+Term loan, net of unamortized debt issuance costs of $ | 2.7 | and $ | 3.1 | , respectively | 484.8 | 488.1
+Vehicle and equipment notes, maturing through November 2030; payable in various monthly installments, including interest rates ranging from | 1.9 | % to | 7.3 | % | 74.2 | 98.5
+Various notes payable, maturing through October 2028; payable in various annual installments, including interest rates at | 5.0 | % | 1.3 | 1.2
+1,053.4 | 886.6
+Less: current maturities | ( | 33.7 | ) | ( | 36.6 | )
+Long-term debt, less current maturities | $ | 1,019.7 | $ | 850.0
+
+TABLE 31
+
+Remainder of 2026 | $ | 9.0
+2027 | 32.4
+2028 | 25.7
+2029 | 18.4
+2030 | 11.2
+Thereafter | 966.3
+
+TABLE 32
+
+As of September 30, | As of December 31,
+Classification | 2026 | 2025
+Assets
+Non-Current
+Operating | Operating lease right-of-use assets | $ | 120.0 | $ | 98.7
+Finance | Property and equipment, net | 10.7 | 6.7
+Total lease assets | $ | 130.7 | $ | 105.4
+Liabilities
+Current
+Operating | Current maturities of operating lease obligations | $ | 39.7 | $ | 37.0
+Financing | Current maturities of finance lease obligations | 4.0 | 2.7
+Non-Current
+Operating | Operating lease obligations | 84.9 | 61.4
+Financing | Finance lease obligations | 6.8 | 4.0
+Total lease liabilities | $ | 135.4 | $ | 105.1
+
+Weighted-average remaining lease term:
+Operating leases | 4.2 | years | 3.6 | years
+Finance leases | 3.3 | years | 2.7 | years
+Weighted-average discount rate:
+Operating leases | 5.57 | % | 5.55 | %
+Finance leases | 6.59 | % | 7.78 | %
+
+TABLE 33
+
+Three months ended September 30, | Nine months ended September 30,
+Classification | 2026 | 2025 | 2026 | 2025
+Operating lease cost | (1) | Administrative | $ | 14.3 | $ | 12.7 | $ | 41.4 | $ | 37.5
+Finance lease cost:
+Amortization of leased assets | (2) | Cost of sales | 1.2 | 0.8 | 3.4 | 2.7
+Interest on finance lease obligations | Interest expense, net | 0.2 | 0.1 | 0.5 | 0.4
+Total lease costs | $ | 15.7 | $ | 13.6 | $ | 45.3 | $ | 40.6
+
+TABLE 34
+
+Three months ended September 30, | Nine months ended September 30,
+2026 | 2025 | 2026 | 2025
+Cash paid for amounts included in the measurement of lease liabilities:
+Operating cash flows for operating leases | $ | 14.2 | $ | 10.6 | $ | 33.7 | $ | 31.2
+Operating cash flows for finance leases | 0.2 | 0.1 | 0.5 | 0.4
+Financing cash flows for finance leases | 1.2 | 0.8 | 3.1 | 2.2
+
+TABLE 35
+
+Finance Leases | Operating Leases
+Related Party | Other | Total Operating
+Remainder of 2026 | $ | 1.2 | $ | 0.5 | $ | 11.4 | $ | 11.9
+2027 | 4.2 | 1.6 | 41.9 | 43.5
+2028 | 2.8 | 1.5 | 31.0 | 32.5
+2029 | 1.8 | 1.6 | 19.8 | 21.4
+2030 | 1.6 | 1.6 | 10.4 | 12.0
+Thereafter | 0.4 | 9.3 | 9.9 | 19.2
+Total minimum lease payments | 12.0 | $ | 16.1 | $ | 124.4 | 140.5
+
+Less: Amounts representing interest | ( | 1.2 | ) | ( | 15.9 | )
+Present value of future minimum lease payments | 10.8 | 124.6
+Less: Current obligation under leases | ( | 4.0 | ) | ( | 39.7 | )
+Long-term lease obligations | $ | 6.8 | $ | 84.9
+
+TABLE 36
+
+As of September 30, 2026 | As of December 31, 2025
+Total | Level 1 | Level 2 | Level 3 | Total | Level 1 | Level 2 | Level 3
+Financial assets:
+Money market funds | $ | 370.6 | $ | 370.6 | $ | — | $ | — | $ | 278.8 | $ | 278.8 | $ | — | $ | —
+Derivative financial instruments | 13.7 | — | 13.7 | — | 2.9 | — | 2.9 | —
+Total financial assets | $ | 384.3 | $ | 370.6 | $ | 13.7 | $ | — | $ | 281.7 | $ | 278.8 | $ | 2.9 | $ | —
+Financial liabilities:
+Contingent consideration | $ | 3.4 | $ | — | $ | — | $ | 3.4 | $ | — | $ | — | $ | — | $ | —
+
+
+
+TABLE 37
+
+Contingent consideration liability - January 1, 2026 | $ | —
+Preliminary purchase price | 4.0
+Fair value adjustments | ( | 0.8 | )
+Accretion in value | 0.2
+
+
+
+Contingent consideration liability - September 30, 2026 | $ | 3.4
+
+TABLE 38
+
+As of September 30, 2026 | As of December 31, 2025
+Carrying Value | Fair Value | Carrying Value | Fair Value
+
+2028 Senior Notes | (1) | $ | — | $ | — | $ | 300.0 | $ | 300.4
+2034 Senior Notes | (1) | 500.0 | 466.2 | — | —
+
+TABLE 39
+
+Three months ended September 30, | Nine months ended September 30,
+2026 | 2025 | 2026 | 2025
+Installation segment revenue | $ | 740.4 | $ | 721.1 | $ | 2,060.9 | $ | 2,083.9
+Installation segment cost of sales | (1) | 481.1 | 455.2 | 1,325.8 | 1,323.0
+Installation segment gross profit | $ | 259.3 | $ | 265.9 | $ | 735.1 | $ | 760.9
+Installation segment gross profit percentage | (1) | 35.0 | % | 36.9 | % | 35.7 | % | 36.5 | %
+Other gross profit percentage | (1) | 23.1 | % | 25.2 | % | 24.5 | % | 24.6 | %
+Total consolidated gross profit percentage, as reported | 31.8 | % | 34.0 | % | 32.4 | % | 33.6 | %
+
+TABLE 40
+
+Three months ended September 30, | Nine months ended September 30,
+2026 | 2025 | 2026 | 2025
+Reconciliation of revenue:
+Installation segment revenue | $ | 740.4 | $ | 721.1 | $ | 2,060.9 | $ | 2,083.9
+Other revenue | (1) | 92.5 | 73.3 | 251.1 | 173.9
+Elimination of inter-segment revenue | ( | 24.5 | ) | ( | 16.2 | ) | ( | 65.3 | ) | ( | 34.5 | )
+Total consolidated net revenue | $ | 808.4 | $ | 778.2 | $ | 2,246.7 | $ | 2,223.3
+Reconciliation of segment gross profit:
+Installation segment gross profit | $ | 259.3 | $ | 265.9 | $ | 735.1 | $ | 760.9
+Other gross profit | (1) | 21.5 | 18.4 | 61.5 | 42.7
+Elimination of inter-segment gross profit | ( | 6.6 | ) | ( | 4.8 | ) | ( | 18.4 | ) | ( | 10.1 | )
+Less:
+Depreciation and amortization | 16.8 | 15.3 | 49.6 | 45.7
+Total consolidated gross profit, as reported | 257.4 | 264.2 | 728.6 | 747.8
+Operating expenses | 165.7 | 157.4 | 484.7 | 470.2
+Operating income | 91.7 | 106.8 | 243.9 | 277.6
+Other expense, net | 10.5 | 6.5 | 30.5 | 22.6
+Income before income taxes | $ | 81.2 | $ | 100.3 | $ | 213.4 | $ | 255.0
+
+TABLE 41
+
+Effective Date | Notional Amount | Fixed Rate | Maturity Date
+
+
+
+December 31, 2025 | $ | 300.0 | 3.06 | % | December 14, 2028
+December 31, 2025 | 100.0 | 2.93 | % | December 14, 2028
+
+TABLE 42
+
+Three months ended September 30, | Nine months ended September 30,
+2026 | 2025 | 2026 | 2025
+Benefit associated with swap net settlements | $ | ( | 0.6 | ) | $ | ( | 3.5 | ) | $ | ( | 1.9 | ) | $ | ( | 10.4 | )
+(Benefit) expense associated with amortization of amended/terminated swaps | ( | 1.8 | ) | 0.1 | ( | 5.3 | ) | 1.4
+
+TABLE 43
+
+Three months ended September 30, | Nine months ended September 30,
+2026 | 2025 | 2026 | 2025
+Accumulated gain at beginning of period | $ | 23.4 | $ | 25.6 | $ | 22.1 | $ | 35.0
+Unrealized gain (loss) in fair value of interest rate derivatives | 4.0 | ( | 2.2 | ) | 7.9 | ( | 12.6 | )
+Reclassifications of realized net (gains) losses to earnings | ( | 1.3 | ) | — | ( | 3.9 | ) | 1.0
+Accumulated gain at end of period | $ | 26.1 | $ | 23.4 | $ | 26.1 | $ | 23.4
+
+TABLE 44
+
+Declaration Date | Record Date | Payment Date | Dividend Per Share | Amount Declared | Amount Paid
+2/26/2026 | 3/13/2026 | 3/31/2026 | $ | 1.80 | $ | 48.7 | $ | 48.3
+2/26/2026 | 3/13/2026 | 3/31/2026 | 0.39 | 10.5 | 10.4
+5/7/2026 | 6/15/2026 | 6/30/2026 | 0.39 | 10.4 | 10.4
+8/6/2026 | 9/15/2026 | 9/30/2026 | 0.39 | 10.3 | 10.3
+
+TABLE 45
+
+Declaration Date | Record Date | Payment Date | Dividend Per Share | Amount Declared | Amount Paid
+2/27/2025 | 3/14/2025 | 3/31/2025 | $ | 1.70 | $ | 47.1 | $ | 46.7
+2/27/2025 | 3/14/2025 | 3/31/2025 | 0.37 | 10.2 | 10.1
+5/8/2025 | 6/15/2025 | 6/30/2025 | 0.37 | 10.1 | 10.1
+8/7/2025 | 9/15/2025 | 9/30/2025 | 0.37 | 10.1 | 10.0
+
+TABLE 46
+
+September 30, 2026 | December 31, 2025
+Included in other current liabilities | $ | 8.9 | $ | 10.4
+Included in other long-term liabilities | 21.4 | 20.5
+$ | 30.3 | $ | 30.9
+
+TABLE 47
+
+September 30, 2026 | December 31, 2025
+Included in other non-current assets | $ | 4.8 | $ | 4.8
+
+TABLE 48
+
+Common Stock Awards | Performance-Based Stock Awards | Performance-Based Restricted Stock Units
+Awards | Weighted Average Grant Date Fair Value Per Share | Awards | Weighted Average Grant Date Fair Value Per Share | Units | Weighted Average Grant Date Fair Value Per Share
+Nonvested awards/units at December 31, 2025 | 91,788 | $ | 170.70 | 110,586 | $ | 163.30 | 10,876 | $ | 170.37
+Granted | 50,718 | 282.77 | 29,236 | 319.99 | 7,917 | 285.66
+Vested | ( | 69,344 | ) | 189.13 | ( | 50,207 | ) | 142.23 | ( | 10,935 | ) | 171.43
+Forfeited/Cancelled | ( | 1,601 | ) | 213.92 | ( | 139 | ) | 170.99 | ( | 152 | ) | 253.80
+Nonvested awards/units at September 30, 2026 | 71,561 | $ | 231.30 | 89,476 | $ | 226.30 | 7,706 | $ | 285.66
+
+TABLE 49
+
+Three months ended September 30, | Nine months ended September 30,
+2026 | 2025 | 2026 | 2025
+Common Stock Awards | $ | 2.6 | $ | 2.1 | $ | 8.9 | $ | 7.7
+Non-Employee Common Stock Awards | 0.3 | 0.3 | 0.8 | 0.7
+Performance-Based Stock Awards | 1.9 | 1.8 | 6.0 | 5.6
+Liability Performance-Based Stock Awards | 0.2 | 0.6 | 0.3 | 1.1
+Performance-Based Restricted Stock Units | 0.6 | 0.5 | 1.5 | 1.4
+$ | 5.6 | $ | 5.3 | $ | 17.5 | $ | 16.5
+
+TABLE 50
+
+Three months ended September 30, | Nine months ended September 30,
+2026 | 2025 | 2026 | 2025
+Cost of sales | $ | 0.4 | $ | 0.3 | $ | 1.0 | $ | 0.8
+Selling | 0.1 | 0.1 | 0.5 | 0.4
+Administrative | 5.1 | 4.9 | 16.0 | 15.3
+$ | 5.6 | $ | 5.3 | $ | 17.5 | $ | 16.5
+
+TABLE 51
+
+As of September 30, 2026
+Unrecognized | Compensation Expense | on Unvested Awards | Weighted Average | Remaining | Vesting Period
+Common Stock Awards | $ | 12.1 | 2.0 | years
+Performance-Based Stock Awards | 10.5 | 1.8 | years
+Performance-Based Restricted Stock Units | 1.1 | 0.5 | years
+Total unrecognized compensation expense related to unvested awards | $ | 23.7
+
+TABLE 52
+
+Three months ended September 30, | Nine months ended September 30,
+2026 | 2025 | 2026 | 2025
+Sales | $ | 7.9 | $ | 7.0 | $ | 19.7 | $ | 18.3
+Purchases | 1.2 | 1.0 | 3.0 | 2.7
+Rent | 0.4 | 0.3 | 1.2 | 0.9
+
+TABLE 53
+
+September 30, 2026 | December 31, 2025
+Accounts receivable from related parties | $ | 1.0 | $ | 1.6
+
+
+TABLE 54
+
+September 30, 2026 | December 31, 2025
+Included in other current liabilities | $ | 11.9 | $ | 12.2
+Included in other long-term liabilities | 38.4 | 31.1
+$ | 50.3 | $ | 43.3
+
+TABLE 55
+
+September 30, 2026 | December 31, 2025
+Insurance receivables and indemnification assets for claims under fully insured policies | $ | 4.5 | $ | 3.8
+Insurance receivables for claims that exceeded the stop loss limit | 6.6 | 1.6
+Total insurance receivables and indemnification assets included in other non-current assets | $ | 11.1 | $ | 5.4
+
+TABLE 56
+
+Three months ended September 30, 2026 | Nine months ended September 30, 2026
+2026 Acquisitions | Date | Acquisition Type | Cash Paid | Seller | Obligations | Total Purchase Price | Revenue | Net Income (Loss) | Revenue | Net Income (Loss)
+Thermo-Tech | 2/2/2026 | Asset | $ | 18.0 | $ | 1.5 | $ | 19.5 | $ | 4.0 | $ | 0.3 | $ | 9.0 | $ | 0.1
+Diamond Energy | 5/17/2026 | Stock | 19.0 | 1.9 | 20.9 | 2.7 | ( | 0.2 | ) | 3.7 | ( | 0.4 | )
+Other | Various | Asset | 26.2 | 3.7 | 29.9 | 7.3 | ( | 0.2 | ) | 13.2 | ( | 0.3 | )
+$ | 63.2 | $ | 7.1 | $ | 70.3 | $ | 14.0 | $ | ( | 0.1 | ) | $ | 25.9 | $ | ( | 0.6 | )
+
+TABLE 57
+
+Three months ended September 30, 2025 | Nine months ended September 30, 2025
+2025 Acquisitions | Date | Acquisition Type | Cash Paid | Seller | Obligations | Total Purchase Price | Revenue | Net Income (Loss) | Revenue | Net Income
+Carolina Precision Fibers | 9/8/2025 | Asset | $ | 21.0 | $ | 2.0 | $ | 23.0 | $ | 1.9 | $ | 0.2 | $ | 1.9 | $ | 0.2
+Other | Various | Asset | 11.3 | 0.6 | 11.9 | 2.0 | ( | 0.1 | ) | 3.9 | —
+$ | 32.3 | $ | 2.6 | $ | 34.9 | $ | 3.9 | $ | 0.1 | $ | 5.8 | $ | 0.2
+
+TABLE 58
+
+Nine months ended September 30, 2026
+Thermo-Tech | Diamond Energy | Other | Total
+Estimated fair values:
+
+Accounts receivable | $ | 3.0 | $ | 1.8 | $ | 0.3 | $ | 5.1
+Inventories | 0.1 | 0.4 | 2.1 | 2.6
+Other current assets | — | 0.1 | — | 0.1
+Property and equipment | 0.3 | 0.6 | 3.0 | 3.9
+Operating lease right-of-use asset | — | 0.9 | 0.6 | 1.5
+Intangibles | 9.3 | 11.1 | 15.4 | 35.8
+Goodwill | 7.0 | 8.5 | 9.0 | 24.5
+Other non-current assets | 0.3 | 0.2 | 0.0 | 0.5
+Accounts payable and other current liabilities | ( | 0.5 | ) | ( | 2.1 | ) | ( | 0.3 | ) | ( | 2.9 | )
+
+
+
+Other long-term liabilities | — | ( | 0.6 | ) | ( | 0.2 | ) | ( | 0.8 | )
+Fair value of assets acquired and purchase price | 19.5 | 20.9 | 29.9 | 70.3
+Less seller obligations | 1.5 | 1.9 | 3.7 | 7.1
+Cash paid | $ | 18.0 | $ | 19.0 | $ | 26.2 | $ | 63.2
+
+
+TABLE 59
+
+Nine months ended September 30, 2025
+Carolina Precision Fibers | Other | Total
+Estimated fair values:
+
+Accounts receivable | $ | 1.8 | $ | — | $ | 1.8
+Inventories | 1.0 | 0.3 | 1.3
+Other current assets | — | 0.0 | 0.0
+Property and equipment | 3.8 | 0.9 | 4.7
+Operating lease right-of-use asset | 0.6 | 0.2 | 0.8
+Intangibles | 10.1 | 7.1 | 17.2
+Goodwill | 7.0 | 3.6 | 10.6
+Other non-current assets | 0.4 | 0.0 | 0.4
+Accounts payable and other current liabilities | ( | 1.3 | ) | 0.0 | ( | 1.3 | )
+
+
+
+Other long-term liabilities | ( | 0.4 | ) | ( | 0.2 | ) | ( | 0.6 | )
+Fair value of assets acquired and purchase price | 23.0 | 11.9 | 34.9
+Less seller obligations | 2.0 | 0.6 | 2.6
+Cash paid | $ | 21.0 | $ | 11.3 | $ | 32.3
+
+
+TABLE 60
+
+For the nine months ended September 30,
+2026 | 2025
+Acquired intangibles assets | Estimated | Fair Value | Weighted Average Estimated | Useful Life (yrs.) | Estimated | Fair Value | Weighted Average Estimated | Useful Life (yrs.)
+Customer relationships | $ | 22.8 | 12 | $ | 12.3 | 12
+Trademarks, tradenames and other | 9.8 | 15 | 4.0 | 15
+Non-competition agreements | 1.3 | 5 | 0.6 | 5
+Backlog | 1.9 | 1 | 0.3 | 1
+
+TABLE 61
+
+Unaudited pro forma for the three months ended September 30, | Unaudited pro forma for the nine months ended September 30,
+2026 | 2025 | 2026 | 2025
+Net revenue | $ | 811.0 | $ | 805.1 | $ | 2,267.0 | $ | 2,305.4
+Net income | 59.5 | 76.1 | 159.1 | 194.1
+Basic net income per share | 2.25 | 2.81 | 5.97 | 7.11
+Diluted net income per share | 2.24 | 2.80 | 5.95 | 7.08
+
+TABLE 62
+
+Three months ended September 30, | Nine months ended September 30,
+2026 | 2025 | 2026 | 2025
+Period-over-period Growth
+Consolidated Sales Growth | 3.9% | 2.3% | 1.1% | 1.5%
+Consolidated Same Branch Sales Growth | (1) | 0.6% | 0.4% | (1.8)% | (0.9)%
+
+Installation Segment Sales Growth | (2)
+Sales Growth | 2.7% | 1.0% | (1.1)% | 0.8%
+Residential Sales Growth | (0.9)% | (1.5)% | (5.2)% | (0.7)%
+Single-Family Sales Growth | (2.9)% | (0.3)% | (6.1)% | 0.4%
+Multi-Family Sales Growth | 7.7% | (6.4)% | (1.6)% | (4.8)%
+Commercial Sales Growth | 16.2% | 12.2% | 14.7% | 6.8%
+
+Installation Segment Same Branch Sales Growth | (1)(2)
+Same Branch Sales Growth | 0.3% | (0.1)% | (2.9)% | (1.0)%
+Volume, Price/Mix Growth Including Heavy Commercial | (3) | :
+Volume Growth | (4) | (1.7)% | (4.5)% | (5.3)% | (4.4)%
+Price/Mix Growth | (5) | 2.0% | 4.4% | 2.5% | 3.4%
+Volume, Price/Mix Growth Excluding Heavy Commercial | (3) | :
+Volume Growth | (4) | (1.9)% | (4.8)% | (5.6)% | (4.5)%
+Price/Mix Growth | (5) | 0.4% | 1.5% | 0.3% | 1.6%
+Residential Same Branch Sales Growth | (2.6)% | (2.8)% | (6.5)% | (2.8)%
+Single-Family Same Branch Sales Growth | (4.9)% | (1.9)% | (7.7)% | (2.2)%
+Multi-Family Same Branch Sales Growth | 7.5% | (6.5)% | (1.8)% | (5.1)%
+Commercial Same Branch Sales Growth | 10.3% | 11.7% | 10.4% | 6.2%
+
+Other Sales Growth (Net of Eliminations) | (6)(7)
+Sales Growth | 18.9% | 21.9% | 33.2% | 12.3%
+Same Branch Sales Growth | (1) | 4.6% | 8.5% | 14.4% | (0.1)%
+
+U.S. Housing Market Growth | (8)
+Total Completions Growth | (17.2)% | (9.7)% | (12.6)% | (6.7)%
+Single-Family Completions Growth | (12.4)% | 0.7% | (10.8)% | (1.9)%
+Multi-Family Completions Growth | (27.3)% | (25.4)% | (16.3)% | (15.2)%
+
+TABLE 63
+
+(1) | Same-branch basis represents period-over-period change in sales for branch locations owned greater than 12 months as of each financial statement date.
+(2) | Calculated based on period-over-period change in sales within our Installation segment and its end markets.
+
+
+
+
+(3) | The heavy commercial end market, a subset of our total commercial end market, comprises projects that are much larger than our average installation job. As such, per-job revenue is much larger than the average job in all other end markets.
+(4) | Calculated as period-over-period change in the number of completed same-branch jobs within our Installation segment for all markets.
+(5) | Defined as change in the mix of products sold and related pricing changes and calculated as the change in period-over-period average selling price per same-branch jobs within our Installation segment for all markets we serve, multiplied by total current year jobs. The mix of end customer and product would have an impact on the year-over-year price per job.
+(6) | Calculated based on period-over-period gross sales change, excluding intercompany transactions, in our Other category which consists of our Manufacturing and Distribution operating segments.
+(7) | We revised this calculation to exclude certain intercompany sales. Percentages in all periods presented conform to this revised method.
+(8) | U.S. Census Bureau data, as revised.
+
+TABLE 64
+
+Three months ended September 30, | Nine months ended September 30,
+2026 | Change | 2025 | 2026 | Change | 2025
+Net revenue | $ | 808.4 | 3.9 | % | $ | 778.2 | $ | 2,246.7 | 1.1 | % | $ | 2,223.3
+Cost of sales | 551.0 | 7.2 | % | 514.0 | 1,518.1 | 2.9 | % | 1,475.5
+Gross profit | $ | 257.4 | (2.6) | % | $ | 264.2 | $ | 728.6 | (2.6) | % | $ | 747.8
+Gross profit percentage | 31.8 | % | 34.0 | % | 32.4 | % | 33.6 | %
+
+TABLE 65
+
+Three months ended September 30, | Nine months ended September 30,
+2026 | Change | 2025 | 2026 | Change | 2025
+Selling | $ | 37.3 | 3.0 | % | $ | 36.2 | $ | 107.9 | 0.6 | % | $ | 107.3
+Percentage of total net revenue | 4.6 | % | 4.7 | % | 4.8 | % | 4.8 | %
+Administrative | $ | 117.6 | 5.9 | % | $ | 111.1 | $ | 345.0 | 3.7 | % | $ | 332.6
+Percentage of total net revenue | 14.5 | % | 14.3 | % | 15.4 | % | 15.0 | %
+
+
+Amortization | $ | 10.8 | 6.9 | % | $ | 10.1 | $ | 31.8 | 5.0 | % | $ | 30.3
+Percentage of total net revenue | 1.3 | % | 1.3 | % | 1.4 | % | 1.4 | %
+
+TABLE 66
+
+Three months ended September 30, | Nine months ended September 30,
+2026 | Change | 2025 | 2026 | Change | 2025
+Interest expense, net | $ | 10.4 | 50.7 | % | $ | 6.9 | $ | 31.2 | 32.8 | % | $ | 23.5
+Other Expense (income) | 0.1 | (125.0) | % | (0.4) | (0.7) | (22.2) | % | (0.9)
+Total other expense, net | $ | 10.5 | $ | 6.5 | $ | 30.5 | $ | 22.6
+
+TABLE 67
+
+Three months ended September 30, | Nine months ended September 30,
+2026 | 2025 | 2026 | 2025
+Income tax provision | $ | 21.8 | $ | 25.9 | $ | 54.3 | $ | 66.2
+Effective tax rate | 26.8 | % | 25.8 | % | 25.4 | % | 26.0 | %
+
+TABLE 68
+
+Three months ended September 30, | Nine months ended September 30,
+2026 | 2025 | 2026 | 2025
+Net change on cash flow hedges, net of taxes | $ | 2.7 | $ | (2.2) | $ | 4.0 | $ | (11.6)
+
+TABLE 69
+
+Nine months ended September 30,
+2026 | 2025
+Net cash provided by operating activities | $ | 245.9 | $ | 306.5
+Net cash used in investing activities | (114.2) | (80.4)
+Net cash used in financing activities | (37.7) | (220.4)
+
+TABLE 70
+
+As of September 30, 2026
+Performance bonds | $ | 212.7
+Insurance letters of credit and cash collateral | 71.9
+Permit and license bonds | 11.5
+Total bonds and letters of credit | $ | 296.1
+
+TABLE 71
+
+Total Number | of Shares | Purchased | (2) | Average | Price Paid | Per Share | Total Number of Shares Purchased as Part of Publicly Announced Plans or Programs | Approximate Dollar Value of Shares that May Yet Be Purchased under the Plans or Programs | (1)
+July 1 - July 31, 2026 | 78 | $ | 227.86 | — | $ | 398.3 | million
+August 1 - August 31, 2026 | 1,437 | 240.47 | — | 398.3 | million
+September 1 - September 30, 2026 | 56 | 196.38 | — | 398.3 | million
+1,571 | $ | 238.27 | — | $ | 398.3 | million
+
+TABLE 72
+
+Exhibit | Number | Description
+
+31.1* | CEO Certification pursuant to Exchange Act Rule 13a-14(a), as adopted pursuant to Section 302 of the Sarbanes-Oxley Act of 2002.
+
+31.2* | CFO Certification pursuant to Exchange Act Rule 13a-14(a), as adopted pursuant to Section 302 of the Sarbanes-Oxley Act of 2002.
+
+32.1* | CEO Certification pursuant to 18 U.S.C. Section 1350, as adopted pursuant to Section 906 of the Sarbanes-Oxley Act of 2002.
+
+32.2* | CFO Certification pursuant to 18 U.S.C. Section 1350, as adopted pursuant to Section 906 of the Sarbanes-Oxley Act of 2002.
+
+101** | The following financial statements from the Company's Quarterly Report on Form 10-Q for the period ended September 30, 2026, formatted in inline XBRL, include: (i) Condensed Consolidated Balance Sheets, (ii) Condensed Consolidated Statements of Operations and Comprehensive Income, (iii) Condensed Consolidated Statements of Stockholders’ Equity, (iv) Condensed Consolidated Statements of Cash Flows and (v) the Notes to the Condensed Consolidated Financial Statements.
+
+104** | Cover Page Interactive Data File (formatted in Inline XBRL and contained in Exhibit 101).
+
+TABLE 73
+
+INSTALLED BUILDING PRODUCTS, INC.
+
+By: | /s/ Jeffrey W. Edwards
+Jeffrey W. Edwards
+President and Chief Executive Officer
+
+By: | /s/ Michael T. Miller
+Michael T. Miller
+Executive Vice President and Chief Financial Officer

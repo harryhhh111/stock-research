@@ -1,0 +1,23 @@
+{
+  "price_date": "2026-11-13",
+  "price": 523.88,
+  "purpose": "解释原生报告假设，不更新行情或改写原生产物",
+  "rows": [
+    {
+      "eps_start_assumption": 18,
+      "eps_growth_assumption": 0.15,
+      "years": 3,
+      "exit_pe_assumption": 28,
+      "future_price": 766.521,
+      "annual_price_return_ex_dividends": 0.1352654288137669
+    },
+    {
+      "eps_start_assumption": 18,
+      "eps_growth_assumption": 0.15,
+      "years": 3,
+      "exit_pe_assumption": 20,
+      "future_price": 547.5149999999999,
+      "annual_price_return_ex_dividends": 0.014817780089547039
+    }
+  ]
+}

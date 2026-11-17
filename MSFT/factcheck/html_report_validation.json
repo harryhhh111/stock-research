@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-14",
+  "scope": "HTML migration structure, numerical consistency and content preservation",
+  "reading_modules": 9,
+  "original_research_questions_covered": 11,
+  "figures": 11,
+  "inline_sankeys": 3,
+  "tables": 27,
+  "local_links": "passed",
+  "same_input_checks": "passed",
+  "legacy_markdown_kept": {
+    "MSFT.md": "7d1d489d55054f482d3dd643c070b7f1d496e295c404833d7e21fbbb0b13de98",
+    "云服务、数据中心与AI业务.md": "d3ce52ca30b2dd36447221fd8d934f11952e656eedeb516643d1593254349fac",
+    "传统软件与现金流底稿.md": "ef2fffeb8010792d32b6c2e30356bb36fd890c2409343bc6bd52a6631e2e9ad2"
+  },
+  "visual_scope": "browser evidence recorded separately in HTML; print preview not implied"
+}

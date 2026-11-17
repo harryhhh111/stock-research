@@ -1,0 +1,42 @@
+{
+  "FY26_revenue": {
+    "official": 331839,
+    "stockanalysis": 331839,
+    "status": "pass"
+  },
+  "FY26_net_income": {
+    "official": 133749,
+    "stockanalysis": 133749,
+    "status": "pass"
+  },
+  "FY26_cash_ST": {
+    "official": 76843,
+    "stockanalysis": 76843,
+    "status": "pass"
+  },
+  "FY26_CFO": {
+    "official": 182935,
+    "stockanalysis": 182935,
+    "status": "pass"
+  },
+  "FY26_cash_capex": {
+    "official": 115948,
+    "stockanalysis": 115948,
+    "status": "pass"
+  },
+  "Q1_total_debt": {
+    "official_financial_debt": 35481,
+    "finance_leases": 70973,
+    "operating_leases": 27477,
+    "sum_including_leases": 133931,
+    "stockanalysis": 133931,
+    "status": "reconciled"
+  },
+  "Q1_net_cash": {
+    "cash_ST": 64509,
+    "net_cash_ex_leases": 29028,
+    "net_debt_including_leases": 69422,
+    "stockanalysis_net_debt": 69422,
+    "status": "reconciled"
+  }
+}

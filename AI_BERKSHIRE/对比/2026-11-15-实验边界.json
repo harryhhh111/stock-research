@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-15",
+  "user_request": "原生repo研究微软，再与用户SOP对比",
+  "invalid_prior_run": "../微软-AI-Berkshire研究试验-2026-11-15.html",
+  "native_worktree": "/Users/vinci/Documents/stock_research/AI_BERKSHIRE/原生研究",
+  "native_context": "fresh agent fork_turns=none; task explicitly excludes user SOP, prior MSFT reports and mixed-run inputs",
+  "comparison_baselines": {
+    "研究方式.md": "2c32aeed673b324ea3d2af99e1ecb20736747c1358cfb9d562fe0f084e0239e4",
+    "研究流程/研究更新与交付检查清单.md": "95cf58476f92b55ddd7c48d7b447743b4b51717dd5ad4d515a656e4d52ac50e7",
+    "MSFT/MSFT.html": "07c351a13b2fc506416cf2a63cb2f69c0c2895552ab7b4f8bc84ebd58b5ac2e4",
+    "AI_BERKSHIRE/repo/codex-skills/investment-research/SKILL.md": "a0b31e80ae454e6387c7ec853cabcf0ee4d4779f96602eb4a689a5ad9ac1fe17"
+  },
+  "limitations": [
+    "独立单次执行对比，非统计性模型评测",
+    "用户现有报告由多轮研究积累，原生报告为单次运行，时间投入不等",
+    "行情截止日可能不同，数值差异先解释日期和口径，不能直接归因方法优劣",
+    "规则要求与实际执行分别评价，不以某次执行遗漏推断框架必然缺失"
+  ],
+  "native_output": "/Users/vinci/Documents/stock_research/AI_BERKSHIRE/原生研究/微软投资研究报告.md",
+  "native_sha256": "d7d6c3b3f5020b49a050658dc23df1b87aa2e5187730f709e049d3982cfc8194",
+  "baseline_integrity": {
+    "研究方式.md": "unchanged",
+    "研究流程/研究更新与交付检查清单.md": "unchanged",
+    "MSFT/MSFT.html": "unchanged",
+    "AI_BERKSHIRE/repo/codex-skills/investment-research/SKILL.md": "unchanged"
+  },
+  "audit": {
+    "extracted": 118,
+    "sampled": 18,
+    "facts_verified": 13,
+    "calculations_verified": 2,
+    "future_assumptions_skipped": 3,
+    "tool_verdict": "PASS with limitations",
+    "terminal_audit_exit": 0
+  },
+  "relocation": {
+    "date": "2026-11-16",
+    "reason": "原生流程试验不要求沿用repo默认主目录输出；按用户项目目录约定归档",
+    "original_execution_worktree": "/Users/vinci/Documents/ai-berkshire-native",
+    "original_execution_output": "/Users/vinci/微软投资研究报告.md",
+    "report_sha256_unchanged": "d7d6c3b3f5020b49a050658dc23df1b87aa2e5187730f709e049d3982cfc8194"
+  }
+}

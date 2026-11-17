@@ -1,0 +1,34 @@
+[
+  {
+    "filename": "IBP-2026Q3.pdf",
+    "url": "https://investors.installedbuildingproducts.com/static-files/4bdb05b2-6418-42b9-a0bb-063309838992",
+    "status": 403,
+    "pdf_saved": false,
+    "bytes": 464,
+    "retrieved": "2026-11-17"
+  },
+  {
+    "filename": "Census-2026-09.pdf",
+    "url": "https://www.census.gov/construction/nrc/pdf/newresconst.pdf?stream=top",
+    "status": 200,
+    "pdf_saved": true,
+    "bytes": 329096,
+    "retrieved": "2026-11-17"
+  },
+  {
+    "filename": "OC-2026Q3-call.pdf",
+    "url": "https://s21.q4cdn.com/855213745/files/content_files/Owens-Corning_-Q3-2026-Earnings-Call_-Nov-04_-2026.pdf",
+    "status": 200,
+    "pdf_saved": true,
+    "bytes": 416719,
+    "retrieved": "2026-11-17"
+  },
+  {
+    "filename": "QXO-TopBuild-2026-04-20.pdf",
+    "url": "https://s204.q4cdn.com/433193842/files/doc_presentations/2026/Apr/20/QXO-Investor-Presentation-and-Script-BLD-Acquisition-4-20-26.pdf",
+    "status": 200,
+    "pdf_saved": true,
+    "bytes": 616596,
+    "retrieved": "2026-11-17"
+  }
+]

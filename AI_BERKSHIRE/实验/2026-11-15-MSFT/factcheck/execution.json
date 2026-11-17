@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-15",
+  "request": "clone ai-berkshire 并按其流程研究微软，检验研究效果",
+  "repository": "https://github.com/xbtlin/ai-berkshire",
+  "commit": "bea57d5e72aad7def1c34ed5b2b1598039de41cf",
+  "clone": "depth=1, filter=blob:none, sparse: skills codex-skills tools scripts tests",
+  "workflow": "investment-research",
+  "adaptations": [
+    "以当前会话执行Skill，不另启外部模型；不是独立基准测试",
+    "研究报告按工作区要求交付HTML；不写~/微软投资研究报告.md",
+    "九个阅读章节承载原流程分析模块，六维度决策保留",
+    "使用官方披露优先，并以StockAnalysis交叉核验；无法获取来源如实标注",
+    "不使用原仓库已有微软结论，也不读取已有本地微软正文作为分析输入"
+  ],
+  "hashes": {
+    "codex-skills/investment-research/SKILL.md": "a0b31e80ae454e6387c7ec853cabcf0ee4d4779f96602eb4a689a5ad9ac1fe17",
+    "tools/financial_rigor.py": "dee5c9de8c2dd71f1fd1cd7467dda6e5315ffa98132b82ce393b3e3e8c74fce7",
+    "tools/terminal_value.py": "af7fb02a056353556760c92454d9b913f7b1770db545297173fc43871bf0a9f5",
+    "tools/report_audit.py": "8848c1f4db06cd7145c519161d15e895ce14b39a437bd8859b72ba74b94b7e7b"
+  },
+  "comparison_eligibility": "INVALID: blended user SOP into native repo workflow; retained only as historical mixed run"
+}

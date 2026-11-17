@@ -1,0 +1,412 @@
+{
+  "retrieved": "2026-11-15",
+  "unit": "USD millions except EPS and shares millions",
+  "sources": {
+    "annual26": "https://www.microsoft.com/investor/reports/ar26/index.html",
+    "annual24": "https://www.microsoft.com/investor/reports/ar24/index.html",
+    "q1": "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast",
+    "cross": "https://stockanalysis.com/stocks/msft/financials/",
+    "cross_cf": "https://stockanalysis.com/stocks/msft/financials/cash-flow-statement/",
+    "q1_10q": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm"
+  },
+  "years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "annual": {
+    "revenue": [
+      198270,
+      211915,
+      245122,
+      281724,
+      331839
+    ],
+    "gross_profit": [
+      135620,
+      146052,
+      171008,
+      193893,
+      225465
+    ],
+    "operating_income": [
+      83383,
+      88523,
+      109433,
+      128528,
+      155237
+    ],
+    "net_income": [
+      72738,
+      72361,
+      88136,
+      101832,
+      133749
+    ],
+    "CFO": [
+      89035,
+      87582,
+      118548,
+      136162,
+      182935
+    ],
+    "cash_CapEx": [
+      23886,
+      28107,
+      44477,
+      64551,
+      115948
+    ],
+    "FCF": [
+      65149,
+      59475,
+      74071,
+      71611,
+      66987
+    ],
+    "cash_and_short_investments": [
+      104749,
+      111256,
+      75543,
+      94565,
+      76843
+    ],
+    "cash_dividends": [
+      18135,
+      19800,
+      21771,
+      24082,
+      26445
+    ],
+    "cash_repurchases": [
+      32696,
+      22245,
+      17254,
+      18420,
+      22271
+    ],
+    "RD": [
+      24512,
+      27195,
+      29510,
+      32488,
+      35562
+    ]
+  },
+  "quarter": {
+    "periods": [
+      "FY27Q1",
+      "FY26Q1"
+    ],
+    "revenue": [
+      92279,
+      77673
+    ],
+    "gross_profit": [
+      62559,
+      53630
+    ],
+    "operating_income": [
+      45915,
+      37961
+    ],
+    "net_income": [
+      36629,
+      27747
+    ],
+    "adjusted_net_income_ex_openai": [
+      36422,
+      30833
+    ],
+    "diluted_eps": [
+      4.92,
+      3.72
+    ],
+    "adjusted_eps": [
+      4.89,
+      4.13
+    ],
+    "CFO": [
+      58000,
+      45057
+    ],
+    "cash_CapEx": [
+      39367,
+      19394
+    ],
+    "FCF": [
+      18633,
+      25663
+    ],
+    "cash_dividends": [
+      6757,
+      6169
+    ],
+    "cash_repurchases": [
+      4379,
+      5650
+    ]
+  },
+  "balance_20260930": {
+    "cash_and_short_investments": 64509,
+    "debt_ex_leases": 35481,
+    "equity": 470509,
+    "shares_outstanding": 7427
+  },
+  "segments_annual": {
+    "years": [
+      2024,
+      2025,
+      2026
+    ],
+    "productivity_revenue": [
+      106820,
+      120810,
+      139996
+    ],
+    "productivity_op": [
+      59661,
+      69773,
+      83879
+    ],
+    "intelligent_cloud_revenue": [
+      87464,
+      106265,
+      137791
+    ],
+    "intelligent_cloud_op": [
+      37813,
+      44589,
+      56972
+    ],
+    "personal_revenue": [
+      50838,
+      54649,
+      54052
+    ],
+    "personal_op": [
+      11959,
+      14166,
+      14386
+    ]
+  },
+  "segments_quarter": {
+    "periods": [
+      "FY27Q1",
+      "FY26Q1_recast"
+    ],
+    "agents_infra_revenue": [
+      76795,
+      61672
+    ],
+    "agents_infra_op": [
+      40558,
+      32718
+    ],
+    "devices_consumer_revenue": [
+      15484,
+      16001
+    ],
+    "devices_consumer_op": [
+      5357,
+      5243
+    ]
+  },
+  "notes": [
+    "Annual cash_and_short_investments FY22/23 obtained StockAnalysis; all other annual P&L and CF corroborated official ar24/ar26.",
+    "FCF=CFO minus cash additions to PP&E, excludes finance lease principal and cash acquisitions.",
+    "Annual FY26 and historical segment structure differs from FY27Q1 two-segment recast. Do not splice segment time series.",
+    "Annual financial debt ex leases40294, but StockAnalysis total debt128813 includes lease liabilities88519; reconcile rather than treat as inconsistency.",
+    "TTM adjusted net income134375; adjusted EPS18.04 from annual17.28+quarter4.89-prior4.13, rounded.",
+    "Q1 shareholder-return headline10.2bn differs from cash-flow repurchase4379+dividends6757=11.136bn due to equity award tax withholding vs program repurchases; retain cashflow definition."
+  ],
+  "field_sources": {
+    "annual_PL_FY2022_2023": "annual24 Income Statements",
+    "annual_PL_FY2024_2026": "annual26 Income Statements",
+    "annual_CF_FY2022_2023": "annual24 Cash Flows",
+    "annual_CF_FY2024_2026": "annual26 Cash Flows",
+    "annual_cash_FY2022_2023": "cross Cash & Debt",
+    "annual_cash_FY2024": "cross Cash & Debt",
+    "annual_cash_FY2025_2026": "annual26 Balance Sheets and cross",
+    "quarter": "q1 statements",
+    "segments_annual": "annual26 Note18",
+    "segments_quarter": "q1 Segment Results recast",
+    "balance_20260930": "q1 Balance Sheets"
+  },
+  "leases_20260630": {
+    "finance_lease_liabilities": 66594,
+    "operating_lease_liabilities": 21925,
+    "finance_lease_principal_cash_paid_FY2026": 3101,
+    "new_finance_ROU_FY2026": 24608,
+    "not_yet_commenced_lease_commitments": 329100,
+    "commence_fiscal_years": "2027-2033"
+  },
+  "openai_FY2026": {
+    "ownership_percent": 25,
+    "accounting": "equity method, unconsolidated",
+    "revenue_including_revenue_share": 24100,
+    "receivable": 6000,
+    "funding_commitment": 13000,
+    "funded": 11900,
+    "investment_gain_pretax": 6530,
+    "investment_gain_aftertax": 4963
+  },
+  "RPO": {
+    "commercial_20260630": 678000,
+    "total_20260630": 684000,
+    "commercial_weighted_duration_years": 2.3,
+    "next12m_recognition_percent": 30,
+    "commercial_20260930": 677000,
+    "total_20260930": 683000
+  },
+  "commitments_20260630": {
+    "construction": 34566,
+    "purchases": 194060,
+    "purchases_FY2027": 169008,
+    "leases_total_payments_including_uncommenced": 443506,
+    "leases_FY2027": 32411
+  },
+  "gaps": [
+    "管理层持股尚未查proxy；不冒称完成两来源交叉验证。",
+    "FY22-24现金短投目前第三方快照，FY22/23官方历史资产负债页未另取。",
+    "FY26三分部未按FY27两分部全面重述；仅Q1有可比重述。",
+    "FY27Q1 10-Q已通过web原文核验；直接curl被SEC拒绝，mirror文件需检查为可用原文。采购承诺完整表只取得FY26年末，不冒充9月数据。",
+    "最新四季集团PL/CF已补齐；分部按旧三分部/新两分部分表，未取得FY26Q2-Q4新口径全面重述。"
+  ],
+  "leases_20260930": {
+    "finance_lease_liabilities": 70973,
+    "operating_lease_liabilities": 27477,
+    "finance_lease_principal_cash_paid_Q1": 1000,
+    "new_finance_ROU_Q1": 5192,
+    "not_yet_commenced_lease_commitments": 364600,
+    "commence_fiscal_years": "2027-2034",
+    "maturity_fiscal_years": [
+      "FY2027_remaining9m",
+      "FY2028",
+      "FY2029",
+      "FY2030",
+      "FY2031",
+      "thereafter"
+    ],
+    "operating_payments": [
+      5088,
+      5191,
+      4010,
+      3472,
+      3081,
+      12170
+    ],
+    "finance_payments": [
+      6006,
+      8163,
+      7433,
+      7323,
+      7300,
+      59021
+    ],
+    "source": "q1_10q Note12"
+  },
+  "debt_maturities_20260930": {
+    "periods": [
+      "FY2027_remaining9m",
+      "FY2028",
+      "FY2029",
+      "FY2030",
+      "FY2031",
+      "thereafter"
+    ],
+    "principal_payments": [
+      4400,
+      0,
+      1988,
+      0,
+      500,
+      34381
+    ],
+    "total_face_value": 41269,
+    "total_carrying_value": 35481,
+    "source": "q1_10q Note9"
+  },
+  "share_counts": {
+    "years": [
+      2024,
+      2025,
+      2026
+    ],
+    "beginning": [
+      7432,
+      7434,
+      7434
+    ],
+    "issued": [
+      34,
+      31,
+      29
+    ],
+    "repurchased_program": [
+      32,
+      31,
+      36
+    ],
+    "ending": [
+      7434,
+      7434,
+      7427
+    ],
+    "Q1_beginning": 7427,
+    "Q1_ending": 7427,
+    "Q1_program_repurchased": 6,
+    "source": "annual26 Note15 and q1 balance/Note14"
+  },
+  "openai_20260930": {
+    "quarter_revenue_including_share": 10000,
+    "receivable": 7200,
+    "funded_total": 12000,
+    "source": "q1_10q Note1"
+  },
+  "crosscheck_reconciliation": {
+    "FY26_revenue": {
+      "official": 331839,
+      "stockanalysis": 331839,
+      "status": "pass"
+    },
+    "FY26_net_income": {
+      "official": 133749,
+      "stockanalysis": 133749,
+      "status": "pass"
+    },
+    "FY26_cash_ST": {
+      "official": 76843,
+      "stockanalysis": 76843,
+      "status": "pass"
+    },
+    "FY26_CFO": {
+      "official": 182935,
+      "stockanalysis": 182935,
+      "status": "pass"
+    },
+    "FY26_cash_capex": {
+      "official": 115948,
+      "stockanalysis": 115948,
+      "status": "pass"
+    },
+    "Q1_total_debt": {
+      "official_financial_debt": 35481,
+      "finance_leases": 70973,
+      "operating_leases": 27477,
+      "sum_including_leases": 133931,
+      "stockanalysis": 133931,
+      "status": "reconciled"
+    },
+    "Q1_net_cash": {
+      "cash_ST": 64509,
+      "net_cash_ex_leases": 29028,
+      "net_debt_including_leases": 69422,
+      "stockanalysis_net_debt": 69422,
+      "status": "reconciled"
+    }
+  },
+  "recent_quarters_file": "recent_quarters.json"
+}

@@ -1,0 +1,634 @@
+TABLE 0
+
+
+
+TABLE 1
+
+Delaware | 16-1633636
+(State or other jurisdiction of | incorporation or organization) | (I.R.S. Employer | Identification No.)
+
+TABLE 2
+
+Title of each class | Trading Symbol(s) | Name of each exchange on which registered
+Common Stock, par value $0.00001 per share | QXO | New York Stock Exchange
+
+TABLE 3
+
+Large accelerated filer | o | Accelerated filer | o
+Non-accelerated Filer | x | Smaller Reporting Company | x
+Emerging growth company | o
+
+TABLE 4
+
+Page No.
+PART I
+
+Item 1. | Business | 5
+Item 1A. | Risk Factors | 8
+Item 1B. | Unresolved Staff Comments | 16
+Item 1C. | Cybersecurity | 17
+Item 2. | Properties | 18
+Item 3. | Legal Proceedings | 18
+Item 4. | Mine Safety Disclosures | 18
+
+PART II
+
+Item 5. | Market for Registrant’s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities | 19
+Item 6. | Reserved | 19
+Item 7. | Management’s Discussion and Analysis of Financial Condition and Results of Operations | 20
+Item 7A. | Quantitative and Qualitative Disclosures About Market Risk | 24
+Item 8. | Financial Statements and Supplementary Data | 25
+Item 9. | Changes in and Disagreements With Accountants on Accounting and Financial Disclosure | 47
+Item 9A. | Controls and Procedures | 48
+Item 9B. | Other Information | 48
+Item 9C. | Disclosure Regarding Foreign Jurisdictions that Prevent Inspections | 49
+
+PART III
+
+Item 10. | Directors, Executive Officers and Corporate Governance | 49
+Item 11. | Executive Compensation | 49
+Item 12. | Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters | 49
+Item 13. | Certain Relationships and Related Transactions, and Director Independence | 49
+Item 14. | Principal Accounting Fees and Services | 49
+
+PART IV
+
+Item 15. | Exhibits and Financial Statement Schedules | 50
+Item 16. | Form 10-K Summary | 51
+Signatures | 52
+
+TABLE 5
+
+Name | Age | Position
+
+Brad Jacobs | 68 | Chief Executive Officer
+
+Ihsan Essaid | 57 | Chief Financial Officer
+
+Chris Signorello | 51 | Chief Legal Officer
+
+TABLE 6
+
+Use | Location | Square Footage
+Corporate Office | Greenwich, CT | 3,100
+Corporate Office | East Hanover, NJ | 5,129
+Corporate Office | Greensboro, NC | 2,267
+Corporate Office | Sisters, OR | 545
+Corporate Office | Phoenix, AZ | 2,105
+
+TABLE 7
+
+(in thousands, except percentages) | Year | Ende | d
+% of net revenue
+December 31, 2024 | December 31, 2023 | % | Change | December 31, | 2024 | December 31, | 2023
+Consolidated Statements of Operations
+Revenue:
+Software product, net | $ | 15,261 | $ | 14,111 | 8.1 | % | 26.8 | % | 25.9 | %
+Service and other, net | 41,612 | 40,406 | 3.0 | % | 73.2 | % | 74.1 | %
+Total revenue, net | 56,873 | 54,517 | 4.3 | % | 100.0 | % | 100.0 | %
+Cost of revenue:
+Product | 9,434 | 8,513 | 10.8 | % | 16.6 | % | 15.6 | %
+Service and other | 24,507 | 24,390 | 0.5 | % | 43.1 | % | 44.7 | %
+Total cost of revenue | 33,941 | 32,903 | 3.2 | % | 59.7 | % | 60.3 | %
+Operating expenses:
+Selling, general and administrative expenses | 92,943 | 22,097 | 320.6 | % | 163.4 | % | 40.5 | %
+Depreciation and amortization expenses | 989 | 828 | 19.4 | % | 1.7 | % | 1.5 | %
+Total operating expenses | 93,932 | 22,925 | 309.7 | % | 165.1 | % | 42.0 | %
+Loss from operations | (71,000) | (1,311) | NM | (124.8 | %) | (2.4 | %)
+Interest income (expense), net | 121,812 | (56) | NM | 214.2 | % | (0.1 | %)
+Income (loss) before taxes | 50,812 | (1,367) | NM | 89.3 | % | (2.5 | %)
+Provision (benefit) for income taxes | 22,843 | (297) | NM | 40.2 | % | (0.5 | %)
+Net income (loss) | $ | 27,969 | $ | (1,070) | NM | 49.2 | % | (2.0 | %)
+
+NM = Not Meaningful
+
+TABLE 8
+
+Year Ended December 31,
+(in thousands) | 2024 | 2023
+Reconciliation of net income (loss) to Adjusted EBITDA
+Net income (loss) | $ | 27,969 | $ | (1,070)
+Add (deduct):
+Depreciation and amortization | 1,122 | 1,001
+Share-based compensation | 34,513 | 41
+Interest (income) expense | (121,812) | 56
+Provision (benefit) for income taxes | 22,843 | (297)
+Transaction costs | 12,765 | 2,986
+Severance costs | 2,768 | —
+Adjusted EBITDA | $ | (19,832) | $ | 2,717
+
+TABLE 9
+
+Page No.
+
+Report of Independent Registered Public Accounting Firm | (PCAOB ID: | 688 | ) | 26
+
+Consolidated Balance Sheets | 27
+
+Consolidated Statements of Operations | 28
+
+Consolidated Statements of Stockholders’ Equity | 29
+
+Consolidated Statements of Cash Flows | 30
+
+Notes to Consolidated Financial Statements | 31
+
+TABLE 10
+
+December 31, | 2024 | December 31, | 2023
+ASSETS
+Current assets:
+Cash and cash equivalents | $ | 5,068,504 | $ | 6,143
+Accounts receivable, net | 2,736 | 2,969
+Prepaid expenses and other current assets | 18,339 | 2,684
+Total current assets | 5,089,579 | 11,796
+Property and equipment, net | 445 | 503
+Operating lease right-of-use assets | 259 | 522
+Intangible assets, net | 4,024 | 4,919
+Goodwill | 1,160 | 1,140
+Deferred tax assets | 2,603 | 1,444
+Other non-current assets | 192 | 171
+Total assets | $ | 5,098,262 | $ | 20,495
+LIABILITIES AND STOCKHOLDERS’ EQUITY
+Current liabilities:
+Accounts payable | $ | 6,194 | $ | 4,563
+Accrued expenses | 35,692 | 2,681
+Deferred revenue | 2,900 | 3,161
+Long-term debt – current portion | — | 702
+Finance lease obligations – current portion | 128 | 154
+Operating lease liabilities – current portion | 188 | 263
+Total current liabilities | 45,102 | 11,524
+Long-term debt net of current portion | — | 994
+Finance lease obligations net of current portion | 190 | 247
+Operating lease liabilities net of current portion | 71 | 259
+Total liabilities | 45,363 | 13,024
+Commitments and contingencies (Note 8)
+Stockholders’ equity:
+Preferred stock, $ | 0.001 | par value; authorized | 10,000,000 | shares, | 1,000,000 | and | 0 | shares issued and outstanding as of December 31, 2024 and December 31, 2023, respectively | 498,621 | —
+Common stock, $ | 0.00001 | par value; authorized | 2,000,000,000 | shares, | 409,430,195 | and | 664,448 | shares issued and outstanding as of December 31, 2024 and December 31, 2023, respectively | 1 | 4 | —
+Additional paid-in capital | 4,560,503 | 9,419
+Accumulated deficit | ( | 6,229 | ) | ( | 1,948 | )
+Total stockholders’ equity | 5,052,899 | 7,471
+Total liabilities and stockholders’ equity | $ | 5,098,262 | $ | 20,495
+
+TABLE 11
+
+Year Ended December 31,
+2024 | 2023
+Revenue:
+Software product, net | $ | 15,261 | $ | 14,111
+Service and other, net | 41,612 | 40,406
+Total revenue, net | 56,873 | 54,517
+Cost of revenue:
+Software product | 9,434 | 8,513
+Service and other | 24,507 | 24,390
+Total cost of revenue | 33,941 | 32,903
+Operating expenses:
+Selling, general and administrative expenses | 92,943 | 22,097
+Depreciation and amortization expenses | 989 | 828
+Total operating expenses | 93,932 | 22,925
+Loss from operations | ( | 71,000 | ) | ( | 1,311 | )
+Other income (expense), net:
+Interest income (expense), net | 121,812 | ( | 56 | )
+Total other income (expense) | 121,812 | ( | 56 | )
+Income (loss) before taxes | 50,812 | ( | 1,367 | )
+Provision (benefit) for income taxes | 22,843 | ( | 297 | )
+Net income (loss) | $ | 27,969 | $ | ( | 1,070 | )
+Loss per common share – basic and diluted (Note 4) | $ | ( | 0.11 | ) | $ | ( | 1.63 | )
+Total weighted average common shares outstanding: | 1
+Basic | 203,998 | 657
+Diluted | 203,998 | 657
+
+TABLE 12
+
+Preferred Stock | Common Stock | Additional | Paid-in | Capital | Accumulated | Deficit | Total | Stockholders’ | Equity
+Shares | Amount | Shares | 1 | Amount
+Balance at January 1, 2023 | — | $ | — | 657 | $ | — | $ | 10,429 | $ | ( | 878 | ) | $ | 9,551
+Common stock dividend | — | — | — | — | ( | 1,051 | ) | — | ( | 1,051 | )
+Shares issued for cashless exercise of stock options | — | — | 7 | — | — | — | —
+Share-based compensation | — | — | — | — | 41 | — | 41
+Net loss | — | — | — | — | — | ( | 1,070 | ) | ( | 1,070 | )
+Balance at December 31, 2023 | — | $ | — | 664 | $ | — | $ | 9,419 | $ | ( | 1,948 | ) | $ | 7,471
+
+Issuance of convertible preferred stock and warrants, net of issuance costs | 1,000 | 498,621 | — | — | 482,917 | — | 981,538
+Issuance of common stock and pre-funded warrants, net of issuance costs | — | — | 408,766 | 4 | 4,051,099 | — | 4,051,103
+Cash paid for fractional shares | — | — | — | — | ( | 45 | ) | — | ( | 45 | )
+Common stock dividend | — | — | — | — | ( | 17,400 | ) | — | ( | 17,400 | )
+Preferred stock dividend | — | — | — | — | — | ( | 32,250 | ) | ( | 32,250 | )
+Share-based compensation | — | — | — | — | 34,513 | — | 34,513
+Net income | — | — | — | — | — | 27,969 | 27,969
+Balance at December 31, 2024 | 1,000 | $ | 498,621 | 409,430 | $ | 4 | $ | 4,560,503 | $ | ( | 6,229 | ) | $ | 5,052,899
+
+TABLE 13
+
+Year Ended | December 31,
+2024 | 2023
+Cash flows from operating activities:
+Net income (loss) | $ | 27,969 | $ | ( | 1,070 | )
+Adjustments to reconcile net income (loss) to net cash provided by operating activities:
+Deferred income taxes | ( | 1,159 | ) | ( | 338 | )
+Depreciation | 247 | 329
+Amortization of intangibles | 875 | 672
+Non-cash lease expense | 263 | 126
+Provision for expected losses | 50 | 115
+Share-based compensation | 34,513 | 41
+Changes in assets and liabilities:
+Accounts receivable | 183 | 103
+Prepaid expenses and other current assets | ( | 12,155 | ) | ( | 179 | )
+Other assets | ( | 21 | ) | 16
+Accounts payable | 1,631 | 1,291
+Accrued expenses | 33,011 | 222
+Deferred revenue | ( | 261 | ) | ( | 618 | )
+Operating lease liabilities | ( | 263 | ) | ( | 126 | )
+Net cash provided by operating activities | 84,883 | 584
+Cash flows from investing activities:
+Purchase of property and equipment | ( | 102 | ) | ( | 121 | )
+Acquisition of assets | — | ( | 279 | )
+Net cash used in investing activities | ( | 102 | ) | ( | 400 | )
+Cash flows from financing activities:
+Proceeds from the issuance of common stock and pre-funded warrants, net of issuance costs | 4,051,103 | —
+Proceeds from issuance of preferred stock and warrants, net of issuance costs | 981,538 | —
+Payment of preferred stock dividend | ( | 32,250 | ) | —
+Payment of common-stock dividend | ( | 17,400 | ) | ( | 1,051 | )
+Payment of long-term debt | ( | 1,696 | ) | ( | 784 | )
+Payment for fractional shares | ( | 45 | ) | —
+Payment of finance lease obligations | ( | 170 | ) | ( | 215 | )
+Net cash provided by (used in) financing activities | 4,981,080 | ( | 2,050 | )
+Net increase (decrease) in cash, cash equivalents and restricted cash | 5,065,861 | ( | 1,866 | )
+Cash, cash equivalents and restricted cash, beginning of year | 6,143 | 8,009
+Cash, cash equivalents and restricted cash, end of year | $ | 5,072,004 | $ | 6,143
+Cash paid during year for:
+Interest | $ | 63 | $ | 57
+Income taxes | $ | — | $ | 301
+
+TABLE 14
+
+As of
+(in thousands) | December 31, 2024 | December 31, 2023
+Cash and cash equivalents | $ | 5,068,504 | $ | 6,143
+Restricted cash included in prepaid expenses and other current assets | 3,500 | —
+Total cash, cash equivalents and restricted cash | $ | 5,072,004 | $ | 6,143
+
+TABLE 15
+
+(in thousands) | December 31, 2024 | December 31, 2023
+Balance at beginning of year | $ | 510 | $ | 490
+Current period provision for expected losses | 50 | 115
+Write-offs | ( | 13 | ) | ( | 95 | )
+Balance at end of year | $ | 547 | $ | 510
+
+TABLE 16
+
+As of
+(in thousands) | December 31, 2024 | December 31, 2023
+Interest receivable | $ | 11,051 | $ | —
+Restricted cash | 3,500 | —
+Prepaid expenses and other current assets | 3,788 | 2,684
+Total prepaid expenses and other current assets | $ | 18,339 | $ | 2,684
+
+TABLE 17
+
+As of
+(in thousands) | December 31, 2024 | December 31, 2023
+
+Accrued payroll and benefits | $ | 8,142 | $ | 1,910
+Accrued income taxes | 24,002 | —
+Accrued other | 3,548 | 771
+Total accrued expenses | $ | 35,692 | $ | 2,681
+
+TABLE 18
+
+As of
+(in thousands) | December 31, 2024 | December 31, 2023
+Leasehold improvements | $ | 99 | $ | 166
+Equipment, furniture, and fixtures | 4,198 | 3,943
+Property and equipment | 4,297 | 4,109
+Less: Accumulated depreciation and amortization | ( | 3,852 | ) | ( | 3,606 | )
+Property and equipment, net | $ | 445 | $ | 503
+
+TABLE 19
+
+Year Ended December 31,
+(in thousands) | 2024 | 2023
+Interest income | $ | 121,872 | $ | 20
+Interest expense | ( | 60 | ) | ( | 76 | )
+Interest income (expense), net | $ | 121,812 | $ | ( | 56 | )
+
+TABLE 20
+
+Year Ended December 31,
+2024 | 2023
+(in thousands, except per share data)
+Basic and diluted loss per share computation:
+Net income (loss) | $ | 27,969 | $ | ( | 1,070 | )
+Less: Preferred stock dividend | ( | 51,000 | ) | -
+Less: Undistributed earnings allocated to participating securities | - | -
+Loss attributable to common shareholders | ( | 23,031 | ) | ( | 1,070 | )
+Weighted-average common shares | 184,949 | 657
+Weighted average pre-funded warrants | 19,049 | -
+Total weighted-average common shares outstanding | 203,998 | 657
+Basic and diluted loss per share | $ | ( | 0.11 | ) | $ | ( | 1.63 | )
+
+
+
+
+
+
+
+
+TABLE 21
+
+Year Ended December 31,
+(in thousands) | 2024 | 2023
+Stock options | — | —
+Convertible Preferred Stock | 219,010 | —
+Warrants | 219,010 | —
+Stock-based awards | 21,890 | —
+Total potential dilutive securities not included in loss per share | 459,910 | —
+
+TABLE 22
+
+As of | Estimated Useful Lives
+(in thousands) | December 31, 2024 | December 31, 2023
+Proprietary developed software | $ | 390 | $ | 390 | 5 | – | 7
+Intellectual property, customer list, and acquired contracts | 9,049 | 9,069 | 5 | – | 15
+$ | 9,439 | $ | 9,459
+Less: accumulated amortization | ( | 5,415 | ) | ( | 4,540 | )
+Total intangible assets | $ | 4,024 | $ | 4,919
+
+TABLE 23
+
+(in thousands) | Amortization
+2025 | $ | 883
+2026 | 875
+2027 | 749
+2028 | 639
+2029 | 363
+thereafter | 515
+Total intangible asset amortization | $ | 4,024
+
+TABLE 24
+
+(in thousands) | As of
+Leases | Balance Sheet Classification | December 31, 2024 | December 31, 2023
+Assets
+Operating | Operating lease right-of-use assets | $ | 259 | $ | 522
+Finance | Property and equipment, net | 197 | 332
+Total lease assets | $ | 456 | $ | 854
+Liabilities
+Current:
+Operating | Operating lease liabilities – current portion | $ | 188 | $ | 263
+Finance | Finance lease obligations – current portion | 128 | 154
+Non-current:
+Operating | Operating lease liabilities net of current portion | 71 | 259
+Finance | Finance lease obligations net of current portion | 190 | 247
+Total lease liabilities | $ | 577 | $ | 923
+
+TABLE 25
+
+As of
+December 31, 2024 | December 31, 2023
+Weighted average remaining lease term
+Operating | 1.4 | years | 2.1 | years
+Finance | 2.4 | years | 2.9 | years
+Weighted-average discount rate
+Operating | 4.77 | % | 4.77 | %
+Finance | 7.77 | % | 7.15 | %
+
+TABLE 26
+
+(in thousands) | Year Ended December 31,
+Lease cost | 2024 | 2023
+Operating lease cost | $ | 279 | $ | 376
+
+Finance lease cost:
+Amortization of leased assets | 247 | 329
+
+Interest on lease liabilities | 28 | 2
+Short-term lease cost and variable lease cost | 155 | 38
+Net lease cost | $ | 709 | $ | 745
+
+TABLE 27
+
+Year Ended December 31,
+(in thousands) | 2024 | 2023
+Cash paid for amounts included in the measurement of lease liabilities:
+Operating cash flows for operating leases | $ | 279 | $ | 376
+Financing cash flows for finance leases | $ | 170 | $ | 215
+Leased assets obtained in exchange for new lease obligations:
+Operating leases | $ | — | $ | 562
+Finance leases | $ | 87 | $ | —
+
+TABLE 28
+
+(in thousands) | Operating Leases | Finance Leases
+2025 | $ | 197 | $ | 149
+2026 | 73 | 148
+2027 | — | 62
+Total lease payments | 270 | 359
+Less: interest | ( | 11 | ) | ( | 41 | )
+Present value of lease liabilities | $ | 259 | $ | 318
+
+TABLE 29
+
+(in thousands, except for weighted average grant date fair value) | Number of RSUs | Weighted Average Grant Date Fair Value
+Balance at beginning of period | — | $ | —
+Granted | 13,470 | 11.57
+
+
+Balance at end of period | 13,470 | $ | 11.57
+
+TABLE 30
+
+Percentile Position vs. | S&P 500 Index Companies | Units Earned as a | Percentage of Target
+Below 55th Percentile | — | %
+55th Percentile | 100 | %
+65th Percentile | 150 | %
+75th Percentile | 175 | %
+80th Percentile | 200 | %
+90th Percentile | 225 | %
+
+TABLE 31
+
+(in thousands, except for weighted average grant date fair value) | Number of pRSUs | Weighted Average Grant Date Fair Value
+Balance at beginning of period | — | $ | —
+Granted | 8,420 | 20.24
+
+
+Balance at end of period | 8,420 | $ | 20.24
+
+TABLE 32
+
+Performance Period | 4.42 | years
+Weighted-average risk-free interest rate | 4.03 | %
+Weighted-average expected volatility | 40 | %
+Weighted-average dividend yield | 0 | %
+
+TABLE 33
+
+(in thousands) | Year Ended December 31,
+2024 | 2023
+pRSUs | $ | 21,860 | $ | —
+RSUs | 12,653 | —
+Stock options | — | 41
+Total share-based compensation expense | $ | 34,513 | $ | 41
+
+TABLE 34
+
+Year Ended December 31,
+(in thousands) | 2024 | 2023
+United States income (loss) before provision (benefit) for income taxes | $ | 50,812 | $ | ( | 1,367 | )
+
+Current:
+Federal | $ | 16,588 | $ | 26
+State and local | 7,414 | 15
+Total current tax provision | 24,002 | 41
+
+Deferred:
+Federal | ( | 644 | ) | ( | 240 | )
+State and local | ( | 515 | ) | ( | 98 | )
+Total deferred tax (benefit) | ( | 1,159 | ) | ( | 338 | )
+
+Total provision (benefit) | $ | 22,843 | $ | ( | 297 | )
+
+TABLE 35
+
+Year Ended December 31,
+2024 | 2023
+Federal income tax rate | 21.0 | % | 21.0 | %
+State income tax, net of federal benefit | 10.7 | % | 5.0 | %
+Permanent items | 13.5 | % | ( | 1.0 | %)
+Return to provision for prior year | — | % | ( | 8.0 | %)
+Change in valuation allowance | ( | 0.2 | %) | 5.0 | %
+Effective income tax rate | 45.0 | % | 22.0 | %
+
+TABLE 36
+
+As of
+(in thousands) | December 31, 2024 | December 31, 2023
+Deferred tax assets:
+Net operating loss carry forwards | $ | 656 | $ | 1,417
+Long lived assets | 1,645 | 210
+Share based payments | 1,416 | 5
+Accrued expenses | 98 | 84
+Allowance for doubtful accounts | 154 | 135
+Other | 6 | 61
+Deferred tax assets | 3,975 | 1,912
+
+Deferred tax liabilities:
+Long lived assets | ( | 1,236 | ) | ( | 128 | )
+Deferred tax liabilities | ( | 1,236 | ) | ( | 128 | )
+
+Net deferred tax asset | 2,739 | 1,784
+Less: Valuation allowance | ( | 136 | ) | ( | 340 | )
+Net deferred tax assets | $ | 2,603 | $ | 1,444
+
+TABLE 37
+
+(in thousands) | Year Ended December 31,
+2024 | 2023
+Revenue:
+Software revenue | $ | 15,261 | $ | 14,111
+Professional consulting revenue | 17,916 | 18,648
+Maintenance revenue | 5,356 | 5,203
+Ancillary service revenue | 18,340 | 16,555
+Total revenue, net | $ | 56,873 | $ | 54,517
+Less:
+Purchased software and services | 20,894 | 20,964
+Employee compensation and benefits | 46,984 | 26,696
+Share-based compensation | 34,513 | 41
+Professional Fees | 18,572 | 1,155
+General and administrative expenses | (1) | 5,788 | 5,972
+Other segment items | ( | 97,847 | ) | 759
+
+Net income (loss) | $ | 27,969 | $ | ( | 1,070 | )
+(1) | Includes advertising and marketing, and other corporate overhead expenditures.
+
+TABLE 38
+
+Exhibit No. | Description
+
+2.1 | Amended and Restated Investment Agreement, dated April 14, 2024, by and among QXO, Inc. and Jacobs Private Equity II, LLC (on behalf of itself and on behalf of each of the other Investors) (incorporated herein by reference to Exhibit 2.1 to the Company’s Current Report filed with the SEC on April 15, 2024).
+3.1 | Fifth Amended and Restated Certificate of Incorporation of the Company, dated June 6, 2024 (incorporated herein by reference to Exhibit 3.1 to the Company’s Form 8-K Current Report filed with the SEC on June 6, 2024).
+3.2 | Certificate of Amendment to the Fifth Amended and Restated Certificate of Incorporation of the Company, dated June 6, 2024 (incorporated herein by reference to Exhibit 3.2 to the Company’s Form 8-K Current Report filed with the SEC on June 6, 2024).
+3.3 | Amended and Restated Bylaws of the Company (incorporated herein by reference to Exhibit 3.3 to the Company’s Form 8-K Current Report filed with the SEC on June 6, 2024).
+4.1* | Description of C | apital | Stock | .
+4.2 | Certificate of Designation of the Convertible Perpetual Preferred Stock of QXO, Inc. (incorporated herein by reference to Exhibit 4.1 to the Company’s Form 8-K Current Report filed with the SEC on June 6, 2024).
+4.3 | Form of Warrant Certificate (incorporated herein by reference to Exhibit 4.2 to the Company’s Form 8-K Current Report filed with the SEC on June 6, 2024).
+4.4 | Form of Warrant Certificate (incorporated herein by reference to Exhibit 4.3 to the Company’s Form 8-K Current Report filed with the SEC on June 6, 2024).
+4.5 | Form of Warrant Certificate (incorporated herein by reference to Exhibit 4.4 to the Company’s Form 8-K Current Report filed with the SEC on June 6, 2024).
+4.6 | Form of Pre-Funded Warrant (incorporated herein by reference to Exhibit 4.1 to the Company’s Form 8-K Current Report filed with the SEC on June 14, 2024).
+10.1 | Stockholders Agreement, dated as of June 6, 2024, by and among the Company, the Other Investors and JPE (incorporated herein by reference to Exhibit 10.1 to the Company’s Form 8-K Current Report filed with the SEC on June 6, 2024).
+10.2 | Registration Rights Agreement, dated as of June 6, 2024, by and among the Company, JPE and the other investors (incorporated herein by reference to Exhibit 10.2 to the Company’s Form 8-K Current Report filed with the SEC on June 6, 2024).
+10.3** | Employment Agreement, dated as of June 5, 2024, by and between Brad Jacobs and the Company (incorporated herein by reference to Exhibit 10.3 to the Company’s Form 8-K Current Report filed with the SEC on June 6, 2024).
+10.4 | Form of Purchase Agreement, dated as of June 13, 2024, by and between QXO, Inc. and the Investors signatory thereto (incorporated herein by reference to Exhibit 10.1 to the Company’s Form 8-K Current Report filed with the SEC on June 14, 2024).
+10.5 | Form of Purchase Agreement, dated as of July 22, 2024, by and between QXO, Inc. and the Investors signatory thereto (incorporated herein by reference to Exhibit 10.1 to the Company’s Form 8-K Current Report filed with the SEC on July 22, 2024).
+
+TABLE 39
+
+10.6** | Amended and Restated Meller Letter Agreement, dated April 14, 2024, by and between QXO, Inc. and Mark Meller (incorporated herein by reference to Exhibit 10.1 to the Company’s Form 8-K Current Report filed with the SEC on April 15, 2024).
+10.7** | Meller Offer Letter, dated April 14, 2024, by and between QXO, Inc. and Mark Meller (incorporated herein by reference to Exhibit 10.2 to the Company’s Form 8-K Current Report filed with the SEC on April 15, 2024).
+10.8** | QXO, Inc. 2024 Omnibus Incentive Compensation Plan (incorporated herein by reference to Exhibit 10.1 to the Company’s Form 8-K Current Report filed with the SEC on June 5, 2024).
+10.9** | QXO, Inc. Severance Plan (incorporated herein by reference to Exhibit 10.9 to the Company’s Form 10-Q Quarterly Report filed with the SEC on August 14, 2024).
+10.10** | Offer Letter, dated June 14, 2024, by and between QXO, Inc. and Sean Smith (incorporated herein by reference to Exhibit 10.10 to the Company’s Form 10-Q Quarterly Report filed with the SEC on August 14, 2024).
+10.11** | Form of Restricted Stock Units Award (incorporated herein by reference to Exhibit 10.11 to the Company’s Form 10-Q Quarterly Report filed with the SEC on August 14, 2024).
+10.12** | Employment Agreement, dated as of July 17, 2024, by and between QXO, Inc. and Ihsan Essaid (incorporated herein by reference to Exhibit 10.1 to the Company’s Form 10-Q Quarterly Report filed with the SEC on November 13, 2024).
+19.1* | Securities Trading Policy of QXO, Inc.
+21.1* | List of Subsidiaries
+23.1* | Consent of Independent Registered Public Accounting Firm
+31.1* | Certification of Principal Executive Officer pursuant to 18 U.S.C. Section 1350 as adopted pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 filed herein.
+31.2* | Certification of Principal Financial Officer pursuant to 18 U.S.C. Section 1350 as adopted pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 filed herein.
+32.1* | Certification of Principal Executive Officer pursuant to 18 U.S.C. Section 1350 as adopted pursuant to Section 906 of the Sarbanes-Oxley Act of 2002 filed herein.
+32.2* | Certification of Principal Financial Officer pursuant to 18 U.S.C. Section 1350 as adopted pursuant to Section 906 of the Sarbanes-Oxley Act of 2002 filed herein.
+97.1* | Clawback Policy of QXO, Inc.
+101.INS | Inline XBRL Instance Document - the instance document does not appear in the Interactive Data File because its XBRL tags are embedded within the Inline XBRL document
+101.SCH | Inline XBRL Taxonomy Extension Schema
+101.CAL | Inline XBRL Taxonomy Extension Calculation Linkbase
+101.DEF | Inline XBRL Taxonomy Extension Definition Linkbase
+101.LAB | Inline XBRL Taxonomy Extension Label Linkbase
+101.PRE | Inline XBRL Taxonomy Extension Presentation Linkbase
+104 | Cover Page Interactive Data File (formatted as Inline XBRL and contained in Exhibit 101)
+
+*Filed herewith
+**Management contract or compensatory plan or arrangement.
+
+TABLE 40
+
+QXO, INC.
+
+Date: March 4, 2025 | By: | /s/ Brad Jacobs
+Brad Jacobs
+Chief Executive Officer
+(Principal Executive Officer)
+
+
+TABLE 41
+
+Name | Position | Date
+
+/s/ Brad Jacobs | Chief Executive Officer and Chairman of the Board of Directors | March 4, 2025
+Brad Jacobs | (Principal Executive Officer)
+
+/s/ Ihsan Essaid | Chief Financial Officer | March 4, 2025
+Ihsan Essaid | (Principal Financial Officer)
+
+/s/ Sean Smith | Chief Accounting Officer | March 4, 2025
+Sean Smith | (Principal Accounting Officer)
+
+/s/ Allison Landry | Lead Independent Director | March 4, 2025
+Allison Landry
+
+/s/ Jason Aiken | Director | March 4, 2025
+Jason Aiken
+
+/s/ Marlene Colucci | Director | March 4, 2025
+Marlene Colucci
+
+/s/ Mario Harik | Director | March 4, 2025
+Mario Harik
+
+/s/ Mary Kissel | Director | March 4, 2025
+Mary Kissel
+
+/s/ Jared Kushner | Director | March 4, 2025
+Jared Kushner

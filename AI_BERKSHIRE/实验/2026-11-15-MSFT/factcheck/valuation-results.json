@@ -1,0 +1,259 @@
+{
+  "price": 523.88,
+  "shares_million": 7427,
+  "mcap_million": 3890856.76,
+  "adjusted_eps_ttm": 18.04,
+  "adjusted_pe": 29.039911308203994,
+  "gaap_pe": 27.356657963446477,
+  "fcf_yield": 0.015409716599281852,
+  "ratios": {
+    "PE": 29.03991130820399,
+    "PB": 8.26946298583024,
+    "ROE": 28.47619918003694,
+    "P_FCF": 64.89412011941891,
+    "FCF_Yield": 1.540971659928185,
+    "PS": 11.230806506083216
+  },
+  "scenarios": [
+    {
+      "name": "悲观",
+      "growth": 0.06,
+      "pe": 20,
+      "eps": 21.48592864,
+      "future_price": 429.7185728,
+      "present_value": 332.60238377160016,
+      "vs_price": -0.36511723339008906
+    },
+    {
+      "name": "基准",
+      "growth": 0.12,
+      "pe": 25,
+      "eps": 25.344901120000007,
+      "future_price": 633.6225280000002,
+      "present_value": 485.7984432757325,
+      "vs_price": -0.07269137345244614
+    },
+    {
+      "name": "乐观",
+      "growth": 0.18,
+      "pe": 30,
+      "eps": 29.640297279999995,
+      "future_price": 889.2089183999999,
+      "present_value": 677.8242812922612,
+      "vs_price": 0.2938540911893204
+    }
+  ],
+  "reverse_growth": {
+    "20": 0.23783262378217174,
+    "25": 0.14910201688578706,
+    "30": 0.08134639874938165
+  },
+  "delayed_present_value": 434.7930879038316,
+  "compressed_present_value": 390.5884465815176,
+  "delayed_extra_cost_present_value": 416.01021788129214,
+  "dividend_assumption": 3.92,
+  "dividend_source": "https://news.microsoft.com/source/2026/09/15/microsoft-announces-quarterly-dividend-increase-7/",
+  "fy2026_roe_gaap": 0.3403862745048138,
+  "fy2026_roe_adjusted": 0.32775562245980866,
+  "ttm_roe_gaap": 0.3422110522622168,
+  "ttm_roe_adjusted": 0.32240263440440986,
+  "terminal_spec": {
+    "roic": 0.25,
+    "g": [
+      0.02,
+      0.03,
+      0.04
+    ],
+    "p": [
+      0.25,
+      0.5,
+      0.25
+    ],
+    "irr10": [
+      -2.6497519988742066,
+      3.734770796505581,
+      10.429180144157735
+    ],
+    "k": 0.007
+  },
+  "sensitivity": [
+    {
+      "r": 0.08,
+      "mean_irr": 7.4155017021146765,
+      "rows": [
+        {
+          "label": "悲观",
+          "g": 0.02,
+          "pe": 15.333333333333334,
+          "irr": 0.17108300573298535,
+          "retention": 0.08,
+          "numerator": 0.92,
+          "spread": 0.06
+        },
+        {
+          "label": "基准",
+          "g": 0.03,
+          "pe": 17.599999999999998,
+          "irr": 7.2605891378528025,
+          "retention": 0.12,
+          "numerator": 0.88,
+          "spread": 0.05
+        },
+        {
+          "label": "乐观",
+          "g": 0.04,
+          "pe": 21.0,
+          "irr": 14.969745527020118,
+          "retention": 0.16,
+          "numerator": 0.84,
+          "spread": 0.04
+        }
+      ],
+      "within_repo_band": false
+    },
+    {
+      "r": 0.09,
+      "mean_irr": 5.442085857068338,
+      "rows": [
+        {
+          "label": "悲观",
+          "g": 0.02,
+          "pe": 13.142857142857144,
+          "irr": -1.3505126205471292,
+          "retention": 0.08,
+          "numerator": 0.92,
+          "spread": 0.06999999999999999
+        },
+        {
+          "label": "基准",
+          "g": 0.03,
+          "pe": 14.666666666666668,
+          "irr": 5.335363722442887,
+          "retention": 0.12,
+          "numerator": 0.88,
+          "spread": 0.06
+        },
+        {
+          "label": "乐观",
+          "g": 0.04,
+          "pe": 16.8,
+          "irr": 12.448128603934705,
+          "retention": 0.16,
+          "numerator": 0.84,
+          "spread": 0.049999999999999996
+        }
+      ],
+      "within_repo_band": true
+    },
+    {
+      "r": 0.1,
+      "mean_irr": 3.812242434573678,
+      "rows": [
+        {
+          "label": "悲观",
+          "g": 0.02,
+          "pe": 11.5,
+          "irr": -2.6497519988742066,
+          "retention": 0.08,
+          "numerator": 0.92,
+          "spread": 0.08
+        },
+        {
+          "label": "基准",
+          "g": 0.03,
+          "pe": 12.571428571428571,
+          "irr": 3.734770796505581,
+          "retention": 0.12,
+          "numerator": 0.88,
+          "spread": 0.07
+        },
+        {
+          "label": "乐观",
+          "g": 0.04,
+          "pe": 13.999999999999998,
+          "irr": 10.429180144157757,
+          "retention": 0.16,
+          "numerator": 0.84,
+          "spread": 0.060000000000000005
+        }
+      ],
+      "within_repo_band": true
+    },
+    {
+      "r": 0.11,
+      "mean_irr": 2.4263435559551674,
+      "rows": [
+        {
+          "label": "悲观",
+          "g": 0.02,
+          "pe": 10.222222222222223,
+          "irr": -3.7814501342385296,
+          "retention": 0.08,
+          "numerator": 0.92,
+          "spread": 0.09
+        },
+        {
+          "label": "基准",
+          "g": 0.03,
+          "pe": 11.0,
+          "irr": 2.3680782783801138,
+          "retention": 0.12,
+          "numerator": 0.88,
+          "spread": 0.08
+        },
+        {
+          "label": "乐观",
+          "g": 0.04,
+          "pe": 11.999999999999998,
+          "irr": 8.750667801298972,
+          "retention": 0.16,
+          "numerator": 0.84,
+          "spread": 0.07
+        }
+      ],
+      "within_repo_band": true
+    },
+    {
+      "r": 0.12,
+      "mean_irr": 1.222534434903618,
+      "rows": [
+        {
+          "label": "悲观",
+          "g": 0.02,
+          "pe": 9.200000000000001,
+          "irr": -4.782555391898403,
+          "retention": 0.08,
+          "numerator": 0.92,
+          "spread": 0.09999999999999999
+        },
+        {
+          "label": "基准",
+          "g": 0.03,
+          "pe": 9.777777777777779,
+          "irr": 1.1776253101437921,
+          "retention": 0.12,
+          "numerator": 0.88,
+          "spread": 0.09
+        },
+        {
+          "label": "乐观",
+          "g": 0.04,
+          "pe": 10.500000000000002,
+          "irr": 7.317442511225291,
+          "retention": 0.16,
+          "numerator": 0.84,
+          "spread": 0.07999999999999999
+        }
+      ],
+      "within_repo_band": false
+    }
+  ],
+  "limitations": [
+    "Adjusted TTM EPS18.04 excludes OpenAI investment effects only, NOT fully normalized operating EPS. FY26Q4 includes Anthropic investment gains3.2bn pretax plus other one-offs not separately removed; forecast base may be overstated. Uses rounded quarterly EPS; net income TTM134375 separately reconciled.",
+    "Terminal IRR is repo approximate geometric return plus fixed net yield, not exact dated cash flow IRR.",
+    "Probabilities .25/.5/.25 are illustrative researcher weights, not calibrated odds.",
+    "r10% is researcher hurdle. No contemporaneous risk-free rate fetched; repo built-in USD4.7% is stale Aug2026 assumption, not present market rate.",
+    "Current stock count from Sep30 vs Nov13 price; 3.89T market cap and7.43B shares are third-party rounded figures.",
+    "ROE displayed by tool EPS/BVPS uses closing equity; it is not standard average-equity ROE and should not be reported as such."
+  ]
+}

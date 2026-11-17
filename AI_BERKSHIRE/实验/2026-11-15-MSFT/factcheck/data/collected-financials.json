@@ -1,0 +1,224 @@
+{
+  "retrieved": "2026-11-15",
+  "unit": "USD millions except EPS and shares millions",
+  "sources": {
+    "annual26": "https://www.microsoft.com/investor/reports/ar26/index.html",
+    "annual24": "https://www.microsoft.com/investor/reports/ar24/index.html",
+    "q1": "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast",
+    "cross": "https://stockanalysis.com/stocks/msft/financials/",
+    "cross_cf": "https://stockanalysis.com/stocks/msft/financials/cash-flow-statement/"
+  },
+  "years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "annual": {
+    "revenue": [
+      198270,
+      211915,
+      245122,
+      281724,
+      331839
+    ],
+    "gross_profit": [
+      135620,
+      146052,
+      171008,
+      193893,
+      225465
+    ],
+    "operating_income": [
+      83383,
+      88523,
+      109433,
+      128528,
+      155237
+    ],
+    "net_income": [
+      72738,
+      72361,
+      88136,
+      101832,
+      133749
+    ],
+    "CFO": [
+      89035,
+      87582,
+      118548,
+      136162,
+      182935
+    ],
+    "cash_CapEx": [
+      23886,
+      28107,
+      44477,
+      64551,
+      115948
+    ],
+    "FCF": [
+      65149,
+      59475,
+      74071,
+      71611,
+      66987
+    ],
+    "cash_and_short_investments": [
+      104749,
+      111256,
+      75543,
+      94565,
+      76843
+    ],
+    "cash_dividends": [
+      18135,
+      19800,
+      21771,
+      24082,
+      26445
+    ],
+    "cash_repurchases": [
+      32696,
+      22245,
+      17254,
+      18420,
+      22271
+    ],
+    "RD": [
+      24512,
+      27195,
+      29510,
+      32488,
+      35562
+    ]
+  },
+  "quarter": {
+    "periods": [
+      "FY27Q1",
+      "FY26Q1"
+    ],
+    "revenue": [
+      92279,
+      77673
+    ],
+    "gross_profit": [
+      62559,
+      53630
+    ],
+    "operating_income": [
+      45915,
+      37961
+    ],
+    "net_income": [
+      36629,
+      27747
+    ],
+    "adjusted_net_income_ex_openai": [
+      36422,
+      30833
+    ],
+    "diluted_eps": [
+      4.92,
+      3.72
+    ],
+    "adjusted_eps": [
+      4.89,
+      4.13
+    ],
+    "CFO": [
+      58000,
+      45057
+    ],
+    "cash_CapEx": [
+      39367,
+      19394
+    ],
+    "FCF": [
+      18633,
+      25663
+    ],
+    "cash_dividends": [
+      6757,
+      6169
+    ],
+    "cash_repurchases": [
+      4379,
+      5650
+    ]
+  },
+  "balance_20260930": {
+    "cash_and_short_investments": 64509,
+    "debt_ex_leases": 35481,
+    "equity": 470509,
+    "shares_outstanding": 7427
+  },
+  "segments_annual": {
+    "years": [
+      2024,
+      2025,
+      2026
+    ],
+    "productivity_revenue": [
+      106820,
+      120810,
+      139996
+    ],
+    "productivity_op": [
+      59661,
+      69773,
+      83879
+    ],
+    "intelligent_cloud_revenue": [
+      87464,
+      106265,
+      137791
+    ],
+    "intelligent_cloud_op": [
+      37813,
+      44589,
+      56972
+    ],
+    "personal_revenue": [
+      50838,
+      54649,
+      54052
+    ],
+    "personal_op": [
+      11959,
+      14166,
+      14386
+    ]
+  },
+  "segments_quarter": {
+    "periods": [
+      "FY27Q1",
+      "FY26Q1_recast"
+    ],
+    "agents_infra_revenue": [
+      76795,
+      61672
+    ],
+    "agents_infra_op": [
+      40558,
+      32718
+    ],
+    "devices_consumer_revenue": [
+      15484,
+      16001
+    ],
+    "devices_consumer_op": [
+      5357,
+      5243
+    ]
+  },
+  "notes": [
+    "Annual cash_and_short_investments FY22/23 obtained StockAnalysis; all other annual P&L and CF corroborated official ar24/ar26.",
+    "FCF=CFO minus cash additions to PP&E, excludes finance lease principal and cash acquisitions.",
+    "Annual FY26 and historical segment structure differs from FY27Q1 two-segment recast. Do not splice segment time series.",
+    "Annual financial debt ex leases40294, but StockAnalysis total debt128813 includes lease liabilities88519; reconcile rather than treat as inconsistency.",
+    "TTM adjusted net income134375; adjusted EPS18.04 from annual17.28+quarter4.89-prior4.13, rounded.",
+    "Q1 shareholder-return headline10.2bn differs from cash-flow repurchase4379+dividends6757=11.136bn due to equity award tax withholding vs program repurchases; retain cashflow definition."
+  ]
+}

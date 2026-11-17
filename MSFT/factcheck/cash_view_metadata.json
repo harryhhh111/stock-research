@@ -1,0 +1,18 @@
+{
+  "url": "https://www.microsoft.com/investor/reports/ar26/index.html",
+  "date": "2026-07-29",
+  "location": "FY2026现金流量表",
+  "start": "2025-07-01",
+  "end": "2026-06-30",
+  "type": "annual",
+  "unit": "B USD",
+  "status": "company_reported",
+  "values": {
+    "期初现金": 30.242,
+    "经营现金净流入": 182.935,
+    "投资现金净流出": -139.5,
+    "融资现金净流出": -52.546,
+    "汇率影响": -0.196,
+    "期末现金": 20.935
+  }
+}

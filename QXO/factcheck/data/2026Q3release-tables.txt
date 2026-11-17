@@ -1,0 +1,263 @@
+TABLE 0
+
+Three Months Ended September 30, | Nine Months Ended September 30,
+(in millions, except for per share data) | 2026 | 2025 | 2026 | 2025
+Net sales | $ | 4,895 | $ | 2,728 | $ | 9,871 | $ | 4,648
+Gross profit | $ | 1,380 | $ | 636 | $ | 2,592 | $ | 1,043
+Adjusted Gross Profit | (1) | $ | 1,397 | $ | 687 | $ | 2,609 | $ | 1,174
+Gross margin | 28.2 | % | 23.3 | % | 26.3 | % | 22.4 | %
+Adjusted Gross Margin | (1) | 28.5 | % | 25.2 | % | 26.4 | % | 25.3 | %
+Net loss | $ | (123) | $ | (139) | $ | (405) | $ | (189)
+
+Adjusted EBITDA | (1) | $ | 557 | $ | 301 | $ | 830 | $ | 497
+
+Adjusted Net Income | (1) | $ | 229 | $ | 166 | $ | 302 | $ | 311
+Basic and diluted loss per common share | $ | (0.17) | $ | (0.24) | $ | (0.64) | $ | (0.46)
+Adjusted Diluted Earnings per Common Share | (1) | $ | 0.13 | $ | 0.14 | $ | 0.15 | $ | 0.32
+
+
+(1) | See the “Non-GAAP Financial Measures” section of the press release.
+
+TABLE 1
+
+Media Contact
+Joe Checkler
+joe.checkler@qxo.com
+203-609-9650
+
+Investor Contact
+Mark Manduca
+mark.manduca@qxo.com
+203-321-3889
+
+TABLE 2
+
+Three Months Ended September 30, | Nine Months Ended September 30,
+2026 | 2025 | 2026 | 2025
+Net sales | $ | 4,895 | $ | 2,728 | $ | 9,871 | $ | 4,648
+Cost of sales | 3,515 | 2,092 | 7,279 | 3,605
+Gross profit | 1,380 | 636 | 2,592 | 1,043
+Operating expense:
+Selling, general and administrative | 1,024 | 453 | 2,170 | 954
+Depreciation | 66 | 40 | 169 | 67
+Amortization | 288 | 118 | 545 | 198
+Total operating expense | 1,378 | 611 | 2,884 | 1,219
+Income (loss) from operations | 2 | 25 | (292) | (176)
+Interest expense, net | (163) | (37) | (232) | (11)
+Loss on debt extinguishment | — | — | — | (46)
+Other income, net | 11 | 1 | 17 | 3
+Loss before (benefit from) provision for income taxes | (150) | (11) | (507) | (230)
+(Benefit from) provision for income taxes | (27) | 128 | (102) | (41)
+Net loss | $ | (123) | $ | (139) | $ | (405) | $ | (189)
+Loss per common share - basic and diluted | $ | (0.17) | $ | (0.24) | $ | (0.64) | $ | (0.46)
+
+Total weighted-average common shares outstanding:
+Basic and diluted | 1,080.7 | 715.3 | 865.3 | 578.1
+
+
+TABLE 3
+
+September 30, | 2026 | December 31, | 2025
+
+Assets
+Current assets:
+Cash and cash equivalents | $ | 528 | $ | 2,362
+Accounts receivable, net | 2,817 | 1,145
+Inventories | 2,542 | 1,497
+Vendor rebates receivable | 629 | 427
+Income tax receivable | — | 31
+Prepaid expenses and other current assets | 210 | 84
+Total current assets | 6,726 | 5,546
+Property and equipment, net | 1,240 | 689
+Goodwill | 14,536 | 5,111
+Intangibles, net | 10,767 | 3,819
+Operating lease right-of-use assets, net | 1,119 | 690
+
+Other assets, net | 82 | 32
+Total assets | $ | 34,470 | $ | 15,887
+
+Liabilities, Mezzanine Equity and Stockholders’ Equity
+Current liabilities:
+Accounts payable | $ | 1,743 | $ | 819
+Accrued expenses | 1,252 | 574
+Current portion of operating lease liabilities | 240 | 108
+Current portion of finance lease liabilities | 60 | 49
+Current portion of long-term debt | 30 | —
+Total current liabilities | 3,325 | 1,550
+
+Long-term debt, net | 8,948 | 3,057
+Deferred income tax liabilities, net | 2,422 | 847
+Operating lease liabilities | 867 | 562
+Finance lease liabilities | 132 | 139
+Other long-term liabilities | 153 | 25
+Total liabilities | 15,847 | 6,180
+
+Mezzanine equity:
+Series C Preferred Stock, $0.001 par value per share; 0.3 shares and 0.0 shares authorized, issued and outstanding as of September 30, 2026 and December 31, 2025, respectively | 2,942 | —
+Stockholders’ equity:
+Mandatory Convertible Preferred Stock, $0.001 par value; 0.6 shares authorized, issued and outstanding as of September 30, 2026 and December 31, 2025 | 558 | 558
+Convertible Preferred Stock, $0.001 par value; authorized 10.0 shares, 1.0 shares issued and outstanding as of September 30, 2026 and December 31, 2025 | 499 | 499
+Common stock; $0.00001 par value; authorized 4,000.0 shares and 2,000.0 shares as of September 30, 2026 and December 31, 2025, respectively; 1,039.8 and 674.5 shares issued and outstanding as of September 30, 2026 and December 31, 2025, respectively | — | —
+Additional paid-in capital | 15,572 | 9,047
+Retained earnings (accumulated deficit) | (950) | (395)
+Accumulated other comprehensive income (loss) | 2 | (2)
+Total stockholders’ equity | 15,681 | 9,707
+Total liabilities, mezzanine equity and stockholders’ equity | $ | 34,470 | $ | 15,887
+
+
+TABLE 4
+
+Nine Months Ended September 30,
+2026 | 2025
+Operating Activities
+Net loss | $ | (405) | $ | (189)
+Adjustments to reconcile net loss to net cash (used in) provided by operating activities:
+Depreciation | 188 | 67
+Amortization | 545 | 198
+Stock-based compensation | 147 | 116
+Amortization of debt issuance costs | 10 | 4
+Loss on debt extinguishment | — | 46
+Provision for credit losses | 32 | 7
+
+Non-cash lease expense | 134 | 70
+Deferred income taxes | (195) | 25
+
+Changes in operating assets and liabilities, excluding the effects of acquisitions:
+Accounts receivable | (503) | (229)
+Inventories | (317) | 162
+Vendor rebates receivable | (151) | (257)
+Income tax receivable | 17 | (78)
+Prepaid expenses and other current assets | (29) | 13
+Accounts payable and accrued expenses | 473 | 177
+Other assets and liabilities | (91) | (57)
+Net cash (used in) provided by operating activities | (145) | 75
+
+Investing Activities
+Capital expenditures | (111) | (50)
+Acquisition of businesses, net of cash and restricted cash acquired and common stock issued | (10,933) | (10,557)
+
+
+Other | 4 | 2
+
+Net cash used in investing activities | (11,040) | (10,605)
+
+Financing Activities
+Borrowings under revolving lines of credit | 26 | 720
+Payments under revolving lines of credit | (26) | (677)
+Borrowings under term loan | 2,993 | 2,250
+Payments under term loan | — | (1,400)
+Borrowings under senior notes | 3,000 | 2,250
+
+Payment of debt issuance costs and other financing fees | (91) | (114)
+
+Payments under equipment financing facilities and finance leases | (41) | (18)
+Proceeds from issuance of common stock related to equity awards | 3 | 18
+Proceeds from issuance of common stock, net of issuance costs | 748 | 4,256
+Proceeds from issuance of Mandatory Convertible Preferred Stock, net of issuance costs | — | 558
+Proceeds from the issuance of Series C Preferred Stock, net of issuance costs | 2,989 | —
+
+
+Payment of taxes related to net share settlement of equity awards | (31) | —
+Payment of costs to obtain Series C Preferred Stock commitment | (47) | —
+
+Payment of dividends on Convertible Preferred Stock | (67) | (67)
+Payment of dividends on Mandatory Convertible Preferred Stock | (24) | (7)
+Payment of dividends on Series C Preferred Stock | (59) | —
+Net cash provided by financing activities | 9,373 | 7,769
+
+Effect of exchange rate changes on cash, cash equivalents and restricted cash | — | —
+
+Net decrease in cash, cash equivalents and restricted cash | (1,812) | (2,761)
+Cash, cash equivalents and restricted cash, beginning of period | 2,366 | 5,072
+Cash, cash equivalents and restricted cash, end of period | $ | 554 | $ | 2,311
+
+Supplemental Cash Flow Information
+Cash paid during the period for:
+Interest | $ | 181 | $ | 42
+Income taxes, net of refunds | $ | 13 | $ | 37
+Supplemental Disclosure of Non-Cash Activities
+Common stock issued as consideration for acquisition | $ | 5,641 | $ | —
+
+
+
+TABLE 5
+
+Three Months Ended September 30, | Nine Months Ended September 30,
+2026 | 2025 | 2026 | 2025
+
+Gross profit | $ | 1,380 | $ | 636 | $ | 2,592 | $ | 1,043
+Inventory fair value adjustments | (1) | 17 | 51 | 17 | 131
+Adjusted Gross Profit | (2) | $ | 1,397 | $ | 687 | $ | 2,609 | $ | 1,174
+
+Net sales | $ | 4,895 | $ | 2,728 | $ | 9,871 | $ | 4,648
+Gross margin | (3) | 28.2 | % | 23.3 | % | 26.3 | % | 22.4 | %
+Adjusted Gross Margin | (2)(3) | 28.5 | % | 25.2 | % | 26.4 | % | 25.3 | %
+
+(1) | Represents | the inventory fair value adjustments related to recording the inventory of acquired businesses at fair value on the date of acquisition.
+(2) | See the “Non-GAAP Financial Measures” section of the press release.
+(3) | Gross margin is calculated as gross profit divided by net sales. Adjusted Gross Margin is calculated as Adjusted Gross Profit divided by net sales. Percentages may not recalculate due to rounding.
+
+TABLE 6
+
+Three Months Ended September 30, | Nine Months Ended September 30,
+2026 | 2025 | 2026 | 2025
+
+Net loss | $ | (123) | $ | (139) | $ | (405) | $ | (189)
+(Benefit from) provision for income taxes | (27) | 128 | (102) | (41)
+Loss before (benefit from) provision for income taxes | (150) | (11) | (507) | (230)
+Amortization | 288 | 118 | 545 | 198
+Stock-based compensation | 79 | 31 | 147 | 116
+Loss on debt extinguishment | (1) | — | — | — | 46
+Restructuring costs | 9 | 8 | 33 | 43
+Transaction costs | 40 | 4 | 111 | 80
+Transformation costs | 28 | 23 | 64 | 35
+Inventory fair value adjustments | (2) | 17 | 51 | 17 | 131
+Adjusted income before benefit from income taxes | 311 | 224 | 410 | 419
+Income tax associated with the adjustments above | (3) | (82) | (58) | (108) | (108)
+Adjusted Net Income | (4) | $ | 229 | $ | 166 | $ | 302 | $ | 311
+Convertible Preferred Stock dividend | (22) | (22) | (67) | (67)
+Mandatory Convertible Preferred Stock dividend | (8) | (8) | (24) | (11)
+Series C Preferred Stock dividend | (36) | — | (59) | —
+Undistributed income allocated to participating securities | (12) | (14) | — | (18)
+Adjusted Net Income attributable to common stockholders | $ | 151 | $ | 122 | $ | 152 | $ | 215
+
+Basic and diluted loss per common share | $ | (0.17) | $ | (0.24) | $ | (0.64) | $ | (0.46)
+Adjusted Diluted Earnings per Common Share | (4)(5) | $ | 0.13 | $ | 0.14 | $ | 0.15 | $ | 0.32
+
+Adjusted diluted weighted-average common shares outstanding | (5) | 1,192.9 | 875.3 | 1,006.0 | 679.6
+
+(1) | Represents extinguishment costs resulting from the partial prepayment of borrowings under the Company’s senior secured term loan facility (the “2032 Term Loan Facility”) in May 2025.
+(2) | Represents | the inventory fair value adjustments related to recording the inventory of acquired businesses at fair value on the date of acquisition.
+(3) | The effective tax rates used to calculate Adjusted Net Income for the three months ended September 30, 2026 and 2025 were 26.3% and 26.0%, respectively. The effective tax rates used to calculate Adjusted Net Income for the nine months ended September 30, 2026 and 2025 were 26.4% and 25.9%, respectively.
+(4) | See the “Non-GAAP Financial Measures” section of the press release.
+(5) | Adjusted Diluted Earnings per Common Share is calculated as Adjusted Net Income attributable to common stockholders divided by the weighted-average number of common shares outstanding during the period plus the effect of dilutive common share equivalents based on the most dilutive result of the if-converted and two-class methods.
+
+
+TABLE 7
+
+Three Months Ended September 30, | Nine Months Ended September 30,
+2026 | 2025 | 2026 | 2025
+
+Net loss | $ | (123) | $ | (139) | $ | (405) | $ | (189)
+Depreciation | (1) | 83 | 40 | 188 | 67
+Amortization | 288 | 118 | 545 | 198
+Stock-based compensation | 79 | 31 | 147 | 116
+Interest expense, net | 163 | 37 | 232 | 11
+Loss on debt extinguishment | (2) | — | — | — | 46
+(Benefit from) provision for income taxes | (27) | 128 | (102) | (41)
+Restructuring costs | 9 | 8 | 33 | 43
+Transaction costs | 40 | 4 | 111 | 80
+Transformation costs | 28 | 23 | 64 | 35
+Inventory fair value adjustments | (3) | 17 | 51 | 17 | 131
+Adjusted EBITDA | (4) | $ | 557 | $ | 301 | $ | 830 | $ | 497
+
+Net sales | $ | 4,895 | $ | 2,728 | $ | 9,871 | $ | 4,648
+Net margin | (5) | (2.5) | % | (5.1) | % | (4.1) | % | (4.1) | %
+Adjusted EBITDA Margin | (4)(5) | 11.4 | % | 11.1 | % | 8.4 | % | 10.7 | %
+
+
+(1) | Depreciation for the three and nine months ended September 30, 2026 includes depreciation expense recognized within cost of sales on the condensed consolidated statements of operations of $17 million and $19 million, respectively.
+(2) | Represents extinguishment costs resulting from the partial prepayment of borrowings under the 2032 Term Loan Facility in May 2025.
+(3) | Represents | the inventory fair value adjustments related to recording the inventory of acquired businesses at fair value on the date of acquisition.
+(4) | See the “Non-GAAP Financial Measures” section of the press release.
+(5) | Net margin is calculated as net loss divided by net sales. Adjusted EBITDA Margin is calculated as Adjusted EBITDA divided by net sales. Percentages may not recalculate due to rounding.

@@ -1,0 +1,943 @@
+TABLE 0
+
+
+
+TABLE 1
+
+Delaware | (State | or | other | jurisdiction | of | incorporation) | 16-1633636 | (IRS Employer Identification No.)
+
+TABLE 2
+
+Title of each class | Trading Symbol(s) | Name of each exchange on which registered
+Common | Stock, | par | value | $0.00001 | per | share | QXO | New York Stock Exchange
+Depositary Shares, each representing a 1/20th interest in a share of 5.50% Series B Mandatory Convertible Preferred Stock, par value $0.001 per share | QXO.PRB | New York Stock Exchange
+
+TABLE 3
+
+Large | accelerated | filer | o | Accelerated | filer | o
+
+Non-accelerated | filer | x | Smaller | Reporting | Company | o
+
+Emerging | Growth | Company | o
+
+TABLE 4
+
+
+
+TABLE 5
+
+PART I. | FINANCIAL INFORMATION | Page
+Item 1. | Condensed Consolidated Financial Statements (Unaudited) | 4
+Condensed Consolidated Balance Sheets | 4
+Condensed Consolidated Statements of Operations | 5
+Condensed Consolidated Statements of Comprehensive Loss | 6
+Condensed Consolidated Statements of Mezzanine Equity and Stockholders’ Equity | 7
+Condensed Consolidated Statements of Cash Flows | 9
+Notes to the Condensed Consolidated Financial Statements | 10
+
+
+
+
+
+
+Item 2. | Management’s Discussion and Analysis of Financial Condition and Results of Operations | 38
+
+Item 3. | Quantitative and Qualitative Disclosures About Market Risk | 53
+Item 4. | Controls and Procedures | 53
+PART II. | OTHER INFORMATION
+Item 1. | Legal Proceedings | 54
+Item 1A. | Risk Factors | 54
+Item 2. | Unregistered Sales of Equity Securities and Use of Proceeds | 64
+Item 3. | Defaults Upon Senior Securities | 64
+Item 4. | Mine Safety Disclosures | 64
+Item 5. | Other Information | 64
+Item 6. | Exhibits | 65
+Signatures | 66
+
+TABLE 6
+
+June 30, | 2026 | December 31, | 2025
+
+Assets
+Current assets:
+Cash and cash equivalents | $ | 2,774 | $ | 2,362
+Accounts receivable, net | 1,782 | 1,145
+Inventories, net | 2,072 | 1,497
+Vendor rebates receivable | 531 | 427
+Income tax receivable | 45 | 31
+Prepaid expenses and other current assets | 3,144 | 84
+Total current assets | 10,348 | 5,546
+Property and equipment, net | 825 | 689
+Goodwill | 6,211 | 5,111
+Intangibles, net | 4,402 | 3,819
+Operating lease right-of-use assets, net | 824 | 690
+
+Other assets, net | 55 | 32
+Total assets | $ | 22,665 | $ | 15,887
+
+Liabilities, Mezzanine Equity and Stockholders’ Equity
+Current liabilities:
+Accounts payable | $ | 1,505 | $ | 819
+Accrued expenses | 821 | 574
+Current portion of operating lease liabilities | 136 | 108
+Current portion of finance lease liabilities | 53 | 49
+
+Total current liabilities | 2,515 | 1,550
+Borrowings under revolving lines of credit | 11 | —
+Long-term debt, net | 6,029 | 3,057
+Deferred income tax liabilities, net | 929 | 847
+Operating lease liabilities | 678 | 562
+Finance lease liabilities | 130 | 139
+Other long-term liabilities | 34 | 25
+Total liabilities | 10,326 | 6,180
+Commitments and contingencies (Note 11)
+Mezzanine equity:
+Series C Preferred Stock, $ | 0.001 | par value per share; | 0.2 | shares and | 0.0 | shares authorized, issued and outstanding as of June 30, 2026 and December 31, 2025, respectively | 1,961 | —
+Stockholders’ equity:
+Mandatory Convertible Preferred Stock, $ | 0.001 | par value per share; | 0.6 | shares authorized, issued and outstanding as of June 30, 2026 and December 31, 2025 | 558 | 558
+Convertible Preferred Stock, $ | 0.001 | par value per share; authorized | 10.0 | shares, | 1.0 | shares issued and outstanding as of June 30, 2026 and December 31, 2025 | 499 | 499
+Common stock, $ | 0.00001 | par value per share; authorized | 2,000.0 | shares; | 725.4 | and | 674.5 | shares issued and outstanding as of June 30, 2026 and December 31, 2025, respectively | — | —
+Additional paid-in capital | 10,079 | 9,047
+Retained earnings (accumulated deficit) | ( | 761 | ) | ( | 395 | )
+Accumulated other comprehensive income (loss) | 3 | ( | 2 | )
+Total stockholders’ equity | 10,378 | 9,707
+Total liabilities, mezzanine equity and stockholders’ equity | $ | 22,665 | $ | 15,887
+
+TABLE 7
+
+Three Months Ended June 30, | Six Months Ended June 30,
+2026 | 2025 | 2026 | 2025
+Net sales | $ | 3,246 | $ | 1,906 | $ | 4,976 | $ | 1,920
+Cost of products sold | 2,443 | 1,505 | 3,764 | 1,513
+Gross profit | 803 | 401 | 1,212 | 407
+Operating expense:
+Selling, general and administrative | 649 | 457 | 1,146 | 501
+Depreciation | 56 | 27 | 103 | 27
+Amortization | 140 | 80 | 257 | 80
+Total operating expense | 845 | 564 | 1,506 | 608
+Loss from operations | ( | 42 | ) | ( | 163 | ) | ( | 294 | ) | ( | 201 | )
+Interest (expense) income, net | ( | 38 | ) | ( | 30 | ) | ( | 69 | ) | 26
+Loss on debt extinguishment | — | ( | 46 | ) | — | ( | 46 | )
+Other income, net | 3 | 2 | 6 | 2
+Loss before benefit from income taxes | ( | 77 | ) | ( | 237 | ) | ( | 357 | ) | ( | 219 | )
+Benefit from income taxes | ( | 22 | ) | ( | 178 | ) | ( | 75 | ) | ( | 169 | )
+Net loss | $ | ( | 55 | ) | $ | ( | 59 | ) | $ | ( | 282 | ) | $ | ( | 50 | )
+Loss per common share - basic and diluted (Note 7) | $ | ( | 0.14 | ) | $ | ( | 0.15 | ) | $ | ( | 0.48 | ) | $ | ( | 0.19 | )
+
+
+
+Total weighted-average common shares outstanding:
+Basic | 767.3 | 564.7 | 755.9 | 508.4
+Diluted | 767.3 | 564.7 | 755.9 | 508.4
+
+TABLE 8
+
+Three Months Ended June 30, | Six Months Ended June 30,
+2026 | 2025 | 2026 | 2025
+Net loss | $ | ( | 55 | ) | $ | ( | 59 | ) | $ | ( | 282 | ) | $ | ( | 50 | )
+Other comprehensive income (loss):
+Foreign currency translation adjustment | 3 | ( | 3 | ) | 5 | ( | 3 | )
+Total other comprehensive income (loss) | 3 | ( | 3 | ) | 5 | ( | 3 | )
+Comprehensive loss | $ | ( | 52 | ) | $ | ( | 62 | ) | $ | ( | 277 | ) | $ | ( | 53 | )
+
+TABLE 9
+
+Mezzanine Equity | Stockholders’ Equity
+Series C Preferred Stock | Mandatory Convertible Preferred Stock | Convertible Preferred Stock | Common Stock | Additional Paid-in Capital | Retained Earnings (Accumulated Deficit) | Accumulated Other Comprehensive Income (Loss)
+Shares | Amount | Shares | Amount | Shares | Amount | Shares | Amount | Total
+Three Months Ended June 30, 2026
+Balance as of March 31, 2026 | — | $ | — | 0.6 | $ | 558 | 1.0 | $ | 499 | 710.8 | $ | — | $ | 9,760 | $ | ( | 652 | ) | $ | — | $ | 10,165
+
+Issuance of Series C Preferred Stock, net of issuance costs | 0.2 | 1,993 | — | — | — | — | — | — | — | — | — | —
+Reclassification of Series C Preferred Stock commitment costs to mezzanine equity upon issuance | — | ( | 32 | ) | — | — | — | — | — | — | 32 | — | — | 32
+Series C Preferred Stock dividend | — | — | — | — | — | — | — | — | — | ( | 23 | ) | — | ( | 23 | )
+Mandatory Convertible Preferred Stock dividend | — | — | — | — | — | — | — | — | — | ( | 8 | ) | — | ( | 8 | )
+Convertible Preferred Stock dividend | — | — | — | — | — | — | — | — | — | ( | 23 | ) | — | ( | 23 | )
+
+Common stock issued as partial consideration for Kodiak Acquisition | — | — | — | — | — | — | 13.3 | — | 257 | — | — | 257
+Proceeds from stock option exercises | — | — | — | — | — | — | 0.2 | — | 1 | — | — | 1
+Vesting of stock-based compensation awards | — | — | — | — | — | — | 1.1 | — | — | — | — | —
+
+Stock-based compensation | — | — | — | — | — | — | — | — | 29 | — | — | 29
+Other comprehensive income | — | — | — | — | — | — | — | — | — | — | 3 | 3
+Net loss | — | — | — | — | — | — | — | ( | 55 | ) | — | ( | 55 | )
+Balance as of June 30, 2026 | 0.2 | $ | 1,961 | 0.6 | $ | 558 | 1.0 | $ | 499 | 725.4 | $ | — | $ | 10,079 | $ | ( | 761 | ) | $ | 3 | $ | 10,378
+
+Three Months Ended June 30, 2025
+Balance as of March 31, 2025 | — | $ | — | — | $ | — | 1.0 | $ | 499 | 409.4 | $ | — | $ | 4,581 | $ | ( | 20 | ) | $ | — | $ | 5,060
+Issuance of Mandatory Convertible Preferred Stock, net of issuance costs | — | — | 0.6 | 558 | — | — | — | — | — | — | — | 558
+Mandatory Convertible Preferred Stock dividend | — | — | — | — | — | — | — | — | — | ( | 3 | ) | — | ( | 3 | )
+Convertible Preferred Stock dividend | — | — | — | — | — | — | — | — | — | ( | 23 | ) | — | ( | 23 | )
+Issuance of common stock, net of issuance costs | — | — | — | — | — | — | 254.9 | — | 4,218 | — | — | 4,218
+Proceeds from stock option exercises | — | — | — | — | — | — | 2.9 | — | 14 | — | — | 14
+Awards assumed in acquisition | — | — | — | — | — | — | — | — | 88 | — | — | 88
+Vesting of stock-based compensation awards | — | — | — | — | — | — | 4.4 | — | — | — | — | —
+Stock-based compensation | — | — | — | — | — | — | — | — | 65 | — | — | 65
+Other comprehensive loss | — | — | — | — | — | — | — | — | — | — | ( | 3 | ) | ( | 3 | )
+Net loss | — | — | — | — | — | — | — | — | — | ( | 59 | ) | — | ( | 59 | )
+Balance as of June 30, 2025 | — | $ | — | 0.6 | $ | 558 | 1.0 | $ | 499 | 671.6 | $ | — | $ | 8,966 | $ | ( | 105 | ) | $ | ( | 3 | ) | $ | 9,915
+
+
+
+TABLE 10
+
+Mezzanine Equity | Stockholders’ Equity
+Series C Preferred Stock | Mandatory Convertible Preferred Stock | Convertible Preferred Stock | Common Stock | Additional Paid-in Capital | Retained Earnings (Accumulated Deficit) | Accumulated Other Comprehensive Income (Loss)
+Shares | Amount | Shares | Amount | Shares | Amount | Shares | Amount | Total
+Six Months Ended June 30, 2026
+Balance as of December 31, 2025 | — | $ | — | 0.6 | $ | 558 | 1.0 | $ | 499 | 674.5 | $ | — | $ | 9,047 | $ | ( | 395 | ) | $ | ( | 2 | ) | $ | 9,707
+Series C Preferred Stock commitment | — | — | — | — | — | — | — | — | ( | 47 | ) | — | — | ( | 47 | )
+Issuance of Series C Preferred Stock, net of issuance costs | 0.2 | 1,993 | — | — | — | — | — | — | — | — | — | —
+Reclassification of Series C Preferred Stock commitment costs to mezzanine equity upon issuance | — | ( | 32 | ) | — | — | — | — | — | — | 32 | — | — | 32
+Series C Preferred Stock dividend | — | — | — | — | — | — | — | — | — | ( | 23 | ) | — | ( | 23 | )
+Mandatory Convertible Preferred Stock dividend | — | — | — | — | — | — | — | — | — | ( | 16 | ) | — | ( | 16 | )
+Convertible Preferred Stock dividend | — | — | — | — | — | — | — | — | — | ( | 45 | ) | — | ( | 45 | )
+Issuance of common stock, net of issuance costs | — | — | — | — | — | — | 31.6 | — | 748 | — | — | 748
+Common stock issued as partial consideration for Kodiak Acquisition | — | — | — | — | — | — | 13.3 | — | 257 | — | — | 257
+Proceeds from stock option exercises | — | — | — | — | — | — | 0.4 | — | 2 | — | — | 2
+Vesting of stock-based compensation awards | — | — | — | — | — | — | 5.6 | — | — | — | — | —
+Tax withholdings for stock-based compensation awards | — | — | — | — | — | — | — | — | ( | 28 | ) | — | — | ( | 28 | )
+Stock-based compensation | — | — | — | — | — | — | — | — | 68 | — | — | 68
+Other comprehensive income | — | — | — | — | — | — | — | — | — | — | 5 | 5
+Net loss | — | — | — | — | — | — | — | — | — | ( | 282 | ) | — | ( | 282 | )
+Balance as of June 30, 2026 | 0.2 | $ | 1,961 | 0.6 | $ | 558 | 1.0 | $ | 499 | 725.4 | $ | — | $ | 10,079 | $ | ( | 761 | ) | $ | 3 | $ | 10,378
+
+Six Months Ended June 30, 2025
+Balance as of December 31, 2024 | — | $ | — | — | $ | — | 1.0 | $ | 499 | 409.4 | $ | — | $ | 4,561 | $ | ( | 7 | ) | $ | — | $ | 5,053
+Issuance of Mandatory Convertible Preferred Stock, net of issuance costs | — | — | 0.6 | 558 | — | — | — | — | — | — | — | 558
+Mandatory Convertible Preferred Stock dividend | — | — | — | — | — | — | — | — | — | ( | 3 | ) | — | ( | 3 | )
+Convertible Preferred Stock dividend | — | — | — | — | — | — | — | — | — | ( | 45 | ) | — | ( | 45 | )
+Issuance of common stock, net of issuance costs | — | — | — | — | — | — | 254.9 | — | 4,218 | — | — | 4,218
+Proceeds from stock option exercises | — | — | — | — | — | — | 2.9 | — | 14 | — | — | 14
+Awards assumed in acquisition | — | — | — | — | — | — | — | — | 88 | — | — | 88
+Vesting of stock-based compensation awards | — | — | — | — | — | — | 4.4 | — | — | — | — | —
+Stock-based compensation | — | — | — | — | — | — | — | — | 85 | — | — | 85
+Other comprehensive loss | — | — | — | — | — | — | — | — | — | — | ( | 3 | ) | ( | 3 | )
+Net loss | — | — | — | — | — | — | — | — | — | ( | 50 | ) | — | ( | 50 | )
+Balance as of June 30, 2025 | — | $ | — | 0.6 | $ | 558 | 1.0 | $ | 499 | 671.6 | $ | — | $ | 8,966 | $ | ( | 105 | ) | $ | ( | 3 | ) | $ | 9,915
+
+
+
+TABLE 11
+
+Six Months Ended June 30,
+2026 | 2025
+Operating Activities
+Net loss | $ | ( | 282 | ) | $ | ( | 50 | )
+Adjustments to reconcile net loss to net cash used in operating activities:
+Depreciation | (1) | 105 | 27
+Amortization | 257 | 80
+Stock-based compensation | 68 | 85
+Amortization of debt issuance costs | 5 | 2
+Loss on debt extinguishment | — | 46
+Provision for credit losses | 20 | 3
+
+Non-cash lease expense | 72 | 28
+Deferred income taxes | ( | 75 | ) | 22
+Changes in operating assets and liabilities:
+Accounts receivable | ( | 441 | ) | ( | 226 | )
+Inventories | ( | 367 | ) | ( | 16 | )
+Vendor rebates receivable | ( | 97 | ) | ( | 229 | )
+Income tax receivable | ( | 4 | ) | ( | 202 | )
+Prepaid expenses and other current assets | ( | 49 | ) | 1
+Accounts payable and accrued expenses | 712 | 312
+Other assets and liabilities | ( | 70 | ) | ( | 21 | )
+Net cash used in operating activities | ( | 146 | ) | ( | 138 | )
+
+Investing Activities
+Capital expenditures | ( | 54 | ) | ( | 20 | )
+Acquisition of business, net of cash acquired and common stock issued | ( | 1,965 | ) | ( | 10,557 | )
+
+Other | 4 | 1
+
+Net cash used in investing activities | ( | 2,015 | ) | ( | 10,576 | )
+
+Financing Activities
+Borrowings under revolving lines of credit | 18 | 423
+Payments under revolving lines of credit | ( | 7 | ) | ( | 223 | )
+Borrowings under term loan | — | 2,250
+Payments under term loan | — | ( | 1,400 | )
+Borrowings under senior notes | 3,000 | 2,250
+Payment of debt issuance costs | — | ( | 114 | )
+
+Payments under equipment financing facilities and finance leases | ( | 26 | ) | ( | 7 | )
+Proceeds from issuance of common stock related to equity awards | 2 | 14
+Proceeds from issuance of common stock, net of issuance costs | 748 | 4,218
+Proceeds from issuance of Mandatory Convertible Preferred Stock, net of issuance costs | — | 558
+Proceeds from the issuance of Series C Preferred Stock, net of issuance costs | 1,993 | —
+
+
+Payment of taxes related to net share settlement of equity awards | ( | 28 | ) | —
+Payment of costs to obtain Series C Preferred Stock commitment | ( | 47 | ) | —
+
+Payment of dividends on Convertible Preferred Stock | ( | 45 | ) | ( | 45 | )
+Payment of dividends on Mandatory Convertible Preferred Stock | ( | 16 | ) | —
+Payment of dividends on Series C Preferred Stock | ( | 23 | ) | —
+Net cash provided by financing activities | 5,569 | 7,924
+
+Effect of exchange rate changes on cash, cash equivalents and restricted cash | — | —
+
+Net increase (decrease) in cash, cash equivalents and restricted cash | 3,408 | ( | 2,790 | )
+Cash, cash equivalents and restricted cash, beginning of period | 2,366 | 5,072
+Cash, cash equivalents and restricted cash, end of period | $ | 5,774 | $ | 2,282
+
+Supplemental Cash Flow Information
+Cash paid during the period for:
+Interest | $ | 106 | $ | 23
+Income taxes, net of refunds | $ | 5 | $ | 35
+Supplemental Disclosure of Non-Cash Activities
+Common stock issued as consideration for acquisition | $ | 257 | $ | —
+
+(1) | Depreciation for the six months ended June 30, 2026 includes $ | 2 | million of depreciation expense recognized within cost of products sold on the condensed consolidated statements of operations.
+
+TABLE 12
+
+As of
+(in millions) | June 30, | 2026 | December 31, | 2025
+Cash and cash equivalents | $ | 2,774 | $ | 2,362
+Restricted cash included in prepaid expenses and other current assets | 3,000 | 4
+Total cash, cash equivalents and restricted cash | $ | 5,774 | $ | 2,366
+
+TABLE 13
+
+(in millions) | June 30, | 2026 | December 31, | 2025
+Balance at beginning of period | $ | 13 | $ | —
+Current period provision for expected credit losses | 20 | 14
+Write-offs, net of recoveries | ( | 3 | ) | ( | 1 | )
+Balance at end of period | $ | 30 | $ | 13
+
+TABLE 14
+
+As of
+June 30, | 2026 | December 31, | 2025
+(in millions)
+Equipment | $ | 471 | $ | 259
+Finance lease assets | 237 | 217
+Leasehold improvements | 159 | 125
+Furniture and fixtures | 27 | 30
+Software | 38 | 31
+Land and buildings | 58 | 60
+Construction in progress | 49 | 55
+Total property and equipment | 1,039 | 777
+Accumulated depreciation | ( | 214 | ) | ( | 88 | )
+Total property and equipment, net | $ | 825 | $ | 689
+
+TABLE 15
+
+(in millions)
+Balance as of December 31, 2025 | $ | 5,111
+Acquisitions | 1,089
+Measurement period adjustments | 7
+Translation adjustments | 4
+Balance as of June 30, 2026 | $ | 6,211
+
+TABLE 16
+
+As of | Weighted-Average Remaining Life | (1) | (Years)
+(in millions, except time periods) | June 30, | 2026 | December 31, | 2025
+Amortizable intangible assets:
+Customer relationships and other | $ | 4,663 | $ | 3,909 | 9.0
+Trade names | 315 | 230 | 2.9
+
+Total amortizable intangible assets | 4,978 | 4,139 | 8.6
+Accumulated amortization | ( | 577 | ) | ( | 321 | )
+Total amortizable intangible assets, net | 4,401 | 3,818
+Indefinite-lived domain names | 1 | 1
+Total intangibles, net | $ | 4,402 | $ | 3,819
+
+(1) | As of June 30, 2026.
+
+TABLE 17
+
+(in millions)
+
+2026 (July - December) | $ | 280
+2027 | 560
+2028 | 508
+2029 | 483
+2030 | 483
+Thereafter | 2,087
+Total future amortization expense | $ | 4,401
+
+TABLE 18
+
+As of
+(in millions) | June 30, | 2026 | December 31, | 2025
+Inventory | $ | 335 | $ | 170
+Short-term portion of insurance liabilities | 44 | 39
+Payroll and employee benefit costs | 94 | 67
+Interest expense | 35 | 27
+Customer rebates | 86 | 148
+
+Business and property taxes | 17 | 11
+Professional services | 74 | 18
+Sales returns | 30 | 27
+Customer advances | 38 | 20
+Other | 68 | 47
+Total accrued expenses | $ | 821 | $ | 574
+
+TABLE 19
+
+Three Months Ended June 30, | Six Months Ended June 30,
+(in millions) | 2026 | 2025 | 2026 | 2025
+Interest income | $ | 27 | $ | 22 | $ | 52 | $ | 79
+Interest expense | ( | 65 | ) | ( | 52 | ) | ( | 121 | ) | ( | 53 | )
+Interest (expense) income, net | $ | ( | 38 | ) | $ | ( | 30 | ) | $ | ( | 69 | ) | $ | 26
+
+TABLE 20
+
+(in millions)
+Cash paid for outstanding Beacon common stock | (1) | $ | 7,736
+Converted Beacon restricted stock units (“RSUs”) and options attributable to pre-combination service | (2) | 104
+Payment of Beacon debt, including accrued interest | (3) | 2,948
+Aggregate acquisition consideration | 10,788
+Less: cash acquired | 144
+Aggregate acquisition consideration, net of cash acquired | $ | 10,644
+
+(1) | The cash component of the aggregate acquisition consideration represents | 62.2 | million shares of outstanding common stock of Beacon multiplied by the $ | 124.35 | per share cash portion of the acquisition consideration.
+(2) | This amount represents the value of outstanding equity awards held by Beacon employees that were converted into replacement QXO instruments with identical terms. The conversion was based on the volume-weighted average trading price of QXO common stock for the | five | consecutive trading days ending on the trading day immediately preceding the Beacon Closing Date. The fair value of replacement equity-based awards attributable to pre-acquisition service was recorded as part of the consideration transferred. This amount also includes cash paid by QXO of $ | 16 | million to settle RSUs for non-employee members of the board of directors of Beacon, which were accelerated in full, cancelled and paid in cash for $ | 124.35 | per share. See Note 8 for additional information.
+(3) | This amount represents the cash paid by QXO to settle Beacon’s senior secured term loan B facility, senior secured notes, and outstanding line of credit borrowings of $ | 1.26 | billion, $ | 1.25 | billion and $ | 371 | million, respectively. Additionally, accrued interest expense of $ | 30 | million and a breakage fee of $ | 38 | million was paid for early termination of Beacon’s debt at the closing of the Beacon Acquisition.
+
+TABLE 21
+
+(in millions) | Purchase Price Allocation
+Assets:
+Accounts receivable | $ | 1,320
+Inventories | 1,782
+Vendor rebates receivable | 236
+Income tax receivable | 20
+Prepaid expenses and other current assets | 81
+Property and equipment | 684
+Goodwill | 5,118
+Intangibles | 4,131
+Operating lease right-of-use assets | 708
+Other non-current assets | 17
+Liabilities:
+Accounts payable | ( | 1,136 | )
+Accrued expenses | ( | 531 | )
+Deferred income taxes | ( | 908 | )
+Other long-term liabilities | ( | 28 | )
+Operating lease liabilities | ( | 668 | )
+Finance lease liabilities | ( | 182 | )
+Aggregate acquisition consideration, net of cash acquired | $ | 10,644
+
+TABLE 22
+
+(in millions, except weighted-average useful life) | Fair Value | Weighted-Average Useful Life in Years
+Customer relationships | $ | 3,901 | 10.0
+Trade names | 230 | 3.0
+Total intangible assets acquired | $ | 4,131 | 9.6
+
+TABLE 23
+
+(in millions) | Three Months Ended | June 30, 2025 | Six Months Ended June 30, 2025
+
+Net sales | $ | 2,693 | $ | 4,614
+Net loss | $ | ( | 9 | ) | $ | ( | 144 | )
+
+TABLE 24
+
+(in millions)
+Cash paid to sellers | $ | 478
+Payment of Kodiak debt, including accrued interest | (1) | 1,503
+QXO consideration shares issued | (2) | 257
+
+Preliminary aggregate acquisition consideration | 2,238
+Less: preliminary cash acquired | 16
+Preliminary aggregate acquisition consideration, net of cash acquired | $ | 2,222
+
+
+(1) | This amount represents the cash paid by QXO to settle Kodiak’s secured term loan facility and asset-based credit facility of $ | 1.49 | billion and $ | 15 | million, respectively.
+(2) | The QXO share consideration component of the preliminary aggregate acquisition consideration represents | 13.2 | million shares of QXO’s common stock issued to Kodiak equityholders at a per share price of $ | 19.42 | , which was based on the QXO share price quoted one business day prior to the Kodiak Closing Date. In addition, concurrently with the execution of the Kodiak Merger Agreement, certain employees of Kodiak entered into rollover agreements (the “Rollover Agreements”) with QXO. Pursuant to such Rollover Agreements, each such employee re-invested a portion of their after-tax cash proceeds received as merger consideration in exchange for a total of | 0.1 | million shares of QXO common stock.
+
+
+TABLE 25
+
+(in millions) | Preliminary Purchase Price Allocation
+Assets:
+Accounts receivable | $ | 215
+Inventories | 213
+Vendor rebates receivable | 11
+Income tax receivable | 9
+Prepaid expenses and other current assets | 16
+Property and equipment | 186
+Goodwill | 1,089
+Intangibles | 835
+Operating lease right-of-use assets | 176
+Other non-current assets | 3
+Liabilities:
+Accounts payable | ( | 112 | )
+Accrued expenses | ( | 77 | )
+Deferred income taxes | ( | 160 | )
+Other long-term liabilities | ( | 8 | )
+Operating lease liabilities | ( | 164 | )
+Finance lease liabilities | ( | 10 | )
+Preliminary aggregate acquisition consideration, net of cash acquired | $ | 2,222
+
+TABLE 26
+
+(in millions, except weighted-average useful life) | Preliminary Fair Value | Weighted-Average Useful Life in Years
+Customer relationships | $ | 750 | 10.0
+Trade names | 85 | 5.0
+Total intangible assets acquired | $ | 835 | 9.5
+
+TABLE 27
+
+Three and Six Months Ended June 30, 2026
+(in millions)
+Net sales | $ | 595
+Net income | $ | 15
+
+TABLE 28
+
+Three Months Ended June 30, | Six Months Ended June 30,
+(in millions) | 2026 | 2025 | 2026 | 2025
+Net sales | $ | 3,246 | $ | 2,545 | $ | 5,507 | $ | 3,087
+Net loss | $ | ( | 40 | ) | $ | ( | 38 | ) | $ | ( | 262 | ) | $ | ( | 36 | )
+
+TABLE 29
+
+(in millions) | Three Months Ended June 30, | Six Months Ended June 30,
+2026 | 2025 | 2026 | 2025
+Severance and employee-related costs | $ | 3 | $ | 35 | $ | 9 | $ | 35
+Lease abandonment costs | 5 | — | 15 | —
+Total restructuring charges | $ | 8 | $ | 35 | $ | 24 | $ | 35
+
+TABLE 30
+
+(in millions) | Severance and Employee-related Costs | Lease Abandonment Costs
+Restructuring charge liability as of December 31, 2025 | $ | 26 | $ | —
+Restructuring charges | 9 | 15
+Payments | ( | 26 | ) | ( | 4 | )
+Non-cash settlement | — | ( | 11 | )
+Restructuring charge liability as of June 30, 2026 | $ | 9 | $ | —
+
+TABLE 31
+
+Three Months Ended June 30, | Six Months Ended June 30,
+(in millions) | 2026 | 2025 | 2026 | 2025
+Net sales:
+Residential roofing products | $ | 1,266 | $ | 930 | $ | 2,064 | $ | 930
+Non-residential roofing products | 736 | 536 | 1,200 | 536
+Complementary building products | (1) | 1,229 | 426 | 1,682 | 426
+Software products and services | 15 | 14 | 30 | 28
+Total net sales | $ | 3,246 | $ | 1,906 | $ | 4,976 | $ | 1,920
+Less:
+Cost of products sold | $ | 2,443 | $ | 1,505 | $ | 3,764 | $ | 1,513
+Selling, general and administrative expenses | (2) | 620 | 392 | 1,078 | 416
+Stock-based compensation | 29 | 65 | 68 | 85
+Other segment items | 209 | 3 | 348 | ( | 44 | )
+
+Net loss | $ | ( | 55 | ) | $ | ( | 59 | ) | $ | ( | 282 | ) | $ | ( | 50 | )
+
+(1) | Includes Kodiak net sales.
+(2) | Excludes stock-based compensation.
+
+TABLE 32
+
+Applicable Market Value of Common Stock | Conversion Rate per Share of Mandatory Convertible Preferred Stock
+Greater than $ | 20.2126 | (the “Threshold Appreciation Price”) | 49.4740 | shares of common stock
+Equal to or less than the Threshold Appreciation Price but greater than or equal to the Initial Price | Between | 49.4740 | and | 60.6060 | shares of common stock, determined by dividing $ | 1,000 | by the applicable market value
+Less than $ | 16.50 | (the “Initial Price”) | 60.6060 | shares of common stock
+
+TABLE 33
+
+Applicable Market Value of Common Stock | Conversion Rate per Depositary Share Representing a 1/20th interest in a share of the Mandatory Convertible Preferred Stock
+Greater than the Threshold Appreciation Price | 2.4737 | shares of common stock
+Equal to or less than the Threshold Appreciation Price but greater than or equal to the Initial Price | Between | 2.4737 | and | 3.0303 | shares of common stock, determined by dividing $ | 50 | by the applicable market value
+Less than the Initial Price | 3.0303 | shares of common stock
+
+TABLE 34
+
+(in millions, except per share amounts; certain amounts may not recalculate due to rounding) | Three Months Ended June 30, | Six Months Ended June 30,
+2026 | 2025 | 2026 | 2025
+Basic and diluted earnings (loss) per common share computation:
+Net loss | $ | ( | 55 | ) | $ | ( | 59 | ) | $ | ( | 282 | ) | $ | ( | 50 | )
+Less: Convertible Preferred Stock dividend | ( | 23 | ) | ( | 23 | ) | ( | 45 | ) | ( | 45 | )
+Less: Mandatory Convertible Preferred Stock dividend | ( | 8 | ) | ( | 3 | ) | ( | 16 | ) | ( | 3 | )
+Less: Series C Preferred Stock dividend | ( | 23 | ) | — | ( | 23 | ) | —
+Less: Undistributed earnings allocated to participating securities | — | — | — | —
+Loss attributable to common shareholders | $ | ( | 109 | ) | $ | ( | 85 | ) | $ | ( | 366 | ) | $ | ( | 98 | )
+
+Weighted-average common shares | 725.3 | 522.7 | 713.9 | 466.4
+Weighted-average Pre-Funded Warrants | 42.0 | 42.0 | 42.0 | 42.0
+Total weighted-average common shares outstanding | 767.3 | 564.7 | 755.9 | 508.4
+
+Basic and diluted loss per common share | $ | ( | 0.14 | ) | $ | ( | 0.15 | ) | $ | ( | 0.48 | ) | $ | ( | 0.19 | )
+
+
+TABLE 35
+
+Three Months Ended June 30, | Six Months Ended June 30,
+(in millions) | 2026 | 2025 | 2026 | 2025
+Convertible Preferred Stock | 219.0 | 219.0 | 219.0 | 219.0
+Mandatory Convertible Preferred Stock | 30.9 | 34.8 | 28.4 | 34.8
+Series C Preferred Stock | 86.0 | — | 86.0 | —
+Warrants | 219.0 | 219.0 | 219.0 | 219.0
+Stock-based awards | 24.3 | 30.1 | 24.3 | 30.1
+Total potential dilutive securities not included in loss per common share | 579.2 | 502.9 | 576.7 | 502.9
+
+TABLE 36
+
+(in millions, except for weighted-average grant date fair value) | Number of RSUs | Weighted-Average Grant Date Fair Value
+Balance at beginning of period | 16.1 | $ | 12.69
+Granted | 4.1 | $ | 21.57
+Vested | (1) | ( | 3.4 | ) | $ | 14.55
+Forfeited | ( | 1.4 | ) | $ | 13.27
+Balance at end of period | 15.4 | $ | 14.65
+
+(1) | The number of RSUs vested includes | 0.1 | million RSUs that vested in June 2026, but were not legally settled until July 2026.
+
+TABLE 37
+
+Six Months Ended June 30,
+(in millions, except per share amounts) | 2026 | 2025
+Weighted-average fair value per share of RSUs granted and converted | $ | 21.57 | $ | 13.16
+Total grant date fair value of RSUs vested | $ | 49 | $ | 58
+Total intrinsic value of RSUs released | $ | 71 | $ | 73
+
+TABLE 38
+
+Percentile Position vs. | S&P 500 Index Companies | Units Earned as a | Percentage of Target
+Below 55th Percentile | — | %
+55th Percentile | 100 | %
+65th Percentile | 150 | %
+75th Percentile | 175 | %
+80th Percentile | 200 | %
+90th Percentile | 225 | %
+
+TABLE 39
+
+(in millions, except for weighted-average grant date fair value) | Number of PRSUs | Weighted-Average Grant Date Fair Value
+Balance at beginning of period | 8.8 | $ | 20.17
+Granted | 0.2 | $ | 21.50
+Added by performance factor | (1) | 1.4 | $ | 15.66
+Vested | (1) | ( | 2.4 | ) | $ | 15.66
+
+Balance at end of period | 8.0 | $ | 20.80
+
+(1) | Includes PRSUs that vested above target based on achievement of applicable performance goals.
+
+TABLE 40
+
+Six Months Ended June 30,
+(in millions, except per share amounts) | 2026 | 2025
+Weighted-average fair value per share of PRSUs granted | $ | 21.50 | $ | 15.06
+Total grant date fair value of PRSUs vested | $ | 37 | $ | —
+Total intrinsic value of PRSUs released | $ | 60 | $ | —
+
+TABLE 41
+
+
+
+Performance period | 3.70 | years
+Risk-free interest rate | 3.8 | %
+Expected volatility | 43.0 | %
+Dividend yield | — | %
+
+TABLE 42
+
+Three Months Ended June 30, | Six Months Ended June 30,
+(in millions) | 2026 | 2025 | 2026 | 2025
+NSOs | $ | — | $ | 8 | $ | — | $ | 8
+RSUs | 20 | 44 | 48 | 51
+PRSUs | 9 | 13 | 20 | 26
+Total stock-based compensation expense | $ | 29 | $ | 65 | $ | 68 | $ | 85
+
+TABLE 43
+
+As of
+June 30, 2026 | December 31, 2025
+(in millions) | Principal Balance | Carrying Value | Fair Value | Principal Balance | Carrying Value | Fair Value
+Revolving Lines of Credit
+ABL Facility | (1) | $ | 11 | $ | 11 | $ | 11 | $ | — | $ | — | $ | —
+Borrowings under revolving lines of credit | $ | 11 | $ | 11 | $ | 11 | $ | — | $ | — | $ | —
+Long-term Debt, net
+Term Loan Facility | (2) | $ | 850 | $ | 829 | $ | 848 | $ | 850 | $ | 828 | $ | 852
+
+
+2031 Senior Notes | (3) | 1,500 | 1,484 | 1,532 | — | — | —
+2032 Senior Secured Notes | (4) | 2,250 | 2,232 | 2,326 | 2,250 | 2,229 | 2,357
+2034 Senior Notes | (5) | 1,500 | 1,484 | 1,543 | — | — | —
+
+Long-term debt, net | $ | 6,100 | $ | 6,029 | $ | 6,249 | $ | 3,100 | $ | 3,057 | $ | 3,209
+
+(1) | Effective rate on borrowings of | 4.70 | % as of June 30, 2026.
+(2) | Interest rate of | 5.64 | % and | 5.72 | % as of June 30, 2026 and December 31, 2025, respectively.
+(3) | Interest rate of | 6.50 | % as of June 30, 2026.
+(4) | Interest rate of | 6.75 | % for all periods presented.
+(5) | Interest rate of | 6.875 | % as of June 30, 2026.
+
+TABLE 44
+
+Three Months Ended June 30, | Six Months Ended June 30,
+(in millions) | 2026 | 2025 | 2026 | 2025
+Operating lease costs | $ | 53 | $ | 29 | $ | 97 | $ | 29
+Finance lease costs:
+Amortization of right-of-use assets | 14 | 8 | 27 | 8
+Interest on lease obligations | 3 | 2 | 6 | 2
+Variable lease costs | 7 | 3 | 12 | 3
+Total lease costs | $ | 77 | $ | 42 | $ | 142 | $ | 42
+
+TABLE 45
+
+Six Months Ended June 30,
+(in millions) | 2026 | 2025
+Cash paid for amounts included in measurement of lease obligations:
+Operating cash outflows from operating leases | $ | 92 | $ | 26
+Operating cash outflows from finance leases | $ | 6 | $ | 2
+Financing cash outflows from finance leases | $ | 26 | $ | 7
+Right-of-use assets obtained in exchange for new finance lease liabilities | $ | 10 | $ | 9
+Right-of-use assets obtained in exchange for new operating lease liabilities | $ | 11 | $ | 12
+
+TABLE 46
+
+
+(in millions) | Operating Leases | Finance Leases
+2026 (July - December) | $ | 86 | $ | 33
+2027 | 191 | 59
+2028 | 167 | 48
+2029 | 142 | 35
+2030 | 117 | 22
+Thereafter | 299 | 9
+Total future lease payments | 1,002 | 206
+Imputed interest | ( | 188 | ) | ( | 23 | )
+Total lease liabilities | $ | 814 | $ | 183
+
+TABLE 47
+
+Three Months Ended June 30, | % of net sales | (1) | Six Months Ended June 30, | % of net sales | (1)
+(in millions, except percentages) | 2026 | 2025 | 2026 | 2025 | 2026 | 2025 | 2026 | 2025
+Net sales | $ | 3,246 | $ | 1,906 | 100.0 | % | 100.0 | % | $ | 4,976 | $ | 1,920 | 100.0 | % | 100.0 | %
+Cost of products sold | 2,443 | 1,505 | 75.3 | % | 78.9 | % | 3,764 | 1,513 | 75.6 | % | 78.8 | %
+Gross profit | 803 | 401 | 24.7 | % | 21.1 | % | 1,212 | 407 | 24.4 | % | 21.2 | %
+Operating expense:
+Selling, general and administrative | 649 | 457 | 20.0 | % | 24.0 | % | 1,146 | 501 | 23.0 | % | 26.1 | %
+Depreciation | 56 | 27 | 1.7 | % | 1.4 | % | 103 | 27 | 2.1 | % | 1.4 | %
+Amortization | 140 | 80 | 4.3 | % | 4.2 | % | 257 | 80 | 5.2 | % | 4.2 | %
+Total operating expense | 845 | 564 | 26.0 | % | 29.6 | % | 1,506 | 608 | 30.3 | % | 31.7 | %
+Loss from operations | (42) | (163) | (1.3) | % | (8.5) | % | (294) | (201) | (5.9) | % | (10.5) | %
+
+Interest (expense) income, net | (38) | (30) | (1.2) | % | (1.6) | % | (69) | 26 | (1.4) | % | 1.4 | %
+Loss on debt extinguishment | — | (46) | — | % | (2.4) | % | — | (46) | — | % | (2.4) | %
+Other income, net | 3 | 2 | 0.1 | % | 0.1 | % | 6 | 2 | 0.1 | % | 0.1 | %
+Loss before benefit from income taxes | (77) | (237) | (2.4) | % | (12.4) | % | (357) | (219) | (7.2) | % | (11.4) | %
+Benefit from income taxes | (22) | (178) | (0.7) | % | (9.3) | % | (75) | (169) | (1.5) | % | (8.8) | %
+Net loss | $ | (55) | $ | (59) | (1.7) | % | (3.1) | % | $ | (282) | $ | (50) | (5.7) | % | (2.6) | %
+
+(1) | Percent of net sales may not foot due to rounding.
+
+TABLE 48
+
+Three Months Ended June 30, | % of net sales
+(in millions, except percentages) | 2026 | 2025 | 2026 | 2025
+Residential roofing products | $ | 1,266 | $ | 930 | 39.0 | % | 48.7 | %
+Non-residential roofing products | 736 | 536 | 22.7 | % | 28.1 | %
+Complementary building products | 1,229 | 426 | 37.9 | % | 22.4 | %
+Software products and services | 15 | 14 | 0.4 | % | 0.8 | %
+Total net sales | $ | 3,246 | $ | 1,906 | 100.0 | % | 100.0 | %
+
+TABLE 49
+
+Six Months Ended June 30, | % of net sales
+(in millions, except percentages) | 2026 | 2025 | 2026 | 2025
+Residential roofing products | $ | 2,064 | $ | 930 | 41.5 | % | 48.5 | %
+Non-residential roofing products | 1,200 | 536 | 24.1 | % | 27.9 | %
+Complementary building products | 1,682 | 426 | 33.8 | % | 22.2 | %
+Software products and services | 30 | 28 | 0.6 | % | 1.4 | %
+Total net sales | $ | 4,976 | $ | 1,920 | 100.0 | % | 100.0 | %
+
+TABLE 50
+
+Three Months Ended June 30, | Six Months Ended June 30,
+(in millions, except percentages) | 2026 | 2025 | 2026 | 2025
+Gross profit | $ | 803 | $ | 401 | $ | 1,212 | $ | 407
+Inventory fair value adjustments | (1) | — | 80 | — | 80
+Adjusted Gross Profit | $ | 803 | $ | 481 | $ | 1,212 | $ | 487
+
+Net sales | $ | 3,246 | $ | 1,906 | $ | 4,976 | $ | 1,920
+Gross margin | (2) | 24.7 | % | 21.1 | % | 24.4 | % | 21.2 | %
+Adjusted Gross Margin | (2) | 24.7 | % | 25.3 | % | 24.4 | % | 25.4 | %
+
+(1) | Represents | the inventory fair value adjustments related to recording the inventory of acquired businesses at fair value on the date of acquisition. | The inventory fair value adjustments were fully recognized during the year ended December 31, 2025.
+(2) | Gross margin is calculated as gross profit divided by net sales. Adjusted Gross Margin is calculated as Adjusted Gross Profit divided by net sales.
+
+TABLE 51
+
+(in millions, except per share amounts) | Three Months Ended June 30, | Six Months Ended June 30,
+2026 | 2025 | 2026 | 2025
+
+Net loss | $ | (55) | $ | (59) | $ | (282) | $ | (50)
+Benefit from income taxes | (22) | (178) | (75) | (169)
+Loss before benefit from income taxes | (77) | (237) | (357) | (219)
+Amortization | 140 | 80 | 257 | 80
+Stock-based compensation | 29 | 65 | 68 | 85
+Loss on debt extinguishment | (1) | — | 46 | — | 46
+Restructuring costs | 8 | 35 | 24 | 35
+Transaction costs | 52 | 66 | 71 | 76
+Transformation costs | 24 | 12 | 36 | 12
+Inventory fair value adjustments | (2) | — | 80 | — | 80
+Adjusted income before benefit from income taxes | 176 | 147 | 99 | 195
+Income tax associated with the adjustments above | (3) | (46) | (38) | (26) | (50)
+Adjusted Net Income | $ | 130 | $ | 109 | $ | 73 | $ | 145
+Convertible Preferred Stock dividend | (23) | (23) | (45) | (45)
+Mandatory Convertible Preferred Stock dividend | (8) | (3) | (16) | (3)
+Series C Preferred Stock dividend | (23) | — | (23) | —
+Undistributed income allocated to participating securities | (3) | (7) | — | —
+Adjusted Net Income (Loss) attributable to common stockholders | $ | 73 | $ | 76 | $ | (11) | $ | 97
+
+Basic and diluted loss per common share | $ | (0.14) | $ | (0.15) | $ | (0.48) | $ | (0.19)
+Adjusted Diluted Earnings (Loss) per Common Share | (4) | $ | 0.08 | $ | 0.11 | $ | (0.02) | $ | 0.17
+
+Adjusted diluted weighted-average common shares outstanding | (4) | 911.8 | 702.0 | 755.9 | 580.6
+
+(1) | Represents extinguishment costs resulting from the partial prepayment of borrowings under the Term Loan Facility (as defined below).
+(2) | Represents the inventory fair value adjustments related to recording the inventory of acquired businesses at fair value on the date of acquisition. The inventory fair value adjustments were fully recognized during the year ended December 31, 2025.
+(3) | The effective tax rates used to calculate Adjusted Net Income for the three months ended June 30, 2026 and 2025 were 26.4% and 25.8%, respectively. The effective tax rates used to calculate Adjusted Net Income for the six months ended June 30, 2026 and 2025 were 26.7% and 25.8%, respectively.
+(4) | Adjusted Diluted Earnings (Loss) per Common Share is calculated as Adjusted Net Income (Loss) attributable to common stockholders divided by the weighted-average number of common shares outstanding during the period plus the effect of dilutive common share equivalents based on the most dilutive result of the if-converted and two-class methods.
+
+TABLE 52
+
+Three Months Ended June 30, | Six Months Ended June 30,
+(in millions, except percentages) | 2026 | 2025 | 2026 | 2025
+
+Net loss | $ | (55) | $ | (59) | $ | (282) | $ | (50)
+Depreciation | (1) | 58 | 27 | 105 | 27
+Amortization | 140 | 80 | 257 | 80
+Stock-based compensation | 29 | 65 | 68 | 85
+Interest expense (income), net | 38 | 30 | 69 | (26)
+Loss on debt extinguishment | (2) | — | 46 | — | 46
+Benefit from income taxes | (22) | (178) | (75) | (169)
+Restructuring costs | 8 | 35 | 24 | 35
+Transaction costs | 52 | 66 | 71 | 76
+Transformation costs | 24 | 12 | 36 | 12
+Inventory fair value adjustments | (3) | — | 80 | — | 80
+Adjusted EBITDA | $ | 272 | $ | 204 | $ | 273 | $ | 196
+
+Net sales | $ | 3,246 | $ | 1,906 | $ | 4,976 | $ | 1,920
+Net margin | (4) | (1.7) | % | (3.1) | % | (5.7) | % | (2.6) | %
+Adjusted EBITDA Margin | (4) | 8.4 | % | 10.7 | % | 5.5 | % | 10.2 | %
+
+(1) | Depreciation for the three and six months ended June 30, 2026 includes $2 million of depreciation expense recognized within cost of products sold on the condensed consolidated statements of operations.
+(2) | Represents extinguishment costs resulting from the partial prepayment of borrowings under the Term Loan Facility (as defined below).
+(3) | Represents | the inventory fair value adjustments related to recording the inventory of acquired businesses at fair value on the date of acquisition. | T | he inventory fair value adjustments were fully recognized during the year ended December 31, 2025.
+(4) | Net margin is calculated as net loss divided by net sales. Adjusted EBITDA margin is calculated as Adjusted EBITDA divided by net sales.
+
+TABLE 53
+
+Applicable Market Value of Common Stock | Conversion Rate per Share of Mandatory Convertible Preferred Stock
+Greater than $20.2126 (the “Threshold Appreciation Price”) | 49.4740 shares of common stock
+Equal to or less than the Threshold Appreciation Price but greater than or equal to the Initial Price | Between 49.4740 and 60.6060 shares of common stock, determined by dividing $1,000 by the applicable market value
+Less than $16.50 (the “Initial Price”) | 60.6060 shares of common stock
+
+TABLE 54
+
+Applicable Market Value of Common Stock | Conversion Rate per Depositary Share Representing a 1/20th interest in a share of the Mandatory Convertible Preferred Stock
+Greater than the Threshold Appreciation Price | 2.4737 shares of common stock
+Equal to or less than the Threshold Appreciation Price but greater than or equal to the Initial Price | Between 2.4737 and 3.0303 shares of common stock, determined by dividing $50 by the applicable market value
+Less than the Initial Price | 3.0303 shares of common stock
+
+TABLE 55
+
+Six Months Ended June 30,
+(in millions) | 2026 | 2025
+Net cash used in operating activities | $ | (146) | $ | (138)
+Net cash used in investing activities | (2,015) | (10,576)
+Net cash provided by financing activities | 5,569 | 7,924
+Effect of exchange rate changes on cash, cash equivalents and restricted cash | — | —
+Net increase (decrease) in cash, cash equivalents and restricted cash | $ | 3,408 | $ | (2,790)
+
+TABLE 56
+
+June 30, 2026
+Balance Sheet | (in millions) | Credit Group | Other QXO Entities | Consolidated QXO
+Cash and cash equivalents | $ | 70 | $ | 2,704 | $ | 2,774
+Total current assets | $ | 7,573 | $ | 2,775 | $ | 10,348
+Total current liabilities | $ | 2,467 | $ | 48 | $ | 2,515
+Total long-term debt, net | $ | 6,029 | $ | — | $ | 6,029
+Total mezzanine equity | $ | — | $ | 1,961 | $ | 1,961
+Total stockholders’ equity | (1) | $ | — | $ | 10,378 | $ | 10,378
+
+(1) | Stockholders’ equity is presented on a consolidated basis and excludes intercompany equity investments from other QXO entities recorded in stockholders’ equity at the Credit Group, which is eliminated in consolidation.
+
+Three Months Ended June 30, 2026
+Statement of Operations | (in millions) | Credit Group | Other QXO Entities | Consolidated QXO
+Net sales | $ | 3,231 | $ | 15 | $ | 3,246
+Gross profit | $ | 797 | $ | 6 | $ | 803
+Total operating expense | $ | 812 | $ | 33 | $ | 845
+Interest (expense) income, net | $ | (64) | $ | 26 | $ | (38)
+
+
+
+
+
+
+
+
+
+TABLE 57
+
+
+
+
+
+
+
+
+
+Six Months Ended June 30, 2026
+Statement of Operations | (in millions) | Credit Group | Other QXO Entities | Consolidated QXO
+Net sales | $ | 4,946 | $ | 30 | $ | 4,976
+Gross profit | $ | 1,200 | $ | 12 | $ | 1,212
+Total operating expense | $ | 1,438 | $ | 68 | $ | 1,506
+Interest (expense) income, net | $ | (120) | $ | 51 | $ | (69)
+
+
+
+
+
+
+
+
+
+TABLE 58
+
+Incorporated by Reference
+Exhibit Number | Description | Form | Exhibit | Filing Date
+3.1 | Certificate of Amendment to Certificate of Designations of Series C Convertible Perpetual Preferred Stock, filed with the Secretary of State of the State of Delaware and effective July 1, 2026. | 8-K | 3.1 | July 1, 2026
+3.2 | Certificate of Amendment to the Fifth Amended and Restated Certificate of Incorporation of QXO, Inc., dated July 1, 2026. | 8-K | 3.2 | July 1, 2026
+4.1* | Supplemental Indenture No. 2, dated as of May 20, 2026, among QXO Building Products, Inc., the subsidiary guarantors party thereto and Wilmington Trust, National Association, as trustee.
+4.2* | Supplemental Indenture No. 3, dated as of July 1, 2026, among QXO Building Products, Inc., the subsidiary guarantors party thereto and Wilmington Trust, National Association, as trustee | .
+4.3 | Indenture, dated as of June 17, 2026, among QXO Building Products, Inc., the subsidiary guarantors party thereto from time to time and Wilmington Trust, National Association, as trustee. | 8-K | 4.1 | June 17, 2026
+4.4 | Supplemental Indenture No. 1, dated as of July 1, 2026, among QXO Building Products, Inc., the subsidiary guarantors party thereto and Wilmington Trust, National Association, as trustee. | 8-K | 4.1 | July 1, 2026
+10.1 | Incremental Assumption and Amendment Agreement No. 2, dated as of July 1, 2026, among Queen HoldCo, LLC, as Holdings, QXO Building Products, Inc., as Borrower, the subsidiary loan parties party thereto, the lenders party thereto and Goldman Sachs Bank USA, as administrative agent. | 8-K | 10.1 | July 1, 2026
+31.1* | Certification by the Principal Executive Officer of Registrant pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 (Rule 13a-14(a) or Rule 15d-14(a)).
+31.2* | Certification by the Principal Financial Officer of Registrant pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 (Rule 13a-14(a) or Rule 15d-14(a)).
+32.1** | Certification by the Principal Executive Officer pursuant to 18 U.S.C. 1350 as adopted pursuant to Section 906 of the Sarbanes-Oxley Act of 2002.
+32.2** | Certification by the Principal Financial Officer pursuant to 18 U.S.C. 1350 as adopted pursuant to Section 906 of the Sarbanes-Oxley Act of 2002.
+99.1 | Unaudited predecessor financial information for QXO Building Products, Inc. | 10-Q | 99.1 | August 14, 2025
+101.INS* | Inline XBRL Instance – the instance document does not appear in the Interactive Data File because its XBRL tags are embedded within the Inline XBRL document.
+101.SCH* | Inline XBRL Taxonomy Extension Schema
+101.CAL* | Inline XBRL Taxonomy Extension Calculation
+101.PRE* | Inline XBRL Taxonomy Extension Presentation
+101.LAB* | Inline XBRL Taxonomy Extension Labels
+101.DEF* | Inline XBRL Taxonomy Extension Definition
+104* | Cover Page Interactive Data File (formatted as Inline XBRL and contained in Exhibit 101)
+*Filed herewith
+**Furnished herewith
+
+
+
+TABLE 59
+
+QXO, INC.
+
+Date: August 14, 2026 | By: | /s/ Brad Jacobs
+Brad Jacobs
+Chief Executive Officer
+(Principal Executive Officer)
+
+Date: August 14, 2026 | By: | /s/ Ihsan Essaid
+Ihsan Essaid
+Chief Financial Officer
+(Principal Financial Officer)

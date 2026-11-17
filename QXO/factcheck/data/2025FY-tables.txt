@@ -1,0 +1,975 @@
+TABLE 0
+
+
+
+TABLE 1
+
+Delaware | (State | or | other | jurisdiction | of | incorporation) | 16-1633636 | (IRS Employer Identification No.)
+
+TABLE 2
+
+Title of each class | Trading Symbol(s) | Name of each exchange on which registered
+Common | Stock, | par | value | $0.00001 | per | share | QXO | New York Stock Exchange
+Depositary Shares, each representing a 1/20th interest in a share of 5.50% Series B Mandatory Convertible Preferred Stock, par value $0.001 per share | QXO.PRB | New York Stock Exchange
+
+TABLE 3
+
+Large | accelerated | filer | o | Accelerated | filer | o
+
+Non-accelerated | filer | x | Smaller | r | eporting | c | ompany | x
+
+Emerging | g | rowth | c | ompany | o
+
+TABLE 4
+
+
+
+TABLE 5
+
+Page
+PART I
+
+Item 1. | Business | 4
+Item 1A. | Risk Factors | 9
+Item 1B. | Unresolved Staff Comments | 21
+Item 1C. | Cybersecurity | 21
+Item 2. | Properties | 22
+Item 3. | Legal Proceedings | 22
+Item 4. | Mine Safety Disclosures | 22
+
+PART II
+
+Item 5. | Market for Registrant’s Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities | 23
+Item 6. | Reserved | 23
+Item 7. | Management’s Discussion and Analysis of Financial Condition and Results of Operations | 24
+Item 7A. | Quantitative and Qualitative Disclosures About Market Risk | 35
+Item 8. | Financial Statements and Supplementary Data | 36
+Item 9. | Changes in and Disagreements With Accountants on Accounting and Financial Disclosure | 70
+Item 9A. | Controls and Procedures | 70
+Item 9B. | Other Information | 71
+Item 9C. | Disclosure Regarding Foreign Jurisdictions that Prevent Inspections | 71
+
+PART III
+
+Item 10. | Directors, Executive Officers and Corporate Governance | 72
+Item 11. | Executive Compensation | 72
+Item 12. | Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters | 72
+Item 13. | Certain Relationships and Related Transactions, and Director Independence | 72
+Item 14. | Principal Accounting Fees and Services | 72
+
+PART IV
+
+Item 15. | Exhibits and Financial Statement Schedules | 73
+Item 16. | Form 10-K Summary | 75
+Signatures | 76
+
+
+
+TABLE 6
+
+Name | Age | Position
+
+Brad Jacobs | 69 | Chief Executive Officer
+Ihsan Essaid | 59 | Chief Financial Officer
+Chris Signorello | 52 | Chief Legal Officer
+Valeri Liborski | 58 | Chief Technology Officer
+
+TABLE 7
+
+Year Ended December 31, | % of net sales | (2)
+(in millions, except percentages) | 2025 | (1) | 2024 | 2025 | 2024
+Net sales | $ | 6,842.2 | $ | 56.9 | 100.0 | % | 100.0 | %
+Cost of products sold | 5,269.5 | 33.8 | 77.0 | % | 59.4 | %
+Gross profit | 1,572.7 | 23.1 | 23.0 | % | 40.6 | %
+Operating expense:
+Selling, general and administrative | 1,394.8 | 93.0 | 20.4 | % | 163.4 | %
+Depreciation | 108.4 | 0.2 | 1.6 | % | 0.4 | %
+Amortization | 314.7 | 0.9 | 4.6 | % | 1.6 | %
+Total operating expense | 1,817.9 | 94.1 | 26.6 | % | 165.4 | %
+Loss from operations | (245.2) | (71.0) | (3.6) | % | (124.8) | %
+
+Interest (expense) income, net | (47.7) | 121.8 | (0.7) | % | 214.1 | %
+Loss on debt extinguishment | (49.7) | — | (0.7) | % | — | %
+Other income, net | 5.5 | — | 0.1 | % | — | %
+(Loss) income before (benefit from) provision for income taxes | (337.1) | 50.8 | (4.9) | % | 89.3 | %
+(Benefit from) provision for income taxes | (57.7) | 22.8 | (0.8) | % | 40.1 | %
+Net (loss) income | $ | (279.4) | $ | 28.0 | (4.1) | % | 49.2 | %
+
+(1) | Results include Beacon’s operations from the date of acquisition on April 29, 2025 through December 31, 2025.
+(2) | Percent of net sales may not foot due to rounding.
+
+TABLE 8
+
+Year Ended December 31, | % of net sales
+(in millions, except percentages) | 2025 | (1) | 2024 | 2025 | 2024
+Residential roofing products | $ | 3,307.1 | $ | — | 48.3 | % | — | %
+Non-residential roofing products | 1,883.9 | — | 27.5 | % | — | %
+Complementary building products | 1,592.7 | — | 23.3 | % | — | %
+Software products and services | 58.5 | 56.9 | 0.9 | % | 100.0 | %
+Total net sales | $ | 6,842.2 | $ | 56.9 | 100.0 | % | 100.0 | %
+
+(1) | Net sales include Beacon’s operations from the date of acquisition on April 29, 2025 through December 31, 2025.
+
+TABLE 9
+
+Year Ended December 31,
+(in millions, except percentages) | 2025 | (1) | 2024
+Gross profit | $ | 1,572.7 | $ | 23.1
+Inventory fair value adjustments | (2) | 131.7 | —
+Adjusted Gross Profit | $ | 1,704.4 | $ | 23.1
+
+Net sales | $ | 6,842.2 | $ | 56.9
+Gross margin | (3) | 23.0 | % | 40.6 | %
+Adjusted Gross Margin | (3) | 24.9 | % | 40.6 | %
+
+(1) | Results include Beacon’s operations from the date of acquisition on April 29, 2025 through December 31, 2025.
+(2) | Represents the inventory fair value adjustments related to recording the inventory of acquired businesses at fair value on the date of acquisition. The inventory fair value adjustments related to acquired businesses were fully recognized during the year ended December 31, 2025.
+(3) | Gross margin is calculated as gross profit divided by net sales. Adjusted Gross Margin is calculated as Adjusted Gross Profit divided by net sales.
+
+TABLE 10
+
+Year Ended December 31,
+(in millions, except per share amounts) | 2025 | (1)
+
+Net loss | $ | (279.4)
+Benefit from income taxes | (57.7)
+Loss before provision for income taxes | (337.1)
+Amortization | 314.7
+Stock-based compensation | 144.5
+Loss on debt extinguishment | (2) | 49.7
+Restructuring costs | 59.6
+Transaction costs | 83.7
+Transformation costs | 44.9
+Inventory fair value adjustments | (3) | 131.7
+Adjusted income before provision for income taxes | 491.7
+Income tax associated with the adjustments above | (4) | (129.0)
+Adjusted Net Income | $ | 362.7
+Convertible Preferred Stock dividend | (90.0)
+Mandatory Convertible Preferred Stock dividend | (18.9)
+Undistributed income allocated to participating securities | (5.5)
+Adjusted Net Income attributable to common stockholders | $ | 248.3
+
+Basic and diluted loss per common share | $ | (0.63)
+Adjusted Diluted EPS | (5) | $ | 0.34
+
+Adjusted diluted weighted-average common shares outstanding | (5) | 727.3
+
+(1) | Results include Beacon’s operations from the date of acquisition on April 29, 2025 through December 31, 2025.
+(2) | Represents extinguishment costs resulting from the partial prepayment of borrowings under the Term Loan Facility (as defined below) in May 2025 and the subsequent refinancing of the Term Loan Facility (as defined below) in November 2025.
+(3) | Represents the inventory fair value adjustments related to recording the inventory of acquired businesses at fair value on the date of acquisition. The inventory fair value adjustments related to acquired businesses were fully recognized during the year ended December 31, 2025.
+(4) | The effective tax rate to calculate Adjusted Net Income (Loss) for the year ended December 31, 2025 is 26.3% due to the tax calculated on adjusted income (loss) before provision for income taxes.
+(5) | Adjusted Diluted EPS is calculated as Adjusted Net Income (Loss) divided by the weighted-average number of common shares outstanding during the period plus the effect of dilutive common share equivalents based on the most dilutive result of the if-converted and two-class methods.
+
+TABLE 11
+
+Year Ended December 31,
+(in millions, except percentages) | 2025 | (1) | 2024
+
+Net (loss) income | $ | (279.4) | $ | 28.0
+Depreciation | 108.4 | 0.2
+Amortization | 314.7 | 0.9
+Stock-based compensation | 144.5 | 34.4
+Interest expense (income), net | 47.7 | (121.8)
+Loss on debt extinguishment | (2) | 49.7 | —
+(Benefit from) provision for income taxes | (57.7) | 22.8
+Restructuring costs | 59.6 | 2.8
+Transaction costs | 83.7 | 12.8
+Transformation costs | 44.9 | —
+Inventory fair value adjustments | (3) | 131.7 | —
+Adjusted EBITDA | $ | 647.8 | $ | (19.9)
+
+Net sales | $ | 6,842.2 | $ | 56.9
+Net margin | (4) | (4.1) | % | 49.2 | %
+Adjusted EBITDA Margin | (4) | 9.5 | % | (35.0) | %
+
+(1) | Results include Beacon’s operations from the date of acquisition on April 29, 2025 through December 31, 2025.
+(2) | Represents extinguishment costs resulting from the partial prepayment of borrowings under the Term Loan Facility (as defined below) in May 2025 and the subsequent refinancing of the Term Loan Facility (as defined below) in November 2025.
+(3) | Represents the inventory fair value adjustments related to recording the inventory of acquired businesses at fair value on the date of acquisition. The inventory fair value adjustments related to acquired businesses were fully recognized during the year ended December 31, 2025.
+(4) | Net margin is calculated as net income (loss) divided by net sales. Adjusted EBITDA margin is calculated as Adjusted EBITDA divided by net sales.
+
+TABLE 12
+
+Applicable Market Value of Common Stock | Conversion Rate per Share of Mandatory Convertible Preferred Stock
+Greater than $20.2126 (the “Threshold Appreciation Price”) | 49.4740 shares of common stock
+Equal to or less than the Threshold Appreciation Price but greater than or equal to the Initial Price | Between 49.4740 and 60.6060 shares of common stock, determined by dividing $1,000 by the applicable market value
+Less than $16.50 (the “Initial Price”) | 60.6060 shares of common stock
+
+TABLE 13
+
+Applicable Market Value of Common Stock | Conversion Rate per Depository Share Representing a 1/20th interest in a share of the Mandatory Convertible Preferred Stock
+Greater than the Threshold Appreciation Price | 2.4737 shares of common stock
+Equal to or less than the Threshold Appreciation Price but greater than or equal to the Initial Price | Between 2.4737 and 3.0303 shares of common stock, determined by dividing $50 by the applicable market value
+Less than the Initial Price | 3.0303 shares of common stock
+
+TABLE 14
+
+Year Ended December 31,
+(in millions) | 2025 | 2024
+Net cash provided by operating activities | $ | 261.4 | $ | 84.8
+Net cash used in investing activities | (10,630.3) | (0.1)
+Net cash provided by financing activities | 7,662.8 | 4,981.1
+Effect of exchange rate changes on cash, cash equivalents and restricted cash | (0.5) | —
+Net (decrease) increase in cash, cash equivalents and restricted cash | $ | (2,706.6) | $ | 5,065.8
+
+TABLE 15
+
+Page
+
+Report of Independent Registered Public Accounting Firm | (PCAOB ID: | 34 | ) | 37
+
+Report of Independent Registered Public Accounting Firm | (PCAOB ID: 688) | 39
+
+Consolidated Financial Statements | 40
+
+Consolidated Balance Sheets | 40
+
+Consolidated Statements of Operations | 41
+
+Consolidated Statements of Comprehensive (Loss) Income | 42
+
+Consolidated Statements of Stockholders’ Equity | 43
+
+Consolidated Statements of Cash Flows | 44
+
+Notes to Consolidated Financial Statements | 45
+
+TABLE 16
+
+December 31, | 2025 | December 31, | 2024
+
+Assets
+Current assets:
+Cash and cash equivalents | $ | 2,361.6 | $ | 5,068.5
+Accounts receivable, net | 1,145.1 | 2.7
+Inventories, net | 1,497.3 | —
+Vendor rebates receivable | 427.0 | —
+Income tax receivable | 31.6 | —
+Prepaid expenses and other current assets | 83.7 | 18.4
+Total current assets | 5,546.3 | 5,089.6
+Property and equipment, net | 688.6 | 0.4
+Goodwill | 5,111.3 | 1.2
+Intangibles, net | 3,819.1 | 4.0
+Operating lease right-of-use assets, net | 689.6 | 0.3
+Deferred income tax assets, net | — | 2.6
+Other assets, net | 32.4 | 0.2
+Total assets | $ | 15,887.3 | $ | 5,098.3
+
+Liabilities and Stockholders’ Equity
+Current liabilities:
+Accounts payable | $ | 819.0 | $ | 6.2
+Accrued expenses | 574.3 | 38.6
+Current portion of operating lease liabilities | 107.5 | 0.2
+Current portion of finance lease liabilities | 49.2 | 0.1
+
+Total current liabilities | 1,550.0 | 45.1
+
+Long-term debt, net | 3,057.3 | —
+Deferred income tax liabilities, net | 847.2 | —
+Operating lease liabilities | 561.8 | 0.1
+Finance lease liabilities | 138.7 | 0.2
+Other long-term liabilities | 25.5 | —
+Total liabilities | 6,180.5 | 45.4
+Commitments and contingencies (Note 11)
+Stockholders’ equity:
+Mandatory Convertible Preferred Stock, $ | 0.001 | par value; | 0.6 | shares and | 0.0 | shares authorized, issued and outstanding as of December 31, 2025 and December 31, 2024, respectively | 558.1 | —
+Convertible Preferred Stock, $ | 0.001 | par value; authorized | 10.0 | shares, | 1.0 | shares issued and outstanding as of December 31, 2025 and December 31, 2024 | 498.6 | 498.6
+Common stock, $ | 0.00001 | par value; authorized | 2,000.0 | shares; | 674.5 | and | 409.4 | shares issued and outstanding as of December 31, 2025 and December 31, 2024, respectively | — | —
+Additional paid-in capital | 9,046.9 | 4,560.5
+Retained earnings (accumulated deficit) | ( | 394.5 | ) | ( | 6.2 | )
+Accumulated other comprehensive loss | ( | 2.3 | ) | —
+Total stockholders’ equity | 9,706.8 | 5,052.9
+Total liabilities and stockholders’ equity | $ | 15,887.3 | $ | 5,098.3
+
+TABLE 17
+
+Year Ended December 31,
+2025 | (1) | 2024
+Net sales | $ | 6,842.2 | $ | 56.9
+Cost of products sold | 5,269.5 | 33.8
+Gross profit | 1,572.7 | 23.1
+Operating expense:
+Selling, general and administrative | 1,394.8 | 93.0
+Depreciation | 108.4 | 0.2
+Amortization | 314.7 | 0.9
+Total operating expense | 1,817.9 | 94.1
+Loss from operations | ( | 245.2 | ) | ( | 71.0 | )
+Interest (expense) income, net | ( | 47.7 | ) | 121.8
+Loss on debt extinguishment | ( | 49.7 | ) | —
+Other income, net | 5.5 | —
+(Loss) income before (benefit from) provision for income taxes | ( | 337.1 | ) | 50.8
+(Benefit from) provision for income taxes | ( | 57.7 | ) | 22.8
+Net (loss) income | $ | ( | 279.4 | ) | $ | 28.0
+Loss per common share - basic and diluted (Note 7) | $ | ( | 0.63 | ) | $ | ( | 0.11 | )
+
+
+
+Total weighted-average common shares outstanding:
+Basic | 613.0 | 204.0
+Diluted | 613.0 | 204.0
+
+(1) | Results include Beacon’s operations from the date of acquisition on April 29, 2025 through December 31, 2025.
+
+TABLE 18
+
+Year Ended December 31,
+2025 | (1) | 2024
+Net (loss) income | $ | ( | 279.4 | ) | $ | 28.0
+Other comprehensive loss:
+Foreign currency translation adjustment | ( | 2.3 | ) | —
+Total other comprehensive loss | ( | 2.3 | ) | —
+Comprehensive (loss) income | $ | ( | 281.7 | ) | $ | 28.0
+
+(1) | Results include Beacon’s operations from the date of acquisition on April 29, 2025 through December 31, 2025.
+
+TABLE 19
+
+Mandatory Convertible Preferred Stock | Convertible Preferred Stock | Common Stock | Additional Paid-in Capital | Retained Earnings (Accumulated Deficit) | Accumulated Other Comprehensive Loss
+Shares | Amount | Shares | Amount | Shares | Amount | Total
+Balance as of December 31, 2023 | — | $ | — | — | $ | — | 0.7 | $ | — | $ | 9.4 | $ | ( | 1.9 | ) | $ | — | $ | 7.5
+Issuance of Convertible Preferred Stock and Warrants, net of issuance costs | — | — | 1.0 | 498.6 | — | — | 483.0 | — | — | 981.6
+Issuance of common stock and pre-funded warrants, net of issuance costs | — | — | — | — | 408.7 | — | 4,051.1 | — | — | 4,051.1
+
+Common stock dividend | — | — | — | — | — | — | ( | 17.4 | ) | — | — | ( | 17.4 | )
+Convertible Preferred Stock dividend | — | — | — | — | — | — | — | ( | 32.3 | ) | — | ( | 32.3 | )
+Stock-based compensation | — | — | — | — | — | — | 34.4 | — | — | 34.4
+Net income | — | — | — | — | — | — | — | 28.0 | — | 28.0
+Balance as of December 31, 2024 | — | $ | — | 1.0 | $ | 498.6 | 409.4 | $ | — | $ | 4,560.5 | $ | ( | 6.2 | ) | $ | — | $ | 5,052.9
+Issuance of Mandatory Convertible Preferred Stock, net of issuance costs | 0.6 | 558.1 | — | — | — | — | — | — | — | 558.1
+Mandatory Convertible Preferred Stock dividend | — | — | — | — | — | — | — | ( | 18.9 | ) | — | ( | 18.9 | )
+Convertible Preferred Stock dividend | — | — | — | — | — | — | — | ( | 90.0 | ) | — | ( | 90.0 | )
+Issuance of common stock, net of issuance costs | — | — | — | — | 256.6 | — | 4,256.0 | — | — | 4,256.0
+Proceeds from stock option exercises | — | — | — | — | 3.8 | — | 18.9 | — | — | 18.9
+Awards assumed in acquisition | — | — | — | — | — | — | 87.5 | — | — | 87.5
+Vesting of stock-based compensation awards | — | — | — | — | 4.7 | — | — | — | — | —
+Tax withholdings for stock-based compensation awards | — | — | — | — | — | — | ( | 20.5 | ) | — | — | ( | 20.5 | )
+Stock-based compensation | — | — | — | — | — | — | 144.5 | — | — | 144.5
+Other comprehensive loss | — | — | — | — | — | — | — | — | ( | 2.3 | ) | ( | 2.3 | )
+Net loss | — | — | — | — | — | — | — | ( | 279.4 | ) | — | ( | 279.4 | )
+Balance as of December 31, 2025 | 0.6 | $ | 558.1 | 1.0 | $ | 498.6 | 674.5 | $ | — | $ | 9,046.9 | $ | ( | 394.5 | ) | $ | ( | 2.3 | ) | $ | 9,706.8
+
+(1) | Results include Beacon’s operations from the date of acquisition on April 29, 2025 through December 31, 2025.
+
+TABLE 20
+
+Year Ended December 31,
+2025 | (1) | 2024
+Operating Activities
+Net (loss) income | $ | ( | 279.4 | ) | $ | 28.0
+Adjustments to reconcile net (loss) income to net cash provided by operating activities:
+Depreciation | 108.4 | 0.2
+Amortization | 314.7 | 0.9
+Stock-based compensation | 144.5 | 34.4
+Amortization of debt issuance costs | 6.7 | —
+Loss on debt extinguishment | 49.7 | —
+Provision for credit losses | 13.8 | —
+
+Non-cash lease expense | 88.0 | 0.3
+Deferred income taxes | ( | 60.6 | ) | ( | 1.1 | )
+Changes in operating assets and liabilities:
+Accounts receivable | 159.8 | 0.2
+Inventories | 287.8 | —
+Vendor rebates receivable | ( | 186.8 | ) | —
+Income tax receivable | ( | 11.0 | ) | —
+Prepaid expenses and other current assets | 19.9 | ( | 12.2 | )
+Accounts payable and accrued expenses | ( | 326.4 | ) | 34.4
+Other assets and liabilities | ( | 67.7 | ) | ( | 0.3 | )
+Net cash provided by operating activities | 261.4 | 84.8
+
+Investing Activities
+Capital expenditures | ( | 78.2 | ) | ( | 0.1 | )
+Acquisition of business, net of cash acquired | ( | 10,556.5 | ) | —
+
+Other | 4.4 | —
+
+Net cash used in investing activities | ( | 10,630.3 | ) | ( | 0.1 | )
+
+Financing Activities
+Borrowings under revolving lines of credit | 841.9 | —
+Payments under revolving lines of credit | ( | 842.0 | ) | —
+Borrowings under term loan | 2,250.0 | —
+Payments under term loan | ( | 1,400.0 | ) | —
+Borrowings under senior notes | 2,250.0 | —
+
+Payment of debt issuance costs | ( | 114.5 | ) | —
+Payment of other debt | — | ( | 1.7 | )
+Payments under equipment financing facilities and finance leases | ( | 30.3 | ) | ( | 0.2 | )
+Proceeds from issuance of common stock related to equity awards | 18.9 | —
+Proceeds from issuance of common stock, net of issuance costs | 4,256.0 | —
+Proceeds from issuance of Mandatory Convertible Preferred Stock, net of issuance costs | 558.1 | —
+Proceeds from issuance of Convertible Preferred Stock and warrants, net of issuance costs | — | 981.6
+Proceeds from the issuance of common stock and pre-funded warrants, net of issuance costs | — | 4,051.1
+
+Payment of taxes related to net share settlement of equity awards | ( | 20.5 | ) | —
+Payment of common-stock dividend | — | ( | 17.4 | )
+Payment of dividends on Convertible Preferred Stock | ( | 90.0 | ) | ( | 32.3 | )
+Payment of dividends on Mandatory Convertible Preferred Stock | ( | 14.8 | ) | —
+Net cash provided by financing activities | 7,662.8 | 4,981.1
+
+Effect of exchange rate changes on cash, cash equivalents and restricted cash | ( | 0.5 | ) | —
+
+Net (decrease) increase in cash, cash equivalents and restricted cash | ( | 2,706.6 | ) | 5,065.8
+Cash, cash equivalents and restricted cash, beginning of period | 5,072.0 | 6.2
+Cash, cash equivalents and restricted cash, end of period | $ | 2,365.4 | $ | 5,072.0
+
+Supplemental Cash Flow Information
+Cash paid during the period for:
+Interest | $ | 138.0 | $ | 0.1
+Income taxes, net of refunds | $ | 38.2 | $ | —
+(1) | Results include Beacon’s operations from the date of acquisition on April 29, 2025 through December 31, 2025.
+
+TABLE 21
+
+As of
+(in millions) | December 31, | 2025 | December 31, | 2024
+Cash and cash equivalents | $ | 2,361.6 | $ | 5,068.5
+Restricted cash included in prepaid expenses and other current assets | 3.8 | 3.5
+Total cash, cash equivalents and restricted cash | $ | 2,365.4 | $ | 5,072.0
+
+TABLE 22
+
+(in millions) | December 31, | 2025 | December 31, | 2024
+Balance at beginning of period | $ | 0.5 | $ | 0.5
+Current period provision for expected credit losses | 13.8 | —
+Recoveries | ( | 1.3 | ) | —
+Balance at end of period | $ | 13.0 | $ | 0.5
+
+TABLE 23
+
+
+Buildings | 40 | years
+Equipment | 3 | to | 7 | years
+Furniture and fixtures | 7 | years
+Software | 3 | to | 5 | years
+Finance lease assets and leasehold improvements | Shorter of the estimated useful life or lease term, considering renewal options expected to be exercised.
+
+TABLE 24
+
+As of
+December 31, | 2025 | December 31, | 2024
+(in millions)
+Equipment | $ | 259.5 | $ | 4.0
+Finance lease assets | 216.9 | —
+Leasehold improvements | 124.5 | 0.1
+Furniture and fixtures | 29.7 | 0.2
+Software | 31.2 | —
+Land and buildings | 59.6 | —
+Construction in progress | 55.1 | —
+Total property and equipment | 776.5 | 4.3
+Accumulated depreciation | ( | 87.9 | ) | ( | 3.9 | )
+Total property and equipment, net | $ | 688.6 | $ | 0.4
+
+TABLE 25
+
+(in millions) | December 31, | 2025
+Balance at beginning of period | $ | 1.2
+Acquisitions | 5,111.2
+Translation and other adjustments | ( | 1.1 | )
+Balance at end of period | $ | 5,111.3
+
+TABLE 26
+
+As of | Weighted-Average Remaining Life | (1) | (Years)
+(in millions, except time periods) | December 31, | 2025 | December 31, | 2024
+Amortizable intangible assets:
+Customer relationships and other | $ | 3,908.7 | $ | 9.4 | 9.3
+Trade names | 229.9 | — | 2.3
+
+Total amortizable intangible assets | 4,138.6 | 9.4 | 9.0
+Accumulated amortization | ( | 320.2 | ) | ( | 5.4 | )
+Total amortizable intangible assets, net | 3,818.4 | 4.0
+Indefinite-lived domain names | 0.7 | —
+Total intangibles, net | $ | 3,819.1 | $ | 4.0
+
+(1) | As of December 31, 2025.
+
+TABLE 27
+
+(in millions)
+
+2026 | $ | 467.6
+2027 | 467.5
+2028 | 415.5
+2029 | 390.3
+2030 | 390.1
+Thereafter | 1,687.4
+Total future amortization expense | $ | 3,818.4
+
+TABLE 28
+
+As of
+(in millions) | December 31, | 2025 | December 31, | 2024
+Inventory | $ | 170.0 | $ | —
+Selling, general and administrative | 146.8 | —
+Customer rebates | 148.4 | —
+Payroll and employee benefit costs | 66.5 | 8.1
+Interest expense | 27.1 | —
+Income taxes | — | 24.0
+Other | 15.5 | 6.5
+Total accrued expenses | $ | 574.3 | $ | 38.6
+
+TABLE 29
+
+Year Ended December 31,
+(in millions) | 2025 | 2024
+Interest income | $ | 125.8 | $ | 121.9
+Interest expense | ( | 173.5 | ) | ( | 0.1 | )
+Interest (expense) income, net | $ | ( | 47.7 | ) | $ | 121.8
+
+TABLE 30
+
+(in millions)
+Cash paid for outstanding Beacon common stock | (1) | $ | 7,736.6
+Converted Beacon RSUs and options attributable to pre-combination service | (2) | 103.5
+Payment of Beacon debt, including accrued interest | (3) | 2,947.8
+Preliminary aggregate acquisition consideration | 10,787.9
+Less: cash acquired | 143.9
+Preliminary aggregate acquisition consideration, net of cash acquired | $ | 10,644.0
+
+(1) | The cash component of the preliminary aggregate acquisition consideration represents | 62.2 | million shares of outstanding common stock of Beacon multiplied by the $ | 124.35 | per share cash portion of the acquisition consideration.
+(2) | This amount represents the value of outstanding equity awards held by Beacon employees that were converted into replacement QXO instruments with identical terms. The conversion was based on the volume-weighted average trading price of QXO common stock for the | five | consecutive trading days ending on the trading day immediately preceding the Closing Date. The fair value of replacement equity-based awards attributable to pre-acquisition service was recorded as part of the consideration transferred. This amount also includes cash paid by QXO of $ | 16.0 | million to settle RSUs for non-employee members of the board of directors of Beacon, which were accelerated in full, cancelled and paid in cash for $ | 124.35 | per share. See Note 8 for additional information.
+(3) | This amount represents the cash paid by QXO to settle Beacon’s senior secured term loan B facility, senior secured notes, and outstanding line of credit borrowings of $ | 1.26 | billion, $ | 1.25 | billion and $ | 370.8 | million, respectively. Additionally, accrued interest expense of $ | 30.1 | million and a breakage fee of $ | 37.8 | million was paid for early termination of Beacon’s debt at the closing of the Beacon Acquisition.
+
+TABLE 31
+
+(in millions) | Preliminary | Allocation
+Assets:
+Accounts receivable | $ | 1,316.3
+Inventories | 1,784.6
+Vendor rebates receivable | 240.0
+Income tax receivable | 19.9
+Prepaid expenses and other current assets | 81.1
+Property and equipment | 687.5
+Goodwill | 5,111.2
+Intangibles | 4,130.6
+Operating lease right-of-use assets | 708.0
+Other non-current assets | 17.5
+Liabilities:
+Accounts payable | ( | 1,138.2 | )
+Accrued expenses | ( | 527.0 | )
+Deferred income taxes | ( | 910.3 | )
+Other long-term liabilities | ( | 27.5 | )
+Operating lease liabilities | ( | 668.2 | )
+Finance lease liabilities | ( | 181.5 | )
+Preliminary aggregate acquisition consideration | $ | 10,644.0
+
+TABLE 32
+
+(in millions, except weighted-average useful life) | Preliminary Fair Value | Weighted-Average Useful Life in Years
+Customer relationships | $ | 3,900.6 | 10.0
+Trade names | 230.0 | 3.0
+Total intangible assets acquired | $ | 4,130.6 | 9.6
+
+TABLE 33
+
+Year Ended December 31,
+(in millions) | 2025 | 2024
+Net sales | $ | 9,536.8 | $ | 9,820.1
+Net loss | $ | ( | 332.4 | ) | $ | ( | 215.9 | )
+
+TABLE 34
+
+Severance and | Employee-related | Costs | Lease | Abandonment | Costs
+(in millions)
+Restructuring charge liability as of December 31, 2024 | $ | — | $ | —
+Restructuring charges | 54.6 | 5.0
+Payments | ( | 28.4 | ) | —
+Non-cash settlement | — | ( | 5.0 | )
+Restructuring charge liability as of December 31, 2025 | $ | 26.2 | $ | —
+
+TABLE 35
+
+Year Ended December 31,
+(in millions) | 2025 | 2024
+Net sales:
+Residential roofing products | $ | 3,307.1 | $ | —
+Non-residential roofing products | 1,883.9 | —
+Complementary building products | 1,592.7 | —
+Software products and services | 58.5 | 56.9
+Total net sales | $ | 6,842.2 | $ | 56.9
+Less:
+Cost of products sold | $ | 5,269.5 | $ | 33.8
+Selling, general administrative expenses | (1) | 1,250.3 | 58.6
+Stock-based compensation | 144.5 | 34.4
+Other segment items | 457.3 | ( | 97.9 | )
+
+Net (loss) income | $ | ( | 279.4 | ) | $ | 28.0
+
+(1) | Excludes stock-based compensation.
+
+TABLE 36
+
+Applicable Market Value of Common Stock | Conversion Rate per Share of Mandatory Convertible Preferred Stock
+Greater than $ | 20.2126 | (the “Threshold Appreciation Price”) | 49.4740 | shares of common stock
+Equal to or less than the Threshold Appreciation Price but greater than or equal to the Initial Price | Between | 49.4740 | and | 60.6060 | shares of common stock, determined by dividing $ | 1,000 | by the applicable market value
+Less than $ | 16.50 | (the “Initial Price”) | 60.6060 | shares of common stock
+
+TABLE 37
+
+Applicable Market Value of Common Stock | Conversion Rate per Depository Share Representing a 1/20th interest in a share of the Mandatory Convertible Preferred Stock
+Greater than the Threshold Appreciation Price | 2.4737 | shares of common stock
+Equal to or less than the Threshold Appreciation Price but greater than or equal to the Initial Price | Between | 2.4737 | and | 3.0303 | shares of common stock, determined by dividing $ | 50 | by the applicable market value
+Less than the Initial Price | 3.0303 | shares of common stock
+
+TABLE 38
+
+(in millions, except per share amounts; certain amounts may not recalculate due to rounding) | Year Ended December 31,
+2025 | 2024
+Basic and diluted earnings (loss) per common share computation:
+Net (loss) income | $ | ( | 279.4 | ) | $ | 28.0
+Less: Convertible Preferred Stock dividend | ( | 90.0 | ) | ( | 51.0 | )
+Less: Mandatory Convertible Preferred Stock dividend | ( | 18.9 | ) | —
+Less: Undistributed earnings allocated to participating securities | — | —
+Loss attributable to common shareholders | $ | ( | 388.3 | ) | $ | ( | 23.0 | )
+
+Weighted-average common shares | 571.0 | 185.0
+Weighted-average Pre-Funded Warrants | 42.0 | 19.0
+Total weighted-average common shares outstanding | 613.0 | 204.0
+
+Basic and diluted loss per common share | $ | ( | 0.63 | ) | $ | ( | 0.11 | )
+
+
+TABLE 39
+
+Year Ended December 31,
+(in millions) | 2025 | 2024
+Convertible Preferred Stock | 219.0 | 219.0
+Mandatory Convertible Preferred Stock | 32.7 | —
+Warrants | 219.0 | 219.0
+Stock-based awards | 26.2 | 21.9
+Total potential dilutive securities not included in loss per common share | 496.9 | 459.9
+
+TABLE 40
+
+(in millions, except for weighted-average grant date fair value) | Number of RSUs | Weighted-Average Grant Date Fair Value
+Balance at beginning of period | 13.5 | $ | 11.57
+Granted | 1.8 | $ | 17.70
+Converted RSUs | 9.7 | $ | 13.23
+Vested | (1) | ( | 6.7 | ) | $ | 12.77
+Forfeited | ( | 2.2 | ) | $ | 12.12
+Balance at end of period | 16.1 | $ | 12.69
+
+(1) | The number of RSUs vested includes | 2.0 | million RSUs that vested on December 31, 2025, but were not legally settled until January 2026.
+
+TABLE 41
+
+Year Ended December 31,
+2025 | 2024
+Weighted-average fair value per share of RSUs granted and converted | $ | 13.94 | $ | 11.57
+Total grant date fair value of RSUs vested | $ | 86.0 | $ | —
+Total intrinsic value of RSUs released | $ | 122.7 | $ | —
+
+TABLE 42
+
+Percentile Position vs. | S&P 500 Index Companies | Units Earned as a | Percentage of Target
+Below 55th Percentile | — | %
+55th Percentile | 100 | %
+65th Percentile | 150 | %
+75th Percentile | 175 | %
+80th Percentile | 200 | %
+90th Percentile | 225 | %
+
+TABLE 43
+
+(in millions, except for weighted-average grant date fair value) | Number of PRSUs | Weighted- Average Grant Date Fair Value
+Balance at beginning of period | 8.4 | $ | 20.24
+Granted | 0.4 | $ | 18.83
+
+
+Balance at end of period | 8.8 | $ | 20.17
+
+TABLE 44
+
+Year Ended December 31,
+2025 | 2024
+Performance period | 3.66 | years | 4.42 | years
+Risk-free interest rate | 3.8 | % | 4.0 | %
+Expected volatility | 42.3 | % | 40.0 | %
+Dividend yield | — | % | — | %
+
+TABLE 45
+
+Year Ended December 31,
+(in millions) | 2025 | 2024
+NSOs | $ | 8.5 | $ | —
+RSUs | 83.0 | 12.6
+PRSUs | 53.0 | 21.8
+Total stock-based compensation expense | $ | 144.5 | $ | 34.4
+
+TABLE 46
+
+As of
+December 31, 2025
+(in millions) | Principal Balance | Carrying Value | Fair Value
+
+
+
+Long-term Debt, net
+Term Loan Facility | (1) | $ | 850.0 | $ | 827.8 | $ | 852.1
+
+
+Notes | (2) | 2,250.0 | 2,229.5 | 2,356.9
+
+Long-term debt, net | $ | 3,100.0 | $ | 3,057.3 | $ | 3,209.0
+
+
+(1) | Interest rate of | 5.72 | % as of December 31, 2025.
+(2) | Interest rate of | 6.75 | % as of December 31, 2025.
+
+TABLE 47
+
+Year Ended December 31,
+(in millions) | 2025 | 2024
+Operating lease costs | $ | 119.3 | $ | 0.3
+Finance lease costs:
+Amortization of right-of-use assets | 33.1 | 0.2
+Interest on lease obligations | 8.1 | —
+Variable lease costs | 13.6 | 0.2
+Total lease costs | $ | 174.1 | $ | 0.7
+
+TABLE 48
+
+Year Ended December 31,
+(in millions) | 2025 | 2024
+Cash paid for amounts included in measurement of lease obligations:
+Operating cash outflows from operating leases | $ | 107.4 | $ | 0.3
+Operating cash outflows from finance leases | $ | 8.0 | $ | —
+Financing cash outflows from finance leases | $ | 30.3 | $ | 0.2
+Right-of-use assets obtained in exchange for new finance lease liabilities | $ | 34.5 | $ | 0.1
+Right-of-use assets obtained in exchange for new operating lease liabilities | $ | 29.2 | $ | —
+
+TABLE 49
+
+
+(in millions) | Operating | Leases | Finance | Leases
+2026 | $ | 148.0 | $ | 60.1
+2027 | 148.8 | 54.8
+2028 | 131.2 | 43.6
+2029 | 111.3 | 30.5
+2030 | 89.9 | 18.9
+Thereafter | 190.8 | 6.3
+Total future lease payments | 820.0 | 214.2
+Imputed interest | ( | 150.7 | ) | ( | 26.3 | )
+Total lease liabilities | $ | 669.3 | $ | 187.9
+
+TABLE 50
+
+Year Ended December 31,
+(in millions) | 2025 | 2024
+(Loss) income before (benefit from) provision for income taxes
+U.S. | $ | ( | 350.2 | ) | $ | 50.8
+Foreign | 13.1 | —
+Total | $ | ( | 337.1 | ) | $ | 50.8
+
+(Benefit from) provision for income taxes
+Provision for (benefit from) current income taxes
+U.S. federal | $ | 0.7 | $ | 16.6
+Foreign | 3.4 | —
+U.S. state and local | ( | 0.8 | ) | 7.4
+Total provision for current income taxes | 3.3 | 24.0
+
+(Benefit from) provision for deferred income taxes
+U.S. federal | ( | 52.7 | ) | ( | 0.7 | )
+Foreign | — | —
+U.S. state and local | ( | 8.3 | ) | ( | 0.5 | )
+Total benefit from deferred income taxes | ( | 61.0 | ) | ( | 1.2 | )
+
+Total (benefit from) provision for income taxes
+U.S. federal | ( | 52.0 | ) | 15.9
+Foreign | 3.4 | —
+U.S. state and local | ( | 9.1 | ) | 6.9
+Total (benefit from) provision for income taxes | $ | ( | 57.7 | ) | $ | 22.8
+
+TABLE 51
+
+Year Ended December 31, 2025
+(in millions, except percentages) | Amount | Percent
+U.S. federal statutory income tax rate | $ | ( | 70.8 | ) | 21.0 | %
+
+Domestic federal
+
+Non-taxable and non-deductible items
+Section 162(m) limitation | 19.6 | ( | 5.8 | ) | %
+Non-taxable stock compensation | ( | 5.3 | ) | 1.6 | %
+Non-deductible transaction costs | 4.8 | ( | 1.4 | ) | %
+Other | 0.2 | ( | 0.1 | ) | %
+Changes in valuation allowance | ( | 0.1 | ) | — | %
+Other | 2.1 | ( | 0.6 | ) | %
+
+Domestic state and local income taxes, net of federal effect | (1) | ( | 8.9 | ) | 2.6 | %
+
+Foreign tax effects
+Other foreign jurisdictions | 0.7 | ( | 0.2 | ) | %
+
+Effective tax rate | $ | ( | 57.7 | ) | 17.1 | %
+
+(1) | State and local income taxes in California, Florida, Pennsylvania, Georgia, New Jersey, New York, Maryland, Illinois, and Virginia comprise the majority of the domestic state and local income taxes, net of federal effect category.
+
+TABLE 52
+
+Year Ended December 31, 2024
+U.S. federal statutory income tax rate | 21.0 | %
+State income tax, net of federal benefit | 10.7 | %
+Permanent items | 13.5 | %
+Return to provision for prior year | — | %
+Changes in valuation allowance | ( | 0.2 | ) | %
+Effective tax rate | 45.0 | %
+
+TABLE 53
+
+As of
+December 31,
+(in millions) | 2025 | 2024
+Deferred tax assets:
+Lease liabilities | $ | 164.9 | $ | —
+Share-based payments | 20.4 | 1.4
+Accrued expenses | 20.9 | 0.1
+Inventory valuation | 38.5 | —
+Allowance for credit losses | 16.4 | 0.1
+Net operating loss | 25.9 | 0.7
+Tax credit carryforwards | 0.3 | —
+Intangible assets | — | 0.5
+Other | 0.2 | —
+Total deferred tax assets | 287.5 | 2.8
+
+Deferred tax liabilities:
+Intangible assets | ( | 848.5 | ) | —
+Lease right-of-use assets | ( | 170.5 | ) | —
+Property and equipment | ( | 107.9 | ) | ( | 0.1 | )
+Financing | ( | 7.8 | ) | —
+Total deferred tax liabilities | ( | 1,134.7 | ) | ( | 0.1 | )
+Valuation allowance | — | ( | 0.1 | )
+Net deferred income tax (liabilities) assets | $ | ( | 847.2 | ) | $ | 2.6
+
+TABLE 54
+
+(in millions) | Year Ended December 31, 2025
+
+U.S. federal | $ | 22.0
+
+U.S. state and local
+Connecticut | 6.0
+Other | 7.0
+Total U.S. state and local income taxes paid, net of refunds | 13.0
+
+Foreign
+Canada | 3.2
+
+Total income taxes paid, net of refunds | $ | 38.2
+
+TABLE 55
+
+Incorporated by Reference
+Exhibit Number | Description | Form | Exhibit | Filing Date
+2.1 | Amended and Restated Investment Agreement, dated April 14, 2024, by and among QXO, Inc. and Jacobs Private Equity II, LLC (on behalf of itself and on behalf of each of the other Investors). + | 8-K | 2.1 | April 15, 2024
+2.2 | Agreement and Plan of Merger, dated as of March 20, 2025, by and among QXO, Inc., Beacon Roofing Supply, Inc. and Queen MergerCo, Inc. + | 8-K | 2.1 | March 20, 2025
+2.3 | Agreement and Plan of Merger, dated as of February 10, 2026, by and among QXO, Inc., Kodiak Building Supply Inc., Juno Merger Sub, Inc. and CSC Shareholder Services LLC. + | 8-K | 2.1 | February 11, 2026
+3.1 | Fifth Amended and Restated Certificate of Incorporation of the Company, dated June 6, 2024. | 8-K | 3.1 | June 6, 2024
+3.2 | Certificate of Amendment to the Fifth Amended and Restated Certificate of Incorporation of the Company, dated June 6, 2024. | 8-K | 3.2 | June 6, 2024
+3.3 | Certificate of Designation of the Convertible Perpetual Preferred Stock of QXO, Inc. | 8-K | 4.1 | June 6, 2024
+3.4 | Certificate of Designations of 5.50% Series B Mandatory Convertible Preferred Stock, filed with the Secretary of State of the State of Delaware and effective May 27, 2025. | 8-K | 3.1 | May 27, 2025
+3.5 | Amended and Restated Bylaws of the Company. | 8-K | 3.3 | June 6, 2024
+4.1* | Description of Capital Stock.
+4.2 | F | orm of Wa | rrant Certificate. | 8-K | 4.2 | June 6, 2024
+4.3 | Form of Warrant Certificate | . | 8-K | 4.3 | June 6, 2024
+4.4 | Form of Warrant Certificate | . | 8-K | 4.4 | June 6, 2024
+4.5 | Form of | Pre-Funded | Warrant | . | 8-K | 4.1 | June 14, 2024
+4.6 | Form of Certificate for the 5.50% Series B Mandatory Convertible Preferred Stock (included as Exhibit A to Exhibit 3.4). | 8-K | 4.1 | May 27, 2025
+4.7 | Deposit Agreement, dated as of May 27, 2025, among QXO, Inc., Equiniti Trust Company, LLC, acting as the Depositary, and the holders from time to time of the depositary receipts described therein. | 8-K | 4.2 | May 27, 2025
+4.8 | Form of Depositary Receipt for the Depositary Shares (included as Exhibit A to Exhibit 4.7). | 8-K | 4.3 | May 27, 2025
+4.9 | Indenture, dated as of April 29, 2025, among Queen MergerCo, Inc., the subsidiary guarantors party thereto and Wilmington Trust, National Association, as trustee. | 8-K | 4.1 | April 29, 2025
+4.10 | Supplemental Indenture No. 1, dated as of April 29, 2025, among QXO Building Products, Inc., the subsidiary guarantors party thereto and Wilmington Trust, National Association, as trustee. | 8-K | 4.2 | April 29, 2025
+10.1 | Term Loan Credit Agreement, dated as of April 29, 2025, among Queen HoldCo, LLC, as Holdings, Queen MergerCo, Inc., as Borrower, the lenders party thereto and Goldman Sachs Bank USA, as administrative agent. | 8-K | 10.1 | April 29, 2025
+10.2 | Asset-Based Revolving Credit Agreement, dated as of April 29, 2025, among Queen HoldCo, LLC, as Holdings, Queen MergerCo, Inc., as Borrower, the subsidiary borrowers party thereto, the lenders and issuing banks party thereto and Citibank, N.A., as administrative agent and collateral agent. | 8-K | 10.2 | April 29, 2025
+
+TABLE 56
+
+10.3 | Joinder to Credit Agreement, dated as of April 29, 2025, by QXO Building Products, Inc., as Surviving Borrower, in respect of the Term Loan Credit Agreement, dated as of April 29, 2025, among Queen HoldCo, LLC, as Holdings, Queen MergerCo, Inc., as Borrower, the lenders party thereto and Goldman Sachs Bank USA, as administrative agent. | 8-K | 10.3 | April 29, 2025
+10.4 | Joinder to Credit Agreement, dated as of April 29, 2025, by QXO Building Products, Inc., as Surviving Borrower, in respect of the Asset-Based Revolving Credit Agreement, dated as of April 29, 2025, among Queen HoldCo, LLC, as Holdings, Queen MergerCo, Inc., as Borrower, the subsidiary borrowers party thereto, the lenders and issuing banks party thereto and Citibank, N.A., as administrative agent and collateral agent. | 8-K | 10.4 | April 29, 2025
+10.5 | Stockholders Agreement, dated as of June 6, 2024, by and among the Company, the Other Investors and JPE. | 8-K | 10.1 | June 6, 2024
+10.6 | Registration Rights Agreement, dated as of June 6, 2024, by and among the Company, JPE and the other investors. | 8-K | 10.2 | June 6, 2024
+10.7 | Form of Purchase Agreement, dated as of June 13, 2024, by and between QXO, Inc. and the Investors signatory thereto | . | 8-K | 10.1 | June 14, 2024
+10.8 | Form of Purchase Agreement, dated as of July 22, 2024, by and between QXO, Inc. and the Investors signatory thereto. | 8-K | 10.1 | July 22, 2024
+10.9 | Form of Purchase Agreement, dated as of March 17, 2025, by and between QXO, Inc. and the Investors signatory thereto | 8-K | 10.1 | March 17, 2025
+10.10 | Incremental Assumption and Amendment Agreement No.1, dated November 5, 2025, by and among Queen HoldCo, LLC, as Holdings, QXO Building Products, Inc., as Borrower, the subsidiary loan parties party thereto, the lenders party thereto and Goldman Sachs Bank USA, as administrative agent. | 8-K | 10.1 | November 5, 2025
+10.11* | Investment Agreement, dated as of January 5, 2026, by and among QXO, Inc., AP Quince Holdings, L.P. and the other investors party thereto | .
+10.12*** | Employment Agreement, dated as of June 5, 2024, by and between Brad Jacobs and the Company. | 8-K | 10.3 | June 6, 2024
+10.13*** | Offer Letter, dated April 14, 2024, by and between QXO, Inc. and Mark Meller. | 8-K | 10.2 | April 15, 2024
+10.14*** | Offer Letter, dated June 6, 2024, by and between QXO, Inc. and Christopher Signorello. | 10-Q | 10.5 | August 14, 2025
+10.15*** | Offer Letter, dated June 14, 2024, by and between QXO, Inc. and Sean Smith. | 10-Q | 10.10 | August 14, 2024
+10.16*** | Employment Agreement, dated as of July 17, 2024, by and between QXO, Inc. and Ihsan Essaid. | 10-Q | 10.1 | November 13, 2024
+10.17*** | QXO, Inc. Severance Plan. | 10-Q | 10.9 | August 14, 2024
+10.18*** | QXO, Inc. 2024 Omnibus Incentive Compensation Plan. | 8-K | 10.1 | June 5, 2024
+10.19*** | Form of Restricted Stock Unit Award Agreement. | 10-Q | 10.11 | August 14, 2024
+10.20* | Form of Restricted Stock Unit Award Agreement for Non-Employee Directors | .
+10.21* | Form of Performance-Based Restricted Stock Unit Award Agreement.
+16.1 | Letter re Change in Certifying Accountant | . | 8-K | 16.1 | March 26, 2025
+19.1 | Securities Trading Policy of QXO, Inc. | 10-Q | 19.1 | August 14, 2025
+21.1* | List of Subsidiaries
+23.1* | Consent of Deloitte & Touche LLP, Independent Registered Public Accounting Firm
+23.2* | Consent of Marcum LLP, Independent Registered Public Accounting Firm
+23.3* | Consent of Deloitte & Touche LLP, Independent Registered Public Accounting Firm
+23.4* | Consent of Ernst & Young LLP, Independent Registered Public Accounting Firm
+31.1* | Certification by the Principal Executive Officer of Registrant pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 (Rule 13a-14(a) or Rule 15d-14(a)).
+31.2* | Certification by the Principal Financial Officer of Registrant pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 (Rule 13a-14(a) or Rule 15d-14(a)).
+32.1** | Certification by the Principal Executive Officer pursuant to 18 U.S.C. 1350 as adopted pursuant to Section 906 of the Sarbanes-Oxley Act of 2002.
+32.2** | Certification by the Principal Financial Officer pursuant to 18 U.S.C. 1350 as adopted pursuant to Section 906 of the Sarbanes-Oxley Act of 2002.
+97.1 | Compensation Recovery Policy of QXO, Inc. | 10-K | 97.1 | March 4, 2025
+99.1* | Predecessor financial information for QXO Building Products, Inc. for the period  from January 1, 2025 to April 28, 2025
+99.2* | Predecessor financial information for QXO Building Products, Inc. for the year ended December 31, 2024
+99.3* | Management’s discussion and analysis of predecessor financial information for QXO Building Products, Inc.
+
+TABLE 57
+
+101.INS* | Inline XBRL Instance – the instance document does not appear in the Interactive Data File because its XBRL tags are embedded within the Inline XBRL document.
+101.SCH* | Inline XBRL Taxonomy Extension Schema
+101.CAL* | Inline XBRL Taxonomy Extension Calculation
+101.PRE* | Inline XBRL Taxonomy Extension Presentation
+101.LAB* | Inline XBRL Taxonomy Extension Labels
+101.DEF* | Inline XBRL Taxonomy Extension Definition
+104* | Cover Page Interactive Data File (formatted as Inline XBRL and contained in Exhibit 101)
+
+*Filed herewith
+**Furnished herewith
+***Management contract or compensatory plan or arrangement.
++ Schedules and/or exhibits have been omitted pursuant to Item 601(a)(5) of Regulation S-K. QXO agrees to furnish supplementally a copy of any omitted schedules and/or exhibits to the SEC on a confidential basis upon request.
+
+TABLE 58
+
+QXO, INC.
+
+Date: February 27, 2026 | By: | /s/ Brad Jacobs
+Brad Jacobs
+Chief Executive Officer
+(Principal Executive Officer)
+
+
+TABLE 59
+
+Name | Position | Date
+
+/s/ Brad Jacobs | Chief Executive Officer and Chairman of the Board of Directors | February 27, 2026
+Brad Jacobs | (Principal Executive Officer)
+
+/s/ Ihsan Essaid | Chief Financial Officer | February 27, 2026
+Ihsan Essaid | (Principal Financial Officer)
+
+/s/ Sean Smith | Chief Accounting Officer | February 27, 2026
+Sean Smith | (Principal Accounting Officer)
+
+/s/ Allison Landry | Lead Independent Director | February 27, 2026
+Allison Landry
+
+/s/ Jason Aiken | Director | February 27, 2026
+Jason Aiken
+
+/s/ Marlene Colucci | Director | February 27, 2026
+Marlene Colucci
+
+/s/ Mario Harik | Director | February 27, 2026
+Mario Harik
+
+/s/ Mary Kissel | Director | February 27, 2026
+Mary Kissel
+
+/s/ Jared Kushner | Director | February 27, 2026
+Jared Kushner

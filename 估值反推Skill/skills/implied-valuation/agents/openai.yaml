@@ -1,0 +1,4 @@
+interface:
+  display_name: "估值条件反推"
+  short_description: "反推现价所需的未来利润、增长与兑现年份，生成来源和假设透明的一页HTML报告"
+  default_prompt: "使用 $implied-valuation，根据我提供的数据和确认的假设反推现价所需业绩，并生成一页HTML。"

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "company": "示例公司（纯示意）",
+  "share_basis": "股价和股数均按同一普通股单位；非ADR换算数据",
+  "currency": "USD",
+  "price": 100,
+  "price_date": "2025-12-31",
+  "net_profit": 1000,
+  "profit_unit": "M",
+  "profit_period_start": "2025-01-01",
+  "profit_period_end": "2025-12-31",
+  "profit_basis": "年度归属普通股股东净利润，纯示意非公司实绩",
+  "current_shares": 1000000000,
+  "target_shares": 1000000000,
+  "target_fiscal_year": "FY2030（纯示意）",
+  "target_date": "2030-12-31",
+  "required_return": 0.10,
+  "target_pe": 20,
+  "sensitivity_pe": [15, 20, 25],
+  "assumptions_confirmed": true,
+  "applicability": {
+    "comparable_profit": true,
+    "major_capital_changes": false,
+    "special_industry": false
+  },
+  "evidence": {
+    "price": {"source": "作者构造的演示值，不是实时行情", "status": "synthetic", "source_date": "2025-12-31", "currency": "USD"},
+    "net_profit": {"source": "作者构造的完整年度演示值，不是真实财报", "status": "synthetic", "source_date": "2025-12-31", "currency": "USD"},
+    "current_shares": {"source": "作者构造的演示股数，不是真实公司股本", "status": "synthetic", "source_date": "2025-12-31", "currency": "shares"}
+  }
+}

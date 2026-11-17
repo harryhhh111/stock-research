@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "label": "FY2026收入 · FY2026",
+    "reported_value": 331839.0,
+    "unit": "",
+    "raw_text": "| FY2026收入 | 331839 |",
+    "line_number": 7,
+    "fetched_value": 331839,
+    "fetched_source": "https://www.microsoft.com/investor/reports/ar26/index.html",
+    "fetched_value2": 331839,
+    "fetched_source2": "https://stockanalysis.com/stocks/msft/financials/"
+  },
+  {
+    "id": 5,
+    "label": "FY2026现金与短期投资 · FY2026",
+    "reported_value": 76843.0,
+    "unit": "",
+    "raw_text": "| FY2026现金与短期投资 | 76843 |",
+    "line_number": 11,
+    "fetched_value": 76843,
+    "fetched_source": "https://www.microsoft.com/investor/reports/ar26/index.html",
+    "fetched_value2": 76843,
+    "fetched_source2": "https://stockanalysis.com/stocks/msft/financials/"
+  },
+  {
+    "id": 6,
+    "label": "FY2026自由现金流 · FY2026",
+    "reported_value": 66987.0,
+    "unit": "",
+    "raw_text": "| FY2026自由现金流 | 66987 |",
+    "line_number": 12,
+    "fetched_value": 66987,
+    "fetched_source": "https://www.microsoft.com/investor/reports/ar26/index.html",
+    "fetched_value2": 66987,
+    "fetched_source2": "https://stockanalysis.com/stocks/msft/financials/"
+  }
+]

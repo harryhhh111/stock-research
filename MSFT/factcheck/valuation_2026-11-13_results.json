@@ -1,0 +1,30 @@
+{
+  "market_cap_B_USD": 3870.01276688376,
+  "pe_eps": 27.21305483028721,
+  "pe_net": 27.133040972045066,
+  "pe_openai_adjusted": 28.88747228381375,
+  "fcf_yield_pct": 1.549271374840425,
+  "p_fcf": 64.54647108567407,
+  "five_year_price_required_ex_dividends": 839.2850763000002,
+  "scenarios": [
+    {
+      "terminal_pe": 20,
+      "eps_required": 41.96425381500001,
+      "eps_cagr_pct": 18.393700323965255
+    },
+    {
+      "terminal_pe": 25,
+      "eps_required": 33.57140305200001,
+      "eps_cagr_pct": 13.226111264216666
+    },
+    {
+      "terminal_pe": 30,
+      "eps_required": 27.97616921000001,
+      "eps_cagr_pct": 9.171767738325155
+    }
+  ],
+  "fcf_required_at_yield": {
+    "0.03": 116.1003830065128,
+    "0.04": 154.8005106753504
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "retrieved": "2026-11-15",
+  "unit": "USD millions",
+  "quarters": [
+    {
+      "quarter": "FY26Q2",
+      "end": "2025-12-31",
+      "current": {
+        "revenue": 81273,
+        "gross_profit": 55295,
+        "operating_income": 38275,
+        "net_income": 38458,
+        "CFO": 35758,
+        "cash_CapEx": 29876,
+        "FCF": 5882
+      },
+      "prior_year_same_quarter": {
+        "revenue": 69632,
+        "gross_profit": 47833,
+        "operating_income": 31653,
+        "net_income": 24108,
+        "CFO": 22291,
+        "cash_CapEx": 15804,
+        "FCF": 6487
+      },
+      "year_over_year_pct": {
+        "revenue": 16.717888327205884,
+        "gross_profit": 15.600108711558965,
+        "operating_income": 20.92060784127887,
+        "net_income": 59.523809523809526,
+        "CFO": 60.41451706966937,
+        "cash_CapEx": 89.04074917742344,
+        "FCF": -9.326344997687682
+      },
+      "margins_pct": {
+        "gross_profit": 68.0361251584167,
+        "operating_income": 47.094360980891565,
+        "net_income": 47.3195280105324,
+        "FCF": 7.237335892608861
+      },
+      "source": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q2/press-release-webcast"
+    },
+    {
+      "quarter": "FY26Q3",
+      "end": "2026-03-31",
+      "current": {
+        "revenue": 82886,
+        "gross_profit": 56058,
+        "operating_income": 38398,
+        "net_income": 31778,
+        "CFO": 46679,
+        "cash_CapEx": 30876,
+        "FCF": 15803
+      },
+      "prior_year_same_quarter": {
+        "revenue": 70066,
+        "gross_profit": 48147,
+        "operating_income": 32000,
+        "net_income": 25824,
+        "CFO": 37044,
+        "cash_CapEx": 16745,
+        "FCF": 20299
+      },
+      "year_over_year_pct": {
+        "revenue": 18.29703422487369,
+        "gross_profit": 16.43093027602966,
+        "operating_income": 19.99375,
+        "net_income": 23.05607187112763,
+        "CFO": 26.009610193283663,
+        "cash_CapEx": 84.38936996118244,
+        "FCF": -22.148874328784668
+      },
+      "margins_pct": {
+        "gross_profit": 67.63265207634582,
+        "operating_income": 46.32627946818522,
+        "net_income": 38.33940593103781,
+        "FCF": 19.065945998117897
+      },
+      "source": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast"
+    },
+    {
+      "quarter": "FY26Q4",
+      "end": "2026-06-30",
+      "current": {
+        "revenue": 90007,
+        "gross_profit": 60482,
+        "operating_income": 40603,
+        "net_income": 35766,
+        "CFO": 55441,
+        "cash_CapEx": 35802,
+        "FCF": 19639
+      },
+      "prior_year_same_quarter": {
+        "revenue": 76441,
+        "gross_profit": 52427,
+        "operating_income": 34323,
+        "net_income": 27233,
+        "CFO": 42647,
+        "cash_CapEx": 17079,
+        "FCF": 25568
+      },
+      "year_over_year_pct": {
+        "revenue": 17.74702057796209,
+        "gross_profit": 15.364220725961813,
+        "operating_income": 18.296768930454796,
+        "net_income": 31.33330885322954,
+        "CFO": 29.999765516917954,
+        "cash_CapEx": 109.62585631477253,
+        "FCF": -23.189142678347935
+      },
+      "margins_pct": {
+        "gross_profit": 67.19699578921639,
+        "operating_income": 45.11093581610319,
+        "net_income": 39.73690935149489,
+        "FCF": 21.819414045574234
+      },
+      "source": "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast"
+    },
+    {
+      "quarter": "FY27Q1",
+      "end": "2026-09-30",
+      "current": {
+        "revenue": 92279,
+        "gross_profit": 62559,
+        "operating_income": 45915,
+        "net_income": 36629,
+        "CFO": 58000,
+        "cash_CapEx": 39367,
+        "FCF": 18633
+      },
+      "prior_year_same_quarter": {
+        "revenue": 77673,
+        "gross_profit": 53630,
+        "operating_income": 37961,
+        "net_income": 27747,
+        "CFO": 45057,
+        "cash_CapEx": 19394,
+        "FCF": 25663
+      },
+      "year_over_year_pct": {
+        "revenue": 18.804475171552536,
+        "gross_profit": 16.64926347193735,
+        "operating_income": 20.95308342772846,
+        "net_income": 32.0106678199445,
+        "CFO": 28.725836163082317,
+        "cash_CapEx": 102.98545942043931,
+        "FCF": -27.393523750146123
+      },
+      "margins_pct": {
+        "gross_profit": 67.79332242438691,
+        "operating_income": 49.75671604590427,
+        "net_income": 39.693754808786395,
+        "FCF": 20.192026354858637
+      },
+      "source": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast"
+    }
+  ],
+  "CF_method": "公告现金流表同时给Three Months和YTD，全部直接读取Three Months，未将累计冒充季度；FCF=CFO-现金购建固定资产。累计勾稽另列。",
+  "CF_cumulative_checks": {
+    "FY26Q2_CFO": {
+      "six_months": 80815,
+      "FY26Q1": 45057,
+      "difference": 35758
+    },
+    "FY26Q3_CFO": {
+      "nine_months": 127494,
+      "six_months": 80815,
+      "difference": 46679
+    },
+    "FY26Q4_CFO": {
+      "full_year": 182935,
+      "nine_months": 127494,
+      "difference": 55441
+    },
+    "FY26Q2_CapEx": {
+      "six_months": 49270,
+      "FY26Q1": 19394,
+      "difference": 29876
+    },
+    "FY26Q3_CapEx": {
+      "nine_months": 80146,
+      "six_months": 49270,
+      "difference": 30876
+    },
+    "FY26Q4_CapEx": {
+      "full_year": 115948,
+      "nine_months": 80146,
+      "difference": 35802
+    }
+  },
+  "segments_old_basis": {
+    "quarters": [
+      "FY26Q2",
+      "FY26Q3",
+      "FY26Q4"
+    ],
+    "Productivity and Business Processes": {
+      "revenue": [
+        34116,
+        35013,
+        37847
+      ],
+      "operating_income": [
+        20599,
+        20973,
+        21900
+      ]
+    },
+    "Intelligent Cloud": {
+      "revenue": [
+        32907,
+        34681,
+        39306
+      ],
+      "operating_income": [
+        13873,
+        13753,
+        15955
+      ]
+    },
+    "More Personal Computing": {
+      "revenue": [
+        14250,
+        13192,
+        12854
+      ],
+      "operating_income": [
+        3803,
+        3672,
+        2748
+      ]
+    }
+  },
+  "segments_new_basis": {
+    "quarters": [
+      "FY27Q1",
+      "FY26Q1_recast"
+    ],
+    "Agents and Infra": {
+      "revenue": [
+        76795,
+        61672
+      ],
+      "operating_income": [
+        40558,
+        32718
+      ]
+    },
+    "Devices and Consumer": {
+      "revenue": [
+        15484,
+        16001
+      ],
+      "operating_income": [
+        5357,
+        5243
+      ]
+    }
+  },
+  "segment_comparability": "September2026 reporting structure change. Prior 3 quarters old 3 segments; latest quarter 2 segments with prior-year Q1 recast. No matching recast Q2-Q4 retrieved; keep separate tables.",
+  "TTM_sums": {
+    "revenue": 346445,
+    "gross_profit": 234394,
+    "operating_income": 163191,
+    "net_income": 142631,
+    "CFO": 195878,
+    "cash_CapEx": 135921,
+    "FCF": 59957
+  },
+  "new_material_issue": "FY26Q4 press release reports 3.2bn Anthropic investment gain plus VRP/severance/XBOX discrete items, combinedEPS benefit0.27 vs guidance. Ex-OpenAI adjusted EPS does not remove all investment gains; call it ex-OpenAI rather than fully normalized."
+}

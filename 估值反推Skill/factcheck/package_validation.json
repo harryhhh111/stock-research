@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-17",
+  "model_version": "0.1.0",
+  "installed_path": "/Users/vinci/.codex/skills/implied-valuation",
+  "source_and_install_identical": true,
+  "portable_execution": "passed",
+  "zip_extract_and_execute": "passed",
+  "archive_sha256": "de8ea2c3329f264d2d4de36b24fce67c76227fd49c099c7aad216f0d91289a0d",
+  "file_sha256": {
+    "SKILL.md": "f2b98c2d1138d76d0941a2e14597108c65980227664e6035ffe4282562c39489",
+    "references/input.md": "9c5a4d100ff6aa223e01614830a650c74244e327cbb787db04b64905a4085c30",
+    "agents/openai.yaml": "e252e812d2a7f3bc5ab1df079afe94617491b601f6cb16459ceee973407ee5ca",
+    "scripts/valuation.py": "a64b1a32e39c1c4aa1c68b25c47545c0b72859f1d7bdc22c4d4c6e47250bbaac",
+    "assets/example-input.json": "dbb26088838b79a8475d6bbabdca50c24c177610a31dfac7a8ab9478d287cd88",
+    "assets/report.html": "7a0eecd10a2d715817d2947b5d466db6f4b39d0c626b47b3e327b8104b092184"
+  }
+}

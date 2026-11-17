@@ -1,0 +1,585 @@
+{
+  "date": "2026-11-17",
+  "scope": "financial arithmetic, provenance, valuation reconstruction and HTML local structure only",
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "2023 gross",
+      "actual": 21.614000000000004,
+      "expected": 21.614000000000004,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "2023 FCF",
+      "actual": 0.46299999999999997,
+      "expected": 0.46299999999999997,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "2024 gross",
+      "actual": 23.1,
+      "expected": 23.1,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "2024 FCF",
+      "actual": 84.7,
+      "expected": 84.7,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "2025 gross",
+      "actual": 1572.6999999999998,
+      "expected": 1572.6999999999998,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "2025 FCF",
+      "actual": 183.2,
+      "expected": 183.2,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "2023 product revenue sum",
+      "actual": 54.517,
+      "expected": 54.517,
+      "tolerance": 0.11,
+      "passed": true
+    },
+    {
+      "check": "2024 product revenue sum",
+      "actual": 56.9,
+      "expected": 56.9,
+      "tolerance": 0.11,
+      "passed": true
+    },
+    {
+      "check": "2025 product revenue sum",
+      "actual": 6842.2,
+      "expected": 6842.2,
+      "tolerance": 0.11,
+      "passed": true
+    },
+    {
+      "check": "2026Q1 product revenue sum",
+      "actual": 1730.1999999999998,
+      "expected": 1730.2,
+      "tolerance": 0.11,
+      "passed": true
+    },
+    {
+      "check": "2026Q2 product revenue sum",
+      "actual": 3246,
+      "expected": 3246.0,
+      "tolerance": 0.11,
+      "passed": true
+    },
+    {
+      "check": "2026Q3 product revenue sum",
+      "actual": 4895,
+      "expected": 4895.0,
+      "tolerance": 0.11,
+      "passed": true
+    },
+    {
+      "check": "2025Q1 product revenue sum",
+      "actual": 13.5,
+      "expected": 13.5,
+      "tolerance": 0.11,
+      "passed": true
+    },
+    {
+      "check": "2025Q2 product revenue sum",
+      "actual": 1906,
+      "expected": 1906.0,
+      "tolerance": 0.11,
+      "passed": true
+    },
+    {
+      "check": "2025Q3 product revenue sum",
+      "actual": 2728,
+      "expected": 2728.0,
+      "tolerance": 0.11,
+      "passed": true
+    },
+    {
+      "check": "2025 3q vs9M revenue",
+      "actual": 4647.5,
+      "expected": 4648.0,
+      "tolerance": 1.51,
+      "passed": true
+    },
+    {
+      "check": "2025 3q vs9M gross",
+      "actual": 1042.4,
+      "expected": 1043.0,
+      "tolerance": 1.51,
+      "passed": true
+    },
+    {
+      "check": "2025 3q vs9M op",
+      "actual": -177.3,
+      "expected": -176.0,
+      "tolerance": 1.51,
+      "passed": true
+    },
+    {
+      "check": "2025 3q vs9M net",
+      "actual": -189.2,
+      "expected": -189.0,
+      "tolerance": 1.51,
+      "passed": true
+    },
+    {
+      "check": "2025 3q vs9M cfo",
+      "actual": 75.0,
+      "expected": 75.0,
+      "tolerance": 1.51,
+      "passed": true
+    },
+    {
+      "check": "2025 3q vs9M capex",
+      "actual": 50.0,
+      "expected": 50.0,
+      "tolerance": 1.51,
+      "passed": true
+    },
+    {
+      "check": "2025 3q vs9M fcf",
+      "actual": 25.0,
+      "expected": 25.0,
+      "tolerance": 1.51,
+      "passed": true
+    },
+    {
+      "check": "2025 3q vs9M sbc",
+      "actual": 116.0,
+      "expected": 116.0,
+      "tolerance": 1.51,
+      "passed": true
+    },
+    {
+      "check": "2025 3q vs9M interest_net",
+      "actual": -10.399999999999999,
+      "expected": -11.0,
+      "tolerance": 1.51,
+      "passed": true
+    },
+    {
+      "check": "2026 3q vs9M revenue",
+      "actual": 9871.2,
+      "expected": 9871.0,
+      "tolerance": 1.51,
+      "passed": true
+    },
+    {
+      "check": "2026 3q vs9M gross",
+      "actual": 2592.3,
+      "expected": 2592.0,
+      "tolerance": 1.51,
+      "passed": true
+    },
+    {
+      "check": "2026 3q vs9M op",
+      "actual": -291.9,
+      "expected": -292.0,
+      "tolerance": 1.51,
+      "passed": true
+    },
+    {
+      "check": "2026 3q vs9M net",
+      "actual": -405.1,
+      "expected": -405.0,
+      "tolerance": 1.51,
+      "passed": true
+    },
+    {
+      "check": "2026 3q vs9M cfo",
+      "actual": -145.0,
+      "expected": -145.0,
+      "tolerance": 1.51,
+      "passed": true
+    },
+    {
+      "check": "2026 3q vs9M capex",
+      "actual": 111.0,
+      "expected": 111.0,
+      "tolerance": 1.51,
+      "passed": true
+    },
+    {
+      "check": "2026 3q vs9M fcf",
+      "actual": -256.0,
+      "expected": -256.0,
+      "tolerance": 1.51,
+      "passed": true
+    },
+    {
+      "check": "2026 3q vs9M sbc",
+      "actual": 147.0,
+      "expected": 147.0,
+      "tolerance": 1.51,
+      "passed": true
+    },
+    {
+      "check": "2026 3q vs9M interest_net",
+      "actual": -232.1,
+      "expected": -232.0,
+      "tolerance": 1.51,
+      "passed": true
+    },
+    {
+      "check": "TTM revenue",
+      "actual": 12065.2,
+      "expected": 12065.2,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "TTM cost",
+      "actual": 8943.5,
+      "expected": 8943.5,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "TTM op",
+      "actual": -361.20000000000005,
+      "expected": -361.20000000000005,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "TTM net",
+      "actual": -495.4,
+      "expected": -495.4,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "TTM cfo",
+      "actual": 41.39999999999998,
+      "expected": 41.39999999999998,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "TTM capex",
+      "actual": 139.2,
+      "expected": 139.2,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "TTM sbc",
+      "actual": 175.5,
+      "expected": 175.5,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "TTM interest_net",
+      "actual": -268.7,
+      "expected": -268.7,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "TTM gross",
+      "actual": 3121.7,
+      "expected": 3121.7,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "TTM fcf",
+      "actual": -97.80000000000001,
+      "expected": -97.80000000000001,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "Q3 sales acquisition bridge",
+      "actual": 4895,
+      "expected": 4895,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "Q3 income statement",
+      "actual": -123,
+      "expected": -123,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "Q3 adjusted EBITDA bridge",
+      "actual": 557,
+      "expected": 557,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "Q3 pretax yoy change",
+      "actual": -139,
+      "expected": -139,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "Q3 net yoy change",
+      "actual": 16,
+      "expected": 16,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "9M cash bridge",
+      "actual": 554,
+      "expected": 554,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "9M cash acquired to finance",
+      "actual": -11040,
+      "expected": -11040,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "net income to CFO",
+      "actual": -145,
+      "expected": -145,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "9M pref cash sum",
+      "actual": 150,
+      "expected": 150,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "debt maturity sum",
+      "actual": 9100,
+      "expected": 9100,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "debt carrying to principal",
+      "actual": 9100,
+      "expected": 9100,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "asset goodwill concentration",
+      "actual": 73.40586016826227,
+      "expected": 73.4058601683,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "check": "debt interest proxy",
+      "actual": 579.65,
+      "expected": 579.65,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "ROIC denominator proxy",
+      "actual": 18927.699999999997,
+      "expected": 18927.7,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "preferred annual dividend",
+      "actual": 264.125,
+      "expected": 264.125,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "current claims reverse price",
+      "actual": 12.009999999999998,
+      "expected": 12.01,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "required EBITDA price reconstruction",
+      "actual": 12.009999999999998,
+      "expected": 12.01,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "既有业务延续 EV",
+      "actual": 22592.00050372242,
+      "expected": 22592.00050372242,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "既有业务延续 capital claims",
+      "actual": 22592.00050372242,
+      "expected": 22592.00050372242,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "整合目标兑现 EV",
+      "actual": 32611.37085069325,
+      "expected": 32611.37085069325,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "整合目标兑现 capital claims",
+      "actual": 32611.37085069325,
+      "expected": 32611.37085069325,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "延迟两年且投入增加 EV",
+      "actual": 28734.60663611074,
+      "expected": 28734.60663611074,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "延迟两年且投入增加 capital claims",
+      "actual": 28734.606636110737,
+      "expected": 28734.60663611074,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "兑现但终值压至8倍 EV",
+      "actual": 27147.263207772685,
+      "expected": 27147.263207772685,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "兑现但终值压至8倍 capital claims",
+      "actual": 27147.26320777269,
+      "expected": 27147.263207772685,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "BLDR peer multiple",
+      "actual": 8.900845748955318,
+      "expected": 8.900845748955318,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "IBP peer multiple",
+      "actual": 13.276911405845672,
+      "expected": 13.276911405845672,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "Q3 ordinary shareholders loss",
+      "actual": -189,
+      "expected": -189,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "raw fact count positive",
+      "actual": 1,
+      "expected": 1,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "unique HTML ids",
+      "actual": 40,
+      "expected": 40,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "local links and anchors",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "no remote scripts styles fonts",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "no absolute machine paths",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "main nine chapters",
+      "actual": 9,
+      "expected": 9,
+      "tolerance": 1e-06,
+      "passed": true
+    }
+  ],
+  "quarter_coverage": {
+    "expected": [
+      "2026Q1",
+      "2026Q2",
+      "2026Q3"
+    ],
+    "revenue": "passed",
+    "profits_and_margins": "passed",
+    "cash_capex_fcf_sbc": "passed",
+    "comparatives": "passed with mixed source rounding <=1.51 MUSD",
+    "business_profit_cash": "not separately disclosed"
+  },
+  "content_limitations": [
+    "No uniform 3-year same-platform actual financials: acquisitions and former software entity",
+    "Capital claims valuation is intrinsic approximation, lacks full option time value and dividend path",
+    "Exact historical Q3 tax-event decomposition not disclosed in retrieved note",
+    "Full same-date peer capital structure multiples not completed"
+  ],
+  "raw_source_hashes": {
+    "ABC.html": "6fc0fc11832b5cae54ed641c574ba2439827916358d586e4519b558d4816fa15",
+    "2026proxy.html": "60ef41e733576ebaa5e8676ff77fc96a8da1d3944a2457c649022d84c0c50e58",
+    "2025FY.html": "dec5c58528e5d6787a01ceb2e2e1e928467400b29cb37d31e35c63753c117bb3",
+    "2026Q1.html": "4ea66b55d270dc0d551661abba60735bcdead962cb44c2a9c47721710e37688d",
+    "customer-evolution.html": "b464ff96ad489dd46f0e0e59eabace02d27296901889d1837d37cc070ad0baa7",
+    "2026Q3release.html": "9df987b38bc9acf0e52fd9b1b11558be42d889fc85c859501d1b4bdf8afba75e",
+    "investor-qa.html": "4e5c7e8ea248130e11de86914afaf176b42d2585d01cd722ac823cfc517edb62",
+    "2023FY.html": "9f967690de617c756eac778921256c0bcca8aa1898bbd036ffb1f5f217bdad94",
+    "IBP-2026Q3.html": "d9892cd808c8cb0bc13c3429a419faa1b7f82231dcee345fb782c657d920abe2",
+    "CKX-announcement.html": "942239f46aedf63e4db742a5d84f5f52bf3495946e45a7e0782b69442601664d",
+    "2025Q3.html": "8538ae68466025919943262d0a57392d50fbabaceea58d86bcbd862293377884",
+    "BLDR-2026Q3.html": "db09ff14a7c9e7a3b7d7da6eb4d431c991aa2c7775bd2518b84634c125f4b85c",
+    "BLDR-Q3.html": "f643e88e5f1762c55ad0b6757cb724b66d8dc23e7efa25f769da7656ef363812",
+    "2024FY.html": "f568820f466bbd181d381f9482196c06987ca5b2a2a6acca31aea8e7196d63b0",
+    "customer-summit.html": "25fbb23f1b09f2eb972a35d931d78ac7511a8555b5c1be3b3a68557a57aa3b2b",
+    "2026Q3.html": "efb521e5fc45ea5418abdab522487a573eee578be29d381661f6345cd059e202",
+    "IBP-2026Q3-release.html": "df8c98b4f5685d923120d92c06a477a9e125595b2270c5ba533ecf16f005d5a1",
+    "2026Q2.html": "b7c10954e2e877814338da4a2bbc8d9ce3aa4561440903ae64614b12ac410b3f",
+    "mortgage.html": "c01801844a1cc100bc65076df192ff38c062a1efdd0207b0a335f91d889e6699"
+  }
+}
