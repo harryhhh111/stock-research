@@ -1,6 +1,6 @@
 # HTML 报告命名与索引规范
 
-维护日期：2026-11-17。本文是报告路径、命名、登记及兼容规则的唯一维护位置。研究内容要求仍见[研究方式](../../研究方式.md)，图表见[展示规范](HTML报告与财务可视化规范.md)，网站接入见[接入入口](HTML报告内部网站接入.md)。
+维护日期：2026-11-19。本文是报告路径、命名、登记及兼容规则的唯一维护位置。研究内容要求仍见[研究方式](../../研究方式.md)，图表见[展示规范](HTML报告与财务可视化规范.md)，网站接入见[接入入口](HTML报告内部网站接入.md)。
 
 ## 1. 固定路径
 
@@ -14,9 +14,25 @@
 
 项目可沿用已有嵌套主体目录，不为命名统一移动其他公司。slug只作稳定标识，中文标题写在索引和HTML中；main保留给公司主报告。不使用“最终版/最新版”等文件名。HTML为唯一维护正文，历史版本由Git/发布快照保留，不生成Markdown正文副本。
 
+### 每家公司唯一 HTML 主入口
+
+公司以`entity_id`识别，对外阅读只提供一个主入口，由索引中该主体唯一的非归档`company_research`条目确定。新入口使用`<项目>/reports/main.html`；既有legacy主报告保留原路径，不另造一份首页或第二份正文。不能通过换目录、换日期或换股票代码创建第二个主入口。
+
+新建或明确重构的完整研究在唯一首页放模块大卡片。独立模块保持公司 `entity_id`，用 `report_type=topic`、独立 `report_id` 及同项目 `reports/<slug>.html` 登记。公司列表只链接首页。日常财报、估值及纠错更新对应模块，已有单页报告原位更新章节。影响整体判断时同步首页摘要和相关模块。历史专题及更新可归入首页导航，报告论证只在对应页面维护。
+
+已有报告不批量合并、删除或改名。历史主体只有专题/更新而没有主报告时，标明“主入口待补建”，不自动挑第一篇作主入口；可在内部待整理区保留阅读链接。补建可以是明确标注局部覆盖与缺口的研究主报告，不必冒充完整研究，也不创建空壳页消除缺口。当前AMD属于此情形，微软和QXO已有legacy主入口。
+
+工具目前检查“最多一个非归档主报告”；尚不检查每家公司是否已有主入口或主报告是否已链接全部专题。这两项须人工验收，不能宣称已由CI强制执行。
+
+### 独立行业入口及模块
+
+在 `行业研究/<细分行业>/reports/` 放行业首页和模块。一个行业共用 `topic:industry-<industry-slug>`。首页与模块均为 `topic`，各有独立 `report_id`。首页 ID 为 `industry-<industry-slug>-overview`，首页文件为 `<industry-slug>.html`，模块文件使用独立 slug，例如 `value-chain.html`。公司项目用相对链接直接引用适用模块及锚点。行业首页同样以卡片导航到模块。
+
+先用工具登记首页及模块后再写跨页链接，交付前逐页 `update` 同步状态、日期与正文哈希，并运行 `check`。首页与模块链接和行业首页唯一性列入交付清单，使用现有索引字段。需要网站可读的模块与相关资源应纳入同版本快照。
+
 ## 2. 唯一索引及数据契约
 
-[html-index.json](../索引/html-index.json)是全库HTML报告唯一登记源；网站读取，不再另建手工维护的第二份清单。[html-index.schema.json](../索引/html-index.schema.json)是机器结构契约（Draft 2020-12），字段含义如下：
+[html-index.json](../index/html-index.json)是全库HTML报告唯一登记源；网站读取，不再另建手工维护的第二份清单。[html-index.schema.json](../index/html-index.schema.json)是机器结构契约（Draft 2020-12），字段含义如下：
 
 | 字段 | 要求 |
 |---|---|
@@ -62,26 +78,26 @@ Agent完成写作后，须主动执行对应范围的内容验收，再按实际
 工具依赖安装到本目录被Git忽略的虚拟环境；不影响报告或Skill的运行依赖：
 
 ```bash
-python3 -m venv 研究流程/工具/报告工具/.venv
-研究流程/工具/报告工具/.venv/bin/python -m pip install -r 研究流程/工具/报告工具/requirements.txt
+python3 -m venv 研究流程/tools/reports/.venv
+研究流程/tools/reports/.venv/bin/python -m pip install -r 研究流程/tools/reports/requirements.txt
 ```
 
 常用命令（从仓库根目录运行；其他位置用脚本绝对路径或`--root`）：
 
 ```bash
-研究流程/工具/报告工具/.venv/bin/python 研究流程/工具/报告工具/reports.py list
-研究流程/工具/报告工具/.venv/bin/python 研究流程/工具/报告工具/reports.py create --id msft-new-topic --project MSFT --title "新专题" --entity company:microsoft --type topic --slug new-topic
-研究流程/工具/报告工具/.venv/bin/python 研究流程/工具/报告工具/reports.py register --id amd-update-example --project AMD --title "更新示例" --entity company:amd --type update --slug earnings-update --date 2026-11-17
-研究流程/工具/报告工具/.venv/bin/python 研究流程/工具/报告工具/reports.py update --id msft-new-topic --metadata /path/to/reviewed-metadata.json
-研究流程/工具/报告工具/.venv/bin/python 研究流程/工具/报告工具/reports.py archive --id msft-new-topic
-研究流程/工具/报告工具/.venv/bin/python 研究流程/工具/报告工具/reports.py check
+研究流程/tools/reports/.venv/bin/python 研究流程/tools/reports/reports.py list
+研究流程/tools/reports/.venv/bin/python 研究流程/tools/reports/reports.py create --id msft-new-topic --project MSFT --title "新专题" --entity company:microsoft --type topic --slug new-topic
+研究流程/tools/reports/.venv/bin/python 研究流程/tools/reports/reports.py register --id amd-update-example --project AMD --title "更新示例" --entity company:amd --type update --slug earnings-update --date 2026-11-17
+研究流程/tools/reports/.venv/bin/python 研究流程/tools/reports/reports.py update --id msft-new-topic --metadata /path/to/reviewed-metadata.json
+研究流程/tools/reports/.venv/bin/python 研究流程/tools/reports/reports.py archive --id msft-new-topic
+研究流程/tools/reports/.venv/bin/python 研究流程/tools/reports/reports.py check
 ```
 
 上方创建命令是用法示例，不要求在正式库创建示例公司/空报告。metadata是JSON对象，只填需改字段，例如`{"document_updated_at":"2026-11-17","content_status":"partial"}`，路径替换为本次实际输入文件。不得替用户或审稿人声明核验通过。资源和未发布链接可通过metadata显式补齐；ID、主体、项目、类型、路径不能借update偷偷修改。
 
 ## 4. 检查范围及 CI
 
-check先按Schema检查，再验ID/正文路径唯一、主报告唯一、路径/类型匹配、日期格式、文件/资源存在、锚点、重复id、链接边界、外部展示依赖、未发布链接及正文哈希；通过Git盘点全库研究HTML，检测索引外的新报告（不只扫描reports目录）。factcheck、assets、skills、外部参考/独立checkout及工具/规划目录按固定规则排除，不能被登记为正文。
+check先按Schema检查，再验ID/正文路径唯一、主报告唯一、路径/类型匹配、日期格式、文件/资源存在、锚点、重复id、链接边界、外部展示依赖、未发布链接及正文哈希。当前公司首页使用 `card` 类链接至标准模块文件时，工具按[模板](公司研究主文档模板.md#唯一主入口)检查卡片顺序。首轮允许只登记行业卡片，已发布模块沿固定顺序。交付时另核对实际视觉和键盘顺序。工具通过Git盘点全库研究HTML，检测索引外的新报告（不只扫描reports目录）。factcheck、assets、skills、外部参考/独立checkout及工具/规划目录按固定规则排除，不能被登记为正文。
 
 检查支持静态可解析的src/href/poster/srcset、CSS url及字面量fetch；动态拼接的脚本资源须人工列assets并浏览器检查，不能声称静态扫描覆盖任意JavaScript。`unpublished_links`仅用于本地来源超链接，不豁免图片、样式、图表数据等展示依赖。draft和ready均可保留这些来源链接；网站须显示不可用原因或在发布副本中禁用链接，不开放未获准文件，不能把网站404当正常来源。
 
@@ -99,4 +115,4 @@ check先按Schema检查，再验ID/正文路径唯一、主报告唯一、路径
 
 ## 6. 首次落地验收记录
 
-本轮范围为规则、索引、管理脚本和本地CI同等命令，不包含网站部署或公司事实更新。六份现有报告登记；已发现未审核附件链接保留为显式缺口。实际自动检查结果见[工具验证记录](../工具/报告工具/validation.json)，现有公司内容和并行QXO改动不因此标为完整研究验收通过。
+本轮范围为规则、索引、管理脚本和本地CI同等命令，不包含网站部署或公司事实更新。六份现有报告登记；已发现未审核附件链接保留为显式缺口。实际自动检查结果见[工具验证记录](../tools/reports/validation.json)，现有公司内容和并行QXO改动不因此标为完整研究验收通过。

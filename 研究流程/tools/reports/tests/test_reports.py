@@ -29,6 +29,21 @@ class ReportTests(unittest.TestCase):
  def errors(self):return m.validate(self.root,self.index)[0]
  def test_valid_registered_report(self):
   self.registered();self.assertEqual(self.errors(),[])
+ def test_company_cards_support_industry_first_progressive_delivery(self):
+  main=self.registered()
+  names=['industry-position','business-model','revenue-profit','cash-capital','governance','valuation','notes']
+  for name in names:
+   self.registered(path=f'TEST/reports/{name}.html',rid=f'test-{name}',kind='topic')
+  def cards(order):
+   self.file(main['entry_path'],''.join(f'<a class="card" href="{name}.html">{name}</a>' for name in order))
+  for order in (names[:1], [names[0], names[5]], names):
+   with self.subTest(order=order):
+    cards(order)
+    self.assertEqual(self.errors(),[])
+  for order in (names[::-1], names[1:], [*names[:3], 'notes', *names[3:-1]]):
+   with self.subTest(order=order):
+    cards(order)
+    self.assertTrue(any('公司首页卡片须以行业开始' in error for error in self.errors()))
  def test_unregistered_html_outside_reports_is_detected(self):
   self.file('TEST/forgotten.html');self.assertTrue(any('未登记' in x for x in self.errors()))
  def test_raw_templates_and_ignored_checkouts_excluded(self):
@@ -189,11 +204,15 @@ class ReportTests(unittest.TestCase):
  def test_git_base_recognises_index_before_directory_move(self):
   self.registered();self.write_index()
   new_path=self.root/m.INDEX
-  old_path=self.root/'研究流程/html-index.json'
-  old_path.write_bytes(new_path.read_bytes());new_path.unlink()
-  subprocess.run(['git','-C',str(self.root),'add','.'],check=True)
-  subprocess.run(['git','-C',str(self.root),'-c','user.name=Test','-c','user.email=test@example.invalid','commit','-qm','legacy location'],check=True)
-  self.assertTrue(m.check_git_base(self.root,{'reports':[]},'HEAD'))
+  index_text=new_path.read_text();new_path.unlink()
+  for legacy_path in ('研究流程/索引/html-index.json','研究流程/html-index.json'):
+   with self.subTest(path=legacy_path):
+    old_path=self.file(legacy_path,index_text)
+    subprocess.run(['git','-C',str(self.root),'add','-A'],check=True)
+    subprocess.run(['git','-C',str(self.root),'-c','user.name=Test','-c','user.email=test@example.invalid','commit','-qm','legacy location'],check=True)
+    self.assertEqual(m.check_git_base(self.root,{'reports':[]},'HEAD'),
+                     ['索引不得静默删除历史ID，改用archive：test-main'])
+    old_path.unlink()
  def test_cli_from_other_directory(self):
   result=subprocess.run([__import__('sys').executable,str(SCRIPT),'--root',str(self.root),'create','--id','test-main','--project','TEST','--title','测试','--type','company_research','--entity','company:test'],cwd='/tmp',capture_output=True,text=True)
   self.assertEqual(result.returncode,0,result.stderr)

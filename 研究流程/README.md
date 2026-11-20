@@ -1,18 +1,19 @@
 # 研究流程导航
 
-整理日期：2026-11-17。这里按“现行规范、机器索引、执行工具、历史记录”分层；研究内容标准的唯一入口仍是根目录的[研究方式](../研究方式.md)。不要把归档结论或工具检查结果当现行研究标准。
+整理日期 2026-11-20。研究先从 [研究方式](../研究方式.md) 进入，按任务加载模块、模板和执行检查。公司研究前先查适用的行业背景。
 
 ## 按任务进入
 
 | 你要做什么 | 先看哪里 |
 |---|---|
-| 开始公司研究/更新 | [研究方式](../研究方式.md) → [主文档模板](规范/公司研究主文档模板.md) → [验收清单](规范/研究更新与交付检查清单.md) |
-| 生成HTML与财务图表 | [展示规范](规范/HTML报告与财务可视化规范.md) |
-| 新建、修改、登记、归档报告 | [命名与索引规范](规范/HTML报告命名与索引规范.md) → [报告清单](索引/html-index.json) |
-| 后端加载展示HTML | [内部网站接入](规范/HTML报告内部网站接入.md)，直接读取唯一索引，不维护第二份清单 |
-| 研究主体、证券和旧Markdown入口 | [研究库项目规范](规范/研究库项目规范.md) → [入口工具说明](工具/入口工具/README.md) |
-| 决定哪些材料提交Git | [Git管理说明](规范/2026-10-08-Git管理说明.md) |
-| 回看过去的缺口分析/验证 | [归档](归档/)，只作历史背景 |
+| 开始公司研究/更新 | [研究方式](../研究方式.md) → 先做行业一轮 → 按追问推进相关模块 → [卡片首页及模块模板](standards/公司研究主文档模板.md) → [验收清单](standards/研究更新与交付检查清单.md) |
+| 独立行业调研或复用 | [行业研究](../行业研究/README.md) → [行业与竞争模块](standards/modules/行业与竞争.md) |
+| 生成HTML与财务图表 | [展示规范](standards/HTML报告与财务可视化规范.md) |
+| 新建、修改、登记、归档报告 | [命名与索引规范](standards/HTML报告命名与索引规范.md) → [报告清单](index/html-index.json) |
+| 后端加载展示HTML | [内部网站接入](standards/HTML报告内部网站接入.md)，直接读取唯一索引，不维护第二份清单 |
+| 研究主体、证券和旧Markdown入口 | [研究库项目规范](standards/研究库项目规范.md) → [入口工具说明](tools/entry/README.md) |
+| 决定哪些材料提交Git | [Git管理说明](standards/2026-10-08-Git管理说明.md) |
+| 回看过去的缺口分析/验证 | [归档](archive/)，只作历史背景 |
 | 配对回测与量化公共代码 | [量化研究工具](../量化研究工具/README.md)，不在本目录维护 |
 
 ## 目录职责
@@ -20,12 +21,14 @@
 ```text
 研究流程/
 ├── README.md
-├── 规范/              # 现行规则、模板、验收与网站接入
-├── 索引/              # html-index.json及JSON Schema
-├── 工具/
-│   ├── 入口工具/      # 旧research.yaml校验/Markdown章节提取
-│   └── 报告工具/      # HTML报告管理、测试与验证记录
-└── 归档/              # 5份历史分析、覆盖盘点和验证记录
+├── standards/     # 规则、模板、验收与网站接入
+│   └── modules/   # 各研究模块的执行细则
+├── index/         # html-index.json 及 JSON Schema
+├── skills/        # 研究模块使用的仓库 Skill
+├── tools/
+│   ├── entry/     # research.yaml 校验与 Markdown 章节提取
+│   └── reports/   # HTML 报告管理与校验
+└── archive/       # 历史分析、覆盖盘点与验证记录
 ```
 
 本地`.venv`、`__pycache__`等环境/缓存仍被Git忽略；它们不是研究文档，也不应作为发布资源。现有Python环境随工具目录迁移，文档命令统一使用`python -m pip`，不依赖旧位置的pip启动脚本。
@@ -33,16 +36,14 @@
 ## 常用检查
 
 ```bash
-研究流程/工具/报告工具/.venv/bin/python 研究流程/工具/报告工具/reports.py check
-研究流程/工具/报告工具/.venv/bin/python -m unittest discover -s 研究流程/工具/报告工具/tests -v
-python3 研究流程/工具/入口工具/validate.py
-python3 -m unittest discover -s 研究流程/工具/入口工具 -v
+研究流程/tools/reports/.venv/bin/python 研究流程/tools/reports/reports.py check
+研究流程/tools/reports/.venv/bin/python -m unittest discover -s 研究流程/tools/reports/tests -v
+python3 研究流程/tools/entry/validate.py
+python3 -m unittest discover -s 研究流程/tools/entry -v
 ```
 
-首次安装依赖按[命名规范](规范/HTML报告命名与索引规范.md)与[入口工具说明](工具/入口工具/README.md)操作。命令通过分别证明其对应的结构/逻辑检查通过，不替代财务事实与视觉验收。
+首次安装依赖按[命名规范](standards/HTML报告命名与索引规范.md)与[入口工具说明](tools/entry/README.md)操作。命令通过分别证明其对应的结构/逻辑检查通过，不替代财务事实与视觉验收。
 
-## 本轮整理边界
+## 索引路径迁移
 
-仅调整目录、导航与路径引用，保留历史文档和原始证据；HTML索引沿用工作树中已有内容，不抹掉QXO待提交的关联更新。配对库迁出时对比AST，数值计算逻辑保持一致。旧历史commit中的索引路径仍可被报告工具读取以检查稳定ID，当前文件只维护新位置，不保留重复索引。
-
-本轮不改公司研究观点或财务数字；已有研究文档/核验脚本只同步必要路径引用。QXO的并行编辑与暂存状态保留，不代其提交或重做研究验收。结构整理结果记录在[报告工具验证记录](工具/报告工具/validation.json)，不另增一份过程报告。
+当前唯一索引位于 `研究流程/index/html-index.json`。报告工具校验历史 Git 版本时也能读取旧位置的索引，以核对稳定 ID。网站读取当前版本时使用新路径。

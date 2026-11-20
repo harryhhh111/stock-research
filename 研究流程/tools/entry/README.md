@@ -7,10 +7,10 @@
 从仓库根目录运行（将 python 替换为已安装依赖的解释器）：
 
 ```sh
-python -m pip install -r 研究流程/工具/入口工具/requirements.txt
-python 研究流程/工具/入口工具/validate.py
-python 研究流程/工具/入口工具/validate.py --limit 300
-python -m unittest discover -s 研究流程/工具/入口工具 -v
+python -m pip install -r 研究流程/tools/entry/requirements.txt
+python 研究流程/tools/entry/validate.py
+python 研究流程/tools/entry/validate.py --limit 300
+python -m unittest discover -s 研究流程/tools/entry -v
 ```
 
 脚本从自身位置推导仓库位置，也可通过 --root 指定测试仓库。正常退出码为 0，入口结构错误为 1。JSON 输出包含证券索引、各主体、完整章节、缺失/歧义/截断状态和错误清单；没有映射的章节不会由系统生成。数据截止日仍保留在原文中，未实现结构化日期解析与过时判断。
@@ -23,8 +23,8 @@ python -m unittest discover -s 研究流程/工具/入口工具 -v
 
 ## 全公司入口（2026-10-15）
 
-市场支持范围与字段规则以 [项目规范](../../规范/研究库项目规范.md) 为准。primary_section 可限定主研究章节；可选 table_row 进一步选取跨公司表中第一列精确匹配的全部行，返回表头与本公司行，再按 --limit 显式截断。research_scope 随读取结果返回，说明研究范围和资料限制。未限定章节仍读取原主文档，不把 缺失的语义章节自动生成。
+市场支持范围与字段规则以 [项目规范](../../standards/研究库项目规范.md) 为准。primary_section 可限定主研究章节；可选 table_row 进一步选取跨公司表中第一列精确匹配的全部行，返回表头与本公司行，再按 --limit 显式截断。research_scope 随读取结果返回，说明研究范围和资料限制。未限定章节仍读取原主文档，不把 缺失的语义章节自动生成。
 
 官方 MIC 与 SEC 证券/交易所记录的必要摘录保存在 data/，只保留本库使用的记录，不下载全量行情。来源、获取日与运营/分段 MIC 一并记录。SEC 摘录只验证美股身份；其他市场主要依据原研究中已列的上市资料及本轮补充官方来源，不能据此声称所有海外挂牌变动均已重新核验。
 
-全公司清单及缺口见 [覆盖结果](../../归档/2026-10-15-全公司研究入口覆盖结果.md)。原四项目结果是历史验证记录，不随全库新增而改写。
+全公司清单及缺口见 [覆盖结果](../../archive/2026-10-15-全公司研究入口覆盖结果.md)。原四项目结果是历史验证记录，不随全库新增而改写。

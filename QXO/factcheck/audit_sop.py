@@ -2,7 +2,7 @@
 from pathlib import Path
 import json,re,hashlib
 P=Path(__file__).resolve().parent;root=P.parent;ws=root.parent
-sop=(ws/'研究流程/规范/研究更新与交付检查清单.md').read_text()
+sop=(ws/'研究流程/standards/研究更新与交付检查清单.md').read_text()
 groups={};g=None
 for line in sop.splitlines():
  if line.startswith('## 4.'):g='内容'

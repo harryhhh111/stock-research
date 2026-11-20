@@ -21,8 +21,9 @@ except ImportError:
     raise SystemExit('缺少报告工具依赖，请按 HTML报告命名与索引规范.md 安装 requirements.txt')
 
 DEFAULT_ROOT = Path(__file__).resolve().parents[3]
-SCHEMA = Path(__file__).resolve().parents[2] / '索引' / 'html-index.schema.json'
-INDEX = Path('研究流程/索引/html-index.json')
+INDEX = Path('研究流程/index/html-index.json')
+SCHEMA = DEFAULT_ROOT / INDEX.with_suffix('.schema.json')
+LEGACY_INDEX_PATHS = ('研究流程/索引/html-index.json', '研究流程/html-index.json')
 # Frozen migration exceptions: new reports cannot opt into arbitrary legacy locations.
 LEGACY_PATHS = {
     'MSFT/MSFT.html', 'MSFT/传统软件与现金流.html', 'AMD/近期股价催化.html',
@@ -32,6 +33,10 @@ LEGACY_PATHS = {
 EXCLUDED_PARTS = {'.git', '.venv', 'venv', '__pycache__', 'node_modules', 'factcheck', 'assets', 'skills', '参考库'}
 EXCLUDED_ROOTS = {'研究流程', 'docs', '.github'}
 SLUG = re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
+COMPANY_MODULE_CARD_ORDER = (
+    'industry-position.html', 'business-model.html', 'revenue-profit.html',
+    'cash-capital.html', 'governance.html', 'valuation.html',
+)
 SCHEMA_VALIDATOR = Draft202012Validator(json.loads(SCHEMA.read_text()), format_checker=FormatChecker())
 Draft202012Validator.check_schema(SCHEMA_VALIDATOR.schema)
 
@@ -91,6 +96,7 @@ class Page(HTMLParser):
     def __init__(self, source):
         super().__init__(convert_charrefs=True)
         self.refs = []
+        self.card_links = []
         self.ids = set()
         self.duplicate_ids = set()
         self.base = False
@@ -102,6 +108,8 @@ class Page(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
+        if tag == 'a' and 'card' in (a.get('class') or '').split():
+            self.card_links.append(a.get('href') or '')
         if tag == 'base':
             self.base = True
         if 'id' in a:
@@ -119,6 +127,20 @@ class Page(HTMLParser):
                 for item in a['srcset'].split(','):
                     if item.strip():
                         self.refs.append(('dependency', item.strip().split()[0]))
+
+
+def check_company_card_order(page):
+    names = []
+    for href in page.card_links:
+        url = urlsplit(href)
+        names.append(PurePosixPath(unquote(url.path)).name if not (url.scheme or url.netloc) else '')
+    modules = [name for name in names if name in COMPANY_MODULE_CARD_ORDER]
+    if not modules:
+        return
+    expected = [name for name in COMPANY_MODULE_CARD_ORDER if name in modules]
+    if names[0] != COMPANY_MODULE_CARD_ORDER[0] or names[:len(modules)] != expected:
+        raise ReportError('公司首页卡片须以行业开始，业务发布后居第二，已发布模块保持固定顺序：'
+                          + ' → '.join(COMPANY_MODULE_CARD_ORDER))
 
 
 def resolve_ref(root, entry, url):
@@ -230,6 +252,8 @@ def validate(root, index, discover=True):
             p = Page(path.read_text(encoding='utf-8'))
             if p.base or p.duplicate_ids:
                 raise ReportError('禁止base标签或重复HTML id')
+            if r['report_type'] == 'company_research' and r['status'] != 'archived':
+                check_company_card_order(p)
             pages[r['entry_path']] = p
         except (ReportError, ValueError, OSError) as exc:
             errors.append(f'{label}: {exc}')
@@ -412,7 +436,7 @@ def check_git_base(root, index, base):
     exists = subprocess.run(['git','-C',str(root),'rev-parse','--verify',f'{base}^{{commit}}'],capture_output=True)
     if exists.returncode:
         return ['Git基准引用不存在，请拉取完整历史']
-    for index_path in [INDEX.as_posix(), '研究流程/html-index.json']:
+    for index_path in (INDEX.as_posix(), *LEGACY_INDEX_PATHS):
         result = subprocess.run(['git','-C',str(root),'show',f'{base}:{index_path}'],capture_output=True,text=True)
         if not result.returncode:
             break
