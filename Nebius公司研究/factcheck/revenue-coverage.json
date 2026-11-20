@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-18",
+  "task": "Complete main-report migration and FY2026 Q3 update; not a single-quarter topic",
+  "fiscal_year_end": "12-31",
+  "annual_required": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+  ],
+  "quarter_required": [
+    "2026Q1",
+    "2026Q2",
+    "2026Q3"
+  ],
+  "comparison_required": [
+    "FY2022 for FY2023 YoY where available",
+    "2025Q1",
+    "2025Q2",
+    "2025Q3",
+    "2025Q4 for 2026Q1 QoQ"
+  ],
+  "entities": [
+    "group continuing operations",
+    "Nebius AI cloud",
+    "TripleTen",
+    "Avride",
+    "eliminations"
+  ],
+  "metric_groups": [
+    "revenue, YoY, share",
+    "operating and net income, margins, SBC",
+    "CFO, cash CapEx, FCF",
+    "balance sheet and funding",
+    "share count and valuation"
+  ],
+  "status": "final HTML checked",
+  "preserve_explanations": [
+    "quarterly nonrecurring gains and net-profit/cash mismatch",
+    "power definitions, sites, generation, equipment lead times",
+    "convertible/ATM/capped-call lifecycle and dilution",
+    "customer contracts and cancellation",
+    "NBIS-CRWV relative price reaction",
+    "business/competition/governance/moat and explicit valuation conditions"
+  ],
+  "actual_annual": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+  ],
+  "actual_quarters": [
+    "2026Q1",
+    "2026Q2",
+    "2026Q3"
+  ],
+  "group_revenue": "pass",
+  "major_segments": "all 3 and eliminations pass",
+  "final_html": "reports/main.html",
+  "html_sha256": "776074597d15a3e1beb2fccfc866b3e8869ce45157ef0867fa6b7c8815cd6ddf",
+  "exception": "FY2023 group YoY unavailable on current FY2022 perimeter; segment FY2022 bases separately labelled"
+}

@@ -17,6 +17,9 @@ venv/
 *.swo
 *~
 
+# Generated report QA only. Keep check scripts and summaries outside this directory.
+**/factcheck/visual/
+
 # This is an independently versioned reference repository.
 # Keep it available in the workspace, but do not stage it as a nested Git repo.
 参考库/vibe-investing/

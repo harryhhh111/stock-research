@@ -13,11 +13,11 @@ for line in sop.splitlines():
 # Status, actual evidence anchor(s), reviewer rationale. These are substantive review judgments.
 reviews={
 '内容':[
-('通过（结构，保留draft/partial）','html-index-status,verification','qxo-main沿用已登记legacy入口；索引同步2026-11-17文档、2026-09-30财务与2026-11-16行情截止，正文哈希由管理工具更新并通过check。来源附件尚未批准发布，保留draft与unpublished_links，不称verified或已发布。'),
+('通过（结构，ready/partial）','html-index-status,verification','qxo-main沿用已登记legacy入口；索引同步2026-11-18文档、2026-09-30财务与2026-11-16行情截止，正文哈希由管理工具更新并通过check。已交付可读版本按现行规则标ready，内容保留partial；附件访问缺口保留unpublished_links，不称verified或网站已发布。'),
 ('通过','judgment,business,revenue,financials,customers,competition,industry,valuation,governance,moat','九章/十一项已定位；核心矛盾前置，订单和资本分配归属明确。'),
 ('通过（可比边界已说明）','revenue,coverage-review','2023—2025三完整财年，2026Q1—Q3集团及已披露产品均展示；前身软件及并表变化不能当连续建材增长。'),
 ('通过','financials,coverage-review','年度、单季、9M与TTM分表；Q1环比使用2025Q4，亏损比较金额，季节性就近说明。'),
-('通过','revenue,financials,verification','M美元、股数、EPS及百分比/百分点分开。'),
+('通过（2026-11-18纠正漏检）','guidance-overview,financials,competition,valuation,tracking,verification','上次单位验收通过属于漏检；本轮逐表复核31张表，补齐概览、同业、资本工具、跟踪及估值混合量纲，金额、股数/份数、EPS美元/股及百分比/百分点就近分开。'),
 ('未通过','source-version-note,financials','发现并量化跨版本净利息和税项差异，部分超过通常舍入上限；主表已核，变动成因未确认，不将1.51容差等同原因核验通过。'),
 ('通过','income-flow,profit-bridge,financials','Q3毛利→费用→经营利润→净利润已可复算；2024/25经营亏损有费用桥和非经营解释。'),
 ('不适用（已核查）','financials','展示期间毛利率未超100%，没有以冲回或小分母解释不存在的负成本；2024高净利率由利息收入解释。'),
@@ -68,13 +68,13 @@ assert all(len(groups[k])==len(reviews[k]) for k in groups),[(k,len(groups[k]),l
 visual=P/'visual_checks.json'
 qa=json.loads(visual.read_text()) if visual.exists() else {}
 # Only an observed re-audit visual check can resolve the pending item.
-visual_pass=qa.get('audit_revision')=='sop-reaudit-2026-11-17' and qa.get('status')=='passed'
+visual_pass=qa.get('audit_revision')=='units-correction-2026-11-18' and qa.get('status')=='passed'
 items=[]
 for g,requirements in groups.items():
  for n,(req,r) in enumerate(zip(requirements,reviews[g]),1):
   state,anchors,note=r
-  if state=='待视觉复核' and visual_pass:state='通过';note='新版收入/现金桑基图、局部瀑布图及完整页面已离线复核桌面、窄屏与打印；证据visual_checks.json。'
+  if state=='待视觉复核' and visual_pass:state='通过';note='2026-11-18单位修订后的概览、混合量纲表及完整页面已离线复核桌面、窄屏与打印；证据visual_checks.json。'
   items.append({'id':f'{g}-{n:02}','requirement':req,'result':state,'evidence':anchors.split(','),'review':note})
-result={'date':'2026-11-17','revision':'sop-reaudit-2026-11-17','basis':'研究方式.md及研究流程/规范/研究更新与交付检查清单.md（2026-11-17）','sop_sha256':hashlib.sha256(sop.encode()).hexdigest(),'scope':'QXO原报告的完整内容/选图复验；沿用财报2026-09-30、行情2026-11-16，不刷新行情','overall':'未通过完整研究验收','items':items,'summary':{'total':len(items),'passed':sum(x['result'].startswith('通过') for x in items),'failed':sum(x['result'].startswith('未通过') for x in items),'not_applicable':sum(x['result'].startswith('不适用') for x in items),'pending':sum(x['result'].startswith('待') for x in items)}}
+result={'date':'2026-11-18','revision':'units-correction-2026-11-18','basis':'研究方式.md及研究流程/规范/研究更新与交付检查清单.md（2026-11-18读取版本）','sop_sha256':hashlib.sha256(sop.encode()).hexdigest(),'scope':'2026-11-17完整内容/选图验收结论沿用；2026-11-18仅复核全篇表格单位与混合量纲、对应来源数值和视觉，不刷新财报/行情或重做估值','overall':'未通过完整研究验收','items':items,'summary':{'total':len(items),'passed':sum(x['result'].startswith('通过') for x in items),'failed':sum(x['result'].startswith('未通过') for x in items),'not_applicable':sum(x['result'].startswith('不适用') for x in items),'pending':sum(x['result'].startswith('待') for x in items)}}
 (P/'sop_audit.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
 print(json.dumps(result['summary'],ensure_ascii=False))

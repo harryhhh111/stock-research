@@ -1,0 +1,26 @@
+{
+  "report": "HDD硬盘/WDC/reports/revenue-profit.html",
+  "sha256": "0dfce26f5adeeccdbaf47cea7849861de30c599db14b08840ead09879b23a302",
+  "expected": {
+    "annual-revenue": [
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "quarter-revenue": [
+      "2027Q1"
+    ]
+  },
+  "actual": {
+    "annual-revenue": [
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "quarter-revenue": [
+      "2026Q1",
+      "2027Q1"
+    ]
+  },
+  "errors": []
+}

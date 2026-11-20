@@ -143,7 +143,12 @@ def main():
     if args.latest_annual not in (int(year), int(year) - 1):
         parser.error('最新完整财年须与最新期间处于同一财年或前一财年')
     annual = [str(y) for y in range(args.latest_annual - args.annual_count + 1, args.latest_annual + 1)]
-    interim = [f'{year}{"Q" if quarter else "H"}{i}' for i in range(1, int(quarter or half) + 1)]
+    if quarter:
+        latest_quarter = int(year) * 4 + int(quarter) - 1
+        interim = [f'{index // 4:04d}Q{index % 4 + 1}'
+                   for index in range(latest_quarter - 3, latest_quarter + 1)]
+    else:
+        interim = [f'{year}H{i}' for i in range(1, int(half) + 1)]
     try:
         raw = args.html.read_bytes()
         actual, errors = check_html(raw.decode('utf-8'), args.section_id, annual, interim)

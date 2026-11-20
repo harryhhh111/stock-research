@@ -2,7 +2,7 @@
   "desktop": {
     "width": 1440,
     "scrollWidth": 1425,
-    "height": 30265,
+    "height": 30665,
     "charts": 4
   },
   "sankeyLabels": [
@@ -18,18 +18,17 @@
   "mobile": {
     "width": 390,
     "scrollWidth": 375,
-    "height": 50861
+    "height": 51170
   },
   "print": {
-    "pdf": "assets/2026-11-17-print.pdf",
-    "bytes": 3786735
+    "pdf": "factcheck/visual/print.pdf",
+    "bytes": 3807470
   },
-  "audit_revision": "sop-reaudit-2026-11-17",
+  "audit_revision": "units-correction-2026-11-18",
   "status": "passed",
-  "review_date": "2026-11-17",
+  "review_date": "2026-11-18",
   "offline": true,
   "print_pages": 25,
-  "last_page_text_characters": 1696,
-  "visual_review": "After synchronizing the 48th SOP index rule and QXO metadata, final desktop/mobile layouts and all 25 rendered print pages were inspected. Sankey labels remain inside each SVG; no clipped/overlapping table columns or figures observed. Wide mobile content scrolls within its own container.",
-  "report_sha256": "43358ca2946f9b5cb2e92b9617f9bc3561637bc5cb2ffce1ed3a13794e6311fb"
+  "report_sha256": "5ae9129eb7cadfb1a3b1bb0c3537a1df1d7081cd3a82044d8bab5db5a83caf4f",
+  "visual_review": "Final desktop and 390px mobile overview inspected with local amount/EPS units and separate metric rows; mobile wide table scrolls within container. All 25 final print pages visually reviewed; no overlapping or clipped print data. Other table captions and mixed-unit exceptions manually reviewed. Layout checks do not supersede content limitations."
 }

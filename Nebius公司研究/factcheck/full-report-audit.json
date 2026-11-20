@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-18",
+  "report_sha256": "776074597d15a3e1beb2fccfc866b3e8869ce45157ef0867fa6b7c8815cd6ddf",
+  "scope": "full main report migration with Q3 update",
+  "content_checks": [
+    "FY2023/FY2024/FY2025 actual HTML revenue, YoY/share and income/cash table values match inputs",
+    "2026 Q1/Q2/Q3 actual HTML revenue, profits/margins, EBITDA, CFO/cashCapEx/FCF all match the preserved inputs",
+    "NBIS all 3 segments/eliminations independently add to group in annual and quarter HTML; TTM uses audited annual net=9.8",
+    "Valuation price/shares/EV, date-specific discounting, terminal FCF and scenario values independently recalculate",
+    "9 chapters and preserved explanations have live anchors; no external display dependencies or duplicate IDs"
+  ],
+  "coverage": "pass with disclosed incomparable historical periods",
+  "calculations": "pass",
+  "valuation_scope": "conditional calculation passed, operating forecast not independently certified",
+  "unresolved_source_differences": [
+    "28.0 M main debt versus note12; larger main amount used, share-value sensitivity about $0.09"
+  ],
+  "visual": "separate html-visual-checks.json; requires actual screenshot review"
+}

@@ -1,0 +1,107 @@
+{
+  "entity": "Western Digital",
+  "unit": "百万美元",
+  "latest_annual": 2026,
+  "latest_period": "2027Q1",
+  "annual": {
+    "table": {
+      "id": "annual-cash-flow"
+    },
+    "rows": {
+      "cfo": "经营现金流",
+      "cash_capex": "现金资本开支",
+      "fcf": "自由现金流"
+    },
+    "capex_basis": "cash_paid",
+    "source": "https://www.sec.gov/Archives/edgar/data/106040/000162828026057139/wdc-20260703.htm 合并现金流量表",
+    "values": {
+      "2024": {
+        "cfo": -294,
+        "cash_capex": 487,
+        "fcf": -781
+      },
+      "2025": {
+        "cfo": 1691,
+        "cash_capex": 412,
+        "fcf": 1279
+      },
+      "2026": {
+        "cfo": 3929,
+        "cash_capex": 418,
+        "fcf": 3511
+      }
+    }
+  },
+  "interim": {
+    "table": {
+      "id": "interim-cash-flow"
+    },
+    "rows": {
+      "cfo": "经营现金流",
+      "cash_capex": "现金资本开支",
+      "fcf": "自由现金流"
+    },
+    "capex_basis": "cash_paid",
+    "source": "https://www.sec.gov/Archives/edgar/data/106040/000162828026066933/wdc-20261002.htm 合并现金流量表",
+    "values": {
+      "2026Q1": {
+        "cfo": 672,
+        "cash_capex": 73,
+        "fcf": 599
+      },
+      "2027Q1": {
+        "cfo": 1604,
+        "cash_capex": 227,
+        "fcf": 1377
+      }
+    }
+  },
+  "bridge": {
+    "table": {
+      "id": "cash-bridge-table"
+    },
+    "period": "2027Q1",
+    "cash_scope": "合并现金及等价物",
+    "source": "https://www.sec.gov/Archives/edgar/data/106040/000162828026066933/wdc-20261002.htm",
+    "required_roles": [
+      "opening",
+      "cfo",
+      "investing",
+      "financing",
+      "fx",
+      "closing"
+    ],
+    "items": [
+      {
+        "role": "opening",
+        "label": "期初现金",
+        "expected": 1579
+      },
+      {
+        "role": "cfo",
+        "label": "经营活动净额",
+        "expected": 1604
+      },
+      {
+        "role": "investing",
+        "label": "投资活动净额",
+        "expected": -225
+      },
+      {
+        "role": "financing",
+        "label": "融资活动净额",
+        "expected": -1644
+      },
+      {
+        "role": "fx",
+        "label": "汇率影响",
+        "expected": 0
+      },
+      {
+        "role": "closing",
+        "label": "期末现金",
+        "expected": 1314
+      }
+    ]
+  }
+}

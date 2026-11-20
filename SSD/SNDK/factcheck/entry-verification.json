@@ -1,0 +1,82 @@
+{
+  "source": "working-tree",
+  "version_note": "本地工作树预览，未声明为已审核 commit",
+  "errors": [],
+  "entities": [
+    {
+      "schema_version": 2,
+      "entity_id": "company:sandisk",
+      "kind": "company",
+      "name": "Sandisk Corporation",
+      "aliases": [
+        "Sandisk Corporation",
+        "SNDK"
+      ],
+      "securities": [
+        {
+          "market": "US",
+          "mic": "XNAS",
+          "symbol": "SNDK"
+        }
+      ],
+      "primary_document": "SanDisk.md",
+      "documents": [],
+      "related_entities": [],
+      "sections": {
+        "thesis": null,
+        "open_questions": null,
+        "metrics": {
+          "path": "SanDisk.md",
+          "heading_path": [
+            "Sandisk Corporation（SNDK）公司研究",
+            "8. 核心矛盾、风险与跟踪清单"
+          ]
+        },
+        "risks": {
+          "path": "SanDisk.md",
+          "heading_path": [
+            "Sandisk Corporation（SNDK）公司研究",
+            "8. 核心矛盾、风险与跟踪清单",
+            "主要风险"
+          ]
+        },
+        "research_metadata": null
+      },
+      "entry": "research.yaml",
+      "extracted_sections": {
+        "thesis": {
+          "status": "missing",
+          "text": ""
+        },
+        "open_questions": {
+          "status": "missing",
+          "text": ""
+        },
+        "metrics": {
+          "status": "ok",
+          "text": "## 8. 核心矛盾、风险与跟踪清单\n\n### 核心矛盾\n\n> **Sandisk 的新 NBM 模式能否把“景气顶部的 NAND 厂”变成“拥有较稳定现金流的 AI 基础设施存储供应商”？**\n\n支持该命题的证据是：数据中心 bit 和收入增长、客户预付款/保证金、NBM 覆盖提高、QLC 与 HBF 等产品路线、以及 Kioxia 联盟的制造规模。反证是：FY2026 盈利仍高度由 ASP 拉动、消费端 bit 已回落、NVMe 零售价高企压制需求、行业密度迁移和新增 wafer 能在 2027–29 年重新创造供给压力。\n\n### 主要风险\n\n1. **价格周期风险：** FY2026 的高利润率主要由 ASP 与高端组合驱动；ASP 回落时利润弹性极大。\n2. **NBM 条款风险：** 名义未履约金额不是无条件收入；客户违约、重谈或未覆盖 bit 的价格都可能削弱保护。\n3. **制造伙伴风险：** 全部 NAND wafer 依赖 Flash Ventures 与 Kioxia；日本产能集中还面临地震、断电、污染、水资源与地缘供应链风险。\n4. **固定成本与 CapEx 风险：** 不买足产品仍承担半数固定成本；扩产与技术迁移的真实资本强度大于合并报表 CapEx。\n5. **竞争和技术风险：** YMTC 扩产、Samsung/SK/Micron 的高层 NAND 与 QLC 推进、HDD/QLC 的价格替代边界，以及 HBF 的客户采用速度。\n6. **资本分配风险：** 高价回购可能与未来 JV 资本需求冲突。\n\n### 每季跟踪\n\n- 数据中心收入、bit 占比、ASP/GB 与 bit 出货的拆分；\n- NBM 新增客户数、RPO、已收预付款、可退还保证金、第三方担保，以及任何重谈或违约披露；\n- Flash Ventures 的利用率、K2/BiCS10/QLC 爬坡、设备投入和约 2034 年的协议执行；\n- 消费级 PCIe 4.0 SSD 渠道价与 Consumer bit：当前零售价高位横盘不等于需求健康；\n- FY2027 实际营收、毛利率与 FCF 是否支持 Investor Day 的 FY2028–30 长期模型。\n\n---",
+          "line": 449,
+          "total_chars": 949,
+          "path": "SanDisk.md"
+        },
+        "risks": {
+          "status": "ok",
+          "text": "### 主要风险\n\n1. **价格周期风险：** FY2026 的高利润率主要由 ASP 与高端组合驱动；ASP 回落时利润弹性极大。\n2. **NBM 条款风险：** 名义未履约金额不是无条件收入；客户违约、重谈或未覆盖 bit 的价格都可能削弱保护。\n3. **制造伙伴风险：** 全部 NAND wafer 依赖 Flash Ventures 与 Kioxia；日本产能集中还面临地震、断电、污染、水资源与地缘供应链风险。\n4. **固定成本与 CapEx 风险：** 不买足产品仍承担半数固定成本；扩产与技术迁移的真实资本强度大于合并报表 CapEx。\n5. **竞争和技术风险：** YMTC 扩产、Samsung/SK/Micron 的高层 NAND 与 QLC 推进、HDD/QLC 的价格替代边界，以及 HBF 的客户采用速度。\n6. **资本分配风险：** 高价回购可能与未来 JV 资本需求冲突。",
+          "line": 457,
+          "total_chars": 408,
+          "path": "SanDisk.md"
+        },
+        "research_metadata": {
+          "status": "missing",
+          "text": ""
+        }
+      },
+      "primary_excerpt": null,
+      "market_source": "explicit",
+      "warnings": []
+    }
+  ],
+  "security_index": {
+    "XNAS:SNDK": "company:sandisk"
+  }
+}

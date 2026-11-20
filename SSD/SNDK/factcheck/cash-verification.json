@@ -1,0 +1,28 @@
+{
+  "expected_periods": [
+    "2024",
+    "2025",
+    "2026",
+    "2027Q1"
+  ],
+  "verified_periods": [
+    "2024",
+    "2025",
+    "2026",
+    "2027Q1"
+  ],
+  "bridge_period": "2027Q1",
+  "bridge_totals": {
+    "opening": "4762.00",
+    "cfo": "6363.00",
+    "investing": "-238.00",
+    "financing": "-5755.00",
+    "fx": "4.00",
+    "closing": "5136.00"
+  },
+  "errors": [],
+  "entity": "Sandisk",
+  "unit": "M美元",
+  "report_sha256": "5c01946a97fe0d74c6a47ddc231df62a789bd0d6b15cd78f99df52a7e0fca387",
+  "input_sha256": "2ffa85026204ffc18602d8af30ad2cc34ebddbcac88e258f94291632b59bfbbe"
+}

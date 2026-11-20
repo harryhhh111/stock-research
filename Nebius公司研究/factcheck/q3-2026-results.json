@@ -1,0 +1,70 @@
+{
+  "q1": {
+    "revenue": 399.0,
+    "op": -128.0,
+    "net": 621.2,
+    "ebitda": 129.5,
+    "cfo": 2258.0,
+    "cash_capex": 2472.9,
+    "sbc": 35.3,
+    "cloud": 389.7,
+    "cloud_ebitda": 174.0,
+    "prior": 50.9,
+    "cloud_prior": 41.4,
+    "fcf": -214.9000000000001,
+    "revenue_yoy_pct": 683.8899803536347,
+    "op_margin": -32.08020050125313,
+    "net_margin": 155.6892230576441,
+    "ebitda_margin": 32.45614035087719
+  },
+  "q2": {
+    "revenue": 582.3,
+    "op": -175.9,
+    "net": -190.4,
+    "ebitda": 236.2,
+    "cfo": 2246.1000000000004,
+    "cash_capex": 5657.4,
+    "sbc": 102.50000000000001,
+    "cloud": 574.9,
+    "cloud_ebitda": 285.7,
+    "prior": 105.1,
+    "cloud_prior": 93.7,
+    "fcf": -3411.2999999999993,
+    "revenue_yoy_pct": 454.0437678401522,
+    "op_margin": -30.207796668383995,
+    "net_margin": -32.69792203331616,
+    "ebitda_margin": 40.56328353082604
+  },
+  "q3": {
+    "revenue": 980.8,
+    "op": 50.4,
+    "net": -37.5,
+    "ebitda": 465.8,
+    "cfo": -273.0,
+    "cash_capex": 7300.4,
+    "sbc": 58.7,
+    "cloud": 973.8,
+    "cloud_ebitda": 518.2,
+    "prior": 146.1,
+    "cloud_prior": 131.1,
+    "fcf": -7573.4,
+    "revenue_yoy_pct": 571.3210130047912,
+    "op_margin": 5.138662316476346,
+    "net_margin": -3.823409461663948,
+    "ebitda_margin": 47.49184339314845
+  },
+  "balance": {
+    "cash": 7425.6,
+    "restricted_cash": 1215.5,
+    "debt_ex_leases": 14190.8,
+    "net_debt_ex_leases": 6765.199999999999,
+    "equity": 12299.2
+  },
+  "ttm": {
+    "revenue": 2189.7999999999997,
+    "net": 124.5,
+    "cfo": 5065.400000000001,
+    "cash_capex": 17486.7,
+    "fcf": -12421.3
+  }
+}

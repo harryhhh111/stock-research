@@ -1,118 +1,71 @@
 # HTML 报告命名与索引规范
 
-维护日期：2026-11-19。本文是报告路径、命名、登记及兼容规则的唯一维护位置。研究内容要求仍见[研究方式](../../研究方式.md)，图表见[展示规范](HTML报告与财务可视化规范.md)，网站接入见[接入入口](HTML报告内部网站接入.md)。
+维护日期 2026-11-20。路径、登记和迁移按本页执行。研究内容见[研究 SOP](../../研究方式.md)，展示见[图表规范](HTML报告与财务可视化规范.md)，网站见[接入说明](HTML报告内部网站接入.md)。
 
 ## 1. 固定路径
 
-| 类型/report_type | 标准路径 | 说明 |
+| 类型 | 标准路径 | 要求 |
 |---|---|---|
-| company_research | `<项目>/reports/main.html` | 每家公司最多一份非归档主报告 |
-| topic | `<项目>/reports/<slug>.html` | 持续专题，slug为小写英文数字及单个连字符 |
-| update | `<项目>/reports/YYYY-MM-DD-<slug>.html` | 日期型更新，日期须显式给定且有效 |
-| demo | `<项目>/reports/<slug>.html` | 演示须标synthetic，不能混作真实研究 |
-| 展示资源 | `<项目>/reports/assets/` | 新资源优先放此；历史证据仍留factcheck并显式登记权限 |
+| 公司首页 `company_research` | `<项目>/reports/main.html` | 每个公司主体最多一个非归档首页 |
+| 专题或模块 `topic` | `<项目>/reports/<slug>.html` | 同公司模块沿用其 `entity_id`，每页有独立 `report_id` |
+| 更新 `update` | `<项目>/reports/YYYY-MM-DD-<slug>.html` | 显式给出实际更新日期 |
+| 演示 `demo` | `<项目>/reports/<slug>.html` | 内容状态用 `synthetic` |
+| 展示资源 | `<项目>/reports/assets/` | 按需登记，历史证据留在 `factcheck/` |
 
-项目可沿用已有嵌套主体目录，不为命名统一移动其他公司。slug只作稳定标识，中文标题写在索引和HTML中；main保留给公司主报告。不使用“最终版/最新版”等文件名。HTML为唯一维护正文，历史版本由Git/发布快照保留，不生成Markdown正文副本。
+slug 仅用小写英文字母、数字和单个连字符。中文标题写在页面和索引，历史版本由 Git 或发布快照保留。项目沿用既有主体目录。
 
 ### 每家公司唯一 HTML 主入口
 
-公司以`entity_id`识别，对外阅读只提供一个主入口，由索引中该主体唯一的非归档`company_research`条目确定。新入口使用`<项目>/reports/main.html`；既有legacy主报告保留原路径，不另造一份首页或第二份正文。不能通过换目录、换日期或换股票代码创建第二个主入口。
-
-新建或明确重构的完整研究在唯一首页放模块大卡片。独立模块保持公司 `entity_id`，用 `report_type=topic`、独立 `report_id` 及同项目 `reports/<slug>.html` 登记。公司列表只链接首页。日常财报、估值及纠错更新对应模块，已有单页报告原位更新章节。影响整体判断时同步首页摘要和相关模块。历史专题及更新可归入首页导航，报告论证只在对应页面维护。
-
-已有报告不批量合并、删除或改名。历史主体只有专题/更新而没有主报告时，标明“主入口待补建”，不自动挑第一篇作主入口；可在内部待整理区保留阅读链接。补建可以是明确标注局部覆盖与缺口的研究主报告，不必冒充完整研究，也不创建空壳页消除缺口。当前AMD属于此情形，微软和QXO已有legacy主入口。
-
-工具目前检查“最多一个非归档主报告”；尚不检查每家公司是否已有主入口或主报告是否已链接全部专题。这两项须人工验收，不能宣称已由CI强制执行。
+以 `entity_id` 聚合，网站公司列表只打开唯一非归档首页。已登记的 legacy 首页沿用原路径。只有专题或更新的公司标「主入口待补建」，内部可保留待整理链接。补建时如实说明实际内容与缺口。首页和模块按[模板](公司研究主文档模板.md#唯一主入口)组织，重要判断变化时联动更新首页及相关模块。工具检查主入口唯一和标准卡片顺序，交付另验首页和应有模块的覆盖及实际导航。
 
 ### 独立行业入口及模块
 
-在 `行业研究/<细分行业>/reports/` 放行业首页和模块。一个行业共用 `topic:industry-<industry-slug>`。首页与模块均为 `topic`，各有独立 `report_id`。首页 ID 为 `industry-<industry-slug>-overview`，首页文件为 `<industry-slug>.html`，模块文件使用独立 slug，例如 `value-chain.html`。公司项目用相对链接直接引用适用模块及锚点。行业首页同样以卡片导航到模块。
-
-先用工具登记首页及模块后再写跨页链接，交付前逐页 `update` 同步状态、日期与正文哈希，并运行 `check`。首页与模块链接和行业首页唯一性列入交付清单，使用现有索引字段。需要网站可读的模块与相关资源应纳入同版本快照。
+在 `行业研究/<细分行业>/reports/` 建档。首页和模块均为 `topic`，共享 `topic:industry-<industry-slug>`，各有独立报告 ID。首页 ID 为 `industry-<industry-slug>-overview`，文件为 `<industry-slug>.html`。模块使用自己的 slug，从首页卡片进入并可返回。公司直接引用适用行业模块及锚点。交付时检查首页唯一、跨页可达，网站快照包括相关模块和获准资源。
 
 ## 2. 唯一索引及数据契约
 
-[html-index.json](../index/html-index.json)是全库HTML报告唯一登记源；网站读取，不再另建手工维护的第二份清单。[html-index.schema.json](../index/html-index.schema.json)是机器结构契约（Draft 2020-12），字段含义如下：
+[html-index.json](../index/html-index.json)是唯一清单，字段和取值以 [JSON Schema](../index/html-index.schema.json) 为准。源版本、工作树状态和权限由消费端记录。
 
-| 字段 | 要求 |
+| 字段 | 登记规则 |
 |---|---|
-| schema_version / reports / redirects | 当前版本1；reports为报告列表，redirects为显式兼容入口列表 |
-| report_id | 稳定、全库唯一的英文slug，不随标题或路径变更；不静默删除，退出使用archive |
-| entity_id / project_dir | 显式关联主体及所属公司/主题目录；demo可无主体，不靠ticker猜身份 |
-| title / entry_path / report_type | 中文可读标题、仓库根目录相对POSIX路径、上表类型 |
-| status | draft/ready/archived；表示交付维护状态，不是买卖观点或自动公开权限 |
-| content_status | unreviewed/partial/verified/synthetic；人工核验结论，工具不自动提升 |
-| document_updated_at / financial_as_of / market_as_of | ISO日期或null；未知如实留空，不用mtime补齐；详细期间口径仍在报告正文 |
-| content_sha256 | 与登记正文版本绑定的SHA-256或null；ready必须有值，正文变更后哈希失配即失败 |
-| assets | 逐项批准随报告访问的本地资源/附件路径，不是扫描整个factcheck目录生成的公开许可 |
-| unpublished_links | HTML中尚不在发布范围的本地来源链接→具体原因；记录附件访问缺口；非空不阻止正文ready，也不表示研究尚未完成 |
-| layout | standard，或仅既有六份报告允许的legacy；不得为新报告扩大legacy豁免 |
-| redirects中的from/report_id | 老兼容页路径及目标稳定ID；兼容页须与工具生成内容一致，不作为第二份正文 |
+| `report_id` / `entity_id` | 报告 ID 全库唯一，标题或路径变化时保留。明确写主体，演示可为空 |
+| `project_dir` / `entry_path` | 仓库根目录相对 POSIX 路径 |
+| `document_updated_at` / `financial_as_of` / `market_as_of` | 分别记真实日期，未知留空，不用文件 mtime。期间细节留在正文 |
+| `assets` / `unpublished_links` | 前者列获准资源；后者记录尚未发布的本地来源超链接及原因。图片、样式和绘图数据等必需依赖须可访问 |
+| `layout` / `redirects` | 仅首次登记的六份报告适用 legacy。旧兼容页按路径关联稳定 ID |
+| `content_sha256` | 绑定实际正文。正文变化后由工具重算，`ready` 要求有效哈希 |
 
 ### 交付状态、内容核验和访问权限分别判断
 
-| 维度 | 定义与执行规则 |
-|---|---|
-| `status=draft` | 作者明确仍在编写、尚未交付；内部网站可供登录用户阅读，必须标“草稿” |
-| `status=ready` | 作者已交付可阅读的版本；允许存在已披露的研究缺口和不可访问附件，不等于事实全部核验通过 |
-| `status=archived` | 已退出当前维护，默认不进当前报告列表；历史入口另行提供 |
-| `content_status` | `unreviewed`未完成内容验收；`partial`仅部分范围通过，正文说明范围和缺口；`verified`声明范围通过内容验收；`synthetic`为演示数据。不得由交付状态、哈希或结构检查自动推断 |
-| 网站访问权限 | 由网站登录与授权决定；`draft`不是禁止阅读，`ready`不是公开授权 |
+- `draft` 为尚未交付，授权读者可内部阅读并看到草稿标记。 `ready` 为交付可读，要求真实更新日、非占位正文及匹配哈希，允许标明研究和来源缺口。 `archived` 退出当前列表，保留历史入口。
+- `content_status` 按实际验收填写。 `unreviewed` 尚未验收，`partial` 仅部分通过，`verified` 为声明范围通过，`synthetic` 为演示。网站显示正文的核验范围及缺口。
+- 访问权限由网站登录授权决定。未发布来源保留原因及可见提示，可阅读的正文仍可交付。结构通过后仍须按范围完成内容与视觉验收。
 
-Agent完成写作后，须主动执行对应范围的内容验收，再按实际结果分别填写两类状态；不能用`ready`绕过研究验收。`ready`的机器条件为非占位正文、真实文档更新日和匹配的正文哈希；`unreviewed`或`partial`须在网站明确提示核验状态与已知缺口。哈希只绑定版本，不证明事实正确。附件未开放不自动降为`draft`，核心图表、样式或数据文件缺失则仍不通过展示依赖检查。
+## 3. Agent 执行流程
 
-所有路径必须在仓库内、不能有`..`、反斜线、绝对路径或符号链接；索引写原文件名，不写URL编码。HTML相对链接可使用不越界的`../`和单次URL编码，由工具归一化检查。网址由后端构造，不能把本机绝对路径交给浏览器。
+1. 查索引并确定新建、更新或迁移。用 `create` 生成登记草稿，已有生成器用 `register` 登记生成的页面。
+2. 写正文与必要资源。已有页面按稳定 ID 原位更新；复核受影响的图表、引用、生成脚本与核验记录。
+3. 用 `update --id <ID> --metadata <JSON路径>` 填真实元数据并同步哈希。JSON 只写要变动的字段，不借更新改 ID、主体、项目、类型或路径。
+4. 逐页复核状态和日期，运行 `check` 再交付。退出维护用 `archive`。校验失败时处理实际缺项，禁止扩大豁免、删稳定 ID、编日期或擅自标 `verified`。
 
-证券身份继续来自既有入口规范；旧research.yaml仍只接受Markdown，不修改schema、不恢复旧正文更新。HTML报告索引不冒充已经实现的章节提取器。源commit/working-tree、dirty和发布包版本由发布端在读取该索引时另行记录，不将索引自身的commit号硬写成自引用字段。
-
-## 3. Agent 必须执行的流程
-
-**先查索引 → 确定更新或新建 → 用工具取得/登记标准路径 → 写HTML及必要资源 → 复核并更新元数据 → 运行check与内容验收 → 交付。**
-
-- 已有report_id优先原位更新，不因新日期再建一份公司主报告；未取得真实数据截止日就保留null。
-- 使用`create`生成已登记草稿；已有生成器可以先输出到标准路径，再用`register`登记。生成文件尚未登记期间check会失败，这是正常的未完成状态。
-- 用`update`同步元数据并重算正文哈希；运行这个命令不代表已经事实核验，content_status须按实际结果选择。
-- 不手工扩大排除目录、删索引项、增加legacy路径、填虚假verified或编造日期来消除错误。
-- 更新内容后检查所有受影响图表、引用、生成脚本和核验记录；索引通过只证明路径/结构等对应检查通过，不能替代研究内容与视觉验收。
-
-工具依赖安装到本目录被Git忽略的虚拟环境；不影响报告或Skill的运行依赖：
+从仓库根目录安装和调用：
 
 ```bash
-python3 -m venv 研究流程/tools/reports/.venv
-研究流程/tools/reports/.venv/bin/python -m pip install -r 研究流程/tools/reports/requirements.txt
+tool_dir=研究流程/tools/reports
+python3 -m venv "$tool_dir/.venv"
+"$tool_dir/.venv/bin/python" -m pip install -r "$tool_dir/requirements.txt"
+"$tool_dir/.venv/bin/python" "$tool_dir/reports.py" check
+"$tool_dir/.venv/bin/python" "$tool_dir/reports.py" register --help
 ```
 
-常用命令（从仓库根目录运行；其他位置用脚本绝对路径或`--root`）：
-
-```bash
-研究流程/tools/reports/.venv/bin/python 研究流程/tools/reports/reports.py list
-研究流程/tools/reports/.venv/bin/python 研究流程/tools/reports/reports.py create --id msft-new-topic --project MSFT --title "新专题" --entity company:microsoft --type topic --slug new-topic
-研究流程/tools/reports/.venv/bin/python 研究流程/tools/reports/reports.py register --id amd-update-example --project AMD --title "更新示例" --entity company:amd --type update --slug earnings-update --date 2026-11-17
-研究流程/tools/reports/.venv/bin/python 研究流程/tools/reports/reports.py update --id msft-new-topic --metadata /path/to/reviewed-metadata.json
-研究流程/tools/reports/.venv/bin/python 研究流程/tools/reports/reports.py archive --id msft-new-topic
-研究流程/tools/reports/.venv/bin/python 研究流程/tools/reports/reports.py check
-```
-
-上方创建命令是用法示例，不要求在正式库创建示例公司/空报告。metadata是JSON对象，只填需改字段，例如`{"document_updated_at":"2026-11-17","content_status":"partial"}`，路径替换为本次实际输入文件。不得替用户或审稿人声明核验通过。资源和未发布链接可通过metadata显式补齐；ID、主体、项目、类型、路径不能借update偷偷修改。
+替换最后的子命令可查 `list`、`create`、`update`、`archive` 和 `move`。其他位置可用脚本绝对路径及 `--root`。
 
 ## 4. 检查范围及 CI
 
-check先按Schema检查，再验ID/正文路径唯一、主报告唯一、路径/类型匹配、日期格式、文件/资源存在、锚点、重复id、链接边界、外部展示依赖、未发布链接及正文哈希。当前公司首页使用 `card` 类链接至标准模块文件时，工具按[模板](公司研究主文档模板.md#唯一主入口)检查卡片顺序。首轮允许只登记行业卡片，已发布模块沿固定顺序。交付时另核对实际视觉和键盘顺序。工具通过Git盘点全库研究HTML，检测索引外的新报告（不只扫描reports目录）。factcheck、assets、skills、外部参考/独立checkout及工具/规划目录按固定规则排除，不能被登记为正文。
+`check` 校验 Schema、路径与类型、稳定 ID、主入口、日期、哈希、重复 id、锚点及资源。静态检查覆盖可解析的 HTML 引用、CSS URL 和字面量 fetch。动态资源须人工登记及浏览器复核。通过 Git 盘点漏登记的研究 HTML，按工具规则排除原始证据、缓存、外部库、工具等目录。未发布链接声明仅适用于来源超链接。
 
-检查支持静态可解析的src/href/poster/srcset、CSS url及字面量fetch；动态拼接的脚本资源须人工列assets并浏览器检查，不能声称静态扫描覆盖任意JavaScript。`unpublished_links`仅用于本地来源超链接，不豁免图片、样式、图表数据等展示依赖。draft和ready均可保留这些来源链接；网站须显示不可用原因或在发布副本中禁用链接，不开放未获准文件，不能把网站404当正常来源。
+[HTML Reports 工作流](../../.github/workflows/html-reports.yml)在 push 和 PR 运行测试和检查。 `--base-ref` 以历史索引核对稳定 ID，默认 HEAD；CI 采用 PR 基线或推送前版本。没有历史索引时仍检查全库漏登记。失败非零退出。需要阻断不合格合并时，在 GitHub 将检查设为必需。
 
-`check --base-ref HEAD`默认对照HEAD防止静默删除稳定ID；CI按PR基线或push前版本对照。首次引入索引时旧基线无索引，仍执行全库漏登记扫描。校验失败非零退出，不改变研究文件。
+## 5. 既有报告迁移
 
-已加入[HTML Reports工作流](../../.github/workflows/html-reports.yml)，在push和pull_request上运行工具测试与check，依赖版本固定、只读权限、不使用pull_request_target。**工作流文件不等于分支保护**：GitHub需另将`HTML report index`检查设为必需、要求PR合并并限制绕过，才能阻止不合格变更合并；本轮未改远端分支保护设置。检验工作流的权限/事件建议依据[GitHub官方安全说明](https://docs.github.com/en/actions/reference/security/secure-use)。
-
-## 5. 既有报告的兼容与迁移
-
-首次登记的六份HTML使用legacy路径，未批量移动正文/资源。当时公司报告保守地初始化为draft/unreviewed，并对未知日期留空；这些导入默认值不能证明作者仍在编写。后续更新以当前索引为准。须逐篇检查交付记录和实际核验范围后修正元数据，不为填充网站列表批量改成ready，也不把登记成功当事实验收。本次状态语义修订不改现有报告状态。
-
-`move --id <id> --slug <新slug>`可将自包含专题/演示移动到标准路径（日期型更新另给--date；主报告固定main），保持正文原字节、ID和研究日期，登记老地址兼容页。浏览器允许脚本时自动携带锚点跳转；禁脚本时点击链接。兼容页由同一索引维护，不作为重复正文。
-
-有跨文件相对依赖的报告，move会拒绝自动搬迁，避免改坏图表/证据。此类迁移须先协调生成器、相对链接、核验脚本和旧路径映射，再审阅落地；禁止简单mv后宣称完成。老报告暂留明确豁免，新报告不享有豁免。任何迁移不得借结构整理删除重要解释、改财务核验日或覆盖他人进行中的工作。
-
-## 6. 首次落地验收记录
-
-本轮范围为规则、索引、管理脚本和本地CI同等命令，不包含网站部署或公司事实更新。六份现有报告登记；已发现未审核附件链接保留为显式缺口。实际自动检查结果见[工具验证记录](../tools/reports/validation.json)，现有公司内容和并行QXO改动不因此标为完整研究验收通过。
+自包含报告可用 `move` 迁至标准路径。专题给 `--slug`，日期更新另给 `--date`。工具保留正文原字节、ID、日期与旧兼容页。兼容页启用脚本可携锚点跳转，关闭脚本时保留普通链接。含跨文件相对依赖的报告须先核对生成器、证据、脚本与旧地址映射，再按实际范围迁移。保留重要解释、财务核验日和并行工作。

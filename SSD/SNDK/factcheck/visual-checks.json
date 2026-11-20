@@ -1,0 +1,373 @@
+{
+  "offline": true,
+  "pages": [
+    {
+      "page": "SSD/SNDK/reports/business-model.html",
+      "desktop": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "headings": 1,
+        "tables": 4,
+        "charts": 0
+      },
+      "mobile": {
+        "width": 390,
+        "scrollWidth": 390,
+        "headings": 1,
+        "tables": 4,
+        "charts": 0
+      },
+      "print": {
+        "tables": [
+          {
+            "id": "products",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "customer-cases",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "contracts",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "tech",
+            "width": 681,
+            "available": 681
+          }
+        ]
+      }
+    },
+    {
+      "page": "SSD/SNDK/reports/cash-capital.html",
+      "desktop": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "headings": 1,
+        "tables": 7,
+        "charts": 2
+      },
+      "mobile": {
+        "width": 390,
+        "scrollWidth": 390,
+        "headings": 1,
+        "tables": 7,
+        "charts": 2
+      },
+      "print": {
+        "tables": [
+          {
+            "id": "annual-cash-flow",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "interim-cash-flow",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "cash-bridge-table",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "cash-adjust",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "balance-table",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "commitments",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "capital",
+            "width": 681,
+            "available": 681
+          }
+        ]
+      }
+    },
+    {
+      "page": "SSD/SNDK/reports/governance.html",
+      "desktop": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "headings": 1,
+        "tables": 1,
+        "charts": 0
+      },
+      "mobile": {
+        "width": 390,
+        "scrollWidth": 390,
+        "headings": 1,
+        "tables": 1,
+        "charts": 0
+      },
+      "print": {
+        "tables": [
+          {
+            "id": "incentive-table",
+            "width": 681,
+            "available": 681
+          }
+        ]
+      }
+    },
+    {
+      "page": "SSD/SNDK/reports/industry-position.html",
+      "desktop": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "headings": 1,
+        "tables": 2,
+        "charts": 0
+      },
+      "mobile": {
+        "width": 390,
+        "scrollWidth": 390,
+        "headings": 1,
+        "tables": 2,
+        "charts": 0
+      },
+      "print": {
+        "tables": [
+          {
+            "id": "sndk-cycle-answers",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "moat-table",
+            "width": 681,
+            "available": 681
+          }
+        ]
+      }
+    },
+    {
+      "page": "SSD/SNDK/reports/main.html",
+      "desktop": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "headings": 1,
+        "tables": 2,
+        "charts": 0
+      },
+      "mobile": {
+        "width": 390,
+        "scrollWidth": 390,
+        "headings": 1,
+        "tables": 2,
+        "charts": 0
+      },
+      "print": {
+        "tables": [
+          {
+            "id": "tracking",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "coverage-table",
+            "width": 681,
+            "available": 681
+          }
+        ]
+      }
+    },
+    {
+      "page": "SSD/SNDK/reports/revenue-profit.html",
+      "desktop": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "headings": 1,
+        "tables": 8,
+        "charts": 2
+      },
+      "mobile": {
+        "width": 390,
+        "scrollWidth": 390,
+        "headings": 1,
+        "tables": 8,
+        "charts": 2
+      },
+      "print": {
+        "tables": [
+          {
+            "id": "guidance-table",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "annual-revenue",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "quarter-revenue",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "quarter-base",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "volume",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "annual-profit",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "q-profit",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "q-profit-growth",
+            "width": 681,
+            "available": 681
+          }
+        ]
+      }
+    },
+    {
+      "page": "SSD/SNDK/reports/valuation.html",
+      "desktop": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "headings": 1,
+        "tables": 6,
+        "charts": 0
+      },
+      "mobile": {
+        "width": 390,
+        "scrollWidth": 390,
+        "headings": 1,
+        "tables": 6,
+        "charts": 0
+      },
+      "print": {
+        "tables": [
+          {
+            "id": "quote",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "implied-table",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "required-revenue-values",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "scenarios-table",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "prices",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "cycle-profit-values",
+            "width": 681,
+            "available": 681
+          }
+        ]
+      }
+    },
+    {
+      "page": "行业研究/NAND/reports/cycle.html",
+      "desktop": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "headings": 1,
+        "tables": 6,
+        "charts": 0
+      },
+      "mobile": {
+        "width": 390,
+        "scrollWidth": 390,
+        "headings": 1,
+        "tables": 6,
+        "charts": 0
+      },
+      "print": {
+        "tables": [
+          {
+            "id": "cycle-evidence",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "opposing-views",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "vendor-expansion",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "supply-definitions",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "balance-values",
+            "width": 681,
+            "available": 681
+          },
+          {
+            "id": "cycle-triggers",
+            "width": 681,
+            "available": 681
+          }
+        ]
+      }
+    },
+    {
+      "page": "行业研究/NAND/reports/nand.html",
+      "desktop": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "headings": 1,
+        "tables": 0,
+        "charts": 0
+      },
+      "mobile": {
+        "width": 390,
+        "scrollWidth": 390,
+        "headings": 1,
+        "tables": 0,
+        "charts": 0
+      },
+      "print": {
+        "tables": []
+      }
+    }
+  ]
+}

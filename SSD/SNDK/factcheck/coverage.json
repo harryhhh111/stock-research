@@ -1,0 +1,20 @@
+{
+  "latest_annual": 2026,
+  "latest_period": "2027Q1",
+  "annual": [
+    "2024",
+    "2025",
+    "2026"
+  ],
+  "interim": [
+    "2027Q1"
+  ],
+  "comparators": [
+    "2026Q1",
+    "2026Q4"
+  ],
+  "source_locations": {
+    "annual": "FY26 10-K pp.46–48,58–61; FY25 10-K pp.48,60",
+    "interim": "FY27 Q1 10-Q pp.5–8,13–14,35–36"
+  }
+}

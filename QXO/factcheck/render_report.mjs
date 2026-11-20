@@ -5,7 +5,7 @@ import os from 'node:os';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import {spawn} from 'node:child_process';
 const here=path.dirname(fileURLToPath(import.meta.url));
-const root=path.dirname(here);const out=path.join(root,'assets');await fs.mkdir(out,{recursive:true});
+const root=path.dirname(here);const out=path.join(here,'visual');await fs.mkdir(out,{recursive:true});
 const profile=await fs.mkdtemp(path.join(os.tmpdir(),'qxo-render-'));
 const executable='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const proc=spawn(executable,['--headless=new','--remote-debugging-port=0',`--user-data-dir=${profile}`,'--no-first-run','--disable-background-networking','--disable-extensions','about:blank'],{stdio:'ignore'});
@@ -28,19 +28,21 @@ try{
  await cmd('Runtime.evaluate',{expression:'document.documentElement.style.scrollBehavior="auto";scrollTo(0,0)'});
  const metrics={desktop:await evaluate('({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,height:document.documentElement.scrollHeight,charts:document.querySelectorAll("svg").length})')};
  async function shot(name){let r=await cmd('Page.captureScreenshot',{format:'png',captureBeyondViewport:false});await fs.writeFile(path.join(out,name),Buffer.from(r.data,'base64'));}
- await shot('2026-11-17-desktop.png');
+ await shot('desktop.png');
+ await cmd('Runtime.evaluate',{expression:'document.getElementById("guidance-overview").scrollIntoView()'});await shot('unit-table-desktop.png');
  for(const [id,name] of [['income-flow','income-flow'],['cash-full-flow','cash-flow']]){
-  await cmd('Runtime.evaluate',{expression:`document.getElementById('${id}').scrollIntoView()`});await shot(`2026-11-17-${name}.png`);
+  await cmd('Runtime.evaluate',{expression:`document.getElementById('${id}').scrollIntoView()`});await shot(`${name}.png`);
  }
  metrics.sankeyLabels=await evaluate(`Array.from(document.querySelectorAll('svg[data-flow]')).map(svg=>({flow:svg.dataset.flow,overflow:Array.from(svg.querySelectorAll('text')).map(t=>({text:t.textContent,b:t.getBBox()})).filter(x=>x.b.x<0||x.b.y<0||x.b.x+x.b.width>svg.viewBox.baseVal.width||x.b.y+x.b.height>svg.viewBox.baseVal.height).map(x=>x.text)}))`);
- await cmd('Runtime.evaluate',{expression:'document.getElementById("valuation").scrollIntoView()'});await shot('2026-11-17-valuation.png');
- await cmd('Emulation.setDeviceMetricsOverride',{width:390,height:1000,deviceScaleFactor:1,mobile:false});await cmd('Runtime.evaluate',{expression:'scrollTo(0,0)'});await shot('2026-11-17-mobile.png');
+ await cmd('Runtime.evaluate',{expression:'document.getElementById("valuation").scrollIntoView()'});await shot('valuation.png');
+ await cmd('Emulation.setDeviceMetricsOverride',{width:390,height:1000,deviceScaleFactor:1,mobile:false});await cmd('Runtime.evaluate',{expression:'scrollTo(0,0)'});await shot('mobile.png');
+ await cmd('Runtime.evaluate',{expression:'document.getElementById("guidance-overview").scrollIntoView()'});await shot('unit-table-mobile.png');
  metrics.mobile=await evaluate('({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,height:document.documentElement.scrollHeight})');
- await cmd('Runtime.evaluate',{expression:'document.querySelector(".chart").scrollIntoView()'});await shot('2026-11-17-mobile-chart.png');
- await cmd('Runtime.evaluate',{expression:'document.getElementById("cash-full-flow").scrollIntoView()'});await shot('2026-11-17-mobile-cash-flow.png');
+ await cmd('Runtime.evaluate',{expression:'document.querySelector(".chart").scrollIntoView()'});await shot('mobile-chart.png');
+ await cmd('Runtime.evaluate',{expression:'document.getElementById("cash-full-flow").scrollIntoView()'});await shot('mobile-cash-flow.png');
  await cmd('Emulation.setDeviceMetricsOverride',{width:1440,height:1100,deviceScaleFactor:1,mobile:false});
  await cmd('Emulation.setEmulatedMedia',{media:'print'});
- const pdf=await cmd('Page.printToPDF',{printBackground:true,preferCSSPageSize:true,displayHeaderFooter:false});await fs.writeFile(path.join(out,'2026-11-17-print.pdf'),Buffer.from(pdf.data,'base64'));
- metrics.print={pdf:'assets/2026-11-17-print.pdf',bytes:Buffer.from(pdf.data,'base64').length};
+ const pdf=await cmd('Page.printToPDF',{printBackground:true,preferCSSPageSize:true,displayHeaderFooter:false});await fs.writeFile(path.join(out,'print.pdf'),Buffer.from(pdf.data,'base64'));
+ metrics.print={pdf:'factcheck/visual/print.pdf',bytes:Buffer.from(pdf.data,'base64').length};
  await fs.writeFile(path.join(here,'visual_checks.json'),JSON.stringify(metrics,null,2));console.log(JSON.stringify(metrics));
 }finally{ws?.close();proc.kill();}

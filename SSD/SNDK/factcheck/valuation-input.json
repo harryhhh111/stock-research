@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "company": "Sandisk Corporation",
+  "share_basis": "SNDK普通股，2026-11-18拆股前；目标股数同单位不变",
+  "currency": "USD",
+  "price": 776.22,
+  "price_date": "2026-11-18",
+  "net_profit": 11433,
+  "profit_unit": "M",
+  "profit_period_start": "2025-06-28",
+  "profit_period_end": "2026-07-03",
+  "profit_basis": "FY2026 GAAP归属普通股年度利润；含投资收益，持续性另作压力情景，不作为正常化利润",
+  "current_shares": 142289365,
+  "target_shares": 142289365,
+  "target_fiscal_year": "FY2029",
+  "target_date": "2029-06-29",
+  "required_return": 0.1,
+  "target_pe": 10,
+  "sensitivity_pe": [
+    8,
+    10,
+    12
+  ],
+  "assumptions_confirmed": true,
+  "applicability": {
+    "comparable_profit": true,
+    "major_capital_changes": false,
+    "special_industry": false
+  },
+  "evidence": {
+    "price": {
+      "source": "https://www.investing.com/equities/sandisk-corp-historical-data",
+      "status": "verified",
+      "source_date": "2026-11-18",
+      "currency": "USD"
+    },
+    "net_profit": {
+      "source": "https://investor.sandisk.com/node/8171/html",
+      "status": "verified",
+      "source_date": "2026-08-17",
+      "currency": "USD"
+    },
+    "current_shares": {
+      "source": "https://investor.sandisk.com/static-files/c31aa9f9-d8e1-43e5-8642-360f5d0dad15 cover 2026-10-26",
+      "status": "verified",
+      "source_date": "2026-10-30",
+      "currency": "shares"
+    }
+  }
+}

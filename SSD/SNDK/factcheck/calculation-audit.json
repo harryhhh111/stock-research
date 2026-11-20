@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-19",
+  "checks": [
+    "annual 2023 sum ok",
+    "annual 2024 sum ok",
+    "annual 2025 sum ok",
+    "annual 2026 sum ok",
+    "quarter 2026Q1 sum ok",
+    "quarter 2026Q4 sum ok",
+    "quarter 2027Q1 sum ok",
+    "cash bridge ok",
+    "profit CFO bridge ok",
+    "adjusted FCF bridge ok"
+  ],
+  "market_cap_m": 110447.8509003,
+  "html_sha256": {
+    "industry-position.html": "6f4051d718f610ce05149ab7060e7fc6b31cdfb85fb77549a0b7199b61425d6e",
+    "governance.html": "3477713c6a08d284ca8ecdf08b68c944203cfbc4b624ff9eb3cd7824f6d59941",
+    "business-model.html": "8fd8f98bf5542b0cb7c46b54578f03bd5a10c00bb2f0ad74cba78000d14f33e0",
+    "cash-capital.html": "5c01946a97fe0d74c6a47ddc231df62a789bd0d6b15cd78f99df52a7e0fca387",
+    "revenue-profit.html": "167ae5f98200a235b068cf97b4ec9465881192b1028a82d96a77f7955d1e22e2",
+    "valuation.html": "151897f311a93b0f739affd177d9f1560b1d39f8cfe7bd7b8f45771cc8a284ec",
+    "main.html": "0848d5ea7df9b4f6a52736d3d2f58abd6b0eea75a50c15c85775b141779b881f"
+  }
+}

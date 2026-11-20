@@ -1,0 +1,176 @@
+{
+  "review_date": "2026-11-20",
+  "scope": "美国专业建材分销，屋面为主；Beacon 历史实绩美加合计；QXO 行业引用为局部更新，旧逐项验收不追认。",
+  "source_checks": [
+    {
+      "document": "Beacon FY2024 10-K",
+      "published": "2025-02-27",
+      "locator": "Item 7 网点增量与流动性，损益、现金流与资产负债表",
+      "url": "https://www.sec.gov/Archives/edgar/data/1124941/000112494125000021/becn-20241231.htm",
+      "verified": true
+    },
+    {
+      "document": "Census/HUD 2026年10月新住宅建筑",
+      "published": "2026-11-18",
+      "locator": "摘要、表 1a 和 3a，含9月修订",
+      "url": "https://www.census.gov/construction/nrc/pdf/newresconst_202610.pdf",
+      "verified": true
+    },
+    {
+      "document": "JCHS LIRA、ARMA出货发布说明及Owens Corning电话会",
+      "locator": "需求页：三种需求、渠道库存",
+      "verified_scope": "原分析、覆盖及机构判断；ARMA当季原始数表未复核"
+    },
+    {
+      "document": "Home Depot FY2025 10-K、QXO 2026Q3 10-Q、BLDR FY2025 10-K 与 IBP 2026Q3 业绩稿",
+      "locator": "竞争页：可比对象、同行数据边界及QXO检验",
+      "verified_scope": "角色、披露口径及页面列示数字，行业市占不推断"
+    }
+  ],
+  "calculations": {
+    "beacon_three_year_cash_and_margin": "matched HTML",
+    "beacon_2024_sales_change_musd": 643.4,
+    "beacon_FY2024_dio_days": 66.3,
+    "beacon_FY2024_dso_days": 43.7,
+    "inventory_10_day_case_musd": 198.9,
+    "us_housing_starts_2026_10_mom_pct": 9.9,
+    "us_housing_permits_2026_10_mom_pct": -7.4
+  },
+  "index": {
+    "reports": 32,
+    "errors": []
+  },
+  "offline_browser": {
+    "overview": {
+      "desktop": {
+        "width": 1425,
+        "scrollWidth": 1425,
+        "heading": "美国专业建材分销",
+        "cards": [
+          "value-chain.html",
+          "demand-metrics.html",
+          "competition.html"
+        ],
+        "keyboard": [
+          "value-chain.html",
+          "demand-metrics.html",
+          "competition.html"
+        ]
+      },
+      "mobile": {
+        "width": 375,
+        "scrollWidth": 375,
+        "heading": "美国专业建材分销",
+        "cards": [
+          "value-chain.html",
+          "demand-metrics.html",
+          "competition.html"
+        ]
+      },
+      "printPreview": {
+        "width": 794,
+        "scrollWidth": 794,
+        "heading": "美国专业建材分销",
+        "cards": [
+          "value-chain.html",
+          "demand-metrics.html",
+          "competition.html"
+        ]
+      }
+    },
+    "value-chain": {
+      "desktop": {
+        "width": 1425,
+        "scrollWidth": 1425,
+        "heading": "产业链与赚钱方式",
+        "cards": []
+      },
+      "mobile": {
+        "width": 375,
+        "scrollWidth": 375,
+        "heading": "产业链与赚钱方式",
+        "cards": []
+      },
+      "printPreview": {
+        "width": 779,
+        "scrollWidth": 779,
+        "heading": "产业链与赚钱方式",
+        "cards": []
+      }
+    },
+    "demand-metrics": {
+      "desktop": {
+        "width": 1425,
+        "scrollWidth": 1425,
+        "heading": "市场需求与指标",
+        "cards": []
+      },
+      "mobile": {
+        "width": 375,
+        "scrollWidth": 375,
+        "heading": "市场需求与指标",
+        "cards": []
+      },
+      "printPreview": {
+        "width": 779,
+        "scrollWidth": 779,
+        "heading": "市场需求与指标",
+        "cards": []
+      }
+    },
+    "competition": {
+      "desktop": {
+        "width": 1425,
+        "scrollWidth": 1425,
+        "heading": "竞争格局与可比公司",
+        "cards": []
+      },
+      "mobile": {
+        "width": 375,
+        "scrollWidth": 375,
+        "heading": "竞争格局与可比公司",
+        "cards": []
+      },
+      "printPreview": {
+        "width": 779,
+        "scrollWidth": 779,
+        "heading": "竞争格局与可比公司",
+        "cards": []
+      }
+    },
+    "qxo": {
+      "desktop": {
+        "width": 1425,
+        "scrollWidth": 1425,
+        "heading": "QXO：从并购规模走向每股现金回报",
+        "cards": []
+      },
+      "mobile": {
+        "width": 375,
+        "scrollWidth": 375,
+        "heading": "QXO：从并购规模走向每股现金回报",
+        "cards": []
+      },
+      "printPreview": {
+        "width": 779,
+        "scrollWidth": 779,
+        "heading": "QXO：从并购规模走向每股现金回报",
+        "cards": []
+      }
+    }
+  },
+  "visual_scope": "1440px桌面、390px窄屏和浏览器打印样式预览；抽看关键表与QXO第6章；未重出完整QXO打印件。",
+  "html_sha256": {
+    "行业研究/美国专业建材分销/reports/competition.html": "50a3165755884269ace8e0d8c0c20d8f3ac184d40cfdb0b77add609d49d849bc",
+    "行业研究/美国专业建材分销/reports/demand-metrics.html": "7dba68f93add14df61dee825cd86c6e4a91f44c36c77c5c5a23281d6331a4610",
+    "行业研究/美国专业建材分销/reports/us-building-products-distribution.html": "0a5dad6b9774245787f3a1c6e9555fe8e0a919c76b8f71b33932354df333c473",
+    "行业研究/美国专业建材分销/reports/value-chain.html": "8a6728e0f82869e678f154b4de788fab6e53bde69d3fde71b459d651f0fea213",
+    "QXO/QXO.html": "b862c0bc68b7f6c383a58d2829adb9298bce702bbc14e96c2ac7a7d31beb11e2"
+  },
+  "open_evidence": [
+    "ARMA当季原始出货数量和终端装机对照",
+    "区域屋面分销同口径份额和成交净价",
+    "ABC和SRS屋面独立利润及现金流",
+    "QXO网点单位配送成本、返利回款、同口径周转及收购回报"
+  ]
+}

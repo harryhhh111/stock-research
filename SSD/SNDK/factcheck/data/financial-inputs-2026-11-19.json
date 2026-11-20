@@ -1,0 +1,164 @@
+{
+  "unit": "M美元",
+  "facts": {
+    "2024": {
+      "rev": 6663,
+      "gp": 1072,
+      "op": -468,
+      "net": -672,
+      "cfo": -309,
+      "capex": 166,
+      "sbc": 149,
+      "cash": 328,
+      "equity": 11082
+    },
+    "2025": {
+      "rev": 7355,
+      "gp": 2212,
+      "op": -1377,
+      "net": -1641,
+      "cfo": 84,
+      "capex": 204,
+      "sbc": 182,
+      "cash": 1481,
+      "equity": 9216
+    },
+    "2026": {
+      "rev": 20248,
+      "gp": 14472,
+      "op": 12389,
+      "net": 11433,
+      "cfo": 11671,
+      "capex": 177,
+      "sbc": 232,
+      "cash": 4762,
+      "equity": 15736
+    },
+    "2027Q1": {
+      "rev": 11031,
+      "gp": 9378,
+      "op": 8780,
+      "net": 8101,
+      "cfo": 6363,
+      "capex": 54,
+      "sbc": 91,
+      "cash": 5136,
+      "equity": 18134
+    }
+  },
+  "revenue": {
+    "2023": [
+      6086,
+      500,
+      3637,
+      1949
+    ],
+    "2024": [
+      6663,
+      325,
+      4069,
+      2269
+    ],
+    "2025": [
+      7355,
+      960,
+      4127,
+      2268
+    ],
+    "2026": [
+      20248,
+      5153,
+      12160,
+      2935
+    ]
+  },
+  "quarters": {
+    "2026Q1": [
+      2308,
+      269,
+      1387,
+      652
+    ],
+    "2026Q4": [
+      8965,
+      2977,
+      5432,
+      556
+    ],
+    "2027Q1": [
+      11031,
+      4802,
+      5832,
+      397
+    ]
+  },
+  "sources": {
+    "annual": [
+      "FY2026 10-K / 财务主表及附注",
+      "https://investor.sandisk.com/node/8171/html"
+    ],
+    "old": [
+      "FY2025 10-K / 三年可比基数",
+      "https://investor.sandisk.com/static-files/11d54418-0d36-4853-955a-72db293e1da6"
+    ],
+    "q": [
+      "FY2027 Q1 10-Q / 2026-10-30",
+      "https://investor.sandisk.com/static-files/c31aa9f9-d8e1-43e5-8642-360f5d0dad15"
+    ],
+    "release": [
+      "Q1 业绩及 Q2 指引 / 2026-10-29",
+      "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm"
+    ],
+    "call": [
+      "电话会媒体转录 / 2026-10-29",
+      "https://www.fool.com/earnings/call-transcripts/2026/10/30/sandisk-sndk-q1-2027-earnings-call-transcript/"
+    ],
+    "spot": [
+      "TrendForce 现货调查 / 2026-11-18",
+      "https://www.trendforce.com/news/2026/11/18/insights-memory-spot-price-update-nand-spot-contract-price-gap-exceeds-20-amid-weak-demand/"
+    ],
+    "outlook": [
+      "TrendForce 报告公开摘要 / 2026-11-18",
+      "https://www.trendforce.com/research/download/RP261118TU"
+    ],
+    "weak": [
+      "TrendForce 公开摘要 / 2026-11-05",
+      "https://www.trendforce.com/research/download/RP261105BM"
+    ],
+    "split": [
+      "公司拆股 FAQ",
+      "https://investor.sandisk.com/static-files/adc41ac6-9db7-4e6a-a29f-f73c1a0123e4"
+    ],
+    "price": [
+      "Investing 历史行情 / 11-18 收盘",
+      "https://www.investing.com/equities/sandisk-corp-historical-data"
+    ],
+    "consensus": [
+      "S&P Global 数据转引 / 10-30 快照",
+      "https://stockanalysis.com/stocks/sndk/forecast/"
+    ],
+    "beat": [
+      "财报发布时预期 / StreetInsider",
+      "https://www.streetinsider.com/Earnings/Sandisk%2B%28SNDK%29%2BTops%2BQ1%2BEPS%2Bby%2B%242.36%2C%2BBeats%2Bon%2BRevenue%3B%2BOffers%2BQ2%2BGuidance/27257903.html"
+    ],
+    "nintendo": [
+      "官方 Nintendo 产品采用与支持 / 2025-09-16",
+      "https://support-eu.sandisk.com/app/answers/detailweb/a_id/53259/~/learn-about-nintendo-licensed-microsd-express-and-microsd-memory-card-support"
+    ],
+    "oem": [
+      "官方 OEM 销售支持说明 / 更新 2026-05-29",
+      "https://support-en.sandisk.com/app/answers/detailweb/a_id/7820/~/difference-between-original-equipment-manufacturer-%28oem%29-and-retail-%28rtl%29"
+    ],
+    "vote": [
+      "股东大会 8-K / 2026-11-18",
+      "https://investor.sandisk.com/static-files/8465a6cb-1196-4b9f-ac15-96cb70b9d833"
+    ]
+  },
+  "source_precision": "财务金额为公司百万美元整数；市场价格为美元小数；人工回原表核验",
+  "market": {
+    "price": 776.22,
+    "date": "2026-11-18",
+    "shares": 142289365,
+    "shares_as_of": "2026-10-26"
+  }
+}

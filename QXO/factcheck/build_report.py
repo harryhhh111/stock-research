@@ -56,10 +56,20 @@ def waterfall(items,label):
  svg.append('</svg>');return ''.join(svg)
 from flow_graphs import render as flow,metadata as flow_metadata
 blocks={}
+blocks['guidance-overview']=table(['性质 / 期间','指标与数值','如何理解'],[
+ ['季度实绩 · 2026Q3','营业收入 '+num(Q['2026Q3']['revenue'],0),'同比 +79.4%；包含新增收购并表贡献'],
+ ['季度实绩 · 2026Q3','净利润 '+num(Q['2026Q3']['net'],0)+'（亏损）','集团合并净亏损；优先股分配前，非普通股股东应占亏损'],
+ ['季度实绩 · 2026Q3','调整后 EBITDA 557','同比 +85.0%；公司非GAAP口径，不等于净利润或现金流'],
+ ['季度实绩 · 2026Q3','调整后 EPS（美元/股）<br>0.13','同比减少 0.01 美元/股（−7.1%）；公司非GAAP口径'],
+ ['期后管理层披露 · 2026年10月','集团日销售同比 +5%；较早持有的屋顶及配套产品线增长9%','期后一个月、日均口径；不能当Q4完整增长，也不是所有产品销量增长'],
+ ['管理层远期目标 · 2030年','现有业务调整后 EBITDA 4,000；额外小型并购机会最多再贡献约1,500','4,000已含整合、市场和效率假设；合计5,500还要求未来并购，不能无偿加入基准估值'],
+ ['管理层收入愿景 · 十年内','年收入50,000','含并购；不是2027收入指引，不自动带来每股价值增长'],
+ ['近季/全年量化指引','已查Q3业绩稿及10-Q：未列Q4或2026全年收入、GAAP净利润区间','不凭公司长期目标编造短期指引']
+ ],'单位：金额为M美元（1 M美元＝100万美元）；EPS为美元/股，比例为%。披露核查截至2026-11-17；实绩、期后口径与目标分列。[5][6]').replace('<table>','<table class="narrative" id="guidance-overview">',1)
 blocks['annual-products']=product_table(['2023','2024','2025'],True)+source(1,2,7)
 blocks['quarter-products']=product_table(['2026Q1','2026Q2','2026Q3'])+source(3,4,5)
 blocks['annual-finance']=financial_table(['2023','2024','2025'],A,'三完整财年；QXO合并；M美元，利润率除外。2024用2025年报比较列。')+source(1,2)
-blocks['quarter-finance']=financial_table(['2025Q4','2026Q1','2026Q2','2026Q3'],Q,'单季度；M美元。2025Q4为全年减9M；Q2/Q3现金流按累计拆季。')+source(2,3,4,5)
+blocks['quarter-finance']=financial_table(['2025Q4','2026Q1','2026Q2','2026Q3'],Q,'单季度；单位：M美元，利润率为%。2025Q4为全年减9M；Q2/Q3现金流按累计拆季。')+source(2,3,4,5)
 rows=[]
 for key,label in [('revenue','营业收入'),('op','经营利润'),('net','净利润'),('cfo','CFO'),('capex','现金CapEx'),('fcf','FCF'),('sbc','SBC')]:
  row=[label]
@@ -75,8 +85,8 @@ for i,label in enumerate(['毛利率','经营利润率','净利率']):
   row.append(f'{pct(old)} → {pct(r)}<small>同比 {num(r-old)}个百分点；环比 {num(r-prev)}个百分点</small>')
  rows.append(row)
 blocks['quarter-compare']=table(['指标','Q1：2025→2026','Q2：2025→2026','Q3：2025→2026'],rows,'同比、环比；金额变化用Δ（M美元），跨零不报百分比。Q1环比基期2025Q4。')+source(2,3,4,5)
-blocks['cumulative']=financial_table(['2025','2026'],C,'9M累计（各年1月1日—9月30日）；M美元。')+source(5)
-blocks['ttm']=financial_table(['2026-09 TTM'],{'2026-09 TTM':D['ttm']},'TTM：2025-10-01—2026-09-30；2025全年＋2026年9M−2025年9M；M美元。')+source(2,5)
+blocks['cumulative']=financial_table(['2025','2026'],C,'9M累计（各年1月1日—9月30日）；单位：M美元，利润率为%。')+source(5)
+blocks['ttm']=financial_table(['2026-09 TTM'],{'2026-09 TTM':D['ttm']},'TTM：2025-10-01—2026-09-30；2025全年＋2026年9M−2025年9M；单位：M美元，利润率为%。')+source(2,5)
 blocks['revenue-chart']=flow('income')+source(5)
 blocks['income-flow-table']=table(['2026Q3收入来源','M美元','集团利润形成（不是产品费用分摊）','M美元'],[
  ['屋顶产品','1,996','销售成本','3,515'],['保温与服务','1,644','毛利＝收入−销售成本','1,380'],['配套建材','1,240','其中：销售管理费','1,024'],['软件与服务','15','其中：折旧','66'],['集团收入合计','4,895','其中：摊销','288'],['—','—','其中：经营利润','2']], '2026Q3 QXO合并，M美元；收入来源合计4895，毛利1380＝1024＋66＋288＋2，毛利及其拆分不重复加总。')+source(5)
@@ -89,17 +99,17 @@ blocks['cash-financing-table']=table(['融资现金支出明细','M美元'],[[k,
 rows=[]
 for y,d in A.items():rows.append([y,num(d['assets']),num(d['equity']),num(d['cash']),num(d['roe'],2)+'%'])
 rows.append(['2026-09-30','34,470.0','15,681.0','528.0','9M简单年化 −4.25%（见口径）'])
-blocks['balance']=table(['期末','总资产','股东权益（含A/B，不含C）','非受限现金','总权益ROE'],rows,'M美元；历史ROE=净利润/平均总股东权益；有大额期中融资，经济解释力有限。')+source(1,2,5)
+blocks['balance']=table(['期末','总资产','股东权益（含A/B，不含C）','非受限现金','总权益ROE'],rows,'单位：金额为M美元，ROE为%；历史ROE=净利润/平均总股东权益；有大额期中融资，经济解释力有限。')+source(1,2,5)
 rows=[]
 for y in ['2023','2024','2025']:
  d=A[y];dv={'2023':(1.051,0),'2024':(17.4,32.3),'2025':(0,104.8)}[y]
  rows.append([y,num(d['capex']),num(d['fcf']),num(dv[0]),num(dv[1]),'0（未发现常规回购）',num(10556.5 if y=='2025' else 0),{'2023':'0.664448','2024':'409.4','2025':'674.5'}[y]])
 rows.append(['2026年9M','111.0','−256.0','0.0','150.0','0（期后仅有授权）','10,933.0','1,039.8'])
-blocks['capital-allocation']=table(['期间','现金CapEx','FCF','普通股现金股息','优先股现金分配','普通股回购','并购净现金支付','期末普通股（百万股）'],rows,'现金资本分配；M美元。并购已扣取得现金，未把股票对价当现金。2023无业务收购现金，另有资产收购0.279。')+source(1,2,5)
+blocks['capital-allocation']=table(['期间','现金CapEx','FCF','普通股现金股息','优先股现金分配','普通股回购','并购净现金支付','期末普通股（百万股）'],rows,'现金资本分配；单位：金额为M美元，期末普通股为百万股。并购已扣取得现金，未把股票对价当现金。2023无业务收购现金，另有资产收购0.279。')+source(1,2,5)
 rows=[]
 for s in V['scenarios']:
  last=s['rows'][-1];rows.append([s['name'],str(last['year']),num(last['revenue']),num(last['ebitda']),pct(last['margin']*100),f"{s['multiple']:.0f}× / {s['r']:.0%}",f"${s['price']:.2f}",pct(s['upside']*100),pct(s['terminal_weight']*100)])
-blocks['scenarios']=table(['【我的推演】','目标年','收入 M美元','调整后EBITDA','对应利润率','终值倍数/折现率','每股现值','相对$12.01','终值现值占比'],rows,'条件估值；现金流与终值均折现，资本结构按下述内在价值近似。不是预测或目标价。')
+blocks['scenarios']=table(['【我的推演】','目标年','收入','调整后EBITDA','对应利润率','终值倍数/折现率','每股现值（美元/股）','相对$12.01','终值现值占比'],rows,'单位：收入与调整后EBITDA为M美元，每股现值为美元/股，倍数为倍，比例为%。条件估值；现金流与终值均折现，资本结构按下述内在价值近似。不是预测或目标价。')
 rows=[]
 for r in [.08,.10,.12]:rows.append([pct(r*100)]+[num(next(x['required_2030_ebitda'] for x in V['sensitivity'] if x['r']==r and x['multiple']==m)) for m in [8,10,12]])
 blocks['sensitivity']=table(['折现率 / 2030终值倍数','8倍','10倍','12倍'],rows,'支撑$12.01所需2030年调整后EBITDA（M美元）；固定收入路径及EBITDA爬坡比例，其余输入见模型。')
@@ -108,14 +118,14 @@ for s in V['scenarios']:
  for x in s['rows']:rows.append([s['name'],x['year'],num(x['revenue']),num(x['ebitda']),num(x['sbc']),num(x['integration']),num(x['dep']),num(x['capex']),num(x['dwc']),num(x['fcff']),num(x['pv'])])
 blocks['forecast-inputs']=table(['路径','财年','收入','EBITDA','SBC经济成本','整合现金费','实物折旧','现金CapEx','新增营运资金','企业现金流','折现值'],rows,'【我的推演】全部为M美元；分路径逐年输入与输出。保留负营运资金变动，表示释放现金。')
 rows=[['仅普通股市值',num(V['basic_marketcap'])],['简式EV=普通股市值＋债务本金−现金',num(V['basic_EV'])],['经济索取权口径EV（含融资租赁）',num(V['economic_EV_required'])],['调整后的净债务（含融资租赁）',num(V['net_debt_including_finance_leases'])],['支撑现价所需2030调整后EBITDA（10倍、10%）',num(V['required_2030_ebitda'])]]
-blocks['valuation-snapshot']=table(['指标','M美元'],rows,'行情2026-11-16常规收盘$12.01；普通股1,039.958653百万股，截至2026-11-06；资产负债截至2026-09-30。')+source(5,8)
+blocks['valuation-snapshot']=table(['指标','M美元'],rows,'单位：表内金额为M美元；股价为美元/股，股数为百万股。行情2026-11-16常规收盘$12.01；普通股1,039.958653百万股，截至2026-11-06；资产负债截至2026-09-30。')+source(5,8)
 AUD=json.loads((P/'sop_audit.json').read_text())
 auditrows=[]
 for x in AUD['items']:
  links=' · '.join(f'<a href="#{a}">{a}</a>' for a in x['evidence'])
  auditrows.append([x['id'],e(x['requirement']),e(x['result']),links+'<small>'+e(x['review'])+'</small>'])
 counts=AUD['summary']
-blocks['sop-audit']='<div id="sop-review"><p><b>逐项内容验收：</b>'+f"共{counts['total']}项；通过{counts['passed']}项，未通过{counts['failed']}项，不适用{counts['not_applicable']}项，待复核{counts['pending']}项。"+'这些是按正文证据作出的审阅判断，不是由算术测试数推导。<a href="factcheck/sop_audit.json">逐项记录JSON</a>。</p>'+table(['编号','SOP要求','本轮结果','证据位置 / 实质判断'],auditrows,'完整研究验收逐项映射；依据2026-11-17执行清单，保留未通过项。').replace('<table>','<table class="audit-table">',1)+'</div>'
+blocks['sop-audit']='<div id="sop-review"><p><b>逐项内容验收：</b>'+f"共{counts['total']}项；通过{counts['passed']}项，未通过{counts['failed']}项，不适用{counts['not_applicable']}项，待复核{counts['pending']}项。"+'这些是按正文证据作出的审阅判断，不是由算术测试数推导。<a href="factcheck/sop_audit.json">逐项记录JSON</a>。</p>'+table(['编号','SOP要求','本轮结果','证据位置 / 实质判断'],auditrows,'完整研究验收逐项映射；2026-11-17内容结论沿用；2026-11-18复核单位与混合量纲，保留原未通过项。').replace('<table>','<table class="audit-table">',1)+'</div>'
 blocks['coverage-matrix']='<div id="coverage-review">'+table(['指标组 / 主体','预期单季','实际单季','同比及环比基期','来源 / 拆季','结果及边界'],[
  ['集团及已披露主要产品收入','2026Q1/Q2/Q3','1730.2 / 3246 / 4895；四条产品线逐季列示','2025各同季；Q1环比2025Q4','[3][4][5]主表及产品线附注','覆盖通过；并表范围不可比，跨版本差异原因另列未通过'],
  ['集团经营利润、净利和利润率','2026Q1/Q2/Q3','经营−251.9 / −42 / 2；净利−227.1 / −55 / −123；各利润率已复算','2025各同季；Q1环比2025Q4','[2]全年减[5]2025年9M得Q4，[3—5]当年单季','覆盖及算术通过；2025比较列税项与版本成因未通过'],

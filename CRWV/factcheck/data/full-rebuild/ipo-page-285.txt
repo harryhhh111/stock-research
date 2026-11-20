@@ -1,0 +1,115 @@
+Table of Contents
+COREWEAVE, INC.
+CONSOLIDATED STATEMENTS OF OPERATIONS
+(in thousands, except per share data)
+ 
+   Year Ended December 31,  
+   2022   2023   2024  
+Revenue   $ 15,830  $ 228,943  $ 1,915,426 
+    
+ 
+   
+ 
+   
+ 
+Operating expenses:     
+Cost of revenue    12,122   68,780   493,350 
+Technology and infrastructure    18,106   131,855   960,685 
+Sales and marketing    2,481   12,917   18,389 
+General and administrative    6,001   29,842   118,644 
+    
+ 
+   
+ 
+   
+ 
+Total operating expenses    38,710   243,394   1,591,068 
+    
+ 
+   
+ 
+   
+ 
+Operating income (loss)    (22,880)   (14,451)   324,358 
+Loss on fair value adjustments    (2,884)   (533,952)   (755,929) 
+Interest expense, net(a)    (9,444)   (28,404)   (360,824) 
+Other income, net    192   18,760   48,194 
+    
+ 
+   
+ 
+   
+ 
+Loss before provision for (benefit from) income taxes    (35,016)   (558,047)   (744,201) 
+Provision for (benefit from) income taxes    (4,150)   35,701   119,247 
+    
+ 
+   
+ 
+   
+ 
+Net loss from continuing operations   $ (30,866)  $ (593,748)  $ (863,448) 
+    
+ 
+   
+ 
+   
+ 
+Net loss from discontinued operations, net of tax   $ (189)  $ —  $ — 
+    
+ 
+   
+ 
+   
+ 
+Net loss   $ (31,055)  $ (593,748)  $ (863,448) 
+    
+ 
+   
+ 
+   
+ 
+Net loss attributable to common stockholders, basic and diluted   $ (31,055)  $ (593,748)  $ (937,765) 
+    
+ 
+   
+ 
+   
+ 
+Net loss from continuing operations per share attributable to common stockholders, basic and
+diluted   $ (0.17)  $ (3.09)  $ (4.30) 
+    
+ 
+   
+ 
+   
+ 
+Net loss from discontinued operations per share attributable to common stockholders, basic and
+diluted   $ 0.00  $ —  $ — 
+    
+ 
+   
+ 
+   
+ 
+Net loss per share attributable to common stockholders, basic and diluted   $ (0.17)  $ (3.09)  $ (4.30) 
+    
+ 
+   
+ 
+   
+ 
+Weighted-average shares used in computing net loss per share attributable to common stockholders,
+basic and diluted    180,632   192,164   217,854 
+    
+ 
+   
+ 
+   
+ 
+ 
+(a) Refer to Note 14—Related-Party Transactions for further information on related party arrangements.
+ 
+The accompanying notes are an integral part of these consolidated financial statements.
+ 
+F-6

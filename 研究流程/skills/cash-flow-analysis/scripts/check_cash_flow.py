@@ -208,7 +208,12 @@ def audit(html, inputs):
         raise ValueError('须提供不少于三年且与最新已披露季度/半年匹配的年度范围')
     interim_year, quarter, half = latest.groups()
     annual = [str(value) for value in range(year - years + 1, year + 1)]
-    interim = [f'{interim_year}{"Q" if quarter else "H"}{value}' for value in range(1, int(quarter or half) + 1)]
+    if quarter:
+        latest_quarter = int(interim_year) * 4 + int(quarter) - 1
+        interim = [f'{index // 4:04d}Q{index % 4 + 1}'
+                   for index in range(latest_quarter - 3, latest_quarter + 1)]
+    else:
+        interim = [f'{interim_year}H{i}' for i in range(1, int(half) + 1)]
     tables = Tables(html)
     errors, results = [], {}
     for key, periods in (('annual', annual), ('interim', interim)):

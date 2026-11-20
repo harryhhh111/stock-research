@@ -1,0 +1,921 @@
+{
+  "source_file": "factcheck/data/full-rebuild/fy2025-10k.html",
+  "tables": {
+    "90": [
+      [
+        "CONSOLIDATED BALANCE SHEETS - USD ($) shares in Millions, $ in Millions",
+        "Dec. 31, 2025",
+        "Dec. 31, 2024"
+      ],
+      [
+        "Current assets",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Cash and cash equivalents",
+        "",
+        "$ 3,127",
+        "$ 1,361"
+      ],
+      [
+        "Restricted cash and cash equivalents, current",
+        "",
+        "819",
+        "37"
+      ],
+      [
+        "Marketable securities",
+        "",
+        "34",
+        "0"
+      ],
+      [
+        "Accounts receivable, net",
+        "",
+        "3,169",
+        "417"
+      ],
+      [
+        "Prepaid expenses and other current assets",
+        "",
+        "339",
+        "101"
+      ],
+      [
+        "Total current assets",
+        "",
+        "7,488",
+        "1,916"
+      ],
+      [
+        "Restricted cash and cash equivalents, non-current",
+        "",
+        "184",
+        "637"
+      ],
+      [
+        "Restricted marketable securities, non-current",
+        "",
+        "0",
+        "29"
+      ],
+      [
+        "Property and equipment, net",
+        "",
+        "30,557",
+        "11,915"
+      ],
+      [
+        "Operating lease right-of-use assets",
+        "",
+        "8,231",
+        "2,590"
+      ],
+      [
+        "Intangible assets, net",
+        "",
+        "235",
+        "5"
+      ],
+      [
+        "Goodwill",
+        "",
+        "1,101",
+        "20"
+      ],
+      [
+        "Other non-current assets",
+        "[1]",
+        "1,506",
+        "721"
+      ],
+      [
+        "Total assets",
+        "",
+        "49,302",
+        "17,833"
+      ],
+      [
+        "Current liabilities",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Accounts payable",
+        "",
+        "1,623",
+        "868"
+      ],
+      [
+        "Accrued liabilities",
+        "",
+        "5,773",
+        "356"
+      ],
+      [
+        "Debt, current",
+        "[1]",
+        "6,708",
+        "2,468"
+      ],
+      [
+        "Deferred revenue, current",
+        "",
+        "1,709",
+        "769"
+      ],
+      [
+        "Operating lease liabilities, current",
+        "",
+        "427",
+        "213"
+      ],
+      [
+        "Finance lease liabilities, current",
+        "",
+        "38",
+        "58"
+      ],
+      [
+        "Other current liabilities",
+        "[1]",
+        "162",
+        "231"
+      ],
+      [
+        "Total current liabilities",
+        "",
+        "16,440",
+        "4,963"
+      ],
+      [
+        "Debt, non-current",
+        "[1]",
+        "14,665",
+        "5,458"
+      ],
+      [
+        "Derivative and warrant liabilities",
+        "",
+        "1",
+        "200"
+      ],
+      [
+        "Deferred revenue, non-current",
+        "",
+        "6,476",
+        "3,295"
+      ],
+      [
+        "Operating lease liabilities, non-current",
+        "",
+        "7,768",
+        "2,389"
+      ],
+      [
+        "Finance lease liabilities, non-current",
+        "",
+        "216",
+        "34"
+      ],
+      [
+        "Deferred tax liabilities, non-current",
+        "",
+        "115",
+        "149"
+      ],
+      [
+        "Other non-current liabilities",
+        "",
+        "286",
+        "37"
+      ],
+      [
+        "Total liabilities",
+        "",
+        "45,967",
+        "16,525"
+      ],
+      [
+        "Commitments and contingencies (Note 9)",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Stockholders' equity (deficit)",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Preferred stock, $0.000005 par value per share, 100 and no shares authorized as of December 31, 2025 and 2024, respectively; no shares issued and outstanding as of December 31, 2025 and 2024",
+        "",
+        "0",
+        "0"
+      ],
+      [
+        "Treasury stock, at cost, 7 shares as of December 31, 2025 and 2024",
+        "",
+        "(34)",
+        "(34)"
+      ],
+      [
+        "Additional paid-in capital",
+        "",
+        "6,012",
+        "1,096"
+      ],
+      [
+        "Accumulated deficit",
+        "",
+        "(2,643)",
+        "(1,476)"
+      ],
+      [
+        "Total stockholders' equity (deficit)",
+        "",
+        "3,335",
+        "(414)"
+      ],
+      [
+        "Total liabilities, redeemable convertible preferred stock, and stockholders' equity (deficit)",
+        "",
+        "$ 49,302",
+        "$ 17,833"
+      ],
+      [
+        "Treasury stock (in shares)",
+        "",
+        "7",
+        "7"
+      ],
+      [
+        "Redeemable convertible preferred stock",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Redeemable convertible preferred stock",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Redeemable convertible preferred stock, $0.000005 par value per share, no and 206 shares authorized as of December 31, 2025 and 2024, respectively; no and 185 shares issued and outstanding as of December 31, 2025 and 2024, respectively",
+        "[1]",
+        "$ 0",
+        "$ 1,722"
+      ],
+      [
+        "Common Class A",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Stockholders' equity (deficit)",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Common stock",
+        "",
+        "0",
+        "0"
+      ],
+      [
+        "Common Class B",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Stockholders' equity (deficit)",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Common stock",
+        "",
+        "0",
+        "0"
+      ],
+      [
+        "Common Class C",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Stockholders' equity (deficit)",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Common stock",
+        "",
+        "$ 0",
+        "$ 0"
+      ],
+      [
+        ""
+      ],
+      [
+        "[1] Refer to Note 14—Related-Party Transactions for further information on related party arrangements."
+      ],
+      [
+        "[1]",
+        "Refer to Note 14—Related-Party Transactions for further information on related party arrangements."
+      ]
+    ],
+    "226": [
+      [
+        "CONSOLIDATED STATEMENTS OF OPERATIONS AND COMPREHENSIVE LOSS - USD ($) shares in Millions, $ in Millions",
+        "12 Months Ended"
+      ],
+      [
+        "Dec. 31, 2025",
+        "Dec. 31, 2024",
+        "Dec. 31, 2023"
+      ],
+      [
+        "Income Statement [Abstract]",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Revenue",
+        "",
+        "$ 5,131",
+        "$ 1,915",
+        "$ 229"
+      ],
+      [
+        "Operating expenses:",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Cost of revenue",
+        "",
+        "1,453",
+        "493",
+        "69"
+      ],
+      [
+        "Technology and infrastructure",
+        "",
+        "2,929",
+        "961",
+        "131"
+      ],
+      [
+        "Sales and marketing",
+        "",
+        "144",
+        "18",
+        "13"
+      ],
+      [
+        "General and administrative",
+        "",
+        "651",
+        "119",
+        "30"
+      ],
+      [
+        "Total operating expenses",
+        "",
+        "5,177",
+        "1,591",
+        "243"
+      ],
+      [
+        "Operating income (loss)",
+        "",
+        "(46)",
+        "324",
+        "(14)"
+      ],
+      [
+        "Gain (loss) on fair value adjustments",
+        "",
+        "27",
+        "(756)",
+        "(534)"
+      ],
+      [
+        "Interest expense, net",
+        "[1]",
+        "(1,229)",
+        "(361)",
+        "(28)"
+      ],
+      [
+        "Other income, net",
+        "",
+        "33",
+        "49",
+        "18"
+      ],
+      [
+        "Loss before income taxes",
+        "",
+        "(1,215)",
+        "(744)",
+        "(558)"
+      ],
+      [
+        "Provision for (benefit from) income taxes",
+        "",
+        "(48)",
+        "119",
+        "36"
+      ],
+      [
+        "Net loss and comprehensive loss",
+        "",
+        "(1,167)",
+        "(863)",
+        "(594)"
+      ],
+      [
+        "Net loss attributable to common stockholders, basic",
+        "",
+        "(1,196)",
+        "(937)",
+        "(594)"
+      ],
+      [
+        "Net loss attributable to common stockholders, diluted",
+        "",
+        "$ (1,223)",
+        "$ (937)",
+        "$ (594)"
+      ],
+      [
+        "Net loss per share attributable to common stockholders, basic (in usd per share )",
+        "",
+        "$ (2.75)",
+        "$ (4.30)",
+        "$ (3.09)"
+      ],
+      [
+        "Net loss per share attributable to common stockholders, diluted (in usd per share )",
+        "",
+        "$ (2.81)",
+        "$ (4.30)",
+        "$ (3.09)"
+      ],
+      [
+        "Weighted-average shares used in computing net loss per share attributable to common stockholders, basic (in shares)",
+        "",
+        "435",
+        "218",
+        "192"
+      ],
+      [
+        "Weighted-average shares used in computing net loss per share attributable to common stockholders, diluted (in shares)",
+        "",
+        "436",
+        "218",
+        "192"
+      ],
+      [
+        ""
+      ],
+      [
+        "[1] Refer to Note 14—Related-Party Transactions for further information on related party arrangements."
+      ],
+      [
+        "[1]",
+        "Refer to Note 14—Related-Party Transactions for further information on related party arrangements."
+      ]
+    ],
+    "374": [
+      [
+        "CONSOLIDATED STATEMENTS OF CASH FLOWS - USD ($) $ in Millions",
+        "12 Months Ended"
+      ],
+      [
+        "Dec. 31, 2025",
+        "Dec. 31, 2024",
+        "Dec. 31, 2023"
+      ],
+      [
+        "Cash flows from operating activities:",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Net loss",
+        "$ (1,167)",
+        "$ (863)",
+        "$ (594)"
+      ],
+      [
+        "Adjustments to reconcile net loss to net cash provided by operating activities",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Depreciation and amortization",
+        "2,454",
+        "863",
+        "103"
+      ],
+      [
+        "Amortization of debt discounts and issuance costs and accretion of redemption premiums",
+        "110",
+        "33",
+        "16"
+      ],
+      [
+        "Stock-based compensation expense",
+        "630",
+        "31",
+        "15"
+      ],
+      [
+        "Non-cash lease expense",
+        "357",
+        "123",
+        "20"
+      ],
+      [
+        "Deferred income taxes",
+        "(53)",
+        "113",
+        "36"
+      ],
+      [
+        "Loss (gain) on fair value adjustments",
+        "(27)",
+        "756",
+        "534"
+      ],
+      [
+        "Debt extinguishment loss",
+        "19",
+        "12",
+        "0"
+      ],
+      [
+        "Other non-cash reconciling items",
+        "103",
+        "3",
+        "1"
+      ],
+      [
+        "Changes in operating assets and liabilities, net of effect of business acquisitions:",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Accounts receivable",
+        "(2,749)",
+        "(280)",
+        "(162)"
+      ],
+      [
+        "Prepaid expenses and other assets",
+        "(784)",
+        "(514)",
+        "(139)"
+      ],
+      [
+        "Accounts payable and accrued expenses",
+        "253",
+        "511",
+        "27"
+      ],
+      [
+        "Deferred revenue",
+        "4,174",
+        "2,049",
+        "1,986"
+      ],
+      [
+        "Lease liabilities",
+        "(262)",
+        "(88)",
+        "(9)"
+      ],
+      [
+        "Other liabilities",
+        "0",
+        "0",
+        "(1)"
+      ],
+      [
+        "Net cash provided by operating activities",
+        "3,058",
+        "2,749",
+        "1,833"
+      ],
+      [
+        "Cash flows from investing activities:",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Purchase of property and equipment, including capitalized internal-use software",
+        "(10,309)",
+        "(8,702)",
+        "(2,943)"
+      ],
+      [
+        "Purchases of marketable securities",
+        "(47)",
+        "(34)",
+        "(172)"
+      ],
+      [
+        "Maturities and sales of marketable securities",
+        "43",
+        "188",
+        "6"
+      ],
+      [
+        "Sales of warrants received as lease incentive",
+        "254",
+        "0",
+        "0"
+      ],
+      [
+        "Business combinations, net of cash acquired",
+        "(108)",
+        "0",
+        "0"
+      ],
+      [
+        "Issuance of notes receivable",
+        "(90)",
+        "(60)",
+        "0"
+      ],
+      [
+        "Other investing activities",
+        "(14)",
+        "(50)",
+        "(39)"
+      ],
+      [
+        "Net cash used in investing activities",
+        "(10,271)",
+        "(8,658)",
+        "(3,148)"
+      ],
+      [
+        "Cash flows from financing activities:",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Proceeds from issuance of debt, net",
+        "11,829",
+        "7,018",
+        "1,404"
+      ],
+      [
+        "Repayments of debt",
+        "(3,399)",
+        "(589)",
+        "(2)"
+      ],
+      [
+        "Purchase of capped calls related to convertible senior notes",
+        "(340)",
+        "0",
+        "0"
+      ],
+      [
+        "Proceeds from initial public offering, net of underwriting discounts and commissions",
+        "1,491",
+        "0",
+        "0"
+      ],
+      [
+        "Redeemable convertible preferred stock cash dividends paid",
+        "(29)",
+        "(58)",
+        "0"
+      ],
+      [
+        "Issuance of redeemable convertible preferred stock, net of issuance costs",
+        "0",
+        "1,172",
+        "421"
+      ],
+      [
+        "Payment of tax withholdings on settlement of restricted stock units",
+        "(144)",
+        "0",
+        "0"
+      ],
+      [
+        "Proceeds from exercise of stock options",
+        "20",
+        "3",
+        "2"
+      ],
+      [
+        "Proceeds from issuance of common stock",
+        "0",
+        "0",
+        "15"
+      ],
+      [
+        "Other financing activities",
+        "(120)",
+        "(82)",
+        "(52)"
+      ],
+      [
+        "Net cash provided by financing activities",
+        "9,308",
+        "7,464",
+        "1,788"
+      ],
+      [
+        "Net increase in cash, cash equivalents, and restricted cash",
+        "2,095",
+        "1,555",
+        "473"
+      ],
+      [
+        "Cash, cash equivalents, and restricted cash—beginning of period",
+        "2,035",
+        "480",
+        "7"
+      ],
+      [
+        "Cash, cash equivalents, and restricted cash—end of period",
+        "4,130",
+        "2,035",
+        "480"
+      ],
+      [
+        "Supplemental disclosures of cash flow information:",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Cash paid for interest, net of capitalized amounts",
+        "869",
+        "184",
+        "0"
+      ],
+      [
+        "Non-cash investing and financing activities:",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Liabilities related to property and equipment additions, including OEM financed additions",
+        "11,151",
+        "893",
+        "482"
+      ],
+      [
+        "Operating lease right-of-use assets acquired through lease liability",
+        "5,836",
+        "2,222",
+        "481"
+      ],
+      [
+        "Finance lease right-of-use assets acquired through lease liability",
+        "343",
+        "142",
+        "0"
+      ],
+      [
+        "Warrants received as lease incentive",
+        "222",
+        "0",
+        "0"
+      ],
+      [
+        "Conversion of redeemable convertible preferred stock in connection with initial public offering",
+        "1,722",
+        "0",
+        "0"
+      ],
+      [
+        "Reclassification of redeemable Class A common stock to Class A common stock",
+        "1,163",
+        "0",
+        "0"
+      ],
+      [
+        "Issuance of common stock, restricted stock units, and restricted stock awards for business combinations",
+        "1,013",
+        "0",
+        "0"
+      ],
+      [
+        "Fair value of convertible promissory note issued for a business combination",
+        "167",
+        "0",
+        "0"
+      ],
+      [
+        "Issuance of common stock for contract incentive",
+        "350",
+        "0",
+        "0"
+      ],
+      [
+        "Reclassification of warrant liabilities to equity",
+        "173",
+        "0",
+        "0"
+      ],
+      [
+        "Issuance of common stock in connection with conversion of convertible notes",
+        "0",
+        "1,080",
+        "0"
+      ],
+      [
+        "Reclassification of customer deposit to debt",
+        "230",
+        "0",
+        "0"
+      ],
+      [
+        "Capitalized interest not yet paid",
+        "69",
+        "32",
+        "41"
+      ],
+      [
+        "Stock-based compensation capitalized as internal-use software",
+        "59",
+        "7",
+        "2"
+      ],
+      [
+        "Settlement of Series B tranche liability",
+        "0",
+        "70",
+        "46"
+      ],
+      [
+        "Non-cash investments",
+        "77",
+        "10",
+        "0"
+      ],
+      [
+        "Reconciliation of cash, cash equivalents, and restricted cash to consolidated balance sheets:",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Cash and cash equivalents",
+        "3,127",
+        "1,361",
+        "217"
+      ],
+      [
+        "Restricted cash and cash equivalents, current",
+        "819",
+        "37",
+        "43"
+      ],
+      [
+        "Restricted cash and cash equivalents, non-current",
+        "184",
+        "637",
+        "220"
+      ],
+      [
+        "Total cash, cash equivalents, and restricted cash",
+        "$ 4,130",
+        "$ 2,035",
+        "$ 480"
+      ]
+    ]
+  }
+}

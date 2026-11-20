@@ -1,5 +1,6 @@
 {
-  "date": "2026-11-17",
+  "date": "2026-11-20",
+  "historical_content_audit_matches_current_checklist": false,
   "scope": "financial arithmetic, provenance, valuation reconstruction and HTML local structure only",
   "all_passed": true,
   "mechanical_checks_passed": true,
@@ -1415,8 +1416,43 @@
     },
     {
       "check": "unique HTML ids",
-      "actual": 48,
-      "expected": 48,
+      "actual": 51,
+      "expected": 51,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "overview amount and EPS units local",
+      "actual": 1,
+      "expected": 1,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "overview separate metric and correct amount 营业收入",
+      "actual": 1,
+      "expected": 1,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "overview separate metric and correct amount 净利润",
+      "actual": 1,
+      "expected": 1,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "overview separate metric and correct amount 调整后 EBITDA",
+      "actual": 1,
+      "expected": 1,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "overview separate metric and correct amount 调整后 EPS（美元/股）",
+      "actual": 1,
+      "expected": 1,
       "tolerance": 1e-06,
       "passed": true
     },
@@ -1771,7 +1807,7 @@
       "passed": true
     },
     {
-      "check": "report index remains draft partial",
+      "check": "report index ready partial",
       "actual": 1,
       "expected": 1,
       "tolerance": 1e-06,
@@ -1786,13 +1822,6 @@
     },
     {
       "check": "report index preserves real cutoffs",
-      "actual": 1,
-      "expected": 1,
-      "tolerance": 1e-06,
-      "passed": true
-    },
-    {
-      "check": "SOP revision content hash",
       "actual": 1,
       "expected": 1,
       "tolerance": 1e-06,

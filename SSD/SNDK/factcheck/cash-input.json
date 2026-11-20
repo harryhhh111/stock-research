@@ -1,0 +1,103 @@
+{
+  "entity": "Sandisk",
+  "unit": "M美元",
+  "latest_annual": 2026,
+  "latest_period": "2027Q1",
+  "annual_count": 3,
+  "annual": {
+    "table": {
+      "id": "annual-cash-flow"
+    },
+    "rows": {
+      "cfo": "经营现金流 CFO",
+      "cash_capex": "现金资本开支",
+      "fcf": "自由现金流 FCF"
+    },
+    "source": "https://investor.sandisk.com/node/8171/html cash flow PP&E purchases gross",
+    "capex_basis": "cash_paid",
+    "values": {
+      "2024": {
+        "cfo": -309,
+        "cash_capex": 166,
+        "fcf": -475
+      },
+      "2025": {
+        "cfo": 84,
+        "cash_capex": 204,
+        "fcf": -120
+      },
+      "2026": {
+        "cfo": 11671,
+        "cash_capex": 177,
+        "fcf": 11494
+      }
+    }
+  },
+  "interim": {
+    "table": {
+      "id": "interim-cash-flow"
+    },
+    "rows": {
+      "cfo": "经营现金流 CFO",
+      "cash_capex": "现金资本开支",
+      "fcf": "自由现金流 FCF"
+    },
+    "source": "https://investor.sandisk.com/static-files/c31aa9f9-d8e1-43e5-8642-360f5d0dad15 p8",
+    "capex_basis": "cash_paid",
+    "values": {
+      "2027Q1": {
+        "cfo": 6363,
+        "cash_capex": 54,
+        "fcf": 6309
+      }
+    }
+  },
+  "bridge": {
+    "table": {
+      "id": "cash-bridge-table"
+    },
+    "period": "2027Q1",
+    "cash_scope": "现金及现金等价物",
+    "source": "https://investor.sandisk.com/static-files/c31aa9f9-d8e1-43e5-8642-360f5d0dad15 p8",
+    "required_roles": [
+      "opening",
+      "cfo",
+      "investing",
+      "financing",
+      "fx",
+      "closing"
+    ],
+    "items": [
+      {
+        "role": "opening",
+        "label": "期初现金",
+        "expected": 4762
+      },
+      {
+        "role": "cfo",
+        "label": "经营现金流",
+        "expected": 6363
+      },
+      {
+        "role": "investing",
+        "label": "投资现金流",
+        "expected": -238
+      },
+      {
+        "role": "financing",
+        "label": "融资现金流",
+        "expected": -5755
+      },
+      {
+        "role": "fx",
+        "label": "汇率影响",
+        "expected": 4
+      },
+      {
+        "role": "closing",
+        "label": "期末现金",
+        "expected": 5136
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-11-18",
+  "scope": "Full main-report migration: FY2023–2025 and 2026 Q1–Q3, current TTM and conditional valuation",
+  "quarter_reconciliations": "pass",
+  "income_and_cash_bridges": "pass",
+  "price_basis": "regular-session close, unadjusted",
+  "returns_pct": {
+    "CRWV": {
+      "nov11_to13": -12.571992759585326,
+      "nov10_to13": 9.029345372460519,
+      "nov11": 24.7075723373692
+    },
+    "NBIS": {
+      "nov11_to13": -25.088887452324006,
+      "nov10_to13": -13.522388059701495,
+      "nov11": 15.44029850746269
+    }
+  },
+  "nbis_nonrecurring_revenue_pct": 33.13621533442088,
+  "nbis_revenue_ex325": 655.8,
+  "nbis_remaining_capex_funding_range_billion": [
+    6.0,
+    11.25
+  ],
+  "annual_history": "FY2023/FY2024/FY2025 rendered in the final HTML; independently checked by audit_full_reports.py",
+  "valuation": "Conditional reverse DCF with Nov16 price, economic shares, discount/growth and delay sensitivity; not a forecast"
+}

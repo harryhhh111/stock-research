@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>近线 HDD · 客户需求与替代</title><style>
+:root{color-scheme:light;--ink:#142d31;--paper:#f4f7f3;--accent:#075d52;--muted:#4d6668;--line:#ccd9d2;--light:#e4efea;--blue:#2d7297;--gold:#ab6527}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--paper);font:16px/1.7 system-ui,-apple-system,"PingFang SC",sans-serif}
+.hero{background:#133333;color:#f9fcf8;padding:1.65rem 0 1.95rem;border-bottom:5px solid #69b998}.wrap{width:min(1110px,calc(100% - 42px));margin:auto}
+.hero a{color:#b4eed8}.eyebrow{font-size:.85rem;letter-spacing:.09em;color:#a8dcca;font-weight:650}.hero p{margin:.55rem 0}.hero .lede{font-size:1.13rem;max-width:58em}
+h1,h2,h3{line-height:1.3;text-wrap:balance}h1{font-size:clamp(1.85rem,5vw,3rem);margin:.4rem 0 .75rem}
+h2{font-size:1.48rem;margin:0 0 .85rem}h3{font-size:1.1rem;margin:1.3rem 0 .55rem}p{margin:.55rem 0 .85rem}
+.tags{display:flex;flex-wrap:wrap;gap:.38rem 1rem;font-size:.84rem;color:#d1e5dc}.tags span{display:inline-block}.links{font-size:.9rem}
+main{padding:1.45rem 0 2.5rem}section{margin:0 0 1.2rem;background:#fff;border:1px solid var(--line);padding:clamp(.9rem,3vw,1.65rem);border-radius:12px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem;margin-bottom:1.25rem}
+.card{background:white;border:1px solid var(--line);border-radius:12px;padding:1.05rem;text-decoration:none;color:var(--ink);display:block}
+.card strong{font-size:1.17rem;color:var(--accent)}.card span{display:block}.card .question{margin:.4rem 0;font-weight:640}.card:hover,.card:focus-visible{border-color:var(--accent);background:#ebf6ef}
+a{color:var(--accent);text-underline-offset:.16em}a:focus-visible,[tabindex]:focus-visible{outline:2px solid #d38128;outline-offset:3px}
+.source,.note,figcaption{font-size:.87rem;color:var(--muted)}.source a{display:inline-block}.callout{padding:.65rem .9rem;background:var(--light);border-left:3px solid var(--accent)}
+.scroll{overflow-x:auto;margin:.65rem 0}.scroll table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:.9rem}
+th,td{padding:.47rem .62rem;border-bottom:1px solid var(--line);vertical-align:top;text-align:right;white-space:nowrap}th:first-child,td:first-child{text-align:left}thead th{background:var(--light);color:var(--ink)}tbody tr:nth-child(even){background:#f7faf8}
+.prose td,.prose th{white-space:normal;text-align:left}.prose td:first-child{min-width:6rem}.small{display:block;font-size:.78rem;color:var(--muted)}
+figure{margin:.9rem 0 1rem}svg{display:block;width:100%;height:auto;background:#f5f9f6;border:1px solid var(--line);border-radius:8px}.chart-scroll{overflow:auto}.chart-scroll svg{min-width:590px}
+svg text{font-family:system-ui,-apple-system,"PingFang SC",sans-serif;fill:#203d3c;font-size:14px}.legend{font-size:.86rem}
+.mark{font-weight:700;color:var(--accent)}footer{border-top:1px solid var(--line);padding:1rem 0;color:var(--muted);font-size:.9rem}
+@media(max-width:780px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:510px){.cards{grid-template-columns:1fr}.wrap{width:calc(100% - 24px)}th,td{padding:.4rem .5rem}}
+@media print{@page{size:A4;margin:12mm}.wrap{width:100%}body{background:white;font-size:10pt}.hero{background:white;color:#142d31;border-bottom:1px solid #555;padding:.3rem 0}.hero a,.eyebrow,.tags{color:#142d31}.links{display:none}main{padding:.5rem 0}section{border:0;padding:.15rem;margin:.5rem 0}.scroll,.chart-scroll{overflow:visible}.chart-scroll svg{min-width:0}.scroll table{font-size:8pt}th,td{padding:.27rem .32rem;white-space:normal}tr,figure,.card{break-inside:avoid}h2,h3{break-after:avoid}*{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+@media print{body{line-height:1.5}h1{font-size:26pt}h2{font-size:14pt;margin-bottom:.55rem}p{margin:.35rem 0 .6rem}}
+</style></head>
+<body><header class="hero"><div class="wrap"><p class="links"><a href="hdd.html">← 近线 HDD 行业首页</a></p><div class="eyebrow">行业研究 / 近线 HDD</div><h1>近线 HDD · 客户需求与替代</h1>
+<div class="tags"><span>更新 · 2026-11-19</span><span>证据 · 截至 2026-11-19</span></div>
+<p class="lede">云客户为容量和低成本留存付费。新增数据要经过存储分层、库存和交付，才形成近线盘采购。</p></div></header><main class="wrap"><section id="boundary"><h2>近线盘的需求和供给</h2>
+<p>对象为面向全球云和大型企业、以容量为主的近线机械盘，以北美超大规模云客户为主要观察对象。供需用 EB 比较，1 EB = 100 万 TB（十进制）。磁头写入与读取，盘片保存数据。近线盘与企业 SSD 在部分温数据场景竞争，热数据通常更看重延迟、随机读写和功耗。</p>
+<p>客户实收 EB ≈ 合格出货盘数 × 平均每盘 TB。名义装配能力经过磁头和介质配套、良率、固件和客户认证，才形成有效出货；高容量型号升级可在整盘台数持平时增加 EB。采购意向、电力获批和数据中心预算均需经过部署才能形成当期需求。</p>
+<p class="source">来源 · <a href="https://toshiba.semicon-storage.com/ap-en/company/news/news-topics/2026/10/storage-20261002-1.html">东芝菲律宾扩建产线公告 · 2026-10-02</a> / <a href="https://investor.wdc.com/news-releases/news-release-details/western-digital-accelerates-storage-innovation-ai-era">西数创新日 · 2026-02-03</a> / <a href="https://investors.seagate.com/news/news-details/2026/Seagate-Delivers-Industrys-Highest-Capacity-Hard-Drives-with-Next-Generation-Mozaic-4/default.aspx">希捷 Mozaic 4+ 公告 · 2026-03-03</a></p><p>相邻技术的周期和供给机制见 <a href="../../NAND/reports/nand.html">NAND 行业研究</a>。</p></section>
+<section id="signals"><h2>采购怎样变成 HDD 出货</h2>
+<p>云厂商或存储系统商采购整盘，对象包括备份、对象存储、日志和大量低频读取数据。冷数据使用机械盘主要因每 TB 取得成本较低。读写延迟、机架密度或功耗瓶颈更重要时，企业 SSD 可分流增量。</p>
+<p>年度新增物理容量可拆成新增留存数据经副本或纠删码调整后的容量、需要替换的退役容量，再扣除可调拨的闲置容量。最终 HDD 采购还取决于分给 HDD 的比例和部署时点。举例，若其他条件固定、需新增的物理容量增 25%，而 HDD 分配占比由 80% 到 70%，分配给 HDD 的新增 EB 仅增 9.4%（1.25 × 70% ÷ 80% − 1）。这是条件演示，行业当前采购量需要机群、留存与部署数据。</p>
+<p>先看云客户订货、交付计划和合同价格调整，再看合格出货 EB、集团收入/TB、毛利和现金。增量数据与硬盘出货之间存在存储分层、压缩、安装时点和客户库存的传导。厂商使用长约，公开零售硬盘价格难以替代云端实际成交价。企业端同规格成交价和买方库存未有可比披露。</p>
+<p class="source">参考 · <a href="https://www.sec.gov/Archives/edgar/data/106040/000162828026066933/wdc-20261002.htm">西数 FY27 Q1 10-Q · 长期客户协议和量价 · 2026-10-23</a></p>
+</section><section id="research"><h2>机构对供需的判断</h2>
+<p>Omdia 于 2025 年末预计 2026 年企业 HDD 与企业 SSD 同时偏紧，认为高容量 QLC 有新增用途，全面分流近线 HDD 受成本和 NAND 扩产速度制约。其图表使用企业存储口径，预测不能与单家厂商的近线 EB 直接对比。TrendForce 的 2026-10-30 企业 SSD 合同价报告公开摘要观察到北美需求较强，并指出 HDD 厂商重新扩产、加快 HAMR 及提升 PMR/SMR 容量。两份资料分别是事前预测和四季度趋势摘要。后者的付费全文与抽样方法未取得，企业 SSD 合同价也不代替 HDD 报价。</p>
+<p class="source">来源 · <a href="https://omdia.tech.informa.com/-/media/tech/omdia/assetfamily/2025/12/04/2026-trends-to-watch-semiconductors/2026-trends-to-watch-semiconductors-pdf.pdf#page=28">Omdia 2026 Trends to Watch · 2025-12，第 28–29 页</a> / <a href="https://www.trendforce.com/research/download/RP261030MH">TrendForce 企业 SSD 合同价 · 2026-10-30，公开摘要</a></p>
+</section></main><footer><div class="wrap">2026-11-19 · 事实、公司指引与研究假设按文中标识</div></footer></body></html>

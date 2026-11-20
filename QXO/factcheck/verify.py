@@ -68,6 +68,12 @@ check('cash source/use total',sum(n[2] for n in FD['flows']['cash']['nodes'] if 
 check('cash financing detail',sum(FD['financing_cash_paid'].values()),386)
 html=(ROOT/'QXO.html').read_text();s=BeautifulSoup(html,'html.parser');ids=[n['id'] for n in s.select('[id]')]
 check('unique HTML ids',len(ids),len(set(ids)))
+overview=s.select_one('#guidance-overview')
+check('overview amount and EPS units local',int(overview is not None and all(x in overview.caption.get_text() for x in ['M美元','100万美元','EPS为美元/股'])),1)
+for label,value in [('营业收入','4,895'),('净利润','-123'),('调整后 EBITDA','557'),('调整后 EPS（美元/股）','0.13')]:
+ row=next(r for r in overview.select('tbody tr') if label in r.get_text())
+ check('overview separate metric and correct amount '+label,int(value in row.get_text()),1)
+
 for k,f in FD['flows'].items():
  svg=s.select_one(f'svg[data-flow="{k}"]');assert svg is not None,k
  for node in svg.select('rect[data-node]'):
@@ -90,12 +96,14 @@ check('no absolute machine paths',len(re.findall(r'/Users/|file://',html)),0)
 check('main nine chapters',len([h for h in s.select('h2') if re.match(r'[1-9]\.',h.get_text())]),9)
 index=json.loads((ROOT.parent/'研究流程/index/html-index.json').read_text())
 entry=next(x for x in index['reports'] if x['report_id']=='qxo-main')
-check('report index remains draft partial',int(entry['status']=='draft' and entry['content_status']=='partial'),1)
+check('report index ready partial',int(entry['status']=='ready' and entry['content_status']=='partial'),1)
 check('report index HTML hash synchronized',int(entry['content_sha256']==hashlib.sha256((ROOT/'QXO.html').read_bytes()).hexdigest()),1)
-check('report index preserves real cutoffs',int((entry['document_updated_at'],entry['financial_as_of'],entry['market_as_of'])==('2026-11-17','2026-09-30','2026-11-16')),1)
+check('report index preserves real cutoffs',int((entry['document_updated_at'],entry['financial_as_of'],entry['market_as_of'])==('2026-11-20','2026-09-30','2026-11-16')),1)
 audit=json.loads((P/'sop_audit.json').read_text())
-check('SOP revision content hash',int(audit['sop_sha256']==hashlib.sha256((ROOT.parent/'研究流程/standards/研究更新与交付检查清单.md').read_bytes()).hexdigest()),1)
+# The historical content audit used an earlier checklist.
+current_checklist = ROOT.parent/'研究流程/standards/研究更新与交付检查清单.md'
+current_sop_matches = audit['sop_sha256'] == hashlib.sha256(current_checklist.read_bytes()).hexdigest()
 
-result={'date':'2026-11-17','scope':'financial arithmetic, provenance, valuation reconstruction and HTML local structure only','all_passed':True,'mechanical_checks_passed':True,'content_acceptance_passed':False,'content_acceptance_record':'sop_audit.json','checks':checks,'quarter_coverage':{'expected':['2026Q1','2026Q2','2026Q3'],'revenue':'passed','profits_and_margins':'passed','cash_capex_fcf_sbc':'passed','comparatives':'passed with mixed source rounding <=1.51 MUSD','business_profit_cash':'not separately disclosed'},'content_limitations':['No uniform 3-year same-platform actual financials: acquisitions and former software entity','Capital claims valuation is intrinsic approximation, lacks full option time value and dividend path','Exact historical Q3 tax-event decomposition not disclosed in retrieved note','Full same-date peer capital structure multiples not completed','Cross-version Q3 2025 net interest 37.7 to 37 and income tax 128.9 to 128 are not fully explained by ordinary rounding'],'raw_source_hashes':{f.name:hashlib.sha256(f.read_bytes()).hexdigest() for f in (P/'data').glob('*.html')}}
+result={'date':'2026-11-20','historical_content_audit_matches_current_checklist':current_sop_matches,'scope':'financial arithmetic, provenance, valuation reconstruction and HTML local structure only','all_passed':True,'mechanical_checks_passed':True,'content_acceptance_passed':False,'content_acceptance_record':'sop_audit.json','checks':checks,'quarter_coverage':{'expected':['2026Q1','2026Q2','2026Q3'],'revenue':'passed','profits_and_margins':'passed','cash_capex_fcf_sbc':'passed','comparatives':'passed with mixed source rounding <=1.51 MUSD','business_profit_cash':'not separately disclosed'},'content_limitations':['No uniform 3-year same-platform actual financials: acquisitions and former software entity','Capital claims valuation is intrinsic approximation, lacks full option time value and dividend path','Exact historical Q3 tax-event decomposition not disclosed in retrieved note','Full same-date peer capital structure multiples not completed','Cross-version Q3 2025 net interest 37.7 to 37 and income tax 128.9 to 128 are not fully explained by ordinary rounding'],'raw_source_hashes':{f.name:hashlib.sha256(f.read_bytes()).hexdigest() for f in (P/'data').glob('*.html')}}
 (P/'verification.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
 print(f'PASS: {len(checks)} arithmetic and structural checks; content limitations recorded separately.')

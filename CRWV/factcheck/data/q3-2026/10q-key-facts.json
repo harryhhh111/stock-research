@@ -1,0 +1,25 @@
+{
+  "source": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+  "retrieved_at": "2026-11-18",
+  "method": "browser web tool; direct requests returned 403",
+  "facts": {
+    "ATM_shares_sold_9M": 0,
+    "ATM_remaining_shares_million": 35,
+    "RPO_billion": 132.3,
+    "RPO_first24months_pct": 36,
+    "RPO_months25to48_pct": 38,
+    "deferred_revenue_reclassified_customer_liabilities_contracts_became_cancellable_billion": 1.9,
+    "uncommenced_undiscounted_lease_commitments_billion": 47.4,
+    "disclosure_controls_effective": false,
+    "material_weaknesses_resulted_material_misstatement": false,
+    "future_debt_principal_payments_million": {
+      "2026_remaining": 2433,
+      "2027": 10974,
+      "2028": 5479,
+      "2029": 4727,
+      "2030": 4247,
+      "thereafter": 19645,
+      "total": 47505
+    }
+  }
+}

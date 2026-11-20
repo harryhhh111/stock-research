@@ -1,0 +1,384 @@
+{
+  "annual": {
+    "2023": {
+      "revenue": 9.8,
+      "cost": 19.6,
+      "op": -285.7,
+      "net": -299.0,
+      "parent_net": 241.3,
+      "sbc": 28.8,
+      "cfo": -222.0,
+      "cloud": 9.6,
+      "avride": 0.0,
+      "tripleten": 8.2,
+      "eliminations": -8.0,
+      "da": 29.3,
+      "ebitda": -240.7,
+      "cloud_ebitda": -134.1,
+      "avride_ebitda": -69.6,
+      "tripleten_ebitda": -37,
+      "interest_expense": -0.0,
+      "cash_capex": 82.9,
+      "fcf": -304.9,
+      "op_margin": -2915.3061224489793,
+      "net_margin": -3051.020408163265,
+      "gross_margin_ex_separate_da": -100.0
+    },
+    "2024": {
+      "revenue": 91.5,
+      "cost": 43.7,
+      "op": -399.6,
+      "net": -352.0,
+      "parent_net": -641.4,
+      "sbc": 54.5,
+      "cfo": -269.9,
+      "cloud": 68.3,
+      "avride": 0.3,
+      "tripleten": 28.8,
+      "eliminations": -5.9,
+      "da": 77.1,
+      "ebitda": -226.3,
+      "cloud_ebitda": -128.5,
+      "avride_ebitda": -67,
+      "tripleten_ebitda": -30.8,
+      "interest_expense": -0.0,
+      "cash_capex": 807.5,
+      "fcf": -1077.4,
+      "op_margin": -436.72131147540983,
+      "net_margin": -384.69945355191254,
+      "gross_margin_ex_separate_da": 52.240437158469945,
+      "revenue_yoy_pct": 833.6734693877551
+    },
+    "2025": {
+      "revenue": 529.8,
+      "cost": 166.2,
+      "op": -611.7,
+      "net": 9.8,
+      "parent_net": 82.5,
+      "sbc": 83.2,
+      "cfo": 401.9,
+      "cloud": 480.3,
+      "avride": 1.3,
+      "tripleten": 54.1,
+      "eliminations": -5.9,
+      "da": 417.9,
+      "ebitda": -64.9,
+      "cloud_ebitda": 59.0,
+      "avride_ebitda": -82.7,
+      "tripleten_ebitda": -41.2,
+      "interest_expense": 61.5,
+      "cash_capex": 4066.0,
+      "fcf": -3664.1,
+      "op_margin": -115.45866364665913,
+      "net_margin": 1.8497546243865612,
+      "gross_margin_ex_separate_da": 68.62967157417893,
+      "revenue_yoy_pct": 479.0163934426229
+    }
+  },
+  "annual_balance": {
+    "2024": {
+      "cash": 2434.7,
+      "debt_current": 6.1,
+      "debt_noncurrent": 0.0,
+      "equity": 3253.7,
+      "debt": 6.1,
+      "net_debt": -2428.6
+    },
+    "2025": {
+      "cash": 3678.1,
+      "debt_current": 24.5,
+      "debt_noncurrent": 4103.2,
+      "equity": 4594.0,
+      "debt": 4127.7,
+      "net_debt": 449.5999999999999
+    },
+    "2023": {
+      "cash_continuing_including_restricted": 114.1,
+      "equity": 3293.7,
+      "entity_boundary": "pre-divestment parent, assets include Russian discontinued operations"
+    }
+  },
+  "roe_pct": {
+    "2023": 6.2010921940250565,
+    "2024": -19.592510003971043,
+    "2025": 2.1025268550021026
+  },
+  "quarterly": {
+    "q1": {
+      "revenue": 399.0,
+      "op": -128.0,
+      "net": 621.2,
+      "ebitda": 129.5,
+      "cfo": 2258.0,
+      "cash_capex": 2472.9,
+      "sbc": 35.3,
+      "cloud": 389.7,
+      "cloud_ebitda": 174.0,
+      "prior": 50.9,
+      "cloud_prior": 41.4,
+      "fcf": -214.9000000000001,
+      "revenue_yoy_pct": 683.8899803536347,
+      "op_margin": -32.08020050125313,
+      "net_margin": 155.6892230576441,
+      "ebitda_margin": 32.45614035087719,
+      "interest": -63.7
+    },
+    "q2": {
+      "revenue": 582.3,
+      "op": -175.9,
+      "net": -190.4,
+      "ebitda": 236.2,
+      "cfo": 2246.1000000000004,
+      "cash_capex": 5657.4,
+      "sbc": 102.50000000000001,
+      "cloud": 574.9,
+      "cloud_ebitda": 285.7,
+      "prior": 105.1,
+      "cloud_prior": 93.7,
+      "fcf": -3411.2999999999993,
+      "revenue_yoy_pct": 454.0437678401522,
+      "op_margin": -30.207796668383995,
+      "net_margin": -32.69792203331616,
+      "ebitda_margin": 40.56328353082604,
+      "interest": -119.1
+    },
+    "q3": {
+      "revenue": 980.8,
+      "op": 50.4,
+      "net": -37.5,
+      "ebitda": 465.8,
+      "cfo": -273.0,
+      "cash_capex": 7300.4,
+      "sbc": 58.7,
+      "cloud": 973.8,
+      "cloud_ebitda": 518.2,
+      "prior": 146.1,
+      "cloud_prior": 131.1,
+      "fcf": -7573.4,
+      "revenue_yoy_pct": 571.3210130047912,
+      "op_margin": 5.138662316476346,
+      "net_margin": -3.823409461663948,
+      "ebitda_margin": 47.49184339314845,
+      "interest": -112.5
+    },
+    "balance": {
+      "cash": 7425.6,
+      "restricted_cash": 1215.5,
+      "debt_ex_leases": 14190.8,
+      "net_debt_ex_leases": 6765.199999999999,
+      "equity": 12299.2
+    },
+    "ttm": {
+      "revenue": 2189.7999999999997,
+      "net": 124.50000000000006,
+      "cfo": 5065.400000000001,
+      "cash_capex": 17486.699999999997,
+      "fcf": -12421.299999999996,
+      "op": -503.5
+    },
+    "q4_2025": {
+      "revenue": 227.69999999999993,
+      "op": -250.00000000000006,
+      "net": -268.8,
+      "cfo": 834.3,
+      "cash_capex": 2056,
+      "da": 194.59999999999997
+    }
+  },
+  "market": {
+    "source": "https://www.quiverquant.com/stock/NBIS/historical-prices/",
+    "retrieved_at": "2026-11-18",
+    "price_date": "2026-11-16",
+    "close": 107.13,
+    "common_shares_million": 292.902405,
+    "economic_shares_million": 313.968341,
+    "share_date": "2026-09-30",
+    "share_source": "Q3 6-K Note14; outstanding common plus NVIDIA pre-funded warrants; no double counting of unconverted debt",
+    "limitation": "Not a Nov18 live quote; balance-sheet debt/cash at Sep30; future ATM/RSU/convertible dilution excluded."
+  },
+  "valuation": {
+    "price_date": "2026-11-16",
+    "price": 107.13,
+    "shares_million": 313.968341,
+    "market_cap_billion": 33.63542837133,
+    "net_debt_billion": 6.765199999999999,
+    "enterprise_value_billion": 40.40062837133,
+    "discount_rate": 0.12,
+    "terminal_growth": 0.03,
+    "T_years": 3.1238877481177276,
+    "cash_flow_dates": [
+      "2026-12-31",
+      "2027-12-31",
+      "2028-12-31",
+      "2029-12-31"
+    ],
+    "time_years": [
+      0.12320328542094455,
+      1.1225188227241616,
+      2.1245722108145104,
+      3.1238877481177276
+    ],
+    "assumed_ufcf_billion": [
+      -4,
+      -15,
+      -7,
+      0
+    ],
+    "pv_interim_billion": -22.65485133845734,
+    "required_2030_ufcf_billion": 8.085686923003049,
+    "required_revenue_at_fcf_margin_15_20_25pct_billion": [
+      53.904579486687,
+      40.42843461501524,
+      32.342747692012196
+    ],
+    "scenarios": [
+      {
+        "scenario": "兑现偏低",
+        "fcf2030_billion": 5.659980846102134,
+        "terminal_value_billion": 62.88867606780149,
+        "pv_terminal_billion": 44.13883579685113,
+        "pv_operating_billion": 21.483984458393792,
+        "equity_billion_before_floor": 14.718784458393792,
+        "per_share": 46.87983639214691,
+        "upside_pct": -56.24023486217967,
+        "terminal_pv_share_of_EV_pct": 205.44995218336277
+      },
+      {
+        "scenario": "支撑基准价",
+        "fcf2030_billion": 8.085686923003049,
+        "terminal_value_billion": 89.840965811145,
+        "pv_terminal_billion": 63.05547970978734,
+        "pv_operating_billion": 40.40062837133,
+        "equity_billion_before_floor": 33.63542837133,
+        "per_share": 107.13000000000001,
+        "upside_pct": 2.220446049250313e-14,
+        "terminal_pv_share_of_EV_pct": 156.0754925151961
+      },
+      {
+        "scenario": "兑现更强",
+        "fcf2030_billion": 10.511392999903965,
+        "terminal_value_billion": 116.7932555544885,
+        "pv_terminal_billion": 81.97212362272354,
+        "pv_operating_billion": 59.3172722842662,
+        "equity_billion_before_floor": 52.5520722842662,
+        "per_share": 167.38016360785306,
+        "upside_pct": 56.24023486217966,
+        "terminal_pv_share_of_EV_pct": 138.1926721611346
+      }
+    ],
+    "delay_extra_ufcf_billion": -7,
+    "delay_one_year_price": 71.64059902935128,
+    "sensitivity": [
+      {
+        "discount_rate": 0.1,
+        "values_for_g_2_3_4pct": [
+          143.74518575081547,
+          177.89095760532754,
+          223.4186534113436
+        ]
+      },
+      {
+        "discount_rate": 0.12,
+        "values_for_g_2_3_4pct": [
+          87.04661213071566,
+          107.13000000000001,
+          132.23423483660542
+        ]
+      },
+      {
+        "discount_rate": 0.14,
+        "values_for_g_2_3_4pct": [
+          50.32097792093463,
+          63.27762902253626,
+          78.82561034445825
+        ]
+      }
+    ],
+    "model_status": "Conditional reverse DCF; transition cash flows and discount/growth assumptions are researcher assumptions, not forecasts or user-confirmed values; no PE skill model."
+  },
+  "segments": {
+    "annual": {
+      "cloud": {
+        "2023": 9.6,
+        "2024": 68.3,
+        "2025": 480.3
+      },
+      "tripleten": {
+        "2023": 8.2,
+        "2024": 28.8,
+        "2025": 54.1
+      },
+      "avride": {
+        "2023": 0.0,
+        "2024": 0.3,
+        "2025": 1.3
+      },
+      "eliminations": {
+        "2023": -8.0,
+        "2024": -5.9,
+        "2025": -5.9
+      }
+    },
+    "quarterly": {
+      "cloud": [
+        389.7,
+        574.9,
+        973.8
+      ],
+      "tripleten": [
+        11.6,
+        10,
+        9.0
+      ],
+      "avride": [
+        0.9,
+        1.0,
+        1.3
+      ],
+      "eliminations": [
+        -3.2,
+        -3.6,
+        -3.3
+      ]
+    },
+    "quarterly_prior": {
+      "cloud": [
+        41.4,
+        93.7,
+        131.1
+      ],
+      "tripleten": [
+        10.5,
+        12.3,
+        16.2
+      ],
+      "avride": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "eliminations": [
+        -1.2,
+        -1.1,
+        -1.4
+      ]
+    },
+    "quarterly_ebitda": {
+      "cloud": [
+        174,
+        285.7,
+        518.2
+      ],
+      "avride": [
+        -34.1,
+        -40.1,
+        -45.5
+      ],
+      "tripleten": [
+        -10.4,
+        -9.4,
+        -6.9
+      ]
+    }
+  }
+}

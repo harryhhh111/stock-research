@@ -1,0 +1,67 @@
+{
+  "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926126238/nbis-ex99d2.htm",
+  "mda_source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926126238/nbis-ex99d1.htm",
+  "retrieved": "2026-11-18",
+  "method": "SEC web retrieval; direct requests blocked 403",
+  "unit": "USD millions except ratios/shares",
+  "note4": {
+    "interest_expense_q3": 112.5,
+    "debt_interest_after_capitalization_q3": 53.8,
+    "customer_advance_and_vendor_financing_interest_q3": 58.7,
+    "capitalized_interest_q3": 91.9,
+    "debt_main_balance": 14190.8,
+    "current_debt_main_balance": 187.5,
+    "customer_revenue_concentration_pct_q3": [
+      15,
+      22,
+      33
+    ],
+    "customer_receivable_concentration_pct": [
+      75,
+      10
+    ]
+  },
+  "note8": {
+    "operating_lease_liability": 1881.5,
+    "undiscounted_active_leases": 2530.5,
+    "not_commenced_undiscounted_total": 13862.3,
+    "prepaid": 619.7,
+    "not_commenced_remaining": 13242.6,
+    "not_commenced_remaining_next12months": 572.7
+  },
+  "note12": {
+    "debt_book": 14162.8,
+    "debt_current_book": 159.5,
+    "principal_or_accreted_total": 16478,
+    "unreconciled_main_minus_note": 28.0,
+    "monthly_amortizing_loan_principal": 751.8,
+    "loan_book": 733.1,
+    "loan_final_maturity": "2030-10-31",
+    "DSCR_min": 1.15
+  },
+  "note14": {
+    "prefunded_warrant_shares": 21065936,
+    "common_shares": 292902405,
+    "ATM_quarter_sold": 4633800,
+    "ATM_quarter_net": 1048.5,
+    "ATM_9M_sold": 17363293,
+    "ATM_9M_net": 3859.6,
+    "ATM_authorization": 25000000
+  },
+  "note15": {
+    "strategic_partnership_revenue_q3": 325.1,
+    "strategic_partnership_revenue_9M": 409.1,
+    "ebitda_q3": {
+      "cloud": 518.2,
+      "avride": -45.5,
+      "tripleten": -6.9
+    },
+    "segment_revenue_q3": {
+      "cloud": 973.8,
+      "avride": 1.3,
+      "tripleten": 9.0,
+      "eliminations": -3.3
+    }
+  },
+  "limits": "28.0 difference between the main debt line and note12 has no explicit reconciliation in the reviewed material; not assigned an invented explanation."
+}

@@ -1,0 +1,24 @@
+{
+  "CRWV": {
+    "source": "https://www.quiverquant.com/stock/CRWV/historical-prices/",
+    "retrieved_at": "2026-11-18",
+    "price_date": "2026-11-16",
+    "close": 49.88,
+    "common_shares_million": 556.125724,
+    "economic_shares_million": 556.125724,
+    "share_date": "2026-10-30",
+    "share_source": "Q3 10-Q cover",
+    "limitation": "Not a Nov18 live quote; balance-sheet debt/cash at Sep30; future ATM/RSU/convertible dilution excluded."
+  },
+  "NBIS": {
+    "source": "https://www.quiverquant.com/stock/NBIS/historical-prices/",
+    "retrieved_at": "2026-11-18",
+    "price_date": "2026-11-16",
+    "close": 107.13,
+    "common_shares_million": 292.902405,
+    "economic_shares_million": 313.968341,
+    "share_date": "2026-09-30",
+    "share_source": "Q3 6-K Note14; outstanding common plus NVIDIA pre-funded warrants; no double counting of unconverted debt",
+    "limitation": "Not a Nov18 live quote; balance-sheet debt/cash at Sep30; future ATM/RSU/convertible dilution excluded."
+  }
+}

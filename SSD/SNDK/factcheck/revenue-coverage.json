@@ -1,0 +1,25 @@
+{
+  "report": "SSD/SNDK/reports/revenue-profit.html",
+  "sha256": "167ae5f98200a235b068cf97b4ec9465881192b1028a82d96a77f7955d1e22e2",
+  "expected": {
+    "annual-revenue": [
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "quarter-revenue": [
+      "2027Q1"
+    ]
+  },
+  "actual": {
+    "annual-revenue": [
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "quarter-revenue": [
+      "2027Q1"
+    ]
+  },
+  "errors": []
+}

@@ -1,0 +1,73 @@
+{
+  "checked_at": "2026-11-18",
+  "scope": "full main-report rebuild",
+  "report_sha256": "776074597d15a3e1beb2fccfc866b3e8869ce45157ef0867fa6b7c8815cd6ddf",
+  "offline": true,
+  "javascript": false,
+  "desktop": {
+    "width": 1440,
+    "scrollWidth": 1440,
+    "svgCount": 8,
+    "brokenImages": 0
+  },
+  "anchors": [],
+  "svgLabelBounds": [
+    {
+      "figure": 0,
+      "viewBox": "0 0 1100 510",
+      "overflow": []
+    },
+    {
+      "figure": 1,
+      "viewBox": "0 0 960 365",
+      "overflow": []
+    },
+    {
+      "figure": 2,
+      "viewBox": "0 0 960 365",
+      "overflow": []
+    },
+    {
+      "figure": 3,
+      "viewBox": "0 0 960 365",
+      "overflow": []
+    },
+    {
+      "figure": 4,
+      "viewBox": "0 0 960 365",
+      "overflow": []
+    },
+    {
+      "figure": 5,
+      "viewBox": "0 0 960 365",
+      "overflow": []
+    },
+    {
+      "figure": 6,
+      "viewBox": "0 0 1100 510",
+      "overflow": []
+    },
+    {
+      "figure": 7,
+      "viewBox": "0 0 960 345",
+      "overflow": []
+    }
+  ],
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390
+  },
+  "print": {
+    "tableOverflow": 0,
+    "figureOverflow": 0,
+    "pages": 31
+  },
+  "human_review": {
+    "desktop": "passed",
+    "annual_and_quarter_tables": "passed",
+    "cash_and_income_charts": "passed",
+    "narrow_screen": "passed; local horizontal scroll preserves all periods",
+    "print": "passed; all-page preview inspected",
+    "reviewed_report_sha256": "776074597d15a3e1beb2fccfc866b3e8869ce45157ef0867fa6b7c8815cd6ddf"
+  }
+}

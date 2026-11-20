@@ -1,0 +1,78 @@
+Table of Contents
+COREWEAVE, INC.
+CONSOLIDATED BALANCE SHEETS
+(in thousands, except per share data)
+ 
+   
+December 31,
+2023    
+December 31,
+2024  
+Assets     
+Current assets     
+Cash and cash equivalents   $ 217,147   $ 1,361,083 
+Restricted cash and cash equivalents, current    42,940    37,394 
+Accounts receivable, net    165,379    416,526 
+Prepaid expenses and other current assets    76,526    101,246 
+    
+ 
+    
+ 
+Total current assets    501,992    1,916,249 
+Restricted cash and cash equivalents, non-current    219,988    637,356 
+Restricted marketable securities, non-current    171,734    29,308 
+Property and equipment, net    3,483,990    11,914,774 
+Operating lease right-of-use assets    461,966    2,589,547 
+Intangible assets, net    7,003    4,909 
+Goodwill    19,544    19,544 
+Other non-current assets(a)    110,758    720,912 
+    
+ 
+    
+ 
+Total assets   $ 4,976,975   $ 17,832,599 
+    
+ 
+    
+ 
+Liabilities, Redeemable Convertible Preferred Stock, and Stockholders’ Deficit     
+Current liabilities     
+Accounts payable   $ 455,563   $ 868,259 
+Accrued liabilities    77,782    355,821 
+Debt, current(a)    171,865    2,468,425 
+Deferred revenue, current    249,831    768,927 
+Operating lease liabilities, current    39,789    213,104 
+Finance lease liabilities, current    3,534    57,801 
+Other current liabilities(a)    97    230,244 
+    
+ 
+    
+ 
+Total current liabilities    998,461    4,962,581 
+Debt, non-current(a)    1,351,389    5,457,915 
+Derivative and warrant liabilities    527,047    200,089 
+Deferred revenue, non-current    1,754,873    3,294,977 
+Operating lease liabilities, non-current    432,653    2,388,912 
+Finance lease liabilities, non-current    510    34,120 
+Deferred tax liabilities, non-current    36,447    149,232 
+Other non-current liabilities    7,496    36,260 
+    
+ 
+    
+ 
+Total liabilities    5,108,876    16,524,086 
+    
+ 
+    
+ 
+Commitments and contingencies (Note 9)     
+Redeemable convertible preferred stock(a)     
+Redeemable convertible preferred stock, $0.000005 par value per share, 176,646 and 206,169 shares authorized
+as of December 31, 2023 and 2024, respectively; 154,678 and 184,635 shares issued and outstanding as of
+December 31, 2023 and 2024, respectively    464,690    1,722,111 
+    
+ 
+    
+ 
+ 
+F-4

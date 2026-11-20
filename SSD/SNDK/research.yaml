@@ -1,4 +1,6 @@
 # 入口建立日期：2026-10-15；正文日期与事实核验状态以原文为准。
+# 2026-11-19：下列Markdown为停更历史入口；新维护正文为reports/main.html，
+# 已登记html-index.json。现有入口工具尚不支持HTML，不将HTML冒充Markdown入口。
 schema_version: 2
 entity_id: company:sandisk
 kind: company

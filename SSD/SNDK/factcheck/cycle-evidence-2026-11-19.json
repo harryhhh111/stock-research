@@ -1,0 +1,96 @@
+{
+  "as_of": "2026-11-19",
+  "sources": {
+    "tf": [
+      "TrendForce原始调查/预测，2026-11-19",
+      "https://www.trendforce.com/presscenter/news/20261119-13314.html"
+    ],
+    "july": [
+      "TrendForce历史预测，2026-07-21",
+      "https://www.trendforce.com/presscenter/news/20260721-13148.html"
+    ],
+    "sep": [
+      "TrendForce历史预测，2026-09-30",
+      "https://www.trendforce.com/presscenter/news/20260930-13258.html"
+    ],
+    "hana": [
+      "Hana证券原始研报，2026-11-12，PDF第8页",
+      "https://file.hanaw.com/download/research/FileServer/WEB/industry/industry/2026/11/11/Semi_Indepth_261112_F.pdf"
+    ],
+    "kioxia": [
+      "铠侠Investor Day原始问答，2026-06-02，第1/3页",
+      "https://www.kioxia-holdings.com/content/dam/kioxia-hd/en-jp/ir/library/event/asset/Investor-Day-2026-Eng-QA.pdf"
+    ],
+    "kioxia_deck": [
+      "铠侠原始Investor Day演示，2026-06-02，第17页",
+      "https://www.kioxia-holdings.com/content/dam/kioxia-hd/en-jp/ir/library/event/asset/Kioxia-Investor-Day-2026-en.pdf"
+    ],
+    "kioxia_actual": [
+      "铠侠Integrated Report 2026，10月公开",
+      "https://www.kioxia-holdings.com/content/dam/kioxia-hd/en-jp/ir/library/integrated-report/2026/asset/Integrated-Report-2026-all-en.pdf"
+    ],
+    "sk": [
+      "SK hynix原始Q3公告，2026-10-28",
+      "https://news.skhynix.com/en/q3-2026-business-results/"
+    ],
+    "m17": [
+      "SK hynix原始投资公告，2026-08-07",
+      "https://news.skhynix.com/en/fab-facility-investment-2026/"
+    ],
+    "mu": [
+      "Micron原始建厂公告，2026-01-26",
+      "https://investors.micron.com/news/press-release/2026/Micron-Breaks-Ground-on-Advanced-Wafer-Fabrication-Facility-in-Singapore-01-26-2026/default.aspx"
+    ],
+    "samsung": [
+      "Samsung原始Q3公告，2026-10-29",
+      "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results"
+    ]
+  },
+  "nature": "issuer plans / institutional forecasts / author scenarios separated",
+  "model": {
+    "supply_2026": 100,
+    "demand_2026_assumed": 104.5,
+    "supply_growth_2027": [
+      0.25,
+      0.3
+    ],
+    "demand_growth_scenarios": [
+      0.1,
+      0.2,
+      0.25,
+      0.3
+    ]
+  },
+  "checks": {
+    "kioxia_capex_growth_pct": 60.71428571428572,
+    "wafer_2026_inferred_k": 1325.0,
+    "capex_2026_inferred_b": 23.59905288082084,
+    "demand_growth_to_balance": [
+      0.19617224880382778,
+      0.2440191387559809
+    ]
+  },
+  "profit_stress": [
+    {
+      "asp_change": -0.1,
+      "revenue_m": 12112.038,
+      "operating_profit_m": 9740.077000000001
+    },
+    {
+      "asp_change": -0.2,
+      "revenue_m": 10766.256000000001,
+      "operating_profit_m": 8394.295000000002
+    },
+    {
+      "asp_change": -0.4,
+      "revenue_m": 8074.691999999999,
+      "operating_profit_m": 5702.730999999999
+    },
+    {
+      "asp_change": -0.6,
+      "revenue_m": 5383.128000000001,
+      "operating_profit_m": 3011.1670000000004
+    }
+  ],
+  "check_result": "算式复算通过；机构预测和公司计划未当实绩"
+}

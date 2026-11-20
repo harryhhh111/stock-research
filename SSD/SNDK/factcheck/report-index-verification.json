@@ -1,0 +1,22 @@
+{
+  "reports": 17,
+  "errors": [],
+  "warnings": [
+    "qxo-main: 已交付阅读但内容核验状态=partial，网站须显示核验状态及缺口",
+    "nbis-main: 已交付阅读但内容核验状态=partial，网站须显示核验状态及缺口",
+    "sndk-main: 已交付阅读但内容核验状态=partial，网站须显示核验状态及缺口",
+    "sndk-valuation: 已交付阅读但内容核验状态=partial，网站须显示核验状态及缺口",
+    "sndk-revenue-profit: 已交付阅读但内容核验状态=partial，网站须显示核验状态及缺口",
+    "sndk-cash-capital: 已交付阅读但内容核验状态=partial，网站须显示核验状态及缺口",
+    "sndk-business-model: 已交付阅读但内容核验状态=partial，网站须显示核验状态及缺口",
+    "sndk-industry-position: 已交付阅读但内容核验状态=partial，网站须显示核验状态及缺口",
+    "sndk-governance: 已交付阅读但内容核验状态=partial，网站须显示核验状态及缺口",
+    "industry-nand-overview: 已交付阅读但内容核验状态=partial，网站须显示核验状态及缺口",
+    "industry-nand-cycle: 已交付阅读但内容核验状态=partial，网站须显示核验状态及缺口",
+    "msft-main: 9个来源链接尚未批准网站发布；状态=draft",
+    "msft-cloud-cashflow: 4个来源链接尚未批准网站发布；状态=draft",
+    "amd-2026-11-13-price-catalysts: 2个来源链接尚未批准网站发布；状态=draft",
+    "qxo-main: 38个来源链接尚未批准网站发布；状态=ready",
+    "ai-berkshire-msft-experiment: 5个来源链接尚未批准网站发布；状态=draft"
+  ]
+}

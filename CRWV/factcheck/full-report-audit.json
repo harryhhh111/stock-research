@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-18",
+  "report_sha256": "11df7c8c0c3a7a201eac0bbc6a68f2ccedcd58cd1f670d55b206a954b8d7d765",
+  "scope": "full main report migration with Q3 update",
+  "content_checks": [
+    "FY2023/FY2024/FY2025 actual HTML revenue, YoY/share and income/cash table values match inputs",
+    "2026 Q1/Q2/Q3 actual HTML revenue, profits/margins, EBITDA, CFO/cashCapEx/FCF all match the preserved inputs",
+    "Valuation price/shares/EV, date-specific discounting, terminal FCF and scenario values independently recalculate",
+    "9 chapters and preserved explanations have live anchors; no external display dependencies or duplicate IDs"
+  ],
+  "coverage": "pass with disclosed incomparable historical periods",
+  "calculations": "pass",
+  "valuation_scope": "conditional calculation passed, operating forecast not independently certified",
+  "unresolved_source_differences": [],
+  "visual": "separate html-visual-checks.json; requires actual screenshot review"
+}

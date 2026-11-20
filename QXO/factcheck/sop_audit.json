@@ -1,20 +1,20 @@
 {
-  "date": "2026-11-17",
-  "revision": "sop-reaudit-2026-11-17",
-  "basis": "研究方式.md及研究流程/规范/研究更新与交付检查清单.md（2026-11-17）",
-  "sop_sha256": "724f1c7bbd41f310c14ce77b0f1701d37aa6ef0c9b5b5db80ca86218ec14b410",
-  "scope": "QXO原报告的完整内容/选图复验；沿用财报2026-09-30、行情2026-11-16，不刷新行情",
+  "date": "2026-11-18",
+  "revision": "units-correction-2026-11-18",
+  "basis": "研究方式.md及研究流程/规范/研究更新与交付检查清单.md（2026-11-18读取版本）",
+  "sop_sha256": "3c604c34a4ba19edf9dd01aba2dbfd3cdd94411cdcbe405b5cf6916bb163c158",
+  "scope": "2026-11-17完整内容/选图验收结论沿用；2026-11-18仅复核全篇表格单位与混合量纲、对应来源数值和视觉，不刷新财报/行情或重做估值",
   "overall": "未通过完整研究验收",
   "items": [
     {
       "id": "内容-01",
       "requirement": "按 [命名与索引规范](HTML报告命名与索引规范.md) 使用标准路径或已登记legacy入口；唯一索引中的路径、状态、截止日、资源及正文哈希与本次报告一致，报告工具check通过，未登记/过时兼容项已处理。",
-      "result": "通过（结构，保留draft/partial）",
+      "result": "通过（结构，ready/partial）",
       "evidence": [
         "html-index-status",
         "verification"
       ],
-      "review": "qxo-main沿用已登记legacy入口；索引同步2026-11-17文档、2026-09-30财务与2026-11-16行情截止，正文哈希由管理工具更新并通过check。来源附件尚未批准发布，保留draft与unpublished_links，不称verified或已发布。"
+      "review": "qxo-main沿用已登记legacy入口；索引同步2026-11-18文档、2026-09-30财务与2026-11-16行情截止，正文哈希由管理工具更新并通过check。已交付可读版本按现行规则标ready，内容保留partial；附件访问缺口保留unpublished_links，不称verified或网站已发布。"
     },
     {
       "id": "内容-02",
@@ -57,13 +57,16 @@
     {
       "id": "内容-05",
       "requirement": "表前单位、B/M换算、特殊量纲、百分比与百分点无歧义。",
-      "result": "通过",
+      "result": "通过（2026-11-18纠正漏检）",
       "evidence": [
-        "revenue",
+        "guidance-overview",
         "financials",
+        "competition",
+        "valuation",
+        "tracking",
         "verification"
       ],
-      "review": "M美元、股数、EPS及百分比/百分点分开。"
+      "review": "上次单位验收通过属于漏检；本轮逐表复核31张表，补齐概览、同业、资本工具、跟踪及估值混合量纲，金额、股数/份数、EPS美元/股及百分比/百分点就近分开。"
     },
     {
       "id": "内容-06",
@@ -396,7 +399,7 @@
       "evidence": [
         "verification"
       ],
-      "review": "新版收入/现金桑基图、局部瀑布图及完整页面已离线复核桌面、窄屏与打印；证据visual_checks.json。"
+      "review": "2026-11-18单位修订后的概览、混合量纲表及完整页面已离线复核桌面、窄屏与打印；证据visual_checks.json。"
     },
     {
       "id": "HTML-17",

@@ -1,0 +1,28 @@
+{
+  "expected_periods": [
+    "2024",
+    "2025",
+    "2026",
+    "2027Q1"
+  ],
+  "verified_periods": [
+    "2024",
+    "2025",
+    "2026",
+    "2027Q1"
+  ],
+  "bridge_period": "2027Q1",
+  "bridge_totals": {
+    "opening": "1579",
+    "cfo": "1604",
+    "investing": "-225",
+    "financing": "-1644",
+    "fx": "0",
+    "closing": "1314"
+  },
+  "errors": [],
+  "entity": "Western Digital",
+  "unit": "百万美元",
+  "report_sha256": "bcb79c35df11dbfe58db13044245eb8e3643710cf478ed192f6027b195eb2cf4",
+  "input_sha256": "bfbad82451be833812b16bf1a3bdc4cc084867b94354d43fe9f665dff3633c65"
+}
