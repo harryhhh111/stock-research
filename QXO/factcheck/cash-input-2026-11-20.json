@@ -1,0 +1,104 @@
+{
+  "entity": "QXO合并",
+  "unit": "M美元",
+  "latest_annual": 2025,
+  "latest_period": "2026Q3",
+  "annual": {
+    "table": {
+      "id": "annual-cash-flow"
+    },
+    "rows": {
+      "cfo": "经营现金流 CFO",
+      "cash_capex": "现金 CapEx",
+      "fcf": "自由现金流 FCF"
+    },
+    "source": "FY2024与FY2025 10-K现金流量表，现金购建支出",
+    "capex_basis": "cash_paid",
+    "values": {
+      "2023": {
+        "cfo": 0.584,
+        "cash_capex": 0.121,
+        "fcf": 0.463
+      },
+      "2024": {
+        "cfo": 84.8,
+        "cash_capex": 0.1,
+        "fcf": 84.7
+      },
+      "2025": {
+        "cfo": 261.4,
+        "cash_capex": 78.2,
+        "fcf": 183.2
+      }
+    }
+  },
+  "interim": {
+    "table": {
+      "id": "quarter-cash-flow"
+    },
+    "rows": {
+      "cfo": "经营现金流 CFO",
+      "cash_capex": "现金 CapEx",
+      "fcf": "自由现金流 FCF"
+    },
+    "source": "FY2025及2026Q1/Q2/Q3报告现金流量表，Q4=全年减9M，Q2=H1减Q1，Q3=9M减H1",
+    "capex_basis": "cash_paid",
+    "values": {
+      "2025Q4": {
+        "cfo": 186.39999999999998,
+        "cash_capex": 28.200000000000003,
+        "fcf": 158.2
+      },
+      "2026Q1": {
+        "cfo": 70.6,
+        "cash_capex": 22.5,
+        "fcf": 48.1
+      },
+      "2026Q2": {
+        "cfo": -216.6,
+        "cash_capex": 31.5,
+        "fcf": -248.1
+      },
+      "2026Q3": {
+        "cfo": 1.0,
+        "cash_capex": 57.0,
+        "fcf": -56.0
+      }
+    }
+  },
+  "bridge": {
+    "table": {
+      "id": "cash-reconciliation"
+    },
+    "period": "2026年前九月",
+    "cash_scope": "现金、现金等价物及受限现金",
+    "source": "2026Q3 10-Q 合并现金流量表，2026-11-13",
+    "items": [
+      {
+        "role": "opening",
+        "label": "期初含受限现金",
+        "expected": 2366
+      },
+      {
+        "role": "cfo",
+        "label": "经营活动现金流",
+        "expected": -145
+      },
+      {
+        "role": "investing",
+        "label": "投资活动现金流",
+        "expected": -11040
+      },
+      {
+        "role": "financing",
+        "label": "融资活动现金流",
+        "expected": 9373
+      },
+      {
+        "role": "closing",
+        "label": "期末含受限现金",
+        "expected": 554
+      }
+    ]
+  }
+}

@@ -51,6 +51,13 @@ products={
  '2025Q1':{'roof':0,'insulation':0,'complement':0,'software':13.5},
  '2025Q2':{'roof':1466,'insulation':0,'complement':426,'software':14},
  '2025Q3':{'roof':2086,'insulation':0,'complement':628,'software':14}}
+# FY2025 Note 4 less the FY2025 9M comparison in 2026Q3 MD&A.
+# The 9M presentation is rounded to whole MUSD. The derived Q4 mix shares this precision limit.
+prior_nine_months = {'roof': 3552, 'insulation': 0, 'complement': 1054, 'software': 42}
+products['2025Q4'] = {
+    key: round(value - prior_nine_months[key], 3)
+    for key, value in products['2025'].items()
+}
 # Fiscal 2022 revenue from FY2024 comparative discussion, extracted tags if available.
 prior_equity={2022:9.551,2023:7.471,2024:5052.9}
 for y,d in annual.items():

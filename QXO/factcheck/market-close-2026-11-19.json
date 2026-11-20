@@ -1,0 +1,12 @@
+{
+  "ticker": "QXO",
+  "market": "XNYS",
+  "price_usd": 11.02,
+  "timestamp": "2026-11-19T16:00:00-05:00",
+  "scope": "regular session close",
+  "sources": [
+    "https://stockanalysis.com/stocks/qxo/history/",
+    "https://raymondjames.websol.barchart.com/?1_selected=stockQuote&module=stockDetail&region=&symbol=QXO"
+  ],
+  "checked_on": "2026-11-20"
+}

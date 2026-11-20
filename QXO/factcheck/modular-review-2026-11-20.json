@@ -1,0 +1,428 @@
+{
+  "checked_on": "2026-11-20",
+  "scope": "QXO完整公司研究重构。一个沿用的HTML首页、六个独立模块及行业双向链接。",
+  "research_question": "SilverSun如何在JPE入主后取得并购能力，新买的建材资产能否在整合、融资和摊薄后提高普通股每股现金回报？",
+  "content_status": "部分完成，关键未决项见各模块及首页",
+  "date_cutoffs": {
+    "财报期末": "2026-09-30",
+    "最新季报提交日": "2026-11-13",
+    "普通股股本": "2026-11-06",
+    "QXO regular session": "2026-11-19 16:00 EST",
+    "同行历史代理行情": "2026-11-16"
+  },
+  "financial_periods": {
+    "fiscal_years": [
+      "FY2023",
+      "FY2024",
+      "FY2025"
+    ],
+    "quarters": [
+      "2025Q4",
+      "2026Q1",
+      "2026Q2",
+      "2026Q3"
+    ],
+    "comparatives": "2025年前九月、2026年前九月及截至2026Q3的TTM，按年度、季度、累计与TTM分表。"
+  },
+  "module_review": {
+    "industry-position": {
+      "path": "QXO/reports/industry-position.html",
+      "anchors": [
+        "market-position",
+        "roofing-share",
+        "industry-reference",
+        "competition"
+      ],
+      "verified": "美国专业屋面分销与相邻木材、保温分开。核对公司首页、行业资料、需求及同业表锚点和回链。2026年10月住宅需求、Q3出货、维修预测按各自范围使用。 补验四项公司披露排名、三项并购带来的产业链位置、直接对手、Beacon 历史份额复算及行业集中度口径。",
+      "open": "缺统一可比的份额、报价和私营对手利润。11月16日同业倍数仅作历史代理，同行业务组合、并购及全摊薄差异未统一。 当前屋面、防水、木材及保温均缺同期间同范围的独立份额，屋面 21.45% 仅为按 350 亿美元基准的历史参照。"
+    },
+    "business-model": {
+      "path": "QXO/reports/business-model.html",
+      "anchors": [
+        "business-summary",
+        "business",
+        "customers",
+        "moat"
+      ],
+      "verified": "核对材料销售、配送、信用服务与安装收费安排，以及Roofr下单和两家具名客户案例。RPO时间和供应商集中度按披露使用。 复核页首依次解释业务动作、付费方及付费理由，再进入利润来源。首页卡片同步，桌面、移动与打印复验通过。",
+      "open": "产品线利润、现金流与订单滚动、客户留存未单列，无法据集团数据计算客户或产品回报。"
+    },
+    "revenue-profit": {
+      "path": "QXO/reports/revenue-profit.html",
+      "anchors": [
+        "guidance-overview",
+        "annual-revenue",
+        "quarter-revenue",
+        "income-flow",
+        "financials",
+        "source-version-note",
+        "profit-bridge"
+      ],
+      "verified": "年度与季度营收覆盖脚本无缺项。并表贡献与既有口径收入变化可复算。核对毛利与经营利润的费用桥、普通股应占亏损与股数，概览金额和EPS各标单位。",
+      "open": "2025Q3税务事项细分与跨版本净利息、所得税差异未能完整归因。跨并表的历史比较未据此正常化。"
+    },
+    "cash-capital": {
+      "path": "QXO/reports/cash-capital.html",
+      "anchors": [
+        "cash-full-flow",
+        "cash-reconciliation",
+        "cash-deficit-bridge",
+        "annual-cash-flow",
+        "quarter-cash-flow",
+        "cumulative-cash-flow",
+        "ttm-cash-flow",
+        "cash-2025"
+      ],
+      "verified": "三年四季的CFO、实际现金CapEx与FCF均从披露逐项对回，另列累计和TTM。2026年前九月及FY2025现金桥、融资流入、优先股现金分配和对价中非现金发股已分开。",
+      "open": "缺标的独立现金、维持投入及营运资金，集团现金桥无法验证单笔整合回报。"
+    },
+    "governance": {
+      "path": "QXO/reports/governance.html",
+      "anchors": [
+        "transaction-bridge",
+        "deal-return",
+        "governance"
+      ],
+      "verified": "核对2024注资、投票权、后续募资、三笔并购会计对价及资金来源。核对当前激励、相关事项与最新财务主管交接公告。",
+      "open": "89.7%为2024记录日投票权，35.8%为2026年3月披露的实益持股；据此无法推算今天的准确投票权。三交易尚缺可归属普通股的完整回报资料。"
+    },
+    "valuation": {
+      "path": "QXO/reports/valuation.html",
+      "anchors": [
+        "valuation",
+        "risks",
+        "tracking",
+        "gaps"
+      ],
+      "verified": "已检查 implied-valuation 的正利润及PE适用性，采用企业现金流与终值按10%条件折现的替代模型。核对11月19日收盘价、当前索取权求解、按期兑现/两年延迟/倍数压缩及跟踪指标。",
+      "open": "以债务本金及融资租赁计算净债务，资本工具以条款和内在价值近似。分期优先股分配、转股路径和权证时间价值未完整定价，不能精确估算普通股价值。"
+    }
+  },
+  "migration_review": {
+    "old_revision": "79466e9",
+    "all_old_anchors_preserved": 51,
+    "anchor_mapping": {
+      "guidance-overview": "reports/revenue-profit.html#guidance-overview",
+      "income-flow": "reports/revenue-profit.html#income-flow",
+      "profit-bridge": "reports/revenue-profit.html#profit-bridge",
+      "cash-full-flow": "reports/cash-capital.html#cash-full-flow",
+      "cash-deficit-bridge": "reports/cash-capital.html#cash-deficit-bridge",
+      "industry": "reports/industry-position.html#industry",
+      "customers": "reports/business-model.html#customers",
+      "governance": "reports/governance.html#governance",
+      "valuation": "reports/valuation.html#valuation"
+    },
+    "notes": "来源编号及旧验收作为历史记录。HTML主入口继续在整页索引；旧Markdown入口未接入HTML。"
+  },
+  "figure_review": {
+    "revenue_sankey": "2026Q3产品收入汇总4,895百万美元并转为销售成本和毛利；毛利到费用和经营利润同源勾稽，不按产品分配集团费用。正的经营利润为2百万美元，保持真实带宽。后段从经营利润到净亏损含负值，改用瀑布图，并在正文给出原因和桑基图入口。",
+    "cash_sankey": "2026年前九月来源与用途均为12,129百万美元，含受限现金。净经营流出在用途侧。局部CFO转FCF再扣优先分配为负现金瀑布，注明为何应保留正负与中间余额并链接完整流向。",
+    "technical": "桌面1440px、移动390px与打印CSS均离线检查，核六卡键盘顺序、局部横向滚动和桑基标签。浏览器生成A4打印稿用于复核，无外部依赖。",
+    "browser": {
+      "home": {
+        "desktop": {
+          "width": 1425,
+          "scrollWidth": 1425,
+          "heading": "QXO 公司研究",
+          "cards": [
+            "reports/industry-position.html",
+            "reports/business-model.html",
+            "reports/revenue-profit.html",
+            "reports/cash-capital.html",
+            "reports/governance.html",
+            "reports/valuation.html"
+          ],
+          "keyboard": [
+            "reports/industry-position.html",
+            "reports/business-model.html",
+            "reports/revenue-profit.html",
+            "reports/cash-capital.html",
+            "reports/governance.html",
+            "reports/valuation.html"
+          ],
+          "flows": []
+        },
+        "mobile": {
+          "width": 375,
+          "scrollWidth": 375,
+          "heading": "QXO 公司研究",
+          "cards": [
+            "reports/industry-position.html",
+            "reports/business-model.html",
+            "reports/revenue-profit.html",
+            "reports/cash-capital.html",
+            "reports/governance.html",
+            "reports/valuation.html"
+          ],
+          "flows": []
+        },
+        "printPreview": {
+          "width": 779,
+          "scrollWidth": 779,
+          "heading": "QXO 公司研究",
+          "cards": [
+            "reports/industry-position.html",
+            "reports/business-model.html",
+            "reports/revenue-profit.html",
+            "reports/cash-capital.html",
+            "reports/governance.html",
+            "reports/valuation.html"
+          ],
+          "flows": []
+        },
+        "print_pdf_page_count": 3,
+        "html_sha256": "a374c099219e91131af9e3c9808b7aecfaf43baf4e01577d8c4a3796ac06b10d"
+      },
+      "industry-position": {
+        "desktop": {
+          "width": 1425,
+          "scrollWidth": 1425,
+          "heading": "QXO｜行业与竞争",
+          "cards": [],
+          "flows": []
+        },
+        "mobile": {
+          "width": 375,
+          "scrollWidth": 375,
+          "heading": "QXO｜行业与竞争",
+          "cards": [],
+          "flows": []
+        },
+        "printPreview": {
+          "width": 779,
+          "scrollWidth": 779,
+          "heading": "QXO｜行业与竞争",
+          "cards": [],
+          "flows": []
+        },
+        "print_pdf_page_count": 3,
+        "html_sha256": "a735292a9cce765bd3422364f49c35bd5dd58d518a15eea6ee4d882a815a1379"
+      },
+      "business-model": {
+        "desktop": {
+          "width": 1425,
+          "scrollWidth": 1425,
+          "heading": "QXO｜业务模式与客户",
+          "cards": [],
+          "flows": []
+        },
+        "mobile": {
+          "width": 375,
+          "scrollWidth": 375,
+          "heading": "QXO｜业务模式与客户",
+          "cards": [],
+          "flows": []
+        },
+        "printPreview": {
+          "width": 779,
+          "scrollWidth": 779,
+          "heading": "QXO｜业务模式与客户",
+          "cards": [],
+          "flows": []
+        },
+        "print_pdf_page_count": 3,
+        "html_sha256": "bfdb56fa5442dfd6591886648f3223ef2fa05f70df05c2161efab12182bfc5e9"
+      },
+      "revenue-profit": {
+        "desktop": {
+          "width": 1425,
+          "scrollWidth": 1425,
+          "heading": "QXO｜营收与盈利质量",
+          "cards": [],
+          "flows": [
+            {
+              "flow": "income",
+              "labelOverflow": []
+            }
+          ]
+        },
+        "mobile": {
+          "width": 375,
+          "scrollWidth": 375,
+          "heading": "QXO｜营收与盈利质量",
+          "cards": [],
+          "flows": [
+            {
+              "flow": "income",
+              "labelOverflow": []
+            }
+          ]
+        },
+        "printPreview": {
+          "width": 779,
+          "scrollWidth": 779,
+          "heading": "QXO｜营收与盈利质量",
+          "cards": [],
+          "flows": [
+            {
+              "flow": "income",
+              "labelOverflow": []
+            }
+          ]
+        },
+        "print_pdf_page_count": 7,
+        "html_sha256": "8d997d69e2a73d5b85c2cca8adfaaaa55759069aa1c324e9180e07475499ed3a"
+      },
+      "cash-capital": {
+        "desktop": {
+          "width": 1425,
+          "scrollWidth": 1425,
+          "heading": "QXO｜现金、融资与资本配置",
+          "cards": [],
+          "flows": [
+            {
+              "flow": "cash",
+              "labelOverflow": []
+            }
+          ]
+        },
+        "mobile": {
+          "width": 375,
+          "scrollWidth": 375,
+          "heading": "QXO｜现金、融资与资本配置",
+          "cards": [],
+          "flows": [
+            {
+              "flow": "cash",
+              "labelOverflow": []
+            }
+          ]
+        },
+        "printPreview": {
+          "width": 779,
+          "scrollWidth": 779,
+          "heading": "QXO｜现金、融资与资本配置",
+          "cards": [],
+          "flows": [
+            {
+              "flow": "cash",
+              "labelOverflow": []
+            }
+          ]
+        },
+        "print_pdf_page_count": 6,
+        "html_sha256": "3438825e202040b433a9d8e97cbc0315804612b8481ac1975cb38fb91270cf14"
+      },
+      "governance": {
+        "desktop": {
+          "width": 1425,
+          "scrollWidth": 1425,
+          "heading": "QXO｜主体沿革与治理",
+          "cards": [],
+          "flows": []
+        },
+        "mobile": {
+          "width": 375,
+          "scrollWidth": 375,
+          "heading": "QXO｜主体沿革与治理",
+          "cards": [],
+          "flows": []
+        },
+        "printPreview": {
+          "width": 779,
+          "scrollWidth": 779,
+          "heading": "QXO｜主体沿革与治理",
+          "cards": [],
+          "flows": []
+        },
+        "print_pdf_page_count": 3,
+        "html_sha256": "b7571d4db9f3c91214a8534d3b5011616dcb8ff4c3411de17e8f79ca3d8cf53b"
+      },
+      "valuation": {
+        "desktop": {
+          "width": 1425,
+          "scrollWidth": 1425,
+          "heading": "QXO｜估值与反证",
+          "cards": [],
+          "flows": []
+        },
+        "mobile": {
+          "width": 375,
+          "scrollWidth": 375,
+          "heading": "QXO｜估值与反证",
+          "cards": [],
+          "flows": []
+        },
+        "printPreview": {
+          "width": 779,
+          "scrollWidth": 779,
+          "heading": "QXO｜估值与反证",
+          "cards": [],
+          "flows": []
+        },
+        "print_pdf_page_count": 5,
+        "html_sha256": "b2fa46cc097d6d5cb09bfec24df2e40aba6fe5e2578374066303632ee4520767"
+      }
+    }
+  },
+  "evidence_files": {
+    "revenue_coverage": "revenue-coverage-2026-11-20.json",
+    "cash_skill_input": "cash-input-2026-11-20.json",
+    "cash_skill_result": "cash-check-2026-11-20.json",
+    "valuation_model": "valuation-2026-11-19.json",
+    "arithmetic_sources_and_local_links": "verification.json",
+    "primary_filings": "../QXO.html#src-1"
+  },
+  "mechanical_checks": {
+    "arithmetic_and_local_structure": 281,
+    "files_indexed_without_errors": 38,
+    "known_partial_status_kept": true
+  },
+  "industry_position_follow_up": {
+    "date": "2026-11-20",
+    "scope": "公司行业模块开头、首页卡片与核验记录、共享行业竞争页。核对产业链角色、四项细分排名、份额及直接竞争对手。",
+    "company_ranks": {
+      "source": "https://www.sec.gov/Archives/edgar/data/1236275/000162828026073568/qxo-20260930.htm",
+      "evidence": "公司2026Q3 10-Q，MD&A Overview，北美地区。",
+      "ranks": {
+        "屋面材料分销": "第二",
+        "防水材料分销": "第一",
+        "木材与建材分销": "上市公司中第二",
+        "保温材料分销与安装": "第一"
+      }
+    },
+    "beacon_fy2024_us_canada_roofing": {
+      "source": "https://www.sec.gov/Archives/edgar/data/1124941/000112494125000021/becn-20241231.htm",
+      "published": "2025-02-27",
+      "locator": "Item 1 行业规模及竞争、Item 7 分产品销售、财报附注4地区与产品。",
+      "units": "百万美元，百分比单独列示",
+      "residential_sales": 4833.5,
+      "nonresidential_sales": 2674.1,
+      "roofing_sales": 7507.6,
+      "complementary_sales_excluded": 2255.6,
+      "market_floor_as_estimated_by_management": 35000,
+      "ratio_at_market_floor_pct": 21.450285714285716,
+      "management_estimate_top_three_combined_pct_approx": 70,
+      "limit": "350亿是管理层估计所述水平的下限，复算随真实市场规模变化；当前QXO份额和各对手份额均无法按此推算。"
+    },
+    "qxo_roofing_q3_revenue_change_pct": -4.314477468839885,
+    "visual": "离线核对三页桌面、移动及打印样式和A4输出，窄屏表格与份额说明可见。",
+    "shared_competition_browser": {
+      "desktop": {
+        "width": 1425,
+        "scrollWidth": 1425,
+        "heading": "竞争格局与可比公司",
+        "cards": [],
+        "flows": []
+      },
+      "mobile": {
+        "width": 375,
+        "scrollWidth": 375,
+        "heading": "竞争格局与可比公司",
+        "cards": [],
+        "flows": []
+      },
+      "printPreview": {
+        "width": 779,
+        "scrollWidth": 779,
+        "heading": "竞争格局与可比公司",
+        "cards": [],
+        "flows": []
+      },
+      "print_pdf_page_count": 2,
+      "html_sha256": "308e4780fad03d6fd59fb8b0e81b86dd6da8de7fd6b6efc514a735b62b601983"
+    },
+    "index_errors": [],
+    "outstanding": "当前的独立、同地区同产品份额、地区净报价与对手分品类规模仍缺。收入增长或下滑不足以独立推出份额变化。"
+  }
+}

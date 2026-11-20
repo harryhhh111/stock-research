@@ -81,29 +81,13 @@
       "content_status": "partial",
       "document_updated_at": "2026-11-20",
       "financial_as_of": "2026-09-30",
-      "market_as_of": "2026-11-16",
+      "market_as_of": "2026-11-19",
       "layout": "legacy",
       "assets": [],
       "unpublished_links": {
-        "factcheck/peer_snapshot.json": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
-        "factcheck/valuation.py": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
-        "factcheck/valuation_results.json": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
-        "factcheck/sop_audit.json": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
-        "factcheck/financials.json": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
-        "factcheck/verify.py": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
+        "factcheck/modular-review-2026-11-20.json": "本地核验证据，网站附件访问范围尚未审核。",
         "factcheck/verification.json": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
-        "factcheck/visual_checks.json": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
-        "factcheck/visual/income-flow.png": "本地验收产物，可运行渲染脚本重新生成。",
-        "factcheck/visual/cash-flow.png": "本地验收产物，可运行渲染脚本重新生成。",
-        "factcheck/visual/mobile-chart.png": "本地验收产物，可运行渲染脚本重新生成。",
-        "factcheck/visual/print.pdf": "本地验收产物，可运行渲染脚本重新生成。",
-        "术语.md": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
-        "../术语.md": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
-        "factcheck/fetch_sources.py": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
-        "factcheck/extract_facts.py": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
-        "factcheck/build_data.py": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
-        "factcheck/build_report.py": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
-        "factcheck/data/sources.json": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
+        "factcheck/sop_audit.json": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
         "factcheck/data/2024FY.html": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
         "factcheck/data/2025FY.html": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
         "factcheck/data/2026Q1.html": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
@@ -124,7 +108,7 @@
         "factcheck/data/BLDR-2026Q3.html": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。",
         "factcheck/data/IBP-2026Q3-release.html": "网站附件发布范围尚未审核；本轮仅登记报告，不自动公开证据。"
       },
-      "content_sha256": "db13b0716b4720402055aef6701fa405e23e72b71ed1d972641b600add23a55a"
+      "content_sha256": "a374c099219e91131af9e3c9808b7aecfaf43baf4e01577d8c4a3796ac06b10d"
     },
     {
       "report_id": "ai-berkshire-msft-experiment",
@@ -555,7 +539,7 @@
       "assets": [],
       "unpublished_links": {},
       "layout": "standard",
-      "content_sha256": "0a5dad6b9774245787f3a1c6e9555fe8e0a919c76b8f71b33932354df333c473"
+      "content_sha256": "df8e2584c6f1b93bfa6cf2fd0d925a10d899e642025996f9ae4c758339703a94"
     },
     {
       "report_id": "industry-us-building-products-distribution-value-chain",
@@ -606,7 +590,118 @@
       "assets": [],
       "unpublished_links": {},
       "layout": "standard",
-      "content_sha256": "50a3165755884269ace8e0d8c0c20d8f3ac184d40cfdb0b77add609d49d849bc"
+      "content_sha256": "308e4780fad03d6fd59fb8b0e81b86dd6da8de7fd6b6efc514a735b62b601983"
+    },
+    {
+      "report_id": "qxo-industry-position",
+      "entity_id": "company:qxo",
+      "project_dir": "QXO",
+      "title": "QXO｜行业与竞争",
+      "entry_path": "QXO/reports/industry-position.html",
+      "report_type": "topic",
+      "status": "ready",
+      "content_status": "partial",
+      "document_updated_at": "2026-11-20",
+      "financial_as_of": "2026-09-30",
+      "market_as_of": "2026-11-16",
+      "assets": [],
+      "unpublished_links": {
+        "../factcheck/peer_snapshot.json": "本地核验证据，网站附件访问范围尚未审核。"
+      },
+      "layout": "standard",
+      "content_sha256": "a735292a9cce765bd3422364f49c35bd5dd58d518a15eea6ee4d882a815a1379"
+    },
+    {
+      "report_id": "qxo-business-model",
+      "entity_id": "company:qxo",
+      "project_dir": "QXO",
+      "title": "QXO｜业务模式与客户",
+      "entry_path": "QXO/reports/business-model.html",
+      "report_type": "topic",
+      "status": "ready",
+      "content_status": "partial",
+      "document_updated_at": "2026-11-20",
+      "financial_as_of": "2026-09-30",
+      "market_as_of": null,
+      "assets": [],
+      "unpublished_links": {},
+      "layout": "standard",
+      "content_sha256": "bfdb56fa5442dfd6591886648f3223ef2fa05f70df05c2161efab12182bfc5e9"
+    },
+    {
+      "report_id": "qxo-revenue-profit",
+      "entity_id": "company:qxo",
+      "project_dir": "QXO",
+      "title": "QXO｜营收与盈利质量",
+      "entry_path": "QXO/reports/revenue-profit.html",
+      "report_type": "topic",
+      "status": "ready",
+      "content_status": "partial",
+      "document_updated_at": "2026-11-20",
+      "financial_as_of": "2026-09-30",
+      "market_as_of": null,
+      "assets": [],
+      "unpublished_links": {
+        "../factcheck/revenue-coverage-2026-11-20.json": "本地核验证据，网站附件访问范围尚未审核。"
+      },
+      "layout": "standard",
+      "content_sha256": "8d997d69e2a73d5b85c2cca8adfaaaa55759069aa1c324e9180e07475499ed3a"
+    },
+    {
+      "report_id": "qxo-cash-capital",
+      "entity_id": "company:qxo",
+      "project_dir": "QXO",
+      "title": "QXO｜现金、融资与资本配置",
+      "entry_path": "QXO/reports/cash-capital.html",
+      "report_type": "topic",
+      "status": "ready",
+      "content_status": "partial",
+      "document_updated_at": "2026-11-20",
+      "financial_as_of": "2026-09-30",
+      "market_as_of": null,
+      "assets": [],
+      "unpublished_links": {
+        "../factcheck/cash-check-2026-11-20.json": "本地核验证据，网站附件访问范围尚未审核。"
+      },
+      "layout": "standard",
+      "content_sha256": "3438825e202040b433a9d8e97cbc0315804612b8481ac1975cb38fb91270cf14"
+    },
+    {
+      "report_id": "qxo-governance",
+      "entity_id": "company:qxo",
+      "project_dir": "QXO",
+      "title": "QXO｜主体沿革与治理",
+      "entry_path": "QXO/reports/governance.html",
+      "report_type": "topic",
+      "status": "ready",
+      "content_status": "partial",
+      "document_updated_at": "2026-11-20",
+      "financial_as_of": "2026-09-30",
+      "market_as_of": null,
+      "assets": [],
+      "unpublished_links": {},
+      "layout": "standard",
+      "content_sha256": "b7571d4db9f3c91214a8534d3b5011616dcb8ff4c3411de17e8f79ca3d8cf53b"
+    },
+    {
+      "report_id": "qxo-valuation",
+      "entity_id": "company:qxo",
+      "project_dir": "QXO",
+      "title": "QXO｜估值与反证",
+      "entry_path": "QXO/reports/valuation.html",
+      "report_type": "topic",
+      "status": "ready",
+      "content_status": "partial",
+      "document_updated_at": "2026-11-20",
+      "financial_as_of": "2026-09-30",
+      "market_as_of": "2026-11-19",
+      "assets": [],
+      "unpublished_links": {
+        "../factcheck/valuation.py": "本地核验证据，网站附件访问范围尚未审核。",
+        "../factcheck/valuation-2026-11-19.json": "本地核验证据，网站附件访问范围尚未审核。"
+      },
+      "layout": "standard",
+      "content_sha256": "b2fa46cc097d6d5cb09bfec24df2e40aba6fe5e2578374066303632ee4520767"
     }
   ],
   "redirects": []

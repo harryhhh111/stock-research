@@ -34,7 +34,9 @@
     "beacon_FY2024_dso_days": 43.7,
     "inventory_10_day_case_musd": 198.9,
     "us_housing_starts_2026_10_mom_pct": 9.9,
-    "us_housing_permits_2026_10_mom_pct": -7.4
+    "us_housing_permits_2026_10_mom_pct": -7.4,
+    "beacon_fy2024_us_canada_roofing_sales_musd": 7507.6,
+    "beacon_fy2024_roofing_share_on_management_market_floor_pct": 21.450285714285716
   },
   "index": {
     "reports": 32,
@@ -172,5 +174,36 @@
     "区域屋面分销同口径份额和成交净价",
     "ABC和SRS屋面独立利润及现金流",
     "QXO网点单位配送成本、返利回款、同口径周转及收购回报"
-  ]
+  ],
+  "roofing_concentration_follow_up": {
+    "date": "2026-11-20",
+    "source": "https://www.sec.gov/Archives/edgar/data/1124941/000112494125000021/becn-20241231.htm",
+    "locator": "Item 1 行业规模和集中度；Item 7 及附注4 屋面与配套建材的美加合计销售。",
+    "valuation_of_evidence": "350亿是管理层估计所述水平的下限，复算随真实市场规模变化；当前QXO份额和各对手份额均无法按此推算。",
+    "offline_browser": {
+      "desktop": {
+        "width": 1425,
+        "scrollWidth": 1425,
+        "heading": "竞争格局与可比公司",
+        "cards": [],
+        "flows": []
+      },
+      "mobile": {
+        "width": 375,
+        "scrollWidth": 375,
+        "heading": "竞争格局与可比公司",
+        "cards": [],
+        "flows": []
+      },
+      "printPreview": {
+        "width": 779,
+        "scrollWidth": 779,
+        "heading": "竞争格局与可比公司",
+        "cards": [],
+        "flows": []
+      },
+      "print_pdf_page_count": 2,
+      "html_sha256": "308e4780fad03d6fd59fb8b0e81b86dd6da8de7fd6b6efc514a735b62b601983"
+    }
+  }
 }

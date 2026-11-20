@@ -1,48 +1,94 @@
-// Uses the local Chrome executable and built-in Node CDP/WebSocket; no browser package or CDN.
 import fs from 'node:fs/promises';
+import {spawn} from 'node:child_process';
+import {pathToFileURL} from 'node:url';
 import path from 'node:path';
 import os from 'node:os';
-import {fileURLToPath,pathToFileURL} from 'node:url';
-import {spawn} from 'node:child_process';
-const here=path.dirname(fileURLToPath(import.meta.url));
-const root=path.dirname(here);const out=path.join(here,'visual');await fs.mkdir(out,{recursive:true});
-const profile=await fs.mkdtemp(path.join(os.tmpdir(),'qxo-render-'));
-const executable='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
-const proc=spawn(executable,['--headless=new','--remote-debugging-port=0',`--user-data-dir=${profile}`,'--no-first-run','--disable-background-networking','--disable-extensions','about:blank'],{stdio:'ignore'});
+import {fileURLToPath} from 'node:url';
+
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const output=process.argv[2] ? path.resolve(process.argv[2]) : await fs.mkdtemp(path.join(os.tmpdir(),'qxo-visual-'));
+await fs.mkdir(output,{recursive:true});
+
+const profile=await fs.mkdtemp(path.join(os.tmpdir(),'qxo-profile-'));
+const proc=spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',['--headless=new','--remote-debugging-port=0','--disable-background-networking','--disable-extensions','--no-first-run',`--user-data-dir=${profile}`,'about:blank'],{stdio:'ignore'});
 let ws;
-try{
- let port;
- for(let i=0;i<100;i++){
-  try{port=(await fs.readFile(path.join(profile,'DevToolsActivePort'),'utf8')).split('\n')[0];break;}catch{}await new Promise(r=>setTimeout(r,100));
- }
- if(!port)throw Error('Chrome did not start');
- const list=await (await fetch(`http://127.0.0.1:${port}/json/list`)).json();
- ws=new WebSocket(list.find(x=>x.type==='page').webSocketDebuggerUrl);
- await new Promise((resolve,reject)=>{ws.addEventListener('open',resolve,{once:true});ws.addEventListener('error',reject,{once:true});});
- let next=0;const pending=new Map();ws.addEventListener('message',ev=>{const m=JSON.parse(ev.data);if(m.id&&pending.has(m.id)){const p=pending.get(m.id);pending.delete(m.id);m.error?p.reject(m.error):p.resolve(m.result);}});
- const cmd=(method,params={})=>new Promise((resolve,reject)=>{const id=++next;pending.set(id,{resolve,reject});ws.send(JSON.stringify({id,method,params}));});
- await cmd('Page.enable');await cmd('Network.enable');await cmd('Network.emulateNetworkConditions',{offline:true,latency:0,downloadThroughput:0,uploadThroughput:0});
- await cmd('Emulation.setDeviceMetricsOverride',{width:1440,height:1100,deviceScaleFactor:1,mobile:false});
- await cmd('Page.navigate',{url:pathToFileURL(path.join(root,'QXO.html')).href});await new Promise(r=>setTimeout(r,1000));
- const evaluate=async expression=>(await cmd('Runtime.evaluate',{expression,returnByValue:true})).result.value;
- await cmd('Runtime.evaluate',{expression:'document.documentElement.style.scrollBehavior="auto";scrollTo(0,0)'});
- const metrics={desktop:await evaluate('({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,height:document.documentElement.scrollHeight,charts:document.querySelectorAll("svg").length})')};
- async function shot(name){let r=await cmd('Page.captureScreenshot',{format:'png',captureBeyondViewport:false});await fs.writeFile(path.join(out,name),Buffer.from(r.data,'base64'));}
- await shot('desktop.png');
- await cmd('Runtime.evaluate',{expression:'document.getElementById("guidance-overview").scrollIntoView()'});await shot('unit-table-desktop.png');
- for(const [id,name] of [['income-flow','income-flow'],['cash-full-flow','cash-flow']]){
-  await cmd('Runtime.evaluate',{expression:`document.getElementById('${id}').scrollIntoView()`});await shot(`${name}.png`);
- }
- metrics.sankeyLabels=await evaluate(`Array.from(document.querySelectorAll('svg[data-flow]')).map(svg=>({flow:svg.dataset.flow,overflow:Array.from(svg.querySelectorAll('text')).map(t=>({text:t.textContent,b:t.getBBox()})).filter(x=>x.b.x<0||x.b.y<0||x.b.x+x.b.width>svg.viewBox.baseVal.width||x.b.y+x.b.height>svg.viewBox.baseVal.height).map(x=>x.text)}))`);
- await cmd('Runtime.evaluate',{expression:'document.getElementById("valuation").scrollIntoView()'});await shot('valuation.png');
- await cmd('Emulation.setDeviceMetricsOverride',{width:390,height:1000,deviceScaleFactor:1,mobile:false});await cmd('Runtime.evaluate',{expression:'scrollTo(0,0)'});await shot('mobile.png');
- await cmd('Runtime.evaluate',{expression:'document.getElementById("guidance-overview").scrollIntoView()'});await shot('unit-table-mobile.png');
- metrics.mobile=await evaluate('({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,height:document.documentElement.scrollHeight})');
- await cmd('Runtime.evaluate',{expression:'document.querySelector(".chart").scrollIntoView()'});await shot('mobile-chart.png');
- await cmd('Runtime.evaluate',{expression:'document.getElementById("cash-full-flow").scrollIntoView()'});await shot('mobile-cash-flow.png');
- await cmd('Emulation.setDeviceMetricsOverride',{width:1440,height:1100,deviceScaleFactor:1,mobile:false});
- await cmd('Emulation.setEmulatedMedia',{media:'print'});
- const pdf=await cmd('Page.printToPDF',{printBackground:true,preferCSSPageSize:true,displayHeaderFooter:false});await fs.writeFile(path.join(out,'print.pdf'),Buffer.from(pdf.data,'base64'));
- metrics.print={pdf:'factcheck/visual/print.pdf',bytes:Buffer.from(pdf.data,'base64').length};
- await fs.writeFile(path.join(here,'visual_checks.json'),JSON.stringify(metrics,null,2));console.log(JSON.stringify(metrics));
-}finally{ws?.close();proc.kill();}
+try {
+  let port;
+  for (let i=0; i<100; i++) {
+    try {port=(await fs.readFile(path.join(profile,'DevToolsActivePort'),'utf8')).split('\n')[0];break;}
+    catch {await new Promise(r=>setTimeout(r,100));}
+  }
+  if (!port) throw Error('Chrome did not start');
+  const tabs=await (await fetch(`http://127.0.0.1:${port}/json/list`)).json();
+  ws=new WebSocket(tabs.find(t=>t.type==='page').webSocketDebuggerUrl);
+  await new Promise((ok,fail)=>{ws.addEventListener('open',ok,{once:true});ws.addEventListener('error',fail,{once:true});});
+  let id=0; const pending=new Map();
+  ws.addEventListener('message',({data})=>{const m=JSON.parse(data);const cb=pending.get(m.id);if(cb){pending.delete(m.id);m.error?cb.fail(m.error):cb.ok(m.result);}});
+  const cmd=(method,params={})=>new Promise((ok,fail)=>{pending.set(++id,{ok,fail});ws.send(JSON.stringify({id,method,params}));});
+  const evalJS=async(expression)=>(await cmd('Runtime.evaluate',{expression,returnByValue:true})).result.value;
+  await cmd('Page.enable');
+  await cmd('Network.enable');
+  await cmd('Network.setBlockedURLs',{urls:['http://*','https://*']});
+  const files={home:'QXO.html'};
+  for (const slug of ['industry-position','business-model','revenue-profit','cash-capital','governance','valuation'])
+    files[slug]='reports/'+slug+'.html';
+  const all={};
+  for (const [name,file] of Object.entries(files)) {
+    const results={};
+    await cmd('Page.navigate',{url:pathToFileURL(path.join(root,file)).href});
+    await new Promise(r=>setTimeout(r,200));
+    for(const [mode,width,height] of [['desktop',1440,1000],['mobile',390,950],['printPreview',794,1123]]) {
+      await cmd('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
+      await cmd('Emulation.setEmulatedMedia',{media: mode==='printPreview'?'print':'screen'});
+      await evalJS('document.documentElement.style.scrollBehavior="auto"; scrollTo(0,0)');
+
+      const m=await evalJS('({width:document.documentElement.clientWidth,scrollWidth:document.documentElement.scrollWidth,heading:document.querySelector("h1").textContent,cards:[...document.querySelectorAll("nav a.card")].map(x=>x.getAttribute("href"))})');
+      if (!m || m.scrollWidth>m.width+1) {
+        const overflowing = await evalJS(`[...document.querySelectorAll('body *')].filter(e=>e.getBoundingClientRect().right>document.documentElement.clientWidth+1 && !e.closest('.table-wrap,.chart')).slice(0,10).map(e=>({tag:e.tagName,cls:e.className,text:e.textContent.slice(0,90),right:e.getBoundingClientRect().right}))`);
+        throw Error(name+' '+mode+' overflow '+JSON.stringify({metrics:m,overflowing}));
+      }
+      if(name==='home'&&mode==='desktop') {
+        const focus=[];
+        for(let i=0;i<6;i++) {
+          await cmd('Input.dispatchKeyEvent',{type:'keyDown',key:'Tab',code:'Tab',windowsVirtualKeyCode:9});
+          await cmd('Input.dispatchKeyEvent',{type:'keyUp',key:'Tab',code:'Tab',windowsVirtualKeyCode:9});
+          focus.push(await evalJS('document.activeElement.getAttribute("href")'));
+        }
+        if (focus.join(',')!==m.cards.join(',')) throw Error('Keyboard card order '+focus.join(','));
+        m.keyboard=focus;
+      }
+      const positions = {
+        'revenue-profit':['income-flow','guidance-overview'],
+        'cash-capital':['cash-full-flow','quarter-cash-flow'],
+        'governance':['transaction-bridge'],
+        'valuation':['valuation']
+      };
+      const capture = async (suffix) => {
+        const shot=await cmd('Page.captureScreenshot',{format:'png',captureBeyondViewport:false});
+        await fs.writeFile(path.join(output,name+'-'+mode+suffix+'.png'),Buffer.from(shot.data,'base64'));
+      };
+      await capture('');
+      for (const anchor of positions[name] || []) {
+        await evalJS(`document.getElementById(${JSON.stringify(anchor)}).scrollIntoView()`);
+        await capture('-'+anchor);
+      }
+      m.flows = await evalJS(`Array.from(document.querySelectorAll('svg[data-flow]')).map(svg=>({
+        flow:svg.dataset.flow,
+        labelOverflow:Array.from(svg.querySelectorAll('text')).filter(t=>{
+          const b=t.getBBox();
+          return b.x<0||b.y<0||b.x+b.width>svg.viewBox.baseVal.width||b.y+b.height>svg.viewBox.baseVal.height;
+        }).map(t=>t.textContent)
+      }))`);
+      if (m.flows.some(flow=>flow.labelOverflow.length)) throw Error(name+' flow label overflow');
+      results[mode]=m;
+    }
+    const print = await cmd('Page.printToPDF',{preferCSSPageSize:true,printBackground:true});
+    await fs.writeFile(path.join(output,name+'-print.pdf'),Buffer.from(print.data,'base64'));
+    all[name]=results;
+  }
+  await fs.writeFile(path.join(output,'browser-check.json'),JSON.stringify(all,null,2)+'\n');
+  console.log('Checked '+Object.keys(all).join(', ')+'. Screenshots and metrics at '+output);
+} finally {
+  ws?.close();
+  proc.kill();
+}

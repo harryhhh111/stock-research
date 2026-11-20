@@ -5,7 +5,7 @@
   "all_passed": true,
   "mechanical_checks_passed": true,
   "content_acceptance_passed": false,
-  "content_acceptance_record": "sop_audit.json",
+  "content_acceptance_record": "modular-review-2026-11-20.json",
   "checks": [
     {
       "check": "2023 gross",
@@ -109,6 +109,13 @@
       "check": "2025Q3 product revenue sum",
       "actual": 2728,
       "expected": 2728.0,
+      "tolerance": 0.11,
+      "passed": true
+    },
+    {
+      "check": "2025Q4 product revenue sum",
+      "actual": 2194.2,
+      "expected": 2194.2,
       "tolerance": 0.11,
       "passed": true
     },
@@ -414,16 +421,58 @@
       "passed": true
     },
     {
-      "check": "current claims reverse price",
-      "actual": 12.009999999999998,
-      "expected": 12.01,
+      "check": "model price matches cash-session close",
+      "actual": 11.02,
+      "expected": 11.02,
       "tolerance": 1e-06,
       "passed": true
     },
     {
+      "check": "current claims reverse price",
+      "actual": 11.02,
+      "expected": 11.02,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "Beacon FY2025 cash bridge",
+      "actual": 2365.4000000000005,
+      "expected": 2365.4,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "Beacon accounting consideration",
+      "actual": 10787.900000000001,
+      "expected": 10787.9,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "Kodiak accounting consideration",
+      "actual": 2241,
+      "expected": 2241,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "TopBuild accounting consideration",
+      "actual": 14674,
+      "expected": 14674,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "TopBuild shares / end-period shares (pct)",
+      "actual": 29.96730140411618,
+      "expected": 30.0,
+      "tolerance": 0.05,
+      "passed": true
+    },
+    {
       "check": "required EBITDA price reconstruction",
-      "actual": 12.009999999999998,
-      "expected": 12.01,
+      "actual": 11.02,
+      "expected": 11.02,
       "tolerance": 1e-06,
       "passed": true
     },
@@ -1415,9 +1464,51 @@
       "passed": true
     },
     {
-      "check": "unique HTML ids",
-      "actual": 51,
-      "expected": 51,
+      "check": "QXO.html unique HTML ids",
+      "actual": 60,
+      "expected": 60,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "business-model.html unique HTML ids",
+      "actual": 4,
+      "expected": 4,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "cash-capital.html unique HTML ids",
+      "actual": 10,
+      "expected": 10,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "governance.html unique HTML ids",
+      "actual": 3,
+      "expected": 3,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "industry-position.html unique HTML ids",
+      "actual": 6,
+      "expected": 6,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "revenue-profit.html unique HTML ids",
+      "actual": 8,
+      "expected": 8,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "valuation.html unique HTML ids",
+      "actual": 4,
+      "expected": 4,
       "tolerance": 1e-06,
       "passed": true
     },
@@ -1779,30 +1870,86 @@
       "passed": true
     },
     {
-      "check": "local links and anchors",
+      "check": "QXO.html no remote scripts or styles",
       "actual": 0,
       "expected": 0,
       "tolerance": 1e-06,
       "passed": true
     },
     {
-      "check": "no remote scripts styles fonts",
+      "check": "business-model.html no remote scripts or styles",
       "actual": 0,
       "expected": 0,
       "tolerance": 1e-06,
       "passed": true
     },
     {
-      "check": "no absolute machine paths",
+      "check": "cash-capital.html no remote scripts or styles",
       "actual": 0,
       "expected": 0,
       "tolerance": 1e-06,
       "passed": true
     },
     {
-      "check": "main nine chapters",
-      "actual": 9,
-      "expected": 9,
+      "check": "governance.html no remote scripts or styles",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "industry-position.html no remote scripts or styles",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "revenue-profit.html no remote scripts or styles",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "valuation.html no remote scripts or styles",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "homepage standard cards",
+      "actual": 1,
+      "expected": 1,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "revenue-profit skill errors",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "revenue-profit skill digest",
+      "actual": 1,
+      "expected": 1,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "cash-capital skill errors",
+      "actual": 0,
+      "expected": 0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "cash-capital skill digest",
+      "actual": 1,
+      "expected": 1,
       "tolerance": 1e-06,
       "passed": true
     },
@@ -1830,6 +1977,7 @@
   ],
   "quarter_coverage": {
     "expected": [
+      "2025Q4",
       "2026Q1",
       "2026Q2",
       "2026Q3"

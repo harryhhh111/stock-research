@@ -1,0 +1,31 @@
+{
+  "report": "QXO/reports/revenue-profit.html",
+  "sha256": "8d997d69e2a73d5b85c2cca8adfaaaa55759069aa1c324e9180e07475499ed3a",
+  "expected": {
+    "annual-revenue": [
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "quarter-revenue": [
+      "2025Q4",
+      "2026Q1",
+      "2026Q2",
+      "2026Q3"
+    ]
+  },
+  "actual": {
+    "annual-revenue": [
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "quarter-revenue": [
+      "2025Q4",
+      "2026Q1",
+      "2026Q2",
+      "2026Q3"
+    ]
+  },
+  "errors": []
+}

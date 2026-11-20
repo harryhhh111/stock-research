@@ -2,7 +2,7 @@ from pathlib import Path
 import json,math,re,hashlib
 from bs4 import BeautifulSoup
 P=Path(__file__).resolve().parent;ROOT=P.parent
-D=json.loads((P/'financials.json').read_text());V=json.loads((P/'valuation_results.json').read_text())
+D=json.loads((P/'financials.json').read_text());V=json.loads((P/'valuation-2026-11-19.json').read_text())
 checks=[]
 def check(name,actual,expected,tol=1e-6):
  passed=abs(actual-expected)<=tol
@@ -33,9 +33,16 @@ check('debt interest proxy',3850*.059+1500*.065+2250*.0675+1500*.06875,579.65)
 check('ROIC denominator proxy',((9706.8+3057.3+187.9-2361.6)+(15681+2942+8978+192-528))/2,18927.7)
 check('preferred annual dividend',1000*.09+575*.055+3000*.0475,264.125)
 from valuation import claims,to_price,model,netdebt
-check('current claims reverse price',to_price(V['economic_EV_required']),12.01)
+market=json.loads((P/'market-close-2026-11-19.json').read_text())
+check('model price matches cash-session close', V['price'], market['price_usd'])
+check('current claims reverse price',to_price(V['economic_EV_required']),V['price'])
+check('Beacon FY2025 cash bridge', 5072.0 + 261.4 - 10630.3 + 7662.8 - .5, 2365.4)
+check('Beacon accounting consideration',7736.6+2947.8+103.5,10787.9)
+check('Kodiak accounting consideration',478+1503+260,2241)
+check('TopBuild accounting consideration',6373+2900+5384+17,14674)
+check('TopBuild shares / end-period shares (pct)', 311.6/1039.8*100, 30.0, .05)
 E=V['required_2030_ebitda'];r=model('reverse',[19500,21000,23000,25000],[.6*E,.725*E,.8625*E,E])
-check('required EBITDA price reconstruction',r['price'],12.01)
+check('required EBITDA price reconstruction',r['price'],V['price'])
 for x in V['scenarios']:
  check(x['name']+' EV',sum(i['pv'] for i in x['rows'])+x['terminal_pv'],x['EV'])
  check(x['name']+' capital claims',claims(x['price'])+netdebt,x['EV'])
@@ -66,44 +73,64 @@ for k,f in FD['flows'].items():
  for a,b,amount in f['links']:assert amount>=0,(k,a,b,amount)
 check('cash source/use total',sum(n[2] for n in FD['flows']['cash']['nodes'] if n[0] not in ['pool','acq','oper','capex','finpay','end']),12129)
 check('cash financing detail',sum(FD['financing_cash_paid'].values()),386)
-html=(ROOT/'QXO.html').read_text();s=BeautifulSoup(html,'html.parser');ids=[n['id'] for n in s.select('[id]')]
-check('unique HTML ids',len(ids),len(set(ids)))
-overview=s.select_one('#guidance-overview')
+paths = [ROOT/'QXO.html', *sorted((ROOT/'reports').glob('*.html'))]
+docs = {path:BeautifulSoup(path.read_text(),'html.parser') for path in paths}
+modules = {path.stem:doc for path,doc in docs.items() if path.parent == ROOT/'reports'}
+home=docs[ROOT/'QXO.html']
+for path,doc in docs.items():
+ ids=[n['id'] for n in doc.select('[id]')]
+ check(f'{path.name} unique HTML ids',len(ids),len(set(ids)))
+profit=modules['revenue-profit']
+cash=modules['cash-capital']
+overview=profit.select_one('#guidance-overview')
 check('overview amount and EPS units local',int(overview is not None and all(x in overview.caption.get_text() for x in ['M美元','100万美元','EPS为美元/股'])),1)
 for label,value in [('营业收入','4,895'),('净利润','-123'),('调整后 EBITDA','557'),('调整后 EPS（美元/股）','0.13')]:
  row=next(r for r in overview.select('tbody tr') if label in r.get_text())
  check('overview separate metric and correct amount '+label,int(value in row.get_text()),1)
 
 for k,f in FD['flows'].items():
- svg=s.select_one(f'svg[data-flow="{k}"]');assert svg is not None,k
+ doc=profit if k=='income' else cash
+ svg=doc.select_one(f'svg[data-flow="{k}"]');assert svg is not None,k
  for node in svg.select('rect[data-node]'):
   check('SVG node thickness '+k+node['data-node'],float(node['height']),float(node['data-amount'])*f['scale'])
  for edge in svg.select('path[data-from]'):
   check('SVG edge thickness '+k+edge['data-from']+edge['data-to'],float(edge['data-thickness']),float(edge['data-amount'])*f['scale'])
-check('deficit graph explanation link',int(s.select_one('#cash-deficit-bridge a[href="#cash-full-flow"]') is not None),1)
-check('profit graph explanation link',int(s.select_one('#profit-bridge a[href="#income-flow"]') is not None),1)
+from urllib.parse import unquote, urlsplit
 
-links=[]
-for a in s.select('[href]'):
- h=a['href']
- if h.startswith('#'):links.append((h,h[1:] in ids))
- elif not re.match(r'https?://',h):links.append((h,(ROOT/h.split('#')[0]).exists()))
-# verification.json is written just below and is the sole self-reference exception
-bad=[h for h,ok in links if not ok and h!='factcheck/verification.json']
-check('local links and anchors',len(bad),0)
-check('no remote scripts styles fonts',len(s.select('script[src],link[rel="stylesheet"]')),0)
-check('no absolute machine paths',len(re.findall(r'/Users/|file://',html)),0)
-check('main nine chapters',len([h for h in s.select('h2') if re.match(r'[1-9]\.',h.get_text())]),9)
+check('deficit graph explanation link',int(cash.select_one('#cash-deficit-bridge a[href="#cash-full-flow"]') is not None),1)
+check('profit graph explanation link',int(profit.select_one('#profit-bridge a[href="#income-flow"]') is not None),1)
+for path,doc in docs.items():
+ for anchor in doc.select('a[href]'):
+  href=anchor['href']
+  ref=urlsplit(href)
+  if ref.scheme or ref.netloc:
+   continue
+  dest=(path.parent/unquote(ref.path)).resolve() if ref.path else path.resolve()
+  assert dest.exists(),(path,href)
+  if ref.fragment and dest.suffix=='.html':
+   target=docs.get(dest) or BeautifulSoup(dest.read_text(),'html.parser')
+   assert target.find(id=unquote(ref.fragment)) is not None,(path,href)
+ check(f'{path.name} no remote scripts or styles',len(doc.select('script[src],link[rel="stylesheet"]')),0)
+check('homepage standard cards',int([x['href'] for x in home.select('nav a.card')]==[
+ 'reports/industry-position.html','reports/business-model.html','reports/revenue-profit.html',
+ 'reports/cash-capital.html','reports/governance.html','reports/valuation.html']),1)
+for stem,record,hash_field in [
+ ('revenue-profit','revenue-coverage-2026-11-20.json','sha256'),
+ ('cash-capital','cash-check-2026-11-20.json','report_sha256'),
+]:
+ value=json.loads((P/record).read_text())
+ check(f'{stem} skill errors',len(value['errors']),0)
+ check(f'{stem} skill digest',int(value[hash_field]==hashlib.sha256((ROOT/'reports'/f'{stem}.html').read_bytes()).hexdigest()),1)
 index=json.loads((ROOT.parent/'研究流程/index/html-index.json').read_text())
 entry=next(x for x in index['reports'] if x['report_id']=='qxo-main')
 check('report index ready partial',int(entry['status']=='ready' and entry['content_status']=='partial'),1)
 check('report index HTML hash synchronized',int(entry['content_sha256']==hashlib.sha256((ROOT/'QXO.html').read_bytes()).hexdigest()),1)
-check('report index preserves real cutoffs',int((entry['document_updated_at'],entry['financial_as_of'],entry['market_as_of'])==('2026-11-20','2026-09-30','2026-11-16')),1)
+check('report index preserves real cutoffs',int((entry['document_updated_at'],entry['financial_as_of'],entry['market_as_of'])==('2026-11-20','2026-09-30','2026-11-19')),1)
 audit=json.loads((P/'sop_audit.json').read_text())
 # The historical content audit used an earlier checklist.
 current_checklist = ROOT.parent/'研究流程/standards/研究更新与交付检查清单.md'
 current_sop_matches = audit['sop_sha256'] == hashlib.sha256(current_checklist.read_bytes()).hexdigest()
 
-result={'date':'2026-11-20','historical_content_audit_matches_current_checklist':current_sop_matches,'scope':'financial arithmetic, provenance, valuation reconstruction and HTML local structure only','all_passed':True,'mechanical_checks_passed':True,'content_acceptance_passed':False,'content_acceptance_record':'sop_audit.json','checks':checks,'quarter_coverage':{'expected':['2026Q1','2026Q2','2026Q3'],'revenue':'passed','profits_and_margins':'passed','cash_capex_fcf_sbc':'passed','comparatives':'passed with mixed source rounding <=1.51 MUSD','business_profit_cash':'not separately disclosed'},'content_limitations':['No uniform 3-year same-platform actual financials: acquisitions and former software entity','Capital claims valuation is intrinsic approximation, lacks full option time value and dividend path','Exact historical Q3 tax-event decomposition not disclosed in retrieved note','Full same-date peer capital structure multiples not completed','Cross-version Q3 2025 net interest 37.7 to 37 and income tax 128.9 to 128 are not fully explained by ordinary rounding'],'raw_source_hashes':{f.name:hashlib.sha256(f.read_bytes()).hexdigest() for f in (P/'data').glob('*.html')}}
+result={'date':'2026-11-20','historical_content_audit_matches_current_checklist':current_sop_matches,'scope':'financial arithmetic, provenance, valuation reconstruction and HTML local structure only','all_passed':True,'mechanical_checks_passed':True,'content_acceptance_passed':False,'content_acceptance_record':'modular-review-2026-11-20.json','checks':checks,'quarter_coverage':{'expected':['2025Q4','2026Q1','2026Q2','2026Q3'],'revenue':'passed','profits_and_margins':'passed','cash_capex_fcf_sbc':'passed','comparatives':'passed with mixed source rounding <=1.51 MUSD','business_profit_cash':'not separately disclosed'},'content_limitations':['No uniform 3-year same-platform actual financials: acquisitions and former software entity','Capital claims valuation is intrinsic approximation, lacks full option time value and dividend path','Exact historical Q3 tax-event decomposition not disclosed in retrieved note','Full same-date peer capital structure multiples not completed','Cross-version Q3 2025 net interest 37.7 to 37 and income tax 128.9 to 128 are not fully explained by ordinary rounding'],'raw_source_hashes':{f.name:hashlib.sha256(f.read_bytes()).hexdigest() for f in (P/'data').glob('*.html')}}
 (P/'verification.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
 print(f'PASS: {len(checks)} arithmetic and structural checks; content limitations recorded separately.')

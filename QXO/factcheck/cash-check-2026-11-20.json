@@ -1,0 +1,33 @@
+{
+  "expected_periods": [
+    "2023",
+    "2024",
+    "2025",
+    "2025Q4",
+    "2026Q1",
+    "2026Q2",
+    "2026Q3"
+  ],
+  "verified_periods": [
+    "2023",
+    "2024",
+    "2025",
+    "2025Q4",
+    "2026Q1",
+    "2026Q2",
+    "2026Q3"
+  ],
+  "bridge_period": "2026年前九月",
+  "bridge_totals": {
+    "opening": "2366",
+    "cfo": "-145",
+    "investing": "-11040",
+    "financing": "9373",
+    "closing": "554"
+  },
+  "errors": [],
+  "entity": "QXO合并",
+  "unit": "M美元",
+  "report_sha256": "3438825e202040b433a9d8e97cbc0315804612b8481ac1975cb38fb91270cf14",
+  "input_sha256": "6a49dc3f78a1ee584363d05fb5416e8072ece14b95b1ab1afa2a195a49bbca40"
+}

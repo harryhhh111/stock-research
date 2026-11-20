@@ -236,6 +236,12 @@
       "insulation": 0,
       "complement": 628,
       "software": 14
+    },
+    "2025Q4": {
+      "roof": 1639,
+      "insulation": 0,
+      "complement": 538.7,
+      "software": 16.5
     }
   },
   "units": "MUSD, shares in million unless specified",

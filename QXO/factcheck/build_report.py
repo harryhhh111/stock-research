@@ -2,17 +2,17 @@ from pathlib import Path
 from html import escape as e
 import json,re
 P=Path(__file__).resolve().parent;ROOT=P.parent
-D=json.loads((P/'financials.json').read_text());V=json.loads((P/'valuation_results.json').read_text())
+D=json.loads((P/'financials.json').read_text());V=json.loads((P/'valuation-2026-11-19.json').read_text())
 A=D['annual'];Q=D['quarters'];R=D['products'];C=D['cumulative']
 def num(v,n=1):return '—' if v is None else f'{v:,.{n}f}'
 def pct(v,n=1):return num(v,n)+'%'
 def table(head,rows,caption=''):
  return '<div class="table-wrap"><table><caption>'+caption+'</caption><thead><tr>'+''.join('<th>'+str(x)+'</th>' for x in head)+'</tr></thead><tbody>'+''.join('<tr>'+''.join(('<th scope="row">' if i==0 else '<td>')+str(x)+('</th>' if i==0 else '</td>') for i,x in enumerate(row))+'</tr>' for row in rows)+'</tbody></table></div>'
-def source(*ids):return '<p class="source">来源：'+ ' · '.join(f'<a href="#src-{i}">[{i}]</a>' for i in ids)+'；比例、同比和差分为复算。</p>'
+def source(*ids):return '<p class="source">来源：'+ ' · '.join(f'<a href="../QXO.html#src-{i}">[{i}]</a>' for i in ids)+'；比例、同比和差分为复算。</p>'
 def ratios(d):return [d['gross']/d['revenue']*100,d['op']/d['revenue']*100,d['net']/d['revenue']*100]
 def financial_table(keys,data,title):
  rows=[]
- for label,m in [('营业收入','revenue'),('毛利','gross'),('经营利润','op'),('净利润（优先分配前）','net'),('经营现金流 CFO','cfo'),('现金购建资产 CapEx','capex'),('自由现金流 FCF=CFO−CapEx','fcf'),('股份支付费用 SBC','sbc')]:rows.append([label]+[num(data[k][m]) for k in keys])
+ for label,m in [('营业收入','revenue'),('毛利','gross'),('经营利润','op'),('净利润（优先分配前）','net'),('股份支付费用 SBC','sbc')]:rows.append([label]+[num(data[k][m]) for k in keys])
  for i,label in enumerate(['毛利率','经营利润率','净利率']):rows.append([label]+[pct(ratios(data[k])[i]) for k in keys])
  return table(['指标']+keys,rows,title)
 def product_table(keys,annual=False):
@@ -21,14 +21,23 @@ def product_table(keys,annual=False):
   row=[label]
   for k in keys:
    total=(A[k] if annual else Q[k])['revenue'];v=R[k][m]
-   prev=str(int(k)-1) if annual else '2025'+k[4:]
+   prev=str(int(k)-1) if annual else str(int(k[:4])-1)+k[4:]
    old=R.get(prev,{}).get(m)
    yoy='不适用：未并表' if v==0 else '无同口径基期' if old is None else '新增并表 / 零基数' if old==0 else '同比 '+pct((v/old-1)*100)
    if annual and k=='2023' and m=='software':yoy='同比 '+pct((v/44.985276-1)*100)
-   row.append(f'{num(v)}<small>{yoy}<br>占集团 {pct(v/total*100)}</small>')
+   row.append(f'{num(v)}<small>收入 · {yoy}<br>占集团 {pct(v/total*100)}</small>')
   rows.append(row)
- rows.append(['集团合计']+[num((A[k] if annual else Q[k])['revenue']) for k in keys])
- return table(['业务']+keys,rows,'QXO合并口径；M美元；每格依次为收入、同比、集团占比。零表示该业务未并表。')
+ group = ['集团营收']
+ for k in keys:
+  current=(A[k] if annual else Q[k])['revenue']
+  prior=(A.get(str(int(k)-1),{}).get('revenue',44.985276) if annual else Q.get(str(int(k[:4])-1)+k[4:],{}).get('revenue'))
+  group.append(f'{num(current)}<small>同比 {pct((current/prior-1)*100) if prior else "未列同口径基期"}<br>占集团 100.0%</small>')
+ rows.append(group)
+ periods=[f'FY{k}' if annual else k.replace('Q',' Q') for k in keys]
+ table_id='annual-revenue' if annual else 'quarter-revenue'
+ caption='QXO合并口径。单位：M美元（百万美元），比例为%。零表示未并表。'
+ if not annual:caption+='2025 Q4 为同分类FY2025减比较列9M，受整数百万披露影响。'
+ return table(['指标']+periods,rows,caption).replace('<table>',f'<table id="{table_id}">',1)
 # SVG charts use the same financial input as the exact tables.
 colors=['#194e72','#38799b','#46a9a0','#b9babe']
 def stacked():
@@ -65,13 +74,13 @@ blocks['guidance-overview']=table(['性质 / 期间','指标与数值','如何�
  ['管理层远期目标 · 2030年','现有业务调整后 EBITDA 4,000；额外小型并购机会最多再贡献约1,500','4,000已含整合、市场和效率假设；合计5,500还要求未来并购，不能无偿加入基准估值'],
  ['管理层收入愿景 · 十年内','年收入50,000','含并购；不是2027收入指引，不自动带来每股价值增长'],
  ['近季/全年量化指引','已查Q3业绩稿及10-Q：未列Q4或2026全年收入、GAAP净利润区间','不凭公司长期目标编造短期指引']
- ],'单位：金额为M美元（1 M美元＝100万美元）；EPS为美元/股，比例为%。披露核查截至2026-11-17；实绩、期后口径与目标分列。[5][6]').replace('<table>','<table class="narrative" id="guidance-overview">',1)
+ ],'单位：金额为M美元（1 M美元＝100万美元）；EPS为美元/股，比例为%。披露核查截至2026-11-20；实绩、期后口径与目标分列。[5][6]').replace('<table>','<table class="narrative" id="guidance-overview">',1)
 blocks['annual-products']=product_table(['2023','2024','2025'],True)+source(1,2,7)
-blocks['quarter-products']=product_table(['2026Q1','2026Q2','2026Q3'])+source(3,4,5)
+blocks['quarter-products']=product_table(['2025Q4','2026Q1','2026Q2','2026Q3'])+source(2,3,4,5)
 blocks['annual-finance']=financial_table(['2023','2024','2025'],A,'三完整财年；QXO合并；M美元，利润率除外。2024用2025年报比较列。')+source(1,2)
 blocks['quarter-finance']=financial_table(['2025Q4','2026Q1','2026Q2','2026Q3'],Q,'单季度；单位：M美元，利润率为%。2025Q4为全年减9M；Q2/Q3现金流按累计拆季。')+source(2,3,4,5)
 rows=[]
-for key,label in [('revenue','营业收入'),('op','经营利润'),('net','净利润'),('cfo','CFO'),('capex','现金CapEx'),('fcf','FCF'),('sbc','SBC')]:
+for key,label in [('revenue','营业收入'),('op','经营利润'),('net','净利润'),('sbc','SBC')]:
  row=[label]
  for q in [1,2,3]:
   d=Q[f'2026Q{q}'][key];old=Q[f'2025Q{q}'][key];prev=Q['2025Q4' if q==1 else f'2026Q{q-1}'][key]
@@ -109,34 +118,47 @@ blocks['capital-allocation']=table(['期间','现金CapEx','FCF','普通股现�
 rows=[]
 for s in V['scenarios']:
  last=s['rows'][-1];rows.append([s['name'],str(last['year']),num(last['revenue']),num(last['ebitda']),pct(last['margin']*100),f"{s['multiple']:.0f}× / {s['r']:.0%}",f"${s['price']:.2f}",pct(s['upside']*100),pct(s['terminal_weight']*100)])
-blocks['scenarios']=table(['【我的推演】','目标年','收入','调整后EBITDA','对应利润率','终值倍数/折现率','每股现值（美元/股）','相对$12.01','终值现值占比'],rows,'单位：收入与调整后EBITDA为M美元，每股现值为美元/股，倍数为倍，比例为%。条件估值；现金流与终值均折现，资本结构按下述内在价值近似。不是预测或目标价。')
+blocks['scenarios']=table(['【我的推演】','目标年','收入','调整后EBITDA','对应利润率','终值倍数/折现率','每股现值（美元/股）','相对$11.02','终值现值占比'],rows,'单位：收入与调整后EBITDA为M美元，每股现值为美元/股，倍数为倍，比例为%。条件估值；现金流与终值均折现，资本结构按下述内在价值近似。不是预测或目标价。')
 rows=[]
 for r in [.08,.10,.12]:rows.append([pct(r*100)]+[num(next(x['required_2030_ebitda'] for x in V['sensitivity'] if x['r']==r and x['multiple']==m)) for m in [8,10,12]])
-blocks['sensitivity']=table(['折现率 / 2030终值倍数','8倍','10倍','12倍'],rows,'支撑$12.01所需2030年调整后EBITDA（M美元）；固定收入路径及EBITDA爬坡比例，其余输入见模型。')
+blocks['sensitivity']=table(['折现率 / 2030终值倍数','8倍','10倍','12倍'],rows,'支撑$11.02所需2030年调整后EBITDA（M美元）；固定收入路径及EBITDA爬坡比例，其余输入见模型。')
 rows=[]
 for s in V['scenarios']:
  for x in s['rows']:rows.append([s['name'],x['year'],num(x['revenue']),num(x['ebitda']),num(x['sbc']),num(x['integration']),num(x['dep']),num(x['capex']),num(x['dwc']),num(x['fcff']),num(x['pv'])])
 blocks['forecast-inputs']=table(['路径','财年','收入','EBITDA','SBC经济成本','整合现金费','实物折旧','现金CapEx','新增营运资金','企业现金流','折现值'],rows,'【我的推演】全部为M美元；分路径逐年输入与输出。保留负营运资金变动，表示释放现金。')
 rows=[['仅普通股市值',num(V['basic_marketcap'])],['简式EV=普通股市值＋债务本金−现金',num(V['basic_EV'])],['经济索取权口径EV（含融资租赁）',num(V['economic_EV_required'])],['调整后的净债务（含融资租赁）',num(V['net_debt_including_finance_leases'])],['支撑现价所需2030调整后EBITDA（10倍、10%）',num(V['required_2030_ebitda'])]]
-blocks['valuation-snapshot']=table(['指标','M美元'],rows,'单位：表内金额为M美元；股价为美元/股，股数为百万股。行情2026-11-16常规收盘$12.01；普通股1,039.958653百万股，截至2026-11-06；资产负债截至2026-09-30。')+source(5,8)
-AUD=json.loads((P/'sop_audit.json').read_text())
-auditrows=[]
-for x in AUD['items']:
- links=' · '.join(f'<a href="#{a}">{a}</a>' for a in x['evidence'])
- auditrows.append([x['id'],e(x['requirement']),e(x['result']),links+'<small>'+e(x['review'])+'</small>'])
-counts=AUD['summary']
-blocks['sop-audit']='<div id="sop-review"><p><b>逐项内容验收：</b>'+f"共{counts['total']}项；通过{counts['passed']}项，未通过{counts['failed']}项，不适用{counts['not_applicable']}项，待复核{counts['pending']}项。"+'这些是按正文证据作出的审阅判断，不是由算术测试数推导。<a href="factcheck/sop_audit.json">逐项记录JSON</a>。</p>'+table(['编号','SOP要求','本轮结果','证据位置 / 实质判断'],auditrows,'完整研究验收逐项映射；2026-11-17内容结论沿用；2026-11-18复核单位与混合量纲，保留原未通过项。').replace('<table>','<table class="audit-table">',1)+'</div>'
-blocks['coverage-matrix']='<div id="coverage-review">'+table(['指标组 / 主体','预期单季','实际单季','同比及环比基期','来源 / 拆季','结果及边界'],[
- ['集团及已披露主要产品收入','2026Q1/Q2/Q3','1730.2 / 3246 / 4895；四条产品线逐季列示','2025各同季；Q1环比2025Q4','[3][4][5]主表及产品线附注','覆盖通过；并表范围不可比，跨版本差异原因另列未通过'],
- ['集团经营利润、净利和利润率','2026Q1/Q2/Q3','经营−251.9 / −42 / 2；净利−227.1 / −55 / −123；各利润率已复算','2025各同季；Q1环比2025Q4','[2]全年减[5]2025年9M得Q4，[3—5]当年单季','覆盖及算术通过；2025比较列税项与版本成因未通过'],
- ['集团CFO / 现金CapEx / FCF','2026Q1/Q2/Q3','CFO70.6 / −216.6 / 1；CapEx22.5 / 31.5 / 57；FCF48.1 / −248.1 / −56','2025各同季；Q1环比2025Q4','Q1原表，Q2=H1−Q1；Q3=9M−H1；拆季见financials.json','覆盖通过；原始精度不同，容差不当成因证据'],
- ['集团SBC','2026Q1/Q2/Q3','39.2 / 28.8 / 79','2025各同季；Q1环比2025Q4','[3—5]；Q2按累计差分保留来源精度','覆盖通过；未把费用金额当发行股数'],
- ['产品线经营利润 / CFO / CapEx','同期间披露范围','集团仅一个报告分部；未单列四条产品的独立三表','不伪造同比 / 环比','[2—5]分部附注；收购贡献另列','公司未披露：以集团三表与收购后贡献说明，不按收入分摊']
- ],'季度覆盖与成因确认分开；金额M美元，利润率在正文精确表。')+'</div>'
-html=(ROOT/'QXO.html').read_text()
-for key,value in blocks.items():
- pattern=r'<!-- BEGIN:'+re.escape(key)+r' -->.*?<!-- END:'+re.escape(key)+r' -->'
- assert re.search(pattern,html,re.S),key
- html=re.sub(pattern,lambda _:f'<!-- BEGIN:{key} -->\n{value}\n<!-- END:{key} -->',html,flags=re.S)
-(ROOT/'QXO.html').write_text(html)
-print('Updated',len(blocks),'data/chart blocks')
+blocks['valuation-snapshot']=table(['指标','M美元'],rows,'单位：表内金额为M美元；股价为美元/股，股数为百万股。行情2026-11-19常规收盘$11.02；普通股1,039.958653百万股，截至2026-11-06；资产负债截至2026-09-30。')+source(5,26)
+def cash_table(table_id, data, keys, labels, caption):
+ rows=[[label]+[num(data[key][metric],3) for key in keys] for metric,label in cash_labels.items()]
+ return table(['指标']+labels,rows,caption).replace('<table>',f'<table id="{table_id}">',1)
+
+cash_labels = {'cfo':'经营现金流 CFO','capex':'现金 CapEx','fcf':'自由现金流 FCF'}
+annual_keys=['2023','2024','2025']
+quarter_keys=['2025Q4','2026Q1','2026Q2','2026Q3']
+blocks['annual-cash-flow']=cash_table('annual-cash-flow',A,annual_keys,['FY'+k for k in annual_keys],'单位：M美元（百万美元）。QXO合并资本开支为实际现金支出，FCF=CFO−现金CapEx。')+source(1,2)
+blocks['quarter-cash-flow']=cash_table('quarter-cash-flow',Q,quarter_keys,[k.replace('Q',' Q') for k in quarter_keys],'单位：M美元。Q4=FY2025−2025前9月；Q2和Q3由累计数拆季；展示小数用于复算保留源精度，不提高原披露精度。')+source(2,3,4,5)
+blocks['cumulative-cash-flow']=(
+ cash_table('cumulative-cash-flow',C,['2025','2026'],['2025年前9月','2026年前9月'],'年度内累计对照。单位：M美元。')+source(5)
+ +cash_table('ttm-cash-flow',{'TTM':D['ttm']},['TTM'],['截至2026Q3的TTM'],'单位：M美元。TTM=FY2025＋2026年前9月−2025年前9月。')+source(2,5)
+)
+cash_compare=[]
+for metric,label in cash_labels.items():
+ values=[num(Q[k][metric]-Q[quarter_keys[i]][metric]) for i,k in enumerate(quarter_keys[1:])]
+ cash_compare.append([label,*values,num(Q['2026Q3'][metric]-Q['2025Q3'][metric])])
+blocks['cash-comparisons']=table(['指标','2026 Q1环比','2026 Q2环比','2026 Q3环比','2026 Q3同比'],cash_compare,'单位：M美元。比较为本期减基期，负值和跨零按金额显示。')+source(2,3,4,5)
+
+reports = ROOT/'reports'
+updated = set()
+for slug in ['revenue-profit','cash-capital','valuation']:
+ path=reports/f'{slug}.html'
+ html=path.read_text()
+ for key,value in blocks.items():
+  pattern=r'<!-- BEGIN:'+re.escape(key)+r' -->.*?<!-- END:'+re.escape(key)+r' -->'
+  if not re.search(pattern,html,re.S):
+   continue
+  assert key not in updated,key
+  html=re.sub(pattern,lambda _:f'<!-- BEGIN:{key} -->\n{value}\n<!-- END:{key} -->',html,count=1,flags=re.S)
+  updated.add(key)
+ path.write_text(html)
+assert updated==set(blocks),set(blocks)-updated
+print('Updated',len(updated),'data/chart blocks across three modules')
